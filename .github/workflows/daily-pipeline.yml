@@ -1,0 +1,50 @@
+name: Zero-Capital Daily Newsletter
+
+on:
+  schedule:
+    # 매일 UTC 21:30 (KST 기준 다음날 오전 6:30) 자동 실행
+    - cron: '30 21 * * *'
+  workflow_dispatch: # 수동 실행 허용 버튼
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Execute Autonomous Pipeline
+        env:
+          # GitHub Secrets에서 주입 (HITL 필수)
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          echo "Step 1: Fetching target media feeds..."
+          python src/fetcher.py
+          
+          echo "Step 2: Analyzing with Gemini AI..."
+          python src/analyzer.py
+          
+          echo "Step 3: Generating Newsletter artifacts..."
+          python src/generator.py
+
+      - name: Commit and Push Daily Newsletter
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add dist/
+          git commit -m "Auto-generate daily newsletter [skip ci]" || echo "No changes to commit"
+          git push
