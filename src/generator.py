@@ -1,5 +1,6 @@
 import json
 import os
+import sys
 from datetime import datetime
 
 def generate_newsletter():
@@ -7,12 +8,13 @@ def generate_newsletter():
         with open("src/translated_articles.json", "r", encoding="utf-8") as f:
             articles = json.load(f)
     except FileNotFoundError:
-        print("[Error] translated_articles.json not found. Run analyzer.py first.")
-        return
+        print("[Critical Error] translated_articles.json not found. Run analyzer.py first.", file=sys.stderr)
+        sys.exit(1)
 
+    # Fail-Fast: If articles array is empty, do not exit silently
     if not articles:
-        print("[Warning] No articles to publish today.")
-        return
+        print("[Critical Error] translated_articles.json is empty. Nothing to publish.", file=sys.stderr)
+        sys.exit(1)
 
     today_str = datetime.now().strftime("%Y-%m-%d")
     
@@ -64,6 +66,11 @@ def generate_newsletter():
         f.write(md_content)
     with open(html_path, "w", encoding="utf-8") as f:
         f.write(html_content)
+
+    # Sanity Check
+    if not os.path.exists(md_path) or os.path.getsize(md_path) == 0:
+        print(f"[Critical Error] Failed to write {md_path}.", file=sys.stderr)
+        sys.exit(1)
 
     print(f"\n[Success] Newsletter generated successfully!")
     print(f"- Markdown: {md_path}")
