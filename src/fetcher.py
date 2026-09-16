@@ -1,16 +1,16 @@
-import cloudscraper
 import feedparser
 import json
 import time
 from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 
+# [핵심 리팩토링] Google News RSS 검색 쿼리를 활용한 우회 (site:도메인 + when:1d)
 TARGET_FEEDS = {
-    "The Verge": "https://www.theverge.com/rss/index.xml",
-    "TechCrunch": "https://techcrunch.com/feed/",
-    "Ars Technica": "https://feeds.arstechnica.com/arstechnica/index",
-    "MIT Tech Review": "https://www.technologyreview.com/feed/",
-    "The Information": "https://www.theinformation.com/feed"
+    "The Verge": "https://news.google.com/rss/search?q=site:theverge.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+    "TechCrunch": "https://news.google.com/rss/search?q=site:techcrunch.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+    "Ars Technica": "https://news.google.com/rss/search?q=site:arstechnica.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+    "MIT Tech Review": "https://news.google.com/rss/search?q=site:technologyreview.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+    "The Information": "https://news.google.com/rss/search?q=site:theinformation.com+when:1d&hl=en-US&gl=US&ceid=US:en"
 }
 
 def clean_html(raw_html):
@@ -19,50 +19,38 @@ def clean_html(raw_html):
 
 def fetch_latest_articles():
     all_articles = []
-    # 안전한 시간 비교를 위해 UTC 기준 24시간 계산
     twenty_four_hours_ago = datetime.utcnow() - timedelta(hours=24)
 
-    # Cloudscraper를 사용하여 실제 Windows 기반 Chrome 브라우저의 TLS 지문을 완벽히 모방
-    scraper = cloudscraper.create_scraper(
-        browser={
-            'browser': 'chrome',
-            'platform': 'windows',
-            'desktop': True
-        }
-    )
-
     for media, url in TARGET_FEEDS.items():
-        print(f"Fetching {media} via Cloudscraper...")
+        print(f"Fetching {media} via Google News Aggregator...")
         try:
-            # 외부 프록시 없이 직접 접속하여 타임아웃 원천 방지
-            response = scraper.get(url, timeout=15)
+            # Google News는 데이터센터 IP를 차단하지 않으므로 순수 feedparser로 직접 해독 가능
+            feed = feedparser.parse(url)
+            media_articles = []
             
-            if response.status_code == 200:
-                # 성공적으로 가져온 XML 원문을 feedparser로 해독
-                feed = feedparser.parse(response.text)
-                media_articles = []
-                for entry in feed.entries:
-                    if hasattr(entry, 'published_parsed') and entry.published_parsed:
-                        pub_date = datetime.fromtimestamp(time.mktime(entry.published_parsed))
-                        if pub_date > twenty_four_hours_ago:
-                            summary = clean_html(entry.summary if hasattr(entry, 'summary') else "")
-                            media_articles.append({
-                                "media": media,
-                                "title": entry.title,
-                                "link": entry.link,
-                                "published_at": pub_date.isoformat(),
-                                "summary": summary
-                            })
-                # 매체별 최신 기사 2개 큐레이션 (총 10개 유지)
-                all_articles.extend(media_articles[:2])
-                print(f" -> Found {len(media_articles[:2])} valid articles.")
-            else:
-                print(f"[Error] Server returned HTTP {response.status_code} for {media}")
+            for entry in feed.entries:
+                if hasattr(entry, 'published_parsed') and entry.published_parsed:
+                    pub_date = datetime.fromtimestamp(time.mktime(entry.published_parsed))
+                    if pub_date > twenty_four_hours_ago:
+                        summary = clean_html(entry.summary if hasattr(entry, 'summary') else "")
+                        # Google News 제목 포맷팅 정리
+                        clean_title = entry.title.split(' - ')[0] if ' - ' in entry.title else entry.title
+                        
+                        media_articles.append({
+                            "media": media,
+                            "title": clean_title,
+                            "link": entry.link,
+                            "published_at": pub_date.isoformat(),
+                            "summary": summary
+                        })
+                        
+            # 매체별 최신 기사 2개 큐레이션 (총 10개)
+            all_articles.extend(media_articles[:2])
+            print(f" -> Found {len(media_articles[:2])} valid articles.")
         except Exception as e:
             print(f"[Error] Failed to fetch {media}: {e}")
         
-        # 서버 과부하 방지 네이티브 딜레이
-        time.sleep(3)
+        time.sleep(2)
     
     with open("src/articles.json", "w", encoding="utf-8") as f:
         json.dump(all_articles, f, ensure_ascii=False, indent=2)
