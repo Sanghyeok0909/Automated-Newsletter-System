@@ -6,11 +6,23 @@ on:
     - cron: '17 21 * * *'
   workflow_dispatch: # 수동 실행 허용 버튼
 
+# 워크플로우 최상단 권한 설정: 레포지토리 커밋 및 GitHub Pages 배포 필수 권한
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# GitHub Pages 동시 배포 충돌 방지
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
 jobs:
-  build-and-publish:
+  # 1. 빌드 및 데이터 생성 Job
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    env:
+      TZ: 'Asia/Seoul'
 
     steps:
       - name: Checkout Repository
@@ -40,6 +52,7 @@ jobs:
           echo "Step 3: Generating Newsletter artifacts..."
           python src/generator.py
 
+      # Git 변경사항 커밋 및 푸시 (빈 커밋 스킵으로 중복 방지)
       - name: Commit and Push Daily Newsletter
         run: |
           git config --global user.name 'github-actions[bot]'
@@ -47,3 +60,23 @@ jobs:
           git add dist/
           git commit -m "Auto-generate daily newsletter [skip ci]" || echo "No changes to commit"
           git push
+
+      # GitHub Pages 배포 아티팩트 업로드 (dist 폴더 대상)
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+  # 2. GitHub Pages 배포 전용 Job (공식 권장 규격)
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      # GitHub Pages 배포 실행
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
