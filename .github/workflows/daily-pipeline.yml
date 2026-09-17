@@ -2,8 +2,8 @@ name: Zero-Capital Daily Newsletter
 
 on:
   schedule:
-    # 매일 UTC 21:30 (KST 기준 다음날 오전 6:30) 자동 실행
-    - cron: '30 21 * * *'
+    # 매일 UTC 21:17 (KST 기준 다음날 오전 6:17) 자동 실행 (트래픽 분산 최적화)
+    - cron: '17 21 * * *'
   workflow_dispatch: # 수동 실행 허용 버튼
 
 jobs:
@@ -29,7 +29,6 @@ jobs:
 
       - name: Execute Autonomous Pipeline
         env:
-          # GitHub Secrets에서 주입 (HITL 필수)
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           echo "Step 1: Fetching target media feeds..."
