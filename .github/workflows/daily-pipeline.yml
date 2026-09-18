@@ -1,6 +1,9 @@
 name: Zero-Capital Daily Newsletter
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     # 매일 UTC 21:17 (KST 기준 다음날 오전 6:17) 자동 실행 (트래픽 분산 최적화)
     - cron: '17 21 * * *'
