@@ -36,7 +36,16 @@ def test_html_file(filepath):
     # 3. Article cards integrity
     cards = soup.find_all("article", class_="toss-card")
     print(f"Article cards count: {len(cards)}")
-    assert len(cards) == 10, f"Expected 10 article cards, found {len(cards)}"
+    assert len(cards) > 0, "Expected at least 1 article card"
+
+    # Verify hero count badge and metadata panel count match card count
+    hero_count_el = soup.find("span", id="heroArticleCount")
+    assert hero_count_el is not None, "Hero count element missing"
+    assert f"{len(cards)}개" in hero_count_el.text, f"Hero count does not match card count {len(cards)}"
+
+    meta_count_el = soup.find("span", id="metaVisibleCount")
+    assert meta_count_el is not None, "Metadata visible count missing"
+    assert f"{len(cards)}개" in meta_count_el.text, f"Metadata count does not match card count {len(cards)}"
 
     # Check each card has headline, summary, insight, link, media avatar
     for idx, card in enumerate(cards):

@@ -1,72 +1,306 @@
 [
   {
     "media": "The Verge",
-    "title": "AI and data centers are incredibly unpopular in every poll",
-    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPYTdkOFdFd0FtZ2FPU0cxUTZCZmstdjhYMlM0TlBOdjFRNE5XRUdaNEpPbmpVYWxCZEU0WXZMQnlvaXJuWEh0eks1N2I1bTcxWXlFVE43Sl9ISkZCYmk1X0xPcEJuRWZmY04xMU9zTE91UnlST2xXb0lEaXB3Q280cjBYMFdMNlQzU2RFaU5iV3VsTkU1YmUxYjdrOGFvdw?oc=5",
-    "published_at": "2026-09-15T23:34:25",
-    "summary": "AI and data centers are incredibly unpopular in every poll theverge.com"
+    "title": "Waymo says Singapore will be its next international robotaxi city",
+    "link": "https://www.theverge.com/transportation/997091/waymo-singapore-robotaxi-launch-2027",
+    "canonical_url": "https://www.theverge.com/transportation/997091/waymo-singapore-robotaxi-launch-2027",
+    "published_at": "2026-09-17T17:00:00",
+    "summary": "Waymo says it will launch a robotaxi service in Singapore in 2028, as the Alphabet-owned company continues to eye overseas markets for expansion. Waymo's vehicles will begin arriving in Singapore in \"the coming months,\" the company says, in preparation of mapping and autonomous testing with human safety drivers behind the wheel in 2027. Waymo says […]",
+    "score": 15,
+    "score_breakdown": {
+      "total_score": 15,
+      "impact": 0,
+      "business": 9,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true
   },
   {
     "media": "The Verge",
-    "title": "Microsoft announces Windows and Surface event for October 7th",
-    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPbzN3VXhubjR0WGdpc3FqZGU3b1VIMmhMZC16QjVaS1pWcE1EVW9NNVdOcDBjelVQYVZzazNOYl8yWmRPUE45aVJYYUNoYmNZSXloY1Z6VWhIakR4MmVHc0w0dHJmQmJxYXl2U3Rfc2NQYVB1eXRhdTJaRVpGR3VuaUJzNFctWFBlbWd4ZjJ4bC02aU5Kc2tN?oc=5",
-    "published_at": "2026-09-15T20:36:59",
-    "summary": "Microsoft announces Windows and Surface event for October 7th theverge.com"
+    "title": "Flash floods can strike without warning — this new technology could change that",
+    "link": "https://www.theverge.com/science/997083/flash-flood-warning-tacls-satellite-machine-learning",
+    "canonical_url": "https://www.theverge.com/science/997083/flash-flood-warning-tacls-satellite-machine-learning",
+    "published_at": "2026-09-18T02:00:00",
+    "summary": "On the morning of June 9th, Laura Lin was working from her home in Lanesville, a rural southern Indiana town about 15 miles from the Kentucky border. She was on a Zoom call, unaware that the heavy rain outside was beginning to flood her yard. \"I look over to where the barn is over there, […]",
+    "score": 9,
+    "score_breakdown": {
+      "total_score": 9,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true
   },
   {
     "media": "TechCrunch",
-    "title": "Google says some Pixel phone owners were hacked in zero-day attacks",
-    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVk4yQVI0WmY4TjQ5RG1VaU1ZMzdRellZQkNEVHRONVVPczdYT21HT0hDSHZNRnpGUGdpZlhpdDlSU0JfbmVDYUw0T2RjSlFteHhsbEpSNzZhMDZMSURCYUdMM01ncU1tczQ1Vnhsb0wyNW9HU1JkQkxFRFQ2LWIzYWkyaWh3NThtQV93WVJiQ3FUY1ZNcjFfZ2p6WmdUdURwaVpBVg?oc=5",
-    "published_at": "2026-09-16T14:47:07",
-    "summary": "Google says some Pixel phone owners were hacked in zero-day attacks TechCrunch"
+    "title": "Researchers used Anthropic’s Claude to hack into OpenAI",
+    "link": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/",
+    "canonical_url": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/",
+    "published_at": "2026-09-18T05:00:14",
+    "summary": "Security researchers used Anthropic’s Claude to exploit vulnerabilities in OpenAI’s systems, taking over employee accounts and gaining access to an internal code repository before reporting the flaws.",
+    "score": 56,
+    "score_breakdown": {
+      "total_score": 56,
+      "impact": 35,
+      "business": 9,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true
   },
   {
     "media": "TechCrunch",
-    "title": "May Mobility is going public in a $1.4B SPAC deal",
-    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQOUFEMUZEWUUyUGV6NnJ5VlVpODFlU3RtUHZVcm1UeUkzMDhmVUVvckEwVk94ZUkwRk9IcUlfU2dGN0RJR2doaVRMY0lZdTgyMEZoMDR0VGJxRXBmcWJ3c0d4ZDNxQnZGVXRwRTlUbmZpRzdaSlltdXl1RXY1QXdkMl8zYTUtcG9wZGM4?oc=5",
-    "published_at": "2026-09-16T15:27:13",
-    "summary": "May Mobility is going public in a $1.4B SPAC deal TechCrunch"
+    "title": "Inertia co-founder Jeff Lawson’s next big bet is fusion: Go inside it at TechCrunch Disrupt 2026",
+    "link": "https://techcrunch.com/2026/09/18/jeff-lawsons-next-big-bet-is-fusion-go-inside-it-at-techcrunch-disrupt-2026/",
+    "canonical_url": "https://techcrunch.com/2026/09/18/jeff-lawsons-next-big-bet-is-fusion-go-inside-it-at-techcrunch-disrupt-2026/",
+    "published_at": "2026-09-18T05:30:00",
+    "summary": "Inertia co-founder and CEO Jeff Lawson joins the Smart Systems Stage at TechCrunch Disrupt 2026. Register now to save up to $200 by September 25.",
+    "score": 21,
+    "score_breakdown": {
+      "total_score": 21,
+      "impact": 0,
+      "business": 9,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true
   },
   {
-    "media": "Ars Technica",
-    "title": "Agility’s new humanoid robot will stop, squat to avoid harming human coworkers",
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPeno1MVk4NGVOUGxwM2pKMXVHejJFRnQyRGo5VjRBQUp3VmlveTQ4SUtNVDZXaEFOV2d3VHV4TTZEWHJwZUhSNVowX3ZLZlVCeTJxVDVUdkJyMXBRb21ld1hmcXRTU2R1UU9aRVJsTHBub1JwTmdMZUJUejVobUM5T3ZiVEtoU2VKOE9Tdll3Q1J5MEhybEZqRkZoS18zZHl5SG1OOTdvbmdZUjhBUnNtRzZn?oc=5",
-    "published_at": "2026-09-15T18:33:02",
-    "summary": "Agility’s new humanoid robot will stop, squat to avoid harming human coworkers Ars Technica"
+    "media": "TechCrunch",
+    "title": "The clock is ticking: Final 24 hours to exhibit at TechCrunch Disrupt 2026",
+    "link": "https://techcrunch.com/2026/09/18/final-24-hours-to-exhibit-at-techcrunch-disrupt-2026/",
+    "canonical_url": "https://techcrunch.com/2026/09/18/final-24-hours-to-exhibit-at-techcrunch-disrupt-2026/",
+    "published_at": "2026-09-18T05:00:00",
+    "summary": "Last day to book your exhibit table at Disrupt is today, September 18. Get your startup in front of 10,000+ founders, investors, operators, and tech leaders on October 13–15.",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true
   },
   {
-    "media": "Ars Technica",
-    "title": "SpaceX declares Starship ready for orbit, sets launch date next week",
-    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQXdMbFpqcVFoanVfd2xaU3ZQOWlfdVZRbGYwZ3k0aGd6VnUwNHlveUZyRHQzX2ZzWkNlQzFqVUpxWTZ5OUdSS0ttSTRzRFp1TE8yTk92Tk1JbU5QSHE4c0l0R3RpOVRiZ3E5RXZ4SXR5NWthM0ZlanNIM01xR1FiSE9jVzl0Q25XeVpJQzBsa0NQdXV3dnJWbWtwZkk?oc=5",
-    "published_at": "2026-09-15T18:48:08",
-    "summary": "SpaceX declares Starship ready for orbit, sets launch date next week Ars Technica"
+    "media": "TechCrunch",
+    "title": "Khosla-backed Mazama Energy just raised $135M to drill deeper into superhot-rock geothermal",
+    "link": "https://techcrunch.com/2026/09/17/khosla-backed-mazama-energy-just-raised-135m-to-drill-deeper-into-super-hot-rock-geothermal/",
+    "canonical_url": "https://techcrunch.com/2026/09/17/khosla-backed-mazama-energy-just-raised-135m-to-drill-deeper-into-super-hot-rock-geothermal/",
+    "published_at": "2026-09-17T15:02:36",
+    "summary": "Geothermal startup Mazama is drilling three miles underground to tap superhot rock, with one well capable of generating 15 MW of electricity 24/7.",
+    "score": 6,
+    "score_breakdown": {
+      "total_score": 6,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true
   },
   {
     "media": "MIT Tech Review",
-    "title": "Roundtables: Could AI really kill us all?",
-    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQ3JqQTJhU2RoVE15OF9qVmxVZE5samJ2MG94N2hmYkxGa25makN0eGw4LW1vTXRlZGMyejVSenE0VWVfVk9VQTJHQjJRVkZaR2liMTJ0bmdvTWxtTElTRGNNcHZQdEFsSzdMcEVuRjE2ZzlhX1pkMTZ3U0F3X3dTWVBNN0ExYnpQOENyVElrTkhhQm1LSEHSAZsBQVVfeXFMUEpFdFBGX1plLUMwR2UyaHdzaGE1S0lOWUtFY3BzWS0tanMxcllXbGltQXE4dnNiWlRrY0RRZ2d1RHpPd3lSa241QzhhMVRIdWlPdlB3RFlpQk1JbWFoa3h3TXY5VHctVjFFRGdremFRNUZXYjRKck1qeWY4bUdaWmtpQ2NxZmwwTnJvajgwdm1MNGc0bVZOeUVKQTQ?oc=5",
-    "published_at": "2026-09-15T17:40:12",
-    "summary": "Roundtables: Could AI really kill us all? MIT Technology Review"
+    "title": "The specter of AI-enabled bioweapons is a wake-up call for biotech",
+    "link": "https://www.technologyreview.com/2026/09/18/1144329/the-specter-of-ai-enabled-bioweapons-is-a-wake-up-call-for-biotech/",
+    "canonical_url": "https://www.technologyreview.com/2026/09/18/1144329/the-specter-of-ai-enabled-bioweapons-is-a-wake-up-call-for-biotech/",
+    "published_at": "2026-09-18T00:00:00",
+    "summary": "In recent weeks, leaders of some of the biggest AI companies have warned that the very tech they are developing is dangerous. Last weekend, Anthropic CEO Dario Amodei argued that AI carries serious risk and that progress should be slowed. OpenAI CEO Sam Altman responded on X: “I agree with Dario that we need to pace the…",
+    "score": 33,
+    "score_breakdown": {
+      "total_score": 33,
+      "impact": 24,
+      "business": 0,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true
   },
   {
     "media": "MIT Tech Review",
-    "title": "Login",
-    "link": "https://news.google.com/rss/articles/CBMiiwVBVV95cUxPVkdELTEwaFg1QVFYQnpGd0NPcUs3bXhlUllrOG1kTTZ4R2w2Ry12ZXlhVlp0ODZhR3ZKMUxScnA2SDlzRFRCa2dKQ0Q3UklYLUtIYkdxRkFLRm5taEs4MTBiMncyeDJveGFDWUNIRUNyc2dST2x6RG9MYm9ON09PdkMxeUdxRTA5R1daWUM4dFdGczZTZEFwYTVjS2w5cHctZ2o5OVFidVZ0czJ6cmVuTUE1emwzOXZPZllLTTVrVWJ0UzlUTWNQMlNFcDAzVUhzVDRwRmFNMldUX1FZWHUzUUY4SG03Y2l5NTNYeFd6cWpLVC1mQnZQOWRBWUpsSjE4RmtLLXdXb3RzS2hsYjdCd01HWU5hNnE0REprWl9faEFONkJZdjU2NXR6U0N2aTExT0ZyT0lCenAyVC11VENkRGtpNi0tMDdIX0g5ZFVTdEFXZXZ0aU9vMWttZGJTWnZNeHI3TkRDU084aW1WVHBNSWVnN1dFcnVrdVk4RE53aGUzWV9XNEVqcGdqdmxfcDNlc1g1M2hDY2tvY0Q0TDYtZ0JKQzRLRnZ5WmdZcVluU2xIQThoUmlMdTdTd2VIbU9nVXRyOFlxd3VFTk9UNUZwaEs1dWZSWUhYc19QcTN2R2ZoMkVsMW9ZVkFDNGVPZTFZZGZvTk5qd1VnUVhENzBvQ2N3ZWVTMmJLMTA5RF9JZjd0Y094RnphcGZVWkdQc2pNZmlfMmJZZ3pBUHhIVldiU082N29VNEhmYnJfX0J6QmNQaFVJZWN0WER6QXVBbGprQ01HZ194NGJENUJTN3FHVHRwUUlVaV9Hbm9rVVBpSjBiOGZMbjZ2Sy12LWZwaGNLXzlmbk4wRXZLc1U?oc=5",
-    "published_at": "2026-09-16T09:25:15",
-    "summary": "Login MIT Technology Review"
+    "title": "The Download: AI’s extinction risk and bioweapons threat",
+    "link": "https://www.technologyreview.com/2026/09/18/1142577/the-download-ai-extinction-threat-bioweapons/",
+    "canonical_url": "https://www.technologyreview.com/2026/09/18/1142577/the-download-ai-extinction-threat-bioweapons/",
+    "published_at": "2026-09-18T03:10:00",
+    "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Could AI really kill us all? Your questions, answered On Wednesday, MIT Technology Review hosted a live Roundtables event that asked the question many seem to be asking right now: could…",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true
+  },
+  {
+    "media": "MIT Tech Review",
+    "title": "Could AI really kill us all? Your questions, answered.",
+    "link": "https://www.technologyreview.com/2026/09/18/1144435/could-ai-really-kill-us-all-your-questions-answered/",
+    "canonical_url": "https://www.technologyreview.com/2026/09/18/1144435/could-ai-really-kill-us-all-your-questions-answered/",
+    "published_at": "2026-09-18T02:29:22",
+    "summary": "On Wednesday, MIT Technology Review hosted a live Roundtables event for subscribers that asked the question everyone’s asking right now: Could AI really kill us all? But attendees had so many more questions than we had time to answer in the 30 minute session. So we asked our senior AI editor Will Douglas Heaven and…",
+    "score": 9,
+    "score_breakdown": {
+      "total_score": 9,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true
   },
   {
     "media": "The Information",
-    "title": "Meta to Launch Camera-Free Smart Glasses Amid Mounting Privacy Concerns",
-    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOYXhWNnRjZHVTcXNEU2JjRlVPR0t1REJVZ0VTZkE5dlpkd3h6NGFYa01icF8talRXLWdFa0twNUVtdW5yclppcE5UMjZZRHF5d1BSOW4zMl9LNTdyRHhRejRqaXJUNjFEcXlsTmtSbGFScnRyWUdDeEN1a1h5MU0yQTZRdms3VndQeUtpUVlnMnVBUG5IYUsyOVFlTHIteThiWHd1bmFlaWswdFVZ?oc=5",
-    "published_at": "2026-09-15T22:22:00",
-    "summary": "Meta to Launch Camera-Free Smart Glasses Amid Mounting Privacy Concerns theinformation.com"
+    "title": "A Tsinghua Professor’s Stealth LLM Startup Hits $1.4 Billion Valuation",
+    "link": "https://www.theinformation.com/articles/tsinghua-professors-stealth-llm-startup-hits-1-4-billion-valuation",
+    "canonical_url": "https://www.theinformation.com/articles/tsinghua-professors-stealth-llm-startup-hits-1-4-billion-valuation",
+    "published_at": "2026-09-18T03:10:44",
+    "summary": "A secretive Chinese AI model startup founded in February by a Tsinghua University professor is now valued at more than $1.4 billion, after raising $400 million in three funding rounds from investors including Tencent , according to a person with direct knowledge of the matter. Beijing-based Naive AI is preparing to release its first large language model as early as this month, joining the country’s fierce LLM competition as a newcomer, according to the person. The startup plans to release it as an open-weight model, similar to offerings from DeepSeek, Moonshot and Alibaba that people can download for free and customize to their liking.",
+    "score": 45,
+    "score_breakdown": {
+      "total_score": 45,
+      "impact": 24,
+      "business": 9,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true
   },
   {
     "media": "The Information",
-    "title": "Is Anthropic Making Claude Too Human to Control?",
-    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPX2lnQmF4R2xON2IyRnNqODRlUnZGSXFTRE1uWVd1LTN1dkdKbTNiRlZUelozTGkyQ3F6UFMtbU92Y214RlJwMXlnNHZyVEI4SHVKLWlTa1NDM09pODdfTGw5TlFrZTIzVW1qbG5tbGYwOVV6eF9HTVZfY0pfc1kwWklKM2xvR1E2N28tVVoxamtlZjBU?oc=5",
-    "published_at": "2026-09-16T14:02:00",
-    "summary": "Is Anthropic Making Claude Too Human to Control? theinformation.com"
+    "title": "AI Executives Fret About Existential Threat AI Poses—to Publishers",
+    "link": "https://www.theinformation.com/articles/ai-executives-fret-existential-threat-ai-poses-publishers",
+    "canonical_url": "https://www.theinformation.com/articles/ai-executives-fret-existential-threat-ai-poses-publishers",
+    "published_at": "2026-09-17T15:00:58",
+    "summary": "It’s not just humanity that AI folks worry the new technology could wipe out—it’s publishers as well! (Publishers are, of course, people!) That’s what we learned from a court filing today by a group of news publishers including The New York Times Co. in a copyright infringement lawsuit against OpenAI and Microsoft. The filing cited an OpenAI executive writing—presumably in an internal memo—that publishers face “an existential threat” from AI products. We knew the publishers worried that AI threatened their existence—The New York Times Co. made that point when it sued OpenAI and Microsoft back in 2023 (the case has since been consolidated with similar lawsuits filed by other publishers). What’s striking is that OpenAI and Microsoft internally acknowledge the threat—and recognize the implications for them as well. “Our AI content strategy has started a ‘doom loop’ that will hurt the performance of our models and the entire web at the same time. It is highly unusual that an end-product threatens the economic foundations of its essential suppliers,” according to a Microsoft document cited in the filing.",
+    "score": 44,
+    "score_breakdown": {
+      "total_score": 44,
+      "impact": 24,
+      "business": 9,
+      "development": 5,
+      "recency": 1,
+      "original": 5
+    },
+    "rank": 2,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "Bug Hunters Used Claude to Hack OpenAI",
+    "link": "https://www.theinformation.com/briefings/bug-hunters-used-claude-hack-openai",
+    "canonical_url": "https://www.theinformation.com/briefings/bug-hunters-used-claude-hack-openai",
+    "published_at": "2026-09-17T17:37:59",
+    "summary": "A team of cybersecurity researchers with startup Hacktron AI used Anthropic’s Claude to hack into OpenAI, gaining access to a key repository of OpenAI’s software, the researchers revealed Thursday . The hack, which occurred on July 25, further demonstrates AI companies’ vulnerability to ...",
+    "score": 41,
+    "score_breakdown": {
+      "total_score": 41,
+      "impact": 35,
+      "business": 0,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "AI Safety Push Sparks Demand for Watchdog Groups. Critics Doubt Their Independence.",
+    "link": "https://www.theinformation.com/articles/ai-safety-push-sparks-demand-watchdog-groups-critics-doubt-independence",
+    "canonical_url": "https://www.theinformation.com/articles/ai-safety-push-sparks-demand-watchdog-groups-critics-doubt-independence",
+    "published_at": "2026-09-18T04:00:41",
+    "summary": "Rising alarm about AI’s perils is thrusting into the spotlight a collection of little-known research groups focused on the technology’s safety—and fueling questions about their ability to effectively monitor the industry’s biggest companies. Both Anthropic Chief Executive Dario Amodei and OpenAI CEO Sam Altman promised in recent days to embed evaluators from such outside research organizations inside their companies to help ensure they develop AI at a safe pace. Other executives including Microsoft CEO Satya Nadella also endorsed the idea of embedding independent evaluators in companies.",
+    "score": 36,
+    "score_breakdown": {
+      "total_score": 36,
+      "impact": 24,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "Communicate Technical Topics to a Non-Technical Audience with Google Gemini",
+    "link": "https://www.theinformation.com/articles/communicate-technical-topics-non-technical-audience-google-gemini",
+    "canonical_url": "https://www.theinformation.com/articles/communicate-technical-topics-non-technical-audience-google-gemini",
+    "published_at": "2026-09-18T05:01:39",
+    "summary": "In a room full of IT professionals, words and phrases like “tokenization,” “retrieval-augmented generation,” and “context window” need no explanation. But when technology leaders present to their CEOs and other company leaders about topics like AI, they often find that they need to translate these terms into everyday business language, or else risk being met by blank stares. In the moment, this can be maddening. You know the opportunities and challenges that a technology like generative AI presents for your company. And you know that the organization’s other leaders will likely see things the same way you do, if only you can make yourself understood. Instead of trying to bridge this communication gap on the fly, use Google Gemini to help translate your technical vision into bottom-line business value. Step 1: Figure Out What You Want to Say Your CEO might not speak “tech,” but Google Gemini does. Open up a new chat and explain exactly what it is you hope to communicate to leadership. Here, you can feel free to be as technical as you wish. Maybe you’ll tell Gemini that you’re thinking of building a RAG pipeline to vectorize your company’s proprietary data. Or, maybe you’ll float the idea of using parameter-efficient fine-tuning methods like LoRA to deploy open-weight models on-premises, without exploding your cloud inference costs. You can even upload your technical documents to Gemini, directly in the chat window. No matter how in-the-weeds you get, Gemini will follow your train of thought, parsing the complexity to find the business value at the core of your plans. Step 2: Let Gemini Be Your Translator Now that you’ve captured your vision in your own words, let Gemini help you translate those words into language that will connect with your audience. Use this sample prompt, along with your brainstorming from Step 1: I am the CIO at [company], and I am trying to build the case to [adopt generative AI solutions]. I need to explain the technical concept of generative AI to a non-technical audience (the CEO and board). Help me write talking points that will help me convey what generative AI is, ways it could help us digitally transform, and why it’s important to our growth as a company. Include details about how it could potentially re-focus our technical talent on more strategic work, help enhance our workforce’s productivity, and help us better serve our global workforce and customers. In just a few moments, you’ll have a set of boardroom-ready talking points. Gemini might, for instance, break down the benefits of RAG in simple terms by noting that it anchors AI to internal data like HR policies and technical manuals. Or, it might point out the business benefits of arming IT staff and engineers with generative AI tools, noting the opportunity to shift employees’ focus from low-value, repetitive tasks to innovation. Step 3: Create Content Now that you have your core narrative and language nailed down, Gemini can help you create a more structured pitch. Instead of staring at a blank slide deck, prompt Gemini for ideas on how to build out a presentation that will sway your peers in the C-suite. Try this prompt: I need to build a presentation to deliver this information to the board. Turn these talking points into a 10-slide presentation. For each slide, write a headline, three to four short bullet points for the slide itself, and the speaker notes I should use to explain the concept out loud. Gemini will generate a full, downloadable presentation deck directly in the chat. If you like, you can export the presentation to Google Slides and make your own edits. Or, you can command Gemini to generate a new version with changes to elements like design, language, and narrative flow. Step 4: Make Gemini Your Sparring Partner Before you go into your meeting, open a new chat in Gemini, providing your speaker notes and a link to your presentation, and then ask it to act as a skeptical executive: You are my CEO. Review this presentation and grill me on cost, security, and ROI. Ask your toughest questions, one at a time. Even though Gemini helped you prepare your presentation, it will seamlessly pivot to the role of rigorous executive or tough board member, pressing for more details on project payback, hidden risks, and timeline. By practicing your pitch in this low-stakes environment, you can make certain that you’ll be confident when it’s time for the real thing.",
+    "score": 21,
+    "score_breakdown": {
+      "total_score": 21,
+      "impact": 0,
+      "business": 9,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 5,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "Cooley Partners with OpenAI on Legal Tool For Drafting SEC Filings",
+    "link": "https://www.theinformation.com/briefings/cooley-partners-openai-legal-tool-drafting-sec-filings",
+    "canonical_url": "https://www.theinformation.com/briefings/cooley-partners-openai-legal-tool-drafting-sec-filings",
+    "published_at": "2026-09-17T14:38:18",
+    "summary": "OpenAI and law firm Cooley co-launched a product, called GO Public, that can draft S-1 filings, the document companies must submit to the Securities and Exchange Commission before they can go public, Cooley said Thursday. Lawyers at Cooley can prompt GO Public, which also has access to Cooley ...",
+    "score": 18,
+    "score_breakdown": {
+      "total_score": 18,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 6,
+    "is_primary": false
+  },
+  {
+    "media": "The Information",
+    "title": "U.S. Lawmaker Ro Khanna Urges Chinese Labs to Help Pace Frontier AI",
+    "link": "https://www.theinformation.com/briefings/u-s-lawmaker-ro-khanna-urges-chinese-labs-help-pace-frontier-ai",
+    "canonical_url": "https://www.theinformation.com/briefings/u-s-lawmaker-ro-khanna-urges-chinese-labs-help-pace-frontier-ai",
+    "published_at": "2026-09-17T17:41:59",
+    "summary": "Ro Khanna, a Democratic congressman for Silicon Valley, has sent letters to Chinese AI companies including Alibaba Group, DeepSeek and Moonshot, requesting their commitments to join American AI labs in a binding international agreement to pace the development of the technology. Khanna, a ranking ...",
+    "score": 6,
+    "score_breakdown": {
+      "total_score": 6,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 7,
+    "is_primary": false
   }
 ]

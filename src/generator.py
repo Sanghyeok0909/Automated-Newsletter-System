@@ -4,6 +4,24 @@ import sys
 from datetime import datetime
 from html import escape as html_escape
 
+# Ensure local imports work whether executed from root or src/
+current_dir = os.path.dirname(os.path.abspath(__file__))
+if current_dir not in sys.path:
+    sys.path.insert(0, current_dir)
+
+try:
+    from config import ARTICLES_PER_PUBLISHER, PUBLISHERS, PUBLISHER_BY_NAME
+except ImportError:
+    ARTICLES_PER_PUBLISHER = 5
+    PUBLISHERS = [
+        {"name": "The Verge", "slug": "verge", "mark": "V", "color": "#e0005a"},
+        {"name": "TechCrunch", "slug": "techcrunch", "mark": "TC", "color": "#029924"},
+        {"name": "Ars Technica", "slug": "arstechnica", "mark": "AT", "color": "#ff4e00"},
+        {"name": "MIT Tech Review", "slug": "mit", "mark": "MIT", "color": "#333333"},
+        {"name": "The Information", "slug": "theinformation", "mark": "TI", "color": "#0d253f"}
+    ]
+    PUBLISHER_BY_NAME = {p["name"]: p for p in PUBLISHERS}
+
 def render_html_template(articles, today_str):
     """
     Discord-inspired macro-navigation & Toss-inspired tactile micro-interaction
@@ -11,17 +29,38 @@ def render_html_template(articles, today_str):
     Self-contained, zero external runtime dependencies.
     """
     media_brand_map = {
-        "The Verge": {"slug": "verge", "mark": "V", "name": "The Verge"},
-        "TechCrunch": {"slug": "techcrunch", "mark": "TC", "name": "TechCrunch"},
-        "Ars Technica": {"slug": "arstechnica", "mark": "AT", "name": "Ars Technica"},
-        "MIT Tech Review": {"slug": "mit", "mark": "MIT", "name": "MIT Tech Review"},
-        "The Information": {"slug": "theinformation", "mark": "TI", "name": "The Information"}
+        p["name"]: {"slug": p["slug"], "mark": p["mark"], "name": p["name"]}
+        for p in PUBLISHERS
     }
 
     media_counts = {}
     for art in articles:
         m = art.get("media", "Tech Media")
         media_counts[m] = media_counts.get(m, 0) + 1
+
+    # Read edition stats for honest shortfall reporting if available
+    edition_stats = {}
+    try:
+        stats_path = os.path.join(current_dir, "edition_stats.json")
+        if os.path.exists(stats_path):
+            with open(stats_path, "r", encoding="utf-8") as sf:
+                edition_stats = json.load(sf)
+    except Exception:
+        edition_stats = {}
+
+    # Calculate overall estimated reading time from actual text length
+    # Standard Korean reading speed: ~350 Korean characters per minute
+    total_chars = 0
+    for art in articles:
+        total_chars += len(art.get("korean_title", ""))
+        summ = art.get("summary_3_lines", [])
+        if isinstance(summ, list):
+            total_chars += sum(len(str(s)) for s in summ)
+        else:
+            total_chars += len(str(summ))
+        total_chars += len(art.get("business_insight", ""))
+
+    total_reading_minutes = max(1, round(total_chars / 350)) if articles else 0
 
     # Generate article cards
     article_cards = []
@@ -44,6 +83,10 @@ def render_html_template(articles, today_str):
         elif isinstance(k_summary, str):
             summary_items += f'              <li class="summary-bullet">{html_escape(k_summary)}</li>\n'
             summary_text_raw = k_summary
+
+        # Individual card reading time derived from article content
+        card_chars = len(k_title) + len(summary_text_raw) + len(insight)
+        card_seconds = max(20, round(card_chars / 6.0))
 
         # Plain search index attribute
         search_blob = f"{k_title} {media} {summary_text_raw} {insight}".lower()
@@ -84,7 +127,7 @@ def render_html_template(articles, today_str):
             <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('{link}', this)" aria-label="원문 기사 링크 복사">
               🔗 링크 복사
             </button>
-            <span class="reading-time">소요시간 약 45초 (예상)</span>
+            <span class="reading-time">소요시간 약 {card_seconds}초 (예상)</span>
           </div>
         </article>"""
         article_cards.append(card_html)
@@ -92,18 +135,12 @@ def render_html_template(articles, today_str):
     cards_html_content = "\n\n".join(article_cards)
 
     # Dynamic publisher channels in sidebar
-    monitored_sources = [
-        ("The Verge", "verge"),
-        ("TechCrunch", "techcrunch"),
-        ("Ars Technica", "arstechnica"),
-        ("MIT Tech Review", "mit"),
-        ("The Information", "theinformation")
-    ]
-
     channel_items = []
-    for s_name, s_slug in monitored_sources:
+    for pub in PUBLISHERS:
+        s_name = pub["name"]
+        s_slug = pub["slug"]
         cnt = media_counts.get(s_name, 0)
-        mark = media_brand_map[s_name]["mark"]
+        mark = pub["mark"]
         channel_items.append(f"""        <button type="button" class="channel-item" data-channel="{s_slug}" onclick="filterFeed('{s_slug}', this)">
           <div class="channel-left">
             <span class="channel-mark-badge {s_slug}">{mark}</span>
@@ -113,14 +150,29 @@ def render_html_template(articles, today_str):
         </button>""")
     channel_items_html = "\n".join(channel_items)
 
-    # Dynamic metadata source items
+    # Dynamic metadata source items with truthful status reporting
     source_status_items = []
-    for s_name, s_slug in monitored_sources:
+    for pub in PUBLISHERS:
+        s_name = pub["name"]
         cnt = media_counts.get(s_name, 0)
-        if cnt > 0:
-            badge = f'<span class="status-badge-active" title="{cnt}건 수집 완료">{cnt}건 정상 🟢</span>'
+        p_stat = edition_stats.get(s_name, {})
+        target = p_stat.get("target", ARTICLES_PER_PUBLISHER)
+        reason = p_stat.get("status")
+
+        if cnt >= target:
+            badge = f'<span class="status-badge-active" title="{cnt}/{target}건 큐레이션 완료">{cnt}/{target}건 완료 🟢</span>'
+        elif cnt > 0:
+            if reason == "candidate_shortage":
+                desc = "기사 부족"
+            elif reason == "analysis_failure":
+                desc = "일부 분석 실패"
+            else:
+                desc = "부분 수집"
+            badge = f'<span class="status-badge-warning" title="{cnt}/{target}건 ({desc})">{cnt}/{target}건 · {desc} 🟡</span>'
         else:
-            badge = '<span class="status-badge-warning" title="수집된 기사 없음">0건 누락/경고 🟡</span>'
+            desc = "수집 실패" if reason == "source_retrieval_failure" else "기사 없음"
+            badge = f'<span class="status-badge-error" title="0/{target}건 ({desc})">0/{target}건 · {desc} 🔴</span>'
+
         source_status_items.append(f"""      <div class="feed-status-item">
         <span class="status-source-name">{html_escape(s_name)}</span>
         {badge}
@@ -989,12 +1041,19 @@ def render_html_template(articles, today_str):
     .status-badge-active {{
       color: #23a55a;
       font-size: 0.73rem;
+      font-weight: 700;
     }}
 
     .status-badge-warning {{
       color: #f59f00;
       font-size: 0.73rem;
-      font-weight: 800;
+      font-weight: 700;
+    }}
+
+    .status-badge-error {{
+      color: #fa5252;
+      font-size: 0.73rem;
+      font-weight: 700;
     }}
 
     /* Toast Notification */
@@ -1223,7 +1282,7 @@ def render_html_template(articles, today_str):
       </div>
       <div class="metric-card">
         <span class="metric-label">예상 리딩 소요시간</span>
-        <span class="metric-value">약 3분</span>
+        <span class="metric-value">약 {total_reading_minutes}분</span>
         <span class="metric-subtext">{len(articles)}개 기사 정독 기준</span>
       </div>
 
