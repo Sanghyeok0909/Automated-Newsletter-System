@@ -25,7 +25,9 @@ from config import (
     BUSINESS_SIGNALS,
     DEVELOPMENT_SIGNALS,
     ORIGINAL_SIGNALS,
-    PROMOTIONAL_SIGNALS,
+    FINANCIAL_MARKET_TOKENS,
+    SHOPPING_DEAL_REGEX,
+    PROMOTIONAL_SUBSTRINGS,
     LOW_SIGNAL_TITLES
 )
 
@@ -64,7 +66,9 @@ def canonicalize_url(url):
 
 def is_eligible_candidate(title, summary):
     """
-    Filters out promotional content, deals, and trivial/login stubs.
+    Filters out promotional shopping deals and trivial/login stubs,
+    while explicitly preserving genuine financial, market, and business reporting
+    (e.g., 'CoreWeave Prices $3.7B Convertible Bond Offering').
     """
     clean_t = title.strip().lower()
     if len(clean_t) < 10:
@@ -76,9 +80,23 @@ def is_eligible_candidate(title, summary):
             return False
 
     combined = f"{clean_t} {summary.lower()}"
-    for promo in PROMOTIONAL_SIGNALS:
+
+    # Genuine financial / market reporting protection
+    is_financial = any(tok in combined for tok in FINANCIAL_MARKET_TOKENS)
+    if is_financial:
+        if "affiliate commission" in combined or "promo code" in combined:
+            return False
+        return True
+
+    # Check for shopping deal regex match
+    if SHOPPING_DEAL_REGEX.search(combined):
+        return False
+
+    # Check for promotional substrings
+    for promo in PROMOTIONAL_SUBSTRINGS:
         if promo in combined:
             return False
+
     return True
 
 def score_article(title, summary, pub_date, now=None):

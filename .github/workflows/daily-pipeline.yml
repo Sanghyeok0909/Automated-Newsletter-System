@@ -8,6 +8,12 @@ on:
     # 매일 UTC 21:17 (KST 기준 다음날 오전 6:17) 자동 실행 (트래픽 분산 최적화)
     - cron: '17 21 * * *'
   workflow_dispatch: # 수동 실행 허용 버튼
+    inputs:
+      force_production_refresh:
+        description: 'Force full live feed fetch and Gemini analysis'
+        required: false
+        default: true
+        type: boolean
 
 # 워크플로우 최상단 권한 설정: GitHub Pages 배포 필수 권한
 permissions:
@@ -24,8 +30,10 @@ jobs:
   # 1. 빌드 및 데이터 생성 Job
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     env:
       TZ: 'Asia/Seoul'
+      PYTHONUNBUFFERED: '1'
 
     steps:
       - name: Checkout Repository
@@ -42,18 +50,40 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Execute Autonomous Pipeline
+      - name: Run Focused Validation Tests
+        run: |
+          echo "Running unit and mock regression test suite..."
+          python -m unittest discover tests
+
+      # Live Gemini Analysis only runs on scheduled daily cron or manual workflow_dispatch
+      # Push events perform code validation and static generation to protect daily quota
+      - name: Execute Autonomous Pipeline (Live Curation)
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           echo "Step 1: Fetching target media feeds..."
           python src/fetcher.py
           
-          echo "Step 2: Analyzing with Gemini AI..."
+          echo "Step 2: Analyzing with Gemini AI (Bounded Batching)..."
           python src/analyzer.py
           
           echo "Step 3: Generating Newsletter artifacts..."
           python src/generator.py
+
+      - name: Build / Validate Static Site (Push Events)
+        if: github.event_name == 'push'
+        run: |
+          echo "Validating static newsletter build from repository data..."
+          python src/generator.py
+
+      # Validate generated artifacts exist and are non-empty before uploading
+      - name: Validate Deployment Artifacts
+        run: |
+          if [ ! -s "dist/index.html" ]; then
+            echo "Critical Error: dist/index.html is missing or empty!"
+            exit 1
+          fi
 
       # GitHub Pages 배포 아티팩트 업로드 (dist 폴더 대상)
       - name: Upload artifact
@@ -65,6 +95,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

@@ -3,10 +3,24 @@ Zero-Capital Newsletter Configuration
 Central authoritative settings for candidate retrieval, ranking, analysis, and generation.
 """
 
+import os
+import re
+
 # Authoritative Selection Target
 ARTICLES_PER_PUBLISHER = 5
 CANDIDATES_PER_PUBLISHER = 20
 FRESHNESS_HOURS = 24
+BATCH_SIZE = 5
+
+# LLM Configuration & Bounds
+# Verified standard models in Google Gemini API
+PRIMARY_MODEL = "gemini-1.5-flash"
+FALLBACK_MODEL = "gemini-2.0-flash"
+VERIFIED_MODELS = [PRIMARY_MODEL, FALLBACK_MODEL]
+
+API_TIMEOUT_SECONDS = 45.0
+MAX_BATCH_RETRIES = 1
+RATE_LIMIT_DELAY_SECONDS = 4.0
 
 # Canonical Publishers Registry
 PUBLISHERS = [
@@ -59,7 +73,6 @@ TARGET_FEEDS = {p["name"]: p["direct_rss"] for p in PUBLISHERS}
 GOOGLE_NEWS_FEEDS = {p["name"]: p["google_news_rss"] for p in PUBLISHERS}
 
 # Deterministic Ranking Rubric Configuration
-# Component 1: Material industry, market, or public impact (0–35)
 IMPACT_SIGNALS = [
     # Regulatory, antitrust, government & national security
     "antitrust", "lawsuit", "sues", "ftc", "doj", "european union", "eu", "dma", "gdpr",
@@ -74,7 +87,6 @@ IMPACT_SIGNALS = [
     "openai", "anthropic", "google deepmind", "meta ai", "apple intelligence", "nvidia"
 ]
 
-# Component 2: Relevance to technology and business decisions (0–25)
 BUSINESS_SIGNALS = [
     "enterprise", "b2b", "commercialization", "monetization", "subscription", "pricing",
     "developer", "tooling", "api", "cloud", "aws", "azure", "infrastructure",
@@ -82,24 +94,32 @@ BUSINESS_SIGNALS = [
     "robotics", "humanoid", "autonomous", "energy grid", "nuclear", "data center"
 ]
 
-# Component 3: New, substantive developments supported by evidence (0–20)
 DEVELOPMENT_SIGNALS = [
     "launches", "unveils", "announces", "releases", "introduces", "rolls out",
     "open-source", "weights", "benchmark", "breakthrough", "architecture", "paper",
     "patent", "scientific discovery", "clinical"
 ]
 
-# Component 5: Original reporting or distinctive evidence (0–10)
 ORIGINAL_SIGNALS = [
     "exclusive", "scoop", "investigation", "sources say", "internal memo",
     "internal documents", "deep dive", "report:", "analysis:", "teardown"
 ]
 
-# Exclusions / Penalties (Promotional, shopping, coupons, trivial login stubs)
-PROMOTIONAL_SIGNALS = [
-    "deal", "deals", "coupon", "promo code", "discount", "save $", "% off",
-    "gift guide", "buying guide", "roundup: best", "cheap", "sponsored",
-    "partner content", "affiliate", "review:", "best tv", "best laptop", "best phone"
+# Financial / Market reporting whitelist tokens (these prevent accidental promotional tagging)
+FINANCIAL_MARKET_TOKENS = [
+    "bond", "bonds", "convertible", "offering", "ipo", "shares", "stock", "stocks",
+    "notes", "debt", "valuation", "fund", "funding", "earnings", "quarterly", "revenue",
+    "acquisition", "billion", "$b", "million", "$m", "market cap", "treasury", "yield"
+]
+
+# True Shopping / Commercial promotional patterns
+SHOPPING_DEAL_REGEX = re.compile(
+    r'\b(save \$\d+|\d+%\s*off|promo codes?|discount codes?|coupons?|gift guides?|buying guides?|buyer\'s guides?|roundup:?\s*best|lowest prices?|best prices? on|affiliate commission|best prime day)\b',
+    re.IGNORECASE
+)
+
+PROMOTIONAL_SUBSTRINGS = [
+    "sponsored by", "partner content", "review: our top", "cheap tech deals"
 ]
 
 LOW_SIGNAL_TITLES = [
