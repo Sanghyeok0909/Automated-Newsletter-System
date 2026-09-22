@@ -1540,12 +1540,42 @@ def generate_newsletter():
         print("[Critical Error] translated_articles.json not found. Run analyzer.py first.", file=sys.stderr)
         sys.exit(1)
 
-    # Fail-Fast: If articles array is empty, do not exit silently
-    if not articles:
-        print("[Critical Error] translated_articles.json is empty. Nothing to publish.", file=sys.stderr)
-        sys.exit(1)
-
     today_str = datetime.now().strftime("%Y-%m-%d")
+
+    # Graceful degradation: if analyzer flagged quota_exhausted
+    if isinstance(articles, dict) and articles.get("quota_exhausted"):
+        print(f"[Graceful Degradation] Free tier quota exhausted. Fallback already active for {today_str}. Exiting cleanly with code 0.")
+        sys.exit(0)
+
+    # Graceful degradation: If articles array is empty
+    if not articles:
+        os.makedirs("dist", exist_ok=True)
+        fallback_md_path = f"dist/newsletter-{today_str}.md"
+        fallback_md = f"# Daily Tech Insights: {today_str}\n\n"
+        fallback_md += "> 오늘은 무료 API 할당량 소진으로 인해 뉴스레터 발행을 쉬어갑니다. 내일 다시 찾아뵙겠습니다.\n"
+        with open(fallback_md_path, "w", encoding="utf-8") as f:
+            f.write(fallback_md)
+
+        # Preserve existing valid index.html if present, else write minimal fallback
+        index_path = "dist/index.html"
+        if not os.path.exists(index_path) or os.path.getsize(index_path) == 0:
+            fallback_html = f"""<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Tech Insights: {today_str}</title>
+</head>
+<body>
+  <h1>Daily Tech Insights: {today_str}</h1>
+  <p>오늘은 무료 API 할당량 소진으로 인해 뉴스레터 발행을 쉬어갑니다. 내일 다시 찾아뵙겠습니다.</p>
+</body>
+</html>"""
+            with open(index_path, "w", encoding="utf-8") as f:
+                f.write(fallback_html)
+
+        print(f"[Graceful Degradation] translated_articles.json is empty. Fallback created for {today_str}. Exiting cleanly with code 0.")
+        sys.exit(0)
 
     # 1. Build Markdown Format (Preserved for archives / Substack)
     md_content = f"# Daily Tech Insights: {today_str}\n\n"

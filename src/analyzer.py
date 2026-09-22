@@ -411,9 +411,47 @@ def analyze_articles():
     # If 0 articles analyzed across the ENTIRE run due to quota or failure
     if len(all_analyzed_articles) == 0:
         if daily_quota_circuit_broken:
-            log("[Quota Blocked] Zero articles analyzed due to Google Gemini Free Tier daily quota exhaustion.")
-            # Exit with code 2 so pipeline knows quota was exhausted
-            sys.exit(2)
+            log("[Graceful Fallback] Daily quota exhausted. Generating Out-of-Quota notice instead of failing.")
+            today_str = datetime.now().strftime("%Y-%m-%d")
+            os.makedirs("dist", exist_ok=True)
+            
+            md_path = f"dist/newsletter-{today_str}.md"
+            fallback_md = f"# Daily Tech Insights: {today_str}\n\n"
+            fallback_md += "> 오늘은 무료 API 할당량 소진으로 인해 뉴스레터 발행을 쉬어갑니다. 내일 다시 찾아뵙겠습니다.\n"
+            with open(md_path, "w", encoding="utf-8") as f:
+                f.write(fallback_md)
+
+            # Ensure index.html exists for GitHub Pages artifact upload
+            index_path = "dist/index.html"
+            if not os.path.exists(index_path) or os.path.getsize(index_path) == 0:
+                fallback_html = f"""<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Tech Insights: {today_str}</title>
+  <style>
+    body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f172a; color: #f8fafc; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 20px; box-sizing: border-box; }}
+    .card {{ background: #1e293b; border: 1px solid #334155; border-radius: 16px; padding: 40px; max-width: 600px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.5); }}
+    h1 {{ font-size: 1.8rem; margin-bottom: 16px; color: #38bdf8; }}
+    p {{ font-size: 1.1rem; line-height: 1.6; color: #94a3b8; margin: 0; }}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Daily Tech Insights: {today_str}</h1>
+    <p>오늘은 무료 API 할당량 소진으로 인해 뉴스레터 발행을 쉬어갑니다.<br>내일 다시 찾아뵙겠습니다.</p>
+  </div>
+</body>
+</html>"""
+                with open(index_path, "w", encoding="utf-8") as f:
+                    f.write(fallback_html)
+
+            with open("src/translated_articles.json", "w", encoding="utf-8") as f:
+                json.dump({"quota_exhausted": True, "date": today_str}, f, ensure_ascii=False, indent=2)
+
+            log(f"[Success] Graceful fallback created at {md_path}. Exiting cleanly with code 0.")
+            sys.exit(0)
         else:
             log("[Critical Error] Failed to analyze any articles. Exiting.")
             sys.exit(1)
