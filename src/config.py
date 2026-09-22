@@ -15,7 +15,7 @@ BATCH_SIZE = 5
 # LLM Configuration & Bounds
 # Verified standard models in Google Gemini API
 PRIMARY_MODEL = "gemini-1.5-flash"
-FALLBACK_MODEL = "gemini-2.0-flash"
+FALLBACK_MODEL = "gemini-3.8-flash"
 VERIFIED_MODELS = [PRIMARY_MODEL, FALLBACK_MODEL]
 
 API_TIMEOUT_SECONDS = 45.0
