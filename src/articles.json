@@ -6,13 +6,13 @@
     "canonical_url": "https://www.theverge.com/entertainment/998302/paramount-warner-bros-discovery-merger-settlement",
     "published_at": "2026-09-21T17:42:15",
     "summary": "Paramount has reached a settlement with California and the 11 other states that sued to block its planned $110 billion acquisition of Warner Bros. Discovery. The settlement removes a major roadblock standing in the way of the massive media merger. According to the proposed consent decree filed with the court, it includes requirements like minimum […]",
-    "score": 53,
+    "score": 50,
     "score_breakdown": {
-      "total_score": 53,
+      "total_score": 50,
       "impact": 35,
       "business": 9,
       "development": 5,
-      "recency": 4,
+      "recency": 1,
       "original": 0
     },
     "rank": 1,
@@ -82,13 +82,13 @@
     "canonical_url": "https://www.theverge.com/transportation/998550/a-cut-cable-disrupted-hundreds-of-flights-across-the-us",
     "published_at": "2026-09-21T23:48:56",
     "summary": "Hundreds of flights were cancelled or delayed on Monday after construction crews in New Jersey accidentally cut a Verizon fiber cable used for air traffic control. FAA Administrator Bryan Bedford said that a circuit failure led to the discovery of the severed fiber cable, ABC News reports. The outage hammered airports across the Northeast, causing […]",
-    "score": 24,
+    "score": 21,
     "score_breakdown": {
-      "total_score": 24,
+      "total_score": 21,
       "impact": 12,
       "business": 0,
       "development": 5,
-      "recency": 7,
+      "recency": 4,
       "original": 0
     },
     "rank": 5,
@@ -120,13 +120,13 @@
     "canonical_url": "https://www.theverge.com/transportation/998259/gm-apple-carplay-android-auto-phone-mirror-google",
     "published_at": "2026-09-21T17:47:54",
     "summary": "Last week, GM announced a new software experience for its upcoming Chevy Silverado and GMC Sierra trucks, including a new look for Apple CarPlay and Android Auto, the popular phone mirroring systems that the automaker made a big deal about removing from its electric vehicles in 2023. Naturally, this led to some confusion about whether […]",
-    "score": 9,
+    "score": 6,
     "score_breakdown": {
-      "total_score": 9,
+      "total_score": 6,
       "impact": 0,
       "business": 0,
       "development": 5,
-      "recency": 4,
+      "recency": 1,
       "original": 0
     },
     "rank": 7,
@@ -267,25 +267,6 @@
   },
   {
     "media": "TechCrunch",
-    "title": "X will now tell users when governments have forced it to limit their posts",
-    "link": "https://techcrunch.com/2026/09/21/x-will-now-tell-users-when-governments-have-forced-it-to-limit-their-posts/",
-    "canonical_url": "https://techcrunch.com/2026/09/21/x-will-now-tell-users-when-governments-have-forced-it-to-limit-their-posts/",
-    "published_at": "2026-09-21T17:45:35",
-    "summary": "X is expanding its “Under the Hood” transparency tool to show when posts have been downranked or withheld in response to local laws and government demands, including which country made the request.",
-    "score": 18,
-    "score_breakdown": {
-      "total_score": 18,
-      "impact": 0,
-      "business": 9,
-      "development": 5,
-      "recency": 4,
-      "original": 0
-    },
-    "rank": 5,
-    "is_primary": true
-  },
-  {
-    "media": "TechCrunch",
     "title": "From first users to billions: Google’s Robby Stein joins TechCrunch Disrupt 2026",
     "link": "https://techcrunch.com/2026/09/21/from-first-users-to-billions-googles-robby-stein-joins-techcrunch-disrupt-2026/",
     "canonical_url": "https://techcrunch.com/2026/09/21/from-first-users-to-billions-googles-robby-stein-joins-techcrunch-disrupt-2026/",
@@ -300,8 +281,8 @@
       "recency": 1,
       "original": 0
     },
-    "rank": 6,
-    "is_primary": false
+    "rank": 5,
+    "is_primary": true
   },
   {
     "media": "TechCrunch",
@@ -317,6 +298,25 @@
       "business": 0,
       "development": 5,
       "recency": 10,
+      "original": 0
+    },
+    "rank": 6,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "X will now tell users when governments have forced it to limit their posts",
+    "link": "https://techcrunch.com/2026/09/21/x-will-now-tell-users-when-governments-have-forced-it-to-limit-their-posts/",
+    "canonical_url": "https://techcrunch.com/2026/09/21/x-will-now-tell-users-when-governments-have-forced-it-to-limit-their-posts/",
+    "published_at": "2026-09-21T17:45:35",
+    "summary": "X is expanding its “Under the Hood” transparency tool to show when posts have been downranked or withheld in response to local laws and government demands, including which country made the request.",
+    "score": 15,
+    "score_breakdown": {
+      "total_score": 15,
+      "impact": 0,
+      "business": 9,
+      "development": 5,
+      "recency": 1,
       "original": 0
     },
     "rank": 7,
@@ -386,13 +386,13 @@
     "canonical_url": "https://techcrunch.com/2026/09/21/the-man-who-built-apples-stores-doesnt-buy-silicon-valleys-bet-on-ai-shopping/",
     "published_at": "2026-09-21T23:44:28",
     "summary": "Apple Store architect Ron Johnson says Apple's secret sauce has always been its people.",
-    "score": 12,
+    "score": 9,
     "score_breakdown": {
-      "total_score": 12,
+      "total_score": 9,
       "impact": 0,
       "business": 0,
       "development": 5,
-      "recency": 7,
+      "recency": 4,
       "original": 0
     },
     "rank": 11,
@@ -666,6 +666,25 @@
   },
   {
     "media": "MIT Tech Review",
+    "title": "Don’t be fooled by this summer of AI hype",
+    "link": "https://www.technologyreview.com/2026/09/22/1144867/dont-be-fooled-summer-ai-hype/",
+    "canonical_url": "https://www.technologyreview.com/2026/09/22/1144867/dont-be-fooled-summer-ai-hype/",
+    "published_at": "2026-09-22T11:04:51",
+    "summary": "It’s been a busy few months for AI hype. At the end of April, Anthropic claimed that its model Claude Mythos is better at finding software vulnerabilities than most security experts. Then we had the OpenAI–Hugging Face hacking incident, after which Anthropic (proudly) and Meta (reluctantly) disclosed similar incidents involving their models. This was followed…",
+    "score": 39,
+    "score_breakdown": {
+      "total_score": 39,
+      "impact": 24,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true
+  },
+  {
+    "media": "MIT Tech Review",
     "title": "The Download: investigating deaths at the US border’s “virtual wall”",
     "link": "https://www.technologyreview.com/2026/09/21/1144834/the-download-investigating-deaths-at-the-us-borders-virtual-wall/",
     "canonical_url": "https://www.technologyreview.com/2026/09/21/1144834/the-download-investigating-deaths-at-the-us-borders-virtual-wall/",
@@ -680,7 +699,7 @@
       "recency": 1,
       "original": 0
     },
-    "rank": 1,
+    "rank": 2,
     "is_primary": true
   },
   {
@@ -699,7 +718,7 @@
       "recency": 1,
       "original": 0
     },
-    "rank": 2,
+    "rank": 3,
     "is_primary": true
   },
   {
@@ -718,7 +737,7 @@
       "recency": 1,
       "original": 5
     },
-    "rank": 3,
+    "rank": 4,
     "is_primary": true
   },
   {
@@ -737,7 +756,7 @@
       "recency": 1,
       "original": 5
     },
-    "rank": 4,
+    "rank": 5,
     "is_primary": true
   },
   {
@@ -756,8 +775,8 @@
       "recency": 1,
       "original": 0
     },
-    "rank": 5,
-    "is_primary": true
+    "rank": 6,
+    "is_primary": false
   },
   {
     "media": "The Information",
@@ -780,25 +799,6 @@
   },
   {
     "media": "The Information",
-    "title": "SB Energy Faces Investor Skepticism in IPO, Report Says",
-    "link": "https://www.theinformation.com/briefings/sb-energy-faces-investor-skepticism-ipo-report-says",
-    "canonical_url": "https://www.theinformation.com/briefings/sb-energy-faces-investor-skepticism-ipo-report-says",
-    "published_at": "2026-09-21T23:20:25",
-    "summary": "SB Energy’s initial public offering is facing investor skepticism, The New York Times reported Monday. The SoftBank majority-owned company is planning to raise $5 billion to $7 billion in a public offering to help develop a massive data center complex OpenAI plans to lease, which is set to be ...",
-    "score": 56,
-    "score_breakdown": {
-      "total_score": 56,
-      "impact": 35,
-      "business": 9,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 2,
-    "is_primary": true
-  },
-  {
-    "media": "The Information",
     "title": "Z.ai Open-Sources ZCode After Data Uploading Scandal",
     "link": "https://www.theinformation.com/briefings/z-ai-open-sources-zcode-data-uploading-scandal",
     "canonical_url": "https://www.theinformation.com/briefings/z-ai-open-sources-zcode-data-uploading-scandal",
@@ -813,7 +813,7 @@
       "recency": 10,
       "original": 0
     },
-    "rank": 3,
+    "rank": 2,
     "is_primary": true
   },
   {
@@ -830,6 +830,25 @@
       "business": 18,
       "development": 13,
       "recency": 10,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "SB Energy Faces Investor Skepticism in IPO, Report Says",
+    "link": "https://www.theinformation.com/briefings/sb-energy-faces-investor-skepticism-ipo-report-says",
+    "canonical_url": "https://www.theinformation.com/briefings/sb-energy-faces-investor-skepticism-ipo-report-says",
+    "published_at": "2026-09-21T23:20:25",
+    "summary": "SB Energy’s initial public offering is facing investor skepticism, The New York Times reported Monday. The SoftBank majority-owned company is planning to raise $5 billion to $7 billion in a public offering to help develop a massive data center complex OpenAI plans to lease, which is set to be ...",
+    "score": 53,
+    "score_breakdown": {
+      "total_score": 53,
+      "impact": 35,
+      "business": 9,
+      "development": 5,
+      "recency": 4,
       "original": 0
     },
     "rank": 4,
@@ -932,6 +951,25 @@
   },
   {
     "media": "The Information",
+    "title": "China Probes DeepSeek, Moonshot Over Potential Data Leaks to Anthropic",
+    "link": "https://www.theinformation.com/articles/china-probes-deepseek-moonshot-potential-data-leaks-anthropic",
+    "canonical_url": "https://www.theinformation.com/articles/china-probes-deepseek-moonshot-potential-data-leaks-anthropic",
+    "published_at": "2026-09-22T11:18:07",
+    "summary": "China’s internet regulator is investigating DeepSeek and Moonshot AI after Anthropic alleged both companies had been routing sensitive user data to Claude models, according to people with knowledge of the matter. In a 154-page report published on Sept. 10, Anthropic detailed how seven Chinese companies were using Claude illicitly on a widespread scale. In one example, Anthropic alleged that DeepSeek relayed requests from engineers building a police surveillance system to Claude.",
+    "score": 27,
+    "score_breakdown": {
+      "total_score": 27,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 10,
+    "is_primary": false
+  },
+  {
+    "media": "The Information",
     "title": "CrowdStrike and Okta Trade at Big Premiums Despite Unproven AI Payoff",
     "link": "https://www.theinformation.com/articles/crowdstrike-okta-trade-big-premiums-despite-unproven-ai-payoff",
     "canonical_url": "https://www.theinformation.com/articles/crowdstrike-okta-trade-big-premiums-despite-unproven-ai-payoff",
@@ -946,7 +984,7 @@
       "recency": 1,
       "original": 0
     },
-    "rank": 10,
+    "rank": 11,
     "is_primary": false
   },
   {
@@ -965,7 +1003,7 @@
       "recency": 1,
       "original": 0
     },
-    "rank": 11,
+    "rank": 12,
     "is_primary": false
   },
   {
@@ -984,7 +1022,7 @@
       "recency": 7,
       "original": 5
     },
-    "rank": 12,
+    "rank": 13,
     "is_primary": false
   },
   {
@@ -1002,25 +1040,6 @@
       "development": 5,
       "recency": 4,
       "original": 5
-    },
-    "rank": 13,
-    "is_primary": false
-  },
-  {
-    "media": "The Information",
-    "title": "Amazon Blocks Meta’s Muse Agent",
-    "link": "https://www.theinformation.com/briefings/amazon-blocks-metas-muse-agent",
-    "canonical_url": "https://www.theinformation.com/briefings/amazon-blocks-metas-muse-agent",
-    "published_at": "2026-09-21T11:46:48",
-    "summary": "Amazon blocked Meta’s Muse personalized AI agent from accessing its shopping site, Amazon confirmed, saying that agents such as Muse “should operate openly and respect provider decisions about whether or not to participate.” The block appeared to even prevent Muse from browsing Amazon’s ...",
-    "score": 6,
-    "score_breakdown": {
-      "total_score": 6,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 1,
-      "original": 0
     },
     "rank": 14,
     "is_primary": false
