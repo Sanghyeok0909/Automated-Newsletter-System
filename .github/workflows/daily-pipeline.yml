@@ -17,7 +17,7 @@ on:
 
 # 워크플로우 최상단 권한 설정: GitHub Pages 배포 필수 권한
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -90,6 +90,14 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: './dist'
+
+      - name: Commit and push generated artifacts
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add dist/
+          git commit -m "chore(data): auto-generate daily newsletter" || exit 0
+          git push
 
   # 2. GitHub Pages 배포 전용 Job
   deploy:
