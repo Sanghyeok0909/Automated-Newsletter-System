@@ -30,7 +30,8 @@ PUBLISHERS = [
         "mark": "V",
         "color": "#e0005a",
         "direct_rss": "https://www.theverge.com/rss/index.xml",
-        "google_news_rss": "https://news.google.com/rss/search?q=site:theverge.com+when:1d&hl=en-US&gl=US&ceid=US:en"
+        "alt_rss": "https://www.theverge.com/rss/front-page/index.xml",
+        "google_news_rss": "https://news.google.com/rss/search?q=site:theverge.com+when:2d&hl=en-US&gl=US&ceid=US:en"
     },
     {
         "name": "TechCrunch",
@@ -38,7 +39,8 @@ PUBLISHERS = [
         "mark": "TC",
         "color": "#029924",
         "direct_rss": "https://techcrunch.com/feed/",
-        "google_news_rss": "https://news.google.com/rss/search?q=site:techcrunch.com+when:1d&hl=en-US&gl=US&ceid=US:en"
+        "alt_rss": "https://techcrunch.com/category/artificial-intelligence/feed/",
+        "google_news_rss": "https://news.google.com/rss/search?q=site:techcrunch.com+when:2d&hl=en-US&gl=US&ceid=US:en"
     },
     {
         "name": "Ars Technica",
@@ -46,7 +48,8 @@ PUBLISHERS = [
         "mark": "AT",
         "color": "#ff4e00",
         "direct_rss": "https://feeds.arstechnica.com/arstechnica/index",
-        "google_news_rss": "https://news.google.com/rss/search?q=site:arstechnica.com+when:1d&hl=en-US&gl=US&ceid=US:en"
+        "alt_rss": "https://arstechnica.com/feed/",
+        "google_news_rss": "https://news.google.com/rss/search?q=site:arstechnica.com+when:2d&hl=en-US&gl=US&ceid=US:en"
     },
     {
         "name": "MIT Tech Review",
@@ -54,7 +57,8 @@ PUBLISHERS = [
         "mark": "MIT",
         "color": "#333333",
         "direct_rss": "https://www.technologyreview.com/feed/",
-        "google_news_rss": "https://news.google.com/rss/search?q=site:technologyreview.com+when:1d&hl=en-US&gl=US&ceid=US:en"
+        "alt_rss": "https://www.technologyreview.com/topic/artificial-intelligence/feed/",
+        "google_news_rss": "https://news.google.com/rss/search?q=site:technologyreview.com+when:2d&hl=en-US&gl=US&ceid=US:en"
     },
     {
         "name": "The Information",
@@ -62,7 +66,8 @@ PUBLISHERS = [
         "mark": "TI",
         "color": "#0d253f",
         "direct_rss": "https://www.theinformation.com/feed",
-        "google_news_rss": "https://news.google.com/rss/search?q=site:theinformation.com+when:1d&hl=en-US&gl=US&ceid=US:en"
+        "alt_rss": "https://www.theinformation.com/feed",
+        "google_news_rss": "https://news.google.com/rss/search?q=site:theinformation.com+when:2d&hl=en-US&gl=US&ceid=US:en"
     }
 ]
 

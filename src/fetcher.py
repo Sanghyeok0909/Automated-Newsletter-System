@@ -1,4 +1,3 @@
-import urllib.request
 import urllib.parse
 import feedparser
 import json
@@ -6,6 +5,9 @@ import time
 import os
 import sys
 import hashlib
+import random
+import calendar
+import requests
 from datetime import datetime, timedelta, timezone
 from bs4 import BeautifulSoup
 
@@ -31,10 +33,30 @@ from config import (
     LOW_SIGNAL_TITLES
 )
 
-HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    'Accept': 'application/xml, text/xml, */*'
-}
+USER_AGENTS = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15"
+]
+
+def get_browser_headers(ua=None):
+    if not ua:
+        ua = random.choice(USER_AGENTS)
+    return {
+        'User-Agent': ua,
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.9,ko;q=0.8',
+        'Sec-Ch-Ua': '"Google Chrome";v="129", "Not=A?Brand";v="8", "Chromium";v="129"',
+        'Sec-Ch-Ua-Mobile': '?0',
+        'Sec-Ch-Ua-Platform': '"Windows"',
+        'Sec-Fetch-Dest': 'document',
+        'Sec-Fetch-Mode': 'navigate',
+        'Sec-Fetch-Site': 'none',
+        'Sec-Fetch-User': '?1',
+        'Upgrade-Insecure-Requests': '1'
+    }
 
 def clean_html(raw_html):
     if not raw_html:
@@ -157,14 +179,29 @@ def score_article(title, summary, pub_date, now=None):
         "original": score_original
     }
 
-def fetch_xml_data(url):
-    try:
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=15) as response:
-            return response.read()
-    except Exception as e:
-        print(f" -> Network Fetch Failed ({url[:60]}...): {e}")
-        return None
+def fetch_xml_data(url, max_retries=2):
+    session = requests.Session()
+    for attempt in range(max_retries + 1):
+        headers = get_browser_headers()
+        try:
+            resp = session.get(url, headers=headers, timeout=15)
+            if resp.status_code == 200:
+                content = resp.content
+                if b'<rss' in content.lower() or b'<feed' in content.lower() or b'<?xml' in content.lower():
+                    return content
+                else:
+                    print(f" -> [Non-XML Response] HTTP 200 but content is not XML ({url[:50]}...)")
+            elif resp.status_code in (403, 429):
+                print(f" -> [WAF/RateLimit] HTTP {resp.status_code} on attempt {attempt+1}/{max_retries+1} ({url[:50]}...)")
+            else:
+                print(f" -> [HTTP Error] HTTP {resp.status_code} ({url[:50]}...)")
+        except Exception as e:
+            print(f" -> [Network Fetch Failed] Attempt {attempt+1}/{max_retries+1} ({url[:50]}...): {e}")
+        
+        if attempt < max_retries:
+            delay = 2.0 + random.uniform(0.5, 1.5) * (attempt + 1)
+            time.sleep(delay)
+    return None
 
 def fetch_latest_articles():
     # Force cache invalidation: Purge any existing local cache files before fresh run
@@ -185,20 +222,27 @@ def fetch_latest_articles():
     for publisher in PUBLISHERS:
         media = publisher["name"]
         direct_url = publisher["direct_rss"]
+        alt_url = publisher.get("alt_rss")
         google_news_url = publisher["google_news_rss"]
 
-        print(f"Fetching candidates for {media}...")
+        print(f"\nFetching candidates for {media}...")
 
         # Tier 1: Direct RSS
         xml_data = fetch_xml_data(direct_url)
 
-        # Tier 2: Google News fallback if direct feed blocked or invalid
+        # Tier 2: Alternate RSS if direct feed blocked or invalid
         if not xml_data or (b'<rss' not in xml_data.lower() and b'<feed' not in xml_data.lower()):
-            print(f" -> Direct RSS blocked or non-XML. Falling back to Google News feed...")
+            if alt_url and alt_url != direct_url:
+                print(f" -> Direct RSS blocked or non-XML. Trying alternate feed: {alt_url[:60]}...")
+                xml_data = fetch_xml_data(alt_url)
+
+        # Tier 3: Google News fallback if direct & alternate feeds blocked or invalid
+        if not xml_data or (b'<rss' not in xml_data.lower() and b'<feed' not in xml_data.lower()):
+            print(f" -> Direct & Alt RSS blocked or non-XML. Falling back to Google News feed...")
             xml_data = fetch_xml_data(google_news_url)
 
         if not xml_data:
-            print(f" -> [Warning] Both direct and fallback feeds failed for {media}.")
+            print(f" -> [Warning] All feeds (direct, alternate, and Google News) failed for {media}.")
             diagnostic_stats[media] = {
                 "status": "retrieval_failure",
                 "raw_count": 0,
@@ -219,7 +263,7 @@ def fetch_latest_articles():
             if not (hasattr(entry, 'published_parsed') and entry.published_parsed):
                 continue
 
-            pub_date = datetime.fromtimestamp(time.mktime(entry.published_parsed), tz=timezone.utc)
+            pub_date = datetime.fromtimestamp(calendar.timegm(entry.published_parsed), tz=timezone.utc)
             if pub_date < freshness_threshold:
                 continue
 
@@ -277,7 +321,8 @@ def fetch_latest_articles():
         for idx, item in enumerate(selected_pool[:ARTICLES_PER_PUBLISHER]):
             print(f"    [Top {idx+1}] Score {item['score']} | {item['title'][:65]}")
 
-        time.sleep(1)
+        # Jitter delay between publishers to prevent triggering WAF burst limits
+        time.sleep(2.0 + random.uniform(0.5, 1.0))
 
     # Flatten candidates for serialization while marking primary vs backup
     serialized_articles = []

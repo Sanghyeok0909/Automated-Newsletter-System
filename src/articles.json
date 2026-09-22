@@ -1,110 +1,15 @@
 [
   {
     "media": "The Verge",
-    "title": "Can you forget how you feel about Meta?",
-    "link": "https://www.theverge.com/cs/features/991659/meta-mark-zuckerberg-future-glasses-ai-instagram",
-    "canonical_url": "https://www.theverge.com/cs/features/991659/meta-mark-zuckerberg-future-glasses-ai-instagram",
-    "published_at": "2026-09-22T01:00:01",
-    "summary": "In 2021, as a whistleblower emerged with dramatic allegations that Facebook was harming children, CEO Mark Zuckerberg posted a rebuttal on Facebook. “We care deeply about issues like safety, well-being and mental health. It’s difficult to see coverage that misrepresents our work and our motives,” he wrote in a note to Meta staff, which he […]",
-    "score": 24,
+    "title": "Paramount settles lawsuit blocking $110 billion Warner Bros. merger",
+    "link": "https://www.theverge.com/entertainment/998302/paramount-warner-bros-discovery-merger-settlement",
+    "canonical_url": "https://www.theverge.com/entertainment/998302/paramount-warner-bros-discovery-merger-settlement",
+    "published_at": "2026-09-21T17:42:15",
+    "summary": "Paramount has reached a settlement with California and the 11 other states that sued to block its planned $110 billion acquisition of Warner Bros. Discovery. The settlement removes a major roadblock standing in the way of the massive media merger. According to the proposed consent decree filed with the court, it includes requirements like minimum […]",
+    "score": 53,
     "score_breakdown": {
-      "total_score": 24,
-      "impact": 12,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 1,
-    "is_primary": true
-  },
-  {
-    "media": "The Verge",
-    "title": "Apple&#8217;s first live music venue is opening beneath its UK headquarters",
-    "link": "https://www.theverge.com/tech/998581/apple-music-hall-london-venue-battersea",
-    "canonical_url": "https://www.theverge.com/tech/998581/apple-music-hall-london-venue-battersea",
-    "published_at": "2026-09-21T23:35:54",
-    "summary": "Apple is preparing to open a new \"state-of-the-art\" live music venue in the UK, a 600-capacity space for hosting performances, recording sessions, and video broadcasts. The venue, called Apple Music Hall, is located underneath Apple's European headquarters in London's iconic Battersea Power Station, and is set to open next week on September 28th. Details about […]",
-    "score": 24,
-    "score_breakdown": {
-      "total_score": 24,
-      "impact": 12,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 2,
-    "is_primary": true
-  },
-  {
-    "media": "The Verge",
-    "title": "California tightens rules on AI data center energy and water use",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
-    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
-    "published_at": "2026-09-21T11:29:45",
-    "summary": "California Gov. Gavin Newsom has signed seven bills designed to prevent AI data centers from passing utility costs onto residents, as reported earlier by the Los Angeles Times. The package of laws requires the California Public Utilities Commission to introduce a new rate classification for data centers while forcing them to pay for upgrades to […]",
-    "score": 24,
-    "score_breakdown": {
-      "total_score": 24,
-      "impact": 0,
-      "business": 18,
-      "development": 5,
-      "recency": 1,
-      "original": 0
-    },
-    "rank": 3,
-    "is_primary": true
-  },
-  {
-    "media": "The Verge",
-    "title": "A cut cable disrupted hundreds of flights across the US",
-    "link": "https://www.theverge.com/transportation/998550/a-cut-cable-disrupted-hundreds-of-flights-across-the-us",
-    "canonical_url": "https://www.theverge.com/transportation/998550/a-cut-cable-disrupted-hundreds-of-flights-across-the-us",
-    "published_at": "2026-09-21T14:48:56",
-    "summary": "Hundreds of flights were cancelled or delayed on Monday after construction crews in New Jersey accidentally cut a Verizon fiber cable used for air traffic control. FAA Administrator Bryan Bedford said that a circuit failure led to the discovery of the severed fiber cable, ABC News reports. The outage hammered airports across the Northeast, causing […]",
-    "score": 18,
-    "score_breakdown": {
-      "total_score": 18,
-      "impact": 12,
-      "business": 0,
-      "development": 5,
-      "recency": 1,
-      "original": 0
-    },
-    "rank": 4,
-    "is_primary": true
-  },
-  {
-    "media": "The Verge",
-    "title": "Amazon wants to help the Colorado River, but we still don’t know how much water the company uses",
-    "link": "https://www.theverge.com/tech/998539/amazon-data-center-water-conservation-colorado-river",
-    "canonical_url": "https://www.theverge.com/tech/998539/amazon-data-center-water-conservation-colorado-river",
-    "published_at": "2026-09-21T14:15:32",
-    "summary": "Amazon plans to spend $20 million on water conservation projects along the Colorado River, a crucial but dwindling water supply for 40 million people in the Western US. The initiative comes as Amazon and other tech companies face mounting scrutiny over how much water their data centers use. Amazon has a goal of becoming water […]",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 9,
-      "development": 5,
-      "recency": 1,
-      "original": 0
-    },
-    "rank": 5,
-    "is_primary": true
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Morphotonics raises €40M to expand its display tech into data centers",
-    "link": "https://techcrunch.com/2026/09/21/morphotonics-raises-e40m-as-it-tk-tk-tk-t/",
-    "canonical_url": "https://techcrunch.com/2026/09/21/morphotonics-raises-e40m-as-it-tk-tk-tk-t/",
-    "published_at": "2026-09-21T21:00:00",
-    "summary": "Deeptech company Morphotonics raises €40M from investors including 3M Ventures, Innovation Industries, BOM, and Invest-NL.",
-    "score": 18,
-    "score_breakdown": {
-      "total_score": 18,
-      "impact": 0,
+      "total_score": 53,
+      "impact": 35,
       "business": 9,
       "development": 5,
       "recency": 4,
@@ -114,12 +19,677 @@
     "is_primary": true
   },
   {
+    "media": "The Verge",
+    "title": "Can you forget how you feel about Meta?",
+    "link": "https://www.theverge.com/cs/features/991659/meta-mark-zuckerberg-future-glasses-ai-instagram",
+    "canonical_url": "https://www.theverge.com/cs/features/991659/meta-mark-zuckerberg-future-glasses-ai-instagram",
+    "published_at": "2026-09-22T10:00:01",
+    "summary": "In 2021, as a whistleblower emerged with dramatic allegations that Facebook was harming children, CEO Mark Zuckerberg posted a rebuttal on Facebook. “We care deeply about issues like safety, well-being and mental health. It’s difficult to see coverage that misrepresents our work and our motives,” he wrote in a note to Meta staff, which he […]",
+    "score": 27,
+    "score_breakdown": {
+      "total_score": 27,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true
+  },
+  {
+    "media": "The Verge",
+    "title": "Apple&#8217;s first live music venue is opening beneath its UK headquarters",
+    "link": "https://www.theverge.com/tech/998581/apple-music-hall-london-venue-battersea",
+    "canonical_url": "https://www.theverge.com/tech/998581/apple-music-hall-london-venue-battersea",
+    "published_at": "2026-09-22T08:35:54",
+    "summary": "Apple is preparing to open a new \"state-of-the-art\" live music venue in the UK, a 600-capacity space for hosting performances, recording sessions, and video broadcasts. The venue, called Apple Music Hall, is located underneath Apple's European headquarters in London's iconic Battersea Power Station, and is set to open next week on September 28th. Details about […]",
+    "score": 27,
+    "score_breakdown": {
+      "total_score": 27,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true
+  },
+  {
+    "media": "The Verge",
+    "title": "California tightens rules on AI data center energy and water use",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
+    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
+    "published_at": "2026-09-21T20:29:45",
+    "summary": "California Gov. Gavin Newsom has signed seven bills designed to prevent AI data centers from passing utility costs onto residents, as reported earlier by the Los Angeles Times. The package of laws requires the California Public Utilities Commission to introduce a new rate classification for data centers while forcing them to pay for upgrades to […]",
+    "score": 27,
+    "score_breakdown": {
+      "total_score": 27,
+      "impact": 0,
+      "business": 18,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true
+  },
+  {
+    "media": "The Verge",
+    "title": "A cut cable disrupted hundreds of flights across the US",
+    "link": "https://www.theverge.com/transportation/998550/a-cut-cable-disrupted-hundreds-of-flights-across-the-us",
+    "canonical_url": "https://www.theverge.com/transportation/998550/a-cut-cable-disrupted-hundreds-of-flights-across-the-us",
+    "published_at": "2026-09-21T23:48:56",
+    "summary": "Hundreds of flights were cancelled or delayed on Monday after construction crews in New Jersey accidentally cut a Verizon fiber cable used for air traffic control. FAA Administrator Bryan Bedford said that a circuit failure led to the discovery of the severed fiber cable, ABC News reports. The outage hammered airports across the Northeast, causing […]",
+    "score": 24,
+    "score_breakdown": {
+      "total_score": 24,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 5,
+    "is_primary": true
+  },
+  {
+    "media": "The Verge",
+    "title": "Amazon wants to help the Colorado River, but we still don’t know how much water the company uses",
+    "link": "https://www.theverge.com/tech/998539/amazon-data-center-water-conservation-colorado-river",
+    "canonical_url": "https://www.theverge.com/tech/998539/amazon-data-center-water-conservation-colorado-river",
+    "published_at": "2026-09-21T23:15:32",
+    "summary": "Amazon plans to spend $20 million on water conservation projects along the Colorado River, a crucial but dwindling water supply for 40 million people in the Western US. The initiative comes as Amazon and other tech companies face mounting scrutiny over how much water their data centers use. Amazon has a goal of becoming water […]",
+    "score": 18,
+    "score_breakdown": {
+      "total_score": 18,
+      "impact": 0,
+      "business": 9,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 6,
+    "is_primary": false
+  },
+  {
+    "media": "The Verge",
+    "title": "GM can’t ‘bring back’ Apple CarPlay because it never left",
+    "link": "https://www.theverge.com/transportation/998259/gm-apple-carplay-android-auto-phone-mirror-google",
+    "canonical_url": "https://www.theverge.com/transportation/998259/gm-apple-carplay-android-auto-phone-mirror-google",
+    "published_at": "2026-09-21T17:47:54",
+    "summary": "Last week, GM announced a new software experience for its upcoming Chevy Silverado and GMC Sierra trucks, including a new look for Apple CarPlay and Android Auto, the popular phone mirroring systems that the automaker made a big deal about removing from its electric vehicles in 2023. Naturally, this led to some confusion about whether […]",
+    "score": 9,
+    "score_breakdown": {
+      "total_score": 9,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 7,
+    "is_primary": false
+  },
+  {
+    "media": "The Verge",
+    "title": "Bungie says it’s ‘not done with Destiny’ and will bring back vaulted content",
+    "link": "https://www.theverge.com/news/998317/bungie-destiny-2-unvaulted-raids-campaigns-destinations",
+    "canonical_url": "https://www.theverge.com/news/998317/bungie-destiny-2-unvaulted-raids-campaigns-destinations",
+    "published_at": "2026-09-21T16:35:59",
+    "summary": "Months after seemingly giving up on Destiny 2, Bungie now says it's planning to restore vaulted content in the game like campaigns, destinations, and raids. The decision reverses the Destiny Content Vault that Bungie created six years ago, controversially removing older content from Destiny 2 that players had paid to access. \"We understand that removing […]",
+    "score": 6,
+    "score_breakdown": {
+      "total_score": 6,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 8,
+    "is_primary": false
+  },
+  {
+    "media": "The Verge",
+    "title": "Grab an Xbox controller and a $50 Xbox gift card together for just $80",
+    "link": "https://www.theverge.com/gadgets/998207/xbox-controller-chromebook-usbc-charger-deal-sale",
+    "canonical_url": "https://www.theverge.com/gadgets/998207/xbox-controller-chromebook-usbc-charger-deal-sale",
+    "published_at": "2026-09-21T15:13:32",
+    "summary": "Newegg is hosting a bundle that includes Microsoft’s wireless Xbox controller (in black) and a $50 digital Xbox gift card together for $80. Given that this model typically sits around $50 to $60 depending on the color you want, this is a fantastic value since it essentially knocks its price down to $30. Another way […]",
+    "score": 6,
+    "score_breakdown": {
+      "total_score": 6,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 9,
+    "is_primary": false
+  },
+  {
+    "media": "The Verge",
+    "title": "Can John Ternus find Apple’s next big thing?",
+    "link": "https://www.theverge.com/podcast/996874/apple-john-ternus-tim-cook-mark-gurman-future-ai-siri-iphone",
+    "canonical_url": "https://www.theverge.com/podcast/996874/apple-john-ternus-tim-cook-mark-gurman-future-ai-siri-iphone",
+    "published_at": "2026-09-21T14:00:00",
+    "summary": "Today, I’m talking with Mark Gurman, who is the world’s best-sourced Apple reporter — both as Bloomberg’s chief Apple correspondent and the host of the upcoming podcast Power On.  Earlier this month, Apple hosted its annual iPhone hardware event, virtually every detail of which was reported ahead of time by Mark. But this event was […]",
+    "score": 6,
+    "score_breakdown": {
+      "total_score": 6,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 10,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Oura’s $2.2B IPO is mostly a payday for existing shareholders",
+    "link": "https://techcrunch.com/2026/09/21/ouras-2-2b-ipo-is-mostly-a-payday-for-existing-shareholders/",
+    "canonical_url": "https://techcrunch.com/2026/09/21/ouras-2-2b-ipo-is-mostly-a-payday-for-existing-shareholders/",
+    "published_at": "2026-09-21T16:45:47",
+    "summary": "Forerunner Ventures plans to sell its entire stake in Oura for as much as $1.26 billion, according to Oura's latest IPO filing.",
+    "score": 30,
+    "score_breakdown": {
+      "total_score": 30,
+      "impact": 24,
+      "business": 0,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Morphotonics raises €40M to expand its display tech into data centers",
+    "link": "https://techcrunch.com/2026/09/21/morphotonics-raises-e40m-as-it-tk-tk-tk-t/",
+    "canonical_url": "https://techcrunch.com/2026/09/21/morphotonics-raises-e40m-as-it-tk-tk-tk-t/",
+    "published_at": "2026-09-22T06:00:00",
+    "summary": "Deeptech company Morphotonics raises €40M from investors including 3M Ventures, Innovation Industries, BOM, and Invest-NL.",
+    "score": 24,
+    "score_breakdown": {
+      "total_score": 24,
+      "impact": 0,
+      "business": 9,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true
+  },
+  {
     "media": "TechCrunch",
     "title": "OpenAI forms math advisory group as its AI resolves more than 100 open problems",
     "link": "https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/",
     "canonical_url": "https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/",
-    "published_at": "2026-09-21T11:15:58",
+    "published_at": "2026-09-21T20:15:58",
     "summary": "The group won't be given leeway to slow down or redirect OpenAI's ongoing mathematical research.",
+    "score": 21,
+    "score_breakdown": {
+      "total_score": 21,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Kairos Power gets up to $100M from Samsung group to build nuclear reactor for Google",
+    "link": "https://techcrunch.com/2026/09/21/kairos-power-gets-up-to-100m-from-samsung-group-to-build-nuclear-reactor-for-google/",
+    "canonical_url": "https://techcrunch.com/2026/09/21/kairos-power-gets-up-to-100m-from-samsung-group-to-build-nuclear-reactor-for-google/",
+    "published_at": "2026-09-21T18:23:05",
+    "summary": "Future Google supplier Kairos Power inked a deal with Samsung C&T to help build its first 50-megawatt nuclear power plant.",
+    "score": 18,
+    "score_breakdown": {
+      "total_score": 18,
+      "impact": 0,
+      "business": 9,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true
+  },
+  {
+    "media": "TechCrunch",
+    "title": "X will now tell users when governments have forced it to limit their posts",
+    "link": "https://techcrunch.com/2026/09/21/x-will-now-tell-users-when-governments-have-forced-it-to-limit-their-posts/",
+    "canonical_url": "https://techcrunch.com/2026/09/21/x-will-now-tell-users-when-governments-have-forced-it-to-limit-their-posts/",
+    "published_at": "2026-09-21T17:45:35",
+    "summary": "X is expanding its “Under the Hood” transparency tool to show when posts have been downranked or withheld in response to local laws and government demands, including which country made the request.",
+    "score": 18,
+    "score_breakdown": {
+      "total_score": 18,
+      "impact": 0,
+      "business": 9,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 5,
+    "is_primary": true
+  },
+  {
+    "media": "TechCrunch",
+    "title": "From first users to billions: Google’s Robby Stein joins TechCrunch Disrupt 2026",
+    "link": "https://techcrunch.com/2026/09/21/from-first-users-to-billions-googles-robby-stein-joins-techcrunch-disrupt-2026/",
+    "canonical_url": "https://techcrunch.com/2026/09/21/from-first-users-to-billions-googles-robby-stein-joins-techcrunch-disrupt-2026/",
+    "published_at": "2026-09-21T14:30:00",
+    "summary": "From first users to billions: Google’s Robby Stein joins TechCrunch Disrupt 2026. Lean in on this Builders Stage session. Save up to $200 before September 25.",
+    "score": 18,
+    "score_breakdown": {
+      "total_score": 18,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 6,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Meta deal will help plastics recycling startup MacroCycle build its first factory",
+    "link": "https://techcrunch.com/2026/09/22/meta-deal-will-help-plastics-recycling-startup-macrocycle-build-its-first-factory/",
+    "canonical_url": "https://techcrunch.com/2026/09/22/meta-deal-will-help-plastics-recycling-startup-macrocycle-build-its-first-factory/",
+    "published_at": "2026-09-22T11:00:00",
+    "summary": "Meta is giving plastic recycling a boost in a new deal with startup MacroCycle, which is building its first commercial plant.",
+    "score": 15,
+    "score_breakdown": {
+      "total_score": 15,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 7,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Corridor raises $25M seed to build a health benefits brokerage for SMBs",
+    "link": "https://techcrunch.com/2026/09/21/corridor-raises-25m-seed-to-build-a-health-benefits-brokerage-for-smbs/",
+    "canonical_url": "https://techcrunch.com/2026/09/21/corridor-raises-25m-seed-to-build-a-health-benefits-brokerage-for-smbs/",
+    "published_at": "2026-09-21T13:49:00",
+    "summary": "Corridor focuses on SMBs, which it says traditional brokerages often overlook because small accounts generate lower commissions than larger accounts.",
+    "score": 15,
+    "score_breakdown": {
+      "total_score": 15,
+      "impact": 0,
+      "business": 9,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 8,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "With Tabby, a former accountant is using AI to make accountants obsolete",
+    "link": "https://techcrunch.com/2026/09/21/with-tabby-a-former-accountant-is-using-ai-to-make-accountants-obsolete/",
+    "canonical_url": "https://techcrunch.com/2026/09/21/with-tabby-a-former-accountant-is-using-ai-to-make-accountants-obsolete/",
+    "published_at": "2026-09-21T16:38:51",
+    "summary": "Tabby is designed to be a real-time bookkeeping interface, handling clients’ paperwork as it gives them up-to-the-minute data on their business’s profit and loss.",
+    "score": 14,
+    "score_breakdown": {
+      "total_score": 14,
+      "impact": 0,
+      "business": 0,
+      "development": 13,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 9,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Where will the next breakout startup come from? Benchmark’s full partnership weighs in at TechCrunch Disrupt 2026",
+    "link": "https://techcrunch.com/2026/09/21/where-will-the-next-breakout-startup-come-from-benchmarks-full-partnership-weighs-in-at-techcrunch-disrupt-2026/",
+    "canonical_url": "https://techcrunch.com/2026/09/21/where-will-the-next-breakout-startup-come-from-benchmarks-full-partnership-weighs-in-at-techcrunch-disrupt-2026/",
+    "published_at": "2026-09-21T15:00:00",
+    "summary": "Where will the next breakout startup come from? Benchmark’s full partnership weighs in on the main stage at TechCrunch Disrupt 2026. Save up to $200 before September 25 at 11:59 p.m. PT. Register now.",
+    "score": 14,
+    "score_breakdown": {
+      "total_score": 14,
+      "impact": 0,
+      "business": 0,
+      "development": 13,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 10,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "The man who built Apple’s stores doesn’t buy Silicon Valley’s bet on AI shopping",
+    "link": "https://techcrunch.com/2026/09/21/the-man-who-built-apples-stores-doesnt-buy-silicon-valleys-bet-on-ai-shopping/",
+    "canonical_url": "https://techcrunch.com/2026/09/21/the-man-who-built-apples-stores-doesnt-buy-silicon-valleys-bet-on-ai-shopping/",
+    "published_at": "2026-09-21T23:44:28",
+    "summary": "Apple Store architect Ron Johnson says Apple's secret sauce has always been its people.",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 11,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Meta’s Muse is outpacing ChatGPT’s early mobile launch",
+    "link": "https://techcrunch.com/2026/09/21/metas-muse-is-outpacing-chatgpts-early-mobile-launch/",
+    "canonical_url": "https://techcrunch.com/2026/09/21/metas-muse-is-outpacing-chatgpts-early-mobile-launch/",
+    "published_at": "2026-09-21T19:19:21",
+    "summary": "Meta’s new AI agent Muse has racked up more downloads and daily active users in the U.S. and Canada than ChatGPT did over the same period after its mobile debut, according to new estimates from Appfigures.",
+    "score": 9,
+    "score_breakdown": {
+      "total_score": 9,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 12,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Meta’s AI agent has been blocked from using Amazon.com",
+    "link": "https://techcrunch.com/2026/09/21/metas-ai-agent-has-been-blocked-from-using-amazon-com/",
+    "canonical_url": "https://techcrunch.com/2026/09/21/metas-ai-agent-has-been-blocked-from-using-amazon-com/",
+    "published_at": "2026-09-21T17:55:18",
+    "summary": "Amazon has its own cohort of foundation models, along with one of the most popular inference platforms on the internet. As long as they're under no legal obligation to open the doors to Muse, why would they?",
+    "score": 9,
+    "score_breakdown": {
+      "total_score": 9,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 13,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Google’s $899 Googlebook is a bet that you’ll buy a new laptop for Gemini",
+    "link": "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
+    "canonical_url": "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
+    "published_at": "2026-09-21T14:39:22",
+    "summary": "Google’s AI-native Googlebook ties Gemini to the cursor, dictation, widgets, and other parts of the desktop experience.",
+    "score": 6,
+    "score_breakdown": {
+      "total_score": 6,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 14,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Meet the next wave of VCs judging Startup Battlefield 200 at TechCrunch Disrupt 2026",
+    "link": "https://techcrunch.com/2026/09/21/meet-the-next-wave-of-vcs-judging-startup-battlefield-200-at-techcrunch-disrupt-2026/",
+    "canonical_url": "https://techcrunch.com/2026/09/21/meet-the-next-wave-of-vcs-judging-startup-battlefield-200-at-techcrunch-disrupt-2026/",
+    "published_at": "2026-09-21T14:15:00",
+    "summary": "Meet the next wave of VCs judging the Startup Battlefield 200 contenders on the main stage at TechCrunch Disrupt 2026. Register by September 25 at 11:59 p.m. PT, to save up to $200 and to get a front-row seat to one of the most intense startup pitch competitions.",
+    "score": 6,
+    "score_breakdown": {
+      "total_score": 6,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 15,
+    "is_primary": false
+  },
+  {
+    "media": "Ars Technica",
+    "title": "California settles lawsuit against Paramount/Warner merger, angering advocates",
+    "link": "https://arstechnica.com/tech-policy/2026/09/california-settles-lawsuit-against-paramount-warner-merger-angering-advocates/",
+    "canonical_url": "https://arstechnica.com/tech-policy/2026/09/california-settles-lawsuit-against-paramount-warner-merger-angering-advocates/",
+    "published_at": "2026-09-21T16:15:26",
+    "summary": "State AGs had \"very strong\" case that merger is illegal, Lina Khan says.",
+    "score": 34,
+    "score_breakdown": {
+      "total_score": 34,
+      "impact": 24,
+      "business": 9,
+      "development": 0,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Review: Neagley is a worthy spinoff to megahit Reacher",
+    "link": "https://arstechnica.com/culture/2026/09/review-neagley-is-a-worthy-spinoff-to-megahit-reacher/",
+    "canonical_url": "https://arstechnica.com/culture/2026/09/review-neagley-is-a-worthy-spinoff-to-megahit-reacher/",
+    "published_at": "2026-09-21T13:53:46",
+    "summary": "It's a bit uneven in execution but still delivers as fast-paced, entertaining escapist fare.",
+    "score": 15,
+    "score_breakdown": {
+      "total_score": 15,
+      "impact": 0,
+      "business": 9,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Saudi Arabia wants a car industry, launches Ceer with two EVs",
+    "link": "https://arstechnica.com/cars/2026/09/saudi-arabia-wants-a-car-industry-launches-ceer-with-two-evs/",
+    "canonical_url": "https://arstechnica.com/cars/2026/09/saudi-arabia-wants-a-car-industry-launches-ceer-with-two-evs/",
+    "published_at": "2026-09-21T20:55:36",
+    "summary": "The new carmaker is a joint venture between the Saudi PIF and Foxconn.",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 8,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Military milestone: Ukrainian naval drone sinks Russian kamikaze drone boat",
+    "link": "https://arstechnica.com/gadgets/2026/09/military-milestone-ukrainian-naval-drone-sinks-russian-kamikaze-drone-boat/",
+    "canonical_url": "https://arstechnica.com/gadgets/2026/09/military-milestone-ukrainian-naval-drone-sinks-russian-kamikaze-drone-boat/",
+    "published_at": "2026-09-21T21:07:05",
+    "summary": "Drone boat battle occurs as Ukraine and Russia target Black Sea ports and ships.",
+    "score": 9,
+    "score_breakdown": {
+      "total_score": 9,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Trump rejects AI slowdown calls, launches \"AI Force\" instead",
+    "link": "https://arstechnica.com/ai/2026/09/trump-rejects-ai-slowdown-calls-launches-ai-force-instead/",
+    "canonical_url": "https://arstechnica.com/ai/2026/09/trump-rejects-ai-slowdown-calls-launches-ai-force-instead/",
+    "published_at": "2026-09-21T15:37:56",
+    "summary": "The president offered few details on what his proposed new AI Force would do.",
+    "score": 9,
+    "score_breakdown": {
+      "total_score": 9,
+      "impact": 0,
+      "business": 0,
+      "development": 8,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 5,
+    "is_primary": true
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Google confirms Gemini models hacked three companies in May 2026",
+    "link": "https://arstechnica.com/google/2026/09/google-confirms-gemini-models-hacked-three-companies-in-may-2026/",
+    "canonical_url": "https://arstechnica.com/google/2026/09/google-confirms-gemini-models-hacked-three-companies-in-may-2026/",
+    "published_at": "2026-09-21T16:57:26",
+    "summary": "A third-party cybersecurity firm accidentally gave experimental Gemini models access to the Internet.",
+    "score": 6,
+    "score_breakdown": {
+      "total_score": 6,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 6,
+    "is_primary": false
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Googlebooks launch October 4 starting at $899—here are the five models you can preorder today",
+    "link": "https://arstechnica.com/gadgets/2026/09/googlebook-laptops-launch-october-4-starting-at-899-preorders-for-five-models-live-today/",
+    "canonical_url": "https://arstechnica.com/gadgets/2026/09/googlebook-laptops-launch-october-4-starting-at-899-preorders-for-five-models-live-today/",
+    "published_at": "2026-09-21T13:00:11",
+    "summary": "Googlebooks offer premium hardware and deep smartphone integration, but you may not like the price.",
+    "score": 6,
+    "score_breakdown": {
+      "total_score": 6,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 7,
+    "is_primary": false
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Muse, Meta's extraordinarily privileged AI assistant, has a serious 0-day",
+    "link": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
+    "canonical_url": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
+    "published_at": "2026-09-21T22:24:38",
+    "summary": "A simple ClickFix attack is only one way to completely hijack the new agent.",
+    "score": 4,
+    "score_breakdown": {
+      "total_score": 4,
+      "impact": 0,
+      "business": 0,
+      "development": 0,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 8,
+    "is_primary": false
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Russel Vought will reportedly be given veto power over all NIH grants",
+    "link": "https://arstechnica.com/science/2026/09/trump-planning-to-hand-veto-power-over-nih-grants-to-political-appointee/",
+    "canonical_url": "https://arstechnica.com/science/2026/09/trump-planning-to-hand-veto-power-over-nih-grants-to-political-appointee/",
+    "published_at": "2026-09-21T16:40:26",
+    "summary": "Pending move comes over the objections of the NIH director.",
+    "score": 1,
+    "score_breakdown": {
+      "total_score": 1,
+      "impact": 0,
+      "business": 0,
+      "development": 0,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 9,
+    "is_primary": false
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Apple Mac mini review: The new M6 impresses, but the price hike is rough",
+    "link": "https://arstechnica.com/gadgets/2026/09/apple-m6-mac-mini-review-300-price-hike-spoils-a-nice-upgrade/",
+    "canonical_url": "https://arstechnica.com/gadgets/2026/09/apple-m6-mac-mini-review-300-price-hike-spoils-a-nice-upgrade/",
+    "published_at": "2026-09-21T13:00:24",
+    "summary": "The M4 Mac mini was one of Apple's best values. The $899 M6 mini, not so much.",
+    "score": 1,
+    "score_breakdown": {
+      "total_score": 1,
+      "impact": 0,
+      "business": 0,
+      "development": 0,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 10,
+    "is_primary": false
+  },
+  {
+    "media": "MIT Tech Review",
+    "title": "The Download: investigating deaths at the US border’s “virtual wall”",
+    "link": "https://www.technologyreview.com/2026/09/21/1144834/the-download-investigating-deaths-at-the-us-borders-virtual-wall/",
+    "canonical_url": "https://www.technologyreview.com/2026/09/21/1144834/the-download-investigating-deaths-at-the-us-borders-virtual-wall/",
+    "published_at": "2026-09-21T12:20:00",
+    "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. The US spent billions on border surveillance. Why can’t it catch people before they die? When José Morales Bernal crossed the border into the US in April 2024, the day before…",
+    "score": 18,
+    "score_breakdown": {
+      "total_score": 18,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true
+  },
+  {
+    "media": "MIT Tech Review",
+    "title": "The US spent billions on border surveillance. Why can’t it catch people before they die?",
+    "link": "https://www.technologyreview.com/2026/09/21/1144166/border-towers-surveillance-investigation/",
+    "canonical_url": "https://www.technologyreview.com/2026/09/21/1144166/border-towers-surveillance-investigation/",
+    "published_at": "2026-09-21T12:00:00",
+    "summary": "When José Morales Bernal crossed the border into the United States on April 8, 2024, the day before his 32nd birthday, it should have triggered a chain of technological alerts and human responses.  As he walked through the desert in southern New Mexico that morning, he was within range of three surveillance towers. Newly installed…",
     "score": 18,
     "score_breakdown": {
       "total_score": 18,
@@ -133,69 +703,50 @@
     "is_primary": true
   },
   {
-    "media": "TechCrunch",
-    "title": "Meta deal will help plastics recycling startup MacroCycle build its first factory",
-    "link": "https://techcrunch.com/2026/09/22/meta-deal-will-help-plastics-recycling-startup-macrocycle-build-its-first-factory/",
-    "canonical_url": "https://techcrunch.com/2026/09/22/meta-deal-will-help-plastics-recycling-startup-macrocycle-build-its-first-factory/",
-    "published_at": "2026-09-22T02:00:00",
-    "summary": "Meta is giving plastic recycling a boost in a new deal with startup MacroCycle, which is building its first commercial plant.",
-    "score": 12,
+    "media": "MIT Tech Review",
+    "title": "How we made the first comprehensive map of deaths along the US border’s “virtual wall”",
+    "link": "https://www.technologyreview.com/2026/09/21/1144161/border-towers-surveillance-methodology/",
+    "canonical_url": "https://www.technologyreview.com/2026/09/21/1144161/border-towers-surveillance-methodology/",
+    "published_at": "2026-09-21T12:00:00",
+    "summary": "Our 15-month investigation into death and surveillance along the US-Mexico border began with a simple question: Why did so many people die near government surveillance towers meant to help track and apprehend them? This story is part of Dying on Camera, a collaboration between MIT Technology Review and Times of San Diego. Journalists in both newsrooms spent the past…",
+    "score": 11,
     "score_breakdown": {
-      "total_score": 12,
+      "total_score": 11,
       "impact": 0,
       "business": 0,
       "development": 5,
-      "recency": 7,
-      "original": 0
+      "recency": 1,
+      "original": 5
     },
     "rank": 3,
     "is_primary": true
   },
   {
-    "media": "TechCrunch",
-    "title": "The man who built Apple’s stores doesn’t buy Silicon Valley’s bet on AI shopping",
-    "link": "https://techcrunch.com/2026/09/21/the-man-who-built-apples-stores-doesnt-buy-silicon-valleys-bet-on-ai-shopping/",
-    "canonical_url": "https://techcrunch.com/2026/09/21/the-man-who-built-apples-stores-doesnt-buy-silicon-valleys-bet-on-ai-shopping/",
-    "published_at": "2026-09-21T14:44:28",
-    "summary": "Apple Store architect Ron Johnson says Apple's secret sauce has always been its people.",
-    "score": 6,
+    "media": "MIT Tech Review",
+    "title": "4 ways to address the failures we found along the US border’s “virtual wall”",
+    "link": "https://www.technologyreview.com/2026/09/21/1144164/border-towers-surveillance-policy-recommendations/",
+    "canonical_url": "https://www.technologyreview.com/2026/09/21/1144164/border-towers-surveillance-policy-recommendations/",
+    "published_at": "2026-09-21T12:00:00",
+    "summary": "MIT Technology Review today published our investigation into how many people have died near the “virtual wall” of surveillance towers that the US government has installed along the US-Mexico border. We found cases of people who walked undetected through areas surveilled by advanced, AI-enabled towers and later died nearby, where their bodies remained unnoticed for…",
+    "score": 11,
     "score_breakdown": {
-      "total_score": 6,
+      "total_score": 11,
       "impact": 0,
       "business": 0,
       "development": 5,
       "recency": 1,
-      "original": 0
+      "original": 5
     },
     "rank": 4,
     "is_primary": true
   },
   {
-    "media": "Ars Technica",
-    "title": "Saudi Arabia wants a car industry, launches Ceer with two EVs",
-    "link": "https://arstechnica.com/cars/2026/09/saudi-arabia-wants-a-car-industry-launches-ceer-with-two-evs/",
-    "canonical_url": "https://arstechnica.com/cars/2026/09/saudi-arabia-wants-a-car-industry-launches-ceer-with-two-evs/",
-    "published_at": "2026-09-21T11:55:36",
-    "summary": "The new carmaker is a joint venture between the Saudi PIF and Foxconn.",
-    "score": 9,
-    "score_breakdown": {
-      "total_score": 9,
-      "impact": 0,
-      "business": 0,
-      "development": 8,
-      "recency": 1,
-      "original": 0
-    },
-    "rank": 1,
-    "is_primary": true
-  },
-  {
-    "media": "Ars Technica",
-    "title": "Military milestone: Ukrainian naval drone sinks Russian kamikaze drone boat",
-    "link": "https://arstechnica.com/gadgets/2026/09/military-milestone-ukrainian-naval-drone-sinks-russian-kamikaze-drone-boat/",
-    "canonical_url": "https://arstechnica.com/gadgets/2026/09/military-milestone-ukrainian-naval-drone-sinks-russian-kamikaze-drone-boat/",
-    "published_at": "2026-09-21T12:07:05",
-    "summary": "Drone boat battle occurs as Ukraine and Russia target Black Sea ports and ships.",
+    "media": "MIT Tech Review",
+    "title": "She died at the San Diego border. A surveillance camera was in plain sight",
+    "link": "https://www.technologyreview.com/2026/09/21/1144170/border-towers-surveillance-feature/",
+    "canonical_url": "https://www.technologyreview.com/2026/09/21/1144170/border-towers-surveillance-feature/",
+    "published_at": "2026-09-21T12:00:00",
+    "summary": "She had only walked for a couple of hours, and already she was lost.  It was early afternoon on Sept. 14, 2025, when 30-year-old Graciela Gómez Hernández crossed the border from the eastern edge of Tijuana into Southern California, sending voice messages to her mother and sister as she walked.  This story is part of Dying…",
     "score": 6,
     "score_breakdown": {
       "total_score": 6,
@@ -205,26 +756,26 @@
       "recency": 1,
       "original": 0
     },
-    "rank": 2,
+    "rank": 5,
     "is_primary": true
   },
   {
-    "media": "Ars Technica",
-    "title": "Muse, Meta's extraordinarily privileged AI assistant, has a serious 0-day",
-    "link": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
-    "canonical_url": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
-    "published_at": "2026-09-21T13:24:38",
-    "summary": "A simple ClickFix attack is only one way to completely hijack the new agent.",
-    "score": 1,
+    "media": "The Information",
+    "title": "The Real Cost of AI: A Survey of the Unpredictable Token Economics",
+    "link": "https://www.theinformation.com/articles/real-cost-ai-survey-unpredictable-token-economics",
+    "canonical_url": "https://www.theinformation.com/articles/real-cost-ai-survey-unpredictable-token-economics",
+    "published_at": "2026-09-21T16:04:42",
+    "summary": "For decades, enterprise software budgeting was a predictable exercise: negotiate a subscription fee, project the number of seats you need, move on. AI has broken that model. Pricing tied to tokens — the metered unit behind most AI billing — has turned technology spend into a variable cost, and an unpredictable one. The Information’s survey of 107 of our readers  - senior leaders and professionals (See Methodology) - finds that most companies haven’t gotten a handle on it: 60% say the cost trajectory of their AI initiatives is unpredictable, at the exact moment CFOs, boards and investors are demanding proof of ROI. 60%: “The cost trajectory of AI initiatives is unpredictable.” This piece draws on that survey and The Information’s Deep Research to examine where AI budgets are actually going, why token costs remain so hard to forecast, and what separates the companies that have managed AI spending from those still being surprised by their bills. The Bulk of the AI Budget Outside the hyperscalers, who are pouring billions into data centers , most companies put the bulk of their AI investment — 64% — into software, applications, and API models. (See Chart.) That reflects where ROI is actually realized, according to The Information: most businesses want solutions to specific problems, not infrastructure to manage. This 64% budget line includes the unpredictability factor, the token, which behaves unlike anything else in the technology budget. Let’s unpack the costs of different types of software. The classic subscription/SaaS model relies on per-seat licenses for enterprise systems of record and the cloud services that underpin them, such as CRM (Salesforce), ERP/HR and finance (SAP, Workday), and collaboration (Slack). Packaged AI apps and assistants, like ChatGPT or Microsoft Copilot, are also largely bought per seat. The flat seat price covers token usage but also limits what an AI assistant can do. The main drawback of seat-based licensing has always been waste: many paid seats sit idle or underused. The token consumption appears in the AI layer of independent digital agents that perform complex tasks rather than simply answering a query. These agents use metered, token-based pricing that scales with usage, making forecasting much harder, and they consume far more compute than basic chatbots. As AI shifts from chatbots to autonomous agents running in the background, the companies least practiced at controlling token usage are seeing the biggest surprises on their bills. That’s because such agents operate in loops, and a single inefficient prompt can snowball very quickly. For routine data manipulation and established workflows, traditional software is often still cheaper and more reliable than agentic AI. When budget predictability matters most, AI’s consumption-based pricing is a liability, not a feature. One survey respondent frames it as a balancing act: “We should be looking for the best of both worlds. Even with a reasonably implemented, small, hosted cloud environment, the cost per transaction for software is nothing like that of pure agent workloads. The cost of going to pure AI can be prohibitive. There must be a balance among human decisions, programmed software, and pure AI.” The Intersection of Token Consumption and Productivity Reader experience with AI productivity varies widely — even within the same industry. One respondent building a startup says, “With my agentic AI assistant, I am compressing what took me 3 years to build into 6 months.” A technology lawyer at a large enterprise draws a much tighter line, restricting AI to coding and software-vulnerability remediation. AI is useful for legal research, this reader says, but “the amount of quality control that I have to do with AI-generated content adds to the frustration I feel when having to explain to management why AI can’t solve all our problems.” Despite the variance, respondents were broadly positive on ROI: 60% say AI increases productivity, more than half say it returns more than it costs, and nearly half report lower internal labor costs. (See Chart) The intersection of “token economics” and workforce productivity has confounded business leaders and accounting departments. First, some companies have equated token consumption with productivity, a mistake. Token consumption itself is not a proxy for a worker’s productivity. More tokens don’t necessarily mean a better outcome. On the contrary, they can cause AI agents to loop, generating large volumes of responses that can run up compute costs and overwhelm a human. The crux of the issue is translating token consumption into productivity – not equating the two. Token consumption is an input, not an output. It’s the compute era’s equivalent of billable hours: easy to count, weakly correlated with value. Measure outcomes, not token metrics, with the caveat that outcomes are much harder to measure than tokens. Some metrics that are more useful than tokens to consider include task-completion units (the emerging standard), which count the tasks completed by its agents rather than the tokens processed; cycle-time compression for a given process; and revenue or cost attribution. AI Adoption and Regulatory Compliance “Regulatory compliance is slowing us down” has become one of the most common explanations for sluggish AI adoption. The smallest share of survey respondents, 17%, view regulatory compliance as an accelerant for AI adoption. As government regulations, data privacy laws, and corporate governance requirements increase, the cost to develop, run, and use AI rises significantly. Ensuring that AI acts safely and complies with enterprise parameters requires more “thinking” and therefore more tokens. This is largely because ensuring that models, especially agentic models, are secure, compliant, and safe requires immense computational overhead. While legal uncertainty and the number of regulations are genuine concerns, large  companies also face the buildout of AI bureaucracy, including chief AI officers, adoption dashboards, token budgets or governance councils, according to The Information. This bureaucracy is a mechanism to deploy AI at scale but it also obscures whether any of it pays for itself. The economics of AI, especially in the era of tokenization, can be confusing and the AI bureaucracy itself is not its cause but its symptom. Common flaws of AI governance  include companies governing AI at the policy layer (committees, principles, training) while risk lives at the identity and permission layer. Most policy frameworks are written as instruction sets delivered to the AI model, while the controls that work (deterministic triggers, permission gates, scoped credentials) are enforced outside the model. On top of that, companies may not always know what they are governing, as vendors and employees are adding shadow AI features. The right approach inverts the framing most companies start with. The default assumption is a tradeoff — compliance slows adoption, so minimize one to maximize the other. The evidence points the other way: the things blocking adoption are the compliance questions, and the companies moving fastest are the ones that resolved them first. But before doing it fast, they must do it right. Token Cost Management Token cost management is where the survey’s biggest paradox appears. A slim majority of companies (52%) say they understand token costs, and about as many know that disciplined prompt and output engineering can substantially reduce them. Yet only about a third say they actually control token costs in practice. (See Chart) “Token cost management is not yet in line with the growth in usage of AI,” one respondent writes. Only one in five respondents (20%) believe that buying tokens in higher volumes lowers cost-per-query (see Chart). Yet The Information’s research shows that batching purchases is an effective and increasingly necessary strategy for cutting per-query costs on frontier models, which carry a steep premium over simpler ones. Equally important for savings is selecting token-guzzling frontier models only for tasks that require them. The Information’s research and reader responses point to five ways companies are managing token costs: Train users. Teach employees about model selection, how to prevent models from overthinking, and how to prompt and structure requests to achieve the most useful output at the lowest token cost. Also, teach employees when not to use AI. Match the right model to the right task. Route routine queries to cheaper, open-source models and reserve frontier models for genuinely complex reasoning. “If you select the models best aligned with most tasks, token costs are incredibly low. All the news about token costs concerns frontier models, which are rarely required,” one respondent writes. Optimize prompts. Keep them concise, strip unnecessary context, and reuse outputs where possible. The Information’s research shows that these “token-minimizing” techniques are being deployed to reduce the volume of data a model must process per request. Cap and track usage. Track token usage against productivity, not just spend, and set daily or weekly caps when usage is outpacing value. At one respondent’s company, employees don’t have unfettered access to tokens: “Only authorized employees may use tokens, following a defined mandate and an allocated development budget based on a cost-benefit analysis.” Adopt a systemic approach. Some respondents argue that the fix isn’t behavioral at all. “Cost efficiency is largely determined by systemic, deterministic constraints, rather than individuals voluntarily enforcing constraints upon themselves,” one respondent writes. A systemic approach includes creating a single controlled AI gateway (eradicating shadow AI), introducing hard spend ceilings with approval gates, and making the cheapest path automatic. Looking Ahead AI is getting more expensive, not less. The shift from chatbots to autonomous agents built for multi-step workflows is the single biggest driver of rising costs, and token-based pricing means uncontrolled usage shows up directly on the bill. Respondents expect that trend to continue: most see AI-related spending rising across the board over the next 12 months. (See Chart) That’s happening as the enterprise AI market moves past its experimental phase and into one where spending gets scrutinized like any other line item. Companies that haven’t yet built model routing, usage limits, and hard budget caps into their AI programs are likely to keep absorbing costs they can’t fully explain. Methodology Based on a survey of 107 senior leaders and professionals, conducted in June and July 2026. Company size: Forty-five percent of companies surveyed had revenues under $10 million; 20% had revenues of more than $1 billion; 16% had revenues between $10 million and $100 million; 12% had revenues between $100 million and $500 million, and 8% had revenues between $500 million and $1 billion. Key industry sectors: Thirty-eight percent of companies were from technology, media and telecommunications; 13% from professional services; 10% from healthcare and life sciences; 9% from financial services & capital markets, and the remaining 29% came from the government, retail, public sector and others. Respondent titles and roles: Forty percent were executive leadership (including CEOs, CIOs and CTOs) and owners; 31% were senior management (including SVPs and VPs, directors and managers).",
+    "score": 74,
     "score_breakdown": {
-      "total_score": 1,
-      "impact": 0,
-      "business": 0,
-      "development": 0,
+      "total_score": 74,
+      "impact": 35,
+      "business": 25,
+      "development": 13,
       "recency": 1,
       "original": 0
     },
-    "rank": 3,
+    "rank": 1,
     "is_primary": true
   },
   {
@@ -232,34 +783,15 @@
     "title": "SB Energy Faces Investor Skepticism in IPO, Report Says",
     "link": "https://www.theinformation.com/briefings/sb-energy-faces-investor-skepticism-ipo-report-says",
     "canonical_url": "https://www.theinformation.com/briefings/sb-energy-faces-investor-skepticism-ipo-report-says",
-    "published_at": "2026-09-21T14:20:25",
+    "published_at": "2026-09-21T23:20:25",
     "summary": "SB Energy’s initial public offering is facing investor skepticism, The New York Times reported Monday. The SoftBank majority-owned company is planning to raise $5 billion to $7 billion in a public offering to help develop a massive data center complex OpenAI plans to lease, which is set to be ...",
-    "score": 50,
+    "score": 56,
     "score_breakdown": {
-      "total_score": 50,
+      "total_score": 56,
       "impact": 35,
       "business": 9,
       "development": 5,
-      "recency": 1,
-      "original": 0
-    },
-    "rank": 1,
-    "is_primary": true
-  },
-  {
-    "media": "The Information",
-    "title": "Paramount Settles State Antitrust Lawsuit, Clearing Way for Warner Deal to Close",
-    "link": "https://www.theinformation.com/briefings/paramount-settles-state-antitrust-lawsuit-clearing-way-warner-deal-close",
-    "canonical_url": "https://www.theinformation.com/briefings/paramount-settles-state-antitrust-lawsuit-clearing-way-warner-deal-close",
-    "published_at": "2026-09-21T11:39:13",
-    "summary": "Paramount Skydance settled a lawsuit filed by 12 states that had threatened to stop its $110 billion purchase of Warner Bros. Discovery. The settlement, filed in court on Monday, clears the way for the deal to close. Under the settlement, Paramount agreed to release at least 30 films into movie ...",
-    "score": 50,
-    "score_breakdown": {
-      "total_score": 50,
-      "impact": 35,
-      "business": 9,
-      "development": 5,
-      "recency": 1,
+      "recency": 7,
       "original": 0
     },
     "rank": 2,
@@ -270,15 +802,15 @@
     "title": "Z.ai Open-Sources ZCode After Data Uploading Scandal",
     "link": "https://www.theinformation.com/briefings/z-ai-open-sources-zcode-data-uploading-scandal",
     "canonical_url": "https://www.theinformation.com/briefings/z-ai-open-sources-zcode-data-uploading-scandal",
-    "published_at": "2026-09-21T22:34:39",
+    "published_at": "2026-09-22T07:34:39",
     "summary": "Z.ai said that it has open-sourced its coding tool, ZCode, after the Chinese AI firm faced intense backlash from developers who found out that their data was being uploaded to cloud servers without their consent. “In response to the ZCode product security issues reported by the community, we ...",
-    "score": 47,
+    "score": 53,
     "score_breakdown": {
-      "total_score": 47,
+      "total_score": 53,
       "impact": 12,
       "business": 18,
       "development": 13,
-      "recency": 4,
+      "recency": 10,
       "original": 0
     },
     "rank": 3,
@@ -289,15 +821,15 @@
     "title": "Alibaba Unveils New AI Chip And Data Center Expansion Plan",
     "link": "https://www.theinformation.com/briefings/alibaba-unveils-new-ai-chip-data-center-expansion-plan",
     "canonical_url": "https://www.theinformation.com/briefings/alibaba-unveils-new-ai-chip-data-center-expansion-plan",
-    "published_at": "2026-09-21T22:27:39",
+    "published_at": "2026-09-22T07:27:39",
     "summary": "Alibaba on Tuesday unveiled a powerful new AI chip for training and running models, highlighting the rapid progress in China’s domestic semiconductor capabilities. During its annual Apsara tech conference, Alibaba said its new AI chip, Zhenwu V900, delivers three times the performance of its ...",
-    "score": 47,
+    "score": 53,
     "score_breakdown": {
-      "total_score": 47,
+      "total_score": 53,
       "impact": 12,
       "business": 18,
       "development": 13,
-      "recency": 4,
+      "recency": 10,
       "original": 0
     },
     "rank": 4,
@@ -305,18 +837,18 @@
   },
   {
     "media": "The Information",
-    "title": "Smart-ring Maker Oura Files to Sell $2.2 Billion in IPO",
-    "link": "https://www.theinformation.com/briefings/smart-ring-maker-oura-files-sell-2-2-billion-ipo",
-    "canonical_url": "https://www.theinformation.com/briefings/smart-ring-maker-oura-files-sell-2-2-billion-ipo",
-    "published_at": "2026-09-21T13:40:08",
-    "summary": "Oura is looking to sell $2.2 billion in shares during its initial public offering, the company said in its updated S-1 filing on Monday. Oura, which makes smart rings that track biometrics including sleep quality and heart health, could reach a $15.6 billion fully-diluted valuation from the ...",
-    "score": 41,
+    "title": "Paramount Settles State Antitrust Lawsuit, Clearing Way for Warner Deal to Close",
+    "link": "https://www.theinformation.com/briefings/paramount-settles-state-antitrust-lawsuit-clearing-way-warner-deal-close",
+    "canonical_url": "https://www.theinformation.com/briefings/paramount-settles-state-antitrust-lawsuit-clearing-way-warner-deal-close",
+    "published_at": "2026-09-21T20:39:13",
+    "summary": "Paramount Skydance settled a lawsuit filed by 12 states that had threatened to stop its $110 billion purchase of Warner Bros. Discovery. The settlement, filed in court on Monday, clears the way for the deal to close. Under the settlement, Paramount agreed to release at least 30 films into movie ...",
+    "score": 53,
     "score_breakdown": {
-      "total_score": 41,
+      "total_score": 53,
       "impact": 35,
-      "business": 0,
+      "business": 9,
       "development": 5,
-      "recency": 1,
+      "recency": 4,
       "original": 0
     },
     "rank": 5,
@@ -327,15 +859,15 @@
     "title": "Meta’s Muse Tries (and Fails) to Disrupt Amazon",
     "link": "https://www.theinformation.com/articles/metas-muse-tries-and-fails-disrupt-amazon",
     "canonical_url": "https://www.theinformation.com/articles/metas-muse-tries-and-fails-disrupt-amazon",
-    "published_at": "2026-09-21T15:00:41",
+    "published_at": "2026-09-22T00:00:41",
     "summary": "Everyone loves a brawl between two big tech firms—even other tech CEOs. Amazon’s block on Meta Platforms’ new Muse personal agent accessing its shopping site, which came to light Sunday night, prompted Palo Alto Networks CEO Nikesh Arora to post on X on Monday that the episode signals “a bigger battle than anyone anticipates.” He may be right: while Amazon has previously blocked Google and OpenAI shopping bots without drama, Amazon’s action against Meta is a bit more reminiscent of its blocking of Perplexity’s agent, which sparked a lawsuit that is still underway. And this is just the beginning. Arora, for instance, predicted that eventually everyone from Apple to Google and the AI firms will offer similar personal agents. (See our report today on what OpenAI is up to.)",
-    "score": 39,
+    "score": 45,
     "score_breakdown": {
-      "total_score": 39,
+      "total_score": 45,
       "impact": 24,
       "business": 9,
       "development": 5,
-      "recency": 1,
+      "recency": 7,
       "original": 0
     },
     "rank": 6,
@@ -343,21 +875,116 @@
   },
   {
     "media": "The Information",
-    "title": "Exclusive: Xbox to Cut Hundreds of Jobs, Consolidate Game Studios",
-    "link": "https://www.theinformation.com/briefings/exclusive-xbox-cut-hundreds-jobs-consolidate-game-studios",
-    "canonical_url": "https://www.theinformation.com/briefings/exclusive-xbox-cut-hundreds-jobs-consolidate-game-studios",
-    "published_at": "2026-09-21T16:29:21",
-    "summary": "Xbox is planning to lay off hundreds of employees this week in its second major staff reduction this year, according to someone briefed on the plans. The Microsoft-owned firm also plans to consolidate several of its game studios, this person said. Xbox CEO Asha Sharma in July told staff she ...",
-    "score": 11,
+    "title": "Smart-ring Maker Oura Files to Sell $2.2 Billion in IPO",
+    "link": "https://www.theinformation.com/briefings/smart-ring-maker-oura-files-sell-2-2-billion-ipo",
+    "canonical_url": "https://www.theinformation.com/briefings/smart-ring-maker-oura-files-sell-2-2-billion-ipo",
+    "published_at": "2026-09-21T22:40:08",
+    "summary": "Oura is looking to sell $2.2 billion in shares during its initial public offering, the company said in its updated S-1 filing on Monday. Oura, which makes smart rings that track biometrics including sleep quality and heart health, could reach a $15.6 billion fully-diluted valuation from the ...",
+    "score": 44,
     "score_breakdown": {
-      "total_score": 11,
-      "impact": 0,
+      "total_score": 44,
+      "impact": 35,
+      "business": 0,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 7,
+    "is_primary": false
+  },
+  {
+    "media": "The Information",
+    "title": "OpenAI and Anthropic Neared Deal to Stress-Test Each Other’s AI",
+    "link": "https://www.theinformation.com/articles/openai-anthropic-neared-deal-stress-test-others-ai",
+    "canonical_url": "https://www.theinformation.com/articles/openai-anthropic-neared-deal-stress-test-others-ai",
+    "published_at": "2026-09-21T13:55:09",
+    "summary": "OpenAI is rethinking a range of safety strategies as it responds to fears from employees and others about the dangers its AI poses. One solution could lie in the recent past. Even before the spate of cybersecurity incidents involving OpenAI’s technology and the dire warnings from industry workers, the company was negotiating a legally binding deal with Anthropic for the companies to stress-test each other’s models, according to a person with direct knowledge of the discussions, which haven’t been previously reported.",
+    "score": 30,
+    "score_breakdown": {
+      "total_score": 30,
+      "impact": 24,
       "business": 0,
       "development": 5,
       "recency": 1,
+      "original": 0
+    },
+    "rank": 8,
+    "is_primary": false
+  },
+  {
+    "media": "The Information",
+    "title": "OpenAI Releases Proposal for International AI Safety Coordination",
+    "link": "https://www.theinformation.com/briefings/openai-releases-proposal-international-ai-safety-coordination",
+    "canonical_url": "https://www.theinformation.com/briefings/openai-releases-proposal-international-ai-safety-coordination",
+    "published_at": "2026-09-21T18:11:04",
+    "summary": "OpenAI released a proposal on Monday that would create international coordination around AI safety. In a blog post, OpenAI called for national AI safety institutes, such as the U.S. Commerce Department’s Center for AI Standards and Innovation, to set standards around areas including model ...",
+    "score": 29,
+    "score_breakdown": {
+      "total_score": 29,
+      "impact": 12,
+      "business": 0,
+      "development": 13,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 9,
+    "is_primary": false
+  },
+  {
+    "media": "The Information",
+    "title": "CrowdStrike and Okta Trade at Big Premiums Despite Unproven AI Payoff",
+    "link": "https://www.theinformation.com/articles/crowdstrike-okta-trade-big-premiums-despite-unproven-ai-payoff",
+    "canonical_url": "https://www.theinformation.com/articles/crowdstrike-okta-trade-big-premiums-despite-unproven-ai-payoff",
+    "published_at": "2026-09-21T13:31:04",
+    "summary": "Cybersecurity stocks have enjoyed a good run in 2026 as investors bet on the idea that they’ll benefit from companies shoring up their defenses against AI-fueled online threats. The S&P Kensho cybersecurity index is up 41% this year compared to an 11% rise in the S&P 500 over the same period. But some of the names attracting the most interest, such as cloud-based security firm CrowdStrike and identity security software provider Okta, have soared to valuation highs that should give investors in the sector pause. So far, there’s limited evidence that their revenue growth is getting a boost from new AI concerns.",
+    "score": 27,
+    "score_breakdown": {
+      "total_score": 27,
+      "impact": 12,
+      "business": 9,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 10,
+    "is_primary": false
+  },
+  {
+    "media": "The Information",
+    "title": "OpenAI Develops Features to Counter Grok Bot, Mulls Response to Meta’s Muse",
+    "link": "https://www.theinformation.com/articles/openai-develops-features-counter-grok-bot-mulls-response-metas-muse",
+    "canonical_url": "https://www.theinformation.com/articles/openai-develops-features-counter-grok-bot-mulls-response-metas-muse",
+    "published_at": "2026-09-21T14:30:40",
+    "summary": "OpenAI pioneered AI that can take over web browsers and other applications on people’s behalf, and its ChatGPT app brought generative AI to consumers. Now that rivals like SpaceX and Meta are pushing the boundaries by launching personal AI agents that handle multistep tasks, OpenAI is playing catch-up. For instance, OpenAI is developing features to compete more directly with SpaceX’s recently launched Grok Bot , which helps customers create always-on AI “teammates” to handle routine tasks, manage software, and collaborate in the background, according to a person with knowledge of the effort. OpenAI also has discussed developing a personal AI assistant to compete with one that Meta Platforms recently launched, according to another person with knowledge of the situation. In developing such products, OpenAI would be repurposing and rebranding some of the existing “agentic” technology it already offers through Codex and ChatGPT. Some customers of these OpenAI apps have already connected them to their email, calendar and other applications so they can automate tasks such as scheduling appointments or communicating with businesses by email, sometimes over multiple days.",
+    "score": 18,
+    "score_breakdown": {
+      "total_score": 18,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 11,
+    "is_primary": false
+  },
+  {
+    "media": "The Information",
+    "title": "Exclusive: Xbox to Cut Hundreds of Jobs, Consolidate Game Studios",
+    "link": "https://www.theinformation.com/briefings/exclusive-xbox-cut-hundreds-jobs-consolidate-game-studios",
+    "canonical_url": "https://www.theinformation.com/briefings/exclusive-xbox-cut-hundreds-jobs-consolidate-game-studios",
+    "published_at": "2026-09-22T01:29:21",
+    "summary": "Xbox is planning to lay off hundreds of employees this week in its second major staff reduction this year, according to someone briefed on the plans. The Microsoft-owned firm also plans to consolidate several of its game studios, this person said. Xbox CEO Asha Sharma in July told staff she ...",
+    "score": 17,
+    "score_breakdown": {
+      "total_score": 17,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
       "original": 5
     },
-    "rank": 7,
+    "rank": 12,
     "is_primary": false
   },
   {
@@ -365,18 +992,37 @@
     "title": "World Models Need More Intelligence, Says Luma CEO Amit Jain",
     "link": "https://www.theinformation.com/articles/world-models-need-intelligence-says-luma-ceo-amit-jain",
     "canonical_url": "https://www.theinformation.com/articles/world-models-need-intelligence-says-luma-ceo-amit-jain",
-    "published_at": "2026-09-21T13:46:47",
+    "published_at": "2026-09-21T22:46:47",
     "summary": "The AI boom has been built largely on progress in language models, but a different approach has gained enormous attention in the industry this year: world models, which are designed to generate accurate predictions about the physical world, rather than words and numbers. I sat down with Amit Jain, co-founder and CEO of Luma AI, to discuss the promise of world models—and where current approaches to training them still fall short—on the latest episode of AI Deep Dive , The Information’s new show exploring the hard problems on tech’s frontier.",
-    "score": 11,
+    "score": 14,
     "score_breakdown": {
-      "total_score": 11,
+      "total_score": 14,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 4,
+      "original": 5
+    },
+    "rank": 13,
+    "is_primary": false
+  },
+  {
+    "media": "The Information",
+    "title": "Amazon Blocks Meta’s Muse Agent",
+    "link": "https://www.theinformation.com/briefings/amazon-blocks-metas-muse-agent",
+    "canonical_url": "https://www.theinformation.com/briefings/amazon-blocks-metas-muse-agent",
+    "published_at": "2026-09-21T11:46:48",
+    "summary": "Amazon blocked Meta’s Muse personalized AI agent from accessing its shopping site, Amazon confirmed, saying that agents such as Muse “should operate openly and respect provider decisions about whether or not to participate.” The block appeared to even prevent Muse from browsing Amazon’s ...",
+    "score": 6,
+    "score_breakdown": {
+      "total_score": 6,
       "impact": 0,
       "business": 0,
       "development": 5,
       "recency": 1,
-      "original": 5
+      "original": 0
     },
-    "rank": 8,
+    "rank": 14,
     "is_primary": false
   }
 ]
