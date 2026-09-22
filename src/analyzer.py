@@ -3,6 +3,7 @@ import time
 import os
 import sys
 import re
+import random
 from datetime import datetime, timezone
 from collections import defaultdict
 import google.generativeai as genai
@@ -32,6 +33,26 @@ from config import (
 def log(msg):
     now_str = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
     print(f"[{now_str}] {msg}", flush=True)
+
+class RateLimiter:
+    """
+    Enforces strict client-side throughput limiting (<= 10 RPM)
+    with adaptive pacing and jitter to safely operate within Google Gemini Free Tier constraints.
+    """
+    def __init__(self, min_interval_seconds=6.5):
+        self.min_interval = min_interval_seconds
+        self.last_call_timestamp = 0.0
+
+    def wait(self):
+        now = time.time()
+        elapsed = now - self.last_call_timestamp
+        if elapsed < self.min_interval:
+            sleep_duration = (self.min_interval - elapsed) + random.uniform(0.1, 0.4)
+            log(f"[Throttling] Pacing outbound API request. Sleeping {sleep_duration:.2f}s to respect <= 10 RPM limit...")
+            time.sleep(sleep_duration)
+        self.last_call_timestamp = time.time()
+
+rate_limiter = RateLimiter(min_interval_seconds=6.5)
 
 class ErrorCategory:
     DAILY_QUOTA_EXHAUSTED = "DAILY_QUOTA_EXHAUSTED"
@@ -182,8 +203,9 @@ def validate_batch_response(expected_ids, response_text):
 
 def execute_llm_call(model_name, prompt):
     """
-    Executes a single LLM request with bounded timeout.
+    Executes a single LLM request with bounded timeout and client-side rate limiting.
     """
+    rate_limiter.wait()
     model = genai.GenerativeModel(model_name)
     response = model.generate_content(
         prompt,
@@ -330,11 +352,19 @@ def analyze_articles():
                         log(f" -> [Critical] Fallback model {FALLBACK_MODEL} also unavailable.")
                         break
 
-                # TRANSIENT RATE LIMIT: Bounded retry
+                # TRANSIENT RATE LIMIT: Bounded retry with adaptive backoff
                 if category == ErrorCategory.TRANSIENT_RATE_LIMIT:
+                    backoff_delay = 20.0
+                    m = re.search(r'retry_delay[:\s]+([\d\.]+)', str(e).lower())
+                    if m:
+                        try:
+                            backoff_delay = max(float(m.group(1)), 15.0) + random.uniform(1.0, 3.0)
+                        except ValueError:
+                            pass
                     if batch_attempt <= MAX_BATCH_RETRIES:
-                        log(f" -> [Backoff] Waiting 15s before single retry attempt...")
-                        time.sleep(15.0)
+                        log(f" -> [RateLimit Backoff] Waiting {backoff_delay:.1f}s before retry attempt...")
+                        time.sleep(backoff_delay)
+                        rate_limiter.last_call_timestamp = time.time()
                     else:
                         break
 
