@@ -167,6 +167,15 @@ def fetch_xml_data(url):
         return None
 
 def fetch_latest_articles():
+    # Force cache invalidation: Purge any existing local cache files before fresh run
+    for stale_file in ["src/articles.json", "src/fetcher_stats.json"]:
+        if os.path.exists(stale_file):
+            try:
+                os.remove(stale_file)
+                print(f"[Cache Invalidation] Removed stale cache: {stale_file}")
+            except Exception as e:
+                print(f"[Cache Invalidation] Warning: Failed to remove {stale_file}: {e}")
+
     now_utc = datetime.now(timezone.utc)
     freshness_threshold = now_utc - timedelta(hours=FRESHNESS_HOURS)
 
@@ -280,21 +289,12 @@ def fetch_latest_articles():
             article_copy["is_primary"] = (rank < ARTICLES_PER_PUBLISHER)
             serialized_articles.append(article_copy)
 
-    # Emergency protocol: If 0 articles fetched across all sources, emit diagnostic entry
+    # Strict validation: If 0 articles fetched across all sources, do NOT inject dummy/mock data.
+    # Raise an explicit RuntimeError to prevent publishing stale or fabricated newsletters.
     if len(serialized_articles) == 0:
-        print("\n[EMERGENCY] 0 articles fetched across all sources. Injecting Diagnostic Artifact.")
-        serialized_articles.append({
-            "media": "The Verge",
-            "title": "Zero-Capital Pipeline Connection Status",
-            "link": "https://github.com",
-            "canonical_url": "https://github.com",
-            "published_at": now_utc.strftime("%Y-%m-%dT%H:%M:%S"),
-            "summary": "This is an automated diagnostic artifact. External feeds were temporarily unreachable.",
-            "score": 0,
-            "score_breakdown": {"total_score": 0},
-            "rank": 1,
-            "is_primary": True
-        })
+        error_msg = "[Fatal Ingestion Error] 0 articles fetched across all media sources. Aborting pipeline."
+        print(f"\n{error_msg}", file=sys.stderr)
+        raise RuntimeError(error_msg)
 
     os.makedirs("src", exist_ok=True)
     with open("src/articles.json", "w", encoding="utf-8") as f:

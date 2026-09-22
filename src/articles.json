@@ -1,225 +1,54 @@
 [
   {
     "media": "The Verge",
-    "title": "Waymo says Singapore will be its next international robotaxi city",
-    "link": "https://www.theverge.com/transportation/997091/waymo-singapore-robotaxi-launch-2027",
-    "canonical_url": "https://www.theverge.com/transportation/997091/waymo-singapore-robotaxi-launch-2027",
-    "published_at": "2026-09-17T17:00:00",
-    "summary": "Waymo says it will launch a robotaxi service in Singapore in 2028, as the Alphabet-owned company continues to eye overseas markets for expansion. Waymo's vehicles will begin arriving in Singapore in \"the coming months,\" the company says, in preparation of mapping and autonomous testing with human safety drivers behind the wheel in 2027. Waymo says […]",
-    "score": 15,
+    "title": "Can you forget how you feel about Meta?",
+    "link": "https://www.theverge.com/cs/features/991659/meta-mark-zuckerberg-future-glasses-ai-instagram",
+    "canonical_url": "https://www.theverge.com/cs/features/991659/meta-mark-zuckerberg-future-glasses-ai-instagram",
+    "published_at": "2026-09-22T01:00:01",
+    "summary": "In 2021, as a whistleblower emerged with dramatic allegations that Facebook was harming children, CEO Mark Zuckerberg posted a rebuttal on Facebook. “We care deeply about issues like safety, well-being and mental health. It’s difficult to see coverage that misrepresents our work and our motives,” he wrote in a note to Meta staff, which he […]",
+    "score": 24,
     "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 9,
+      "total_score": 24,
+      "impact": 12,
+      "business": 0,
       "development": 5,
-      "recency": 1,
+      "recency": 7,
       "original": 0
     },
     "rank": 1,
+    "is_primary": true
+  },
+  {
+    "media": "The Verge",
+    "title": "Apple&#8217;s first live music venue is opening beneath its UK headquarters",
+    "link": "https://www.theverge.com/tech/998581/apple-music-hall-london-venue-battersea",
+    "canonical_url": "https://www.theverge.com/tech/998581/apple-music-hall-london-venue-battersea",
+    "published_at": "2026-09-21T23:35:54",
+    "summary": "Apple is preparing to open a new \"state-of-the-art\" live music venue in the UK, a 600-capacity space for hosting performances, recording sessions, and video broadcasts. The venue, called Apple Music Hall, is located underneath Apple's European headquarters in London's iconic Battersea Power Station, and is set to open next week on September 28th. Details about […]",
+    "score": 24,
+    "score_breakdown": {
+      "total_score": 24,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 2,
     "is_primary": true
   },
   {
     "media": "The Verge",
-    "title": "Flash floods can strike without warning — this new technology could change that",
-    "link": "https://www.theverge.com/science/997083/flash-flood-warning-tacls-satellite-machine-learning",
-    "canonical_url": "https://www.theverge.com/science/997083/flash-flood-warning-tacls-satellite-machine-learning",
-    "published_at": "2026-09-18T02:00:00",
-    "summary": "On the morning of June 9th, Laura Lin was working from her home in Lanesville, a rural southern Indiana town about 15 miles from the Kentucky border. She was on a Zoom call, unaware that the heavy rain outside was beginning to flood her yard. \"I look over to where the barn is over there, […]",
-    "score": 9,
+    "title": "California tightens rules on AI data center energy and water use",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
+    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
+    "published_at": "2026-09-21T11:29:45",
+    "summary": "California Gov. Gavin Newsom has signed seven bills designed to prevent AI data centers from passing utility costs onto residents, as reported earlier by the Los Angeles Times. The package of laws requires the California Public Utilities Commission to introduce a new rate classification for data centers while forcing them to pay for upgrades to […]",
+    "score": 24,
     "score_breakdown": {
-      "total_score": 9,
+      "total_score": 24,
       "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 4,
-      "original": 0
-    },
-    "rank": 2,
-    "is_primary": true
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Researchers used Anthropic’s Claude to hack into OpenAI",
-    "link": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/",
-    "canonical_url": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/",
-    "published_at": "2026-09-18T05:00:14",
-    "summary": "Security researchers used Anthropic’s Claude to exploit vulnerabilities in OpenAI’s systems, taking over employee accounts and gaining access to an internal code repository before reporting the flaws.",
-    "score": 56,
-    "score_breakdown": {
-      "total_score": 56,
-      "impact": 35,
-      "business": 9,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 1,
-    "is_primary": true
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Inertia co-founder Jeff Lawson’s next big bet is fusion: Go inside it at TechCrunch Disrupt 2026",
-    "link": "https://techcrunch.com/2026/09/18/jeff-lawsons-next-big-bet-is-fusion-go-inside-it-at-techcrunch-disrupt-2026/",
-    "canonical_url": "https://techcrunch.com/2026/09/18/jeff-lawsons-next-big-bet-is-fusion-go-inside-it-at-techcrunch-disrupt-2026/",
-    "published_at": "2026-09-18T05:30:00",
-    "summary": "Inertia co-founder and CEO Jeff Lawson joins the Smart Systems Stage at TechCrunch Disrupt 2026. Register now to save up to $200 by September 25.",
-    "score": 21,
-    "score_breakdown": {
-      "total_score": 21,
-      "impact": 0,
-      "business": 9,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 2,
-    "is_primary": true
-  },
-  {
-    "media": "TechCrunch",
-    "title": "The clock is ticking: Final 24 hours to exhibit at TechCrunch Disrupt 2026",
-    "link": "https://techcrunch.com/2026/09/18/final-24-hours-to-exhibit-at-techcrunch-disrupt-2026/",
-    "canonical_url": "https://techcrunch.com/2026/09/18/final-24-hours-to-exhibit-at-techcrunch-disrupt-2026/",
-    "published_at": "2026-09-18T05:00:00",
-    "summary": "Last day to book your exhibit table at Disrupt is today, September 18. Get your startup in front of 10,000+ founders, investors, operators, and tech leaders on October 13–15.",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 3,
-    "is_primary": true
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Khosla-backed Mazama Energy just raised $135M to drill deeper into superhot-rock geothermal",
-    "link": "https://techcrunch.com/2026/09/17/khosla-backed-mazama-energy-just-raised-135m-to-drill-deeper-into-super-hot-rock-geothermal/",
-    "canonical_url": "https://techcrunch.com/2026/09/17/khosla-backed-mazama-energy-just-raised-135m-to-drill-deeper-into-super-hot-rock-geothermal/",
-    "published_at": "2026-09-17T15:02:36",
-    "summary": "Geothermal startup Mazama is drilling three miles underground to tap superhot rock, with one well capable of generating 15 MW of electricity 24/7.",
-    "score": 6,
-    "score_breakdown": {
-      "total_score": 6,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 1,
-      "original": 0
-    },
-    "rank": 4,
-    "is_primary": true
-  },
-  {
-    "media": "MIT Tech Review",
-    "title": "The specter of AI-enabled bioweapons is a wake-up call for biotech",
-    "link": "https://www.technologyreview.com/2026/09/18/1144329/the-specter-of-ai-enabled-bioweapons-is-a-wake-up-call-for-biotech/",
-    "canonical_url": "https://www.technologyreview.com/2026/09/18/1144329/the-specter-of-ai-enabled-bioweapons-is-a-wake-up-call-for-biotech/",
-    "published_at": "2026-09-18T00:00:00",
-    "summary": "In recent weeks, leaders of some of the biggest AI companies have warned that the very tech they are developing is dangerous. Last weekend, Anthropic CEO Dario Amodei argued that AI carries serious risk and that progress should be slowed. OpenAI CEO Sam Altman responded on X: “I agree with Dario that we need to pace the…",
-    "score": 33,
-    "score_breakdown": {
-      "total_score": 33,
-      "impact": 24,
-      "business": 0,
-      "development": 5,
-      "recency": 4,
-      "original": 0
-    },
-    "rank": 1,
-    "is_primary": true
-  },
-  {
-    "media": "MIT Tech Review",
-    "title": "The Download: AI’s extinction risk and bioweapons threat",
-    "link": "https://www.technologyreview.com/2026/09/18/1142577/the-download-ai-extinction-threat-bioweapons/",
-    "canonical_url": "https://www.technologyreview.com/2026/09/18/1142577/the-download-ai-extinction-threat-bioweapons/",
-    "published_at": "2026-09-18T03:10:00",
-    "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Could AI really kill us all? Your questions, answered On Wednesday, MIT Technology Review hosted a live Roundtables event that asked the question many seem to be asking right now: could…",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 2,
-    "is_primary": true
-  },
-  {
-    "media": "MIT Tech Review",
-    "title": "Could AI really kill us all? Your questions, answered.",
-    "link": "https://www.technologyreview.com/2026/09/18/1144435/could-ai-really-kill-us-all-your-questions-answered/",
-    "canonical_url": "https://www.technologyreview.com/2026/09/18/1144435/could-ai-really-kill-us-all-your-questions-answered/",
-    "published_at": "2026-09-18T02:29:22",
-    "summary": "On Wednesday, MIT Technology Review hosted a live Roundtables event for subscribers that asked the question everyone’s asking right now: Could AI really kill us all? But attendees had so many more questions than we had time to answer in the 30 minute session. So we asked our senior AI editor Will Douglas Heaven and…",
-    "score": 9,
-    "score_breakdown": {
-      "total_score": 9,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 4,
-      "original": 0
-    },
-    "rank": 3,
-    "is_primary": true
-  },
-  {
-    "media": "The Information",
-    "title": "A Tsinghua Professor’s Stealth LLM Startup Hits $1.4 Billion Valuation",
-    "link": "https://www.theinformation.com/articles/tsinghua-professors-stealth-llm-startup-hits-1-4-billion-valuation",
-    "canonical_url": "https://www.theinformation.com/articles/tsinghua-professors-stealth-llm-startup-hits-1-4-billion-valuation",
-    "published_at": "2026-09-18T03:10:44",
-    "summary": "A secretive Chinese AI model startup founded in February by a Tsinghua University professor is now valued at more than $1.4 billion, after raising $400 million in three funding rounds from investors including Tencent , according to a person with direct knowledge of the matter. Beijing-based Naive AI is preparing to release its first large language model as early as this month, joining the country’s fierce LLM competition as a newcomer, according to the person. The startup plans to release it as an open-weight model, similar to offerings from DeepSeek, Moonshot and Alibaba that people can download for free and customize to their liking.",
-    "score": 45,
-    "score_breakdown": {
-      "total_score": 45,
-      "impact": 24,
-      "business": 9,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 1,
-    "is_primary": true
-  },
-  {
-    "media": "The Information",
-    "title": "AI Executives Fret About Existential Threat AI Poses—to Publishers",
-    "link": "https://www.theinformation.com/articles/ai-executives-fret-existential-threat-ai-poses-publishers",
-    "canonical_url": "https://www.theinformation.com/articles/ai-executives-fret-existential-threat-ai-poses-publishers",
-    "published_at": "2026-09-17T15:00:58",
-    "summary": "It’s not just humanity that AI folks worry the new technology could wipe out—it’s publishers as well! (Publishers are, of course, people!) That’s what we learned from a court filing today by a group of news publishers including The New York Times Co. in a copyright infringement lawsuit against OpenAI and Microsoft. The filing cited an OpenAI executive writing—presumably in an internal memo—that publishers face “an existential threat” from AI products. We knew the publishers worried that AI threatened their existence—The New York Times Co. made that point when it sued OpenAI and Microsoft back in 2023 (the case has since been consolidated with similar lawsuits filed by other publishers). What’s striking is that OpenAI and Microsoft internally acknowledge the threat—and recognize the implications for them as well. “Our AI content strategy has started a ‘doom loop’ that will hurt the performance of our models and the entire web at the same time. It is highly unusual that an end-product threatens the economic foundations of its essential suppliers,” according to a Microsoft document cited in the filing.",
-    "score": 44,
-    "score_breakdown": {
-      "total_score": 44,
-      "impact": 24,
-      "business": 9,
-      "development": 5,
-      "recency": 1,
-      "original": 5
-    },
-    "rank": 2,
-    "is_primary": true
-  },
-  {
-    "media": "The Information",
-    "title": "Bug Hunters Used Claude to Hack OpenAI",
-    "link": "https://www.theinformation.com/briefings/bug-hunters-used-claude-hack-openai",
-    "canonical_url": "https://www.theinformation.com/briefings/bug-hunters-used-claude-hack-openai",
-    "published_at": "2026-09-17T17:37:59",
-    "summary": "A team of cybersecurity researchers with startup Hacktron AI used Anthropic’s Claude to hack into OpenAI, gaining access to a key repository of OpenAI’s software, the researchers revealed Thursday . The hack, which occurred on July 25, further demonstrates AI companies’ vulnerability to ...",
-    "score": 41,
-    "score_breakdown": {
-      "total_score": 41,
-      "impact": 35,
-      "business": 0,
+      "business": 18,
       "development": 5,
       "recency": 1,
       "original": 0
@@ -228,50 +57,12 @@
     "is_primary": true
   },
   {
-    "media": "The Information",
-    "title": "AI Safety Push Sparks Demand for Watchdog Groups. Critics Doubt Their Independence.",
-    "link": "https://www.theinformation.com/articles/ai-safety-push-sparks-demand-watchdog-groups-critics-doubt-independence",
-    "canonical_url": "https://www.theinformation.com/articles/ai-safety-push-sparks-demand-watchdog-groups-critics-doubt-independence",
-    "published_at": "2026-09-18T04:00:41",
-    "summary": "Rising alarm about AI’s perils is thrusting into the spotlight a collection of little-known research groups focused on the technology’s safety—and fueling questions about their ability to effectively monitor the industry’s biggest companies. Both Anthropic Chief Executive Dario Amodei and OpenAI CEO Sam Altman promised in recent days to embed evaluators from such outside research organizations inside their companies to help ensure they develop AI at a safe pace. Other executives including Microsoft CEO Satya Nadella also endorsed the idea of embedding independent evaluators in companies.",
-    "score": 36,
-    "score_breakdown": {
-      "total_score": 36,
-      "impact": 24,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 4,
-    "is_primary": true
-  },
-  {
-    "media": "The Information",
-    "title": "Communicate Technical Topics to a Non-Technical Audience with Google Gemini",
-    "link": "https://www.theinformation.com/articles/communicate-technical-topics-non-technical-audience-google-gemini",
-    "canonical_url": "https://www.theinformation.com/articles/communicate-technical-topics-non-technical-audience-google-gemini",
-    "published_at": "2026-09-18T05:01:39",
-    "summary": "In a room full of IT professionals, words and phrases like “tokenization,” “retrieval-augmented generation,” and “context window” need no explanation. But when technology leaders present to their CEOs and other company leaders about topics like AI, they often find that they need to translate these terms into everyday business language, or else risk being met by blank stares. In the moment, this can be maddening. You know the opportunities and challenges that a technology like generative AI presents for your company. And you know that the organization’s other leaders will likely see things the same way you do, if only you can make yourself understood. Instead of trying to bridge this communication gap on the fly, use Google Gemini to help translate your technical vision into bottom-line business value. Step 1: Figure Out What You Want to Say Your CEO might not speak “tech,” but Google Gemini does. Open up a new chat and explain exactly what it is you hope to communicate to leadership. Here, you can feel free to be as technical as you wish. Maybe you’ll tell Gemini that you’re thinking of building a RAG pipeline to vectorize your company’s proprietary data. Or, maybe you’ll float the idea of using parameter-efficient fine-tuning methods like LoRA to deploy open-weight models on-premises, without exploding your cloud inference costs. You can even upload your technical documents to Gemini, directly in the chat window. No matter how in-the-weeds you get, Gemini will follow your train of thought, parsing the complexity to find the business value at the core of your plans. Step 2: Let Gemini Be Your Translator Now that you’ve captured your vision in your own words, let Gemini help you translate those words into language that will connect with your audience. Use this sample prompt, along with your brainstorming from Step 1: I am the CIO at [company], and I am trying to build the case to [adopt generative AI solutions]. I need to explain the technical concept of generative AI to a non-technical audience (the CEO and board). Help me write talking points that will help me convey what generative AI is, ways it could help us digitally transform, and why it’s important to our growth as a company. Include details about how it could potentially re-focus our technical talent on more strategic work, help enhance our workforce’s productivity, and help us better serve our global workforce and customers. In just a few moments, you’ll have a set of boardroom-ready talking points. Gemini might, for instance, break down the benefits of RAG in simple terms by noting that it anchors AI to internal data like HR policies and technical manuals. Or, it might point out the business benefits of arming IT staff and engineers with generative AI tools, noting the opportunity to shift employees’ focus from low-value, repetitive tasks to innovation. Step 3: Create Content Now that you have your core narrative and language nailed down, Gemini can help you create a more structured pitch. Instead of staring at a blank slide deck, prompt Gemini for ideas on how to build out a presentation that will sway your peers in the C-suite. Try this prompt: I need to build a presentation to deliver this information to the board. Turn these talking points into a 10-slide presentation. For each slide, write a headline, three to four short bullet points for the slide itself, and the speaker notes I should use to explain the concept out loud. Gemini will generate a full, downloadable presentation deck directly in the chat. If you like, you can export the presentation to Google Slides and make your own edits. Or, you can command Gemini to generate a new version with changes to elements like design, language, and narrative flow. Step 4: Make Gemini Your Sparring Partner Before you go into your meeting, open a new chat in Gemini, providing your speaker notes and a link to your presentation, and then ask it to act as a skeptical executive: You are my CEO. Review this presentation and grill me on cost, security, and ROI. Ask your toughest questions, one at a time. Even though Gemini helped you prepare your presentation, it will seamlessly pivot to the role of rigorous executive or tough board member, pressing for more details on project payback, hidden risks, and timeline. By practicing your pitch in this low-stakes environment, you can make certain that you’ll be confident when it’s time for the real thing.",
-    "score": 21,
-    "score_breakdown": {
-      "total_score": 21,
-      "impact": 0,
-      "business": 9,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 5,
-    "is_primary": true
-  },
-  {
-    "media": "The Information",
-    "title": "Cooley Partners with OpenAI on Legal Tool For Drafting SEC Filings",
-    "link": "https://www.theinformation.com/briefings/cooley-partners-openai-legal-tool-drafting-sec-filings",
-    "canonical_url": "https://www.theinformation.com/briefings/cooley-partners-openai-legal-tool-drafting-sec-filings",
-    "published_at": "2026-09-17T14:38:18",
-    "summary": "OpenAI and law firm Cooley co-launched a product, called GO Public, that can draft S-1 filings, the document companies must submit to the Securities and Exchange Commission before they can go public, Cooley said Thursday. Lawyers at Cooley can prompt GO Public, which also has access to Cooley ...",
+    "media": "The Verge",
+    "title": "A cut cable disrupted hundreds of flights across the US",
+    "link": "https://www.theverge.com/transportation/998550/a-cut-cable-disrupted-hundreds-of-flights-across-the-us",
+    "canonical_url": "https://www.theverge.com/transportation/998550/a-cut-cable-disrupted-hundreds-of-flights-across-the-us",
+    "published_at": "2026-09-21T14:48:56",
+    "summary": "Hundreds of flights were cancelled or delayed on Monday after construction crews in New Jersey accidentally cut a Verizon fiber cable used for air traffic control. FAA Administrator Bryan Bedford said that a circuit failure led to the discovery of the severed fiber cable, ABC News reports. The outage hammered airports across the Northeast, causing […]",
     "score": 18,
     "score_breakdown": {
       "total_score": 18,
@@ -281,16 +72,92 @@
       "recency": 1,
       "original": 0
     },
-    "rank": 6,
-    "is_primary": false
+    "rank": 4,
+    "is_primary": true
   },
   {
-    "media": "The Information",
-    "title": "U.S. Lawmaker Ro Khanna Urges Chinese Labs to Help Pace Frontier AI",
-    "link": "https://www.theinformation.com/briefings/u-s-lawmaker-ro-khanna-urges-chinese-labs-help-pace-frontier-ai",
-    "canonical_url": "https://www.theinformation.com/briefings/u-s-lawmaker-ro-khanna-urges-chinese-labs-help-pace-frontier-ai",
-    "published_at": "2026-09-17T17:41:59",
-    "summary": "Ro Khanna, a Democratic congressman for Silicon Valley, has sent letters to Chinese AI companies including Alibaba Group, DeepSeek and Moonshot, requesting their commitments to join American AI labs in a binding international agreement to pace the development of the technology. Khanna, a ranking ...",
+    "media": "The Verge",
+    "title": "Amazon wants to help the Colorado River, but we still don’t know how much water the company uses",
+    "link": "https://www.theverge.com/tech/998539/amazon-data-center-water-conservation-colorado-river",
+    "canonical_url": "https://www.theverge.com/tech/998539/amazon-data-center-water-conservation-colorado-river",
+    "published_at": "2026-09-21T14:15:32",
+    "summary": "Amazon plans to spend $20 million on water conservation projects along the Colorado River, a crucial but dwindling water supply for 40 million people in the Western US. The initiative comes as Amazon and other tech companies face mounting scrutiny over how much water their data centers use. Amazon has a goal of becoming water […]",
+    "score": 15,
+    "score_breakdown": {
+      "total_score": 15,
+      "impact": 0,
+      "business": 9,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 5,
+    "is_primary": true
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Morphotonics raises €40M to expand its display tech into data centers",
+    "link": "https://techcrunch.com/2026/09/21/morphotonics-raises-e40m-as-it-tk-tk-tk-t/",
+    "canonical_url": "https://techcrunch.com/2026/09/21/morphotonics-raises-e40m-as-it-tk-tk-tk-t/",
+    "published_at": "2026-09-21T21:00:00",
+    "summary": "Deeptech company Morphotonics raises €40M from investors including 3M Ventures, Innovation Industries, BOM, and Invest-NL.",
+    "score": 18,
+    "score_breakdown": {
+      "total_score": 18,
+      "impact": 0,
+      "business": 9,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true
+  },
+  {
+    "media": "TechCrunch",
+    "title": "OpenAI forms math advisory group as its AI resolves more than 100 open problems",
+    "link": "https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/",
+    "canonical_url": "https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/",
+    "published_at": "2026-09-21T11:15:58",
+    "summary": "The group won't be given leeway to slow down or redirect OpenAI's ongoing mathematical research.",
+    "score": 18,
+    "score_breakdown": {
+      "total_score": 18,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Meta deal will help plastics recycling startup MacroCycle build its first factory",
+    "link": "https://techcrunch.com/2026/09/22/meta-deal-will-help-plastics-recycling-startup-macrocycle-build-its-first-factory/",
+    "canonical_url": "https://techcrunch.com/2026/09/22/meta-deal-will-help-plastics-recycling-startup-macrocycle-build-its-first-factory/",
+    "published_at": "2026-09-22T02:00:00",
+    "summary": "Meta is giving plastic recycling a boost in a new deal with startup MacroCycle, which is building its first commercial plant.",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true
+  },
+  {
+    "media": "TechCrunch",
+    "title": "The man who built Apple’s stores doesn’t buy Silicon Valley’s bet on AI shopping",
+    "link": "https://techcrunch.com/2026/09/21/the-man-who-built-apples-stores-doesnt-buy-silicon-valleys-bet-on-ai-shopping/",
+    "canonical_url": "https://techcrunch.com/2026/09/21/the-man-who-built-apples-stores-doesnt-buy-silicon-valleys-bet-on-ai-shopping/",
+    "published_at": "2026-09-21T14:44:28",
+    "summary": "Apple Store architect Ron Johnson says Apple's secret sauce has always been its people.",
     "score": 6,
     "score_breakdown": {
       "total_score": 6,
@@ -300,7 +167,216 @@
       "recency": 1,
       "original": 0
     },
+    "rank": 4,
+    "is_primary": true
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Saudi Arabia wants a car industry, launches Ceer with two EVs",
+    "link": "https://arstechnica.com/cars/2026/09/saudi-arabia-wants-a-car-industry-launches-ceer-with-two-evs/",
+    "canonical_url": "https://arstechnica.com/cars/2026/09/saudi-arabia-wants-a-car-industry-launches-ceer-with-two-evs/",
+    "published_at": "2026-09-21T11:55:36",
+    "summary": "The new carmaker is a joint venture between the Saudi PIF and Foxconn.",
+    "score": 9,
+    "score_breakdown": {
+      "total_score": 9,
+      "impact": 0,
+      "business": 0,
+      "development": 8,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Military milestone: Ukrainian naval drone sinks Russian kamikaze drone boat",
+    "link": "https://arstechnica.com/gadgets/2026/09/military-milestone-ukrainian-naval-drone-sinks-russian-kamikaze-drone-boat/",
+    "canonical_url": "https://arstechnica.com/gadgets/2026/09/military-milestone-ukrainian-naval-drone-sinks-russian-kamikaze-drone-boat/",
+    "published_at": "2026-09-21T12:07:05",
+    "summary": "Drone boat battle occurs as Ukraine and Russia target Black Sea ports and ships.",
+    "score": 6,
+    "score_breakdown": {
+      "total_score": 6,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Muse, Meta's extraordinarily privileged AI assistant, has a serious 0-day",
+    "link": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
+    "canonical_url": "https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day/",
+    "published_at": "2026-09-21T13:24:38",
+    "summary": "A simple ClickFix attack is only one way to completely hijack the new agent.",
+    "score": 1,
+    "score_breakdown": {
+      "total_score": 1,
+      "impact": 0,
+      "business": 0,
+      "development": 0,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "SB Energy Faces Investor Skepticism in IPO, Report Says",
+    "link": "https://www.theinformation.com/briefings/sb-energy-faces-investor-skepticism-ipo-report-says",
+    "canonical_url": "https://www.theinformation.com/briefings/sb-energy-faces-investor-skepticism-ipo-report-says",
+    "published_at": "2026-09-21T14:20:25",
+    "summary": "SB Energy’s initial public offering is facing investor skepticism, The New York Times reported Monday. The SoftBank majority-owned company is planning to raise $5 billion to $7 billion in a public offering to help develop a massive data center complex OpenAI plans to lease, which is set to be ...",
+    "score": 50,
+    "score_breakdown": {
+      "total_score": 50,
+      "impact": 35,
+      "business": 9,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "Paramount Settles State Antitrust Lawsuit, Clearing Way for Warner Deal to Close",
+    "link": "https://www.theinformation.com/briefings/paramount-settles-state-antitrust-lawsuit-clearing-way-warner-deal-close",
+    "canonical_url": "https://www.theinformation.com/briefings/paramount-settles-state-antitrust-lawsuit-clearing-way-warner-deal-close",
+    "published_at": "2026-09-21T11:39:13",
+    "summary": "Paramount Skydance settled a lawsuit filed by 12 states that had threatened to stop its $110 billion purchase of Warner Bros. Discovery. The settlement, filed in court on Monday, clears the way for the deal to close. Under the settlement, Paramount agreed to release at least 30 films into movie ...",
+    "score": 50,
+    "score_breakdown": {
+      "total_score": 50,
+      "impact": 35,
+      "business": 9,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "Z.ai Open-Sources ZCode After Data Uploading Scandal",
+    "link": "https://www.theinformation.com/briefings/z-ai-open-sources-zcode-data-uploading-scandal",
+    "canonical_url": "https://www.theinformation.com/briefings/z-ai-open-sources-zcode-data-uploading-scandal",
+    "published_at": "2026-09-21T22:34:39",
+    "summary": "Z.ai said that it has open-sourced its coding tool, ZCode, after the Chinese AI firm faced intense backlash from developers who found out that their data was being uploaded to cloud servers without their consent. “In response to the ZCode product security issues reported by the community, we ...",
+    "score": 47,
+    "score_breakdown": {
+      "total_score": 47,
+      "impact": 12,
+      "business": 18,
+      "development": 13,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "Alibaba Unveils New AI Chip And Data Center Expansion Plan",
+    "link": "https://www.theinformation.com/briefings/alibaba-unveils-new-ai-chip-data-center-expansion-plan",
+    "canonical_url": "https://www.theinformation.com/briefings/alibaba-unveils-new-ai-chip-data-center-expansion-plan",
+    "published_at": "2026-09-21T22:27:39",
+    "summary": "Alibaba on Tuesday unveiled a powerful new AI chip for training and running models, highlighting the rapid progress in China’s domestic semiconductor capabilities. During its annual Apsara tech conference, Alibaba said its new AI chip, Zhenwu V900, delivers three times the performance of its ...",
+    "score": 47,
+    "score_breakdown": {
+      "total_score": 47,
+      "impact": 12,
+      "business": 18,
+      "development": 13,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "Smart-ring Maker Oura Files to Sell $2.2 Billion in IPO",
+    "link": "https://www.theinformation.com/briefings/smart-ring-maker-oura-files-sell-2-2-billion-ipo",
+    "canonical_url": "https://www.theinformation.com/briefings/smart-ring-maker-oura-files-sell-2-2-billion-ipo",
+    "published_at": "2026-09-21T13:40:08",
+    "summary": "Oura is looking to sell $2.2 billion in shares during its initial public offering, the company said in its updated S-1 filing on Monday. Oura, which makes smart rings that track biometrics including sleep quality and heart health, could reach a $15.6 billion fully-diluted valuation from the ...",
+    "score": 41,
+    "score_breakdown": {
+      "total_score": 41,
+      "impact": 35,
+      "business": 0,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 5,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "Meta’s Muse Tries (and Fails) to Disrupt Amazon",
+    "link": "https://www.theinformation.com/articles/metas-muse-tries-and-fails-disrupt-amazon",
+    "canonical_url": "https://www.theinformation.com/articles/metas-muse-tries-and-fails-disrupt-amazon",
+    "published_at": "2026-09-21T15:00:41",
+    "summary": "Everyone loves a brawl between two big tech firms—even other tech CEOs. Amazon’s block on Meta Platforms’ new Muse personal agent accessing its shopping site, which came to light Sunday night, prompted Palo Alto Networks CEO Nikesh Arora to post on X on Monday that the episode signals “a bigger battle than anyone anticipates.” He may be right: while Amazon has previously blocked Google and OpenAI shopping bots without drama, Amazon’s action against Meta is a bit more reminiscent of its blocking of Perplexity’s agent, which sparked a lawsuit that is still underway. And this is just the beginning. Arora, for instance, predicted that eventually everyone from Apple to Google and the AI firms will offer similar personal agents. (See our report today on what OpenAI is up to.)",
+    "score": 39,
+    "score_breakdown": {
+      "total_score": 39,
+      "impact": 24,
+      "business": 9,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 6,
+    "is_primary": false
+  },
+  {
+    "media": "The Information",
+    "title": "Exclusive: Xbox to Cut Hundreds of Jobs, Consolidate Game Studios",
+    "link": "https://www.theinformation.com/briefings/exclusive-xbox-cut-hundreds-jobs-consolidate-game-studios",
+    "canonical_url": "https://www.theinformation.com/briefings/exclusive-xbox-cut-hundreds-jobs-consolidate-game-studios",
+    "published_at": "2026-09-21T16:29:21",
+    "summary": "Xbox is planning to lay off hundreds of employees this week in its second major staff reduction this year, according to someone briefed on the plans. The Microsoft-owned firm also plans to consolidate several of its game studios, this person said. Xbox CEO Asha Sharma in July told staff she ...",
+    "score": 11,
+    "score_breakdown": {
+      "total_score": 11,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 1,
+      "original": 5
+    },
     "rank": 7,
+    "is_primary": false
+  },
+  {
+    "media": "The Information",
+    "title": "World Models Need More Intelligence, Says Luma CEO Amit Jain",
+    "link": "https://www.theinformation.com/articles/world-models-need-intelligence-says-luma-ceo-amit-jain",
+    "canonical_url": "https://www.theinformation.com/articles/world-models-need-intelligence-says-luma-ceo-amit-jain",
+    "published_at": "2026-09-21T13:46:47",
+    "summary": "The AI boom has been built largely on progress in language models, but a different approach has gained enormous attention in the industry this year: world models, which are designed to generate accurate predictions about the physical world, rather than words and numbers. I sat down with Amit Jain, co-founder and CEO of Luma AI, to discuss the promise of world models—and where current approaches to training them still fall short—on the latest episode of AI Deep Dive , The Information’s new show exploring the hard problems on tech’s frontier.",
+    "score": 11,
+    "score_breakdown": {
+      "total_score": 11,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 1,
+      "original": 5
+    },
+    "rank": 8,
     "is_primary": false
   }
 ]

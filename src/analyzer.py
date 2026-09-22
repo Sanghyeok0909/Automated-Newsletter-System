@@ -192,6 +192,15 @@ def execute_llm_call(model_name, prompt):
     return response.text
 
 def analyze_articles():
+    # Force cache invalidation: Purge any previous translated/analyzed articles
+    for stale_file in ["src/translated_articles.json", "src/edition_stats.json"]:
+        if os.path.exists(stale_file):
+            try:
+                os.remove(stale_file)
+                log(f"[Cache Invalidation] Removed stale analysis cache: {stale_file}")
+            except Exception as e:
+                log(f"[Cache Invalidation] Warning: Failed to remove {stale_file}: {e}")
+
     load_dotenv()
     api_key = os.getenv("GEMINI_API_KEY")
     if api_key:

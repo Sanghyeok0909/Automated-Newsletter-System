@@ -55,26 +55,18 @@ jobs:
           echo "Running unit and mock regression test suite..."
           python -m unittest discover tests
 
-      # Live Gemini Analysis only runs on scheduled daily cron or manual workflow_dispatch
-      # Push events perform code validation and static generation to protect daily quota
+      # Execute Live Ingestion, AI Analysis, and Dynamic Newsletter Generation
       - name: Execute Autonomous Pipeline (Live Curation)
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          echo "Step 1: Fetching target media feeds..."
+          echo "Step 1: Fetching target media feeds (Dynamic Scrape)..."
           python src/fetcher.py
           
           echo "Step 2: Analyzing with Gemini AI (Bounded Batching)..."
           python src/analyzer.py
           
           echo "Step 3: Generating Newsletter artifacts..."
-          python src/generator.py
-
-      - name: Build / Validate Static Site (Push Events)
-        if: github.event_name == 'push'
-        run: |
-          echo "Validating static newsletter build from repository data..."
           python src/generator.py
 
       # Validate generated artifacts exist and are non-empty before uploading
@@ -95,7 +87,7 @@ jobs:
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add dist/
+          git add dist/ src/articles.json src/translated_articles.json src/edition_stats.json src/fetcher_stats.json
           git commit -m "chore(data): auto-generate daily newsletter" || exit 0
           git push
 
