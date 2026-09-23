@@ -2,31 +2,31 @@
   "The Verge": {
     "status": "success",
     "raw_count": 10,
-    "eligible_count": 9,
+    "eligible_count": 10,
     "selected_count": 5
   },
   "TechCrunch": {
     "status": "success",
     "raw_count": 20,
-    "eligible_count": 18,
+    "eligible_count": 19,
     "selected_count": 5
   },
   "Ars Technica": {
     "status": "success",
     "raw_count": 20,
-    "eligible_count": 15,
+    "eligible_count": 16,
     "selected_count": 5
   },
   "MIT Tech Review": {
     "status": "shortage",
     "raw_count": 10,
-    "eligible_count": 3,
-    "selected_count": 3
+    "eligible_count": 4,
+    "selected_count": 4
   },
   "The Information": {
     "status": "success",
     "raw_count": 20,
-    "eligible_count": 17,
+    "eligible_count": 15,
     "selected_count": 5
   }
 }
