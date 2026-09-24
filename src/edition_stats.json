@@ -1,8 +1,26 @@
 {
   "The Verge": {
-    "analyzed": 0,
+    "analyzed": 5,
     "target": 5,
     "candidates_found": 10,
+    "status": "completed"
+  },
+  "TechCrunch": {
+    "analyzed": 5,
+    "target": 5,
+    "candidates_found": 17,
+    "status": "completed"
+  },
+  "Ars Technica": {
+    "analyzed": 5,
+    "target": 5,
+    "candidates_found": 14,
+    "status": "completed"
+  },
+  "MIT Tech Review": {
+    "analyzed": 0,
+    "target": 5,
+    "candidates_found": 2,
     "status": "daily_quota_exhausted"
   }
 }
