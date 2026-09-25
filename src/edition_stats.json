@@ -8,19 +8,19 @@
   "TechCrunch": {
     "analyzed": 5,
     "target": 5,
-    "candidates_found": 17,
+    "candidates_found": 20,
     "status": "completed"
   },
   "Ars Technica": {
     "analyzed": 5,
     "target": 5,
-    "candidates_found": 14,
+    "candidates_found": 11,
     "status": "completed"
   },
   "MIT Tech Review": {
     "analyzed": 0,
     "target": 5,
-    "candidates_found": 2,
+    "candidates_found": 3,
     "status": "daily_quota_exhausted"
   }
 }
