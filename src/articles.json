@@ -1,11 +1,30 @@
 [
   {
     "media": "The Verge",
-    "title": "One company is at the center of a wave of rogue AI attacks",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1000644/irregular-rogue-ai-cyberattacks-hacking-openai-meta-anthropic-google",
-    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/1000644/irregular-rogue-ai-cyberattacks-hacking-openai-meta-anthropic-google",
-    "published_at": "2026-09-25T15:39:48",
-    "summary": "In July, OpenAI revealed that its AI agents had attacked Hugging Face without permission, sparking widespread concerns about AI safety. Since then, a string of similar incidents involving agents from Meta, Anthropic, Google, and other companies has fueled further fears about rogue AI. As disclosures implicating numerous AI models trickled out over the past few […]",
+    "title": "Apple hit with $5.7 billion in damages over haptic patents",
+    "link": "https://www.theverge.com/tech/1001118/apple-hit-with-5-7-billion-in-damages-over-haptic-patents",
+    "canonical_url": "https://www.theverge.com/tech/1001118/apple-hit-with-5-7-billion-in-damages-over-haptic-patents",
+    "published_at": "2026-09-26T21:30:01",
+    "summary": "Haptics tech company Taction sued Apple in 2021, alleging it infringed two of its patents. Now a federal jury in San Diego has awarded Taction over $5.7 billion in damages. According to CNBC, \"The lawsuit centered around U.S. Patent Nos. 10,659,885 and 10,820,117, which both involve vibration-based, tactile transducer technology that helps users feel a […]",
+    "score": 56,
+    "score_breakdown": {
+      "total_score": 56,
+      "impact": 24,
+      "business": 9,
+      "development": 13,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true
+  },
+  {
+    "media": "The Verge",
+    "title": "OpenAI pauses training of its ‘most capable models’",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
+    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
+    "published_at": "2026-09-26T16:34:59",
+    "summary": "As reports of OpenAI's models breaking containment, hacking sites, and generally getting out of control pile up, the company has made the decision to pause training of its most powerful models. The decision was made after a model being tested within a sandbox exploited a loophole to gain internet access. The incident happened on September […]",
     "score": 36,
     "score_breakdown": {
       "total_score": 36,
@@ -15,54 +34,16 @@
       "recency": 7,
       "original": 0
     },
-    "rank": 1,
-    "is_primary": true
-  },
-  {
-    "media": "The Verge",
-    "title": "Tesla&#8217;s Optimus robot is going through growing pains",
-    "link": "https://www.theverge.com/tech/1000794/tesla-optimus-production-issues-hands",
-    "canonical_url": "https://www.theverge.com/tech/1000794/tesla-optimus-production-issues-hands",
-    "published_at": "2026-09-25T17:01:36",
-    "summary": "Hitting its goal of making 20,000 Optimus robots per week is reportedly proving tricky for Tesla. The Information reports that Tesla produced \"several hundred robots a week\" last month, after it repurposed its Model S and Model X production lines for Optimus earlier this year. However, this strategy is reportedly creating manufacturing snags, like issues […]",
-    "score": 24,
-    "score_breakdown": {
-      "total_score": 24,
-      "impact": 12,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
     "rank": 2,
     "is_primary": true
   },
   {
     "media": "The Verge",
-    "title": "Cricut&#8217;s new compact crafter prints, cuts, and laminates stickers",
-    "link": "https://www.theverge.com/tech/1000655/cricut-sticker-pix-print-cut-crafting-printer-machines-stickers",
-    "canonical_url": "https://www.theverge.com/tech/1000655/cricut-sticker-pix-print-cut-crafting-printer-machines-stickers",
-    "published_at": "2026-09-25T14:21:25",
-    "summary": "Cricut announced its first crafting machines with printing capabilities that are primarily designed as all-in-one solutions for turning photos and other images into precut stickers. The Cricut StickerPix Print plus Cut and Cricut StickerPix Print are also two of the smallest machines in the company's current lineup and seem ideal for those whose crafting aspirations […]",
-    "score": 24,
-    "score_breakdown": {
-      "total_score": 24,
-      "impact": 12,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 3,
-    "is_primary": true
-  },
-  {
-    "media": "The Verge",
-    "title": "Gaming’s biggest horror series are more vital than ever",
-    "link": "https://www.theverge.com/entertainment/1000595/silent-hill-townfall-resident-evil",
-    "canonical_url": "https://www.theverge.com/entertainment/1000595/silent-hill-townfall-resident-evil",
-    "published_at": "2026-09-25T14:10:00",
-    "summary": "For the third year in a row, I've been scared out of my wits by a new Silent Hill game. First it was the modern remake of Silent Hill 2, then the Japan-set spinoff Silent Hill F. Now I find myself slowly crawling through a quaint Scottish town in Silent Hill: Townfall, trying my best […]",
+    "title": "Can Cloudflare CEO Matthew Prince save the web from AI?",
+    "link": "https://www.theverge.com/podcast/1000344/cloudflare-matthew-prince-google-zero-ai-web-advertising",
+    "canonical_url": "https://www.theverge.com/podcast/1000344/cloudflare-matthew-prince-google-zero-ai-web-advertising",
+    "published_at": "2026-09-26T14:00:00",
+    "summary": "Today, I’m talking with Matthew Prince, who is CEO of Cloudflare. This episode is part of a two-part series on the future of business. Matthew last joined us on the show about two and a half years ago, at what we thought then was a wild pivot point for the internet — and now it […]",
     "score": 21,
     "score_breakdown": {
       "total_score": 21,
@@ -72,928 +53,16 @@
       "recency": 7,
       "original": 0
     },
-    "rank": 4,
-    "is_primary": true
-  },
-  {
-    "media": "The Verge",
-    "title": "Roku&#8217;s first OLED TVs are up to $400 off, starting at $699",
-    "link": "https://www.theverge.com/gadgets/1000859/roku-pro-series-oled-nothing-phone-4a-pro-deal-sale",
-    "canonical_url": "https://www.theverge.com/gadgets/1000859/roku-pro-series-oled-nothing-phone-4a-pro-deal-sale",
-    "published_at": "2026-09-25T18:18:57",
-    "summary": "Roku recently launched its first-ever OLED TVs. The $999 starting price was already impressive for the 55-inch Pro Series model that has a 120Hz refresh rate OLED panel (with four HDMI 2.1 ports and support for Dolby Vision and HDR 10 Plus). The price is even lower right now at Amazon when you enter the […]",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 5,
-    "is_primary": true
-  },
-  {
-    "media": "The Verge",
-    "title": "Phones don’t have lights",
-    "link": "https://www.theverge.com/podcast/1000751/vergecast-meta-connect-muse-googlebooks",
-    "canonical_url": "https://www.theverge.com/podcast/1000751/vergecast-meta-connect-muse-googlebooks",
-    "published_at": "2026-09-25T17:42:59",
-    "summary": "Mark Zuckerberg has a new defense of the Ray-Ban Meta glasses: They're actually doing more to signal they're taking a photo than phones do. He's brought this up in at least two recent interviews, noting that the glasses have a light that comes on to signal when a photo is being taken, while phones do […]",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 6,
-    "is_primary": false
-  },
-  {
-    "media": "The Verge",
-    "title": "These camera apps give you more control over the iPhone 18 Pro’s aperture",
-    "link": "https://www.theverge.com/tech/1000729/moment-pro-blackmagic-camera-ii-ios-app-iphone-18-pro-max-aperature-camera",
-    "canonical_url": "https://www.theverge.com/tech/1000729/moment-pro-blackmagic-camera-ii-ios-app-iphone-18-pro-max-aperature-camera",
-    "published_at": "2026-09-25T17:23:30",
-    "summary": "One of the questionable limitations of the iPhone 18 Pro's new main camera with a variable aperture is that you're limited to just four settings in the native iOS' camera app in manual mode: f/1.48, f/1.8, f/2.8, and f/4. Those same limitations are also in place when the app is adjusting the iris itself in […]",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 7,
-    "is_primary": false
-  },
-  {
-    "media": "The Verge",
-    "title": "Meta makes the Muse filesystem even more accessible",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1000784/meta-muse-filesystem",
-    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/1000784/meta-muse-filesystem",
-    "published_at": "2026-09-25T16:49:53",
-    "summary": "Yesterday, with a little prodding, it was discovered that Meta's Muse would expose its filesystem to curious users. The files offered a fascinating peek under the hood of an AI chatbot, and appeared to expose details we weren't meant to see, not least because Muse itself told people, including us, it wasn't supposed to reveal […]",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 8,
-    "is_primary": false
-  },
-  {
-    "media": "The Verge",
-    "title": "Leaks reveal a new Apple HomePod mini, iPad mini, and Apple TV 4K",
-    "link": "https://www.theverge.com/tech/1000772/apple-code-leak-homepod-mini-2-ipad-mini-8-apple-tv-4k",
-    "canonical_url": "https://www.theverge.com/tech/1000772/apple-code-leak-homepod-mini-2-ipad-mini-8-apple-tv-4k",
-    "published_at": "2026-09-25T16:22:05",
-    "summary": "Apple is expected to announce more hardware before the end of the year following the debut of the iPhone 18 Pro and folding iPhone Duo earlier this month. The updated products will include a new version of the HomePod mini, the iPad mini 8, and the Apple TV 4K, according to details and images discovered […]",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 9,
-    "is_primary": false
-  },
-  {
-    "media": "The Verge",
-    "title": "Sony and UMG are suing Suno again",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1000758/suno-sony-umg-lawsuit-ai-music",
-    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/1000758/suno-sony-umg-lawsuit-ai-music",
-    "published_at": "2026-09-25T15:51:56",
-    "summary": "Sony and Universal Music Group filed yet another suit against Suno. The labels claim its new v6 model still infringes on their copyrights because it's trained on user outputs from previous models, which were themselves trained on unlicensed music ripped from YouTube and other sources. Sony and UMG are notable holdouts who did not sign […]",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 10,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Ahead of US IPO, British AI neocloud Nscale secures $3.36B in convertible financing",
-    "link": "https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/",
-    "canonical_url": "https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/",
-    "published_at": "2026-09-25T18:33:59",
-    "summary": "The funding, which comes from Third Point, Nvidia, and others, will  fuel the company's massive AI data center buildout.",
-    "score": 64,
-    "score_breakdown": {
-      "total_score": 64,
-      "impact": 24,
-      "business": 25,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 1,
-    "is_primary": true
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Anthropic to pay Akamai $11.6 billion over seven years in cloud deal",
-    "link": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/",
-    "canonical_url": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/",
-    "published_at": "2026-09-25T19:13:38",
-    "summary": "Anthropic has committed $11.6 billion over seven years to Akamai's cloud infrastructure, a bet on CPUs that could grow to about $20 billion, and in an unusual arrangement, Akamai is giving Anthropic a potential stake of up to 5% of its stock that grows as Anthropic spends more.",
-    "score": 57,
-    "score_breakdown": {
-      "total_score": 57,
-      "impact": 24,
-      "business": 18,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 2,
-    "is_primary": true
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Meta’s AI Tamagotchi bet is…working?",
-    "link": "https://techcrunch.com/video/will-metas-ai-tamagotchi-bet-isworking/",
-    "canonical_url": "https://techcrunch.com/video/will-metas-ai-tamagotchi-bet-isworking/",
-    "published_at": "2026-09-25T16:00:00",
-    "summary": "When AI leaders at OpenAI and Anthropic started talking about “pacing the frontier,” maybe someone should have asked: what pace? Now it’s turned into model drop week for both companies as Anthropic rolled out Opus 5.5, followed by OpenAI’s GPT-6 model updates just 90 minutes later. But the company that stole the spotlight was Meta, whose personal AI agent Muse is reportedly outpacing ChatGPT’s early numbers and is headed for smart glasses and […]",
-    "score": 36,
-    "score_breakdown": {
-      "total_score": 36,
-      "impact": 24,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
     "rank": 3,
     "is_primary": true
   },
   {
-    "media": "TechCrunch",
-    "title": "Anthropic’s founders seek voting control ahead of IPO",
-    "link": "https://techcrunch.com/2026/09/25/anthropics-founders-seek-voting-control-ahead-of-ipo/",
-    "canonical_url": "https://techcrunch.com/2026/09/25/anthropics-founders-seek-voting-control-ahead-of-ipo/",
-    "published_at": "2026-09-25T15:40:03",
-    "summary": "Anthropic is asking its shareholders to approve a structure that would give its seven co-founders a combined 50.1% of the vote on most corporate matters.",
-    "score": 36,
-    "score_breakdown": {
-      "total_score": 36,
-      "impact": 24,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 4,
-    "is_primary": true
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Unsecured OpenAI agents posted 53 user images on the internet without the lab’s knowledge",
-    "link": "https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/",
-    "canonical_url": "https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/",
-    "published_at": "2026-09-25T22:20:47",
-    "summary": "AI agents operating in OpenAI's research environment posted user images on public image-hosting sites without the lab's knowledge.",
-    "score": 27,
-    "score_breakdown": {
-      "total_score": 27,
-      "impact": 12,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 5,
-    "is_primary": true
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Mark Wahlberg is coming to TechCrunch Disrupt 2026, and he wants to talk about your work, not his",
-    "link": "https://techcrunch.com/2026/09/25/mark-wahlberg-is-coming-to-techcrunch-disrupt-2026/",
-    "canonical_url": "https://techcrunch.com/2026/09/25/mark-wahlberg-is-coming-to-techcrunch-disrupt-2026/",
-    "published_at": "2026-09-25T18:48:33",
-    "summary": "Mark Wahlberg joins Bruce K. Lee at Disrupt to discuss investing, entrepreneurship, healthcare, wellness, and building businesses.",
-    "score": 27,
-    "score_breakdown": {
-      "total_score": 27,
-      "impact": 12,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 6,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Crusoe abandons $1.25B plan to use Boom turbines at AI data centers",
-    "link": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/",
-    "canonical_url": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/",
-    "published_at": "2026-09-25T23:11:10",
-    "summary": "Boom Supersonic CEO Blake Scholl said its new stationary power plants were no longer in Crusoe's near-term plans.",
-    "score": 24,
-    "score_breakdown": {
-      "total_score": 24,
-      "impact": 0,
-      "business": 9,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 7,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Kiteworks urges customers to shut down their servers amid ‘imminent’ threat of cyberattack",
-    "link": "https://techcrunch.com/2026/09/25/kiteworks-urges-customers-to-shut-down-their-servers-amid-imminent-threat-of-cyberattack/",
-    "canonical_url": "https://techcrunch.com/2026/09/25/kiteworks-urges-customers-to-shut-down-their-servers-amid-imminent-threat-of-cyberattack/",
-    "published_at": "2026-09-25T15:52:13",
-    "summary": "The tech giant, which allows companies to send large datasets over the internet, said it received a \"credible threat\" from law enforcement about an imminent attack.",
-    "score": 24,
-    "score_breakdown": {
-      "total_score": 24,
-      "impact": 12,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 8,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Affected by layoffs? Don’t miss this $75 deal for your TechCrunch Disrupt 2026 Expo+ Pass",
-    "link": "https://techcrunch.com/2026/09/25/disrupt-2026-layoff-expo-plus-passes-available-for-75-dollars/",
-    "canonical_url": "https://techcrunch.com/2026/09/25/disrupt-2026-layoff-expo-plus-passes-available-for-75-dollars/",
-    "published_at": "2026-09-25T14:15:00",
-    "summary": "Your next opportunity could be one conversation away. Get your Expo+ Pass for just $75. Limited to the first 100 qualifying people.",
-    "score": 24,
-    "score_breakdown": {
-      "total_score": 24,
-      "impact": 12,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 9,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "The Aeropod automates soil aeration without robotics — see it at TechCrunch Disrupt",
-    "link": "https://techcrunch.com/2026/09/25/the-aeropod-automates-soil-aeration-without-robotics-see-it-at-techcrunch-disrupt/",
-    "canonical_url": "https://techcrunch.com/2026/09/25/the-aeropod-automates-soil-aeration-without-robotics-see-it-at-techcrunch-disrupt/",
-    "published_at": "2026-09-25T17:30:00",
-    "summary": "Muju Earth Technologies has developed a deceptively simply pod that can save farmers money while improving crop yields.",
-    "score": 21,
-    "score_breakdown": {
-      "total_score": 21,
-      "impact": 0,
-      "business": 9,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 10,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Meta is putting its muscle behind Muse as the AI app takes off",
-    "link": "https://techcrunch.com/2026/09/25/meta-is-putting-its-muscle-behind-muse-as-the-ai-app-takes-off/",
-    "canonical_url": "https://techcrunch.com/2026/09/25/meta-is-putting-its-muscle-behind-muse-as-the-ai-app-takes-off/",
-    "published_at": "2026-09-25T16:16:52",
-    "summary": "Muse is topping the app store charts and adding users at a rapid clip, while Meta ramps up the personal AI agent's promotion across its own apps and beyond.",
-    "score": 21,
-    "score_breakdown": {
-      "total_score": 21,
-      "impact": 0,
-      "business": 9,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 11,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "For months, OpenAI’s agent swarms have been attacking online databases to find obscure facts",
-    "link": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts/",
-    "canonical_url": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts/",
-    "published_at": "2026-09-25T15:48:14",
-    "summary": "The latest unauthorized agent swarms were discovered by researchers.",
-    "score": 19,
-    "score_breakdown": {
-      "total_score": 19,
-      "impact": 12,
-      "business": 0,
-      "development": 0,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 12,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Automattic has a new board after failed attempt to put CEO on leave",
-    "link": "https://techcrunch.com/2026/09/25/automattic-has-a-new-board-after-failed-attempt-to-put-ceo-on-leave/",
-    "canonical_url": "https://techcrunch.com/2026/09/25/automattic-has-a-new-board-after-failed-attempt-to-put-ceo-on-leave/",
-    "published_at": "2026-09-25T23:04:34",
-    "summary": "After days of upheaval at Automattic, following a failed attempt to remove CEO Matt Mullenweg, the company has a new board.",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 13,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "The hottest new hangout for middle schoolers is NPR’s comment section?",
-    "link": "https://techcrunch.com/2026/09/25/the-hottest-new-hangout-for-middle-schoolers-is-nprs-comment-section/",
-    "canonical_url": "https://techcrunch.com/2026/09/25/the-hottest-new-hangout-for-middle-schoolers-is-nprs-comment-section/",
-    "published_at": "2026-09-25T20:33:58",
-    "summary": "When NPR staffers flagged strange comments under their podcasts on Spotify as bots, it took a Gen Z colleague to (immediately) figure out the mystery.",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 14,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Some Supabase customers are publicly exposing reams of people’s data to the web",
-    "link": "https://techcrunch.com/2026/09/25/some-supabase-customers-are-publicly-exposing-reams-of-peoples-data-to-the-web/",
-    "canonical_url": "https://techcrunch.com/2026/09/25/some-supabase-customers-are-publicly-exposing-reams-of-peoples-data-to-the-web/",
-    "published_at": "2026-09-25T17:29:46",
-    "summary": "The findings highlight how AI-generated and vibe-coded apps can spill and expose users' data when not configured or secured properly.",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 15,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Tesla finally moves to electrify trucking after a decade of work and delays",
-    "link": "https://techcrunch.com/2026/09/25/tesla-finally-moves-to-electrify-trucking-after-a-decade-of-work-and-delays/",
-    "canonical_url": "https://techcrunch.com/2026/09/25/tesla-finally-moves-to-electrify-trucking-after-a-decade-of-work-and-delays/",
-    "published_at": "2026-09-25T15:24:50",
-    "summary": "Tesla's Semi truck, with a 500-mile range, is about to hit the road in big numbers, with the company saying it plans to make 50,000 units a year.",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 16,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "TechCrunch Disrupt 2026: Ricursive Intelligence’s Anna Goldie and Azalia Mirhoseini on when AI starts designing its own hardware",
-    "link": "https://techcrunch.com/2026/09/25/techcrunch-disrupt-2026-ricursive-intelligences-anna-goldie-and-azalia-mirhoseini-on-when-ai-starts-designing-its-own-hardware/",
-    "canonical_url": "https://techcrunch.com/2026/09/25/techcrunch-disrupt-2026-ricursive-intelligences-anna-goldie-and-azalia-mirhoseini-on-when-ai-starts-designing-its-own-hardware/",
-    "published_at": "2026-09-25T15:00:00",
-    "summary": "At TechCrunch Disrupt 2026, Ricursive Intelligence co-founders Anna Goldie and Azalia Mirhoseini will take the Disrupt Stage to discuss closing the loop between AI and chip development. Save up to $200 on your pass before today ends.",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 17,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Meadow lets you leave your smartphone at home without sacrificing the essentials",
-    "link": "https://techcrunch.com/2026/09/25/meadow-lets-you-leave-your-smartphone-at-home-without-sacrificing-the-essentials/",
-    "canonical_url": "https://techcrunch.com/2026/09/25/meadow-lets-you-leave-your-smartphone-at-home-without-sacrificing-the-essentials/",
-    "published_at": "2026-09-25T14:05:04",
-    "summary": "“We’re not Luddites... it’s just we don’t want social media, browsing, and that kind of stuff,\" said 25-year-old founder Shreyas Narlanka.",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 18,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Meta opens early access program for new Muse features",
-    "link": "https://techcrunch.com/2026/09/25/meta-opens-early-access-program-for-new-muse-features/",
-    "canonical_url": "https://techcrunch.com/2026/09/25/meta-opens-early-access-program-for-new-muse-features/",
-    "published_at": "2026-09-25T20:34:53",
-    "summary": "Anyone interested in joining has to ask Muse to put them on the list.",
-    "score": 10,
-    "score_breakdown": {
-      "total_score": 10,
-      "impact": 0,
-      "business": 0,
-      "development": 0,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 19,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Astra and Opus just passed Turing’s other test",
-    "link": "https://techcrunch.com/2026/09/25/astra-and-opus-just-passed-turings-other-test/",
-    "canonical_url": "https://techcrunch.com/2026/09/25/astra-and-opus-just-passed-turings-other-test/",
-    "published_at": "2026-09-25T17:24:36",
-    "summary": "Frontier AI models are finishing Alan Turing's World War II codebreaking work.",
-    "score": 7,
-    "score_breakdown": {
-      "total_score": 7,
-      "impact": 0,
-      "business": 0,
-      "development": 0,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 20,
-    "is_primary": false
-  },
-  {
-    "media": "Ars Technica",
-    "title": "With PRIMA, NASA will try to build a billion-dollar space telescope in record time",
-    "link": "https://arstechnica.com/space/2026/09/nasa-green-lights-billion-dollar-infrared-observatory-for-launch-in-early-2030s/",
-    "canonical_url": "https://arstechnica.com/space/2026/09/nasa-green-lights-billion-dollar-infrared-observatory-for-launch-in-early-2030s/",
-    "published_at": "2026-09-25T14:07:46",
-    "summary": "NASA's PRIMA mission will use spare parts from Webb to do major science at a lower cost.",
-    "score": 24,
-    "score_breakdown": {
-      "total_score": 24,
-      "impact": 12,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 1,
-    "is_primary": true
-  },
-  {
-    "media": "Ars Technica",
-    "title": "Trump administration takes Musk’s side in fight over EU tech rules",
-    "link": "https://arstechnica.com/tech-policy/2026/09/trump-administration-takes-musks-side-in-fight-over-eu-tech-rules/",
-    "canonical_url": "https://arstechnica.com/tech-policy/2026/09/trump-administration-takes-musks-side-in-fight-over-eu-tech-rules/",
-    "published_at": "2026-09-25T13:45:49",
-    "summary": "Washington says Brussels overreached when it fined X €120 million under the DSA.",
-    "score": 24,
-    "score_breakdown": {
-      "total_score": 24,
-      "impact": 12,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 2,
-    "is_primary": true
-  },
-  {
-    "media": "Ars Technica",
-    "title": "Paramount/WBD merger conditions give the public \"virtually nothing,\" judge is told",
-    "link": "https://arstechnica.com/tech-policy/2026/09/paramount-wbd-merger-conditions-give-the-public-virtually-nothing-judge-is-told/",
-    "canonical_url": "https://arstechnica.com/tech-policy/2026/09/paramount-wbd-merger-conditions-give-the-public-virtually-nothing-judge-is-told/",
-    "published_at": "2026-09-25T18:42:57",
-    "summary": "US judge reviews deal with California, says it must not be result of collusion.",
-    "score": 22,
-    "score_breakdown": {
-      "total_score": 22,
-      "impact": 12,
-      "business": 0,
-      "development": 0,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 3,
-    "is_primary": true
-  },
-  {
-    "media": "Ars Technica",
-    "title": "AI was supposed to hit new grads hard. So far, unemployment data says otherwise.",
-    "link": "https://arstechnica.com/ai/2026/09/ai-was-supposed-to-hit-new-grads-hard-so-far-unemployment-data-says-otherwise/",
-    "canonical_url": "https://arstechnica.com/ai/2026/09/ai-was-supposed-to-hit-new-grads-hard-so-far-unemployment-data-says-otherwise/",
-    "published_at": "2026-09-25T19:11:05",
-    "summary": "\"There is no evidence of any significant, widespread displacement or reduction in hiring”",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 4,
-    "is_primary": true
-  },
-  {
-    "media": "Ars Technica",
-    "title": "Review: The iPhone 18 Pro is Apple's coolest smartphone (but only literally)",
-    "link": "https://arstechnica.com/apple/2026/09/review-the-iphone-18-pro-is-apples-coolest-smartphone-but-only-literally/",
-    "canonical_url": "https://arstechnica.com/apple/2026/09/review-the-iphone-18-pro-is-apples-coolest-smartphone-but-only-literally/",
-    "published_at": "2026-09-25T19:34:42",
-    "summary": "Better thermals and battery life make this iterative update nicer to use.",
-    "score": 10,
-    "score_breakdown": {
-      "total_score": 10,
-      "impact": 0,
-      "business": 0,
-      "development": 0,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 5,
-    "is_primary": true
-  },
-  {
-    "media": "Ars Technica",
-    "title": "Is solar's growth finally slowing in the US?",
-    "link": "https://arstechnica.com/science/2026/09/is-solars-growth-finally-slowing-in-the-us/",
-    "canonical_url": "https://arstechnica.com/science/2026/09/is-solars-growth-finally-slowing-in-the-us/",
-    "published_at": "2026-09-25T18:27:18",
-    "summary": "Renewables easily cover changes in US demand, which is rising by 2% in 2026.",
-    "score": 10,
-    "score_breakdown": {
-      "total_score": 10,
-      "impact": 0,
-      "business": 0,
-      "development": 0,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 6,
-    "is_primary": false
-  },
-  {
-    "media": "Ars Technica",
-    "title": "Microsoft stops insisting you need a \"Copilot+ PC\"",
-    "link": "https://arstechnica.com/gadgets/2026/09/microsoft-stops-insisting-you-need-a-copilot-pc/",
-    "canonical_url": "https://arstechnica.com/gadgets/2026/09/microsoft-stops-insisting-you-need-a-copilot-pc/",
-    "published_at": "2026-09-25T17:57:37",
-    "summary": "Microsoft's new Surface laptops forgo Copilot+ PC branding.",
-    "score": 10,
-    "score_breakdown": {
-      "total_score": 10,
-      "impact": 0,
-      "business": 0,
-      "development": 0,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 7,
-    "is_primary": false
-  },
-  {
-    "media": "Ars Technica",
-    "title": "Rocket Report: Era of cheap launch is over? Astra sets early 2027 target for return",
-    "link": "https://arstechnica.com/space/2026/09/rocket-report-era-of-cheap-launch-is-over-astra-sets-early-2027-target-for-return/",
-    "canonical_url": "https://arstechnica.com/space/2026/09/rocket-report-era-of-cheap-launch-is-over-astra-sets-early-2027-target-for-return/",
-    "published_at": "2026-09-25T11:00:10",
-    "summary": "\"The customer got comfortable with a high reliability and a low price.\"",
-    "score": 9,
-    "score_breakdown": {
-      "total_score": 9,
-      "impact": 0,
-      "business": 0,
-      "development": 0,
-      "recency": 4,
-      "original": 5
-    },
-    "rank": 8,
-    "is_primary": false
-  },
-  {
-    "media": "Ars Technica",
-    "title": "After seven years, a spacecraft company is releasing its Otters into the wild",
-    "link": "https://arstechnica.com/space/2026/09/after-seven-years-a-spacecraft-company-is-releasing-its-otters-into-the-wild/",
-    "canonical_url": "https://arstechnica.com/space/2026/09/after-seven-years-a-spacecraft-company-is-releasing-its-otters-into-the-wild/",
-    "published_at": "2026-09-25T15:35:23",
-    "summary": "\"There is always a tension that comes with seeing the first of anything fly.\"",
-    "score": 7,
-    "score_breakdown": {
-      "total_score": 7,
-      "impact": 0,
-      "business": 0,
-      "development": 0,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 9,
-    "is_primary": false
-  },
-  {
-    "media": "Ars Technica",
-    "title": "US being left behind in EV charging speeds as China goes sub-5 min to 70%",
-    "link": "https://arstechnica.com/cars/2026/09/us-being-left-behind-in-ev-charging-speeds-as-china-goes-sub-5-min-to-70/",
-    "canonical_url": "https://arstechnica.com/cars/2026/09/us-being-left-behind-in-ev-charging-speeds-as-china-goes-sub-5-min-to-70/",
-    "published_at": "2026-09-25T15:21:55",
-    "summary": "The new LFP battery charges from 10 to 70% in 4.5 minutes at just 65˚C.",
-    "score": 7,
-    "score_breakdown": {
-      "total_score": 7,
-      "impact": 0,
-      "business": 0,
-      "development": 0,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 10,
-    "is_primary": false
-  },
-  {
-    "media": "Ars Technica",
-    "title": "Trump admin using AI to deny medical care for seniors in disastrous experiment",
-    "link": "https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment/",
-    "canonical_url": "https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment/",
-    "published_at": "2026-09-25T11:00:28",
-    "summary": "Vendors rolling out AI have an \"incentive to deny as many claims as possible.\"",
-    "score": 4,
-    "score_breakdown": {
-      "total_score": 4,
-      "impact": 0,
-      "business": 0,
-      "development": 0,
-      "recency": 4,
-      "original": 0
-    },
-    "rank": 11,
-    "is_primary": false
-  },
-  {
-    "media": "MIT Tech Review",
-    "title": "The Download: the Pentagon’s AI-powered lie detector and young organ limits",
-    "link": "https://www.technologyreview.com/2026/09/25/1145157/the-download-pentagon-ai-lie-detector-young-organ-limits/",
-    "canonical_url": "https://www.technologyreview.com/2026/09/25/1145157/the-download-pentagon-ai-lie-detector-young-organ-limits/",
-    "published_at": "2026-09-25T12:10:00",
-    "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. The Pentagon wants $30 million to build an AI-powered lie detector The US government wants to spend $30.3 million over the next five years on an improved lie detector, according to…",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 1,
-    "is_primary": true
-  },
-  {
-    "media": "MIT Tech Review",
-    "title": "The Pentagon wants $30 million to build an AI-powered lie detector",
-    "link": "https://www.technologyreview.com/2026/09/25/1145144/pentagon-ai-lie-detector/",
-    "canonical_url": "https://www.technologyreview.com/2026/09/25/1145144/pentagon-ai-lie-detector/",
-    "published_at": "2026-09-25T09:16:25",
-    "summary": "The US government wants to spend $30.3 million over the next five years on an improved form of lie detector, according to a Department of Defense budget request. The program, called Polygraph+ or Polygraph Next, will focus on scoring algorithms that use artificial intelligence and machine learning and on a technique called “standoff sensing,” which…",
-    "score": 9,
-    "score_breakdown": {
-      "total_score": 9,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 4,
-      "original": 0
-    },
-    "rank": 2,
-    "is_primary": true
-  },
-  {
-    "media": "MIT Tech Review",
-    "title": "Young organs may not be a fountain of youth for recipients",
-    "link": "https://www.technologyreview.com/2026/09/25/1145083/young-organs-may-not-be-a-fountain-of-youth-for-recipients/",
-    "canonical_url": "https://www.technologyreview.com/2026/09/25/1145083/young-organs-may-not-be-a-fountain-of-youth-for-recipients/",
-    "published_at": "2026-09-25T09:00:00",
-    "summary": "Around this time last year I was attending an aging conference in Manchester, listening to a talk about fly aging, when my phone started pinging. News outlets were reporting that a hot mic had caught Russia’s and China’s leaders discussing the possibility of living forever. “With the developments of biotechnology, human organs can be continuously…",
-    "score": 9,
-    "score_breakdown": {
-      "total_score": 9,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 4,
-      "original": 0
-    },
-    "rank": 3,
-    "is_primary": true
-  },
-  {
-    "media": "The Information",
-    "title": "Fireworks, Fal Consider New Rounds as Inference Demand Soars",
-    "link": "https://www.theinformation.com/articles/fireworks-fal-consider-new-rounds-inference-demand-soars",
-    "canonical_url": "https://www.theinformation.com/articles/fireworks-fal-consider-new-rounds-inference-demand-soars",
-    "published_at": "2026-09-25T22:59:19",
-    "summary": "Startups such as Fal and Fireworks AI that sell access to AI models and servers have been ringing up sales as developers use them to run models quickly, sparking a new investor rush to pour money into them. Fal, which specializes in providing such inference services for video and image generation models such as Google’s Nano Banana models, has spoken to investors about raising new funding at a $15 billion valuation, according to two people familiar with the discussions. Talks are early and the company could aim for a higher valuation, of $17 billion to $20 billion, according to a third person.",
-    "score": 57,
-    "score_breakdown": {
-      "total_score": 57,
-      "impact": 24,
-      "business": 18,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 1,
-    "is_primary": true
-  },
-  {
-    "media": "The Information",
-    "title": "Inside the Drama Behind a Biology Contest That Pits OpenAI Agents Against Humans",
-    "link": "https://www.theinformation.com/articles/inside-drama-behind-biology-contest-pits-openai-agents-humans",
-    "canonical_url": "https://www.theinformation.com/articles/inside-drama-behind-biology-contest-pits-openai-agents-humans",
-    "published_at": "2026-09-25T17:00:19",
-    "summary": "For months, Jason Kelly, co-founder and CEO of Ginkgo Bioworks, has been planning what was billed as a fun, attention-grabbing science competition. His idea was to pit a top scientist against OpenAI’s latest models in designing a variety of proteins using a technique in which they are grown in test tubes faster than they would be in cells. Kelly’s company, which builds autonomous labs, would supply the venue—a 15,000-square-foot, robot-filled lab at its Boston headquarters. Ginkgo executives would serve as judges of the three-round contest. Michael Jewett, a renowned Stanford University professor and an expert in that technique, known as cell-free protein synthesis, had agreed to go up against OpenAI. OpenAI’s team, meanwhile, would consist only of AI agents. Jewett would also be permitted to use AI, reflecting the reality that it is already integrated into many labs. He could use any commercially available AI model; OpenAI would have access to its own most advanced, unreleased AI. When Ginkgo initially shared notes with me about the proposed project, it even had a catchy name: “Mike Versus the Machines.” The showdown was intended to generate the kind of excitement and frisson that comes when humans go up against a new technology—akin to world chess champion Gary Kasparov taking on IBM’s Deep Blue supercomputer in 1997 or Go champion Lee Sedol playing Google DeepMind’s AlphaGo in 2016. (In both those cases, of course, the humans lost.) Hoping to capture a striking moment in the history of biology, Ginkgo had hired a documentary film crew to record the action. But in the past few weeks, something odd has happened. Plans for the contest have morphed. Shortly before the two sides were supposed to square off for the first time on Sept. 14, Ginkgo postponed the event. For a moment, I thought the company might cancel it entirely. Then, earlier this week, I was told the competition is back on, but the “Mike Versus the Machines” concept has been scrapped.",
-    "score": 45,
-    "score_breakdown": {
-      "total_score": 45,
-      "impact": 24,
-      "business": 9,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 2,
-    "is_primary": true
-  },
-  {
-    "media": "The Information",
-    "title": "Federal Court Sides With Pentagon in Anthropic Dispute",
-    "link": "https://www.theinformation.com/briefings/federal-court-sides-pentagon-anthropic-dispute",
-    "canonical_url": "https://www.theinformation.com/briefings/federal-court-sides-pentagon-anthropic-dispute",
-    "published_at": "2026-09-25T16:48:02",
-    "summary": "A federal court ruled in favor of the Department of Defense in a lawsuit over the Department’s decision to label Anthropic a supply-chain risk earlier this year. In a split 2-1 decision, Judge Gregory Katsas of the Washington D.C. Circuit Court, an appointee of President Trump, wrote for the ...",
-    "score": 45,
-    "score_breakdown": {
-      "total_score": 45,
-      "impact": 24,
-      "business": 9,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 3,
-    "is_primary": true
-  },
-  {
-    "media": "The Information",
-    "title": "Startup Founded by ex-Tesla Dojo Leaders Nears $10 Billion Valuation",
-    "link": "https://www.theinformation.com/articles/startup-founded-ex-tesla-dojo-leaders-nears-10-billion-valuation",
-    "canonical_url": "https://www.theinformation.com/articles/startup-founded-ex-tesla-dojo-leaders-nears-10-billion-valuation",
-    "published_at": "2026-09-25T02:40:47",
-    "summary": "DensityAI, an AI chip startup founded just a year ago by former leaders of Tesla’s Dojo supercomputer program, is in advanced talks to raise hundreds of millions of dollars in a round that would value it at $10 billion, according to two people with knowledge of the discussions. The valuation is high for a company whose chips appear to be early in their development, meaning they could be years away from mass production. But the company’s leaders have told potential investors they’ve secured an agreement in which Amazon Web Services would purchase eventual chips from DensityAI if they meet certain performance requirements, the people said.",
-    "score": 41,
-    "score_breakdown": {
-      "total_score": 41,
-      "impact": 35,
-      "business": 0,
-      "development": 5,
-      "recency": 1,
-      "original": 0
-    },
-    "rank": 4,
-    "is_primary": true
-  },
-  {
-    "media": "The Information",
-    "title": "OpenAI Found ‘Dozens’ of New Instances of AI Misbehavior",
-    "link": "https://www.theinformation.com/briefings/openai-found-dozens-new-instances-ai-misbehavior",
-    "canonical_url": "https://www.theinformation.com/briefings/openai-found-dozens-new-instances-ai-misbehavior",
-    "published_at": "2026-09-25T23:20:57",
-    "summary": "OpenAI said Friday it has notified dozens of entities, including governments and universities, that its agents may have breached or spammed their websites or services. The agents took actions such as obtaining unauthorized access to websites or using the organizations’ public pages as message ...",
-    "score": 39,
-    "score_breakdown": {
-      "total_score": 39,
-      "impact": 24,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 5,
-    "is_primary": true
-  },
-  {
-    "media": "The Information",
-    "title": "Exclusive: Figma Exec Joins AI Inference Startup Baseten",
-    "link": "https://www.theinformation.com/briefings/exclusive-figma-exec-joins-ai-inference-startup-baseten",
-    "canonical_url": "https://www.theinformation.com/briefings/exclusive-figma-exec-joins-ai-inference-startup-baseten",
-    "published_at": "2026-09-25T15:37:44",
-    "summary": "A key Figma executive whose departure helped send the stock down in August is joining the rapidly growing upstart Baseten. Sheila Vashee, who spent three years at the design software firm as chief marketing officer, left Figma this summer amid an executive shakeup that also saw chief product ...",
-    "score": 38,
-    "score_breakdown": {
-      "total_score": 38,
-      "impact": 12,
-      "business": 9,
-      "development": 5,
-      "recency": 7,
-      "original": 5
-    },
-    "rank": 6,
-    "is_primary": false
-  },
-  {
-    "media": "The Information",
-    "title": "Exclusive: Meta Bolsters Muse Safety Warning After Security Vulnerability Found",
-    "link": "https://www.theinformation.com/briefings/exclusive-meta-bolsters-muse-safety-warning-security-vulnerability-found",
-    "canonical_url": "https://www.theinformation.com/briefings/exclusive-meta-bolsters-muse-safety-warning-security-vulnerability-found",
-    "published_at": "2026-09-25T17:41:55",
-    "summary": "Meta Platforms is adding a clearer safety warning within Muse after a security researcher discovered a vulnerability in the AI agent that could let an attacker access a user’s sensitive personal information. The security flaw, which was flagged by an outside researcher through Meta’s bug bounty ...",
-    "score": 29,
-    "score_breakdown": {
-      "total_score": 29,
-      "impact": 12,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 5
-    },
-    "rank": 7,
-    "is_primary": false
-  },
-  {
-    "media": "The Information",
-    "title": "Tesla’s Optimus Hits Snags in Hands, Suppliers as Scale-Up Begins",
-    "link": "https://www.theinformation.com/articles/teslas-optimus-hits-snags-hands-suppliers-scale-up-begins",
-    "canonical_url": "https://www.theinformation.com/articles/teslas-optimus-hits-snags-hands-suppliers-scale-up-begins",
-    "published_at": "2026-09-25T13:01:05",
-    "summary": "Tesla has ramped up production of its Optimus humanoid robot roughly tenfold in recent months, but the company is still struggling to manufacture the machines reliably at scale. Its production lines are grappling with problems involving the robot’s intricate hands, automated equipment and supplier constraints, according to people familiar with the project. Last month, Tesla produced several hundred robots a week, up from a few dozen robots per week during the second quarter when the company was doing small batch testing for production, according to two people familiar with the work. Managers have told staffers the company wants to set up a continuous automated production line capable of producing more than a thousand robots a week by the end of the year, the people said. That is still far short of its eventual plan to produce around 20,000 a week.",
-    "score": 21,
-    "score_breakdown": {
-      "total_score": 21,
-      "impact": 0,
-      "business": 9,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 8,
-    "is_primary": false
-  },
-  {
-    "media": "The Information",
-    "title": "Microsoft Launches Revamped Copilot ‘Super App’ with Muse Competitor",
-    "link": "https://www.theinformation.com/briefings/microsoft-launches-revamped-copilot-super-app-muse-competitor",
-    "canonical_url": "https://www.theinformation.com/briefings/microsoft-launches-revamped-copilot-super-app-muse-competitor",
-    "published_at": "2026-09-25T12:50:48",
-    "summary": "Microsoft on Friday launched a revamped version of its Copilot app that combines features that had previously been sold separately, including AI coding tools, features that automate tasks in Office 365, and an always-on “Autopilot” agent similar to Meta’s Muse. The overhaul is meant to make ...",
+    "media": "The Verge",
+    "title": "Control Resonant is a great game — it’s even better when you read everything",
+    "link": "https://www.theverge.com/games/1000818/control-resonant-reading-collectibles-documents-logs",
+    "canonical_url": "https://www.theverge.com/games/1000818/control-resonant-reading-collectibles-documents-logs",
+    "published_at": "2026-09-26T13:00:00",
+    "summary": "In Control Resonant, the entire world is at stake. But that didn't stop the diligent employees of the Federal Bureau of Control from filing reams of paperwork, and it didn't stop me from reading everything I could find, either. Reading is often optional in Resonant, but it's where some of the game's best details - […]",
     "score": 20,
     "score_breakdown": {
       "total_score": 20,
@@ -1003,16 +72,73 @@
       "recency": 7,
       "original": 0
     },
-    "rank": 9,
+    "rank": 4,
+    "is_primary": true
+  },
+  {
+    "media": "The Verge",
+    "title": "Decap is the man behind the drums behind your favorite song",
+    "link": "https://www.theverge.com/report/1000994/decap-drums-that-knock-interview",
+    "canonical_url": "https://www.theverge.com/report/1000994/decap-drums-that-knock-interview",
+    "published_at": "2026-09-26T19:30:00",
+    "summary": "I don't think I'm going to hurt anyone's feelings by pointing out that Decap doesn't have the name recognition of Kendrick Lamar, Olivia Rodrigo, or Charli XCX. But his fingerprints are all over tracks from them, as well as many other artists, including Freddie Gibbs, Bad Bunny, Mac Miller, BTS, and even Ludwig Göransson's score […]",
+    "score": 15,
+    "score_breakdown": {
+      "total_score": 15,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 5,
+    "is_primary": true
+  },
+  {
+    "media": "The Verge",
+    "title": "Kids turned the comment section of an NPR podcast into a group chat",
+    "link": "https://www.theverge.com/entertainment/1001056/this-american-life-npr-kids-group-chat-comment-section",
+    "canonical_url": "https://www.theverge.com/entertainment/1001056/this-american-life-npr-kids-group-chat-comment-section",
+    "published_at": "2026-09-26T17:32:35",
+    "summary": "Middle schoolers, likely blocked from other apps and social networks, apparently turned the Spotify comment section under an episode of NPR's Wild Card into an impromptu group chat. In a new episode of This American Life, host Ira Glass digs into how the kids landed there and why. But it mostly boils down to kids […]",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 6,
     "is_primary": false
   },
   {
-    "media": "The Information",
-    "title": "Chinese Leader Xi Calls for U.S.-China Cooperation to Prevent AI Abuse",
-    "link": "https://www.theinformation.com/briefings/chinese-leader-xi-calls-u-s-china-cooperation-prevent-ai-abuse",
-    "canonical_url": "https://www.theinformation.com/briefings/chinese-leader-xi-calls-u-s-china-cooperation-prevent-ai-abuse",
-    "published_at": "2026-09-25T10:14:57",
-    "summary": "Chinese leader Xi Jinping said during his summit with U.S. President Donald Trump that the two nations can “jointly prevent the misuse and abuse of AI” through more cooperation. Trump and Xi held talks on Thursday at the White House, and a major topic on the agenda was AI safety and governance. ...",
+    "media": "The Verge",
+    "title": "Pokémon card resellers have turned collecting into an online blood sport",
+    "link": "https://www.theverge.com/games/1001002/pokemon-30th-celebration-scalping-resellers",
+    "canonical_url": "https://www.theverge.com/games/1001002/pokemon-30th-celebration-scalping-resellers",
+    "published_at": "2026-09-26T12:00:00",
+    "summary": "Earlier this month, Pokémon card content creator Natalie Roush posted a video to her YouTube and Instagram pages that enraged the larger collection community. In the now-deleted video, Roush shows off two premium boxes of cards that had not yet been officially released, and implores viewers not to be mad. But they were; other creators […]",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 7,
+    "is_primary": false
+  },
+  {
+    "media": "The Verge",
+    "title": "Can &#8216;eSUV&#8217; e-bikes really go from trail to town?",
+    "link": "https://www.theverge.com/transportation/999785/amflow-tl-review-avinox-esuv-e-bike-avinox",
+    "canonical_url": "https://www.theverge.com/transportation/999785/amflow-tl-review-avinox-esuv-e-bike-avinox",
+    "published_at": "2026-09-26T07:00:00",
+    "summary": "Have you ever wanted an electric bike that easily transitions from the drudgery of urban asphalt to adventures in gravel and dirt? That's what a subclass of so-called \"electric SUV\" (eSUV) e-bikes claims to do, with their wide, all-terrain tires and front and rear suspension, plus practical accessories like fenders and racks. So, that's what […]",
     "score": 9,
     "score_breakdown": {
       "total_score": 9,
@@ -1022,16 +148,111 @@
       "recency": 4,
       "original": 0
     },
-    "rank": 10,
+    "rank": 8,
     "is_primary": false
   },
   {
-    "media": "The Information",
-    "title": "Why Meta’s Moment in the AI Sun Won’t Last",
-    "link": "https://www.theinformation.com/articles/metas-moment-ai-sun-last",
-    "canonical_url": "https://www.theinformation.com/articles/metas-moment-ai-sun-last",
-    "published_at": "2026-09-25T00:00:45",
-    "summary": "If Meta Platforms wants to raise money by selling equity, now is the time. Meta shares have gone on an incredible run lately, jumping 27% since Sept. 8, when the company released its Muse personal AI agent. Meta stock is now up 18% so far this year, a bigger gain than that for Alphabet, Amazon or Microsoft—quite the turnaround for a company that not too long ago was in Wall Street’s doghouse for its seemingly out-of-control AI spending. It’s no secret why investors have fallen back in love with Meta—the company has done a good job of marketing Muse, prompting lots of glowing reviews and headlines about app downloads. Wednesday’s Connect conference, where Meta CEO Mark Zuckerberg unveiled new virtual reality and AI hardware—including a device called Charm designed around Muse—appears to have reinforced the positive sentiment. But let’s not overinterpret the current state of play. In AI, no one stays on top for very long.",
+    "media": "TechCrunch",
+    "title": "Insurers claim AI is already increasing healthcare costs",
+    "link": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
+    "canonical_url": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
+    "published_at": "2026-09-26T21:02:06",
+    "summary": "Blue Cross Blue Shield says hospital use of AI tools led to an additional $942M in healthcare spending over a two-year period.",
+    "score": 15,
+    "score_breakdown": {
+      "total_score": 15,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true
+  },
+  {
+    "media": "TechCrunch",
+    "title": "TikTok agrees to pay at least $100M in Alabama settlement",
+    "link": "https://techcrunch.com/2026/09/26/tiktok-agrees-to-pay-at-least-100m-in-alabama-settlement/",
+    "canonical_url": "https://techcrunch.com/2026/09/26/tiktok-agrees-to-pay-at-least-100m-in-alabama-settlement/",
+    "published_at": "2026-09-26T20:24:45",
+    "summary": "TikTok will pay Alabama at least $100 million in a settlement tied to allegations that the short-form video platform misled users about safety and was designed to addict children.",
+    "score": 15,
+    "score_breakdown": {
+      "total_score": 15,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Meta and YouTube say they will run ads for ‘Musk’ documentary after all",
+    "link": "https://techcrunch.com/2026/09/26/meta-says-it-will-run-ads-for-musk-documentary-after-all/",
+    "canonical_url": "https://techcrunch.com/2026/09/26/meta-says-it-will-run-ads-for-musk-documentary-after-all/",
+    "published_at": "2026-09-26T17:44:00",
+    "summary": "Two companies now say they will accept advertising for director Alex Gibney’s upcoming documentary about Elon Musk, following earlier reporting that a number of social media platforms had rejected the ads.",
+    "score": 15,
+    "score_breakdown": {
+      "total_score": 15,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Levoit’s new air purifier is for the pet odors that have taken over your apartment",
+    "link": "https://techcrunch.com/2026/09/26/levoits-new-air-purifier-is-for-the-pet-odors-that-have-taken-over-your-apartment/",
+    "canonical_url": "https://techcrunch.com/2026/09/26/levoits-new-air-purifier-is-for-the-pet-odors-that-have-taken-over-your-apartment/",
+    "published_at": "2026-09-26T17:00:00",
+    "summary": "This $189.99 air purifier is specifically designed to tackle pet odors, removing up to 70% in one hour.",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true
+  },
+  {
+    "media": "TechCrunch",
+    "title": "I created an interactive digital avatar of myself — and you can talk to it",
+    "link": "https://techcrunch.com/2026/09/26/i-created-an-interactive-digital-avatar-of-myself-and-you-can-talk-to-it/",
+    "canonical_url": "https://techcrunch.com/2026/09/26/i-created-an-interactive-digital-avatar-of-myself-and-you-can-talk-to-it/",
+    "published_at": "2026-09-26T14:00:00",
+    "summary": "After obtaining an interactive avatar and training it to discuss venture fraud, I have mixed feelings about making AI clones of ourselves.",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 5,
+    "is_primary": true
+  },
+  {
+    "media": "TechCrunch",
+    "title": "At Meta Connect, the company’s smart glasses were everywhere",
+    "link": "https://techcrunch.com/2026/09/25/at-meta-connect-the-companys-smart-glasses-were-everywhere/",
+    "canonical_url": "https://techcrunch.com/2026/09/25/at-meta-connect-the-companys-smart-glasses-were-everywhere/",
+    "published_at": "2026-09-26T01:08:57",
+    "summary": "The company behind Facebook and Instagram wants to keep consumers connected to the digital world via its ever-growing line of smart glasses.",
     "score": 6,
     "score_breakdown": {
       "total_score": 6,
@@ -1041,7 +262,83 @@
       "recency": 1,
       "original": 0
     },
-    "rank": 11,
+    "rank": 6,
     "is_primary": false
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Tesla’s big electric truck faces an even bigger infrastructure challenge",
+    "link": "https://arstechnica.com/cars/2026/09/teslas-big-electric-truck-faces-an-even-bigger-infrastructure-challenge/",
+    "canonical_url": "https://arstechnica.com/cars/2026/09/teslas-big-electric-truck-faces-an-even-bigger-infrastructure-challenge/",
+    "published_at": "2026-09-26T10:45:09",
+    "summary": "The 500-mile Semi arrives as charging gaps still limit electric trucking.",
+    "score": 13,
+    "score_breakdown": {
+      "total_score": 13,
+      "impact": 0,
+      "business": 9,
+      "development": 0,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "Why I’m Keeping Meta’s Muse on a Short Leash",
+    "link": "https://www.theinformation.com/articles/keeping-metas-muse-short-leash",
+    "canonical_url": "https://www.theinformation.com/articles/keeping-metas-muse-short-leash",
+    "published_at": "2026-09-26T15:01:21",
+    "summary": "• The Big Read: A biology contest pitting OpenAI against human scientists goes awry • Why the big, bad bears aren’t ready to bet big on AI yet • A gusher of oil money is washing up in Silicon Valley • Plus, Recommendations—our weekly pop culture picks: “ The Journey ,” “ Roll the Calls ” and “ Backrooms ” After returning from a mostly internet-free vacation a little over a week ago, I couldn’t believe the online buzz about Meta Platform’s new agent app, Muse. I immediately downloaded it and began assigning tasks to it like it was an intern in an era without labor laws. I created an agent to monitor the internet for reviews of a new album by the artist Beck. I ordered Muse to keep an eye on Facebook Marketplace for obscure stereo equipment. And I used it to create alerts that flagged new SEC filings by companies I want to follow closely. Muse accomplished all of those jobs effortlessly, and using the app was even—dare I say it?—delightful. These were all fairly banal assignments that I could have accomplished pretty easily without Muse. If I wanted more out of the app, I would need to give Muse access to things like my email inbox—which it promised to scour to build agendas for the day—and my credit card account, which it could use to flag recurring charges I might have forgotten about. That’s when I began to wobble. Giving Muse access to some of my most sensitive personal accounts is the kind of thing that would make people like my wife—who is whatever the opposite of “AI-pilled” is—question my sanity. I had already read my colleague Abram Brown’s account of how Muse had double-booked hotel rooms for him. And yesterday another colleague, Jyoti Mann, reported on the discovery of a security vulnerability in Muse that could let a hacker snag personal information. This is the trust purgatory I predict a lot of people are going to get stuck in when it comes to giving agents the digital keys to run their lives. Overall, I am at the more trustful end of the spectrum when it comes to tech companies. I have a doorbell camera made by Google. I use Amazon for prescription medicines. I figure that the reputational risks for them of violating that trust are great enough so it’s really not in their interest to do so. But the drumbeat of cybersecurity incidents involving AI models, including the OpenAI–Hugging Face intrusion, makes the leap of faith with AI feel especially perilous at this moment. In the meantime, I continue to conduct what I view as safe experiments with Muse. In fact, I may have discovered what I believe is one of its best use cases. There are at least a dozen apps on my phone with atrocious user interfaces that haven’t been updated in years. One of them is for a Wi-Fi–enabled thermostat that controls the heat in a section of my house. Could Muse make it easier to use the appalling software for this thermostat? I gave Muse my login for the web version of the app and ordered it to set a fall and winter heating schedule. It took Muse more than 15 minutes, but ultimately it accomplished the task. I cringe thinking about the electricity that chore required. Still, I will respect Muse if it can act as my go-between with the ugliest apps on my phone—as long as the risks of doing so are minimal. For the time being, I’ll be keeping Muse on a short leash. —Nick Wingfield (nick@theinformation) Weekend’s Latest Stories The Big Read Inside the Drama Behind a Biology Contest That Pits OpenAI Agents Against Humans Unease about how AI will alter advanced research—and commotion around OpenAI’s Navier-Stokes triumph— have forced changes to an event envisioned as biology’s Kasparov-versus–Deep Blue moment. Why Wall Street’s Big, Bad Bears Aren’t Ready to Bet Against AI Yet Investors increasingly like to point out flaws in the AI economy and highlight moments like Leopold Aschenbrenner’s initial run as “madness.” But they remain deeply wary of placing their bets too early. How New Mexico’s Oil Windfall Became a $2 Billion VC Bet A change to how the state’s sovereign wealth fund approaches venture capital has brought a gusher of money to Silicon Valley—and allows New Mexico to seize a piece of the AI boom. Listening: “ The Journey ” Within America today is a subculture and multimillion-dollar industry that can veer into dystopia: That would be the world of professional surrogacy—and one particularly dark crevice of it is exposed in a new podcast from The New Yorker, “The Journey.” (In the sanitizing speak of surrogacy land, some mothers refer to their nearly yearlong process of preparing themselves for pregnancy and carrying the baby to term as “the journey.”) Over five episodes, reporter Ava Kofman probes deeply into a network involving dozens of women, established by a California couple who accumulated 21 children before authorities raided their home in 2025. (At the time of their arrest, another five mothers were expecting.) The series expands extensively on a piece written by Kofman for the magazine earlier this year, and through taped interviews with the duped surrogates, Kofman lets their voices carry the podcast: Their anguish comes through loud and clear, and hearing them recount their sagas is both thoroughly engrossing and constantly enraging. What’s even more disturbing is the fact that the couple’s exact motive remains unclear. Perhaps they planned to traffic the children. Or maybe they had some other intent. —Abram Brown Reading: “ Roll the Calls ” by Ari Emanuel Ari Emanuel, that great blunderbuss of Hollywood, has many wonderful, colorful stories about his time knocking heads and knocking around with some of the world’s most famous and powerful people. He recounts many of them in “Roll the Calls,” his new memoir—delivering them in punchy, staccato sentences that make Hemingway’s sound like Proust. It is all very fun. And terribly, terribly profane: “Bitch” appears 16 times, “asshole” 22 times, and the c-word six times—including in a portion of the book devoted to Emanuel’s 2022 wedding, in which Larry David, serving as officiant, referred to him lovingly as “The Cunt.” Emanuel’s favorite cuss, of course, is “fuck,” which appears 433 times—as in “Fuck that fucking pirate agent,” “Tom fucking Cruise,” “Kim fucking Basinger” and “Dan fucking Aykroyd,” plus two of my real favorites: “Fucked that whole fucking thing up real fucking good” and “Fuck your doves.” I mean, what else could you expect from Emanuel, co-founder of what is today the talent agency known as WME? His antics are what inspired Jeremy Piven’s foul motormouth, Ari Gold, on “Entourage,” and Emanuel gleefully advised the HBO series on writing the character. (“Entourage” Executive Producer Mark Wahlberg is a longtime Emanuel client.) He did so purposefully, and he acknowledges that the show boosted his own standing. But then something strange happened. During the peak popularity of “Entourage,” Ari Emanuel found himself quoting Ari Gold’s lines like they were his own original bon mots. Unsurprisingly, the blending of ego and alter ego, as Emanuel puts it, provided much fodder for therapy sessions. (Equally unsurprisingly, his therapist is a recurring character in this memoir.) With “Roll the Calls,” you come to hear Emanuel continually lambast fellow Hollywood titan and liberal donor Jeff Katzenberg, on whom he places the blame for the Democrats’ 2024 loss. (He also once threatened to sue Katzenberg—a “putz” and “glad-handing phony”—over Lakers floor seats.) You keep on reading to hear him talk about his relationships with Martin Scorsese, WWE ringleader Vince McMahon, Disney’s Michael Eisner and former boss Michael Ovitz, among many others. Elon Musk appears, too, with Emanuel recounting how he tried to broker peace between Musk and Silver Lake’s Egon Durban, a Twitter board member during Musk’s takeover of that business. As Emanuel tells it, the animating force throughout his life is the word that begins the book: “rage.” He thinks his wrath is a fine thing. “Just look how rage and agent nearly rhyme. As if they were meant to be together,” he writes. “Rage is both catalyst and metric of desire. Rage is the answer to that central question: How bad do you want it?” In Emanuel’s case, really fucking bad. —A.B. Watching: “ Backrooms ” It has been a very, very good year for horror movies—led by three biggies: a pair of gross-out chuckle fests, “Obsession” and “Resident Evil,” and freak-deaky “Backrooms,” newly streaming on HBO Max. I enjoyed all of them, but frankly, “Backrooms” shattered my expectations most, to say nothing of how it jangled my nerves. The film is short on explanation and long on vibes, which I appreciate: The most effective cinematic dread often exists in the liminal space between those two elements. And, yes, I’m picking my words carefully here because “Backrooms” is a long descent into a series of liminal spaces—a web of connected rooms that form a Daliesque demimonde of dead-end hallways, half-formed walls and a stop sign sticking out of a carpeted floor. The portal to this netherworld sits in an unlikely location: the basement of a furniture store. And once the shop’s owner, Clark (Chiwetel Ejiofor), tumbles through it, he finds it increasingly difficult to pull himself back to the sad, alcohol-soaked reality of his everyday life in the year 1990; eventually, his therapist (Renate Reinsve from “Sentimental Value”) goes looking for him. They are not alone down there. All of those horror blockbusters I mentioned are adaptations. “Obsession” redoes “The Monkey’s Paw” with demented, Gen Z cringe. “Resident Evil” is obviously a reboot of the film series based on the venerable videogame franchise. For “Backrooms,” director Kane Parsons had perhaps the greatest challenge: turning what amounts to a longstanding online group art project into a conventional feature film. (The narrative and backstories behind “Backrooms” originated on sites like Reddit, YouTube and—yes, ick—4chan, passed around and modified person by person like Zeusian myths.) Parsons, who is barely over 20, does an admirable job, drawing some obvious inspiration from David Lynch’s “Twin Peaks” and “Eraserhead.” And he leaves himself plenty of room for sequels: I saw “Backrooms” a while ago in theaters, and I still shudder to think what might be found lurking at the bottom of that conference room pool. —A.B.",
+    "score": 72,
+    "score_breakdown": {
+      "total_score": 72,
+      "impact": 35,
+      "business": 25,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "Why Wall Street’s Big, Bad Bears Aren’t Ready to Bet Against AI Yet",
+    "link": "https://www.theinformation.com/articles/wall-streets-big-bad-bears-ready-bet-ai-yet",
+    "canonical_url": "https://www.theinformation.com/articles/wall-streets-big-bad-bears-ready-bet-ai-yet",
+    "published_at": "2026-09-26T13:11:40",
+    "summary": "Steve Eisman, former hedge fund manager and short seller, has become one of the more prominent critics of the AI phenomenon that is sweeping the markets and, according to some, endangering the world. Yet Eisman, who initially shot to fame for his trades in the 2008 financial crisis and his subsequent portrayal in Michael Lewis’ “The Big Short,” is hesitant to commit capital to his AI criticism. “I am not ready to make a big short call here,” he told me. For now, he’s paying a lot of attention to Nvidia, the mother of the AI trade, and its relationship supplying chips to Anthropic and OpenAI. “It’s like the entire chain is dependent upon two companies that lose a ton of money,” he said. He’s waiting to see if OpenAI does actually go public anytime soon: “When you’re a company that bleeds cash—like these companies bleed cash—narrative is very important because you’ve got to raise money all the time.” So if OpenAI keeps delaying its IPO, that might be the catalyst for him to make a short call on AI, Eisman said.",
+    "score": 56,
+    "score_breakdown": {
+      "total_score": 56,
+      "impact": 35,
+      "business": 9,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "How New Mexico’s Oil Windfall Became a $2 Billion VC Bet",
+    "link": "https://www.theinformation.com/articles/new-mexicos-oil-windfall-became-2-billion-vc-bet",
+    "canonical_url": "https://www.theinformation.com/articles/new-mexicos-oil-windfall-became-2-billion-vc-bet",
+    "published_at": "2026-09-26T13:13:30",
+    "summary": "A few weeks ago, Augustus Doricko, founder of the cloud-seeding startup Rainmaker, stood in a park on the outskirts of Albuquerque, N.M., flying a drone in the sky. Clad in a khaki field shirt, he looked at home in the desert heat: 97 degrees, not a rain cloud in sight. “The conditions here are great,” said Doricko, 26. “And the demand for water’s huge.” Doricko’s company, which is based in El Segundo, Calif., plans to start a trial program around the Rio Grande river in the coming months, dispatching its drones to induce precipitation with the help of a chemical, silver iodide. That trial is not the only connection Rainmaker has to New Mexico. The startup has received funding from several venture capital firms that have gotten money from New Mexico’s $75 billion sovereign wealth fund. The fund has funneled some $2 billion into VC firms in the last three years as the state’s oil and gas revenues have swelled.",
+    "score": 49,
+    "score_breakdown": {
+      "total_score": 49,
+      "impact": 12,
+      "business": 25,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true
   }
 ]
