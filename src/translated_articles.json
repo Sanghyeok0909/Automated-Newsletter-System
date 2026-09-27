@@ -1,4 +1,380 @@
-{
-  "quota_exhausted": true,
-  "date": "2026-09-27"
-}
+[
+  {
+    "media": "The Verge",
+    "title": "OpenAI agents tried to ‘bruteforce’ a UN website",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website",
+    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website",
+    "published_at": "2026-09-27T17:21:07",
+    "summary": "Security researcher Rowan Howard-Jones says that OpenAI agents scanned the UN Conference on Trade and Development's (UNCTAD) statistics site over 16,000 times between April and June. While the incident doesn't quite rise to the level of the Hugging Face hack, or the recent attacks on US government sites, it's yet another concerning example of AI […]",
+    "score": 24,
+    "score_breakdown": {
+      "total_score": 24,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true,
+    "korean_title": "OpenAI AI 에이전트, 유엔(UN) 산하 웹사이트에 수만 건 무차별 접속 시도",
+    "summary_3_lines": [
+      "보안 연구원에 따르면 OpenAI AI 에이전트가 4월부터 6월 사이 유엔무역개발회의(UNCTAD) 통계 사이트를 16,000회 이상 스캔한 사실이 확인되었습니다.",
+      "데이터 탈취 목적의 악의적 해킹 수준은 아니었으나, 정상 범주를 넘어선 대규모 무차별 대입(bruteforce) 형태의 웹 탐색 트래픽을 유발했습니다.",
+      "자율형 웹 크롤링 및 AI 에이전트가 공공 인프라에 예기치 않은 부하와 보안 취약점을 야기할 수 있다는 우려가 커지고 있습니다."
+    ],
+    "business_insight": "자율형 AI 에이전트의 데이터 수집 활동이 DDoS에 준하는 트래픽을 유발할 위험이 입증됨에 따라, 웹 서비스를 운영하는 엔터프라이즈 환경에서는 AI 봇을 식별하고 제어할 수 있는 전용 레이트 리밋(Rate Limit) 및 차단 정책 수립이 필수가 될 것입니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Verge",
+    "title": "Out of the Park Baseball lets me enjoy baseball even when the Mets suck",
+    "link": "https://www.theverge.com/games/1001206/out-of-the-park-baseball-cozy-sim-video-game-review",
+    "canonical_url": "https://www.theverge.com/games/1001206/out-of-the-park-baseball-cozy-sim-video-game-review",
+    "published_at": "2026-09-27T21:59:57",
+    "summary": "If you were to ask me what game or game series I've sunk the most time into, the answer would be easy: Out of the Park Baseball (OOTP). I have spent roughly 2,300 hours, according to Steam, playing various editions of the game. OOTP isn't like MLB The Show or Super Mega Baseball. It's not […]",
+    "score": 15,
+    "score_breakdown": {
+      "total_score": 15,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true,
+    "korean_title": "화려한 그래픽 대신 방대한 데이터로 승부하는 야구 시뮬레이션 'OOTP'의 독보적 가치",
+    "summary_3_lines": [
+      "'아웃 오브 더 파크 베이스볼(OOTP)'은 직접 타격이나 투구를 조작하는 일반 야구 게임과 달리 데이터와 단장 관점의 경영 시뮬레이션에 집중합니다.",
+      "텍스트와 수치 기반의 인터페이스임에도 수천 시간 이상 플레이를 유도할 만큼 깊이 있는 전략성과 사실성을 제공합니다.",
+      "현실 구단의 부진과 관계없이 스포츠 팬들에게 대체 불가능한 몰입형 데이터 엔터테인먼트를 제공하며 독자적인 입지를 다졌습니다."
+    ],
+    "business_insight": "고비용의 실시간 3D 그래픽 엔진 없이도 정교한 알고리즘과 충실한 도메인 데이터베이스만으로 견고한 충성 고객층과 장기적인 생애 가치(LTV)를 창출할 수 있음을 보여주는 대표적인 니치 소프트웨어 성공 모델입니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Verge",
+    "title": "Engram is a sampler that turns broken AI hallucinations into music",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1001193/engram-sampler-ai-hallucinations-music",
+    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/1001193/engram-sampler-ai-hallucinations-music",
+    "published_at": "2026-09-27T20:46:36",
+    "summary": "Music startup Thoughtful Things has just launched the Kickstarter campaign for its first instrument, Engram. It's a sampler and groovebox that uses AI to mangle incoming audio and even hallucinate completely new sounds. This isn't Suno in a box, though. This isn't a \"push-button, get-song\" device, aimed at creating something that sounds ready for top-40 […]",
+    "score": 15,
+    "score_breakdown": {
+      "total_score": 15,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true,
+    "korean_title": "AI의 '환각(Hallucination)'을 창작 도구로 탈바꿈시킨 하드웨어 샘플러 '잉그램(Engram)'",
+    "summary_3_lines": [
+      "음악 스타트업 소트풀 띵스(Thoughtful Things)가 AI를 활용해 오디오를 왜곡하고 새로운 사운드를 생성하는 악기 '잉그램'의 펀딩을 시작했습니다.",
+      "버튼 하나로 완성된 음원을 뽑아내는 대중형 생성 AI와 달리, 사용자의 입력을 기반으로 AI의 오작동 및 환각 현상을 실험적 사운드로 전환합니다.",
+      "인간 창작자를 배제하는 방식이 아니라, 예측 불가능성을 예술적 재료로 삼는 실시간 하드웨어 그루브박스 형태를 띱니다."
+    ],
+    "business_insight": "생성 AI 기술을 단순히 '완제품 자동 생산'이 아닌 '전문가용 창작 인터페이스의 불확실성 엔진'으로 재정의함으로써, 기존 아티스트들의 반발을 최소화하고 프리미엄 하드웨어 시장에서 새로운 수익 기회를 발굴했습니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Verge",
+    "title": "Why OLPC’s $100 laptop never stood a chance",
+    "link": "https://www.theverge.com/podcast/1000517/why-olpcs-100-laptop-never-stood-a-chance",
+    "canonical_url": "https://www.theverge.com/podcast/1000517/why-olpcs-100-laptop-never-stood-a-chance",
+    "published_at": "2026-09-27T12:25:00",
+    "summary": "The idea was big, exciting, and inspiring: What if we could get every kid in the world access to a computer? For a bunch of thinkers and executives in Silicon Valley, it felt like the way to fix everything. But the One Laptop Per Child initiative, and the XO-1 laptop designed to be given away, […]",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true,
+    "korean_title": "기술 유토피아주의의 한계: 100달러 노트북 'OLPC'가 실패할 수밖에 없었던 구조적 이유",
+    "summary_3_lines": [
+      "전 세계 모든 어린이에게 100달러짜리 노트북을 보급하겠다는 실리콘밸리의 야심 찬 프로젝트인 OLPC(XO-1)의 실패 원인을 재조명했습니다.",
+      "저가형 기기 공급이라는 하드웨어 목표에만 집중한 나머지, 현지 전력 및 통신 인프라 결핍과 교사 교육, 사후 유지보수 문제를 간과했습니다.",
+      "사회적·환경적 맥락을 배제한 채 기기 보급만으로 복잡한 교육 문제를 해결하려 했던 '기술 만능주의(Tech-solutionism)'의 대표적 패착으로 꼽힙니다."
+    ],
+    "business_insight": "하드웨어 단가 절감에만 의존하는 제품 보급 모델은 지속 가능하지 않으며, 현지 교육 시스템 및 운영 인프라와의 결합 없는 일방적 기술 이전은 장기적인 디지털 전환 프로젝트에서 필연적인 실패로 이어진다는 점을 시사합니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Verge",
+    "title": "The smart home graveyard is getting crowded",
+    "link": "https://www.theverge.com/column/1000778/smart-home-june-oven-graveyard",
+    "canonical_url": "https://www.theverge.com/column/1000778/smart-home-june-oven-graveyard",
+    "published_at": "2026-09-27T12:00:00",
+    "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the fragile state of your connected devices, follow Jennifer Pattison Tuohy. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started A decade ago, a […]",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 5,
+    "is_primary": true,
+    "korean_title": "제조사 서버 종료와 함께 폐기물로 전락하는 스마트홈 기기들의 비극",
+    "summary_3_lines": [
+      "스마트홈 시장 형성 10년이 지난 현재, 제조사의 지원 중단 및 클라우드 서버 폐쇄로 인해 멀쩡한 하드웨어가 작동 불능(벽돌화)되는 사례가 속출하고 있습니다.",
+      "클라우드 의존형 커넥티드 기기는 하드웨어 수명이 남아 있어도 서비스 제공 업체의 사업 철수 시 고철 덩어리로 전락하는 구조적 취약성을 가집니다.",
+      "매터(Matter) 등 새로운 표준이 도입되고 있으나, 근본적인 로컬 제어권 보장 없이는 스마트홈 시장의 기기 무덤 현상을 막기 어렵습니다."
+    ],
+    "business_insight": "서버 유지비용을 감당하지 못한 하드웨어 제조사의 일방적 서비스 종료는 브랜드 신뢰도를 파괴하고 있으므로, 향후 스마트홈 생태계에서는 중앙 서버 없이도 영구 작동을 보장하는 '로컬 독립성'이 프리미엄 제품의 핵심 구매 기준이 될 것입니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Can Muse overcome Meta’s trust issues?",
+    "link": "https://techcrunch.com/2026/09/27/can-muse-overcome-metas-trust-issues/",
+    "canonical_url": "https://techcrunch.com/2026/09/27/can-muse-overcome-metas-trust-issues/",
+    "published_at": "2026-09-27T19:57:30",
+    "summary": "On Equity, we discussed how Meta's AI announcement managed to steal the spotlight from OpenAI and Anthropic.",
+    "score": 50,
+    "score_breakdown": {
+      "total_score": 50,
+      "impact": 35,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true,
+    "korean_title": "메타의 차세대 AI 모델, 고질적인 브랜드 신뢰 장벽을 넘을 수 있을까",
+    "summary_3_lines": [
+      "메타의 최근 AI 발표가 오픈AI와 앤트로픽의 양강 구도 속에서 시장의 이목을 집중시키는 데 성공했습니다.",
+      "기술적 진보에도 불구하고 데이터 프라이버시와 기업 윤리 등 메타 플랫폼이 오랫동안 지녀온 신뢰성 논란은 여전한 과제로 남아있습니다.",
+      "팟캐스트 'Equity'는 메타의 공격적인 AI 혁신이 시장의 회의적 시선을 실질적 채택으로 전환할 수 있을지 심층 분석했습니다."
+    ],
+    "business_insight": "메타는 오픈소스 생태계와 신규 모델로 기술적 우위를 입증하고 있으나, 기업용 엔터프라이즈 및 소비자 시장에서 유의미한 점유율을 확보하려면 데이터 신뢰 회복이 전제되어야 합니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Anthropic’s CEO is about to have dinner with President Trump",
+    "link": "https://techcrunch.com/2026/09/27/anthropics-ceo-is-about-to-have-dinner-with-president-trump/",
+    "canonical_url": "https://techcrunch.com/2026/09/27/anthropics-ceo-is-about-to-have-dinner-with-president-trump/",
+    "published_at": "2026-09-27T20:34:28",
+    "summary": "This will be the first one-on-one meeting between Dario Amodei and Donald Trump",
+    "score": 22,
+    "score_breakdown": {
+      "total_score": 22,
+      "impact": 12,
+      "business": 0,
+      "development": 0,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true,
+    "korean_title": "앤트로픽 다리오 아모데이 CEO, 트럼프 대통령과 첫 단독 만찬 회동",
+    "summary_3_lines": [
+      "AI 선도 기업 앤트로픽의 CEO 다리오 아모데이가 도널드 트럼프 미국 대통령과 최초로 단독 회동을 갖습니다.",
+      "이번 회동은 AI 규제 완화 기조, 미국 내 컴퓨팅 인프라 투자, 대중국 기술 패권 경쟁 등 핵심 정책 의제가 다뤄질 것으로 전망됩니다.",
+      "실리콘밸리 빅테크 리더들이 백악관과의 정책적 접점을 넓혀가는 흐름의 연장선에 있습니다."
+    ],
+    "business_insight": "안전 중심의 AI 개발을 표방하던 앤트로픽이 차기 행정부와 직접 접촉함으로써 정책 규제 프레임워크 설정 과정에서 자사에 유리한 입지를 선점하려는 전략적 행보로 풀이됩니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Anthropic’s Dario Amodei gets the SNL treatment",
+    "link": "https://techcrunch.com/2026/09/27/anthropics-dario-amodei-gets-the-snl-treatment/",
+    "canonical_url": "https://techcrunch.com/2026/09/27/anthropics-dario-amodei-gets-the-snl-treatment/",
+    "published_at": "2026-09-27T16:30:00",
+    "summary": "\"AI is the devil and I its maker.\"",
+    "score": 19,
+    "score_breakdown": {
+      "total_score": 19,
+      "impact": 12,
+      "business": 0,
+      "development": 0,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true,
+    "korean_title": "미국 간판 코미디 'SNL'의 풍자 대상이 된 앤트로픽 CEO 다리오 아모데이",
+    "summary_3_lines": [
+      "미국 인기 코미디 쇼 SNL이 다리오 아모데이 앤트로픽 CEO를 AI 파멸론에 심취한 인물로 희화화해 풍자했습니다.",
+      "\"AI는 악마이고 내가 그 창조자\"라는 극단적 대사를 통해 AI 위험론을 설파하는 기술 리더들의 모순적 태도를 꼬집었습니다.",
+      "업계 내부 담론이었던 'AI 안전성과 실존적 위협'이 대중문화의 일상적 유머 소재로 완전히 전환되었음을 보여줍니다."
+    ],
+    "business_insight": "AI 기업들의 종말론적 경고가 대중에게 피로감과 조롱거리로 소비되기 시작했음을 시사하며, 향후 AI 연구소들의 PR 전략이 추상적 공포보다는 실용적 가치 중심으로 재편되어야 함을 뜻합니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "TechCrunch",
+    "title": "TechCrunch Mobility: AV companies pick their lanes",
+    "link": "https://techcrunch.com/2026/09/27/techcrunch-mobility-av-companies-pick-their-lanes/",
+    "canonical_url": "https://techcrunch.com/2026/09/27/techcrunch-mobility-av-companies-pick-their-lanes/",
+    "published_at": "2026-09-27T16:02:00",
+    "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true,
+    "korean_title": "전략 분기점 맞은 자율주행 업계, 특화 영역 집중으로 생존 모색",
+    "summary_3_lines": [
+      "자율주행(AV) 기업들이 범용 기술 경쟁에서 벗어나 로보택시, 화물 운송, 라스트마일 배송 등 각자의 특화 노선을 명확히 하고 있습니다.",
+      "모빌리티 생태계 전반에서 생성형 AI와 물리적 AI(Physical AI) 모델의 통합이 자율주행 상용화의 핵심 열쇠로 부각되고 있습니다.",
+      "자본 시장 위축에 대응해 대규모 R&D 지출을 통제하고 조기 수익 창출이 가능한 비즈니스 모델로의 전환이 가속화되고 있습니다."
+    ],
+    "business_insight": "완전자율주행의 환상이 걷히고 상용화 가능한 특정 도메인 단위의 검증 단계로 진입함에 따라, 엔드투엔드 AI 기술력과 단위 경제성을 동시에 증명하는 기업만이 살아남을 것입니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Sennheiser Momentum 5 review: Great sound, incredible battery life, and few compromises",
+    "link": "https://techcrunch.com/2026/09/27/sennheiser-momentum-5-review-great-sound-incredible-battery-life-and-few-compromises/",
+    "canonical_url": "https://techcrunch.com/2026/09/27/sennheiser-momentum-5-review-great-sound-incredible-battery-life-and-few-compromises/",
+    "published_at": "2026-09-27T15:00:00",
+    "summary": "I spent the last few weeks with the Sennheiser Momentum 5 to determine if this pair actually stands out, testing everything from sound quality and noise cancellation to comfort and battery life.",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 5,
+    "is_primary": true,
+    "korean_title": "젠하이저 모멘텀 5 리뷰: 압도적 배터리와 정통 사운드로 타협 없는 완성도 달성",
+    "summary_3_lines": [
+      "수 주간의 실사용 테스트 결과, 젠하이저 모멘텀 5는 음질, 노이즈 캔슬링, 착용감 전반에서 뛰어난 밸런스를 입증했습니다.",
+      "특히 경쟁 프리미엄 헤드폰 제품군을 압도하는 긴 배터리 수명과 정교한 사운드 튜닝이 강력한 강점으로 평가받았습니다.",
+      "소니, 보스, 애플 등이 주도하는 프리미엄 무선 헤드폰 시장에서 실용성과 음향 본질에 충실한 대안으로 자리매김했습니다."
+    ],
+    "business_insight": "기능적 포화 상태에 이른 프리미엄 오디오 시장에서 과도한 부가기능 대신 배터리 효율과 음향 완성도라는 하드웨어 기본기를 극대화한 제품 전략이 헤비 유저 층을 효과적으로 공략하고 있습니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "Ars Technica",
+    "title": "How the Smithsonian became the latest front in Trump’s culture war",
+    "link": "https://arstechnica.com/tech-policy/2026/09/how-the-smithsonian-became-the-latest-front-in-trumps-culture-war/",
+    "canonical_url": "https://arstechnica.com/tech-policy/2026/09/how-the-smithsonian-became-the-latest-front-in-trumps-culture-war/",
+    "published_at": "2026-09-27T11:00:12",
+    "summary": "The Smithsonian has faced withering pressure from the Trump administration.",
+    "score": 4,
+    "score_breakdown": {
+      "total_score": 4,
+      "impact": 0,
+      "business": 0,
+      "development": 0,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true,
+    "korean_title": "스미스소니언 박물관, 트럼프 행정부의 새로운 문화 전쟁 전선으로 부상",
+    "summary_3_lines": [
+      "미국 국립 스미스소니언 박물관이 트럼프 행정부로부터 강력한 정치적·이념적 압박을 받고 있습니다.",
+      "역사 서술 방식과 전시 큐레이션을 둘러싸고 보수 진영의 비판과 개입 요구가 심화되며 문화 전쟁의 전선으로 부각되었습니다.",
+      "공공 문화·학술 기관의 자율성과 연방 정부 지원금 연계 문제를 둘러싼 갈등이 확산되고 있습니다."
+    ],
+    "business_insight": "공공 기금에 의존하는 문화·연구 기관의 정치적 리스크가 증가함에 따라, 안정적인 운영을 위한 민간 파트너십 및 기부 모델 다각화의 중요성이 더욱 커지고 있습니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Information",
+    "title": "Why Oura May Not Be the Healthiest IPO",
+    "link": "https://www.theinformation.com/articles/oura-may-healthiest-ipo",
+    "canonical_url": "https://www.theinformation.com/articles/oura-may-healthiest-ipo",
+    "published_at": "2026-09-27T22:01:08",
+    "summary": "So much is going on in the broadly defined AI world that it’s easy to overlook other stuff that’s happening. This week, for instance, fitness ring maker Oura is expected to go public, which is an event worth watching. It won’t be as earth shattering as Anthropic’s anticipated IPO, to be sure. But it will be a treat for anyone curious to see how easily overhyped these flash-in-the-pan businesses can be. That might sound a bit harsh. Oura, one of the leaders in health-related wearables, has made quite the name for itself in the past few years. Revenue more than doubled in its fiscal 2025, ending last September, to $907.9 million and jumped another 74% in the nine months ending June of this year. Oura is generating real cash—$100 million in fiscal 2025. But we’ve been here before. As Arete Research analyst Richard Kramer notes, Oura has parallels to other “single product–plus-subscription models that didn’t end well,” such as Peloton, GoPro and Fitbit.",
+    "score": 48,
+    "score_breakdown": {
+      "total_score": 48,
+      "impact": 24,
+      "business": 9,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true,
+    "korean_title": "오우라(Oura) IPO 임박: 펠로톤·핏빗의 '단일 하드웨어' 한계 넘을까",
+    "summary_3_lines": [
+      "스마트 링 선두주자 오우라가 이번 주 뉴욕 증시 상장을 추진하며 웨어러블 테크 시장의 주목을 받고 있다.",
+      "2025 회계연도 매출 9억 790만 달러(전년 대비 2배 이상 성장) 및 현금 흐름 1억 달러를 달성하며 견조한 재무 성과를 기록했다.",
+      "그러나 시장 전문가들은 핏빗, 고프로, 펠로톤처럼 실패로 귀결된 '단일 기기 판매+구독' 모델의 전철을 밟을 수 있다고 경고한다."
+    ],
+    "business_insight": "빅테크(애플, 삼성)의 스마트 링 및 헬스케어 생태계 잠식이 가시화되는 상황에서, 오우라가 단순 폼팩터 경쟁을 넘어 차별화된 헬스 데이터 플랫폼 락인(Lock-in)을 증명하지 못하면 상장 후 밸류에이션 유지가 위태로울 수 있습니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Information",
+    "title": "Anthropic’s Amodei to Dine With Trump at White House",
+    "link": "https://www.theinformation.com/briefings/anthropics-amodei-dine-trump-white-house",
+    "canonical_url": "https://www.theinformation.com/briefings/anthropics-amodei-dine-trump-white-house",
+    "published_at": "2026-09-27T18:47:41",
+    "summary": "Anthropic CEO Dario Amodei is scheduled to have dinner with President Donald Trump at the White House on Sunday, Axios reported. The private dinner will be the first meeting between Trump and Amodei, Axios reported, and could be a sign of warming relations between Anthropic and the White House. ...",
+    "score": 27,
+    "score_breakdown": {
+      "total_score": 27,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true,
+    "korean_title": "앤트로픽 다리오 아모데이 CEO, 백악관서 트럼프와 첫 공식 만찬",
+    "summary_3_lines": [
+      "앤트로픽의 다리오 아모데이 CEO가 일요일 백악관에서 도널드 트럼프 미국 대통령과 비공개 만찬을 진행할 예정이다.",
+      "이번 회동은 트럼프 대통령과 아모데이 CEO 사이의 첫 공식 만남이다.",
+      "그동안 다소 거리를 두었던 앤트로픽과 트럼프 행정부 간의 관계가 우호적으로 전환되고 있음을 시사하는 신호로 풀이된다."
+    ],
+    "business_insight": "트럼프 행정부의 AI 규제 완화 및 대규모 AI 인프라 구축 드라이브 속에서, 앤트로픽이 오픈AI 중심의 정부 정책 지형을 견제하고 프론티어 AI 거버넌스 및 정부 조달 논의에서 입지를 선점하려는 전략적 행보입니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Information",
+    "title": "China Weighs Allowing Purchases of New Nvidia Chips by ByteDance, Alibaba",
+    "link": "https://www.theinformation.com/articles/china-weighs-allowing-purchases-new-nvidia-chips-bytedance-alibaba",
+    "canonical_url": "https://www.theinformation.com/articles/china-weighs-allowing-purchases-new-nvidia-chips-bytedance-alibaba",
+    "published_at": "2026-09-27T15:00:59",
+    "summary": "China’s government has signaled it could allow some domestic companies to buy a new Nvidia chip built for high-end professional computers, according to two people familiar with the matter, as the country’s AI firms strain for enough computing power to run their chatbots and agents. The Ministry of Industry and Information Technology, which oversees China’s tech sector, recently asked companies including Alibaba Group and ByteDance to report on their plans to buy Nvidia’s RTX Pro 5500 chips, released this month—specifically how many they want to buy and what they’ll use them for, the people said. The ministry has told some Chinese companies the government intends to approve the purchases, they said. Even if that happens, though, it’s unclear when the approvals would come, how many chips officials would allow and what standards they would use to decide.",
+    "score": 24,
+    "score_breakdown": {
+      "total_score": 24,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true,
+    "korean_title": "중국 당국, 바이트댄스·알리바바의 엔비디아 신형 칩 구매 승인 검토",
+    "summary_3_lines": [
+      "중국 공업정보화부(MIIT)가 알리바바와 바이트댄스 등에 엔비디아의 최신 'RTX Pro 5500' 구매 수요와 용도 보고를 요청했다.",
+      "중국 내 생성형 AI 및 챗봇·에이전트 구동을 위한 컴퓨팅 파워 부족이 극심해지자 정부 차원에서 수입 승인 가능성을 시사했다.",
+      "다만 최종 승인 시점, 배정 수량, 심사 기준 등 구체적인 세부 집행 계획은 아직 확정되지 않았다."
+    ],
+    "business_insight": "미국의 첨단 반도체 수출 규제와 자체 반도체 자립 한계 사이에서, 중국 정부가 자국 빅테크의 AI 경쟁력 둔화를 막기 위해 규격 제한을 우회할 수 있는 엔비디아 워크스테이션용 칩 구매를 전략적으로 용인하려는 실용주의적 타협책입니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  }
+]

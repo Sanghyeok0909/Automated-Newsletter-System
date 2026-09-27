@@ -2,13 +2,13 @@
   "The Verge": {
     "status": "success",
     "raw_count": 10,
-    "eligible_count": 8,
+    "eligible_count": 6,
     "selected_count": 5
   },
   "TechCrunch": {
     "status": "success",
     "raw_count": 20,
-    "eligible_count": 6,
+    "eligible_count": 7,
     "selected_count": 5
   },
   "Ars Technica": {
