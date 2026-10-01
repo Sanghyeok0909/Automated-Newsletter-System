@@ -14,19 +14,19 @@
   "Ars Technica": {
     "analyzed": 5,
     "target": 5,
-    "candidates_found": 12,
+    "candidates_found": 20,
     "status": "completed"
   },
   "MIT Tech Review": {
-    "analyzed": 3,
+    "analyzed": 2,
     "target": 5,
-    "candidates_found": 3,
+    "candidates_found": 2,
     "status": "candidate_shortage"
   },
   "The Information": {
     "analyzed": 5,
     "target": 5,
-    "candidates_found": 18,
+    "candidates_found": 16,
     "status": "completed"
   }
 }
