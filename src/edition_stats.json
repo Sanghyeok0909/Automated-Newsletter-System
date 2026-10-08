@@ -3,6 +3,30 @@
     "analyzed": 0,
     "target": 5,
     "candidates_found": 10,
-    "status": "daily_quota_exhausted"
+    "status": "analysis_failure"
+  },
+  "TechCrunch": {
+    "analyzed": 0,
+    "target": 5,
+    "candidates_found": 18,
+    "status": "analysis_failure"
+  },
+  "Ars Technica": {
+    "analyzed": 0,
+    "target": 5,
+    "candidates_found": 13,
+    "status": "analysis_failure"
+  },
+  "MIT Tech Review": {
+    "analyzed": 1,
+    "target": 5,
+    "candidates_found": 1,
+    "status": "candidate_shortage"
+  },
+  "The Information": {
+    "analyzed": 5,
+    "target": 5,
+    "candidates_found": 12,
+    "status": "completed"
   }
 }
