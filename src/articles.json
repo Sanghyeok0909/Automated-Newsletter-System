@@ -1,220 +1,30 @@
 [
   {
     "media": "The Verge",
-    "title": "Anthropic launches free AI security scans for open-source projects",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
-    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
-    "published_at": "2026-10-08T21:53:51",
-    "summary": "Anthropic's offering to help open-source projects track down security vulnerabilities with a new service called OSS Scanner. It says open-source projects that opt-in will get \"thorough, periodic security scans by our strongest models at no cost.\" That could mean open-source projects get alerted about possible security issues sooner, but the trade-off is that OSS Scanner's […]",
-    "score": 54,
+    "title": "DistroKid has been quietly taking down songs in response to UMG lawsuit",
+    "link": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
+    "canonical_url": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
+    "published_at": "2026-10-10T18:52:07",
+    "summary": "Artists are taking to social media to complain that DistroKid has unceremoniously removed their work without notice. Now DistroKid has confirmed to The Verge that the takedowns are a direct response to claims made by UMG. The label filed a lawsuit in September claiming that DistroKid has created an \"AI-slop pipeline.\" Artists are saying that […]",
+    "score": 36,
     "score_breakdown": {
-      "total_score": 54,
-      "impact": 24,
-      "business": 0,
-      "development": 20,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 1,
-    "is_primary": true
-  },
-  {
-    "media": "The Verge",
-    "title": "SpaceX announces plan to become a ‘major mobile carrier’",
-    "link": "https://www.theverge.com/science/1008467/spacex-announces-plan-to-become-a-major-mobile-carrier",
-    "canonical_url": "https://www.theverge.com/science/1008467/spacex-announces-plan-to-become-a-major-mobile-carrier",
-    "published_at": "2026-10-08T21:23:31",
-    "summary": "SpaceX has acquired a portfolio of low-band spectrum licenses - a move the company says \"will pave the way\" for its Starlink Mobile service to become a \"major\" US carrier. When the Federal Communications Commission signs off on the deal, SpaceX says it will deploy its new architecture that combines its satellite-to-mobile constellation with a […]",
-    "score": 30,
-    "score_breakdown": {
-      "total_score": 30,
-      "impact": 0,
-      "business": 0,
-      "development": 20,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 2,
-    "is_primary": true
-  },
-  {
-    "media": "The Verge",
-    "title": "California is trying to shut down robot vs. human cage matches",
-    "link": "https://www.theverge.com/tech/1008401/california-shut-down-rek-fighting-robot-company-human",
-    "canonical_url": "https://www.theverge.com/tech/1008401/california-shut-down-rek-fighting-robot-company-human",
-    "published_at": "2026-10-08T20:06:56",
-    "summary": "The California State Athletic Commission sent a cease-and-desist letter to a startup that hosted a match between a human and a robot last month, as reported by The New York Times. The fight, which took place on September 18th, pitted a human, Frankie LaPenna, against a humanoid robot owned by a tech startup, Rek, that […]",
-    "score": 24,
-    "score_breakdown": {
-      "total_score": 24,
-      "impact": 0,
+      "total_score": 36,
+      "impact": 12,
       "business": 9,
       "development": 5,
       "recency": 10,
       "original": 0
     },
-    "rank": 3,
-    "is_primary": true
-  },
-  {
-    "media": "The Verge",
-    "title": "US plans livestream of execution by firing squad",
-    "link": "https://www.theverge.com/tech/1008530/us-government-livestream-execution-firing-squad-fort-hood",
-    "canonical_url": "https://www.theverge.com/tech/1008530/us-government-livestream-execution-firing-squad-fort-hood",
-    "published_at": "2026-10-08T22:32:04",
-    "summary": "The United States' execution of the Fort Hood shooter will be livestreamed, anonymous officials from the Defense Department told the BBC and Associated Press. The planned execution of Nidal Hasan, the former US Army major convicted of killing 13 people at the Texas military base, was announced this week. He is scheduled to be executed […]",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 4,
-    "is_primary": true
-  },
-  {
-    "media": "The Verge",
-    "title": "AMD will bring FSR 4 to handhelds by the end of 2026",
-    "link": "https://www.theverge.com/games/1008353/amd-will-bring-fsr-4-to-handhelds-by-the-end-of-2026",
-    "canonical_url": "https://www.theverge.com/games/1008353/amd-will-bring-fsr-4-to-handhelds-by-the-end-of-2026",
-    "published_at": "2026-10-08T21:01:18",
-    "summary": "It's already possible to get AMD's framerate-enhancing FSR 4 boost on handhelds as old as the Steam Deck - but in June, AMD reserved the right to disappoint handheld gamers by not officially bringing FSR 4 to older handhelds. Now, AMD consumer chip boss Jack Huynh says he will bring the tech to some handhelds […]",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 5,
-    "is_primary": true
-  },
-  {
-    "media": "The Verge",
-    "title": "Apple will reportedly debut its first touchscreen MacBook in three weeks",
-    "link": "https://www.theverge.com/tech/1008422/apple-macbook-pro-touchscreen-ipad-mini-rumor",
-    "canonical_url": "https://www.theverge.com/tech/1008422/apple-macbook-pro-touchscreen-ipad-mini-rumor",
-    "published_at": "2026-10-08T20:32:21",
-    "summary": "Apple is set to introduce a new MacBook Pro with a touchscreen and an updated iPad Mini \"on or around\" October 27th, Bloomberg reports. If true, that would put the event just two weeks after the October 13th event Apple announced today, which is rumored to focus on smart home products. Bloomberg says that the […]",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 6,
-    "is_primary": false
-  },
-  {
-    "media": "The Verge",
-    "title": "ICE detainees in Georgia used the facility’s video calling software to expose the conditions inside",
-    "link": "https://www.theverge.com/report/1008342/folkston-georgia-ice-detention-hunger-strike-video",
-    "canonical_url": "https://www.theverge.com/report/1008342/folkston-georgia-ice-detention-hunger-strike-video",
-    "published_at": "2026-10-08T19:45:00",
-    "summary": "Four men detained at an ICE detention center in rural Georgia used the facility's video conferencing software to expose both the conditions inside and President Donald Trump's hostile takeover of the immigration courts. In the five-minute video, the men describe an intentionally dysfunctional legal system designed to keep them trapped in federal custody for months […]",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 7,
-    "is_primary": false
-  },
-  {
-    "media": "The Verge",
-    "title": "Microsoft’s new Windows Search is exactly what Windows 11 needs",
-    "link": "https://www.theverge.com/news/1008320/microsoft-windows-search-overhaul-windows-11",
-    "canonical_url": "https://www.theverge.com/news/1008320/microsoft-windows-search-overhaul-windows-11",
-    "published_at": "2026-10-08T19:30:21",
-    "summary": "Windows Search has been one of the most frustrating parts of Windows 11, and now Microsoft is addressing this with a significant overhaul. A new redesigned Windows Search is now in testing that is much faster, more capable, and a lot more modern. \"This new Windows Search experience is built for speed,\" says Anshul Rawat, […]",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 8,
-    "is_primary": false
-  },
-  {
-    "media": "The Verge",
-    "title": "Paramount is making a Cyberpunk 2077 film",
-    "link": "https://www.theverge.com/games/1008327/paramount-pictures-cyberpunk-2077-film-movie",
-    "canonical_url": "https://www.theverge.com/games/1008327/paramount-pictures-cyberpunk-2077-film-movie",
-    "published_at": "2026-10-08T19:14:03",
-    "summary": "Cyberpunk 2077 is heading to the big screen. Deadline reports that CD Projekt Red's popular sci-fi video game franchise is being adapted into a live-action film by Paramount Pictures. There's no details just yet on when the film might premiere. But Deadline says that Lorenzo di Bonaventura, who is known for producing the Transformers films, […]",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 9,
-    "is_primary": false
-  },
-  {
-    "media": "The Verge",
-    "title": "Tim Cook says &#8216;I&#8217;m not meddling&#8217; in the new Apple CEO&#8217;s business",
-    "link": "https://www.theverge.com/news/1008279/apple-tim-cook-not-meddling-john-ternus-ceo",
-    "canonical_url": "https://www.theverge.com/news/1008279/apple-tim-cook-not-meddling-john-ternus-ceo",
-    "published_at": "2026-10-08T18:48:36",
-    "summary": "Tim Cook stepped down as Apple CEO in September, handing over the top job to former hardware chief John Ternus and taking an executive chairman role. Cook's still a visible representative of the company, having been recently photographed attending a state dinner at the White House. But in an interview with The Independent, Cook says […]",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 10,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Popular AI leaderboard Arena nearly doubles valuation to $3.1B valuation in 10 months",
-    "link": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
-    "canonical_url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/",
-    "published_at": "2026-10-08T18:19:45",
-    "summary": "The company behind the popular LMArena leaderboard has raised $200 million led by Lightspeed and Khosla, and is now measuring AI models on alignment issues such as lying.",
-    "score": 36,
-    "score_breakdown": {
-      "total_score": 36,
-      "impact": 24,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
     "rank": 1,
     "is_primary": true
   },
   {
-    "media": "TechCrunch",
-    "title": "OpenAI’s revenue is reportedly $20 billion less than previously projected",
-    "link": "https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/",
-    "canonical_url": "https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/",
-    "published_at": "2026-10-08T18:19:42",
-    "summary": "It had previously been reported that the AI lab's annualized revenue was some $70 billion, but a new report claims it's a whole lot less than that.",
+    "media": "The Verge",
+    "title": "Anthropic is cutting off its internal evaluations from the internet",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
+    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
+    "published_at": "2026-10-10T14:41:16",
+    "summary": "After a recent spate of high-profile incidents in which AI agents escaped containment, Anthropic is cutting off internet access for all internal evaluations. In a report Friday, the company detailed \"unintended model actions,\" including submitting a false tip regarding an unsolved murder, that led to the decision. Although the impact of these behaviors was minimal […]",
     "score": 36,
     "score_breakdown": {
       "total_score": 36,
@@ -228,107 +38,12 @@
     "is_primary": true
   },
   {
-    "media": "TechCrunch",
-    "title": "New York alleges TikTok gave teens, children a placebo safety feature instead of a real one",
-    "link": "https://techcrunch.com/2026/10/08/new-york-alleges-tiktok-gave-teens-children-a-placebo-safety-feature-instead-of-a-real-one/",
-    "canonical_url": "https://techcrunch.com/2026/10/08/new-york-alleges-tiktok-gave-teens-children-a-placebo-safety-feature-instead-of-a-real-one/",
-    "published_at": "2026-10-08T15:06:17",
-    "summary": "New York’s lawsuit against the company is one of more than two dozen cases brought by states accusing the social media giant of designing its platform to encourage addictive use among children.",
-    "score": 33,
-    "score_breakdown": {
-      "total_score": 33,
-      "impact": 12,
-      "business": 9,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 3,
-    "is_primary": true
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Asos confirms breach of customer data after hackers send rogue app notification",
-    "link": "https://techcrunch.com/2026/10/08/asos-confirms-breach-of-customer-data-after-hackers-send-rogue-app-notification/",
-    "canonical_url": "https://techcrunch.com/2026/10/08/asos-confirms-breach-of-customer-data-after-hackers-send-rogue-app-notification/",
-    "published_at": "2026-10-08T15:01:15",
-    "summary": "The hackers alerted the fashion giant's customers through a push notification that said they had \"fully compromised\" the company's cloud storage.",
-    "score": 33,
-    "score_breakdown": {
-      "total_score": 33,
-      "impact": 12,
-      "business": 9,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 4,
-    "is_primary": true
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Ben Affleck is an AI nerd, and the internet is impressed",
-    "link": "https://techcrunch.com/2026/10/08/ben-affleck-is-an-ai-nerd-and-the-internet-is-impressed/",
-    "canonical_url": "https://techcrunch.com/2026/10/08/ben-affleck-is-an-ai-nerd-and-the-internet-is-impressed/",
-    "published_at": "2026-10-08T18:20:32",
-    "summary": "Ben Affleck is going viral for his deep knowledge of AI, from neural networks and transformers to open weights. The actor, who sold his AI filmmaking startup to Netflix earlier this year, is proving he's more than just a Hollywood star.",
-    "score": 32,
-    "score_breakdown": {
-      "total_score": 32,
-      "impact": 12,
-      "business": 0,
-      "development": 13,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 5,
-    "is_primary": true
-  },
-  {
-    "media": "TechCrunch",
-    "title": "President Trump awards Big Tech donors with nation’s highest science prizes",
-    "link": "https://techcrunch.com/2026/10/08/president-trump-awards-big-tech-donors-with-nations-highest-science-prizes/",
-    "canonical_url": "https://techcrunch.com/2026/10/08/president-trump-awards-big-tech-donors-with-nations-highest-science-prizes/",
-    "published_at": "2026-10-08T22:33:59",
-    "summary": "Together, the awardees have donated nearly $6 billion to efforts tied to Trump and his administration.",
-    "score": 27,
-    "score_breakdown": {
-      "total_score": 27,
-      "impact": 12,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 6,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect",
-    "link": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
-    "canonical_url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
-    "published_at": "2026-10-08T20:04:26",
-    "summary": "Three fired OpenAI safety researchers dispute allegations of mishandling sensitive information, warning in an open letter that their dismissals are creating a chilling effect on the company’s AI safety culture.",
-    "score": 27,
-    "score_breakdown": {
-      "total_score": 27,
-      "impact": 12,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 7,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Anthropic changes usage policy to ban model abuse and election interference",
-    "link": "https://techcrunch.com/2026/10/08/anthropic-changes-usage-policy-to-ban-model-abuse-and-election-interference/",
-    "canonical_url": "https://techcrunch.com/2026/10/08/anthropic-changes-usage-policy-to-ban-model-abuse-and-election-interference/",
-    "published_at": "2026-10-08T18:16:24",
-    "summary": "Anthropic's updated usage policy explicitly prohibits users from repeatedly abusing Claude in extreme cases, though ordinary frustration and criticism are still allowed. The new rules also address election interference, deceptive campaigns, weapons software, and surveillance.",
+    "media": "The Verge",
+    "title": "Will Warner Bros. kill Skydance — or will David Ellison kill Warner Bros?",
+    "link": "https://www.theverge.com/podcast/1008733/warner-skydance-paramount-ellison-debt-failure",
+    "canonical_url": "https://www.theverge.com/podcast/1008733/warner-skydance-paramount-ellison-debt-failure",
+    "published_at": "2026-10-10T14:00:00",
+    "summary": "Today, I’m talking with Peter Kafka, chief correspondent at Business Insider and host of the Channels podcast, about the gigantic Warner Bros.-Paramount merger and the future of the company now simply called Skydance. Skydance is owned by David Ellison, son of Oracle CEO Larry Ellison, and its deal to acquire Warner Bros. Discovery officially closed […]",
     "score": 24,
     "score_breakdown": {
       "total_score": 24,
@@ -338,16 +53,16 @@
       "recency": 7,
       "original": 0
     },
-    "rank": 8,
-    "is_primary": false
+    "rank": 3,
+    "is_primary": true
   },
   {
-    "media": "TechCrunch",
-    "title": "OpenAI’s math solutions aren’t meeting the field’s standards yet",
-    "link": "https://techcrunch.com/2026/10/08/openais-math-solutions-arent-meeting-the-fields-standards-yet/",
-    "canonical_url": "https://techcrunch.com/2026/10/08/openais-math-solutions-arent-meeting-the-fields-standards-yet/",
-    "published_at": "2026-10-08T18:10:55",
-    "summary": "OpenAI's flood of proofs deviated from the guidelines set by a group of mathematical researchers consulted by the frontier lab.",
+    "media": "The Verge",
+    "title": "AI agent makers are promising privacy — will they deliver?",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots",
+    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots",
+    "published_at": "2026-10-10T13:00:00",
+    "summary": "At this year's OpenAI DevDay, CEO Sam Altman unveiled the company's new AI agent Dots - and told the crowd that the company wants to \"set a new standard for privacy in frontier AI.\" OpenAI would spend the day taking veiled shots at Meta's Muse, its primary competitor, for failing to keep users' data safe. […]",
     "score": 24,
     "score_breakdown": {
       "total_score": 24,
@@ -357,871 +72,16 @@
       "recency": 7,
       "original": 0
     },
-    "rank": 9,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Hear from Ambrosia Energy and Bloom Energy execs on where the AI infrastructure boom is creating opportunity at TechCrunch Disrupt 2026",
-    "link": "https://techcrunch.com/2026/10/08/hear-from-ambrosia-energy-and-bloom-energy-execs-on-where-the-ai-infrastructure-boom-is-creating-opportunity-at-disrupt-2026/",
-    "canonical_url": "https://techcrunch.com/2026/10/08/hear-from-ambrosia-energy-and-bloom-energy-execs-on-where-the-ai-infrastructure-boom-is-creating-opportunity-at-disrupt-2026/",
-    "published_at": "2026-10-08T15:00:00",
-    "summary": "Ambrosia Energy CEO Ben Longmier and Bloom Energy SVP Bill Thayer join the Smart Systems Stage at TechCrunch Disrupt. Register now to save up to $100. Grab a second of the same pass to save 50%.",
-    "score": 21,
-    "score_breakdown": {
-      "total_score": 21,
-      "impact": 0,
-      "business": 9,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 10,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Spotify is getting more serious about selling enterprise software",
-    "link": "https://techcrunch.com/2026/10/08/spotify-is-getting-more-serious-about-selling-enterprise-software/",
-    "canonical_url": "https://techcrunch.com/2026/10/08/spotify-is-getting-more-serious-about-selling-enterprise-software/",
-    "published_at": "2026-10-08T14:34:33",
-    "summary": "The company launched technology.spotify.com, a new site that will make its internal tech available to outsiders.",
-    "score": 21,
-    "score_breakdown": {
-      "total_score": 21,
-      "impact": 0,
-      "business": 9,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 11,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Pretend you’re sitting at Elizabeth Holmes’ desk on this weirdly detailed website",
-    "link": "https://techcrunch.com/2026/10/08/pretend-youre-sitting-at-elizabeth-holmes-desk-on-this-weirdly-detailed-website/",
-    "canonical_url": "https://techcrunch.com/2026/10/08/pretend-youre-sitting-at-elizabeth-holmes-desk-on-this-weirdly-detailed-website/",
-    "published_at": "2026-10-08T21:00:00",
-    "summary": "With over a thousand emails, slides, texts, and documents from the United States v. Elizabeth Holmes trial, Extend engineer Bo Lau created a website that simulates what it might have been like to rifle through the Theranos founder's desk.",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 12,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Google brings agentic AI to Gemini, starting with businesses",
-    "link": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
-    "canonical_url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
-    "published_at": "2026-10-08T18:18:00",
-    "summary": "Google is turning Gemini into an AI agent that can plan, execute tasks, and work across business apps and systems. The agent can delegate work to subagents, use multiple AI models, and even gets its own workplace identity, complete with an email address.",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 13,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "A startup founder who served time in prison is looking to court an untapped market: ex-cons",
-    "link": "https://techcrunch.com/2026/10/08/a-startup-founder-who-served-time-in-prison-is-looking-to-court-an-untapped-market-ex-cons/",
-    "canonical_url": "https://techcrunch.com/2026/10/08/a-startup-founder-who-served-time-in-prison-is-looking-to-court-an-untapped-market-ex-cons/",
-    "published_at": "2026-10-08T16:45:00",
-    "summary": "Richard Bronson, a former Stratton Oakmont partner who served time in federal prison for securities violations, has launched Commissary Club, a startup that uses AI to help people leaving prison find jobs, housing, community, and even dates.",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 14,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Natura’s $99 smart ring puts AI agents on your finger",
-    "link": "https://techcrunch.com/2026/10/08/naturas-smart-ring-puts-ai-agents-on-your-finger/",
-    "canonical_url": "https://techcrunch.com/2026/10/08/naturas-smart-ring-puts-ai-agents-on-your-finger/",
-    "published_at": "2026-10-08T16:00:00",
-    "summary": "Natura’s $99 Interface smart ring lets you summon AI agents with the press of a finger to complete tasks, capture thoughts, and control devices — while doubling as a health tracker.",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 15,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Goodfire says its new ‘inside-out’ monitors catch rogue AI agents at a fraction of the cost",
-    "link": "https://techcrunch.com/2026/10/08/goodfire-says-its-new-inside-out-monitors-catch-rogue-ai-agents-at-a-fraction-of-the-cost/",
-    "canonical_url": "https://techcrunch.com/2026/10/08/goodfire-says-its-new-inside-out-monitors-catch-rogue-ai-agents-at-a-fraction-of-the-cost/",
-    "published_at": "2026-10-08T16:00:00",
-    "summary": "Goodfire just launched what it says is a cheaper way to keep AI agents in check: Instead of paying a second AI to read everything an agent does, its monitors peek inside the model while it works and only call in backup when something looks fishy.",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 16,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "US bars Microsoft, Adobe, and major IT firms from green card program for skilled foreign workers",
-    "link": "https://techcrunch.com/2026/10/08/us-bars-microsoft-adobe-and-major-it-firms-from-green-card-program-for-skilled-foreign-workers/",
-    "canonical_url": "https://techcrunch.com/2026/10/08/us-bars-microsoft-adobe-and-major-it-firms-from-green-card-program-for-skilled-foreign-workers/",
-    "published_at": "2026-10-08T15:42:26",
-    "summary": "The other firms being suspended from the program include Capgemini, Cognizant, HCL, Infosys, Tata, and Wipro.",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 17,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Elon Musk questions Ambani’s influence as Starlink India launch stalls",
-    "link": "https://techcrunch.com/2026/10/08/elon-musk-questions-ambanis-influence-as-starlink-india-launch-stalls/",
-    "canonical_url": "https://techcrunch.com/2026/10/08/elon-musk-questions-ambanis-influence-as-starlink-india-launch-stalls/",
-    "published_at": "2026-10-08T15:12:59",
-    "summary": "“Is Ambani the real boss of India?” Elon Musk asked as he questioned why Starlink has yet to launch its satellite internet service in the country.",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 18,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Watch the trailer for ‘The Altruists,’ Netflix’s show about the FTX scandal",
-    "link": "https://techcrunch.com/2026/10/08/watch-the-trailer-for-the-altruists-netflixs-show-about-the-ftx-scandal/",
-    "canonical_url": "https://techcrunch.com/2026/10/08/watch-the-trailer-for-the-altruists-netflixs-show-about-the-ftx-scandal/",
-    "published_at": "2026-10-08T18:30:00",
-    "summary": "A fictionalized Sam Bankman-Fried is coming to your TV screen on November 19.",
-    "score": 7,
-    "score_breakdown": {
-      "total_score": 7,
-      "impact": 0,
-      "business": 0,
-      "development": 0,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 19,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Waymo locks in $5B loan from Blackstone, PIMCO to fuel robotaxi expansion",
-    "link": "https://techcrunch.com/2026/10/08/waymo-locks-in-5b-loan-from-blackstone-pimco-to-fuel-robotaxi-expansion/",
-    "canonical_url": "https://techcrunch.com/2026/10/08/waymo-locks-in-5b-loan-from-blackstone-pimco-to-fuel-robotaxi-expansion/",
-    "published_at": "2026-10-08T14:16:56",
-    "summary": "This is the first time the Alphabet-owned company has turned to debt financing.",
-    "score": 7,
-    "score_breakdown": {
-      "total_score": 7,
-      "impact": 0,
-      "business": 0,
-      "development": 0,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 20,
-    "is_primary": false
-  },
-  {
-    "media": "Ars Technica",
-    "title": "Nvidia's big bet on physical AI aims for safer robotaxis, humanoid robots",
-    "link": "https://arstechnica.com/ai/2026/10/nvidias-big-bet-on-physical-ai-aims-for-safer-robotaxis-humanoid-robots/",
-    "canonical_url": "https://arstechnica.com/ai/2026/10/nvidias-big-bet-on-physical-ai-aims-for-safer-robotaxis-humanoid-robots/",
-    "published_at": "2026-10-08T11:15:33",
-    "summary": "Full-stack safety solution for physical AI is being used by robotics companies.",
-    "score": 34,
-    "score_breakdown": {
-      "total_score": 34,
-      "impact": 12,
-      "business": 18,
-      "development": 0,
-      "recency": 4,
-      "original": 0
-    },
-    "rank": 1,
-    "is_primary": true
-  },
-  {
-    "media": "Ars Technica",
-    "title": "Trump Mobile hack and apparent lack of FCC authorization raise security alarms",
-    "link": "https://arstechnica.com/tech-policy/2026/10/trump-mobile-doesnt-seem-to-have-fcc-authorization-for-phone-service-senator-says/",
-    "canonical_url": "https://arstechnica.com/tech-policy/2026/10/trump-mobile-doesnt-seem-to-have-fcc-authorization-for-phone-service-senator-says/",
-    "published_at": "2026-10-08T20:39:31",
-    "summary": "After hack and data breach, senator asks why Trump Mobile lacks some FCC filings.",
-    "score": 27,
-    "score_breakdown": {
-      "total_score": 27,
-      "impact": 12,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 2,
-    "is_primary": true
-  },
-  {
-    "media": "Ars Technica",
-    "title": "RFK Jr. unveils sweeping federal initiative to find evidence of vaccine injuries",
-    "link": "https://arstechnica.com/health/2026/10/rfk-jr-unveils-sweeping-federal-initiative-to-find-evidence-of-vaccine-injuries/",
-    "canonical_url": "https://arstechnica.com/health/2026/10/rfk-jr-unveils-sweeping-federal-initiative-to-find-evidence-of-vaccine-injuries/",
-    "published_at": "2026-10-08T19:26:32",
-    "summary": "\"[T]he Trump-RFK Jr. anti-vax agenda keeps getting more corrupt and dangerous.\"",
-    "score": 18,
-    "score_breakdown": {
-      "total_score": 18,
-      "impact": 0,
-      "business": 0,
-      "development": 8,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 3,
-    "is_primary": true
-  },
-  {
-    "media": "Ars Technica",
-    "title": "SpaceX calls for better coordination in orbit after near-misses with Starlink",
-    "link": "https://arstechnica.com/space/2026/10/spacex-calls-for-better-coordination-in-orbit-after-near-misses-with-starlink/",
-    "canonical_url": "https://arstechnica.com/space/2026/10/spacex-calls-for-better-coordination-in-orbit-after-near-misses-with-starlink/",
-    "published_at": "2026-10-08T21:37:32",
-    "summary": "\"These led to conjunctions of tens of meters to hundreds of meters. Way too close to comfort.\"",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
     "rank": 4,
     "is_primary": true
   },
   {
-    "media": "Ars Technica",
-    "title": "Judge weighs if Trump can charge $100K for early access to Truth Social posts",
-    "link": "https://arstechnica.com/tech-policy/2026/10/judge-weighs-if-trump-can-charge-100k-for-early-access-to-truth-social-posts/",
-    "canonical_url": "https://arstechnica.com/tech-policy/2026/10/judge-weighs-if-trump-can-charge-100k-for-early-access-to-truth-social-posts/",
-    "published_at": "2026-10-08T20:53:01",
-    "summary": "Judge questioned if Trump delaying access to Truth Social posts by a second harms the press.",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 5,
-    "is_primary": true
-  },
-  {
-    "media": "Ars Technica",
-    "title": "RIP Margaret Hamilton, whose code saved the Apollo 11 Moon landing",
-    "link": "https://arstechnica.com/science/2026/10/r-i-p-margaret-hamilton-whose-code-saved-the-apollo-11-moon-landing/",
-    "canonical_url": "https://arstechnica.com/science/2026/10/r-i-p-margaret-hamilton-whose-code-saved-the-apollo-11-moon-landing/",
-    "published_at": "2026-10-08T20:15:53",
-    "summary": "Hamilton also coined the term \"software engineering\" and founded two successful software companies.",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 6,
-    "is_primary": false
-  },
-  {
-    "media": "Ars Technica",
-    "title": "Internal files add to evidence of an ExxonMobil climate deception campaign",
-    "link": "https://arstechnica.com/tech-policy/2026/10/exxonmobils-own-scientists-doubted-climate-fixes-the-company-hyped/",
-    "canonical_url": "https://arstechnica.com/tech-policy/2026/10/exxonmobils-own-scientists-doubted-climate-fixes-the-company-hyped/",
-    "published_at": "2026-10-08T14:04:42",
-    "summary": "Court filings reveal new details about Exxon's decades of internal climate deliberations.",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 7,
-    "is_primary": false
-  },
-  {
-    "media": "Ars Technica",
-    "title": "Feds get ready to rewrite car headlight rules",
-    "link": "https://arstechnica.com/cars/2026/10/feds-get-ready-to-rewrite-car-headlight-rules/",
-    "canonical_url": "https://arstechnica.com/cars/2026/10/feds-get-ready-to-rewrite-car-headlight-rules/",
-    "published_at": "2026-10-08T20:26:13",
-    "summary": "Reducing glare and allowing modern light technologies will be two goals.",
-    "score": 10,
-    "score_breakdown": {
-      "total_score": 10,
-      "impact": 0,
-      "business": 0,
-      "development": 0,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 8,
-    "is_primary": false
-  },
-  {
-    "media": "Ars Technica",
-    "title": "Let's Encrypt cuts certificate lifetimes to 64 days starting February 2027",
-    "link": "https://arstechnica.com/gadgets/2026/10/lets-encrypt-cuts-certificate-lifetimes-to-64-days-starting-february-2027/",
-    "canonical_url": "https://arstechnica.com/gadgets/2026/10/lets-encrypt-cuts-certificate-lifetimes-to-64-days-starting-february-2027/",
-    "published_at": "2026-10-08T19:57:17",
-    "summary": "Free SSL/TLS certificate lifetimes reduce to 64 days in February.",
-    "score": 10,
-    "score_breakdown": {
-      "total_score": 10,
-      "impact": 0,
-      "business": 0,
-      "development": 0,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 9,
-    "is_primary": false
-  },
-  {
-    "media": "Ars Technica",
-    "title": "Driver wins $76 after ALPR led to bogus traffic stop, drug searches",
-    "link": "https://arstechnica.com/tech-policy/2026/10/driver-wins-76-after-alpr-led-to-bogus-traffic-stop-drug-searches/",
-    "canonical_url": "https://arstechnica.com/tech-policy/2026/10/driver-wins-76-after-alpr-led-to-bogus-traffic-stop-drug-searches/",
-    "published_at": "2026-10-08T19:42:30",
-    "summary": "Mass surveillance gets stupider.",
-    "score": 10,
-    "score_breakdown": {
-      "total_score": 10,
-      "impact": 0,
-      "business": 0,
-      "development": 0,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 10,
-    "is_primary": false
-  },
-  {
-    "media": "Ars Technica",
-    "title": "A senator tried to ban gambling on prediction markets—now she's a Kalshi lobbyist",
-    "link": "https://arstechnica.com/tech-policy/2026/10/a-senator-tried-to-ban-gambling-on-prediction-markets-now-shes-a-kalshi-lobbyist/",
-    "canonical_url": "https://arstechnica.com/tech-policy/2026/10/a-senator-tried-to-ban-gambling-on-prediction-markets-now-shes-a-kalshi-lobbyist/",
-    "published_at": "2026-10-08T11:00:14",
-    "summary": "Sen. Blanche Lincoln wrote law that let US ban sports-event contracts. She lobbies for the other side now.",
-    "score": 9,
-    "score_breakdown": {
-      "total_score": 9,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 4,
-      "original": 0
-    },
-    "rank": 11,
-    "is_primary": false
-  },
-  {
-    "media": "Ars Technica",
-    "title": "An experimental tour-de-force: Entanglement between glass bead and light",
-    "link": "https://arstechnica.com/science/2026/10/suspended-glass-bead-entangled-with-light-maybe-a-quantum-memory/",
-    "canonical_url": "https://arstechnica.com/science/2026/10/suspended-glass-bead-entangled-with-light-maybe-a-quantum-memory/",
-    "published_at": "2026-10-08T18:45:23",
-    "summary": "Getting a glass bead to act like a quantum object by entangling it with light.",
-    "score": 7,
-    "score_breakdown": {
-      "total_score": 7,
-      "impact": 0,
-      "business": 0,
-      "development": 0,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 12,
-    "is_primary": false
-  },
-  {
-    "media": "Ars Technica",
-    "title": "Amazon's new Alexa Tablets drop the Fire branding but are more Android than ever",
-    "link": "https://arstechnica.com/gadgets/2026/10/amazons-new-alexa-tablets-drop-the-fire-branding-but-are-more-android-than-ever/",
-    "canonical_url": "https://arstechnica.com/gadgets/2026/10/amazons-new-alexa-tablets-drop-the-fire-branding-but-are-more-android-than-ever/",
-    "published_at": "2026-10-08T16:32:46",
-    "summary": "Amazon killed its app store, so Google Play it is.",
-    "score": 7,
-    "score_breakdown": {
-      "total_score": 7,
-      "impact": 0,
-      "business": 0,
-      "development": 0,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 13,
-    "is_primary": false
-  },
-  {
-    "media": "Ars Technica",
-    "title": "Amazon builds 1,000th satellite, will launch space internet service by end of year",
-    "link": "https://arstechnica.com/space/2026/10/amazon-builds-1000th-satellite-is-weeks-away-from-space-internet-rollout/",
-    "canonical_url": "https://arstechnica.com/space/2026/10/amazon-builds-1000th-satellite-is-weeks-away-from-space-internet-rollout/",
-    "published_at": "2026-10-08T15:28:36",
-    "summary": "\"If this was easy, everybody else would be doing it.\"",
-    "score": 7,
-    "score_breakdown": {
-      "total_score": 7,
-      "impact": 0,
-      "business": 0,
-      "development": 0,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 14,
-    "is_primary": false
-  },
-  {
-    "media": "MIT Tech Review",
-    "title": "The Download: AI roadblocks for humanoids and portable rubber dams",
-    "link": "https://www.technologyreview.com/2026/10/08/1146045/the-download-ai-roadblocks-humanoids-portable-rubber-dams/",
-    "canonical_url": "https://www.technologyreview.com/2026/10/08/1146045/the-download-ai-roadblocks-humanoids-portable-rubber-dams/",
-    "published_at": "2026-10-08T12:10:00",
-    "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. AI breakthroughs in robotics won’t change your life any time soon The hype around humanoid robots is reaching fever pitch. Much of it comes from the idea that the same AI…",
-    "score": 35,
-    "score_breakdown": {
-      "total_score": 35,
-      "impact": 0,
-      "business": 18,
-      "development": 13,
-      "recency": 4,
-      "original": 0
-    },
-    "rank": 1,
-    "is_primary": true
-  },
-  {
-    "media": "MIT Tech Review",
-    "title": "AI breakthroughs in robotics won’t change your life any time soon",
-    "link": "https://www.technologyreview.com/2026/10/08/1145923/ai-breakthroughs-in-robotics-wont-change-your-life-any-time-soon/",
-    "canonical_url": "https://www.technologyreview.com/2026/10/08/1145923/ai-breakthroughs-in-robotics-wont-change-your-life-any-time-soon/",
-    "published_at": "2026-10-08T09:00:00",
-    "summary": "The story is a collaboration between MIT Technology Review and Aventine, a non-profit research foundation that creates and supports content about how technology and science are changing the way we live. A robot shaped like a human—white with a black head and torso—has been popping up on video feeds. Perhaps you’ve seen it dance or…",
-    "score": 26,
-    "score_breakdown": {
-      "total_score": 26,
-      "impact": 0,
-      "business": 9,
-      "development": 13,
-      "recency": 4,
-      "original": 0
-    },
-    "rank": 2,
-    "is_primary": true
-  },
-  {
-    "media": "MIT Tech Review",
-    "title": "Building a safer path to autonomous industrial AI",
-    "link": "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/",
-    "canonical_url": "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/",
-    "published_at": "2026-10-08T08:17:32",
-    "summary": "Industrial AI is entering a new phase. After decades of predictive analytics and other specialized applications, advances in foundation models, physical AI, and agentic AI are making it possible to automate more complex tasks across industrial environments. But unlike AI that operates purely in the digital world, industrial AI can interact directly with physical systems,…",
-    "score": 18,
-    "score_breakdown": {
-      "total_score": 18,
-      "impact": 0,
-      "business": 9,
-      "development": 5,
-      "recency": 4,
-      "original": 0
-    },
-    "rank": 3,
-    "is_primary": true
-  },
-  {
-    "media": "MIT Tech Review",
-    "title": "Roundtables: A Conversation With the Creator of AI-Designed Viruses",
-    "link": "https://www.technologyreview.com/2026/10/08/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
-    "canonical_url": "https://www.technologyreview.com/2026/10/08/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/",
-    "published_at": "2026-10-09T00:08:24",
-    "summary": "Friday, October 16, 2026 Can AI design new life forms? In 2025, Stanford University PhD student Samuel King came up with a preliminary answer when he used a generative AI model to propose genetic blueprints for microscopic viruses. It isn’t yet an example of AI-generated life, but that could be next. Join senior AI reporter…",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 4,
-    "is_primary": true
-  },
-  {
-    "media": "MIT Tech Review",
-    "title": "Why we’re watching these climate tech companies",
-    "link": "https://www.technologyreview.com/2026/10/08/1145920/climate-tech-companies-list/",
-    "canonical_url": "https://www.technologyreview.com/2026/10/08/1145920/climate-tech-companies-list/",
-    "published_at": "2026-10-08T10:00:00",
-    "summary": "This week, we released our 2026 version of our Climate Tech Companies to Watch list. It’s an annual project that the MIT Technology Review team puts together. Our goal is to highlight some of the promising, interesting advances and firms we think are worth paying attention to in the world of climate and energy technology. …",
-    "score": 9,
-    "score_breakdown": {
-      "total_score": 9,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 4,
-      "original": 0
-    },
-    "rank": 5,
-    "is_primary": true
-  },
-  {
-    "media": "The Information",
-    "title": "AI’s Boom Has Infrastructure Investors Looking at Garbage",
-    "link": "https://www.theinformation.com/articles/ais-boom-infrastructure-investors-looking-garbage",
-    "canonical_url": "https://www.theinformation.com/articles/ais-boom-infrastructure-investors-looking-garbage",
-    "published_at": "2026-10-08T20:11:37",
-    "summary": "The investing frenzy in data centers that the AI boom sparked has created a bargain-hunting opportunity—in everything but AI assets. AI has pulled investors’ attention away from unglamorous assets in sectors like transportation and waste management over the past few years, as they have poured billions into data centers and related AI infrastructure. Now investors are getting excited about boring-sounding assets that can throw off cash, like landfills or rail terminals. And while mega-investments have become the norm in building massive AI data centers, investors argue that far smaller but still essential plays like regional airports can offer attractive returns. “The intense focus on digital infrastructure means that you increasingly have high-quality mature assets in other more traditional parts of the infrastructure ecosystem, whether that's in utilities, transport, social infrastructure and so on, which are receiving less of the spotlight,” said Nicholas Pepper, a managing director at the infrastructure business of Partners Group, an asset manager with $186 billion in AUM at midyear. “This is creating opportunities to acquire these assets at attractive valuations.” The sheer scale of the capital needed for the AI buildout has pulled unprecedented sums into the infrastructure investing market.Blackstone, for instance, has made AI a major theme across its businesses , including infrastructure, credit, private equity and real estate. And in a landmark deal announced last October, a group of investors, including BlackRock’s Global Infrastructure Partners, acquired Aligned Data Centers at an enterprise value of around $40 billion , the largest such sale at the time. Partners Group, for its part, which closed its fourth infrastructure-dedicated fund at over $15 billion in July, has itself been among the investors piling into data center infrastructure. Its deals include an initial $1 billion investment in AVK Power Solutions, a power provider for data centers in Europe, announced in August. But there are growing signs that investors across AI-related assets have grown more selective amid construction delays, rising financing costs and regulatory blowback that could slow the AI buildout or hurt its eventual payoff. Those pressures are showing up in delayed data center developer IPOs and ballooning financing costs , but could also stall the predictable cash flows that make infrastructure investments attractive in the first place. Meanwhile, though investors’ attention has been on AI, the prospects for more traditional infrastructure generally haven’t suffered too much. That’s a contrast to other asset classes, where areas such as software fell out of favor because investors feared a direct hit to their business from AI. Infrastructure investors say they’re embracing traditional assets in transportation and logistics, aviation, waste and water infrastructure, bridge and road maintenance and gas processing, among other sectors, along with the stable cash yields and contracted or regulated revenues that typically come along with them. And investors more focused on middle-market deals argue they’re particularly well positioned because the biggest infrastructure investors have gravitated toward the AI sector, leaving smaller transactions with less competition. “U.S. mega cap investors’ minimum check sizes have gotten so big that they won't come down and participate in this segment of the market, so it has created a huge economic moat for us,” said Brett Stevenson, a founder and managing partner at Canadian private equity and infrastructure investment firm BTG Capital. While BTG has sold several power facilities to data centers, benefiting from the boom in some ways, most of its investments have been focused on transportation and logistics, as well as energy and utility assets that weren’t a data center play. For instance, the firm in June acquired the then-closed Stephenville International Airport with plans to restore and modernize the Newfoundland-based airport’s infrastructure, and reopened it on Oct. 2. Assets like airports are in a “very scarce asset class, and obviously scarcity can drive potential multiple arbitrage in the future,” Stevenson said. Larger investment firms have also been active in less glamorous corners of infrastructure. Morgan Stanley Infrastructure Partners, which has made a number of data center investments, is zeroing in on the waste management sector due to the stability offered by its long-term municipal contracts, low exposure to commodity risk and geopolitical tensions and growth opportunities in regions looking to reduce landfill reliance, said a person familiar with the matter. U.S. waste management companies in particular command a premium and are currently trading at a valuation of around 15 times Ebitda versus 10 times Ebitda for European companies, the person said. U.S. companies tend to control more of the waste process, integrating everything from garbage pickup to treatment facilities and landfills where it winds up. Meanwhile, the broader transportation sector also offers more cyclical infrastructure bets that could be poised for an upswing. That includes in the freight and U.S. trucking sectors, which had been grappling with overcapacity following a pandemic-era boom, as well as higher fuel and other operating costs. The sector is also grappling with geopolitical tensions, which can disrupt shipping routes, pushing valuations down across the broader transportation and logistics sector. That all means a potentially attractive entry point for infrastructure investors, which often compete with strategic buyers for certain assets like ports and rail terminals. The median Ebitda multiple for strategic deals in the broader transportation and logistics space dropped to 5 times in the first quarter of this year from 12.7 times in 2025, according to a report from middle-market investment bank R.L. Hulett. New From Our Reporters Sunday Insights Anthropic’s Big Charity Bill for Shareholders By Cory Weinberg Exclusive Where Nvidia’s $100 Billion Dealmaking Juggernaut Will Go Next By Valida Pau and Phoebe Liu",
-    "score": 80,
-    "score_breakdown": {
-      "total_score": 80,
-      "impact": 35,
-      "business": 25,
-      "development": 5,
-      "recency": 10,
-      "original": 5
-    },
-    "rank": 1,
-    "is_primary": true
-  },
-  {
-    "media": "The Information",
-    "title": "Networking Startup Eliyan Draws Takeover Interest, Held Early Talks With Arm",
-    "link": "https://www.theinformation.com/articles/networking-startup-eliyan-draws-takeover-interest-held-early-talks-arm",
-    "canonical_url": "https://www.theinformation.com/articles/networking-startup-eliyan-draws-takeover-interest-held-early-talks-arm",
-    "published_at": "2026-10-09T00:15:46",
-    "summary": "Semiconductor M&A has been humming. One of the next deals could be for Eliyan, whose technology allows separate chips inside an AI system to talk to one another more quickly and efficiently. The five-year-old startup, valued at $1 billion in July, has notified some of its investors in the last few days that it received a takeover bid, according to people familiar with the matter. It has been working with an investment bank since the summer and is likely to aim for a valuation of $3 billion, according to some of the people. Softbank-owned Arm, an existing investor, held early talks about potentially buying Eliyan, but it didn’t make a bid and would be unlikely to do so at that valuation, said a person familiar with the matter.",
-    "score": 59,
-    "score_breakdown": {
-      "total_score": 59,
-      "impact": 35,
-      "business": 9,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 2,
-    "is_primary": true
-  },
-  {
-    "media": "The Information",
-    "title": "OpenAI ARR Snafu Highlights Flawed Metric",
-    "link": "https://www.theinformation.com/articles/openai-arr-snafu-highlights-flawed-metric",
-    "canonical_url": "https://www.theinformation.com/articles/openai-arr-snafu-highlights-flawed-metric",
-    "published_at": "2026-10-09T00:00:47",
-    "summary": "Here’s a news flash: The quasi-revenue numbers for OpenAI that got wide circulation last week were off— way off .  Instead of $70 billion in annualized revenue, as we and others reported, OpenAI is generating closer to $50 billion in annualized revenue (sometimes shortened to ARR). A Financial Times report of the lower number on Thursday proved such a shock to investors that stocks of chip firms and neoclouds, including Nvidia, CoreWeave, Nebius and others, fell on the news, CNBC reported . The cause of this debacle is complicated. But it’s a reminder that we all rely too much on annualized revenue as a way to track a company’s performance. It’s become a standard measure for AI companies because their revenue has been growing by leaps and bounds, making the more common quarterly reports seem a little quaint in their backward-looking nature. But taking one month’s revenue and multiplying it by 12, as is the standard way these annualized-revenue numbers are calculated, is a poor substitute for a fuller picture of a company’s performance. (This isn’t a new issue— see this 2020 story on the subject.)",
-    "score": 59,
-    "score_breakdown": {
-      "total_score": 59,
-      "impact": 35,
-      "business": 9,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 3,
-    "is_primary": true
-  },
-  {
-    "media": "The Information",
-    "title": "Anthropic Announces Broader Cyber Defense Program",
-    "link": "https://www.theinformation.com/briefings/anthropic-announces-broader-cyber-defense-program",
-    "canonical_url": "https://www.theinformation.com/briefings/anthropic-announces-broader-cyber-defense-program",
-    "published_at": "2026-10-09T01:02:13",
-    "summary": "Anthropic said Thursday it is launching new programs to support cybersecurity for critical infrastructure and open-source software. In a blog post, Anthropic said it would offer threat research, on-site engineers, and access to its frontier Claude models to infrastructure operators as part of ...",
-    "score": 51,
-    "score_breakdown": {
-      "total_score": 51,
-      "impact": 12,
-      "business": 9,
-      "development": 20,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 4,
-    "is_primary": true
-  },
-  {
-    "media": "The Information",
-    "title": "OpenAI’s Annualized Revenue Neared $50 Billion, Lower Than Past Reports",
-    "link": "https://www.theinformation.com/briefings/openais-annualized-revenue-neared-50-billion-lower-past-reports",
-    "canonical_url": "https://www.theinformation.com/briefings/openais-annualized-revenue-neared-50-billion-lower-past-reports",
-    "published_at": "2026-10-08T22:59:37",
-    "summary": "OpenAI recently told investors that its annualized revenue was approaching $50 billion at the end of September, according to a person with knowledge of the communications. That’s around $20 billion less than revenue figures disclosed in other recent reports , including The Information’s. The ...",
-    "score": 39,
-    "score_breakdown": {
-      "total_score": 39,
-      "impact": 24,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 5,
-    "is_primary": true
-  },
-  {
-    "media": "The Information",
-    "title": "How OpenAI Beat Math",
-    "link": "https://www.theinformation.com/articles/openai-beat-math",
-    "canonical_url": "https://www.theinformation.com/articles/openai-beat-math",
-    "published_at": "2026-10-08T15:00:50",
-    "summary": "Mathematicians are likely feeling the kind of anxiety that software engineers have experienced for months in the wake of OpenAI release on Tuesday of a whopping 722 research papers with AI-created solutions to a range of problems across math subjects. AI’s success solving ultra-difficult math problems—even though it still makes mistakes doing simple math—is due to several factors. Solutions to math problems can often be verified, much like software code, and there’s a lot of overlap between mathematics and the work that AI researchers do (and which these researchers are trying to automate in pursuit of RSI ). And with enough computing resources, the AI can essentially do the heavy-duty number crunching that would take humans years to do, and it doesn’t give up. One mathematician who is part of a group advising OpenAI on how to publicly disclose its math breakthroughs told me that they refer to these abilities as brute force and stamina.",
-    "score": 39,
-    "score_breakdown": {
-      "total_score": 39,
-      "impact": 12,
-      "business": 0,
-      "development": 20,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 6,
-    "is_primary": false
-  },
-  {
-    "media": "The Information",
-    "title": "Nvidia to Invest in Chip Rival d-Matrix as Its Challengers Choose Partnership",
-    "link": "https://www.theinformation.com/articles/nvidia-invest-chip-rival-d-matrix-challengers-choose-partnership",
-    "canonical_url": "https://www.theinformation.com/articles/nvidia-invest-chip-rival-d-matrix-challengers-choose-partnership",
-    "published_at": "2026-10-08T23:24:14",
-    "summary": "Nvidia plans to invest in d-Matrix, a seven-year-old developer of server chips for AI that aims to compete with Nvidia, according to three people with knowledge of the deal. The planned investment is part of Nvidia’s effort to make its technology compatible with rival chip designers and bring them into its dominant hardware ecosystem, even as it has made recent market-share gains against nearly all of them .",
-    "score": 36,
-    "score_breakdown": {
-      "total_score": 36,
-      "impact": 12,
-      "business": 9,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 7,
-    "is_primary": false
-  },
-  {
-    "media": "The Information",
-    "title": "How Amazon Rewired Its Data Centers After Mississippi Power Warning",
-    "link": "https://www.theinformation.com/articles/amazon-rewired-data-centers-mississippi-power-warning",
-    "canonical_url": "https://www.theinformation.com/articles/amazon-rewired-data-centers-mississippi-power-warning",
-    "published_at": "2026-10-08T14:33:24",
-    "summary": "Earlier this year, officials at Mississippi electric utility Entergy had some worrisome news for Amazon: It was going to have to start kicking the company’s Mississippi-based data centers off the grid during peak times to ensure it could support other customers, according to two people with knowledge of the situation. Amazon’s cloud unit, Amazon Web Services, operates one data center near Jackson, Miss., which it is expanding, and it is building two more data center facilities in the same general area, making the state an important region in its data center buildout. Utilities rarely kick off major customers, but Entergy’s message, which hasn’t been previously reported, reflects how soaring demand for power from AI cloud operators is forcing power companies to take unprecedented measures to balance the needs of their various customers.",
-    "score": 30,
-    "score_breakdown": {
-      "total_score": 30,
-      "impact": 0,
-      "business": 18,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 8,
-    "is_primary": false
-  },
-  {
-    "media": "The Information",
-    "title": "Shroud of Secrecy Cloaks Star Investor Behind Cognition, Ramp",
-    "link": "https://www.theinformation.com/articles/shroud-secrecy-cloaks-star-investor-behind-cognition-ramp",
-    "canonical_url": "https://www.theinformation.com/articles/shroud-secrecy-cloaks-star-investor-behind-cognition-ramp",
-    "published_at": "2026-10-08T13:03:48",
-    "summary": "Last month, Zach Dell, son of billionaire Michael Dell and cofounder of Base Power, a billion-dollar battery startup , was gabbing with podcaster David Senra when Senra asked him which of his investors have been the most helpful to him. Dell’s three-year-old company has many prominent backers, including Andreessen Horowitz, Thrive Capital and angel investor Elad Gil. Dell didn’t name any of them. “Honestly, our mutual friend Zach,” Dell said. The other Zach they were referring to was Zach Frankel, 37, a rising star investor who has played an outsized role in building some of tech’s most valuable and buzziest startups—while deliberately remaining anonymous outside of Silicon Valley’s innermost circles. Frankel is so far under the public radar that Dell and Senra even joked about it on the podcast. “We can’t say his last name,” Senra said. “We can’t say his last name,” replied Dell, drawing a chuckle from the podcaster.",
-    "score": 30,
-    "score_breakdown": {
-      "total_score": 30,
-      "impact": 12,
-      "business": 9,
-      "development": 5,
-      "recency": 4,
-      "original": 0
-    },
-    "rank": 9,
-    "is_primary": false
-  },
-  {
-    "media": "The Information",
-    "title": "Waymo Closes $5 Billion in Debt Financing",
-    "link": "https://www.theinformation.com/briefings/waymo-closes-5-billion-debt-financing",
-    "canonical_url": "https://www.theinformation.com/briefings/waymo-closes-5-billion-debt-financing",
-    "published_at": "2026-10-08T20:37:49",
-    "summary": "Alphabet’s Waymo on Thursday announced that it closed a $5 billion term loan in the self-driving rideshare company’s inaugural debt financing round. Neither Alphabet nor other equity partners provided a corporate guarantee on the loan, which closed at an upsized amount after the process ...",
-    "score": 27,
-    "score_breakdown": {
-      "total_score": 27,
-      "impact": 12,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 10,
-    "is_primary": false
-  },
-  {
-    "media": "The Information",
-    "title": "OpenAI Researchers Say They Were Fired for “Prioritizing Safety”",
-    "link": "https://www.theinformation.com/briefings/openai-researchers-say-fired-prioritizing-safety",
-    "canonical_url": "https://www.theinformation.com/briefings/openai-researchers-say-fired-prioritizing-safety",
-    "published_at": "2026-10-08T20:20:52",
-    "summary": "The three safety researchers whom OpenAI fired last week challenged OpenAI’s decision, saying on Thursday they were punished for raising safety concerns. “I believe we were fired for prioritizing safety over the near-term interests of OpenAI as a corporation,” Mikita Balesni, one of the ...",
-    "score": 27,
-    "score_breakdown": {
-      "total_score": 27,
-      "impact": 12,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 11,
-    "is_primary": false
-  },
-  {
-    "media": "The Information",
-    "title": "Exclusive: Former Omidyar CEO Founds AI Investor Network",
-    "link": "https://www.theinformation.com/briefings/exclusive-former-omidyar-ceo-founds-ai-investor-network",
-    "canonical_url": "https://www.theinformation.com/briefings/exclusive-former-omidyar-ceo-founds-ai-investor-network",
-    "published_at": "2026-10-08T10:50:42",
-    "summary": "Mike Kubzansky, the former CEO of philanthropic investment firm Omidyar Network, is launching a group for large investors that will facilitate information sharing about the AI industry to foster more trustworthy practices, he told The Information. The investor network, called Andaris, is backed ...",
-    "score": 26,
-    "score_breakdown": {
-      "total_score": 26,
-      "impact": 12,
-      "business": 0,
-      "development": 5,
-      "recency": 4,
-      "original": 5
-    },
-    "rank": 12,
-    "is_primary": false
-  },
-  {
-    "media": "The Information",
-    "title": "Manus Raises More Than $500 Million After Unwinding Meta Deal",
-    "link": "https://www.theinformation.com/briefings/manus-raises-500-million-unwinding-meta-deal",
-    "canonical_url": "https://www.theinformation.com/briefings/manus-raises-500-million-unwinding-meta-deal",
-    "published_at": "2026-10-08T06:16:17",
-    "summary": "The parent company of Manus, the AI agent startup that recently separated from Meta Platforms, said Thursday that it has raised more than $500 million in a new funding round. Butterfly Effect said in a social media post on WeChat that the funding round was led by new investors Boyu Capital and ...",
-    "score": 24,
-    "score_breakdown": {
-      "total_score": 24,
-      "impact": 0,
-      "business": 18,
-      "development": 5,
-      "recency": 1,
-      "original": 0
-    },
-    "rank": 13,
-    "is_primary": false
-  },
-  {
-    "media": "The Information",
-    "title": "SpaceX Announces Plans That Could Take Aim at Major Mobile Carriers",
-    "link": "https://www.theinformation.com/briefings/spacex-announces-plans-take-aim-major-mobile-carriers",
-    "canonical_url": "https://www.theinformation.com/briefings/spacex-announces-plans-take-aim-major-mobile-carriers",
-    "published_at": "2026-10-08T23:22:44",
-    "summary": "SpaceX plans to compete with major US wireless carriers like Verizon and AT&T. The company announced on Thursday that it plans to acquire a nationwide portfolio of low-band wireless spectrum and that it had received approval from the Federal Communications Commission for a next-generation ...",
-    "score": 23,
-    "score_breakdown": {
-      "total_score": 23,
-      "impact": 0,
-      "business": 0,
-      "development": 13,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 14,
-    "is_primary": false
-  },
-  {
-    "media": "The Information",
-    "title": "Chinese Open Models Win Over One in Five of The Information’s Subscribers",
-    "link": "https://www.theinformation.com/articles/chinese-open-models-win-one-five-informations-subscribers",
-    "canonical_url": "https://www.theinformation.com/articles/chinese-open-models-win-one-five-informations-subscribers",
-    "published_at": "2026-10-08T18:11:51",
-    "summary": "Nearly two-thirds of The Information’s subscribers surveyed last month said their organizations develop AI applications, and a third of subscribers said they receive a return from AI that is a “multiple of what we spend.” The result suggests enterprises have made some progress since the Massachusetts Institute of Technology study last year that indicated just 5% of custom-made enterprise AI tools reached production. The new result, first shared during AI Agenda Live last month , likely reflects recent advancements, including AI models’ ability to access other applications to handle complex tasks, work in the background for hours at a time, and the general improvement of AI-produced code. It could also reflect The Information’s subscriber base, which is weighted toward enterprises that have experience developing software.",
-    "score": 21,
-    "score_breakdown": {
-      "total_score": 21,
-      "impact": 0,
-      "business": 9,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 15,
-    "is_primary": false
-  },
-  {
-    "media": "The Information",
-    "title": "White House Suspends Visa Program for Microsoft, Other Tech Firms",
-    "link": "https://www.theinformation.com/briefings/white-house-suspends-visa-program-microsoft-tech-firms",
-    "canonical_url": "https://www.theinformation.com/briefings/white-house-suspends-visa-program-microsoft-tech-firms",
-    "published_at": "2026-10-08T17:33:00",
-    "summary": "The U.S. government is limiting Microsoft’s ability to sponsor visas for certain immigrant workers, Vice President J.D. Vance said Thursday, citing an “ongoing investigation” into claims that Microsoft laid off Americans while continuing to hire more immigrants. Vance said immigrants who work ...",
+    "media": "The Verge",
+    "title": "Ledger wallet tampering suspected after reports of crypto thefts",
+    "link": "https://www.theverge.com/tech/1009294/ledger-wallet-tampering-suspected-after-reports-of-crypto-thefts",
+    "canonical_url": "https://www.theverge.com/tech/1009294/ledger-wallet-tampering-suspected-after-reports-of-crypto-thefts",
+    "published_at": "2026-10-10T16:36:44",
+    "summary": "Reports have been mounting that users of the Ledger crypto wallet have seen their accounts drained, and it appears to be related to tampered hardware sold by CryptoBillis. Ledger has asked CryptoBillis to pause all sales of its wallets while it conducts an investigation. Ledger has confirmed that \"one of the impacted users' devices contained […]",
     "score": 17,
     "score_breakdown": {
       "total_score": 17,
@@ -1231,7 +91,330 @@
       "recency": 7,
       "original": 5
     },
-    "rank": 16,
+    "rank": 5,
+    "is_primary": true
+  },
+  {
+    "media": "The Verge",
+    "title": "Satya Nadella says we should assume all AI models are ‘compromised’",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
+    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
+    "published_at": "2026-10-10T22:10:17",
+    "summary": "In a lengthy post on X, Microsoft's CEO laid out his views on the dangers posed by highly advanced AI models and how to confront those risks. Nadella says we can no longer accept a world where AI is treated as a \"set of nested black boxes\" whose advice and actions we simply accept or […]",
+    "score": 15,
+    "score_breakdown": {
+      "total_score": 15,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 6,
     "is_primary": false
+  },
+  {
+    "media": "The Verge",
+    "title": "K-pop star Sunmi loves Notion and ear cleaning videos",
+    "link": "https://www.theverge.com/entertainment/1008654/k-pop-sunmi-wonder-girls-interview",
+    "canonical_url": "https://www.theverge.com/entertainment/1008654/k-pop-sunmi-wonder-girls-interview",
+    "published_at": "2026-10-10T15:00:00",
+    "summary": "Sunmi is an undeniable force in K-pop. She first made her debut as a member of the Wonder Girls back in 2007, one of the first K-pop acts to really break through in the West. The English version of their single \"Nobody\" was the first K-pop song to hit the Billboard Hot 100 in October […]",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 7,
+    "is_primary": false
+  },
+  {
+    "media": "The Verge",
+    "title": "LG’s RGB LED TV is good for certain situations, but an OLED is better",
+    "link": "https://www.theverge.com/tech/1008957/lg-mrgb95b-rgb-led-tv-review",
+    "canonical_url": "https://www.theverge.com/tech/1008957/lg-mrgb95b-rgb-led-tv-review",
+    "published_at": "2026-10-10T13:00:00",
+    "summary": "When it comes to TVs, the LG name has long been synonymous with OLEDs, continually leading Samsung and Sony as the top OLED manufacturer. But 2026 is all about RGB LED TVs. Almost every major company has released models with the new technology - including LG and its $3,600 75-inch Micro RGB evo MRGB95B that […]",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 8,
+    "is_primary": false
+  },
+  {
+    "media": "The Verge",
+    "title": "The techlash has gone Hollywood",
+    "link": "https://www.theverge.com/tech/1008836/social-reckoning-cupertino-techlash-installer",
+    "canonical_url": "https://www.theverge.com/tech/1008836/social-reckoning-cupertino-techlash-installer",
+    "published_at": "2026-10-10T12:00:00",
+    "summary": "Hi, friends! Welcome to Installer No. 147, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, I missed you all, and also you can read all the old editions at the Installer homepage.) I'm back from parental leave! Part time, anyway. Thanks to everyone who sent well wishes […]",
+    "score": 9,
+    "score_breakdown": {
+      "total_score": 9,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 9,
+    "is_primary": false
+  },
+  {
+    "media": "The Verge",
+    "title": "The Telo MT1 is a big truck trapped in a tiny truck’s body",
+    "link": "https://www.theverge.com/transportation/1005502/telo-mt1-review-ev-tiny-truck",
+    "canonical_url": "https://www.theverge.com/transportation/1005502/telo-mt1-review-ev-tiny-truck",
+    "published_at": "2026-10-10T11:00:00",
+    "summary": "I'm bouncing down the road in San Carlos, California, zipping past behemoth tech companies like EA and Oracle, in America's smallest electric truck. The Telo MT1 (which stands for \"mini truck\") unquestionably turns heads because it looks so remarkably different from everything else on the market right now. It has a nearly cab-over design, meaning […]",
+    "score": 9,
+    "score_breakdown": {
+      "total_score": 9,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 10,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Cloudflare acquires Deno to improve its Workers programming model",
+    "link": "https://techcrunch.com/2026/10/10/cloudflare-acquires-deno-to-improve-its-workers-programming-model/",
+    "canonical_url": "https://techcrunch.com/2026/10/10/cloudflare-acquires-deno-to-improve-its-workers-programming-model/",
+    "published_at": "2026-10-10T16:25:42",
+    "summary": "Cloudflare will use this acquisition to improve its Workers programming model and platform.",
+    "score": 45,
+    "score_breakdown": {
+      "total_score": 45,
+      "impact": 24,
+      "business": 9,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead",
+    "link": "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
+    "canonical_url": "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
+    "published_at": "2026-10-10T00:18:32",
+    "summary": "Anthropic said it \"turned off live internet access\" for \"all our internal evaluations\" until further notice.",
+    "score": 30,
+    "score_breakdown": {
+      "total_score": 30,
+      "impact": 24,
+      "business": 0,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Microsoft’s Satya Nadella says AI models need an ‘emergency brake’",
+    "link": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
+    "canonical_url": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
+    "published_at": "2026-10-10T21:47:51",
+    "summary": "In a Saturday morning post, Microsoft's CEO wrote that it’s time “to step back and assess the trust architecture” of AI.",
+    "score": 23,
+    "score_breakdown": {
+      "total_score": 23,
+      "impact": 0,
+      "business": 0,
+      "development": 13,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Petra Power looks to modernize energy for data centers and defense vehicles",
+    "link": "https://techcrunch.com/2026/10/10/petra-power-looks-to-modernize-energy-for-data-centers-and-defense-vehicles/",
+    "canonical_url": "https://techcrunch.com/2026/10/10/petra-power-looks-to-modernize-energy-for-data-centers-and-defense-vehicles/",
+    "published_at": "2026-10-10T17:00:00",
+    "summary": "The startup says its fuel cells are super efficient and cut fuel costs during a time when the tech industry can’t get enough electricity.",
+    "score": 21,
+    "score_breakdown": {
+      "total_score": 21,
+      "impact": 0,
+      "business": 9,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Elon Musk intensifies attack on Ambani over Starlink India launch delay",
+    "link": "https://techcrunch.com/2026/10/09/elon-musk-intensifies-attack-on-ambani-over-starlink-india-launch-delay/",
+    "canonical_url": "https://techcrunch.com/2026/10/09/elon-musk-intensifies-attack-on-ambani-over-starlink-india-launch-delay/",
+    "published_at": "2026-10-10T03:10:06",
+    "summary": "Elon Musk has accused Indian billionaire Mukesh Ambani of blocking competition.",
+    "score": 13,
+    "score_breakdown": {
+      "total_score": 13,
+      "impact": 12,
+      "business": 0,
+      "development": 0,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 5,
+    "is_primary": true
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Here are the top AI agents that can live in your text messages",
+    "link": "https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/",
+    "canonical_url": "https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/",
+    "published_at": "2026-10-10T14:00:00",
+    "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 6,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
+    "link": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
+    "canonical_url": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
+    "published_at": "2026-10-10T19:50:00",
+    "summary": "Is Apple hoping to get into the AI-generated podcast business?",
+    "score": 10,
+    "score_breakdown": {
+      "total_score": 10,
+      "impact": 0,
+      "business": 0,
+      "development": 0,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 7,
+    "is_primary": false
+  },
+  {
+    "media": "Ars Technica",
+    "title": "One with the world? A new look at brains transformed by psychedelics.",
+    "link": "https://arstechnica.com/science/2026/10/the-psychedelic-brain-looks-like-chaos-underneath-theres-order/",
+    "canonical_url": "https://arstechnica.com/science/2026/10/the-psychedelic-brain-looks-like-chaos-underneath-theres-order/",
+    "published_at": "2026-10-10T11:15:35",
+    "summary": "Participants meditated inside an MRI tube, with and without psilocybin.",
+    "score": 4,
+    "score_breakdown": {
+      "total_score": 4,
+      "impact": 0,
+      "business": 0,
+      "development": 0,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "Zuckerberg’s Big Biotech Moment",
+    "link": "https://www.theinformation.com/articles/zuckerbergs-big-biotech-moment",
+    "canonical_url": "https://www.theinformation.com/articles/zuckerbergs-big-biotech-moment",
+    "published_at": "2026-10-10T15:01:08",
+    "summary": "• The Big Read: Meet Zach Frankel, the secretive investor behind Cognition, Ramp • Why techies are hoarding AI compute in their homes • Plus, Recommendations—our weekly pop culture picks: “ Bram Stoker’s Dracula ,” “ The AGI Chronicles ” and “ Your Mother Your Mother Your Mother ” Mark Zuckerberg, the founder and CEO of Meta Platforms, was only six years old in 1990, the year the Human Genome Project got launched. That project, a multibillion-dollar international effort led by the National Institutes of Health and the Department of Energy, resulted in the announcement 10 years later of an awe-inspiring milestone: the first sequencing of the human genetic code—the building blocks of life. When President Bill Clinton described the achievement in 2000, he framed it in grand terms: “We are learning the language in which God created life.” So it was intriguing to hear another scientific collaboration compared to that earlier achievement at a reception this week hosted by Biohub, the primary philanthropic effort of Zuckerberg and his wife, Priscilla Chan. The event this week is one of a number of recent moments that herald a changing of the scientific guard from major universities to big tech companies. Speaking at the Treehouse Hotel in Sunnyvale, Calif., Zuckerberg told the gathering of around 100 tech executives, scientists and academics that he and Chan had started the first version of what is now called Biohub almost 10 years ago to the day with the goal of trying to cure and prevent all diseases by the end of the century. “We got a lot of eye rolls,” Zuckerberg said. “People thought that was kind of crazy.” Thanks to AI and other advances in technology, he added, “That no longer seems quite so crazy.” He then turned to Lori Goler, president of the Chan Zuckerberg Initiative, who announced that Biohub is partnering with the National Institutes of Health and the Department of Energy in a $1.8 billion investment to create new technologies and build the scientific infrastructure required to drive “AI-powered biology.” Biohub, which launched what it calls the “Virtual Biology Initiative” in April with a $500 million commitment, also said at the event that Meta, Google DeepMind and Isomorphic Labs, a company spun off of DeepMind, have agreed to kick in $300 million. “We were inspired by the Human Genome Project,” Goler told the group. Goler added that they hope the initiative “will have the same level of impact and will be as important as the Human Genome Project has been.” (Anyone going to The Information’s WTF Summit later this month will hear more from Goler on the future of AI biology .) Despite the evening’s focus on collaboration, science can be an isolating discipline in its daily practice. When I visit labs, I am always amazed by how quiet they are. The scientists are usually intently concentrating on not making a false step that could lead to the contamination of an experiment. And yet, once the results leave the lab and reach the public, clamor often ensues. Controversial findings spark debate over ethical and moral questions. Transformative discoveries are celebrated with an element of pageantry and recognition. Both are reminders of our common humanity—and that the ultimate goal of science is to make all our lives better. This leads to invitations to the White House like the one that happened back in 2000 with the scientists at the helm of the Human Genome Project. Or even more personal celebratory videos like the ones posted on social media all this week by happy scientists who received early morning calls from Sweden learning they had won Nobel Prizes. (How can you not be moved by this video of the Stanford neuroscientist Karl Deisseroth telling his kids he won the Nobel Prize for medicine?) Zuckerberg is one of the most prominent symbols of how AI is altering the scientific landscape and bringing new leaders into an arena once dominated by major universities.  He was appointed by President Trump in March to be a member of the President’s Council of Advisors on Science and Technology. He is joined there by other high-profile Silicon Valley names, including Google’s Sergey Brin, Oracle’s Larry Ellison and Nvidia’s Jensen Huang. Of the 13 people now on the council, only one is an academic researcher. Two other signs this week reflect the change. On Oct. 8, Brin and Huang, alongside other tech notables, received the National Medals of Science from President Trump. The same day, Anthropic said it is expanding its own partnership with the government. It will provide $150 million worth of AI credits and other support for the Genesis Mission launched by Trump last year to use AI to accelerate scientific discoveries. A Biohub team traveled to Washington in July to attend the first Genesis Mission Summit. Plans for the newly announced partnership with the National Institutes of Health and Department of Energy grew out of that visit. So perhaps it’s only fair that the government made its own pilgrimage out to Silicon Valley. Appearing on stage together is another way of showing a shared faith that Silicon Valley and AI are the favored engines these days to try to unlock insights into the mysteries of our cells and what goes wrong when we get sick. I talked briefly with Goler the day after the reception. She said Biohub plans to host an annual AI and bio event. Biohub will likely find more guests eager to attend, from the private sector and the government. “It really is a cultural moment,” she said.— Amy Dockser Marcus ( amy.marcus@theinformation.com ) Weekend’s Latest Stories The Big Read Shroud of Secrecy Cloaks Star Investor Behind Cognition, Ramp While an air of mystery hangs around Zach Frankel, he has picked up stakes in some of tech's buzziest companies and established an extensive web of connections. The GPUs in the Wine Cellar Techies are tricking out their homes with powerful AI computers. Then come the heat issues. Listening: “ Bram Stoker’s Dracula ” How do you give, uh, fresh life to Bram Stoker’s classic? Filling it up with an all-star cast of film actors sure works. In Audible’s new adaptation of “Dracula,” Jonathan Bailey is the undead count; Maggie Gyllenhaal is Van Helsing, the occult expert who leads the expedition to destroy the vampire; and Ella Purnell (from “Fallout” and “Yellowjackets”) is Mina, a character reimagined from Stoker’s original from hapless victim into the story’s central protagonist. Thanks to its Amazon budget, Audible clearly spared no expense: the sound production is top-notch and directing duties of the audio dramatization went to Mary Lambert, a Hollywood veteran best known for her 1989 film adaptation of Stephen King’s “Pet Sematary.” —Abram Brown Reading: “ The AGI Chronicles ” by Kevin Roose How exactly did we get here—to this moment in time with AIs that increasingly seem human absolutely everywhere? And that’s to say nothing of the endless hand-wringing about whether they’re actually going to end all of us humans. A rather definitive answer to that question lies in “The AGI Chronicles,” a colorful, insidery account of the tech industry’s rapacious quest to develop artificial general intelligence. Or, as author Kevin Roose terms it, “the strangest decade in our history.” Roose, the former New York Times technology columnist, begins in the 2010s, a period when creating human-like AI was seen as something “between a pipe dream and a fantasy,” he writes, though a few people who are now bold-faced names wanted to give it a shot: OpenAI’s Sam Altman, Anthropic’s Dario Amodei and Google DeepMind’s Demis Hassabis among them. Of course, what looked like a quixotic endeavor then quickly morphed into the multitrillion-dollar competition that currently surrounds us. As Roose charts the twists and turns, he includes many little details to love. Just before Altman, Oracle’s Larry Ellison and President Donald Trump announced Project Stargate in January 2025, Altman had to send a last-minute text message to Jeff Bezos to make sure they could use that name for their massive data center initiative: Bezos’s Amazon owns MGM, and MGM owns the rights to the “Stargate” TV-and-movie franchise. Meanwhile, Google’s Gemini was almost called Titan—a Hassabis suggestion—but company lawyers vetoed the name as “too aggressive.” And when Daniela Amodei worked at OpenAI, she and her husband, an early OpenAI board member, used a large collection of stuffed animals as their “personal advisory council,” as Roose puts it. (That detail went viral a bit last week from an early excerpt of the book.) From “The AGI Chronicles,” what I was struck by most is how the AI race has warped its contestants and magnified their worst tendencies. I expect that trend will continue. It’s not as if they’ll be facing any less pressure anytime soon. According to Roose, many of those titans echoed the same sentiment in conversations with him—that they “missed their old lives, and they relished the times when everyone thought they were crazy for believing that AGI was possible,” he writes. “Being an underdog, they said, was more fun than being a power broker, with all the scrutiny and skepticism it brought.” —A.B. Watching: “ Your Mother Your Mother Your Mother ” By actor Mahershala Ali’s own telling, the past few years have been challenging, with his fate skewed by other forces that have defied his control, including Marvel’s decision to shelve his reboot of “Blade,” its half-vampire vampire slayer. “I think in some ways I’m probably just now starting to let certain things go, because there are ways in which I think I’ve begun to let go of my expectations of the world and the business,” Ali said in a recent GQ interview to promote his new film, “Your Mother Your Mother Your Mother.” “It’s like you’re fighting with people to see you how you see yourself.” I can see how Ali’s own real-life wrestling with his identity and fate might’ve fueled his interest in doing “Your Mother Your Mother Your Mother.” His character in the film, a mournful hitman named Latif, faces those same challenges—as he tries to extricate himself from a dingy Houston underworld and take up single-parent duties to his three children. Complicating that escape is a gangster pastor (John Cho) and his mobster former employer (Laith Nakli). The thriller-ish drama is punctuated by several balletic action sequences, all deftly handled by newcomer director Bassam Tariq, who’d been attached to helm the “Blade” reboot with Ali. If nothing else, “Your Mother Your Mother Your Mother” is a sharp jab to Marvel’s ribs: Tariq and Ali seem like they would’ve made a terrific “Blade” together. —A.B.",
+    "score": 65,
+    "score_breakdown": {
+      "total_score": 65,
+      "impact": 35,
+      "business": 18,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "Valar Atomics Sues Its Own Investor, Day One, Over Funding Round Allocation",
+    "link": "https://www.theinformation.com/briefings/valar-atomics-sues-investor-day-one-funding-round-allocation",
+    "canonical_url": "https://www.theinformation.com/briefings/valar-atomics-sues-investor-day-one-funding-round-allocation",
+    "published_at": "2026-10-10T00:58:54",
+    "summary": "Nuclear reactor startup Valar Atomics says it has sued one of its early backers, Day One Ventures, in Delaware court after shutting out the venture firm from its recent $1 billion funding round. Founders rarely sue their own investors, but Valar is asking the court to declare that the startup ...",
+    "score": 48,
+    "score_breakdown": {
+      "total_score": 48,
+      "impact": 24,
+      "business": 18,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "GPUs in the Wine Cellar: Why Techies Are Hoarding AI Compute in Their Homes",
+    "link": "https://www.theinformation.com/articles/gpus-wine-cellar-techies-hoarding-ai-compute-homes",
+    "canonical_url": "https://www.theinformation.com/articles/gpus-wine-cellar-techies-hoarding-ai-compute-homes",
+    "published_at": "2026-10-10T14:00:38",
+    "summary": "The basement of Gary Flake’s contemporary home in a quiet neighborhood in Bellevue, Wash., is furnished with everything you’d expect in a multipurpose man cave. There’s a cozy-looking couch situated between a large screen and a digital projector, a Peloton treadmill and a rowing machine. The real showpiece of the space, however, is a custom computer that resembles an oversized erector set, one with seven large Nvidia graphics processing units dangling from its frame. Flake, a former Microsoft executive and startup founder, built the computer to train custom AI models on terabytes of data from electroencephalograms, the tests that measure electrical activity in the brain—part of a startup project he has since moved on from. To train his AI models, Flake could have paid a cloud service to train them on the industrial-strength GPUs inside their data centers, but he said it was far cheaper to assemble his own machine out of discounted parts (total cost: under $6,000) than to fork over fees to Amazon Web Services or Microsoft every month. That’s true even when including the $10,000 to $20,000 he spent for electrical upgrades and a new HVAC system he bought to keep his basement cool while his AI computer throws off a lot of heat. “I want to own,” said Flake, who plans to begin using the computer again for a new AI project in the coming months. “I don’t want to rent.”",
+    "score": 42,
+    "score_breakdown": {
+      "total_score": 42,
+      "impact": 12,
+      "business": 18,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "Anthropic’s Rogue AI Filled Out U.S. Visa Forms, Gave False Homicide Tip to Police",
+    "link": "https://www.theinformation.com/briefings/anthropics-rogue-ai-filled-u-s-visa-forms-gave-false-homicide-tip-police",
+    "canonical_url": "https://www.theinformation.com/briefings/anthropics-rogue-ai-filled-u-s-visa-forms-gave-false-homicide-tip-police",
+    "published_at": "2026-10-10T06:00:31",
+    "summary": "Anthropic said Friday that is AI used the internet to inadvertently fill out government forms with incomplete information and also submitted a false homicide crime tip to the Philadelphia police department. Anthropic said police flagged the homicide tip as spam, and Axios reported that Anthropic ...",
+    "score": 18,
+    "score_breakdown": {
+      "total_score": 18,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true
   }
 ]
