@@ -1,11 +1,119 @@
 [
   {
     "media": "The Verge",
-    "title": "Learning to use local AI is exciting, overwhelming, and frustrating",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
-    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
-    "published_at": "2026-10-11T11:00:00",
-    "summary": "I'm embarking on a journey I've so far been hesitant to go on: actually using AI on the regular. Giving my most personal data to cloud services has been a major hold up for me, but it's increasingly possible to run powerful models locally to see what they're capable of. Is this tech so useful […]",
+    "title": "The Yandex outage probably didn’t blitz Russian bots",
+    "link": "https://www.theverge.com/tech/1009594/russian-bots-yandex-outage-drone-strikes-debunk",
+    "canonical_url": "https://www.theverge.com/tech/1009594/russian-bots-yandex-outage-drone-strikes-debunk",
+    "published_at": "2026-10-12T15:43:07",
+    "summary": "Multiple Ukrainian drone strikes over the last week have taken Russian data centers offline and reportedly caused online bot traffic to plummet - but in reality it's probably not the kind of bot activity most people associate with Russia. A chart citing Cloudflare data has been circulating around social media platforms, showing a sharp decline […]",
+    "score": 42,
+    "score_breakdown": {
+      "total_score": 42,
+      "impact": 12,
+      "business": 18,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true,
+    "korean_title": "얀덱스 데이터센터 마비와 러시아 봇 트래픽 급감설의 실체",
+    "summary_3_lines": [
+      "우크라이나의 드론 공격으로 러시아 테크 기업 얀덱스의 데이터센터가 마비되며 온라인 봇 트래픽이 급감했다는 주장이 제기되었습니다.",
+      "클라우드플레어 데이터를 인용한 소셜 미디어 분석이 확산되었으나, 실제 감소한 트래픽은 일반 대중이 연상하는 정치적 여론 조작 봇과는 거리가 멉니다.",
+      "이번 트래픽 급락은 선전전용 봇넷이 아닌 일반 웹 크롤러나 스크래퍼 등 상용 인프라 의존형 자동화 트래픽 차단에 기인한 것일 가능성이 큽니다."
+    ],
+    "business_insight": "물리적 인프라 타격이 글로벌 디지털 트래픽 지표에 즉각 반영되는 양상을 보여주나, 표면적인 봇 통계와 실제 국가 주도 사이버 공작 인프라 간의 기술적 괴리를 면밀히 구별해 해석할 필요가 있습니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Verge",
+    "title": "Mechanism&#8217;s first Switch 2 case is as awesome as I hoped it would be",
+    "link": "https://www.theverge.com/tech/1008161/mechanism-basecase-switch-2-case-hands-on",
+    "canonical_url": "https://www.theverge.com/tech/1008161/mechanism-basecase-switch-2-case-hands-on",
+    "published_at": "2026-10-12T15:00:00",
+    "summary": "Most companies have slowed down releasing new Switch 2 cases, but one of my favorite accessory makers recently debuted its first, after a few delays. The $49 Basecase from Mechanism is a snap-on shell for the console that taps into the company's modular lineup of mounts. You could already mount the Switch 2 in numerous […]",
+    "score": 24,
+    "score_breakdown": {
+      "total_score": 24,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true,
+    "korean_title": "메커니즘, 모듈형 거치 시스템 결합한 49달러 스위치 2 전용 '베이스케이스' 출시",
+    "summary_3_lines": [
+      "액세서리 제조사 메커니즘(Mechanism)이 닌텐도 스위치 2를 위한 49달러 가격의 전용 스냅온 보호 케이스 '베이스케이스(Basecase)'를 출시했습니다.",
+      "신제품 출시 지연 끝에 선보인 이번 케이스는 메커니즘의 독자적인 모듈형 마운트 생태계와 결합해 콘솔의 다목적 거치를 지원합니다.",
+      "스위치 2 전용 서드파티 케이스 출시가 전반적으로 둔화된 시장 상황에서 기능적 확장성을 앞세워 주목받고 있습니다."
+    ],
+    "business_insight": "콘솔 하드웨어 라이프사이클 초기에 단순 보호 케이스를 넘어 모듈형 결합 생태계를 구축하는 서드파티 전략은 고객 락인(Lock-in)과 고부가가치 부속품 추가 판매를 견인하는 핵심 모델입니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Verge",
+    "title": "The OnePlus 16 is the company’s most interesting phone in years",
+    "link": "https://www.theverge.com/tech/1009570/oneplus-16-specs-features-china",
+    "canonical_url": "https://www.theverge.com/tech/1009570/oneplus-16-specs-features-china",
+    "published_at": "2026-10-12T13:13:53",
+    "summary": "Today the OnePlus 16 launched in China, the company's first flagship phone since quitting both the US and European markets this summer. As luck would have it, it also looks like the company's best phone in some time. Like most OnePlus phones, the 16 is positioned around performance, with a Snapdragon 8 Elite Extreme Gen […]",
+    "score": 21,
+    "score_breakdown": {
+      "total_score": 21,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true,
+    "korean_title": "원플러스, 북미·유럽 철수 후 성능 극대화한 '원플러스 16' 중국 시장 공개",
+    "summary_3_lines": [
+      "원플러스(OnePlus)가 지난여름 북미 및 유럽 시장에서 전격 철수한 이후 첫 플래그십 스마트폰인 '원플러스 16'을 중국 내수 시장에 공식 출시했습니다.",
+      "스냅드래곤 8 엘리트 익스트림 칩셋을 탑재하는 등 고성능 스펙에 집중해 근래 출시작 중 가장 뛰어난 완성도를 갖췄다는 평가를 받습니다.",
+      "서구권 철수라는 사업적 축소 국면 속에서 브랜드 본연의 강점이었던 고성능 플래그십 정체성을 극대화하는 노선으로 선회했습니다."
+    ],
+    "business_insight": "글로벌 특허 및 규제 리스크로 서구 시장을 이탈한 제조사가 내수 시장에서 하드웨어 스펙 극한 경쟁을 펼치며 브랜드 프리미엄과 수익성을 방어하려는 전략적 재편 양상입니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Verge",
+    "title": "The Fitbit Edge is for folks who don’t want to go totally screenless",
+    "link": "https://www.theverge.com/gadgets/1008410/fitbit-edge-price-battery-specs-fitness-tracker",
+    "canonical_url": "https://www.theverge.com/gadgets/1008410/fitbit-edge-price-battery-specs-fitness-tracker",
+    "published_at": "2026-10-12T13:00:00",
+    "summary": "The Fitbit Edge may not be Google's best-kept fitness-tracking secret, but as of today, its existence is official. The tracker sits smack-dab between the recently launched Fitbit Air and the more powerful Google Pixel Watch 5 in the company's current wearable lineup. Basically, if you have smartwatch fatigue but don't want to give up notifications, […]",
+    "score": 21,
+    "score_breakdown": {
+      "total_score": 21,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true,
+    "korean_title": "구글, 스마트워치 피로감 겨냥한 중급 피트니스 트래커 '핏빗 에지' 공식 발표",
+    "summary_3_lines": [
+      "구글이 스크린리스 트래커 '핏빗 에어'와 플래그십 '픽셀 워치 5' 사이의 간극을 메우는 신제품 '핏빗 에지(Fitbit Edge)'를 정식 공개했습니다.",
+      "복잡한 스마트워치 기능에 피로감을 느끼지만 필수적인 디스플레이 확인과 알림 수신은 유지하길 원하는 사용자층을 타깃으로 설계되었습니다.",
+      "이로써 구글 웨어러블 포트폴리오는 미니멀 트래커부터 풀 스마트워치까지 촘촘한 세그먼트 라인업을 완성하게 되었습니다."
+    ],
+    "business_insight": "스마트워치 시장의 피로도 증가와 배터리 한계에 대응해, 스마트밴드와 스마트워치의 중간 지점을 정밀 타깃팅함으로써 기존 피트니스 사용자 이탈을 방지하려는 영리한 세분화 전략입니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Verge",
+    "title": "CMF’s first wireless speakers look like musical milk cartons",
+    "link": "https://www.theverge.com/tech/1008191/nothing-cmf-speaker-m-s-series-bluetooth-design-customize",
+    "canonical_url": "https://www.theverge.com/tech/1008191/nothing-cmf-speaker-m-s-series-bluetooth-design-customize",
+    "published_at": "2026-10-12T13:00:00",
+    "summary": "The CMF Speaker Series are the first portable Bluetooth speakers from the budget-focused brand that Nothing created but is in the process of spinning off into an India-based standalone subsidiary. As with many of CMF's products, like the Headphone Pro that launched a year ago, the new speakers deliver affordability alongside unique designs and bright […]",
     "score": 18,
     "score_breakdown": {
       "total_score": 18,
@@ -15,105 +123,132 @@
       "recency": 4,
       "original": 0
     },
+    "rank": 5,
+    "is_primary": true,
+    "korean_title": "낫싱의 서브 브랜드 CMF, 우유팩 디자인의 첫 보급형 무선 스피커 시리즈 공개",
+    "summary_3_lines": [
+      "낫싱(Nothing)의 가성비 중심 서브 브랜드 CMF가 우유팩을 연상시키는 독특한 형태의 첫 휴대용 블루투스 스피커 라인업을 선보였습니다.",
+      "CMF는 현재 인도 기반의 독립 법인으로 분사를 추진 중이며, 독창적인 기하학적 디자인과 선명한 컬러, 높은 가격 경쟁력을 전면에 내세웠습니다.",
+      "헤드폰 프로에 이어 보급형 오디오 카테고리를 지속적으로 확장하며 낫싱 본체와는 차별화된 디자인 중심 저가 생태계를 구축하고 있습니다."
+    ],
+    "business_insight": "디자인 차별화를 무기로 한 저가 하드웨어 브랜드의 인도 법인 분사는 거대 신흥 시장 내 유연한 투자 유치 및 현지화 마케팅을 가속화하기 위한 전략적 행보입니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Meta releases its first frontier model, Muse Wonder",
+    "link": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+    "canonical_url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+    "published_at": "2026-10-12T17:56:56",
+    "summary": "Where Muse Spark aimed to be a lightweight model that could perform at low latency, the Wonder models are larger and said to be more capable, with higher benchmark scores and better results on complex tasks like coding.",
+    "score": 27,
+    "score_breakdown": {
+      "total_score": 27,
+      "impact": 0,
+      "business": 0,
+      "development": 20,
+      "recency": 7,
+      "original": 0
+    },
     "rank": 1,
     "is_primary": true,
-    "korean_title": "로컬 AI 직접 구축의 명암: 프라이버시 보호와 높은 기술적 진입 장벽",
+    "korean_title": "메타, 고성능 프론티어 AI 모델 '뮤즈 원더(Muse Wonder)' 전격 공개",
     "summary_3_lines": [
-      "클라우드 서비스에 민감한 개인 데이터를 전송하는 데 대한 우려로 인해 로컬 온디바이스 AI 구동 수요가 급증하고 있음.",
-      "오픈소스 모델 생태계 발전으로 로컬 환경에서도 고성능 LLM을 직접 구동할 수 있는 기술적 환경이 갖춰짐.",
-      "하지만 여전히 까다로운 설정 과정과 하드웨어 리소스 최적화 문제는 일반 사용자가 극복하기 어려운 한계로 작용함."
+      "메타가 저지연 경량 모델 '뮤즈 스파크'에 이어 대형 프론티어 모델 '뮤즈 원더'를 공식 발표함.",
+      "뮤즈 원더는 벤치마크 점수 향상과 함께 코딩을 비롯한 복잡한 추론 작업에서 뛰어난 성능을 보임.",
+      "경량화 중심 전략에서 대형 고성능 모델로 라인업을 확장하며 최첨단 AI 시장 주도권 경쟁에 본격 가세함."
     ],
-    "business_insight": "온디바이스 AI 시장의 실질적인 개화는 모델 경량화뿐만 아니라 복잡한 배포 인프라를 추상화해 비전문가도 클릭 한 번으로 안전하게 모델을 운용할 수 있도록 지원하는 패키징 솔루션에 달려 있다.",
+    "business_insight": "경량화 모델에 이어 고성능 프론티어 모델까지 확보한 메타는 오픈AI 및 앤트로픽 중심의 엔터프라이즈 코딩·추론 시장을 강력하게 위협할 전망입니다.",
     "analyzed_by": "gemini-3.8-flash"
   },
   {
-    "media": "The Verge",
-    "title": "A college in Illinois tried to cancel its Flock contact and it refused",
-    "link": "https://www.theverge.com/tech/1009411/elgin-community-college-flock-safety-cameras",
-    "canonical_url": "https://www.theverge.com/tech/1009411/elgin-community-college-flock-safety-cameras",
-    "published_at": "2026-10-11T20:06:43",
-    "summary": "In April of 2025, Elgin Community College had six Flock safety cameras installed to \"enhance the safety and security of students.\" But by September of that year, the school's administration grew concerned that Flock was sharing data with Customs and Border Patrol, that camera feeds were not properly secured, and that both law enforcement and […]",
-    "score": 15,
+    "media": "TechCrunch",
+    "title": "Honeyjar offers AI tools to improve PR and comms at every company",
+    "link": "https://techcrunch.com/2026/10/12/honeyjar-offers-ai-tools-to-improve-pr-and-comms-at-every-company/",
+    "canonical_url": "https://techcrunch.com/2026/10/12/honeyjar-offers-ai-tools-to-improve-pr-and-comms-at-every-company/",
+    "published_at": "2026-10-12T15:45:00",
+    "summary": "Journalists, entrepreneurs, and even some public relations professionals will tell you that the PR process is broken. But could AI actually make things better?",
+    "score": 24,
     "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 2,
-    "is_primary": true,
-    "korean_title": "데이터 무단 공유 의혹에도 학교 측 계약 해지 거부한 감시 카메라 업체 플록",
-    "summary_3_lines": [
-      "일리노이주 엘진 커뮤니티 칼리지가 보안 강화를 위해 도입했던 플록(Flock) 안전 카메라 6대의 계약 해지를 요청했으나 업체 측이 거부함.",
-      "대학 측은 감시 카메라 영상의 보안성 미흡과 연방 세관국경보호국(CBP) 등 사법기관으로의 무단 데이터 공유 정황에 대해 깊은 우려를 표명함.",
-      "공공 교육 기관과 민간 보안 감시 스타트업 간의 계약 구속력 및 데이터 거버넌스를 둘러싼 갈등이 표면화됨."
-    ],
-    "business_insight": "공공 부문 AI 감시 솔루션 도입 시 데이터 주권과 3자 공유 차단 조항을 사전에 엄격히 규정하지 않으면, 기술 도입 기관이 벤더 록인(Lock-in)과 함께 심각한 프라이버시 법적 리스크에 직면할 수 있다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "The Verge",
-    "title": "Silicon Valley is falling in line with Trump’s attempt to rename AI",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
-    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
-    "published_at": "2026-10-11T18:33:56",
-    "summary": "When President Donald Trump announced his plans to rebrand artificial intelligence as \"super intelligence,\" you'd be forgiven for being skeptical that it would catch on. While most of the broader population is sticking with AI, some of Silicon Valley's most powerful are falling in line and trying to give Trump the great AI rebrand he […]",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 3,
-    "is_primary": true,
-    "korean_title": "트럼프의 '초지능(Super Intelligence)' 리브랜딩 시도에 동조하는 실리콘밸리 리더들",
-    "summary_3_lines": [
-      "도널드 트럼프 대통령이 기존 '인공지능(AI)'이라는 용어를 '초지능(Super Intelligence)'으로 대체하려는 리브랜딩 계획을 발표함.",
-      "대중적 회의론에도 불구하고 실리콘밸리의 유력 테크 거물들이 정치적 수사에 발맞춰 용어 전환에 적극적으로 동참하고 있음.",
-      "정치권과의 밀착을 통해 AI 규제 완화 및 정책적 지원을 선점하려는 빅테크 진영의 전략적 행보로 풀이됨."
-    ],
-    "business_insight": "차기 행정부와의 유대 관계 구축을 위해 기술적 엄밀성보다 정치적 담론에 영합하는 경향이 짙어짐에 따라, 향후 국가 차원의 AI 인프라 정책 및 보조금 분배 구조가 정치적 관계에 크게 좌우될 가능성이 높다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "The Verge",
-    "title": "The new Apple TV could have a built-in mic and a remote with a speaker",
-    "link": "https://www.theverge.com/tech/1009397/apple-tv-refresh-built-in-mic-remote-speaker",
-    "canonical_url": "https://www.theverge.com/tech/1009397/apple-tv-refresh-built-in-mic-remote-speaker",
-    "published_at": "2026-10-11T17:31:07",
-    "summary": "The latest rumors are that the new Apple TV will have a built-in microphone, while the upgraded remote will get a speaker. The mic would let users control the set-top box using Siri without having to speak into the remote or a connected HomePod device. That could also let the Apple TV serve as a […]",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
+      "total_score": 24,
+      "impact": 12,
       "business": 0,
       "development": 5,
       "recency": 7,
       "original": 0
     },
-    "rank": 4,
+    "rank": 2,
     "is_primary": true,
-    "korean_title": "신형 애플 TV, 내장 마이크 및 스피커 탑재 리모컨 적용 전망",
+    "korean_title": "스타트업 허니자, 비효율적 기업 홍보·커뮤니케이션 혁신 위한 AI 툴 출시",
     "summary_3_lines": [
-      "차세대 애플 TV 셋톱박스 본체에 마이크가 내장되어 리모컨 없이도 원거리 시리(Siri) 음성 제어가 가능해질 것으로 예상됨.",
-      "새롭게 업그레이드되는 전용 리모컨에는 스피커가 탑재되어 '나의 찾기(Find My)' 기능을 통한 분실물 탐색 편의성이 대폭 개선될 전망임.",
-      "애플 TV가 단순 미디어 스트리밍 기기를 넘어 거실의 핵심 스마트홈 허브로서의 기능을 강화하려는 조치로 평가됨."
+      "기자, 창업가, 홍보 전문가 모두가 비효율성을 지적해 온 전통적 PR 워크플로우 개선 시도.",
+      "스타트업 허니자(Honeyjar)가 모든 규모의 기업을 대상으로 PR 및 사내외 커뮤니케이션을 돕는 AI 솔루션을 공개함.",
+      "미디어 피칭 및 메시지 최적화 과정을 AI로 자동화해 홍보 프로세스의 생산성 혁신을 모색함."
     ],
-    "business_insight": "애플이 셋톱박스에 직접 음성 인터페이스를 내장함으로써 홈팟(HomePod)과의 기능적 경계를 재정립하고, 거실 중심의 앰비언트 스마트홈 시장에서 구글 및 아마존 생태계에 대한 방어벽을 높이려 하고 있다.",
+    "business_insight": "고비용의 전통적 PR 에이전시 의존도를 낮추고 데이터 기반 미디어 타깃팅을 자동화하는 버티컬 AI 툴의 도입이 가속화될 것으로 보입니다.",
     "analyzed_by": "gemini-3.8-flash"
   },
   {
-    "media": "The Verge",
-    "title": "NASA dumped over 800GB of Artemis II data online",
-    "link": "https://www.theverge.com/science/1009379/nasa-800gb-artemis-ii-data",
-    "canonical_url": "https://www.theverge.com/science/1009379/nasa-800gb-artemis-ii-data",
-    "published_at": "2026-10-11T15:34:40",
-    "summary": "If you thought you'd seen all there is to see from the Artemis II mission, you're wrong. This week NASA posted over 800GB worth of science data, images, and videos on the Artemis II: Sights & Sounds of Science site. The archive includes over 11,000 photos and videos, over 8.5 hours of audio, and crew-annotated […]",
+    "media": "TechCrunch",
+    "title": "Microsoft president says UK is best placed to drive AI regulation",
+    "link": "https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/",
+    "canonical_url": "https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/",
+    "published_at": "2026-10-12T15:31:19",
+    "summary": "Microsoft president Brad Smith calls for urgent AI regulation, saying milk and washing machines have more oversight than AI companies.",
+    "score": 24,
+    "score_breakdown": {
+      "total_score": 24,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true,
+    "korean_title": "MS 브래드 스미스 사장 \"영국이 글로벌 AI 규제 선도 적임자… 긴급 감독 필요\"",
+    "summary_3_lines": [
+      "마이크로소프트 브래드 스미스 사장이 AI 기술에 대한 신속하고 강력한 규제 마련을 재차 촉구함.",
+      "현재 AI 기업들이 우유나 세탁기 등 일반 소비재보다도 규제와 감독을 덜 받고 있다고 비판함.",
+      "영국이 글로벌 AI 표준 및 규제 거버넌스를 주도하기에 가장 유리한 입지에 있다고 평가함."
+    ],
+    "business_insight": "빅테크 주도 기업의 능동적 규제 촉구는 진입 장벽 형성 및 선제적 가이드라인 준수를 통해 장기적인 시장 신뢰와 패권을 확보하려는 전략적 행보입니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Smart ring maker Ultrahuman to roll out biological-age model across UAE",
+    "link": "https://techcrunch.com/2026/10/12/smart-ring-maker-ultrahuman-to-roll-out-biological-age-model-across-uae/",
+    "canonical_url": "https://techcrunch.com/2026/10/12/smart-ring-maker-ultrahuman-to-roll-out-biological-age-model-across-uae/",
+    "published_at": "2026-10-12T14:09:34",
+    "summary": "Ultrahuman and Abu Dhabi will spend the next two years working on research and clinical validation of the model.",
+    "score": 17,
+    "score_breakdown": {
+      "total_score": 17,
+      "impact": 0,
+      "business": 0,
+      "development": 13,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true,
+    "korean_title": "스마트링 제조사 울트라휴먼, UAE 전역에 '생체 나이' 추정 모델 도입",
+    "summary_3_lines": [
+      "스마트링 헬스케어 스타트업 울트라휴먼이 아랍에미리트(UAE) 전역에 생체 나이(biological-age) 측정 모델을 공급함.",
+      "아부다비 보건 당국과 손잡고 향후 2년간 해당 모델에 대한 공동 연구 및 임상 검증을 진행할 예정임.",
+      "개인용 웨어러블 바이오데이터를 국가 단위의 공공 헬스케어 및 예방 의학 체계와 연계하는 시도임."
+    ],
+    "business_insight": "단순 피트니스 트래커를 넘어 임상 검증 기반의 B2G(정부간) 헬스케어 플랫폼으로 비즈니스 모델을 확장한 웨어러블 산업의 고도화 사례입니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "TechCrunch",
+    "title": "WindBorne wins a hefty US Air Force contract for its balloon data",
+    "link": "https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/",
+    "canonical_url": "https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/",
+    "published_at": "2026-10-12T17:19:14",
+    "summary": "A Silicon Valley startup that uses weather balloons and AI to predict the weather won a U.S. military contract worth almost $50 million.",
     "score": 12,
     "score_breakdown": {
       "total_score": 12,
@@ -125,26 +260,107 @@
     },
     "rank": 5,
     "is_primary": true,
-    "korean_title": "NASA, 800GB 규모 아르테미스 2호 미션 과학 데이터 온라인 전면 개방",
+    "korean_title": "기상 AI 스타트업 윈드본, 미 공군과 5,000만 달러 규모 대형 계약 체결",
     "summary_3_lines": [
-      "NASA가 유인 달 탐사 준비 프로젝트인 '아르테미스 2호'와 관련된 800GB 이상의 과학 데이터와 미디어 아카이브를 공개함.",
-      "공개된 자료에는 1만 1,000건 이상의 고화질 사진 및 영상, 8.5시간 분량의 음성 녹음, 승무원 주석 데이터 등이 포함됨.",
-      "누구나 접속 가능한 전용 웹사이트를 통해 원천 데이터를 개방하여 우주 탐사 연구 확산과 대중적 관심을 동시에 유도함."
+      "기상 관측 풍선과 AI 예측 기술을 융합한 실리콘밸리 스타트업 윈드본(WindBorne)이 미 공군 사업을 수주함.",
+      "계약 규모는 약 5,000만 달러에 달하며 대기 데이터 수집 및 정밀 기상 예측 역량을 인정받음.",
+      "민간 스타트업의 기상 관측 데이터가 군사 작전 및 국가 안보 지원 핵심 인프라로 채택됨."
     ],
-    "business_insight": "방대한 우주 미션 원천 데이터의 공개는 민간 우주 기업 및 연구 기관의 궤도 환경 모델링, AI 기반 우주 컴퓨터 비전 분석 등 스페이스 테크(Space Tech) 산업 전반의 R&D 비용을 낮추는 촉매제가 될 것이다.",
+    "business_insight": "기후 변화로 인한 극단적 기상 대응이 국가 안보의 핵심 이슈로 부상함에 따라, 하드웨어 센싱과 AI 예측을 결합한 딥테크 기업의 방위산업 수주 기회가 급증하고 있습니다.",
     "analyzed_by": "gemini-3.8-flash"
   },
   {
-    "media": "Ars Technica",
-    "title": "Prime Video unveils Blade Runner 2099 full trailer at NYCC",
-    "link": "https://arstechnica.com/culture/2026/10/prime-video-unveils-blade-runner-2099-full-trailer-at-nycc/",
-    "canonical_url": "https://arstechnica.com/culture/2026/10/prime-video-unveils-blade-runner-2099-full-trailer-at-nycc/",
-    "published_at": "2026-10-11T14:50:24",
-    "summary": "Also: new trailer for Godzilla Minus Zero , the sequel to Takashi Yamazaki’s kaiju epic Godzilla Minus One",
-    "score": 20,
+    "media": "MIT Tech Review",
+    "title": "The Download: moon city problems and drone traffic controllers",
+    "link": "https://www.technologyreview.com/2026/10/12/1146376/the-download-moon-city-drone-air-traffic-controllers/",
+    "canonical_url": "https://www.technologyreview.com/2026/10/12/1146376/the-download-moon-city-drone-air-traffic-controllers/",
+    "published_at": "2026-10-12T12:10:00",
+    "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Mars may be a hellhole, but the moon is not far behind The US and China are racing to build bases on the moon, with NASA hoping to establish a small…",
+    "score": 9,
     "score_breakdown": {
-      "total_score": 20,
+      "total_score": 9,
       "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true,
+    "korean_title": "더 다운로드: 달 기지 구축의 기술적 난제와 드론 교통 관제 시스템",
+    "summary_3_lines": [
+      "미국과 중국이 달 표면 기지 건설을 둘러싸고 치열한 패권 경쟁을 본격화하고 있다.",
+      "화성 못지않게 혹독한 달의 극한 환경은 장기 유인 기지 구축에 심각한 기술적 과제를 던진다.",
+      "도심 항공 모빌리티 상용화에 대응하기 위한 드론 자율 관제 및 인프라 구축 논의도 함께 조명되었다."
+    ],
+    "business_insight": "우주 인프라와 자율 비행 관제 시스템 시장이 급성장함에 따라, 센서·특수소재 및 항공우주 통신 솔루션 분야의 B2G 수주 경쟁이 본격화될 전망이다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "MIT Tech Review",
+    "title": "Mars may be a hellhole, but the moon is not far behind",
+    "link": "https://www.technologyreview.com/2026/10/12/1145760/imagining-building-cities-on-the-moon/",
+    "canonical_url": "https://www.technologyreview.com/2026/10/12/1145760/imagining-building-cities-on-the-moon/",
+    "published_at": "2026-10-12T09:37:02",
+    "summary": "Welcome to the second space race. You can be forgiven for experiencing déjà vu. Last time, it was the Soviet Union and the United States vying to be the first to plant some flags. Now it’s a sprint to the lunar surface between America and China—alongside a host of varyingly friendly and rival nations—plus a…",
+    "score": 9,
+    "score_breakdown": {
+      "total_score": 9,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true,
+    "korean_title": "제2차 우주 경쟁의 서막: 화성만큼 가혹한 달을 둘러싼 미·중 패권전",
+    "summary_3_lines": [
+      "과거 미·소 냉전 구도와 달리 미국, 중국, 민간 기업군이 복합적으로 얽힌 제2차 우주 경쟁이 전개되고 있다.",
+      "달은 강력한 방사선과 극한의 기온차 등 화성에 필적할 만큼 생명체 거주에 혹독한 환경적 장벽을 지닌다.",
+      "각국은 단순 깃발 꽂기식 탐사를 넘어 달 현지 자원 활용(ISRU)과 영구 기지 확보를 목표로 기술을 결집하고 있다."
+    ],
+    "business_insight": "뉴 스페이스(New Space) 시장의 초점이 단순 발사체 위탁에서 극한 환경 방호 장비, 우주 현지 에너지 생산 및 모듈형 거주 기술 등 고부가가치 인프라 산업으로 빠르게 이동하고 있다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "MIT Tech Review",
+    "title": "The ecologist revealing the invisible networks that revive rainforests",
+    "link": "https://www.technologyreview.com/2026/10/12/1145745/daisy-dent-ecologist-revealing-invisible-networks-revive-rainforests/",
+    "canonical_url": "https://www.technologyreview.com/2026/10/12/1145745/daisy-dent-ecologist-revealing-invisible-networks-revive-rainforests/",
+    "published_at": "2026-10-12T09:00:00",
+    "summary": "In a research station in central Panama, you can walk through a century of forest time, watching scrubby plots of adolescent trees give way to cathedral-­like canopies of mature growth. Forest ecologist Daisy Dent, a senior scientist at ETH Zurich, oversees this sequence of plots across the Barro Colorado Nature Monument, some of which date…",
+    "score": 9,
+    "score_breakdown": {
+      "total_score": 9,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true,
+    "korean_title": "열대우림 재생의 열쇠: 보이지 않는 지하 생태 네트워크의 규명",
+    "summary_3_lines": [
+      "ETH 취리히의 데이지 덴트 연구팀이 파나마에서 100년에 걸친 산림 변천 과정을 통해 열대우림 복원 메커니즘을 분석했다.",
+      "토양 미생물과 지하 균류 네트워크가 훼손된 산림이 성숙한 군락으로 자가 회복하는 데 결정적 역할을 수행함을 규명했다.",
+      "단순 식수 방식의 조림 사업보다 생태계 연결망을 보존·복원하는 과학적 접근이 산림 회복력의 핵심임이 확인되었다."
+    ],
+    "business_insight": "글로벌 ESG 공시 강화 및 생물다양성 크레딧 시장 도입에 따라, 식수 수량 중심의 기존 탄소 상쇄 프로젝트가 토양 생태계 검증 기반의 정밀 바이오 솔루션으로 재편될 것이다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Information",
+    "title": "Meta Unveils New AI Models to Challenge OpenAI and Anthropic",
+    "link": "https://www.theinformation.com/briefings/meta-unveils-new-ai-models-challenge-openai-anthropic",
+    "canonical_url": "https://www.theinformation.com/briefings/meta-unveils-new-ai-models-challenge-openai-anthropic",
+    "published_at": "2026-10-12T17:31:53",
+    "summary": "Meta Platforms unveiled two new AI models, Muse Wonder and Muse Wonder Full, on Monday as it seeks to strengthen its position in the competitive AI race. CEO Mark Zuckerberg announced the models on Threads, describing them as significantly larger and more advanced than the company’s most recent ...",
+    "score": 44,
+    "score_breakdown": {
+      "total_score": 44,
+      "impact": 24,
       "business": 0,
       "development": 13,
       "recency": 7,
@@ -152,94 +368,121 @@
     },
     "rank": 1,
     "is_primary": true,
-    "korean_title": "아마존 프라임 비디오, NYCC서 SF 대작 '블레이드 러너 2099' 공식 예고편 공개",
+    "korean_title": "메타, 오픈AI·앤트로픽 정조준한 차세대 AI 모델 '뮤즈 원더' 공개",
     "summary_3_lines": [
-      "아마존 프라임 비디오가 뉴욕 코믹콘(NYCC) 무대에서 신작 시리즈 '블레이드 러너 2099'의 공식 풀 트레일러를 전격 공개함.",
-      "야마자키 다카시 감독의 성공작 '고질라 마이너스 원'의 차기작인 '고질라 마이너스 제로' 신규 예고편도 함께 공개되어 주목을 받음.",
-      "글로벌 팬덤을 보유한 상징적 SF 프랜차이즈의 세계관 확장이 본격적인 궤도에 올랐음을 입증함."
+      "메타 플랫폼스가 경쟁이 치열한 AI 주도권 확보를 위해 신규 AI 모델 '뮤즈 원더(Muse Wonder)'와 '뮤즈 원더 풀(Muse Wonder Full)' 2종을 공개함.",
+      "마크 저커버그 CEO는 스레드를 통해 이번 모델이 기존 자사 모델 대비 규모와 성능 면에서 대폭 향상되었다고 발표함.",
+      "이는 오픈AI와 앤트로픽이 지배하고 있는 고성능 파운데이션 모델 시장을 정면 겨냥한 행보로 풀이됨."
     ],
-    "business_insight": "빅테크 기반 OTT 플랫폼들이 검증된 메가 IP를 활용한 프리미엄 SF 블록버스터 제작에 집중하며 구독자 락인(Lock-in)과 글로벌 가입자 확대를 동시에 노리고 있습니다.",
+    "business_insight": "오픈소스 및 자체 AI 역량에 대규모 투자를 단행해 온 메타가 최첨단 성능 경쟁에 재진입함으로써 글로벌 빅테크 간 파운데이션 모델 개발 치킨게임이 한층 가속화될 전망임.",
     "analyzed_by": "gemini-3.8-flash"
   },
   {
-    "media": "Ars Technica",
-    "title": "Review: 4-hour Musk documentary feels like two different films",
-    "link": "https://arstechnica.com/culture/2026/10/review-4-hour-musk-documentary-feels-like-two-different-films/",
-    "canonical_url": "https://arstechnica.com/culture/2026/10/review-4-hour-musk-documentary-feels-like-two-different-films/",
-    "published_at": "2026-10-11T18:10:54",
-    "summary": "Alex Gibney's provocative film is compelling but overlong, and there's not much new here for Ars readers.",
-    "score": 12,
+    "media": "The Information",
+    "title": "Meta Reaches AI’s Crowded Frontier—Will Users Care?",
+    "link": "https://www.theinformation.com/articles/meta-reaches-ais-crowded-frontier-will-users-care",
+    "canonical_url": "https://www.theinformation.com/articles/meta-reaches-ais-crowded-frontier-will-users-care",
+    "published_at": "2026-10-13T00:00:33",
+    "summary": "If it’s Monday, it must be time for another AI model release. This time, it was Meta Platforms’ turn, unveiling Muse Wonder, which it claims can “deliver state-of-the-art performance” on certain tasks. It was a triumphant moment for the company, whose AI efforts previously went through a slump that prompted a massive hiring binge over the past 14 months or so. It now claims it is “pushing the frontier” of AI. That would be notable if only everyone wasn’t claiming to be doing the same thing. Two weeks ago, Google unveiled its latest model, Gemini 4 Argon, which it says “delivers frontier performance in complex workflows” across various subjects (you wouldn’t want it to deliver frontier performance in simple workflows, would you?). In early September, OpenAI announced GPT-6 Astra , which it said was “state of the art on computer use, browsing, software engineering, cybersecurity, science and professional work.” Also in September, Anthropic introduced Claude Fable 5.1 and Mythos 5.1 , which it claimed to be “the world’s most advanced models for coding and knowledge work.”",
+    "score": 39,
     "score_breakdown": {
-      "total_score": 12,
+      "total_score": 39,
+      "impact": 24,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true,
+    "korean_title": "'프론티어 AI' 쏟아지는 빅테크 과열 경쟁, 시장의 실질 수요 입증이 관건",
+    "summary_3_lines": [
+      "메타가 14개월간의 대규모 인재 영입 끝에 '뮤즈 원더'를 선보이며 최고 수준의 성능을 입증했다고 주장함.",
+      "그러나 구글의 '제미나이 4 아르곤', 오픈AI의 'GPT-6 아스트라', 앤트로픽의 '클로드 페이블 5.1' 등 주요 경쟁사 모두가 연이어 최고 성능을 자처하며 시장이 극도로 포화됨.",
+      "벤치마크 중심의 성능 과시가 일상화된 가운데 기업 고객과 실사용자가 이러한 모델 차별화에 실질적인 가치를 부여할지는 미지수임."
+    ],
+    "business_insight": "모델 출시 주기가 극단적으로 단축되고 기술 상향 평준화가 진행됨에 따라, 단순 벤치마크 점수 경쟁보다는 실질적인 워크플로우 통합과 상용화 ROI를 입증하는 기업만이 최종 생존할 것임.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Information",
+    "title": "Exclusive: Microsoft Reorganizes Azure Cloud Unit Amid AI Overhaul",
+    "link": "https://www.theinformation.com/briefings/exclusive-microsoft-reorganizes-azure-cloud-unit-amid-ai-overhaul",
+    "canonical_url": "https://www.theinformation.com/briefings/exclusive-microsoft-reorganizes-azure-cloud-unit-amid-ai-overhaul",
+    "published_at": "2026-10-13T00:59:55",
+    "summary": "Microsoft is overhauling the leadership of its Azure cloud business, cloud chief Scott Guthrie told staff Monday, as the company moves to consolidate units and reorient itself around AI. As part of the reorg, Arun Ulag, who previously oversaw Azure’s database products, will now also oversee ...",
+    "score": 38,
+    "score_breakdown": {
+      "total_score": 38,
       "impact": 0,
+      "business": 18,
+      "development": 5,
+      "recency": 10,
+      "original": 5
+    },
+    "rank": 3,
+    "is_primary": true,
+    "korean_title": "마이크로소프트, 'AI 최우선' 기조 맞춰 애저(Azure) 클라우드 조직 전면 개편",
+    "summary_3_lines": [
+      "마이크로소프트 클라우드 총괄 스콧 거스리가 부서 통폐합 및 AI 중심 체제 전환을 골자로 한 애저 클라우드 사업부의 리더십 개편을 단행함.",
+      "기존 애저 데이터베이스 부문을 이끌던 아룬 울라그가 통합 조직의 주요 영역을 추가로 총괄하게 됨.",
+      "이번 개편은 급증하는 AI 워크로드 수요에 기민하게 대응하기 위해 핵심 클라우드 인프라와 데이터 파이프라인의 통합 운영을 가속화하려는 조치임."
+    ],
+    "business_insight": "전통적인 클라우드 인프라 관리 체계에서 엔드투엔드 AI 플랫폼 체제로 조직을 일원화함으로써, 기업용 생성형 AI 솔루션 제공 속도와 운영 효율성을 극대화하려는 포석임.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Information",
+    "title": "Andreessen Horowitz, General Catalyst Race to Secure the Chips Their Startups Need",
+    "link": "https://www.theinformation.com/articles/andreessen-horowitz-general-catalyst-race-secure-chips-startups-need",
+    "canonical_url": "https://www.theinformation.com/articles/andreessen-horowitz-general-catalyst-race-secure-chips-startups-need",
+    "published_at": "2026-10-12T17:42:44",
+    "summary": "As startups scramble to get access to AI servers, more venture capital firms are finding ways to secure compute on their behalf. Andreessen Horowitz, which two years ago set up a cluster of 20,000 graphics processing units for its startups, is in talks to expand its offering, potentially via two data center companies it has backed, according to people familiar with its plans. Meanwhile, General Catalyst is building a data center to supply compute for its startups, said two other people. And several other VC funds have used brokers to find sought-after chips for their companies.",
+    "score": 37,
+    "score_breakdown": {
+      "total_score": 37,
+      "impact": 0,
+      "business": 25,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true,
+    "korean_title": "'자본 대신 칩을 준다'… a16z·제너럴 카탈리스트, 스타트업 컴퓨팅 확보 경쟁",
+    "summary_3_lines": [
+      "AI 연산 자원 품귀 현상이 심화되자 주요 벤처캐피털(VC)들이 투자 유치 조건으로 스타트업에 컴퓨팅 파워를 직접 조달해 주는 추세가 확산됨.",
+      "2만 개 규모 GPU 클러스터를 운영 중인 앤드리슨 호로위츠(a16z)는 포트폴리오 내 데이터센터 기업을 활용한 추가 컴퓨팅 공급 확대를 논의 중임.",
+      "제너럴 카탈리스트는 스타트업 전용 자체 데이터센터를 구축 중이며, 타 펀드들 역시 칩 브로커를 고용하는 등 희소 인프라 선점 경쟁이 격화됨."
+    ],
+    "business_insight": "VC의 핵심 경쟁력이 단순 현금 조달에서 희소 하드웨어 및 인프라 접근성 제공으로 이동하면서, 포트폴리오사의 최대 병목인 컴퓨팅 비용 문제를 직접 해소하는 플랫폼형 VC 모델이 표준으로 자리잡고 있음.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Information",
+    "title": "Bumble in Talks to Go Private With Sequoia Partner Gupta’s New Venture",
+    "link": "https://www.theinformation.com/briefings/bumble-talks-go-private-sequoia-partner-guptas-new-venture",
+    "canonical_url": "https://www.theinformation.com/briefings/bumble-talks-go-private-sequoia-partner-guptas-new-venture",
+    "published_at": "2026-10-12T19:03:21",
+    "summary": "Dating app company Bumble is in advanced talks to be taken private by a holding company founded recently by former Sequoia’s partner Ravi Gupta, the Wall Street Journal reported Monday. A deal would value Bumble at roughly $1 billion, a steep premium to its last market cap of around $300 million ...",
+    "score": 36,
+    "score_breakdown": {
+      "total_score": 36,
+      "impact": 24,
       "business": 0,
       "development": 5,
       "recency": 7,
       "original": 0
     },
-    "rank": 2,
+    "rank": 5,
     "is_primary": true,
-    "korean_title": "4시간 분량의 일론 머스크 다큐멘터리 공개, \"흡인력 있으나 새로운 통찰은 부족\"",
+    "korean_title": "데이팅 앱 범블, 전 세콰이어 파트너 주도 10억 달러 규모 비상장화 추진",
     "summary_3_lines": [
-      "아카데미상 수상 감독 알렉스 기브니가 연출한 일론 머스크 중심의 4시간 분량 장편 다큐멘터리가 공개됨.",
-      "작품의 전반부와 후반부가 전혀 다른 두 편의 영화처럼 나뉘어 전개되며, 전체적으로 분량이 과도하다는 비평이 제기됨.",
-      "도발적이고 몰입감 있는 연출에도 불구하고, 평소 테크 트렌드에 밝은 수용자들에게는 기존 보도 이상의 새로운 내러티브를 전달하지 못함."
+      "데이팅 앱 범블이 전 세콰이어 캐피털 파트너 라비 굽타가 최근 설립한 지주회사에 인수되어 비상장사로 전환하는 막바지 협상을 진행 중임.",
+      "거래 기업 가치는 약 10억 달러 수준으로, 최근 시장 시가총액 약 3억 달러 대비 3배 이상의 높은 프리미엄이 반영됨.",
+      "성장 둔화와 주가 폭락을 겪어온 범블은 공개 시장의 분기 실적 압박에서 벗어나 체질 개선을 도모하려는 것으로 분석됨."
     ],
-    "business_insight": "테크 리더를 조명하는 미디어 콘텐츠의 가치는 단순 일대기 취합을 넘어 내부 의사결정 프로세스나 미공개 기술 이슈 등 실질적인 심층 정보를 제공할 수 있는지에 달려 있습니다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "The Information",
-    "title": "Amazon’s Bargains Include Its Stock",
-    "link": "https://www.theinformation.com/articles/amazons-bargains-include-stock",
-    "canonical_url": "https://www.theinformation.com/articles/amazons-bargains-include-stock",
-    "published_at": "2026-10-11T22:01:19",
-    "summary": "It’s the quiet before the storm of earnings season, which starts in a week or two. While we wait for the third-quarter updates, here’s a thought: Investor enthusiasm for semiconductor stocks and blue-sky vision companies like SpaceX appears to have sucked money out of stocks of long-established tech companies. Some are now trading at bargain-basement prices. We’re thinking specifically of Amazon, whose stock really deserves a bit more love. We know the gripes: Like Alphabet and Meta, Amazon is spending an absolute ton—$220 billion this year alone—on capital expenditures to build out its AI data center capacity. That’s not without risk, for sure: The investment depends on business demand for AI services taking off. Even so, that can’t justify Amazon trading at a discount to Walmart, as it has done for the last 18 months or so. Walmart is expected to grow revenue this year by about 5.6%—about a third of Amazon’s estimated growth rate. And yet Amazon is trading at about 29 times forward earnings, compared with 37 times for Walmart, according to Koyfin data.",
-    "score": 68,
-    "score_breakdown": {
-      "total_score": 68,
-      "impact": 35,
-      "business": 18,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 1,
-    "is_primary": true,
-    "korean_title": "AI 투자 우려로 저평가된 아마존, 월마트보다 낮은 밸류에이션의 역설",
-    "summary_3_lines": [
-      "반도체 및 우주 스타트업으로 투자금이 쏠리면서 아마존 등 전통 빅테크 주식이 상대적인 저평가 국면에 진입했습니다.",
-      "아마존이 AI 데이터센터 확충에 공격적인 설비투자(CapEx)를 집행하자 시장은 AI 수요 회수 불확실성에 대한 리스크를 크게 의식하고 있습니다.",
-      "그러나 아마존의 예상 매출 성장률은 월마트의 3배에 달함에도 선행 주가수익비율(P/E)은 29배로 월마트(37배) 대비 크게 할인되어 거래 중입니다."
-    ],
-    "business_insight": "단기적인 대규모 AI 인프라 지출에 대한 시장의 과도한 우려가 고성장 빅테크를 전통 유통주보다 저평가받게 만드는 기형적인 밸류에이션 왜곡을 낳고 있습니다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "The Information",
-    "title": "The Attractive Economics Behind Anthropic Data Center Sprint",
-    "link": "https://www.theinformation.com/articles/attractive-economics-behind-anthropic-data-center-sprint",
-    "canonical_url": "https://www.theinformation.com/articles/attractive-economics-behind-anthropic-data-center-sprint",
-    "published_at": "2026-10-11T15:01:22",
-    "summary": "Why is Anthropic driving its partners to speed up the $530 billion of data center leasing deals it has signed ? It’s simple: Every server Anthropic plugs in sooner to run its products could be wildly profitable, according to fresh analysis of upcoming AI data center sites, including one Anthropic will rent outside Baton Rouge, La.",
-    "score": 45,
-    "score_breakdown": {
-      "total_score": 45,
-      "impact": 24,
-      "business": 9,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 2,
-    "is_primary": true,
-    "korean_title": "앤트로픽의 데이터센터 조기 가동 드라이브, 핵심은 즉각적인 서버 수익성",
-    "summary_3_lines": [
-      "앤트로픽은 파트너사들과 체결한 대규모 데이터센터 임대 계약 사이트의 가동 일정을 공격적으로 앞당기고 있습니다.",
-      "루이지애나주 배턴루지 인근 사이트 분석 결과, 서버를 조기에 투입해 가동할수록 제품 운영을 통해 창출되는 이익이 극대화되는 구조로 나타났습니다.",
-      "AI 모델 수요가 폭증하는 상황에서 인프라의 신속한 전력 공급 및 가동 속도가 곧바로 폭발적인 현금 흐름으로 직결되고 있습니다."
-    ],
-    "business_insight": "AI 인프라 수요가 공급을 압도하는 시장에서는 설비 감가상각 우려보다 선제적 서버 가동을 통한 마진 창출 효과가 훨씬 크기 때문에, 인프라 확보 및 배포 속도가 핵심적인 해자가 되고 있습니다.",
+    "business_insight": "데이팅 앱 시장의 이용자 피로도 및 수익성 저하로 급락한 플랫폼을 저가 인수해 비공개 상태에서 사업 구조조정과 AI 기능 접목을 통한 턴어라운드를 추진하려는 전형적인 사모펀드식 가치 제고 시도임.",
     "analyzed_by": "gemini-3.8-flash"
   }
 ]
