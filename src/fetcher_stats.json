@@ -8,13 +8,13 @@
   "TechCrunch": {
     "status": "success",
     "raw_count": 20,
-    "eligible_count": 8,
+    "eligible_count": 20,
     "selected_count": 5
   },
   "Ars Technica": {
     "status": "success",
     "raw_count": 20,
-    "eligible_count": 10,
+    "eligible_count": 12,
     "selected_count": 5
   },
   "MIT Tech Review": {
@@ -26,7 +26,7 @@
   "The Information": {
     "status": "success",
     "raw_count": 20,
-    "eligible_count": 12,
+    "eligible_count": 17,
     "selected_count": 5
   }
 }

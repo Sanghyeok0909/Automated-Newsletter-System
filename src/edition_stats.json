@@ -1,32 +1,32 @@
 {
   "The Verge": {
-    "analyzed": 5,
-    "target": 5,
-    "candidates_found": 10,
-    "status": "completed"
-  },
-  "TechCrunch": {
-    "analyzed": 5,
-    "target": 5,
-    "candidates_found": 8,
-    "status": "completed"
-  },
-  "Ars Technica": {
     "analyzed": 0,
     "target": 5,
     "candidates_found": 10,
     "status": "analysis_failure"
   },
-  "MIT Tech Review": {
-    "analyzed": 3,
+  "TechCrunch": {
+    "analyzed": 0,
     "target": 5,
-    "candidates_found": 3,
-    "status": "candidate_shortage"
+    "candidates_found": 20,
+    "status": "analysis_failure"
   },
-  "The Information": {
+  "Ars Technica": {
     "analyzed": 5,
     "target": 5,
     "candidates_found": 12,
     "status": "completed"
+  },
+  "MIT Tech Review": {
+    "analyzed": 0,
+    "target": 5,
+    "candidates_found": 3,
+    "status": "analysis_failure"
+  },
+  "The Information": {
+    "analyzed": 0,
+    "target": 5,
+    "candidates_found": 17,
+    "status": "analysis_failure"
   }
 }
