@@ -1,119 +1,119 @@
 [
   {
-    "media": "Ars Technica",
-    "title": "Martin Shkreli livestreamed himself violating lifetime pharma ban, FTC says",
-    "link": "https://arstechnica.com/health/2026/10/martin-shkreli-livestreamed-himself-violating-lifetime-pharma-ban-ftc-says/",
-    "canonical_url": "https://arstechnica.com/health/2026/10/martin-shkreli-livestreamed-himself-violating-lifetime-pharma-ban-ftc-says/",
-    "published_at": "2026-10-13T22:48:12",
-    "summary": "\"I can always find a couple of biotech stocks to smoke,\" Shkreli said in a livestream.",
-    "score": 27,
+    "media": "The Verge",
+    "title": "Eight states sue OpenAI, saying ChatGPT isn&#8217;t safe for kids",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
+    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
+    "published_at": "2026-10-14T21:11:28",
+    "summary": "OpenAI is facing a new wave of lawsuits from eight US states that accuse the company of harming children and misleading customers about the safety of ChatGPT, as reported earlier by Reuters. The lawsuits, filed separately by Iowa, Kansas, Nebraska, West Virginia, Arkansas, Arizona, Idaho, and Montana, allege OpenAI unlawfully put profits over safety when […]",
+    "score": 59,
     "score_breakdown": {
-      "total_score": 27,
-      "impact": 12,
-      "business": 0,
+      "total_score": 59,
+      "impact": 35,
+      "business": 9,
       "development": 5,
       "recency": 10,
       "original": 0
     },
     "rank": 1,
     "is_primary": true,
-    "korean_title": "마틴 슈크렐리, 제약업계 평생 퇴출 명령 어기고 라이브 방송 진행…FTC 제재 직면",
+    "korean_title": "미국 8개 주정부, \"아동 안전 위협·수익 우선\" 이유로 OpenAI에 동시다발 소송",
     "summary_3_lines": [
-      "미국 연방거래위원회(FTC)는 과거 약가 폭리 사태로 악명 높은 전 제약사 CEO 마틴 슈크렐리가 제약업계 평생 금지 명령을 위반했다고 밝힘.",
-      "슈크렐리는 실시간 스트리밍 방송 중 바이오테크 주식을 매매 및 언급하며 법원의 명령을 정면으로 무시하는 발언을 남김.",
-      "법원의 판결 집행 및 규정 준수 여부를 철저히 감시 중인 연방 당국으로부터 추가적인 법적 처벌을 받을 위기에 놓임."
+      "아이오와, 캔자스 등 미국 8개 주가 OpenAI를 상대로 아동에게 유해한 영향을 미치고 안전성을 허위 광고했다며 개별 소송을 제기했습니다.",
+      "소송단은 OpenAI가 서비스의 위험성을 인지하고도 안전 대책보다 기업 수익을 앞세워 미성년자 보호 의무를 소홀히 했다고 주장했습니다.",
+      "생성형 AI 서비스의 아동·청소년 보호 조치와 윤리적 책임에 대한 미국 주정부 차원의 법적 제재가 본격화되는 양상입니다."
     ],
-    "business_insight": "규제 당국의 집행 역량과 의지가 강화된 상황에서 경영진의 소셜 미디어 및 개인 방송 발언이 직접적인 규제 위반 증거로 채택될 수 있으며, 이는 화이트칼라 범죄 제재의 실효성을 입증하는 척도가 될 것임.",
+    "business_insight": "AI 모델의 안전성 검증과 미성년자 보호 관련 컴플라이언스 비용이 급증할 것으로 예상되며, 플랫폼 신뢰도와 규제 준수 여부가 기업 가치 평가의 핵심 쟁점으로 부상하고 있습니다.",
     "analyzed_by": "gemini-3.8-flash"
   },
   {
-    "media": "Ars Technica",
-    "title": "Gemini 4 Argon begins rolling out in Gemini app and Antigravity, but only if you pay",
-    "link": "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/",
-    "canonical_url": "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/",
-    "published_at": "2026-10-13T16:00:02",
-    "summary": "Developers will get 50 percent discounted API rates through November.",
-    "score": 25,
+    "media": "The Verge",
+    "title": "The AI race is back on",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1011311/the-ai-race-is-back-on",
+    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/1011311/the-ai-race-is-back-on",
+    "published_at": "2026-10-14T19:06:03",
+    "summary": "Last week, Anthropic and OpenAI looked like they had the AI race to themselves, pulling ahead with increasingly powerful models that left their rivals in the dust. Google seemed hopelessly far behind, while Meta, despite spending billions to revive its floundering AI ambitions, had yet to establish itself as a serious contender. Even the latest […]",
+    "score": 50,
     "score_breakdown": {
-      "total_score": 25,
-      "impact": 0,
-      "business": 18,
-      "development": 0,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 2,
-    "is_primary": true,
-    "korean_title": "구글, 제미나이 4 아르곤 출시…유료 구독자 독점 제공 및 개발자 API 50% 할인",
-    "summary_3_lines": [
-      "구글이 차세대 AI 모델 '제미나이 4 아르곤(Gemini 4 Argon)'을 제미나이 앱 및 안티그래비티 플랫폼의 유료 사용자 한정으로 배포하기 시작함.",
-      "무료 사용자 대상 배포를 배제하고 유료 구독자 전용으로 기능을 한정해 AI 서비스의 유료화 모델을 강화함.",
-      "개발자 생태계 확장을 위해 오는 11월까지 제미나이 4 아르곤의 API 사용료를 50% 할인하는 프로모션을 전개함."
-    ],
-    "business_insight": "고성능 AI 모델의 유료화 장벽 구축과 개발자 대상 API 가격 인하는 AI 인프라 유지 비용을 방어하면서 동시에 B2C 구독 전환과 B2B 개발자 락인(Lock-in)을 동시에 달성하려는 전형적인 플랫폼 수익화 전략임.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "Ars Technica",
-    "title": "Skydance’s Discovery+ prices increase by up to 20 percent",
-    "link": "https://arstechnica.com/gadgets/2026/10/skydances-discovery-prices-increase-by-up-to-20-percent/",
-    "canonical_url": "https://arstechnica.com/gadgets/2026/10/skydances-discovery-prices-increase-by-up-to-20-percent/",
-    "published_at": "2026-10-13T18:06:06",
-    "summary": "The higher prices are said to be unrelated to the Skydance merger.",
-    "score": 19,
-    "score_breakdown": {
-      "total_score": 19,
-      "impact": 12,
-      "business": 0,
-      "development": 0,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 3,
-    "is_primary": true,
-    "korean_title": "디스커버리 플러스, 구독료 최대 20% 인상 단행…수익성 방어 집중",
-    "summary_3_lines": [
-      "스카이댄스 산하의 스트리밍 서비스 디스커버리+(Discovery+)가 주요 플랜 구독료를 최대 20% 인상함.",
-      "사측은 이번 요금 인상이 최근 진행된 스카이댄스 합병 절차와는 무관한 독립적 결정이라고 설명함.",
-      "OTT 산업 전반에 불고 있는 '스트림플레이션(스트리밍 요금 인상)' 기조에 발맞춰 플랫폼 단위의 수익 개선을 노림."
-    ],
-    "business_insight": "구독자 유치 경쟁이 한계에 다다른 OTT 업계에서 합병 및 구조조정 여파와 관계없이 ARPU(가입자당 평균 매출) 극대화와 적자 폭 축소가 최우선 과제로 부상했음을 보여줌.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "Ars Technica",
-    "title": "ESA targets Anbernic emulation handhelds as \"superfake\" piracy enablers",
-    "link": "https://arstechnica.com/gaming/2026/10/esa-targets-anbernic-emulation-handhelds-as-superfake-piracy-enablers/",
-    "canonical_url": "https://arstechnica.com/gaming/2026/10/esa-targets-anbernic-emulation-handhelds-as-superfake-piracy-enablers/",
-    "published_at": "2026-10-13T21:55:49",
-    "summary": "But third-party sellers, not Anbernic, are the ones routinely selling ROM-filled SD cards.",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
+      "total_score": 50,
+      "impact": 35,
       "business": 0,
       "development": 5,
       "recency": 10,
       "original": 0
     },
-    "rank": 4,
+    "rank": 2,
     "is_primary": true,
-    "korean_title": "미 게임협회(ESA), 앤버닉 에뮬레이터 콘솔을 저작권 침해 온상으로 공식 지목",
+    "korean_title": "독주 체제 흔들리는 AI 시장, 구글·메타의 반격으로 다시 불붙은 기술 패권 경쟁",
     "summary_3_lines": [
-      "미국 엔터테인먼트소프트웨어협회(ESA)가 중국 휴대용 게임기 제조사 앤버닉(Anbernic)의 에뮬레이션 기기를 불법 복제를 조장하는 '슈퍼페이크' 제품으로 지정함.",
-      "앤버닉 하드웨어 자체보다는 불법 복제 ROM이 가득 찬 SD 카드를 함께 끼워 파는 제3자 판매자(서드파티)들의 유통 방식이 핵심 원인으로 지적됨.",
-      "합법적인 에뮬레이션 하드웨어와 불법 콘텐츠 유통 간의 경계가 모호해지며 업계 저작권 단속의 칼끝이 기기 제조업계로 향하고 있음."
+      "오픈AI와 앤트로픽의 양강 체제로 굳어지던 글로벌 생성형 AI 시장의 경쟁 구도가 다시 급변하고 있습니다.",
+      "거액 투자에도 뒤처졌다는 평가를 받던 구글과 메타 등 주요 빅테크 기업들이 반격을 본격화하며 선두권 추격에 속도를 내고 있습니다.",
+      "차세대 초거대 언어모델(LLM) 출시와 지속적인 기술 고도화로 인해 최상위 기업 간의 성능 격차가 다시 좁혀지는 추세입니다."
     ],
-    "business_insight": "레트로 게임 및 에뮬레이터 시장이 급성장함에 따라 주요 IP 보유사들의 저작권 단속 범위가 단순 소프트웨어 공유 사이트에서 오픈마켓 하드웨어 유통망 전체로 전방위 확대될 가능성이 큼.",
+    "business_insight": "선도 모델 간의 순수 성능 격차가 축소되면서, 향후 시장 주도권은 단순 벤치마크 점수보다 엔터프라이즈 생태계 통합 역량과 실질적인 상용화 ROI 창출 여부에 의해 결정될 전망입니다.",
     "analyzed_by": "gemini-3.8-flash"
   },
   {
-    "media": "Ars Technica",
-    "title": "Disney offers $20M for Character.AI’s scandal-plagued chatbot tech",
-    "link": "https://arstechnica.com/tech-policy/2026/10/disney-offers-20m-for-character-ais-scandal-plagued-chatbot-tech/",
-    "canonical_url": "https://arstechnica.com/tech-policy/2026/10/disney-offers-20m-for-character-ais-scandal-plagued-chatbot-tech/",
-    "published_at": "2026-10-13T18:23:33",
-    "summary": "Disney may acquire tech from one of the first chatbot makers linked to child suicide.",
+    "media": "The Verge",
+    "title": "Microsoft and Japan took down a cybercrime network behind over a billion scam messages",
+    "link": "https://www.theverge.com/tech/1011487/microsoft-scam-messages-marketplace-takedown",
+    "canonical_url": "https://www.theverge.com/tech/1011487/microsoft-scam-messages-marketplace-takedown",
+    "published_at": "2026-10-14T20:03:43",
+    "summary": "We've all gotten a scam text about a nonexistent parking ticket or a fake package delivery, but hopefully you'll start seeing fewer of them. Microsoft says it helped dismantle a marketplace for scammers sending phishing messages like those around the world. Through an investigation with Japan's National Police Agency, it tracked scam activity back to […]",
+    "score": 32,
+    "score_breakdown": {
+      "total_score": 32,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 5
+    },
+    "rank": 3,
+    "is_primary": true,
+    "korean_title": "MS와 일본 경찰, 10억 건 이상 사기 문자 유포한 글로벌 피싱 네트워크 전격 적발",
+    "summary_3_lines": [
+      "마이크로소프트와 일본 경찰청이 공조 수사를 통해 전 세계에 10억 건 이상의 피싱 스팸 문자를 살포한 사이버 범죄 조직의 인프라를 해체했습니다.",
+      "적발된 네트워크는 가짜 주차 위반 통지나 택배 배송 안내 등 일상적인 사칭 문자를 대량 유포해 온 피싱 마켓플레이스 거점으로 확인되었습니다.",
+      "글로벌 빅테크의 위협 인텔리전스 추적 역량과 국제 사법기관의 신속한 공조가 결합해 대규모 사이버 범죄망을 무력화한 성공 사례로 꼽힙니다."
+    ],
+    "business_insight": "글로벌 사이버 범죄가 고도화된 상업적 서비스 형태로 진화함에 따라, 빅테크의 보안 데이터와 국가 기관 간의 민관 협력 공조 체계가 기업의 보안 인프라 방어에 필수적인 축으로 자리잡고 있습니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Verge",
+    "title": "Now that Character.AI is going bankrupt, what happens to all of its users&#8217; data?",
+    "link": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy",
+    "canonical_url": "https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy",
+    "published_at": "2026-10-14T18:47:54",
+    "summary": "New York Attorney General Letitia James revealed a years-long multi-state investigation against Character.AI as they now seek to require protections on consumer data sold through its bankruptcy proceeding. James is among 40 bipartisan AGs who filed a notice of interest in Character.AI's bankruptcy case \"to put all parties on notice of the regulatory issues that […]",
+    "score": 32,
+    "score_breakdown": {
+      "total_score": 32,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 5
+    },
+    "rank": 4,
+    "is_primary": true,
+    "korean_title": "파산 절차 돌입한 캐릭터닷AI, 방대한 이용자 대화 데이터 매각 우려에 美 당국 개입",
+    "summary_3_lines": [
+      "AI 챗봇 기업 캐릭터닷AI(Character.AI)가 파산 절차를 밟게 되면서, 자산 매각 과정 중 이용자 개인정보 처리 문제가 수면 위로 떠올랐습니다.",
+      "뉴욕주를 포함한 미국 40개 주 법무장관은 파산 관재 절차에서 이용자 데이터가 무단 처분되지 않도록 소비자 보호 규제를 적용하는 법적 의견서를 제출했습니다.",
+      "수억 건에 달하는 민감한 개인 대화 로그와 프롬프트 데이터가 규제 없이 제3자에게 매각될 수 있다는 우려에 정부 당국이 선제적 제동을 걸었습니다."
+    ],
+    "business_insight": "AI 기업의 파산 시 서비스 데이터 자산의 매각 한계와 개인정보 귀속권에 대한 법적 선례가 수립될 것으로 보이며, 향후 AI 스타트업 M&A 및 실사(Due Diligence)에서 데이터 리스크 검증 기준이 한층 엄격해질 것입니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Verge",
+    "title": "McKinsey is making job applicants spar with a fake AI client",
+    "link": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview",
+    "canonical_url": "https://www.theverge.com/news/1011654/mckinsey-ai-client-interview",
+    "published_at": "2026-10-14T22:53:31",
+    "summary": "Consulting firm McKinsey & Company is going to ask some entry-level candidates to have a 10-minute conversation with an AI simulation of a client as part of the interview process, according to The Wall Street Journal. The AI simulation \"aims to reflect 80% of the scenarios McKinsey consultants might encounter in their day-to-day work,\" the […]",
     "score": 15,
     "score_breakdown": {
       "total_score": 15,
@@ -125,13 +125,13 @@
     },
     "rank": 5,
     "is_primary": true,
-    "korean_title": "디즈니, 청소년 자살 논란 겪은 캐릭터닷에이아이(Character.AI) 기술에 2,000만 달러 인수 제안",
+    "korean_title": "맥킨지, 채용 면접에 '가상 AI 고객' 도입… 실전 대응력 직접 검증",
     "summary_3_lines": [
-      "디즈니가 청소년 자살 방조 논란으로 법적 소송에 직면한 AI 챗봇 스타트업 캐릭터닷에이아이(Character.AI)의 기술 자산에 약 2,000만 달러 규모의 인수를 제안함.",
-      "디즈니는 자사 보유 IP(캐릭터, 세계관)와 결합할 수 있는 대화형 인터랙티브 AI 기술력 확보를 최우선 목표로 둠.",
-      "안전성 및 윤리적 결함으로 시장의 거센 비판을 받은 기술을 인수하는 만큼 브랜드 이미지 타격 및 안전성 보완 문제가 주요 쟁점으로 떠오름."
+      "글로벌 컨설팅 기업 맥킨지앤컴퍼니가 신입 컨설턴트 채용 과정에 AI 기반 가상 고객과 10분간 대화하는 실기 면접을 도입했습니다.",
+      "해당 AI 시뮬레이션은 맥킨지 컨설턴트들이 현업에서 실제로 마주하는 고객 응대 시나리오의 약 80%를 재현하도록 설계되었습니다.",
+      "지원자의 커뮤니케이션 능력, 문제 해결력, 돌발 상황 대처 능력 등 현장 적합성을 정량적이고 객관적으로 측정하는 데 초점을 맞추고 있습니다."
     ],
-    "business_insight": "대형 미디어 기업이 생성형 AI 기반 캐릭터 비즈니스를 내재화하기 위해 리스크가 큰 기술 자산을 저가에 인수하려는 움직임이나, '가족 친화적' 브랜드 정체성을 유지하기 위해서는 고강도의 안전 필터링 및 책임 있는 AI 프레임워크 재구축이 필수적임.",
+    "business_insight": "기존의 정형화된 면접을 넘어 AI 시뮬레이션을 통한 인터랙티브 실무 역량 평가가 확산됨에 따라, 채용 및 HR 테크 분야에서 B2B 맞춤형 AI 롤플레잉 솔루션 시장이 가파르게 성장할 것으로 보입니다.",
     "analyzed_by": "gemini-3.8-flash"
   }
 ]

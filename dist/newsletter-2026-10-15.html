@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Daily Tech Insights: 2026-10-15 - 글로벌 5대 테크 미디어 핵심 큐레이션 및 AI 비즈니스 인사이트">
+  <title>Daily Tech Insights | 2026-10-15</title>
+  <style>
+    /* ==========================================================================
+       Design System Tokens (Discord Macro-Structure + Toss Tactile Clarity)
+       Pure Vanilla CSS3 / Zero Dependencies / High Accessibility
+       ========================================================================== */
+    :root {
+      --toss-blue: #3182f6;
+      --toss-blue-hover: #1b64da;
+      --toss-blue-subtle: rgba(49, 130, 246, 0.12);
+      --toss-blue-glow: rgba(49, 130, 246, 0.28);
+
+      --rail-width: 58px;
+      --sidebar-width: 232px;
+      --metadata-width: 260px;
+      --content-max-width: 860px;
+
+      /* Dark Theme (Default) */
+      --bg-app: #141518;
+      --bg-rail: #191a1d;
+      --bg-sidebar: #1e2024;
+      --bg-workspace: #25272c;
+      --surface-card: #2c2e35;
+      --surface-inset: #1a1b1f;
+      --surface-hover: #34373f;
+      --surface-active: #3c4049;
+
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-strong: rgba(255, 255, 255, 0.14);
+      --border-focus: rgba(49, 130, 246, 0.6);
+
+      --text-header: #f3f5f8;
+      --text-normal: #d1d5dd;
+      --text-muted: #8c93a0;
+      --text-link: #4593fc;
+
+      --shadow-card: 0 4px 18px rgba(0, 0, 0, 0.22);
+      --shadow-hover: 0 10px 32px rgba(0, 0, 0, 0.36);
+
+      --radius-card: 20px;
+      --radius-md: 14px;
+      --radius-sm: 10px;
+      --radius-pill: 9999px;
+
+      --font-stack: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      --spring-physics: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      --spring-tap: transform 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-app: #f2f4f7;
+      --bg-rail: #e4e7ed;
+      --bg-sidebar: #edf0f5;
+      --bg-workspace: #f8f9fb;
+      --surface-card: #ffffff;
+      --surface-inset: #f2f4f7;
+      --surface-hover: #e6ebf2;
+      --surface-active: #dbe1eb;
+
+      --border-subtle: rgba(0, 0, 0, 0.07);
+      --border-strong: rgba(0, 0, 0, 0.13);
+      --border-focus: rgba(49, 130, 246, 0.7);
+
+      --text-header: #191f28;
+      --text-normal: #333d4b;
+      --text-muted: #6b7684;
+      --text-link: #3182f6;
+
+      --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.06);
+      --shadow-hover: 0 8px 26px rgba(0, 0, 0, 0.12);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html, body {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      font-family: var(--font-stack);
+      background-color: var(--bg-app);
+      color: var(--text-normal);
+      line-height: 1.6;
+      word-break: keep-all;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Global App Shell Layout */
+    .discord-app-shell {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    /* ==========================================================================
+       Level 1: Global Rail (Streamlined Brand Home Control)
+       ========================================================================== */
+    .global-rail {
+      width: var(--rail-width);
+      min-width: var(--rail-width);
+      height: 100%;
+      background-color: var(--bg-rail);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 14px 0;
+      border-right: 1px solid var(--border-subtle);
+      z-index: 30;
+      flex-shrink: 0;
+    }
+
+    .rail-btn {
+      position: relative;
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      background-color: var(--toss-blue);
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      transition: var(--spring-physics);
+      box-shadow: 0 4px 14px var(--toss-blue-glow);
+    }
+
+    .rail-btn:hover {
+      transform: scale(1.06);
+      background-color: var(--toss-blue-hover);
+    }
+
+    .rail-btn:active {
+      transform: scale(0.94);
+    }
+
+    .rail-btn:focus-visible {
+      outline: 2px solid #ffffff;
+      outline-offset: 2px;
+    }
+
+    .rail-btn.active::before {
+      content: "";
+      position: absolute;
+      left: -8px;
+      width: 4px;
+      height: 28px;
+      border-radius: 0 4px 4px 0;
+      background-color: #ffffff;
+    }
+
+    /* ==========================================================================
+       Level 2: Context Sidebar (Search + Channels Navigation)
+       ========================================================================== */
+    .context-sidebar {
+      width: var(--sidebar-width);
+      min-width: var(--sidebar-width);
+      height: 100%;
+      background-color: var(--bg-sidebar);
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid var(--border-subtle);
+      z-index: 25;
+      flex-shrink: 0;
+      transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .server-header {
+      height: 52px;
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-subtle);
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: var(--text-header);
+    }
+
+    .server-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Sidebar Search Input */
+    .sidebar-search-box {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .search-input-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 10px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .toss-search-input {
+      width: 100%;
+      height: 34px;
+      padding: 0 28px 0 28px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+      background-color: var(--surface-inset);
+      color: var(--text-header);
+      font-size: 0.82rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--spring-physics);
+    }
+
+    .toss-search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 2px var(--toss-blue-subtle);
+    }
+
+    .search-clear-btn {
+      position: absolute;
+      right: 6px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: none;
+      background-color: var(--surface-hover);
+      color: var(--text-muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      transition: var(--spring-physics);
+    }
+
+    .search-clear-btn:hover {
+      color: var(--text-header);
+      background-color: var(--surface-active);
+    }
+
+    .channels-scroll {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .channel-category {
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      padding: 10px 8px 4px 8px;
+    }
+
+    .channel-item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 10px;
+      border-radius: 10px;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      transition: var(--spring-physics);
+      text-align: left;
+      font-family: inherit;
+    }
+
+    .channel-item:hover {
+      background-color: var(--surface-hover);
+      color: var(--text-header);
+    }
+
+    .channel-item.active {
+      background-color: var(--surface-active);
+      color: var(--text-header);
+      font-weight: 700;
+    }
+
+    .channel-item:focus-visible {
+      outline: 2px solid var(--toss-blue);
+      outline-offset: 1px;
+    }
+
+    .channel-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .channel-mark-badge {
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.68rem;
+      font-weight: 800;
+      color: #ffffff;
+      background-color: var(--toss-blue);
+    }
+    .channel-mark-badge.all { background-color: var(--toss-blue); }
+    .channel-mark-badge.verge { background-color: #e0005a; }
+    .channel-mark-badge.techcrunch { background-color: #029924; }
+    .channel-mark-badge.arstechnica { background-color: #ff4e00; }
+    .channel-mark-badge.mit { background-color: #333333; }
+    .channel-mark-badge.theinformation { background-color: #0d253f; }
+
+    .channel-name {
+      font-size: 0.86rem;
+      letter-spacing: -0.01em;
+    }
+
+    .channel-count {
+      font-size: 0.72rem;
+      background-color: var(--surface-inset);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    .channel-item.active .channel-count {
+      color: var(--text-header);
+      background-color: var(--surface-card);
+    }
+
+    .sidebar-user-tray {
+      height: 52px;
+      background-color: var(--bg-rail);
+      padding: 0 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .user-info-box {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .status-dot {
+      width: 9px;
+      height: 9px;
+      background-color: #23a55a;
+      border-radius: 50%;
+      box-shadow: 0 0 6px #23a55a;
+    }
+
+    .user-name-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-header);
+      line-height: 1.2;
+    }
+
+    .user-sub-label {
+      font-size: 0.68rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       Level 3: Primary Workspace (Briefing Header + Article Cards)
+       ========================================================================== */
+    .chat-workspace {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bg-workspace);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .workspace-header {
+      height: 52px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-subtle);
+      background-color: var(--bg-workspace);
+      z-index: 15;
+      flex-shrink: 0;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      border: 1px solid var(--border-subtle);
+      background-color: var(--surface-card);
+      color: var(--text-header);
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    .topic-pill {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: var(--text-header);
+    }
+
+    .topic-divider {
+      width: 1px;
+      height: 14px;
+      background-color: var(--border-strong);
+    }
+
+    .topic-desc {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .theme-toggle-btn {
+      padding: 6px 12px;
+      border-radius: 10px;
+      background-color: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-normal);
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--spring-physics);
+      font-family: inherit;
+    }
+
+    .theme-toggle-btn:hover {
+      background-color: var(--surface-hover);
+      transform: translateY(-1px);
+    }
+
+    .theme-toggle-btn:focus-visible {
+      outline: 2px solid var(--toss-blue);
+      outline-offset: 1px;
+    }
+
+    /* Scrollable Feed Container */
+    .messages-feed {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px 24px 60px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+    }
+
+    /* Streamlined Editorial Briefing Header */
+    .feed-hero {
+      width: 100%;
+      max-width: var(--content-max-width);
+      background: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-card);
+      padding: 20px 22px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .hero-badge-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .toss-tag {
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: var(--radius-pill);
+      background-color: var(--toss-blue-subtle);
+      color: var(--toss-blue);
+      letter-spacing: 0.02em;
+    }
+
+    .hero-date-badge {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+
+    .hero-count-badge {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-left: auto;
+    }
+
+    .hero-title {
+      font-size: 1.55rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      color: var(--text-header);
+      margin-bottom: 6px;
+      line-height: 1.25;
+    }
+
+    .hero-subtitle {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       Toss Article Cards (Clean Hierarchy & Typography)
+       ========================================================================== */
+    .toss-card {
+      width: 100%;
+      max-width: var(--content-max-width);
+      background-color: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-card);
+      padding: 22px 24px;
+      box-shadow: var(--shadow-card);
+      transition: var(--spring-physics);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .toss-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--border-strong);
+    }
+
+    .card-top-rail {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .media-identity {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .media-avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      color: #ffffff;
+      font-size: 0.76rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      flex-shrink: 0;
+    }
+    .media-avatar.verge { background: linear-gradient(135deg, #e0005a, #fa2d60); }
+    .media-avatar.techcrunch { background: linear-gradient(135deg, #029924, #00d235); }
+    .media-avatar.arstechnica { background: linear-gradient(135deg, #ff4e00, #ff8100); }
+    .media-avatar.mit { background: linear-gradient(135deg, #222222, #444444); }
+    .media-avatar.theinformation { background: linear-gradient(135deg, #0d253f, #1b497a); }
+
+    .media-name {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--text-header);
+    }
+
+    .channel-slug {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .toss-pill-link {
+      font-size: 0.8rem;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      background-color: var(--toss-blue-subtle);
+      color: var(--toss-blue);
+      text-decoration: none;
+      transition: var(--spring-physics);
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .toss-pill-link:hover {
+      background-color: var(--toss-blue);
+      color: #ffffff;
+      transform: scale(1.03);
+    }
+
+    .toss-pill-link:focus-visible {
+      outline: 2px solid var(--toss-blue);
+      outline-offset: 2px;
+    }
+
+    .card-headline {
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      color: var(--text-header);
+      line-height: 1.4;
+    }
+
+    /* Inset Summary Box */
+    .toss-surface-box {
+      background-color: var(--surface-inset);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .section-badge {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .summary-bullet-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .summary-bullet {
+      position: relative;
+      padding-left: 16px;
+      font-size: 0.92rem;
+      color: var(--text-normal);
+      line-height: 1.58;
+    }
+
+    .summary-bullet::before {
+      content: "•";
+      position: absolute;
+      left: 2px;
+      color: var(--toss-blue);
+      font-weight: 900;
+      font-size: 1.15rem;
+      line-height: 1;
+    }
+
+    /* AI Business Insight Callout */
+    .toss-insight-card {
+      background-color: var(--toss-blue-subtle);
+      border-left: 3px solid var(--toss-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 12px 16px;
+    }
+
+    .insight-pill {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--toss-blue);
+      margin-bottom: 6px;
+    }
+
+    .insight-description {
+      font-size: 0.91rem;
+      font-weight: 600;
+      color: var(--text-header);
+      line-height: 1.58;
+    }
+
+    .card-footer-action {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 2px;
+    }
+
+    .toss-secondary-btn {
+      border: 1px solid var(--border-subtle);
+      background-color: var(--surface-inset);
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: var(--spring-physics);
+      font-family: inherit;
+    }
+
+    .toss-secondary-btn:hover {
+      background-color: var(--surface-hover);
+      color: var(--text-header);
+    }
+
+    .toss-secondary-btn.copied {
+      background-color: var(--toss-blue);
+      color: #ffffff;
+      border-color: var(--toss-blue);
+    }
+
+    .reading-time {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* No-Results State */
+    .toss-empty-state {
+      width: 100%;
+      max-width: var(--content-max-width);
+      background-color: var(--surface-card);
+      border: 1px dashed var(--border-strong);
+      border-radius: var(--radius-card);
+      padding: 48px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 12px;
+    }
+
+    .empty-icon {
+      font-size: 2.2rem;
+      opacity: 0.8;
+    }
+
+    .empty-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text-header);
+    }
+
+    .empty-desc {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    /* ==========================================================================
+       Level 4: Metadata Panel (System Indicators & Publisher Status)
+       ========================================================================== */
+    .metadata-panel {
+      width: var(--metadata-width);
+      min-width: var(--metadata-width);
+      height: 100%;
+      background-color: var(--bg-sidebar);
+      border-left: 1px solid var(--border-subtle);
+      padding: 16px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      overflow-y: auto;
+      flex-shrink: 0;
+    }
+
+    .meta-group-title {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .metric-card {
+      background-color: var(--surface-card);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .metric-label {
+      font-size: 0.73rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .metric-value {
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: var(--toss-blue);
+      letter-spacing: -0.02em;
+    }
+
+    .metric-subtext {
+      font-size: 0.68rem;
+      color: var(--text-muted);
+    }
+
+    .feed-status-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 10px;
+      border-radius: 8px;
+      background-color: var(--surface-card);
+      font-size: 0.78rem;
+      font-weight: 700;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .status-source-name {
+      color: var(--text-header);
+    }
+
+    .status-badge-active {
+      color: #23a55a;
+      font-size: 0.73rem;
+      font-weight: 700;
+    }
+
+    .status-badge-warning {
+      color: #f59f00;
+      font-size: 0.73rem;
+      font-weight: 700;
+    }
+
+    .status-badge-error {
+      color: #fa5252;
+      font-size: 0.73rem;
+      font-weight: 700;
+    }
+
+    /* Toast Notification */
+    .toss-toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background-color: #191f28;
+      color: #ffffff;
+      padding: 10px 18px;
+      border-radius: var(--radius-pill);
+      font-size: 0.85rem;
+      font-weight: 700;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+      z-index: 100;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    [data-theme="light"] .toss-toast {
+      background-color: #333d4b;
+    }
+
+    .toss-toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* Drawer Backdrop for Mobile */
+    .drawer-backdrop {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.45);
+      z-index: 24;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    /* ==========================================================================
+       Responsive Breakpoints
+       ========================================================================== */
+    @media (max-width: 1180px) {
+      .metadata-panel {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .global-rail {
+        display: none;
+      }
+      .mobile-menu-btn {
+        display: flex;
+      }
+      .context-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        transform: translateX(-100%);
+        box-shadow: 4px 0 24px rgba(0, 0, 0, 0.4);
+      }
+      .context-sidebar.open {
+        transform: translateX(0);
+      }
+      .drawer-backdrop.open {
+        display: block;
+        opacity: 1;
+      }
+      .messages-feed {
+        padding: 14px 14px 40px 14px;
+        gap: 14px;
+      }
+      .feed-hero {
+        padding: 16px 16px;
+      }
+      .hero-title {
+        font-size: 1.35rem;
+      }
+      .toss-card {
+        padding: 18px 16px;
+        border-radius: 16px;
+      }
+      .card-headline {
+        font-size: 1.12rem;
+      }
+      .topic-desc {
+        display: none;
+      }
+    }
+
+    /* Accessibility: Reduced Motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="discord-app-shell">
+
+    <!-- Level 1: Global Rail (Deterministic Home / Reset Control) -->
+    <nav class="global-rail" aria-label="글로벌 홈 네비게이션">
+      <button type="button" class="rail-btn active" id="homeRailBtn" title="전체 브리핑 피드 (초기화)" aria-label="전체 브리핑 피드로 이동" onclick="resetAllFilters(this)">
+        ⚡
+      </button>
+    </nav>
+
+    <!-- Mobile Drawer Backdrop -->
+    <div class="drawer-backdrop" id="drawerBackdrop" onclick="closeMobileMenu()" aria-hidden="true"></div>
+
+    <!-- Level 2: Context Sidebar (Search + Channels) -->
+    <aside class="context-sidebar" aria-label="채널 네비게이션">
+      <div class="server-header">
+        <span class="server-badge">⚡ Tech Intel HQ</span>
+        <span style="font-size: 0.8rem; color: var(--toss-blue);" aria-hidden="true">✔</span>
+      </div>
+
+      <!-- Search Input -->
+      <div class="sidebar-search-box">
+        <div class="search-input-wrapper">
+          <span class="search-icon" aria-hidden="true">🔍</span>
+          <input
+            type="search"
+            id="searchInput"
+            class="toss-search-input"
+            placeholder="기사 및 키워드 검색..."
+            aria-label="기사 실시간 검색"
+            autocomplete="off"
+            oninput="handleSearch(this.value)"
+          >
+          <button type="button" id="searchClearBtn" class="search-clear-btn" aria-label="검색어 초기화" onclick="clearSearch()" style="display: none;">✕</button>
+        </div>
+      </div>
+
+      <div class="channels-scroll">
+        <div class="channel-category">데일리 피드</div>
+        <button type="button" class="channel-item active" data-channel="all" onclick="filterFeed('all', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge all">⚡</span>
+            <span class="channel-name">오늘의 브리핑</span>
+          </div>
+          <span class="channel-count">5</span>
+        </button>
+
+        <div class="channel-category">타겟 매체 채널</div>
+        <button type="button" class="channel-item" data-channel="verge" onclick="filterFeed('verge', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge verge">V</span>
+            <span class="channel-name">The Verge</span>
+          </div>
+          <span class="channel-count" id="channel-count-verge">5</span>
+        </button>
+        <button type="button" class="channel-item" data-channel="techcrunch" onclick="filterFeed('techcrunch', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge techcrunch">TC</span>
+            <span class="channel-name">TechCrunch</span>
+          </div>
+          <span class="channel-count" id="channel-count-techcrunch">0</span>
+        </button>
+        <button type="button" class="channel-item" data-channel="arstechnica" onclick="filterFeed('arstechnica', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge arstechnica">AT</span>
+            <span class="channel-name">Ars Technica</span>
+          </div>
+          <span class="channel-count" id="channel-count-arstechnica">0</span>
+        </button>
+        <button type="button" class="channel-item" data-channel="mit" onclick="filterFeed('mit', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge mit">MIT</span>
+            <span class="channel-name">MIT Tech Review</span>
+          </div>
+          <span class="channel-count" id="channel-count-mit">0</span>
+        </button>
+        <button type="button" class="channel-item" data-channel="theinformation" onclick="filterFeed('theinformation', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge theinformation">TI</span>
+            <span class="channel-name">The Information</span>
+          </div>
+          <span class="channel-count" id="channel-count-theinformation">0</span>
+        </button>
+      </div>
+
+      <div class="sidebar-user-tray">
+        <div class="user-info-box">
+          <div class="status-dot" aria-hidden="true"></div>
+          <div>
+            <div class="user-name-label">Zero-Capital Agent</div>
+            <div class="user-sub-label">GitHub Actions 파이프라인</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Level 3: Primary Workspace -->
+    <main class="chat-workspace">
+      <header class="workspace-header">
+        <div class="header-left">
+          <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="채널 메뉴 열기" aria-expanded="false" onclick="toggleMobileMenu()">
+            ☰
+          </button>
+          <div class="topic-pill">
+            <span id="headerTopicTitle">오늘의 브리핑</span>
+            <div class="topic-divider" aria-hidden="true"></div>
+            <span class="topic-desc">주요 테크 소식과 비즈니스 시사점을 한눈에.</span>
+          </div>
+        </div>
+        <div class="header-controls">
+          <button type="button" class="theme-toggle-btn" onclick="toggleTheme()" id="themeBtn" aria-label="다크/라이트 테마 전환">🌓 테마 전환</button>
+        </div>
+      </header>
+
+      <section class="messages-feed" id="feedContainer">
+        <!-- Editorial Briefing Header -->
+        <div class="feed-hero">
+          <div class="hero-badge-row">
+            <span class="toss-tag">DAILY INTEL</span>
+            <span class="hero-date-badge">2026-10-15</span>
+            <span class="hero-count-badge" id="heroArticleCount">총 5개 기사 큐레이션</span>
+          </div>
+          <h1 class="hero-title">Daily Tech Insights</h1>
+          <p class="hero-subtitle">
+            글로벌 5대 테크 미디어의 핵심 보도와 비즈니스 시사점을 AI로 정밀 분석하여 전해드립니다.
+          </p>
+        </div>
+
+        <!-- No Results Card -->
+        <div id="noResultsCard" class="toss-empty-state" style="display: none;">
+          <div class="empty-icon" aria-hidden="true">🔍</div>
+          <h3 class="empty-title">일치하는 기사가 없습니다</h3>
+          <p class="empty-desc">검색어를 변경하거나 선택된 매체 필터를 확인해 주세요.</p>
+          <button type="button" class="toss-pill-link" onclick="resetAllFilters()">전체 브리핑 보기</button>
+        </div>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="verge" data-search="미국 8개 주정부, &quot;아동 안전 위협·수익 우선&quot; 이유로 openai에 동시다발 소송 the verge 아이오와, 캔자스 등 미국 8개 주가 openai를 상대로 아동에게 유해한 영향을 미치고 안전성을 허위 광고했다며 개별 소송을 제기했습니다. 소송단은 openai가 서비스의 위험성을 인지하고도 안전 대책보다 기업 수익을 앞세워 미성년자 보호 의무를 소홀히 했다고 주장했습니다. 생성형 ai 서비스의 아동·청소년 보호 조치와 윤리적 책임에 대한 미국 주정부 차원의 법적 제재가 본격화되는 양상입니다. ai 모델의 안전성 검증과 미성년자 보호 관련 컴플라이언스 비용이 급증할 것으로 예상되며, 플랫폼 신뢰도와 규제 준수 여부가 기업 가치 평가의 핵심 쟁점으로 부상하고 있습니다." id="article-1">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar verge" aria-hidden="true">V</span>
+              <div class="media-meta">
+                <span class="media-name">The Verge</span>
+                <span class="channel-slug">#verge-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="미국 8개 주정부, &quot;아동 안전 위협·수익 우선&quot; 이유로 OpenAI에 동시다발 소송 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">미국 8개 주정부, &quot;아동 안전 위협·수익 우선&quot; 이유로 OpenAI에 동시다발 소송</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">아이오와, 캔자스 등 미국 8개 주가 OpenAI를 상대로 아동에게 유해한 영향을 미치고 안전성을 허위 광고했다며 개별 소송을 제기했습니다.</li>
+              <li class="summary-bullet">소송단은 OpenAI가 서비스의 위험성을 인지하고도 안전 대책보다 기업 수익을 앞세워 미성년자 보호 의무를 소홀히 했다고 주장했습니다.</li>
+              <li class="summary-bullet">생성형 AI 서비스의 아동·청소년 보호 조치와 윤리적 책임에 대한 미국 주정부 차원의 법적 제재가 본격화되는 양상입니다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">AI 모델의 안전성 검증과 미성년자 보호 관련 컴플라이언스 비용이 급증할 것으로 예상되며, 플랫폼 신뢰도와 규제 준수 여부가 기업 가치 평가의 핵심 쟁점으로 부상하고 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 61초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="verge" data-search="독주 체제 흔들리는 ai 시장, 구글·메타의 반격으로 다시 불붙은 기술 패권 경쟁 the verge 오픈ai와 앤트로픽의 양강 체제로 굳어지던 글로벌 생성형 ai 시장의 경쟁 구도가 다시 급변하고 있습니다. 거액 투자에도 뒤처졌다는 평가를 받던 구글과 메타 등 주요 빅테크 기업들이 반격을 본격화하며 선두권 추격에 속도를 내고 있습니다. 차세대 초거대 언어모델(llm) 출시와 지속적인 기술 고도화로 인해 최상위 기업 간의 성능 격차가 다시 좁혀지는 추세입니다. 선도 모델 간의 순수 성능 격차가 축소되면서, 향후 시장 주도권은 단순 벤치마크 점수보다 엔터프라이즈 생태계 통합 역량과 실질적인 상용화 roi 창출 여부에 의해 결정될 전망입니다." id="article-2">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar verge" aria-hidden="true">V</span>
+              <div class="media-meta">
+                <span class="media-name">The Verge</span>
+                <span class="channel-slug">#verge-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theverge.com/ai-artificial-intelligence/1011311/the-ai-race-is-back-on" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="독주 체제 흔들리는 AI 시장, 구글·메타의 반격으로 다시 불붙은 기술 패권 경쟁 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">독주 체제 흔들리는 AI 시장, 구글·메타의 반격으로 다시 불붙은 기술 패권 경쟁</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">오픈AI와 앤트로픽의 양강 체제로 굳어지던 글로벌 생성형 AI 시장의 경쟁 구도가 다시 급변하고 있습니다.</li>
+              <li class="summary-bullet">거액 투자에도 뒤처졌다는 평가를 받던 구글과 메타 등 주요 빅테크 기업들이 반격을 본격화하며 선두권 추격에 속도를 내고 있습니다.</li>
+              <li class="summary-bullet">차세대 초거대 언어모델(LLM) 출시와 지속적인 기술 고도화로 인해 최상위 기업 간의 성능 격차가 다시 좁혀지는 추세입니다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">선도 모델 간의 순수 성능 격차가 축소되면서, 향후 시장 주도권은 단순 벤치마크 점수보다 엔터프라이즈 생태계 통합 역량과 실질적인 상용화 ROI 창출 여부에 의해 결정될 전망입니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theverge.com/ai-artificial-intelligence/1011311/the-ai-race-is-back-on', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 58초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="verge" data-search="ms와 일본 경찰, 10억 건 이상 사기 문자 유포한 글로벌 피싱 네트워크 전격 적발 the verge 마이크로소프트와 일본 경찰청이 공조 수사를 통해 전 세계에 10억 건 이상의 피싱 스팸 문자를 살포한 사이버 범죄 조직의 인프라를 해체했습니다. 적발된 네트워크는 가짜 주차 위반 통지나 택배 배송 안내 등 일상적인 사칭 문자를 대량 유포해 온 피싱 마켓플레이스 거점으로 확인되었습니다. 글로벌 빅테크의 위협 인텔리전스 추적 역량과 국제 사법기관의 신속한 공조가 결합해 대규모 사이버 범죄망을 무력화한 성공 사례로 꼽힙니다. 글로벌 사이버 범죄가 고도화된 상업적 서비스 형태로 진화함에 따라, 빅테크의 보안 데이터와 국가 기관 간의 민관 협력 공조 체계가 기업의 보안 인프라 방어에 필수적인 축으로 자리잡고 있습니다." id="article-3">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar verge" aria-hidden="true">V</span>
+              <div class="media-meta">
+                <span class="media-name">The Verge</span>
+                <span class="channel-slug">#verge-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theverge.com/tech/1011487/microsoft-scam-messages-marketplace-takedown" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="MS와 일본 경찰, 10억 건 이상 사기 문자 유포한 글로벌 피싱 네트워크 전격 적발 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">MS와 일본 경찰, 10억 건 이상 사기 문자 유포한 글로벌 피싱 네트워크 전격 적발</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">마이크로소프트와 일본 경찰청이 공조 수사를 통해 전 세계에 10억 건 이상의 피싱 스팸 문자를 살포한 사이버 범죄 조직의 인프라를 해체했습니다.</li>
+              <li class="summary-bullet">적발된 네트워크는 가짜 주차 위반 통지나 택배 배송 안내 등 일상적인 사칭 문자를 대량 유포해 온 피싱 마켓플레이스 거점으로 확인되었습니다.</li>
+              <li class="summary-bullet">글로벌 빅테크의 위협 인텔리전스 추적 역량과 국제 사법기관의 신속한 공조가 결합해 대규모 사이버 범죄망을 무력화한 성공 사례로 꼽힙니다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">글로벌 사이버 범죄가 고도화된 상업적 서비스 형태로 진화함에 따라, 빅테크의 보안 데이터와 국가 기관 간의 민관 협력 공조 체계가 기업의 보안 인프라 방어에 필수적인 축으로 자리잡고 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theverge.com/tech/1011487/microsoft-scam-messages-marketplace-takedown', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 65초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="verge" data-search="파산 절차 돌입한 캐릭터닷ai, 방대한 이용자 대화 데이터 매각 우려에 美 당국 개입 the verge ai 챗봇 기업 캐릭터닷ai(character.ai)가 파산 절차를 밟게 되면서, 자산 매각 과정 중 이용자 개인정보 처리 문제가 수면 위로 떠올랐습니다. 뉴욕주를 포함한 미국 40개 주 법무장관은 파산 관재 절차에서 이용자 데이터가 무단 처분되지 않도록 소비자 보호 규제를 적용하는 법적 의견서를 제출했습니다. 수억 건에 달하는 민감한 개인 대화 로그와 프롬프트 데이터가 규제 없이 제3자에게 매각될 수 있다는 우려에 정부 당국이 선제적 제동을 걸었습니다. ai 기업의 파산 시 서비스 데이터 자산의 매각 한계와 개인정보 귀속권에 대한 법적 선례가 수립될 것으로 보이며, 향후 ai 스타트업 m&amp;a 및 실사(due diligence)에서 데이터 리스크 검증 기준이 한층 엄격해질 것입니다." id="article-4">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar verge" aria-hidden="true">V</span>
+              <div class="media-meta">
+                <span class="media-name">The Verge</span>
+                <span class="channel-slug">#verge-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="파산 절차 돌입한 캐릭터닷AI, 방대한 이용자 대화 데이터 매각 우려에 美 당국 개입 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">파산 절차 돌입한 캐릭터닷AI, 방대한 이용자 대화 데이터 매각 우려에 美 당국 개입</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">AI 챗봇 기업 캐릭터닷AI(Character.AI)가 파산 절차를 밟게 되면서, 자산 매각 과정 중 이용자 개인정보 처리 문제가 수면 위로 떠올랐습니다.</li>
+              <li class="summary-bullet">뉴욕주를 포함한 미국 40개 주 법무장관은 파산 관재 절차에서 이용자 데이터가 무단 처분되지 않도록 소비자 보호 규제를 적용하는 법적 의견서를 제출했습니다.</li>
+              <li class="summary-bullet">수억 건에 달하는 민감한 개인 대화 로그와 프롬프트 데이터가 규제 없이 제3자에게 매각될 수 있다는 우려에 정부 당국이 선제적 제동을 걸었습니다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">AI 기업의 파산 시 서비스 데이터 자산의 매각 한계와 개인정보 귀속권에 대한 법적 선례가 수립될 것으로 보이며, 향후 AI 스타트업 M&amp;A 및 실사(Due Diligence)에서 데이터 리스크 검증 기준이 한층 엄격해질 것입니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theverge.com/policy/1011417/new-york-ag-characterai-bankruptcy', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 72초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="verge" data-search="맥킨지, 채용 면접에 &#x27;가상 ai 고객&#x27; 도입… 실전 대응력 직접 검증 the verge 글로벌 컨설팅 기업 맥킨지앤컴퍼니가 신입 컨설턴트 채용 과정에 ai 기반 가상 고객과 10분간 대화하는 실기 면접을 도입했습니다. 해당 ai 시뮬레이션은 맥킨지 컨설턴트들이 현업에서 실제로 마주하는 고객 응대 시나리오의 약 80%를 재현하도록 설계되었습니다. 지원자의 커뮤니케이션 능력, 문제 해결력, 돌발 상황 대처 능력 등 현장 적합성을 정량적이고 객관적으로 측정하는 데 초점을 맞추고 있습니다. 기존의 정형화된 면접을 넘어 ai 시뮬레이션을 통한 인터랙티브 실무 역량 평가가 확산됨에 따라, 채용 및 hr 테크 분야에서 b2b 맞춤형 ai 롤플레잉 솔루션 시장이 가파르게 성장할 것으로 보입니다." id="article-5">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar verge" aria-hidden="true">V</span>
+              <div class="media-meta">
+                <span class="media-name">The Verge</span>
+                <span class="channel-slug">#verge-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theverge.com/news/1011654/mckinsey-ai-client-interview" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="맥킨지, 채용 면접에 &#x27;가상 AI 고객&#x27; 도입… 실전 대응력 직접 검증 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">맥킨지, 채용 면접에 &#x27;가상 AI 고객&#x27; 도입… 실전 대응력 직접 검증</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">글로벌 컨설팅 기업 맥킨지앤컴퍼니가 신입 컨설턴트 채용 과정에 AI 기반 가상 고객과 10분간 대화하는 실기 면접을 도입했습니다.</li>
+              <li class="summary-bullet">해당 AI 시뮬레이션은 맥킨지 컨설턴트들이 현업에서 실제로 마주하는 고객 응대 시나리오의 약 80%를 재현하도록 설계되었습니다.</li>
+              <li class="summary-bullet">지원자의 커뮤니케이션 능력, 문제 해결력, 돌발 상황 대처 능력 등 현장 적합성을 정량적이고 객관적으로 측정하는 데 초점을 맞추고 있습니다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">기존의 정형화된 면접을 넘어 AI 시뮬레이션을 통한 인터랙티브 실무 역량 평가가 확산됨에 따라, 채용 및 HR 테크 분야에서 B2B 맞춤형 AI 롤플레잉 솔루션 시장이 가파르게 성장할 것으로 보입니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theverge.com/news/1011654/mckinsey-ai-client-interview', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 62초 (예상)</span>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- Level 4: Metadata Panel (Desktop Right Rail) -->
+    <aside class="metadata-panel" aria-label="시스템 지표 패널">
+      <div class="meta-group-title">시스템 지표</div>
+      <div class="metric-card">
+        <span class="metric-label">총 큐레이션 기사</span>
+        <span class="metric-value" id="metaVisibleCount">5개</span>
+        <span class="metric-subtext">기준 일자: 2026-10-15</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">인프라 운영 비용</span>
+        <span class="metric-value">$0.00</span>
+        <span class="metric-subtext">Zero-Capital 무인 아키텍처</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">예상 리딩 소요시간</span>
+        <span class="metric-value">약 5분</span>
+        <span class="metric-subtext">5개 기사 정독 기준</span>
+      </div>
+
+      <div class="meta-group-title">매체별 기사 현황</div>
+      <div class="feed-status-item">
+        <span class="status-source-name">The Verge</span>
+        <span class="status-badge-active" title="5/5건 큐레이션 완료">5/5건 완료 🟢</span>
+      </div>
+      <div class="feed-status-item">
+        <span class="status-source-name">TechCrunch</span>
+        <span class="status-badge-error" title="0/5건 (기사 없음)">0/5건 · 기사 없음 🔴</span>
+      </div>
+      <div class="feed-status-item">
+        <span class="status-source-name">Ars Technica</span>
+        <span class="status-badge-error" title="0/5건 (기사 없음)">0/5건 · 기사 없음 🔴</span>
+      </div>
+      <div class="feed-status-item">
+        <span class="status-source-name">MIT Tech Review</span>
+        <span class="status-badge-error" title="0/5건 (기사 없음)">0/5건 · 기사 없음 🔴</span>
+      </div>
+      <div class="feed-status-item">
+        <span class="status-source-name">The Information</span>
+        <span class="status-badge-error" title="0/5건 (기사 없음)">0/5건 · 기사 없음 🔴</span>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="tossToast" class="toss-toast" role="status" aria-live="polite">
+    원문 기사 링크가 복사되었습니다.
+  </div>
+
+  <script>
+    // State management
+    let activeChannel = 'all';
+    let searchQuery = '';
+
+    // Filter & Search composability
+    function applyFilters() {
+      const cards = document.querySelectorAll('.toss-card');
+      let visibleCount = 0;
+      const q = searchQuery.trim().toLowerCase();
+
+      cards.forEach(card => {
+        const mediaSlug = card.getAttribute('data-media');
+        const matchesChannel = (activeChannel === 'all' || mediaSlug === activeChannel);
+
+        let matchesQuery = true;
+        if (q.length > 0) {
+          const searchData = card.getAttribute('data-search') || '';
+          matchesQuery = searchData.includes(q);
+        }
+
+        if (matchesChannel && matchesQuery) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Update visible counter
+      const visibleCounter = document.getElementById('metaVisibleCount');
+      if (visibleCounter) {
+        if (activeChannel === 'all' && q.length === 0) {
+          visibleCounter.textContent = `${cards.length}개`;
+        } else {
+          visibleCounter.textContent = `${visibleCount}개 / ${cards.length}개`;
+        }
+      }
+
+      // Toggle empty state
+      const emptyState = document.getElementById('noResultsCard');
+      if (emptyState) {
+        emptyState.style.display = visibleCount === 0 ? 'flex' : 'none';
+      }
+    }
+
+    function filterFeed(slug, element) {
+      activeChannel = slug;
+
+      // Update channel active styling
+      document.querySelectorAll('.channel-item').forEach(item => item.classList.remove('active'));
+      if (element) {
+        element.classList.add('active');
+      } else {
+        const target = document.querySelector(`.channel-item[data-channel="${slug}"]`);
+        if (target) target.classList.add('active');
+      }
+
+      // Update header topic title
+      const topicEl = document.getElementById('headerTopicTitle');
+      if (topicEl) {
+        if (slug === 'all') {
+          topicEl.textContent = '오늘의 브리핑';
+        } else {
+          const nameEl = element ? element.querySelector('.channel-name') : null;
+          topicEl.textContent = nameEl ? nameEl.textContent : slug;
+        }
+      }
+
+      applyFilters();
+      closeMobileMenu();
+
+      // Scroll to top
+      const feed = document.getElementById('feedContainer');
+      if (feed) feed.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function handleSearch(val) {
+      searchQuery = val;
+      const clearBtn = document.getElementById('searchClearBtn');
+      if (clearBtn) {
+        clearBtn.style.display = val.length > 0 ? 'flex' : 'none';
+      }
+      applyFilters();
+    }
+
+    function clearSearch() {
+      const input = document.getElementById('searchInput');
+      if (input) {
+        input.value = '';
+        input.focus();
+      }
+      handleSearch('');
+    }
+
+    function resetAllFilters(element) {
+      activeChannel = 'all';
+      searchQuery = '';
+      const input = document.getElementById('searchInput');
+      if (input) input.value = '';
+      const clearBtn = document.getElementById('searchClearBtn');
+      if (clearBtn) clearBtn.style.display = 'none';
+
+      document.querySelectorAll('.channel-item').forEach(item => {
+        if (item.getAttribute('data-channel') === 'all') {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+
+      const topicEl = document.getElementById('headerTopicTitle');
+      if (topicEl) topicEl.textContent = '오늘의 브리핑';
+
+      const homeBtn = document.getElementById('homeRailBtn');
+      if (homeBtn) homeBtn.classList.add('active');
+
+      applyFilters();
+      closeMobileMenu();
+
+      const feed = document.getElementById('feedContainer');
+      if (feed) feed.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Clipboard & Toast Feedback
+    function copyArticleLink(url, btn) {
+      const originalText = btn.innerHTML;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(() => {
+          showToast('원문 기사 링크가 복사되었습니다.');
+          btn.innerHTML = '✓ 복사 완료';
+          btn.classList.add('copied');
+          setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.classList.remove('copied');
+          }, 2000);
+        }).catch(() => {
+          fallbackCopy(url, btn, originalText);
+        });
+      } else {
+        fallbackCopy(url, btn, originalText);
+      }
+    }
+
+    function fallbackCopy(url, btn, originalText) {
+      const ta = document.createElement('textarea');
+      ta.value = url;
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        showToast('원문 기사 링크가 복사되었습니다.');
+        btn.innerHTML = '✓ 복사 완료';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.classList.remove('copied');
+        }, 2000);
+      } catch (e) {
+        alert('링크 복사에 실패했습니다.');
+      }
+      document.body.removeChild(ta);
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('tossToast');
+      if (!toast) return;
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2400);
+    }
+
+    // Mobile Drawer Controls
+    function toggleMobileMenu() {
+      const sidebar = document.querySelector('.context-sidebar');
+      const backdrop = document.getElementById('drawerBackdrop');
+      const menuBtn = document.getElementById('mobileMenuBtn');
+      if (!sidebar) return;
+      const isOpen = sidebar.classList.toggle('open');
+      if (backdrop) backdrop.classList.toggle('open', isOpen);
+      if (menuBtn) menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    }
+
+    function closeMobileMenu() {
+      const sidebar = document.querySelector('.context-sidebar');
+      const backdrop = document.getElementById('drawerBackdrop');
+      const menuBtn = document.getElementById('mobileMenuBtn');
+      if (sidebar) sidebar.classList.remove('open');
+      if (backdrop) backdrop.classList.remove('open');
+      if (menuBtn) menuBtn.setAttribute('aria-expanded', 'false');
+    }
+
+    // Keyboard accessibility
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeMobileMenu();
+        if (searchQuery.length > 0) clearSearch();
+      }
+    });
+
+    // Theme Management with Persistence
+    function initTheme() {
+      const saved = localStorage.getItem('daily_intel_theme');
+      if (saved === 'dark' || saved === 'light') {
+        setTheme(saved);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+        setTheme('light');
+      } else {
+        setTheme('dark');
+      }
+    }
+
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      try { localStorage.setItem('daily_intel_theme', theme); } catch(e) {}
+      const themeBtn = document.getElementById('themeBtn');
+      if (themeBtn) {
+        themeBtn.textContent = theme === 'dark' ? '☀️ 라이트 모드' : '🌙 다크 모드';
+      }
+    }
+
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    }
+
+    // Run on load
+    initTheme();
+  </script>
+</body>
+</html>
