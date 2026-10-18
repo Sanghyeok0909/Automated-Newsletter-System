@@ -1,0 +1,2074 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Daily Tech Insights: 2026-10-19 - 글로벌 5대 테크 미디어 핵심 큐레이션 및 AI 비즈니스 인사이트">
+  <title>Daily Tech Insights | 2026-10-19</title>
+  <style>
+    /* ==========================================================================
+       Design System Tokens (Discord Macro-Structure + Toss Tactile Clarity)
+       Pure Vanilla CSS3 / Zero Dependencies / High Accessibility
+       ========================================================================== */
+    :root {
+      --toss-blue: #3182f6;
+      --toss-blue-hover: #1b64da;
+      --toss-blue-subtle: rgba(49, 130, 246, 0.12);
+      --toss-blue-glow: rgba(49, 130, 246, 0.28);
+
+      --rail-width: 58px;
+      --sidebar-width: 232px;
+      --metadata-width: 260px;
+      --content-max-width: 860px;
+
+      /* Dark Theme (Default) */
+      --bg-app: #141518;
+      --bg-rail: #191a1d;
+      --bg-sidebar: #1e2024;
+      --bg-workspace: #25272c;
+      --surface-card: #2c2e35;
+      --surface-inset: #1a1b1f;
+      --surface-hover: #34373f;
+      --surface-active: #3c4049;
+
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-strong: rgba(255, 255, 255, 0.14);
+      --border-focus: rgba(49, 130, 246, 0.6);
+
+      --text-header: #f3f5f8;
+      --text-normal: #d1d5dd;
+      --text-muted: #8c93a0;
+      --text-link: #4593fc;
+
+      --shadow-card: 0 4px 18px rgba(0, 0, 0, 0.22);
+      --shadow-hover: 0 10px 32px rgba(0, 0, 0, 0.36);
+
+      --radius-card: 20px;
+      --radius-md: 14px;
+      --radius-sm: 10px;
+      --radius-pill: 9999px;
+
+      --font-stack: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      --spring-physics: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      --spring-tap: transform 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-app: #f2f4f7;
+      --bg-rail: #e4e7ed;
+      --bg-sidebar: #edf0f5;
+      --bg-workspace: #f8f9fb;
+      --surface-card: #ffffff;
+      --surface-inset: #f2f4f7;
+      --surface-hover: #e6ebf2;
+      --surface-active: #dbe1eb;
+
+      --border-subtle: rgba(0, 0, 0, 0.07);
+      --border-strong: rgba(0, 0, 0, 0.13);
+      --border-focus: rgba(49, 130, 246, 0.7);
+
+      --text-header: #191f28;
+      --text-normal: #333d4b;
+      --text-muted: #6b7684;
+      --text-link: #3182f6;
+
+      --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.06);
+      --shadow-hover: 0 8px 26px rgba(0, 0, 0, 0.12);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html, body {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      font-family: var(--font-stack);
+      background-color: var(--bg-app);
+      color: var(--text-normal);
+      line-height: 1.6;
+      word-break: keep-all;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Global App Shell Layout */
+    .discord-app-shell {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    /* ==========================================================================
+       Level 1: Global Rail (Streamlined Brand Home Control)
+       ========================================================================== */
+    .global-rail {
+      width: var(--rail-width);
+      min-width: var(--rail-width);
+      height: 100%;
+      background-color: var(--bg-rail);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 14px 0;
+      border-right: 1px solid var(--border-subtle);
+      z-index: 30;
+      flex-shrink: 0;
+    }
+
+    .rail-btn {
+      position: relative;
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      background-color: var(--toss-blue);
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      transition: var(--spring-physics);
+      box-shadow: 0 4px 14px var(--toss-blue-glow);
+    }
+
+    .rail-btn:hover {
+      transform: scale(1.06);
+      background-color: var(--toss-blue-hover);
+    }
+
+    .rail-btn:active {
+      transform: scale(0.94);
+    }
+
+    .rail-btn:focus-visible {
+      outline: 2px solid #ffffff;
+      outline-offset: 2px;
+    }
+
+    .rail-btn.active::before {
+      content: "";
+      position: absolute;
+      left: -8px;
+      width: 4px;
+      height: 28px;
+      border-radius: 0 4px 4px 0;
+      background-color: #ffffff;
+    }
+
+    /* ==========================================================================
+       Level 2: Context Sidebar (Search + Channels Navigation)
+       ========================================================================== */
+    .context-sidebar {
+      width: var(--sidebar-width);
+      min-width: var(--sidebar-width);
+      height: 100%;
+      background-color: var(--bg-sidebar);
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid var(--border-subtle);
+      z-index: 25;
+      flex-shrink: 0;
+      transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .server-header {
+      height: 52px;
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-subtle);
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: var(--text-header);
+    }
+
+    .server-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Sidebar Search Input */
+    .sidebar-search-box {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .search-input-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 10px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .toss-search-input {
+      width: 100%;
+      height: 34px;
+      padding: 0 28px 0 28px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+      background-color: var(--surface-inset);
+      color: var(--text-header);
+      font-size: 0.82rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--spring-physics);
+    }
+
+    .toss-search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 2px var(--toss-blue-subtle);
+    }
+
+    .search-clear-btn {
+      position: absolute;
+      right: 6px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: none;
+      background-color: var(--surface-hover);
+      color: var(--text-muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      transition: var(--spring-physics);
+    }
+
+    .search-clear-btn:hover {
+      color: var(--text-header);
+      background-color: var(--surface-active);
+    }
+
+    .channels-scroll {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .channel-category {
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      padding: 10px 8px 4px 8px;
+    }
+
+    .channel-item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 10px;
+      border-radius: 10px;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      transition: var(--spring-physics);
+      text-align: left;
+      font-family: inherit;
+    }
+
+    .channel-item:hover {
+      background-color: var(--surface-hover);
+      color: var(--text-header);
+    }
+
+    .channel-item.active {
+      background-color: var(--surface-active);
+      color: var(--text-header);
+      font-weight: 700;
+    }
+
+    .channel-item:focus-visible {
+      outline: 2px solid var(--toss-blue);
+      outline-offset: 1px;
+    }
+
+    .channel-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .channel-mark-badge {
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.68rem;
+      font-weight: 800;
+      color: #ffffff;
+      background-color: var(--toss-blue);
+    }
+    .channel-mark-badge.all { background-color: var(--toss-blue); }
+    .channel-mark-badge.verge { background-color: #e0005a; }
+    .channel-mark-badge.techcrunch { background-color: #029924; }
+    .channel-mark-badge.arstechnica { background-color: #ff4e00; }
+    .channel-mark-badge.mit { background-color: #333333; }
+    .channel-mark-badge.theinformation { background-color: #0d253f; }
+
+    .channel-name {
+      font-size: 0.86rem;
+      letter-spacing: -0.01em;
+    }
+
+    .channel-count {
+      font-size: 0.72rem;
+      background-color: var(--surface-inset);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    .channel-item.active .channel-count {
+      color: var(--text-header);
+      background-color: var(--surface-card);
+    }
+
+    .sidebar-user-tray {
+      height: 52px;
+      background-color: var(--bg-rail);
+      padding: 0 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .user-info-box {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .status-dot {
+      width: 9px;
+      height: 9px;
+      background-color: #23a55a;
+      border-radius: 50%;
+      box-shadow: 0 0 6px #23a55a;
+    }
+
+    .user-name-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-header);
+      line-height: 1.2;
+    }
+
+    .user-sub-label {
+      font-size: 0.68rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       Level 3: Primary Workspace (Briefing Header + Article Cards)
+       ========================================================================== */
+    .chat-workspace {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bg-workspace);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .workspace-header {
+      height: 52px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-subtle);
+      background-color: var(--bg-workspace);
+      z-index: 15;
+      flex-shrink: 0;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      border: 1px solid var(--border-subtle);
+      background-color: var(--surface-card);
+      color: var(--text-header);
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    .topic-pill {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: var(--text-header);
+    }
+
+    .topic-divider {
+      width: 1px;
+      height: 14px;
+      background-color: var(--border-strong);
+    }
+
+    .topic-desc {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .theme-toggle-btn {
+      padding: 6px 12px;
+      border-radius: 10px;
+      background-color: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-normal);
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--spring-physics);
+      font-family: inherit;
+    }
+
+    .theme-toggle-btn:hover {
+      background-color: var(--surface-hover);
+      transform: translateY(-1px);
+    }
+
+    .theme-toggle-btn:focus-visible {
+      outline: 2px solid var(--toss-blue);
+      outline-offset: 1px;
+    }
+
+    /* Scrollable Feed Container */
+    .messages-feed {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px 24px 60px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+    }
+
+    /* Streamlined Editorial Briefing Header */
+    .feed-hero {
+      width: 100%;
+      max-width: var(--content-max-width);
+      background: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-card);
+      padding: 20px 22px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .hero-badge-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .toss-tag {
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: var(--radius-pill);
+      background-color: var(--toss-blue-subtle);
+      color: var(--toss-blue);
+      letter-spacing: 0.02em;
+    }
+
+    .hero-date-badge {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+
+    .hero-count-badge {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-left: auto;
+    }
+
+    .hero-title {
+      font-size: 1.55rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      color: var(--text-header);
+      margin-bottom: 6px;
+      line-height: 1.25;
+    }
+
+    .hero-subtitle {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       Toss Article Cards (Clean Hierarchy & Typography)
+       ========================================================================== */
+    .toss-card {
+      width: 100%;
+      max-width: var(--content-max-width);
+      background-color: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-card);
+      padding: 22px 24px;
+      box-shadow: var(--shadow-card);
+      transition: var(--spring-physics);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .toss-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--border-strong);
+    }
+
+    .card-top-rail {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .media-identity {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .media-avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      color: #ffffff;
+      font-size: 0.76rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      flex-shrink: 0;
+    }
+    .media-avatar.verge { background: linear-gradient(135deg, #e0005a, #fa2d60); }
+    .media-avatar.techcrunch { background: linear-gradient(135deg, #029924, #00d235); }
+    .media-avatar.arstechnica { background: linear-gradient(135deg, #ff4e00, #ff8100); }
+    .media-avatar.mit { background: linear-gradient(135deg, #222222, #444444); }
+    .media-avatar.theinformation { background: linear-gradient(135deg, #0d253f, #1b497a); }
+
+    .media-name {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--text-header);
+    }
+
+    .channel-slug {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .toss-pill-link {
+      font-size: 0.8rem;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      background-color: var(--toss-blue-subtle);
+      color: var(--toss-blue);
+      text-decoration: none;
+      transition: var(--spring-physics);
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .toss-pill-link:hover {
+      background-color: var(--toss-blue);
+      color: #ffffff;
+      transform: scale(1.03);
+    }
+
+    .toss-pill-link:focus-visible {
+      outline: 2px solid var(--toss-blue);
+      outline-offset: 2px;
+    }
+
+    .card-headline {
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      color: var(--text-header);
+      line-height: 1.4;
+    }
+
+    /* Inset Summary Box */
+    .toss-surface-box {
+      background-color: var(--surface-inset);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .section-badge {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .summary-bullet-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .summary-bullet {
+      position: relative;
+      padding-left: 16px;
+      font-size: 0.92rem;
+      color: var(--text-normal);
+      line-height: 1.58;
+    }
+
+    .summary-bullet::before {
+      content: "•";
+      position: absolute;
+      left: 2px;
+      color: var(--toss-blue);
+      font-weight: 900;
+      font-size: 1.15rem;
+      line-height: 1;
+    }
+
+    /* AI Business Insight Callout */
+    .toss-insight-card {
+      background-color: var(--toss-blue-subtle);
+      border-left: 3px solid var(--toss-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 12px 16px;
+    }
+
+    .insight-pill {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--toss-blue);
+      margin-bottom: 6px;
+    }
+
+    .insight-description {
+      font-size: 0.91rem;
+      font-weight: 600;
+      color: var(--text-header);
+      line-height: 1.58;
+    }
+
+    .card-footer-action {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 2px;
+    }
+
+    .toss-secondary-btn {
+      border: 1px solid var(--border-subtle);
+      background-color: var(--surface-inset);
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: var(--spring-physics);
+      font-family: inherit;
+    }
+
+    .toss-secondary-btn:hover {
+      background-color: var(--surface-hover);
+      color: var(--text-header);
+    }
+
+    .toss-secondary-btn.copied {
+      background-color: var(--toss-blue);
+      color: #ffffff;
+      border-color: var(--toss-blue);
+    }
+
+    .reading-time {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* No-Results State */
+    .toss-empty-state {
+      width: 100%;
+      max-width: var(--content-max-width);
+      background-color: var(--surface-card);
+      border: 1px dashed var(--border-strong);
+      border-radius: var(--radius-card);
+      padding: 48px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 12px;
+    }
+
+    .empty-icon {
+      font-size: 2.2rem;
+      opacity: 0.8;
+    }
+
+    .empty-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text-header);
+    }
+
+    .empty-desc {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    /* ==========================================================================
+       Level 4: Metadata Panel (System Indicators & Publisher Status)
+       ========================================================================== */
+    .metadata-panel {
+      width: var(--metadata-width);
+      min-width: var(--metadata-width);
+      height: 100%;
+      background-color: var(--bg-sidebar);
+      border-left: 1px solid var(--border-subtle);
+      padding: 16px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      overflow-y: auto;
+      flex-shrink: 0;
+    }
+
+    .meta-group-title {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .metric-card {
+      background-color: var(--surface-card);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .metric-label {
+      font-size: 0.73rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .metric-value {
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: var(--toss-blue);
+      letter-spacing: -0.02em;
+    }
+
+    .metric-subtext {
+      font-size: 0.68rem;
+      color: var(--text-muted);
+    }
+
+    .feed-status-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 10px;
+      border-radius: 8px;
+      background-color: var(--surface-card);
+      font-size: 0.78rem;
+      font-weight: 700;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .status-source-name {
+      color: var(--text-header);
+    }
+
+    .status-badge-active {
+      color: #23a55a;
+      font-size: 0.73rem;
+      font-weight: 700;
+    }
+
+    .status-badge-warning {
+      color: #f59f00;
+      font-size: 0.73rem;
+      font-weight: 700;
+    }
+
+    .status-badge-error {
+      color: #fa5252;
+      font-size: 0.73rem;
+      font-weight: 700;
+    }
+
+    /* Toast Notification */
+    .toss-toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background-color: #191f28;
+      color: #ffffff;
+      padding: 10px 18px;
+      border-radius: var(--radius-pill);
+      font-size: 0.85rem;
+      font-weight: 700;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+      z-index: 100;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    [data-theme="light"] .toss-toast {
+      background-color: #333d4b;
+    }
+
+    .toss-toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* Drawer Backdrop for Mobile */
+    .drawer-backdrop {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.45);
+      z-index: 24;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    /* ==========================================================================
+       Responsive Breakpoints
+       ========================================================================== */
+    @media (max-width: 1180px) {
+      .metadata-panel {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .global-rail {
+        display: none;
+      }
+      .mobile-menu-btn {
+        display: flex;
+      }
+      .context-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        transform: translateX(-100%);
+        box-shadow: 4px 0 24px rgba(0, 0, 0, 0.4);
+      }
+      .context-sidebar.open {
+        transform: translateX(0);
+      }
+      .drawer-backdrop.open {
+        display: block;
+        opacity: 1;
+      }
+      .messages-feed {
+        padding: 14px 14px 40px 14px;
+        gap: 14px;
+      }
+      .feed-hero {
+        padding: 16px 16px;
+      }
+      .hero-title {
+        font-size: 1.35rem;
+      }
+      .toss-card {
+        padding: 18px 16px;
+        border-radius: 16px;
+      }
+      .card-headline {
+        font-size: 1.12rem;
+      }
+      .topic-desc {
+        display: none;
+      }
+    }
+
+    /* Accessibility: Reduced Motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="discord-app-shell">
+
+    <!-- Level 1: Global Rail (Deterministic Home / Reset Control) -->
+    <nav class="global-rail" aria-label="글로벌 홈 네비게이션">
+      <button type="button" class="rail-btn active" id="homeRailBtn" title="전체 브리핑 피드 (초기화)" aria-label="전체 브리핑 피드로 이동" onclick="resetAllFilters(this)">
+        ⚡
+      </button>
+    </nav>
+
+    <!-- Mobile Drawer Backdrop -->
+    <div class="drawer-backdrop" id="drawerBackdrop" onclick="closeMobileMenu()" aria-hidden="true"></div>
+
+    <!-- Level 2: Context Sidebar (Search + Channels) -->
+    <aside class="context-sidebar" aria-label="채널 네비게이션">
+      <div class="server-header">
+        <span class="server-badge">⚡ Tech Intel HQ</span>
+        <span style="font-size: 0.8rem; color: var(--toss-blue);" aria-hidden="true">✔</span>
+      </div>
+
+      <!-- Search Input -->
+      <div class="sidebar-search-box">
+        <div class="search-input-wrapper">
+          <span class="search-icon" aria-hidden="true">🔍</span>
+          <input
+            type="search"
+            id="searchInput"
+            class="toss-search-input"
+            placeholder="기사 및 키워드 검색..."
+            aria-label="기사 실시간 검색"
+            autocomplete="off"
+            oninput="handleSearch(this.value)"
+          >
+          <button type="button" id="searchClearBtn" class="search-clear-btn" aria-label="검색어 초기화" onclick="clearSearch()" style="display: none;">✕</button>
+        </div>
+      </div>
+
+      <div class="channels-scroll">
+        <div class="channel-category">데일리 피드</div>
+        <button type="button" class="channel-item active" data-channel="all" onclick="filterFeed('all', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge all">⚡</span>
+            <span class="channel-name">오늘의 브리핑</span>
+          </div>
+          <span class="channel-count">16</span>
+        </button>
+
+        <div class="channel-category">타겟 매체 채널</div>
+        <button type="button" class="channel-item" data-channel="verge" onclick="filterFeed('verge', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge verge">V</span>
+            <span class="channel-name">The Verge</span>
+          </div>
+          <span class="channel-count" id="channel-count-verge">5</span>
+        </button>
+        <button type="button" class="channel-item" data-channel="techcrunch" onclick="filterFeed('techcrunch', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge techcrunch">TC</span>
+            <span class="channel-name">TechCrunch</span>
+          </div>
+          <span class="channel-count" id="channel-count-techcrunch">5</span>
+        </button>
+        <button type="button" class="channel-item" data-channel="arstechnica" onclick="filterFeed('arstechnica', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge arstechnica">AT</span>
+            <span class="channel-name">Ars Technica</span>
+          </div>
+          <span class="channel-count" id="channel-count-arstechnica">1</span>
+        </button>
+        <button type="button" class="channel-item" data-channel="mit" onclick="filterFeed('mit', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge mit">MIT</span>
+            <span class="channel-name">MIT Tech Review</span>
+          </div>
+          <span class="channel-count" id="channel-count-mit">0</span>
+        </button>
+        <button type="button" class="channel-item" data-channel="theinformation" onclick="filterFeed('theinformation', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge theinformation">TI</span>
+            <span class="channel-name">The Information</span>
+          </div>
+          <span class="channel-count" id="channel-count-theinformation">5</span>
+        </button>
+      </div>
+
+      <div class="sidebar-user-tray">
+        <div class="user-info-box">
+          <div class="status-dot" aria-hidden="true"></div>
+          <div>
+            <div class="user-name-label">Zero-Capital Agent</div>
+            <div class="user-sub-label">GitHub Actions 파이프라인</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Level 3: Primary Workspace -->
+    <main class="chat-workspace">
+      <header class="workspace-header">
+        <div class="header-left">
+          <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="채널 메뉴 열기" aria-expanded="false" onclick="toggleMobileMenu()">
+            ☰
+          </button>
+          <div class="topic-pill">
+            <span id="headerTopicTitle">오늘의 브리핑</span>
+            <div class="topic-divider" aria-hidden="true"></div>
+            <span class="topic-desc">주요 테크 소식과 비즈니스 시사점을 한눈에.</span>
+          </div>
+        </div>
+        <div class="header-controls">
+          <button type="button" class="theme-toggle-btn" onclick="toggleTheme()" id="themeBtn" aria-label="다크/라이트 테마 전환">🌓 테마 전환</button>
+        </div>
+      </header>
+
+      <section class="messages-feed" id="feedContainer">
+        <!-- Editorial Briefing Header -->
+        <div class="feed-hero">
+          <div class="hero-badge-row">
+            <span class="toss-tag">DAILY INTEL</span>
+            <span class="hero-date-badge">2026-10-19</span>
+            <span class="hero-count-badge" id="heroArticleCount">총 16개 기사 큐레이션</span>
+          </div>
+          <h1 class="hero-title">Daily Tech Insights</h1>
+          <p class="hero-subtitle">
+            글로벌 5대 테크 미디어의 핵심 보도와 비즈니스 시사점을 AI로 정밀 분석하여 전해드립니다.
+          </p>
+        </div>
+
+        <!-- No Results Card -->
+        <div id="noResultsCard" class="toss-empty-state" style="display: none;">
+          <div class="empty-icon" aria-hidden="true">🔍</div>
+          <h3 class="empty-title">일치하는 기사가 없습니다</h3>
+          <p class="empty-desc">검색어를 변경하거나 선택된 매체 필터를 확인해 주세요.</p>
+          <button type="button" class="toss-pill-link" onclick="resetAllFilters()">전체 브리핑 보기</button>
+        </div>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="verge" data-search="미 의회, 디지털 비디오 게임 ‘실질 소유권’ 보장 법안 발의 the verge 리치 토레스 미 하원의원이 게임 구매 시 단순 라이선스 부여가 아닌 실질적 소유권을 보장하는 &#x27;게이머 권익 보호법&#x27;을 발의했다. 법안 통과 시 미 연방거래위원회(ftc)는 게임사가 소비자에게 단순 이용 허가가 아닌 완전한 소유권을 제공하도록 규제 규정을 마련해야 한다. 디지털 다운로드 게임이 서버 종료나 플랫폼 정책에 따라 일방적으로 삭제·차단되는 관행을 근본적으로 제한하려는 목적이다. 디지털 배급 위주의 게임 유통 플랫폼 및 퍼블리셔의 라이선스 비즈니스 모델에 큰 타격이 예상되며, drm 정책 개편과 서버 유지 비용 부담 증가로 이어질 수 있습니다." id="article-1">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar verge" aria-hidden="true">V</span>
+              <div class="media-meta">
+                <span class="media-name">The Verge</span>
+                <span class="channel-slug">#verge-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="미 의회, 디지털 비디오 게임 ‘실질 소유권’ 보장 법안 발의 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">미 의회, 디지털 비디오 게임 ‘실질 소유권’ 보장 법안 발의</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">리치 토레스 미 하원의원이 게임 구매 시 단순 라이선스 부여가 아닌 실질적 소유권을 보장하는 &#x27;게이머 권익 보호법&#x27;을 발의했다.</li>
+              <li class="summary-bullet">법안 통과 시 미 연방거래위원회(FTC)는 게임사가 소비자에게 단순 이용 허가가 아닌 완전한 소유권을 제공하도록 규제 규정을 마련해야 한다.</li>
+              <li class="summary-bullet">디지털 다운로드 게임이 서버 종료나 플랫폼 정책에 따라 일방적으로 삭제·차단되는 관행을 근본적으로 제한하려는 목적이다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">디지털 배급 위주의 게임 유통 플랫폼 및 퍼블리셔의 라이선스 비즈니스 모델에 큰 타격이 예상되며, DRM 정책 개편과 서버 유지 비용 부담 증가로 이어질 수 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 57초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="verge" data-search="자율주행 로보택시 확산에 제동 거는 미국 지방정부들 the verge 미국 주요 도시 및 지방정부들이 자율주행 로보택시 서비스의 도로 배치 및 규제 권한을 강화하려는 움직임을 보이고 있다. 안전 사고, 긴급 차량 통행 방해, 교통 체증 유발 등 기술 도입 과정에서 발생한 사회적 부작용이 규제 강화의 주요 원인이다. 주 정부 중심의 친테크 정책과 도시 자치 정부의 안전 및 도로 통제권 간의 갈등이 첨예해지고 있다. 로보택시 기업들은 기술적 완성도뿐 아니라 지자체 인허가 및 지역 사회와의 협력이라는 정치·규제적 리스크 관리를 최우선 과제로 삼아야 상용화 속도를 유지할 수 있습니다." id="article-2">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar verge" aria-hidden="true">V</span>
+              <div class="media-meta">
+                <span class="media-name">The Verge</span>
+                <span class="channel-slug">#verge-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theverge.com/transportation/1013220/robotaxi-self-driving-car-laws" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="자율주행 로보택시 확산에 제동 거는 미국 지방정부들 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">자율주행 로보택시 확산에 제동 거는 미국 지방정부들</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">미국 주요 도시 및 지방정부들이 자율주행 로보택시 서비스의 도로 배치 및 규제 권한을 강화하려는 움직임을 보이고 있다.</li>
+              <li class="summary-bullet">안전 사고, 긴급 차량 통행 방해, 교통 체증 유발 등 기술 도입 과정에서 발생한 사회적 부작용이 규제 강화의 주요 원인이다.</li>
+              <li class="summary-bullet">주 정부 중심의 친테크 정책과 도시 자치 정부의 안전 및 도로 통제권 간의 갈등이 첨예해지고 있다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">로보택시 기업들은 기술적 완성도뿐 아니라 지자체 인허가 및 지역 사회와의 협력이라는 정치·규제적 리스크 관리를 최우선 과제로 삼아야 상용화 속도를 유지할 수 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theverge.com/transportation/1013220/robotaxi-self-driving-car-laws', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 52초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="verge" data-search="경찰용 차량 번호판 감시망 &#x27;플록&#x27; 계정을 ice 남편에게 공유해 해고된 美 경찰관 the verge 사바나 경찰국의 전직 경찰관 앰버 하프가 ai 차량 번호판 인식 시스템 &#x27;플록(flock)&#x27;의 로그인 계정을 ice(이민세관집행국) 요원인 남편에게 유출해 해고됐다. 사바나 경찰국은 자체 규정상 이민 단속을 위해 ice와 플록 감시 데이터를 직접 공유하지 않도록 제한하고 있었다. 이번 사건은 대규모 민간 감시 기술이 현장 법 집행관의 사적 연결을 통해 프로토콜을 우회해 악용될 수 있음을 증명했다. 공공 감시 기술 스타트업들은 데이터 보안 및 접근 로그 감사를 강화하지 못할 경우 프라이버시 침해 논란으로 인해 b2g 계약 축소 및 규제 압박에 직면할 위험이 큽니다." id="article-3">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar verge" aria-hidden="true">V</span>
+              <div class="media-meta">
+                <span class="media-name">The Verge</span>
+                <span class="channel-slug">#verge-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theverge.com/policy/1013573/spd-officer-fired-flock-ice-husband" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="경찰용 차량 번호판 감시망 &#x27;플록&#x27; 계정을 ICE 남편에게 공유해 해고된 美 경찰관 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">경찰용 차량 번호판 감시망 &#x27;플록&#x27; 계정을 ICE 남편에게 공유해 해고된 美 경찰관</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">사바나 경찰국의 전직 경찰관 앰버 하프가 AI 차량 번호판 인식 시스템 &#x27;플록(Flock)&#x27;의 로그인 계정을 ICE(이민세관집행국) 요원인 남편에게 유출해 해고됐다.</li>
+              <li class="summary-bullet">사바나 경찰국은 자체 규정상 이민 단속을 위해 ICE와 플록 감시 데이터를 직접 공유하지 않도록 제한하고 있었다.</li>
+              <li class="summary-bullet">이번 사건은 대규모 민간 감시 기술이 현장 법 집행관의 사적 연결을 통해 프로토콜을 우회해 악용될 수 있음을 증명했다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">공공 감시 기술 스타트업들은 데이터 보안 및 접근 로그 감사를 강화하지 못할 경우 프라이버시 침해 논란으로 인해 B2G 계약 축소 및 규제 압박에 직면할 위험이 큽니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theverge.com/policy/1013573/spd-officer-fired-flock-ice-husband', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 60초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="verge" data-search="다큐멘터리 &#x27;미스터 오건&#x27;, 일상을 파괴하는 심리적 공포를 포착하다 the verge 뉴질랜드 저널리스트 데이비드 패리어가 제작한 다큐멘터리 &#x27;미스터 오건&#x27;이 극단적인 심리적 조작과 일상적 테러를 다루며 호평을 받고 있다. 작품은 마이클 오건이라는 인물이 주변 사람들의 삶에 침투해 관계를 통제하고 파괴하는 집요한 과정을 추적한다. 대규모 사회적 참극이나 물리적 폭력 없이도 개인 간의 가스라이팅과 법적 괴롭힘이 얼마나 공포스러울 수 있는지를 설득력 있게 전달한다. 자극적인 실화 범죄(true crime) 장르의 피로도가 높아진 스트리밍 시장에서, 심리적 서스펜스를 정밀하게 파고드는 저예산 웰메이드 저널리즘 다큐멘터리의 상업적 가치가 부각되고 있습니다." id="article-4">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar verge" aria-hidden="true">V</span>
+              <div class="media-meta">
+                <span class="media-name">The Verge</span>
+                <span class="channel-slug">#verge-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theverge.com/entertainment/1013545/mister-organ-horror-documentary-review" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="다큐멘터리 &#x27;미스터 오건&#x27;, 일상을 파괴하는 심리적 공포를 포착하다 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">다큐멘터리 &#x27;미스터 오건&#x27;, 일상을 파괴하는 심리적 공포를 포착하다</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">뉴질랜드 저널리스트 데이비드 패리어가 제작한 다큐멘터리 &#x27;미스터 오건&#x27;이 극단적인 심리적 조작과 일상적 테러를 다루며 호평을 받고 있다.</li>
+              <li class="summary-bullet">작품은 마이클 오건이라는 인물이 주변 사람들의 삶에 침투해 관계를 통제하고 파괴하는 집요한 과정을 추적한다.</li>
+              <li class="summary-bullet">대규모 사회적 참극이나 물리적 폭력 없이도 개인 간의 가스라이팅과 법적 괴롭힘이 얼마나 공포스러울 수 있는지를 설득력 있게 전달한다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">자극적인 실화 범죄(True Crime) 장르의 피로도가 높아진 스트리밍 시장에서, 심리적 서스펜스를 정밀하게 파고드는 저예산 웰메이드 저널리즘 다큐멘터리의 상업적 가치가 부각되고 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theverge.com/entertainment/1013545/mister-organ-horror-documentary-review', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 59초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="verge" data-search="필라델피아에서 음식 배달 로봇을 고의로 가로막은 여성 체포 the verge 필라델피아에서 우버 배달 로봇의 앞길을 고의로 막아서고 이동을 방해한 여성이 치외법권적 난동(경범죄) 혐의로 체포됐다. 체포된 여성은 배달 로봇이 인간 배달원의 일자리를 빼앗고 있다며 이에 항의하기 위해 길을 가로막았다고 진술했다. 자율주행 및 로봇 자동화 기기가 공공 공간에 침투하면서 노동 대체에 대한 대중의 반발이 물리적 충돌로 가시화되고 있다. 라스트마일 배달 로봇 기업들은 하드웨어 방어 및 경로 우회 알고리즘뿐 아니라, 기술 도입에 반발하는 대중의 &#x27;러다이트&#x27;식 물리적 위협에 대비한 법적·보안 프로토콜을 수립해야 합니다." id="article-5">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar verge" aria-hidden="true">V</span>
+              <div class="media-meta">
+                <span class="media-name">The Verge</span>
+                <span class="channel-slug">#verge-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="필라델피아에서 음식 배달 로봇을 고의로 가로막은 여성 체포 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">필라델피아에서 음식 배달 로봇을 고의로 가로막은 여성 체포</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">필라델피아에서 우버 배달 로봇의 앞길을 고의로 막아서고 이동을 방해한 여성이 치외법권적 난동(경범죄) 혐의로 체포됐다.</li>
+              <li class="summary-bullet">체포된 여성은 배달 로봇이 인간 배달원의 일자리를 빼앗고 있다며 이에 항의하기 위해 길을 가로막았다고 진술했다.</li>
+              <li class="summary-bullet">자율주행 및 로봇 자동화 기기가 공공 공간에 침투하면서 노동 대체에 대한 대중의 반발이 물리적 충돌로 가시화되고 있다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">라스트마일 배달 로봇 기업들은 하드웨어 방어 및 경로 우회 알고리즘뿐 아니라, 기술 도입에 반발하는 대중의 &#x27;러다이트&#x27;식 물리적 위협에 대비한 법적·보안 프로토콜을 수립해야 합니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 55초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="techcrunch" data-search="과열된 시장 속 벤치마크(benchmark)의 투자 철학: &quot;서두르지 않고 샌프란시스코를 지킨다&quot; techcrunch 실리콘밸리의 전설적인 vc 벤치마크의 파트너들이 최근 ai 중심의 시장 과열 속 자사 투자 전략을 공유함. 펀드 규모 확대와 파트너 교체 속에서도 5인의 파트너는 끈끈한 유대와 소수 정예 협업 체제를 유지하고 있음을 강조함. 조급한 추격 매수를 지양하고 전통적 거점인 샌프란시스코 중심의 선별적 초기 투자를 고수하겠다는 입장을 밝힘. 메가 펀드화되는 벤처캐피털 시장에서 벤치마크는 소수 정예 파트너십을 고수하며, 포모(fomo)에 휩쓸리지 않는 엄격한 퀄리티 중심 투자가 여전히 유효한 알파 창출 전략임을 시사합니다." id="article-6">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar techcrunch" aria-hidden="true">TC</span>
+              <div class="media-meta">
+                <span class="media-name">TechCrunch</span>
+                <span class="channel-slug">#techcrunch-feed</span>
+              </div>
+            </div>
+            <a href="https://techcrunch.com/2026/10/18/no-agenda-no-rush-no-leaving-san-francisco-benchmarks-partners-on-investing-in-a-frenzied-market/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="과열된 시장 속 벤치마크(Benchmark)의 투자 철학: &quot;서두르지 않고 샌프란시스코를 지킨다&quot; 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">과열된 시장 속 벤치마크(Benchmark)의 투자 철학: &quot;서두르지 않고 샌프란시스코를 지킨다&quot;</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">실리콘밸리의 전설적인 VC 벤치마크의 파트너들이 최근 AI 중심의 시장 과열 속 자사 투자 전략을 공유함.</li>
+              <li class="summary-bullet">펀드 규모 확대와 파트너 교체 속에서도 5인의 파트너는 끈끈한 유대와 소수 정예 협업 체제를 유지하고 있음을 강조함.</li>
+              <li class="summary-bullet">조급한 추격 매수를 지양하고 전통적 거점인 샌프란시스코 중심의 선별적 초기 투자를 고수하겠다는 입장을 밝힘.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">메가 펀드화되는 벤처캐피털 시장에서 벤치마크는 소수 정예 파트너십을 고수하며, 포모(FOMO)에 휩쓸리지 않는 엄격한 퀄리티 중심 투자가 여전히 유효한 알파 창출 전략임을 시사합니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://techcrunch.com/2026/10/18/no-agenda-no-rush-no-leaving-san-francisco-benchmarks-partners-on-investing-in-a-frenzied-market/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 57초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="techcrunch" data-search="앤스로픽(anthropic), 지분 5% 공익 기금에 출연 약정 techcrunch ai 모델 &#x27;클로드&#x27; 개발사 앤스로픽이 전체 발행 주식의 5%를 공익 기금(public benefit fund)에 출연하기로 결정함. 해당 기금은 ai 기술 고도화로 인한 경제적·사회적 혜택을 공공과 나누기 위한 목적으로 조성됨. 공익법인(pbc) 구조를 채택한 앤스로픽의 책임감 있는 ai 개발(responsible ai) 기조를 실행에 옮긴 조치임. 빅테크 및 ai 기업을 향한 사회적 책임 요구와 규제 압박이 거세지는 가운데, 지분 기부를 통한 선제적 공익 환원은 기업 신뢰도 제고와 장기적 규제 리스크 완화에 기여할 수 있습니다." id="article-7">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar techcrunch" aria-hidden="true">TC</span>
+              <div class="media-meta">
+                <span class="media-name">TechCrunch</span>
+                <span class="channel-slug">#techcrunch-feed</span>
+              </div>
+            </div>
+            <a href="https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="앤스로픽(Anthropic), 지분 5% 공익 기금에 출연 약정 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">앤스로픽(Anthropic), 지분 5% 공익 기금에 출연 약정</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">AI 모델 &#x27;클로드&#x27; 개발사 앤스로픽이 전체 발행 주식의 5%를 공익 기금(Public Benefit Fund)에 출연하기로 결정함.</li>
+              <li class="summary-bullet">해당 기금은 AI 기술 고도화로 인한 경제적·사회적 혜택을 공공과 나누기 위한 목적으로 조성됨.</li>
+              <li class="summary-bullet">공익법인(PBC) 구조를 채택한 앤스로픽의 책임감 있는 AI 개발(Responsible AI) 기조를 실행에 옮긴 조치임.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">빅테크 및 AI 기업을 향한 사회적 책임 요구와 규제 압박이 거세지는 가운데, 지분 기부를 통한 선제적 공익 환원은 기업 신뢰도 제고와 장기적 규제 리스크 완화에 기여할 수 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 56초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="techcrunch" data-search="엘리자베스 홈즈 다큐멘터리 &#x27;유 캔 씨 에브리씽&#x27;, 역대급 흥행 기록 techcrunch 테라노스 창업자 엘리자베스 홈즈의 사기 스캔들을 다룬 신작 다큐멘터리 &#x27;you can see everything&#x27;이 개봉함. 해당 작품은 다큐멘터리 영화 장르 역사상 두 번째로 높은 오프닝 주말 흥행 실적을 달성함. 실리콘밸리 스타트업의 맹목적인 과장 문화와 거품 붕괴 서사에 대한 대중적 관심이 여전히 강력함을 입증함. 테크 업계의 실패와 윤리적 일탈은 대중 문화 콘텐츠로서 높은 상업적 가치를 지니며, 투자자와 대중이 스타트업의 하이프(hype)를 대하는 비판적 시각이 상시화되었음을 보여줍니다." id="article-8">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar techcrunch" aria-hidden="true">TC</span>
+              <div class="media-meta">
+                <span class="media-name">TechCrunch</span>
+                <span class="channel-slug">#techcrunch-feed</span>
+              </div>
+            </div>
+            <a href="https://techcrunch.com/2026/10/18/everyones-watching-the-elizabeth-holmes-documentary-you-can-see-everything/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="엘리자베스 홈즈 다큐멘터리 &#x27;유 캔 씨 에브리씽&#x27;, 역대급 흥행 기록 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">엘리자베스 홈즈 다큐멘터리 &#x27;유 캔 씨 에브리씽&#x27;, 역대급 흥행 기록</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">테라노스 창업자 엘리자베스 홈즈의 사기 스캔들을 다룬 신작 다큐멘터리 &#x27;You Can See Everything&#x27;이 개봉함.</li>
+              <li class="summary-bullet">해당 작품은 다큐멘터리 영화 장르 역사상 두 번째로 높은 오프닝 주말 흥행 실적을 달성함.</li>
+              <li class="summary-bullet">실리콘밸리 스타트업의 맹목적인 과장 문화와 거품 붕괴 서사에 대한 대중적 관심이 여전히 강력함을 입증함.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">테크 업계의 실패와 윤리적 일탈은 대중 문화 콘텐츠로서 높은 상업적 가치를 지니며, 투자자와 대중이 스타트업의 하이프(Hype)를 대하는 비판적 시각이 상시화되었음을 보여줍니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://techcrunch.com/2026/10/18/everyones-watching-the-elizabeth-holmes-documentary-you-can-see-everything/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 53초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="techcrunch" data-search="디즈니, 캐릭터닷에이아이(character.ai) 핵심 인력 대다수 흡수 합의 techcrunch 디즈니가 생성형 ai 스타트업 캐릭터닷에이아이의 핵심 인력 대다수를 영입하기로 잠정 합의함. 공시 서류에 따르면 입사 제안을 받은 character.ai 직원 중 &#x27;절대 다수&#x27;가 디즈니 합류를 수락함. 다만 이번 계약은 스토킹 호스(stalking horse) 입찰 방식이어서 타 경쟁사의 추가적인 고액 인수가 가능함. 직접 인수 시 발생하는 반독점 규제 리스크를 회피하면서 핵심 ai 인재와 지식재산(ip) 역량을 선별 확보하려는 빅테크·엔터테인먼트 공룡들의 변형된 &#x27;인재 인수(acqui-hire)&#x27; 트렌드가 본격화되고 있습니다." id="article-9">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar techcrunch" aria-hidden="true">TC</span>
+              <div class="media-meta">
+                <span class="media-name">TechCrunch</span>
+                <span class="channel-slug">#techcrunch-feed</span>
+              </div>
+            </div>
+            <a href="https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="디즈니, 캐릭터닷에이아이(Character.AI) 핵심 인력 대다수 흡수 합의 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">디즈니, 캐릭터닷에이아이(Character.AI) 핵심 인력 대다수 흡수 합의</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">디즈니가 생성형 AI 스타트업 캐릭터닷에이아이의 핵심 인력 대다수를 영입하기로 잠정 합의함.</li>
+              <li class="summary-bullet">공시 서류에 따르면 입사 제안을 받은 Character.AI 직원 중 &#x27;절대 다수&#x27;가 디즈니 합류를 수락함.</li>
+              <li class="summary-bullet">다만 이번 계약은 스토킹 호스(Stalking Horse) 입찰 방식이어서 타 경쟁사의 추가적인 고액 인수가 가능함.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">직접 인수 시 발생하는 반독점 규제 리스크를 회피하면서 핵심 AI 인재와 지식재산(IP) 역량을 선별 확보하려는 빅테크·엔터테인먼트 공룡들의 변형된 &#x27;인재 인수(Acqui-hire)&#x27; 트렌드가 본격화되고 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 57초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="techcrunch" data-search="테크크런치 모빌리티: 리비안(rivian)의 차세대 도약과 ai의 역할 techcrunch 테크크런치 모빌리티가 미래 운송 수단의 패러다임 변화 속에서 리비안의 차기 행보를 집중 조명함. 전기차 캐즘(대중화 전 일시적 수요 정체) 속에서 완성차 기업들의 ai 기술 도입 필요성이 전례 없이 부각됨. 단순한 하드웨어 생산을 넘어 소프트웨어 정의 차량(sdv)과 자율주행 역량이 차세대 경쟁력의 핵심으로 떠오름. 전기차 시장이 배터리 및 주행거리 경쟁에서 ai 기반 소프트웨어 아키텍처 중심으로 재편됨에 따라, 리비안과 같은 제조사들은 온보드 ai 소프트웨어 수익화 및 운영 효율 극대화가 생존의 전제조건이 되었습니다." id="article-10">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar techcrunch" aria-hidden="true">TC</span>
+              <div class="media-meta">
+                <span class="media-name">TechCrunch</span>
+                <span class="channel-slug">#techcrunch-feed</span>
+              </div>
+            </div>
+            <a href="https://techcrunch.com/2026/10/18/techcrunch-mobility-rivians-next-act/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="테크크런치 모빌리티: 리비안(Rivian)의 차세대 도약과 AI의 역할 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">테크크런치 모빌리티: 리비안(Rivian)의 차세대 도약과 AI의 역할</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">테크크런치 모빌리티가 미래 운송 수단의 패러다임 변화 속에서 리비안의 차기 행보를 집중 조명함.</li>
+              <li class="summary-bullet">전기차 캐즘(대중화 전 일시적 수요 정체) 속에서 완성차 기업들의 AI 기술 도입 필요성이 전례 없이 부각됨.</li>
+              <li class="summary-bullet">단순한 하드웨어 생산을 넘어 소프트웨어 정의 차량(SDV)과 자율주행 역량이 차세대 경쟁력의 핵심으로 떠오름.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">전기차 시장이 배터리 및 주행거리 경쟁에서 AI 기반 소프트웨어 아키텍처 중심으로 재편됨에 따라, 리비안과 같은 제조사들은 온보드 AI 소프트웨어 수익화 및 운영 효율 극대화가 생존의 전제조건이 되었습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://techcrunch.com/2026/10/18/techcrunch-mobility-rivians-next-act/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 55초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="arstechnica" data-search="앤트로픽, 외부 ai 감시 기구에 &#x27;직원 수준&#x27; 내부 접근 권한 전격 부여 ars technica 앤트로픽이 외부 독립 ai 감시 기구에 내부 직원과 유사한 수준의 핵심 모델 및 데이터 접근 권한을 부여함. 해당 감시 기구는 앤트로픽의 사전 승인이나 검열 없이 조사 및 평가 결과를 독립적으로 공개할 수 있는 권리를 보장받음. 폐쇄적 평가 방식에서 탈피해 제3자 감시를 공식화함으로써 ai 안전성 검증의 투명성을 대폭 강화함. 각국 정부의 ai 규제 압박이 거세지는 가운데, 선제적으로 독립적 감사 체계를 도입해 규제 적합성을 입증하고 엔터프라이즈 시장에서 경쟁사 대비 신뢰 우위를 선점하려는 전략적 행보로 분석된다." id="article-11">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar arstechnica" aria-hidden="true">AT</span>
+              <div class="media-meta">
+                <span class="media-name">Ars Technica</span>
+                <span class="channel-slug">#arstechnica-feed</span>
+              </div>
+            </div>
+            <a href="https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="앤트로픽, 외부 AI 감시 기구에 &#x27;직원 수준&#x27; 내부 접근 권한 전격 부여 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">앤트로픽, 외부 AI 감시 기구에 &#x27;직원 수준&#x27; 내부 접근 권한 전격 부여</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">앤트로픽이 외부 독립 AI 감시 기구에 내부 직원과 유사한 수준의 핵심 모델 및 데이터 접근 권한을 부여함.</li>
+              <li class="summary-bullet">해당 감시 기구는 앤트로픽의 사전 승인이나 검열 없이 조사 및 평가 결과를 독립적으로 공개할 수 있는 권리를 보장받음.</li>
+              <li class="summary-bullet">폐쇄적 평가 방식에서 탈피해 제3자 감시를 공식화함으로써 AI 안전성 검증의 투명성을 대폭 강화함.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">각국 정부의 AI 규제 압박이 거세지는 가운데, 선제적으로 독립적 감사 체계를 도입해 규제 적합성을 입증하고 엔터프라이즈 시장에서 경쟁사 대비 신뢰 우위를 선점하려는 전략적 행보로 분석된다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 55초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="theinformation" data-search="신생 핀테크 은행들이 끊임없이 추가 자본 조달에 매달려야 하는 이유 the information 트럼프 행정부의 규제 완화 기조 속에 설립된 에레보르, 오픈리저브 등 신생 은행들이 급증하는 예금에 비례해 규제 자본 요건(tier 1 레버리지 비율 10~12%)을 맞추기 위한 지속적인 증자 압박을 받고 있음. 기존 은행은 자체 이익 잉여금으로 완충 자본을 확충하지만, 미흑자 신생 은행은 대출 자산이 늘어날수록 외부 vc 투자금 유치에 의존해야 하며 fdic는 자본 확충 의무(capital-call) 조건까지 부과함. 반면 아우구스투스처럼 대출보다는 국경 간 결제 및 청산(clearing) 수수료 중심 비즈니스를 전개하는 곳은 규제 자본 부담과 추가 펀딩 리스크가 상대적으로 낮음. 신생 특화 은행들이 고성장할수록 유치한 vc 투자금이 제품 개발이나 사업 확장이 아닌 규제 준수용 자기자본 완충액(equity cushion)으로 묶이게 되는 구조적 딜레마가 가시화되고 있습니다." id="article-12">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar theinformation" aria-hidden="true">TI</span>
+              <div class="media-meta">
+                <span class="media-name">The Information</span>
+                <span class="channel-slug">#theinformation-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theinformation.com/articles/upstart-banks-may-keep-raising-money" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="신생 핀테크 은행들이 끊임없이 추가 자본 조달에 매달려야 하는 이유 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">신생 핀테크 은행들이 끊임없이 추가 자본 조달에 매달려야 하는 이유</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">트럼프 행정부의 규제 완화 기조 속에 설립된 에레보르, 오픈리저브 등 신생 은행들이 급증하는 예금에 비례해 규제 자본 요건(Tier 1 레버리지 비율 10~12%)을 맞추기 위한 지속적인 증자 압박을 받고 있음.</li>
+              <li class="summary-bullet">기존 은행은 자체 이익 잉여금으로 완충 자본을 확충하지만, 미흑자 신생 은행은 대출 자산이 늘어날수록 외부 VC 투자금 유치에 의존해야 하며 FDIC는 자본 확충 의무(Capital-call) 조건까지 부과함.</li>
+              <li class="summary-bullet">반면 아우구스투스처럼 대출보다는 국경 간 결제 및 청산(Clearing) 수수료 중심 비즈니스를 전개하는 곳은 규제 자본 부담과 추가 펀딩 리스크가 상대적으로 낮음.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">신생 특화 은행들이 고성장할수록 유치한 VC 투자금이 제품 개발이나 사업 확장이 아닌 규제 준수용 자기자본 완충액(Equity Cushion)으로 묶이게 되는 구조적 딜레마가 가시화되고 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theinformation.com/articles/upstart-banks-may-keep-raising-money', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 79초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="theinformation" data-search="네오클라우드 구조조정 본격화와 엔비디아가 직면한 동반 리스크 the information 코어위브, 퍼머스, 엔스케일 등 신생 ai 클라우드(네오클라우드) 기업들이 과도한 부채 조달과 미검증된 사업 실적 속에서 ipo 철회 및 기업가치 20% 급락 등 냉혹한 시장 평가에 직면함. 데이터센터 증설 리스크와 투자 회수 우려가 커지면서 오라클 등 기존 대형 클라우드 사업자들까지 시장 불안의 영향권에 진입함. 엔비디아가 이들 다수에 직접 지분 투자 및 칩 물량을 배정해 왔기 때문에, 네오클라우드 업계의 솎아내기는 엔비디아의 주요 수요 기반에도 직접적인 타격을 줄 수 있음. 엔비디아가 주도해 온 ai 벤더 파이낸싱 및 gpu 생태계 연쇄 고리가 신생 인프라 기업들의 유동성 한계와 맞물리며 향후 ai 하드웨어 시장 전반의 단기 조정 압력으로 작용할 가능성이 큽니다." id="article-13">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar theinformation" aria-hidden="true">TI</span>
+              <div class="media-meta">
+                <span class="media-name">The Information</span>
+                <span class="channel-slug">#theinformation-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theinformation.com/articles/neocloud-shakeout-looms-nvidia-lot-lose" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="네오클라우드 구조조정 본격화와 엔비디아가 직면한 동반 리스크 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">네오클라우드 구조조정 본격화와 엔비디아가 직면한 동반 리스크</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">코어위브, 퍼머스, 엔스케일 등 신생 AI 클라우드(네오클라우드) 기업들이 과도한 부채 조달과 미검증된 사업 실적 속에서 IPO 철회 및 기업가치 20% 급락 등 냉혹한 시장 평가에 직면함.</li>
+              <li class="summary-bullet">데이터센터 증설 리스크와 투자 회수 우려가 커지면서 오라클 등 기존 대형 클라우드 사업자들까지 시장 불안의 영향권에 진입함.</li>
+              <li class="summary-bullet">엔비디아가 이들 다수에 직접 지분 투자 및 칩 물량을 배정해 왔기 때문에, 네오클라우드 업계의 솎아내기는 엔비디아의 주요 수요 기반에도 직접적인 타격을 줄 수 있음.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">엔비디아가 주도해 온 AI 벤더 파이낸싱 및 GPU 생태계 연쇄 고리가 신생 인프라 기업들의 유동성 한계와 맞물리며 향후 AI 하드웨어 시장 전반의 단기 조정 압력으로 작용할 가능성이 큽니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theinformation.com/articles/neocloud-shakeout-looms-nvidia-lot-lose', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 68초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="theinformation" data-search="마이크로소프트, 전력 공급 지연 이유로 엔스케일 영국 데이터센터 계약 철회 the information 마이크로소프트가 신생 인프라 스타트업 엔스케일(nscale)이 구축 중이던 영국 데이터센터 계약을 전격 취소함. 데이터센터 가동에 필수적인 전력망 인입(power access) 확보 지연이 핵심 파기 원인으로 파악됨. 대형 앵커 고객을 상실함에 따라 이달 예정되어 있던 엔스케일의 기업공개(ipo) 추진 및 밸류에이션 확보에 심각한 차질이 발생함. 빅테크 ai 인프라 확장의 핵심 병목이 gpu 수급에서 &#x27;전력 및 그리드 인프라 실행력&#x27;으로 완전히 전환되었으며, 전력 조달 능력을 입증하지 못한 군소 인프라 사업자는 급격한 도태 위기에 직면하게 됩니다." id="article-14">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar theinformation" aria-hidden="true">TI</span>
+              <div class="media-meta">
+                <span class="media-name">The Information</span>
+                <span class="channel-slug">#theinformation-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theinformation.com/briefings/microsoft-pulls-nscale-u-k-data-center-following-delays" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="마이크로소프트, 전력 공급 지연 이유로 엔스케일 영국 데이터센터 계약 철회 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">마이크로소프트, 전력 공급 지연 이유로 엔스케일 영국 데이터센터 계약 철회</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">마이크로소프트가 신생 인프라 스타트업 엔스케일(Nscale)이 구축 중이던 영국 데이터센터 계약을 전격 취소함.</li>
+              <li class="summary-bullet">데이터센터 가동에 필수적인 전력망 인입(Power Access) 확보 지연이 핵심 파기 원인으로 파악됨.</li>
+              <li class="summary-bullet">대형 앵커 고객을 상실함에 따라 이달 예정되어 있던 엔스케일의 기업공개(IPO) 추진 및 밸류에이션 확보에 심각한 차질이 발생함.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">빅테크 AI 인프라 확장의 핵심 병목이 GPU 수급에서 &#x27;전력 및 그리드 인프라 실행력&#x27;으로 완전히 전환되었으며, 전력 조달 능력을 입증하지 못한 군소 인프라 사업자는 급격한 도태 위기에 직면하게 됩니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theinformation.com/briefings/microsoft-pulls-nscale-u-k-data-center-following-delays', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 58초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="theinformation" data-search="메타·테슬라·넷플릭스 3분기 실적 발표 임박… 빅테크 ai 투자 지속성 시험대 the information 메타(meta)가 구글, 마이크로소프트, 아마존보다 일주일 앞선 이번 주 수요일 3분기 실적을 발표하며 빅테크 어닝 시즌의 집중 조명을 받게 됨. 최근 뮤즈(muse) 개인 비서 및 ai 모델 출시로 형성되었던 시장 기대감이 전반적인 ai 인프라 거품 우려로 인해 주가 급락세를 겪은 상황임. 메타의 천문학적인 ai 인프라 캡엑스(capex) 지출 계획과 수익화 로드맵은 월가 전반의 빅테크 ai 투자 심리를 가늠할 결정적 지표가 될 예정임. 메타가 빅테크 진영 중 가장 먼저 성적표를 제시함에 따라, 막대한 설비 투자가 디지털 광고 효율 개선이나 신규 ai 구독 매출 등 실질적 roi로 증명되고 있는지가 이번 주 기술주 시장 전반의 향방을 가를 것입니다." id="article-15">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar theinformation" aria-hidden="true">TI</span>
+              <div class="media-meta">
+                <span class="media-name">The Information</span>
+                <span class="channel-slug">#theinformation-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theinformation.com/articles/meta-tesla-netflix-q3-updates-coming-week" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="메타·테슬라·넷플릭스 3분기 실적 발표 임박… 빅테크 AI 투자 지속성 시험대 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">메타·테슬라·넷플릭스 3분기 실적 발표 임박… 빅테크 AI 투자 지속성 시험대</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">메타(Meta)가 구글, 마이크로소프트, 아마존보다 일주일 앞선 이번 주 수요일 3분기 실적을 발표하며 빅테크 어닝 시즌의 집중 조명을 받게 됨.</li>
+              <li class="summary-bullet">최근 뮤즈(Muse) 개인 비서 및 AI 모델 출시로 형성되었던 시장 기대감이 전반적인 AI 인프라 거품 우려로 인해 주가 급락세를 겪은 상황임.</li>
+              <li class="summary-bullet">메타의 천문학적인 AI 인프라 캡엑스(CapEx) 지출 계획과 수익화 로드맵은 월가 전반의 빅테크 AI 투자 심리를 가늠할 결정적 지표가 될 예정임.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">메타가 빅테크 진영 중 가장 먼저 성적표를 제시함에 따라, 막대한 설비 투자가 디지털 광고 효율 개선이나 신규 AI 구독 매출 등 실질적 ROI로 증명되고 있는지가 이번 주 기술주 시장 전반의 향방을 가를 것입니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theinformation.com/articles/meta-tesla-netflix-q3-updates-coming-week', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 68초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="theinformation" data-search="앤스로픽, 지분 최소 5% 출연해 ai 고용 영향 대응 공익 펀드 신설 the information 생성형 ai 유니콘 앤스로픽이 회사 지분의 최소 5%(상황에 따라 최대 2% 추가)를 신설 공익 펀드에 출연하기로 결정함. 해당 펀드는 급격한 ai 기술 발전이 노동 시장과 일자리에 미칠 충격을 완화하고 사회적 공익 과제를 지원하는 데 활용될 계획임. 공익법인(pbc) 형태의 거버넌스를 강화함으로써 고성장 ai 기술이 유발할 사회적 부작용에 선제적으로 대응하려는 의도로 분석됨. 향후 대규모 ipo나 규제 강화에 앞서 잠재적 노동 대체 이슈에 대한 사회적 기여 모델을 제도화함으로써, 규제 리스크를 선제적으로 방어하고 테크 기업으로서의 브랜드 신뢰도를 확보하려는 전략적 지배구조 설계입니다." id="article-16">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar theinformation" aria-hidden="true">TI</span>
+              <div class="media-meta">
+                <span class="media-name">The Information</span>
+                <span class="channel-slug">#theinformation-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theinformation.com/briefings/anthropic-commits-least-5-shares-new-public-benefit-fund" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="앤스로픽, 지분 최소 5% 출연해 AI 고용 영향 대응 공익 펀드 신설 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">앤스로픽, 지분 최소 5% 출연해 AI 고용 영향 대응 공익 펀드 신설</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">생성형 AI 유니콘 앤스로픽이 회사 지분의 최소 5%(상황에 따라 최대 2% 추가)를 신설 공익 펀드에 출연하기로 결정함.</li>
+              <li class="summary-bullet">해당 펀드는 급격한 AI 기술 발전이 노동 시장과 일자리에 미칠 충격을 완화하고 사회적 공익 과제를 지원하는 데 활용될 계획임.</li>
+              <li class="summary-bullet">공익법인(PBC) 형태의 거버넌스를 강화함으로써 고성장 AI 기술이 유발할 사회적 부작용에 선제적으로 대응하려는 의도로 분석됨.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">향후 대규모 IPO나 규제 강화에 앞서 잠재적 노동 대체 이슈에 대한 사회적 기여 모델을 제도화함으로써, 규제 리스크를 선제적으로 방어하고 테크 기업으로서의 브랜드 신뢰도를 확보하려는 전략적 지배구조 설계입니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theinformation.com/briefings/anthropic-commits-least-5-shares-new-public-benefit-fund', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 62초 (예상)</span>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- Level 4: Metadata Panel (Desktop Right Rail) -->
+    <aside class="metadata-panel" aria-label="시스템 지표 패널">
+      <div class="meta-group-title">시스템 지표</div>
+      <div class="metric-card">
+        <span class="metric-label">총 큐레이션 기사</span>
+        <span class="metric-value" id="metaVisibleCount">16개</span>
+        <span class="metric-subtext">기준 일자: 2026-10-19</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">인프라 운영 비용</span>
+        <span class="metric-value">$0.00</span>
+        <span class="metric-subtext">Zero-Capital 무인 아키텍처</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">예상 리딩 소요시간</span>
+        <span class="metric-value">약 16분</span>
+        <span class="metric-subtext">16개 기사 정독 기준</span>
+      </div>
+
+      <div class="meta-group-title">매체별 기사 현황</div>
+      <div class="feed-status-item">
+        <span class="status-source-name">The Verge</span>
+        <span class="status-badge-active" title="5/5건 큐레이션 완료">5/5건 완료 🟢</span>
+      </div>
+      <div class="feed-status-item">
+        <span class="status-source-name">TechCrunch</span>
+        <span class="status-badge-active" title="5/5건 큐레이션 완료">5/5건 완료 🟢</span>
+      </div>
+      <div class="feed-status-item">
+        <span class="status-source-name">Ars Technica</span>
+        <span class="status-badge-warning" title="1/5건 (기사 부족)">1/5건 · 기사 부족 🟡</span>
+      </div>
+      <div class="feed-status-item">
+        <span class="status-source-name">MIT Tech Review</span>
+        <span class="status-badge-error" title="0/5건 (수집 실패)">0/5건 · 수집 실패 🔴</span>
+      </div>
+      <div class="feed-status-item">
+        <span class="status-source-name">The Information</span>
+        <span class="status-badge-active" title="5/5건 큐레이션 완료">5/5건 완료 🟢</span>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="tossToast" class="toss-toast" role="status" aria-live="polite">
+    원문 기사 링크가 복사되었습니다.
+  </div>
+
+  <script>
+    // State management
+    let activeChannel = 'all';
+    let searchQuery = '';
+
+    // Filter & Search composability
+    function applyFilters() {
+      const cards = document.querySelectorAll('.toss-card');
+      let visibleCount = 0;
+      const q = searchQuery.trim().toLowerCase();
+
+      cards.forEach(card => {
+        const mediaSlug = card.getAttribute('data-media');
+        const matchesChannel = (activeChannel === 'all' || mediaSlug === activeChannel);
+
+        let matchesQuery = true;
+        if (q.length > 0) {
+          const searchData = card.getAttribute('data-search') || '';
+          matchesQuery = searchData.includes(q);
+        }
+
+        if (matchesChannel && matchesQuery) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Update visible counter
+      const visibleCounter = document.getElementById('metaVisibleCount');
+      if (visibleCounter) {
+        if (activeChannel === 'all' && q.length === 0) {
+          visibleCounter.textContent = `${cards.length}개`;
+        } else {
+          visibleCounter.textContent = `${visibleCount}개 / ${cards.length}개`;
+        }
+      }
+
+      // Toggle empty state
+      const emptyState = document.getElementById('noResultsCard');
+      if (emptyState) {
+        emptyState.style.display = visibleCount === 0 ? 'flex' : 'none';
+      }
+    }
+
+    function filterFeed(slug, element) {
+      activeChannel = slug;
+
+      // Update channel active styling
+      document.querySelectorAll('.channel-item').forEach(item => item.classList.remove('active'));
+      if (element) {
+        element.classList.add('active');
+      } else {
+        const target = document.querySelector(`.channel-item[data-channel="${slug}"]`);
+        if (target) target.classList.add('active');
+      }
+
+      // Update header topic title
+      const topicEl = document.getElementById('headerTopicTitle');
+      if (topicEl) {
+        if (slug === 'all') {
+          topicEl.textContent = '오늘의 브리핑';
+        } else {
+          const nameEl = element ? element.querySelector('.channel-name') : null;
+          topicEl.textContent = nameEl ? nameEl.textContent : slug;
+        }
+      }
+
+      applyFilters();
+      closeMobileMenu();
+
+      // Scroll to top
+      const feed = document.getElementById('feedContainer');
+      if (feed) feed.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function handleSearch(val) {
+      searchQuery = val;
+      const clearBtn = document.getElementById('searchClearBtn');
+      if (clearBtn) {
+        clearBtn.style.display = val.length > 0 ? 'flex' : 'none';
+      }
+      applyFilters();
+    }
+
+    function clearSearch() {
+      const input = document.getElementById('searchInput');
+      if (input) {
+        input.value = '';
+        input.focus();
+      }
+      handleSearch('');
+    }
+
+    function resetAllFilters(element) {
+      activeChannel = 'all';
+      searchQuery = '';
+      const input = document.getElementById('searchInput');
+      if (input) input.value = '';
+      const clearBtn = document.getElementById('searchClearBtn');
+      if (clearBtn) clearBtn.style.display = 'none';
+
+      document.querySelectorAll('.channel-item').forEach(item => {
+        if (item.getAttribute('data-channel') === 'all') {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+
+      const topicEl = document.getElementById('headerTopicTitle');
+      if (topicEl) topicEl.textContent = '오늘의 브리핑';
+
+      const homeBtn = document.getElementById('homeRailBtn');
+      if (homeBtn) homeBtn.classList.add('active');
+
+      applyFilters();
+      closeMobileMenu();
+
+      const feed = document.getElementById('feedContainer');
+      if (feed) feed.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Clipboard & Toast Feedback
+    function copyArticleLink(url, btn) {
+      const originalText = btn.innerHTML;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(() => {
+          showToast('원문 기사 링크가 복사되었습니다.');
+          btn.innerHTML = '✓ 복사 완료';
+          btn.classList.add('copied');
+          setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.classList.remove('copied');
+          }, 2000);
+        }).catch(() => {
+          fallbackCopy(url, btn, originalText);
+        });
+      } else {
+        fallbackCopy(url, btn, originalText);
+      }
+    }
+
+    function fallbackCopy(url, btn, originalText) {
+      const ta = document.createElement('textarea');
+      ta.value = url;
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        showToast('원문 기사 링크가 복사되었습니다.');
+        btn.innerHTML = '✓ 복사 완료';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.classList.remove('copied');
+        }, 2000);
+      } catch (e) {
+        alert('링크 복사에 실패했습니다.');
+      }
+      document.body.removeChild(ta);
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('tossToast');
+      if (!toast) return;
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2400);
+    }
+
+    // Mobile Drawer Controls
+    function toggleMobileMenu() {
+      const sidebar = document.querySelector('.context-sidebar');
+      const backdrop = document.getElementById('drawerBackdrop');
+      const menuBtn = document.getElementById('mobileMenuBtn');
+      if (!sidebar) return;
+      const isOpen = sidebar.classList.toggle('open');
+      if (backdrop) backdrop.classList.toggle('open', isOpen);
+      if (menuBtn) menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    }
+
+    function closeMobileMenu() {
+      const sidebar = document.querySelector('.context-sidebar');
+      const backdrop = document.getElementById('drawerBackdrop');
+      const menuBtn = document.getElementById('mobileMenuBtn');
+      if (sidebar) sidebar.classList.remove('open');
+      if (backdrop) backdrop.classList.remove('open');
+      if (menuBtn) menuBtn.setAttribute('aria-expanded', 'false');
+    }
+
+    // Keyboard accessibility
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeMobileMenu();
+        if (searchQuery.length > 0) clearSearch();
+      }
+    });
+
+    // Theme Management with Persistence
+    function initTheme() {
+      const saved = localStorage.getItem('daily_intel_theme');
+      if (saved === 'dark' || saved === 'light') {
+        setTheme(saved);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+        setTheme('light');
+      } else {
+        setTheme('dark');
+      }
+    }
+
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      try { localStorage.setItem('daily_intel_theme', theme); } catch(e) {}
+      const themeBtn = document.getElementById('themeBtn');
+      if (themeBtn) {
+        themeBtn.textContent = theme === 'dark' ? '☀️ 라이트 모드' : '🌙 다크 모드';
+      }
+    }
+
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    }
+
+    // Run on load
+    initTheme();
+  </script>
+</body>
+</html>

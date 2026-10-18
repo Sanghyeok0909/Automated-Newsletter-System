@@ -1,4 +1,434 @@
-{
-  "quota_exhausted": true,
-  "date": "2026-10-18"
-}
+[
+  {
+    "media": "The Verge",
+    "title": "Video game ownership bill introduced in Congress",
+    "link": "https://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act",
+    "canonical_url": "https://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act",
+    "published_at": "2026-10-18T16:27:51",
+    "summary": "Rep. Ritchie Torres of New York's 15th congressional district in the Bronx introduced the Power To The Players Act this week. If passed, the bill would direct the Federal Trade Commission to establish regulations that guarantee consumers ownership of a game when they pay for it, rather than a licensing agreement. It's increasingly common for […]",
+    "score": 24,
+    "score_breakdown": {
+      "total_score": 24,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true,
+    "korean_title": "미 의회, 디지털 비디오 게임 ‘실질 소유권’ 보장 법안 발의",
+    "summary_3_lines": [
+      "리치 토레스 미 하원의원이 게임 구매 시 단순 라이선스 부여가 아닌 실질적 소유권을 보장하는 '게이머 권익 보호법'을 발의했다.",
+      "법안 통과 시 미 연방거래위원회(FTC)는 게임사가 소비자에게 단순 이용 허가가 아닌 완전한 소유권을 제공하도록 규제 규정을 마련해야 한다.",
+      "디지털 다운로드 게임이 서버 종료나 플랫폼 정책에 따라 일방적으로 삭제·차단되는 관행을 근본적으로 제한하려는 목적이다."
+    ],
+    "business_insight": "디지털 배급 위주의 게임 유통 플랫폼 및 퍼블리셔의 라이선스 비즈니스 모델에 큰 타격이 예상되며, DRM 정책 개편과 서버 유지 비용 부담 증가로 이어질 수 있습니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Verge",
+    "title": "Cities want to put the boot on robotaxis",
+    "link": "https://www.theverge.com/transportation/1013220/robotaxi-self-driving-car-laws",
+    "canonical_url": "https://www.theverge.com/transportation/1013220/robotaxi-self-driving-car-laws",
+    "published_at": "2026-10-18T12:00:00",
+    "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on autonomous vehicles, policy, and road rules, follow Andrew J. Hawkins. The Stepback arrives in our subscribers' inboxes at 8AM ET. Opt in for The Stepback here. How it started The first state to pass a law […]",
+    "score": 21,
+    "score_breakdown": {
+      "total_score": 21,
+      "impact": 0,
+      "business": 9,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true,
+    "korean_title": "자율주행 로보택시 확산에 제동 거는 미국 지방정부들",
+    "summary_3_lines": [
+      "미국 주요 도시 및 지방정부들이 자율주행 로보택시 서비스의 도로 배치 및 규제 권한을 강화하려는 움직임을 보이고 있다.",
+      "안전 사고, 긴급 차량 통행 방해, 교통 체증 유발 등 기술 도입 과정에서 발생한 사회적 부작용이 규제 강화의 주요 원인이다.",
+      "주 정부 중심의 친테크 정책과 도시 자치 정부의 안전 및 도로 통제권 간의 갈등이 첨예해지고 있다."
+    ],
+    "business_insight": "로보택시 기업들은 기술적 완성도뿐 아니라 지자체 인허가 및 지역 사회와의 협력이라는 정치·규제적 리스크 관리를 최우선 과제로 삼아야 상용화 속도를 유지할 수 있습니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Verge",
+    "title": "A Savannah police officer gave her Flock login to her ICE agent husband",
+    "link": "https://www.theverge.com/policy/1013573/spd-officer-fired-flock-ice-husband",
+    "canonical_url": "https://www.theverge.com/policy/1013573/spd-officer-fired-flock-ice-husband",
+    "published_at": "2026-10-18T22:20:53",
+    "summary": "Now, former Savannah police officer Amber Harpe was fired in August following a department investigation that found she had shared her Flock login information with her husband, Tyler Harpe, an ICE agent. SPD does not share its Flock data with ICE and said sharing access to the system violated the department's security protocols. While he […]",
+    "score": 20,
+    "score_breakdown": {
+      "total_score": 20,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 5
+    },
+    "rank": 3,
+    "is_primary": true,
+    "korean_title": "경찰용 차량 번호판 감시망 '플록' 계정을 ICE 남편에게 공유해 해고된 美 경찰관",
+    "summary_3_lines": [
+      "사바나 경찰국의 전직 경찰관 앰버 하프가 AI 차량 번호판 인식 시스템 '플록(Flock)'의 로그인 계정을 ICE(이민세관집행국) 요원인 남편에게 유출해 해고됐다.",
+      "사바나 경찰국은 자체 규정상 이민 단속을 위해 ICE와 플록 감시 데이터를 직접 공유하지 않도록 제한하고 있었다.",
+      "이번 사건은 대규모 민간 감시 기술이 현장 법 집행관의 사적 연결을 통해 프로토콜을 우회해 악용될 수 있음을 증명했다."
+    ],
+    "business_insight": "공공 감시 기술 스타트업들은 데이터 보안 및 접근 로그 감사를 강화하지 못할 경우 프라이버시 침해 논란으로 인해 B2G 계약 축소 및 규제 압박에 직면할 위험이 큽니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Verge",
+    "title": "Mister Organ is one of the most unsettling documentaries I’ve ever seen",
+    "link": "https://www.theverge.com/entertainment/1013545/mister-organ-horror-documentary-review",
+    "canonical_url": "https://www.theverge.com/entertainment/1013545/mister-organ-horror-documentary-review",
+    "published_at": "2026-10-18T19:30:00",
+    "summary": "Mister Organ doesn't reach the level of societal horror of The Act of Killing or the creepypasta-meets-true-crime gruesomeness of Beware the Slenderman, but there's something deeply unsettling about Michael Organ and his intimate campaign of terror against everyone who enters his life. Mister Organ is a documentary by David Farrier, an Auckland, New Zealand journalist. […]",
+    "score": 15,
+    "score_breakdown": {
+      "total_score": 15,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true,
+    "korean_title": "다큐멘터리 '미스터 오건', 일상을 파괴하는 심리적 공포를 포착하다",
+    "summary_3_lines": [
+      "뉴질랜드 저널리스트 데이비드 패리어가 제작한 다큐멘터리 '미스터 오건'이 극단적인 심리적 조작과 일상적 테러를 다루며 호평을 받고 있다.",
+      "작품은 마이클 오건이라는 인물이 주변 사람들의 삶에 침투해 관계를 통제하고 파괴하는 집요한 과정을 추적한다.",
+      "대규모 사회적 참극이나 물리적 폭력 없이도 개인 간의 가스라이팅과 법적 괴롭힘이 얼마나 공포스러울 수 있는지를 설득력 있게 전달한다."
+    ],
+    "business_insight": "자극적인 실화 범죄(True Crime) 장르의 피로도가 높아진 스트리밍 시장에서, 심리적 서스펜스를 정밀하게 파고드는 저예산 웰메이드 저널리즘 다큐멘터리의 상업적 가치가 부각되고 있습니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Verge",
+    "title": "A woman was arrested in Philly for blocking a delivery robot",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
+    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
+    "published_at": "2026-10-18T18:28:10",
+    "summary": "Carolyn Marvin was arrested and charged with disorderly conduct after blocking the path of an Uber delivery robot and refusing to get out of the way. Marvin told Philadelphia's ABC13 \"I know they're taking the jobs of human delivery workers and so, I have been protesting them whenever I saw them by standing in front […]",
+    "score": 15,
+    "score_breakdown": {
+      "total_score": 15,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 5,
+    "is_primary": true,
+    "korean_title": "필라델피아에서 음식 배달 로봇을 고의로 가로막은 여성 체포",
+    "summary_3_lines": [
+      "필라델피아에서 우버 배달 로봇의 앞길을 고의로 막아서고 이동을 방해한 여성이 치외법권적 난동(경범죄) 혐의로 체포됐다.",
+      "체포된 여성은 배달 로봇이 인간 배달원의 일자리를 빼앗고 있다며 이에 항의하기 위해 길을 가로막았다고 진술했다.",
+      "자율주행 및 로봇 자동화 기기가 공공 공간에 침투하면서 노동 대체에 대한 대중의 반발이 물리적 충돌로 가시화되고 있다."
+    ],
+    "business_insight": "라스트마일 배달 로봇 기업들은 하드웨어 방어 및 경로 우회 알고리즘뿐 아니라, 기술 도입에 반발하는 대중의 '러다이트'식 물리적 위협에 대비한 법적·보안 프로토콜을 수립해야 합니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "TechCrunch",
+    "title": "No agenda, no rush, no leaving San Francisco: Benchmark’s partners on investing in a frenzied market",
+    "link": "https://techcrunch.com/2026/10/18/no-agenda-no-rush-no-leaving-san-francisco-benchmarks-partners-on-investing-in-a-frenzied-market/",
+    "canonical_url": "https://techcrunch.com/2026/10/18/no-agenda-no-rush-no-leaving-san-francisco-benchmarks-partners-on-investing-in-a-frenzied-market/",
+    "published_at": "2026-10-18T21:00:00",
+    "summary": "Benchmark may have grown its funds and swapped out some partners, but onstage the five who are left sounded like friends who just happen to be running one of the Valley’s most storied firms",
+    "score": 23,
+    "score_breakdown": {
+      "total_score": 23,
+      "impact": 0,
+      "business": 0,
+      "development": 13,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true,
+    "korean_title": "과열된 시장 속 벤치마크(Benchmark)의 투자 철학: \"서두르지 않고 샌프란시스코를 지킨다\"",
+    "summary_3_lines": [
+      "실리콘밸리의 전설적인 VC 벤치마크의 파트너들이 최근 AI 중심의 시장 과열 속 자사 투자 전략을 공유함.",
+      "펀드 규모 확대와 파트너 교체 속에서도 5인의 파트너는 끈끈한 유대와 소수 정예 협업 체제를 유지하고 있음을 강조함.",
+      "조급한 추격 매수를 지양하고 전통적 거점인 샌프란시스코 중심의 선별적 초기 투자를 고수하겠다는 입장을 밝힘."
+    ],
+    "business_insight": "메가 펀드화되는 벤처캐피털 시장에서 벤치마크는 소수 정예 파트너십을 고수하며, 포모(FOMO)에 휩쓸리지 않는 엄격한 퀄리티 중심 투자가 여전히 유효한 알파 창출 전략임을 시사합니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
+    "link": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+    "canonical_url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+    "published_at": "2026-10-18T20:37:40",
+    "summary": "Anthropic said that it will commit 5% of its shares to the fund.",
+    "score": 22,
+    "score_breakdown": {
+      "total_score": 22,
+      "impact": 12,
+      "business": 0,
+      "development": 0,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true,
+    "korean_title": "앤스로픽(Anthropic), 지분 5% 공익 기금에 출연 약정",
+    "summary_3_lines": [
+      "AI 모델 '클로드' 개발사 앤스로픽이 전체 발행 주식의 5%를 공익 기금(Public Benefit Fund)에 출연하기로 결정함.",
+      "해당 기금은 AI 기술 고도화로 인한 경제적·사회적 혜택을 공공과 나누기 위한 목적으로 조성됨.",
+      "공익법인(PBC) 구조를 채택한 앤스로픽의 책임감 있는 AI 개발(Responsible AI) 기조를 실행에 옮긴 조치임."
+    ],
+    "business_insight": "빅테크 및 AI 기업을 향한 사회적 책임 요구와 규제 압박이 거세지는 가운데, 지분 기부를 통한 선제적 공익 환원은 기업 신뢰도 제고와 장기적 규제 리스크 완화에 기여할 수 있습니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Everyone’s watching the Elizabeth Holmes documentary ‘You Can See Everything’",
+    "link": "https://techcrunch.com/2026/10/18/everyones-watching-the-elizabeth-holmes-documentary-you-can-see-everything/",
+    "canonical_url": "https://techcrunch.com/2026/10/18/everyones-watching-the-elizabeth-holmes-documentary-you-can-see-everything/",
+    "published_at": "2026-10-18T19:03:38",
+    "summary": "\"You Can See Everything\" is having the second biggest opening weekend ever for a documentary film.",
+    "score": 15,
+    "score_breakdown": {
+      "total_score": 15,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true,
+    "korean_title": "엘리자베스 홈즈 다큐멘터리 '유 캔 씨 에브리씽', 역대급 흥행 기록",
+    "summary_3_lines": [
+      "테라노스 창업자 엘리자베스 홈즈의 사기 스캔들을 다룬 신작 다큐멘터리 'You Can See Everything'이 개봉함.",
+      "해당 작품은 다큐멘터리 영화 장르 역사상 두 번째로 높은 오프닝 주말 흥행 실적을 달성함.",
+      "실리콘밸리 스타트업의 맹목적인 과장 문화와 거품 붕괴 서사에 대한 대중적 관심이 여전히 강력함을 입증함."
+    ],
+    "business_insight": "테크 업계의 실패와 윤리적 일탈은 대중 문화 콘텐츠로서 높은 상업적 가치를 지니며, 투자자와 대중이 스타트업의 하이프(Hype)를 대하는 비판적 시각이 상시화되었음을 보여줍니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Disney agrees to hire the majority of Character.AI’s workforce",
+    "link": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+    "canonical_url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+    "published_at": "2026-10-18T16:30:00",
+    "summary": "The filing also says that the “vast majority” of Character.AI employees who were offered jobs at Disney accepted them. However, this is a stalking horse bid, so another company could come forward with a higher offer.",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true,
+    "korean_title": "디즈니, 캐릭터닷에이아이(Character.AI) 핵심 인력 대다수 흡수 합의",
+    "summary_3_lines": [
+      "디즈니가 생성형 AI 스타트업 캐릭터닷에이아이의 핵심 인력 대다수를 영입하기로 잠정 합의함.",
+      "공시 서류에 따르면 입사 제안을 받은 Character.AI 직원 중 '절대 다수'가 디즈니 합류를 수락함.",
+      "다만 이번 계약은 스토킹 호스(Stalking Horse) 입찰 방식이어서 타 경쟁사의 추가적인 고액 인수가 가능함."
+    ],
+    "business_insight": "직접 인수 시 발생하는 반독점 규제 리스크를 회피하면서 핵심 AI 인재와 지식재산(IP) 역량을 선별 확보하려는 빅테크·엔터테인먼트 공룡들의 변형된 '인재 인수(Acqui-hire)' 트렌드가 본격화되고 있습니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "TechCrunch",
+    "title": "TechCrunch Mobility: Rivian’s next act",
+    "link": "https://techcrunch.com/2026/10/18/techcrunch-mobility-rivians-next-act/",
+    "canonical_url": "https://techcrunch.com/2026/10/18/techcrunch-mobility-rivians-next-act/",
+    "published_at": "2026-10-18T16:05:00",
+    "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 5,
+    "is_primary": true,
+    "korean_title": "테크크런치 모빌리티: 리비안(Rivian)의 차세대 도약과 AI의 역할",
+    "summary_3_lines": [
+      "테크크런치 모빌리티가 미래 운송 수단의 패러다임 변화 속에서 리비안의 차기 행보를 집중 조명함.",
+      "전기차 캐즘(대중화 전 일시적 수요 정체) 속에서 완성차 기업들의 AI 기술 도입 필요성이 전례 없이 부각됨.",
+      "단순한 하드웨어 생산을 넘어 소프트웨어 정의 차량(SDV)과 자율주행 역량이 차세대 경쟁력의 핵심으로 떠오름."
+    ],
+    "business_insight": "전기차 시장이 배터리 및 주행거리 경쟁에서 AI 기반 소프트웨어 아키텍처 중심으로 재편됨에 따라, 리비안과 같은 제조사들은 온보드 AI 소프트웨어 수익화 및 운영 효율 극대화가 생존의 전제조건이 되었습니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Anthropic gives outside AI watchdog “employee-like” access",
+    "link": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+    "canonical_url": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+    "published_at": "2026-10-18T16:25:19",
+    "summary": "The outside watchdog can publish its findings without Anthropic's approval.",
+    "score": 19,
+    "score_breakdown": {
+      "total_score": 19,
+      "impact": 12,
+      "business": 0,
+      "development": 0,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true,
+    "korean_title": "앤트로픽, 외부 AI 감시 기구에 '직원 수준' 내부 접근 권한 전격 부여",
+    "summary_3_lines": [
+      "앤트로픽이 외부 독립 AI 감시 기구에 내부 직원과 유사한 수준의 핵심 모델 및 데이터 접근 권한을 부여함.",
+      "해당 감시 기구는 앤트로픽의 사전 승인이나 검열 없이 조사 및 평가 결과를 독립적으로 공개할 수 있는 권리를 보장받음.",
+      "폐쇄적 평가 방식에서 탈피해 제3자 감시를 공식화함으로써 AI 안전성 검증의 투명성을 대폭 강화함."
+    ],
+    "business_insight": "각국 정부의 AI 규제 압박이 거세지는 가운데, 선제적으로 독립적 감사 체계를 도입해 규제 적합성을 입증하고 엔터프라이즈 시장에서 경쟁사 대비 신뢰 우위를 선점하려는 전략적 행보로 분석된다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Information",
+    "title": "Why Upstart Banks May Have to Keep Raising Money",
+    "link": "https://www.theinformation.com/articles/upstart-banks-may-keep-raising-money",
+    "canonical_url": "https://www.theinformation.com/articles/upstart-banks-may-keep-raising-money",
+    "published_at": "2026-10-18T15:00:42",
+    "summary": "The Trump administration has opened the door for entrepreneurs to start new banks in the U.S., many funded by venture capital. But there’s a catch for fast-growing newcomers. Upstarts like Palmer Luckey’s Erebor Bank, as well as other new entrants like Openreserve and Augustus, will likely have to keep raising money as they grow to maintain the capital cushion they need to satisfy bank regulatory requirements. That’s a contrast to most startups, which use fresh venture money to pay for operating expenses and expand the business. Regulators require banks to maintain a capital cushion to absorb potential losses and protect depositors. That cushion is typically measured through a minimum tier 1 leverage ratio, which measures a bank’s capital relative to assets including cash, loans and investments. For instance, a bank subject to a 12% minimum tier 1 leverage ratio needs to maintain at least $12 in capital for every $100 in assets. As a bank attracts more deposits, its assets, such as loans, typically grow too, increasing the amount of capital it needs to meet that minimum ratio. Established banks can build up their capital through their profits, but newer banks that aren’t yet profitable have to rely instead on raising fresh equity from investors. Startup banks have already been raising significant funding to get their businesses off the ground or as deposits grow. Erebor Bank is set to raise $1.5 billion in a fresh fundraising round at an $8 billion valuation before the investment, after launching with $625 million in committed capital in February. The fundraising comes as the bank has seen its deposits surge to $7 billion as of the end of September, up from $4 billion at the end of the prior quarter. Meanwhile, Openreserve, an a16z crypto-backed bank that raised $25 million in September, said it expects to announce an additional capital raise to meet its regulatory requirements ahead of its planned opening early next year. Then there’s Augustus, a startup bank focused on serving fintech companies. It raised $180 million in a Tiger Global Management–led round in July at a $1 billion valuation and expects to open later this year. Regulators give capital ratios to each bank based on their assessment of the institution’s business plans and risks. Newly created banks typically face tougher capital requirements than established banks. For the first three years of operation, Erebor and Openreserve must each maintain a minimum tier 1 leverage ratio of 12%, while Augustus faces a 10% minimum. Established banks, by comparison, typically have ratios of between 5% and 6%. “There’s no question that the regulators treat de novo banks—new banks—differently than they do well-established banks,” according to Brian Graham, a partner and co-founder at consulting firm Klaros Group who advises clients on bank charter applications. Graham noted that the extra capital requirements typically go away after a bank has been operating for three years. The upstart banks are generally pursuing relatively new business models or focusing on sectors big banks typically avoid. Erebor Bank, for example, has gained traction in areas prioritized by the Trump administration, such as defense startups and crypto firms, and is expanding in geographies traditional banks typically avoid, including Venezuela and Syria. In addition to making minimum capital requirements, the Federal Deposit Insurance Corp.—a banking regulator—imposed an unusual condition on its approval of Erebor for the deposit insurance program. Under a capital-call provision, Erebor’s investors must contribute additional capital if the bank doesn’t meet its minimum capital requirements, according to a filing. The filing didn’t disclose which investors are required to provide the capital backstop. In the meantime, upstart banks that are looking to drive revenue growth from lending rather than fees will likely need to tap investors to build their capital. “To the extent the bank’s business model is reliant materially on the balance sheet for revenue and net income, you’re going to need to raise more capital to drive growth,” Klaros’ Graham said. Openreserve, for its part, plans to make loans backed by traditional assets and turn them into digital tokens that can trade on blockchain, potentially providing a new source of loans for investors and lenders in the crypto market. For example, it plans to lend businesses money against their trade receivables, turning those assets into digital tokens to make them easier to trade. “Our ambition is to be the on-chain GSIB,” referring to a globally systemically important bank, said Dee Choubey, founder and CEO of Openreserve. The bank also plans to issue its own stablecoin and to offer tokenized deposits, digital versions of traditional bank accounts that earn interest. Over time, it aims to provide banking and payment services to other digital banks. Augustus plans to focus on helping fintech, crypto and remittance companies move money across borders using both traditional banking systems and stablecoins. That will put it in competition with existing banks like United Texas Bank, which has become dominant in processing dollar payments for overseas crypto exchanges. “Whenever someone outside the U.S. touches the dollar through a local bank or local fintech, that always has to be facilitated by a U.S. nationally chartered clearing bank, so we provide that service,” said Augustus CEO Ferdinand Dabitz. In Europe, the bank already counts crypto exchange Kraken among its clients. Augustus is less focused on activities like lending, however, and has a lower ratio than the other two. The company has raised significantly more than its initial capital requirement, which could lessen the need for more fundraising in the near term. “We are less focused on the credit side as other market participants. We think the clearing side is really where we shine,” Dabitz said. New From Our Reporters Inside a TPG-Backed Accounting Firm’s Plans for AI and More Acquisitions By Alex Eichenstein Artificial Intelligence Anthropic’s Rapid But Slowing Growth Could Weigh on IPO Valuation By Cory Weinberg",
+    "score": 72,
+    "score_breakdown": {
+      "total_score": 72,
+      "impact": 35,
+      "business": 25,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true,
+    "korean_title": "신생 핀테크 은행들이 끊임없이 추가 자본 조달에 매달려야 하는 이유",
+    "summary_3_lines": [
+      "트럼프 행정부의 규제 완화 기조 속에 설립된 에레보르, 오픈리저브 등 신생 은행들이 급증하는 예금에 비례해 규제 자본 요건(Tier 1 레버리지 비율 10~12%)을 맞추기 위한 지속적인 증자 압박을 받고 있음.",
+      "기존 은행은 자체 이익 잉여금으로 완충 자본을 확충하지만, 미흑자 신생 은행은 대출 자산이 늘어날수록 외부 VC 투자금 유치에 의존해야 하며 FDIC는 자본 확충 의무(Capital-call) 조건까지 부과함.",
+      "반면 아우구스투스처럼 대출보다는 국경 간 결제 및 청산(Clearing) 수수료 중심 비즈니스를 전개하는 곳은 규제 자본 부담과 추가 펀딩 리스크가 상대적으로 낮음."
+    ],
+    "business_insight": "신생 특화 은행들이 고성장할수록 유치한 VC 투자금이 제품 개발이나 사업 확장이 아닌 규제 준수용 자기자본 완충액(Equity Cushion)으로 묶이게 되는 구조적 딜레마가 가시화되고 있습니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Information",
+    "title": "Neocloud Shakeout Looms, and Nvidia Has a Lot to Lose",
+    "link": "https://www.theinformation.com/articles/neocloud-shakeout-looms-nvidia-lot-lose",
+    "canonical_url": "https://www.theinformation.com/articles/neocloud-shakeout-looms-nvidia-lot-lose",
+    "published_at": "2026-10-18T15:30:42",
+    "summary": "How many young AI cloud providers can the market, and Nvidia, support? That’s one of the big questions after a week in which investors worried about the data center buildout and the risks that its unproven participants, known as neoclouds, are taking. Those risks include loading up on debt (CoreWeave) or trying to go public without much of a track record (Firmus and Nscale). Firmus abruptly pulled its public offering last week while shares of CoreWeave and its smaller rivals fell around 20%. The concerns even hit bigger AI cloud providers like Oracle. Data center and neocloud executives told me there’s a limit to the number of AI cloud providers that can exist, even if Nvidia provides many of them with investment or backstops.",
+    "score": 42,
+    "score_breakdown": {
+      "total_score": 42,
+      "impact": 12,
+      "business": 18,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true,
+    "korean_title": "네오클라우드 구조조정 본격화와 엔비디아가 직면한 동반 리스크",
+    "summary_3_lines": [
+      "코어위브, 퍼머스, 엔스케일 등 신생 AI 클라우드(네오클라우드) 기업들이 과도한 부채 조달과 미검증된 사업 실적 속에서 IPO 철회 및 기업가치 20% 급락 등 냉혹한 시장 평가에 직면함.",
+      "데이터센터 증설 리스크와 투자 회수 우려가 커지면서 오라클 등 기존 대형 클라우드 사업자들까지 시장 불안의 영향권에 진입함.",
+      "엔비디아가 이들 다수에 직접 지분 투자 및 칩 물량을 배정해 왔기 때문에, 네오클라우드 업계의 솎아내기는 엔비디아의 주요 수요 기반에도 직접적인 타격을 줄 수 있음."
+    ],
+    "business_insight": "엔비디아가 주도해 온 AI 벤더 파이낸싱 및 GPU 생태계 연쇄 고리가 신생 인프라 기업들의 유동성 한계와 맞물리며 향후 AI 하드웨어 시장 전반의 단기 조정 압력으로 작용할 가능성이 큽니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Information",
+    "title": "Microsoft Pulls Out of Nscale U.K. Data Center Following Delays",
+    "link": "https://www.theinformation.com/briefings/microsoft-pulls-nscale-u-k-data-center-following-delays",
+    "canonical_url": "https://www.theinformation.com/briefings/microsoft-pulls-nscale-u-k-data-center-following-delays",
+    "published_at": "2026-10-18T20:08:27",
+    "summary": "Microsoft has pulled out of a planned U.K. data center Nscale was building for it, an Nscale spokesperson said, after the cloud provider faced delays accessing power to bring the site online. The cancellation is likely to weigh on Nscale’s planned public offering this month as investor concerns ...",
+    "score": 33,
+    "score_breakdown": {
+      "total_score": 33,
+      "impact": 0,
+      "business": 18,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true,
+    "korean_title": "마이크로소프트, 전력 공급 지연 이유로 엔스케일 영국 데이터센터 계약 철회",
+    "summary_3_lines": [
+      "마이크로소프트가 신생 인프라 스타트업 엔스케일(Nscale)이 구축 중이던 영국 데이터센터 계약을 전격 취소함.",
+      "데이터센터 가동에 필수적인 전력망 인입(Power Access) 확보 지연이 핵심 파기 원인으로 파악됨.",
+      "대형 앵커 고객을 상실함에 따라 이달 예정되어 있던 엔스케일의 기업공개(IPO) 추진 및 밸류에이션 확보에 심각한 차질이 발생함."
+    ],
+    "business_insight": "빅테크 AI 인프라 확장의 핵심 병목이 GPU 수급에서 '전력 및 그리드 인프라 실행력'으로 완전히 전환되었으며, 전력 조달 능력을 입증하지 못한 군소 인프라 사업자는 급격한 도태 위기에 직면하게 됩니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Information",
+    "title": "Meta, Tesla and Netflix Q3 Updates Coming This Week",
+    "link": "https://www.theinformation.com/articles/meta-tesla-netflix-q3-updates-coming-week",
+    "canonical_url": "https://www.theinformation.com/articles/meta-tesla-netflix-q3-updates-coming-week",
+    "published_at": "2026-10-18T22:00:50",
+    "summary": "Tech earnings season is back (yes, I know it feels like it never ends). This time, we’ve got a slight twist: Meta Platforms has broken with the pack and is reporting its September-quarter earnings on Wednesday, a week ahead of its big tech counterparts, Google, Microsoft and Amazon. (Apple is even later, on Nov. 2.) By reporting earlier than the others, Meta ensures it will grab more of the spotlight, for better or worse. Until last week’s market sell-off, Meta had been riding a wave of enthusiasm on Wall Street, thanks to chatter about its Muse personal agent and recently released Muse Wonder AI models. Things changed last week, particularly on Friday, as renewed jitters about the AI expansion tanked most tech stocks. Given Meta’s gargantuan spending on AI development, this week’s update will provide a new test of investor sentiment toward Meta shares.",
+    "score": 27,
+    "score_breakdown": {
+      "total_score": 27,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true,
+    "korean_title": "메타·테슬라·넷플릭스 3분기 실적 발표 임박… 빅테크 AI 투자 지속성 시험대",
+    "summary_3_lines": [
+      "메타(Meta)가 구글, 마이크로소프트, 아마존보다 일주일 앞선 이번 주 수요일 3분기 실적을 발표하며 빅테크 어닝 시즌의 집중 조명을 받게 됨.",
+      "최근 뮤즈(Muse) 개인 비서 및 AI 모델 출시로 형성되었던 시장 기대감이 전반적인 AI 인프라 거품 우려로 인해 주가 급락세를 겪은 상황임.",
+      "메타의 천문학적인 AI 인프라 캡엑스(CapEx) 지출 계획과 수익화 로드맵은 월가 전반의 빅테크 AI 투자 심리를 가늠할 결정적 지표가 될 예정임."
+    ],
+    "business_insight": "메타가 빅테크 진영 중 가장 먼저 성적표를 제시함에 따라, 막대한 설비 투자가 디지털 광고 효율 개선이나 신규 AI 구독 매출 등 실질적 ROI로 증명되고 있는지가 이번 주 기술주 시장 전반의 향방을 가를 것입니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Information",
+    "title": "Anthropic Commits At Least 5% of Shares to New Public Benefit Fund",
+    "link": "https://www.theinformation.com/briefings/anthropic-commits-least-5-shares-new-public-benefit-fund",
+    "canonical_url": "https://www.theinformation.com/briefings/anthropic-commits-least-5-shares-new-public-benefit-fund",
+    "published_at": "2026-10-18T20:57:11",
+    "summary": "Anthropic announced the creation of a new fund that will get at least 5% of its shares and support public-benefit causes such as addressing the employment impact of AI. The Anthropic Public Benefit Fund could get an additional 2% of the company’s shares on top of the initial 5% commitment, at ...",
+    "score": 27,
+    "score_breakdown": {
+      "total_score": 27,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 5,
+    "is_primary": true,
+    "korean_title": "앤스로픽, 지분 최소 5% 출연해 AI 고용 영향 대응 공익 펀드 신설",
+    "summary_3_lines": [
+      "생성형 AI 유니콘 앤스로픽이 회사 지분의 최소 5%(상황에 따라 최대 2% 추가)를 신설 공익 펀드에 출연하기로 결정함.",
+      "해당 펀드는 급격한 AI 기술 발전이 노동 시장과 일자리에 미칠 충격을 완화하고 사회적 공익 과제를 지원하는 데 활용될 계획임.",
+      "공익법인(PBC) 형태의 거버넌스를 강화함으로써 고성장 AI 기술이 유발할 사회적 부작용에 선제적으로 대응하려는 의도로 분석됨."
+    ],
+    "business_insight": "향후 대규모 IPO나 규제 강화에 앞서 잠재적 노동 대체 이슈에 대한 사회적 기여 모델을 제도화함으로써, 규제 리스크를 선제적으로 방어하고 테크 기업으로서의 브랜드 신뢰도를 확보하려는 전략적 지배구조 설계입니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  }
+]

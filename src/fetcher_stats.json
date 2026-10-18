@@ -8,14 +8,14 @@
   "TechCrunch": {
     "status": "success",
     "raw_count": 20,
-    "eligible_count": 6,
+    "eligible_count": 5,
     "selected_count": 5
   },
   "Ars Technica": {
     "status": "shortage",
     "raw_count": 20,
-    "eligible_count": 2,
-    "selected_count": 2
+    "eligible_count": 1,
+    "selected_count": 1
   },
   "MIT Tech Review": {
     "status": "shortage",
@@ -24,9 +24,9 @@
     "selected_count": 0
   },
   "The Information": {
-    "status": "shortage",
+    "status": "success",
     "raw_count": 20,
-    "eligible_count": 1,
-    "selected_count": 1
+    "eligible_count": 5,
+    "selected_count": 5
   }
 }
