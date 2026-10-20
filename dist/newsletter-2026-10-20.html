@@ -1,0 +1,2242 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Daily Tech Insights: 2026-10-20 - 글로벌 5대 테크 미디어 핵심 큐레이션 및 AI 비즈니스 인사이트">
+  <title>Daily Tech Insights | 2026-10-20</title>
+  <style>
+    /* ==========================================================================
+       Design System Tokens (Discord Macro-Structure + Toss Tactile Clarity)
+       Pure Vanilla CSS3 / Zero Dependencies / High Accessibility
+       ========================================================================== */
+    :root {
+      --toss-blue: #3182f6;
+      --toss-blue-hover: #1b64da;
+      --toss-blue-subtle: rgba(49, 130, 246, 0.12);
+      --toss-blue-glow: rgba(49, 130, 246, 0.28);
+
+      --rail-width: 58px;
+      --sidebar-width: 232px;
+      --metadata-width: 260px;
+      --content-max-width: 860px;
+
+      /* Dark Theme (Default) */
+      --bg-app: #141518;
+      --bg-rail: #191a1d;
+      --bg-sidebar: #1e2024;
+      --bg-workspace: #25272c;
+      --surface-card: #2c2e35;
+      --surface-inset: #1a1b1f;
+      --surface-hover: #34373f;
+      --surface-active: #3c4049;
+
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-strong: rgba(255, 255, 255, 0.14);
+      --border-focus: rgba(49, 130, 246, 0.6);
+
+      --text-header: #f3f5f8;
+      --text-normal: #d1d5dd;
+      --text-muted: #8c93a0;
+      --text-link: #4593fc;
+
+      --shadow-card: 0 4px 18px rgba(0, 0, 0, 0.22);
+      --shadow-hover: 0 10px 32px rgba(0, 0, 0, 0.36);
+
+      --radius-card: 20px;
+      --radius-md: 14px;
+      --radius-sm: 10px;
+      --radius-pill: 9999px;
+
+      --font-stack: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      --spring-physics: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      --spring-tap: transform 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-app: #f2f4f7;
+      --bg-rail: #e4e7ed;
+      --bg-sidebar: #edf0f5;
+      --bg-workspace: #f8f9fb;
+      --surface-card: #ffffff;
+      --surface-inset: #f2f4f7;
+      --surface-hover: #e6ebf2;
+      --surface-active: #dbe1eb;
+
+      --border-subtle: rgba(0, 0, 0, 0.07);
+      --border-strong: rgba(0, 0, 0, 0.13);
+      --border-focus: rgba(49, 130, 246, 0.7);
+
+      --text-header: #191f28;
+      --text-normal: #333d4b;
+      --text-muted: #6b7684;
+      --text-link: #3182f6;
+
+      --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.06);
+      --shadow-hover: 0 8px 26px rgba(0, 0, 0, 0.12);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html, body {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      font-family: var(--font-stack);
+      background-color: var(--bg-app);
+      color: var(--text-normal);
+      line-height: 1.6;
+      word-break: keep-all;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Global App Shell Layout */
+    .discord-app-shell {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    /* ==========================================================================
+       Level 1: Global Rail (Streamlined Brand Home Control)
+       ========================================================================== */
+    .global-rail {
+      width: var(--rail-width);
+      min-width: var(--rail-width);
+      height: 100%;
+      background-color: var(--bg-rail);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 14px 0;
+      border-right: 1px solid var(--border-subtle);
+      z-index: 30;
+      flex-shrink: 0;
+    }
+
+    .rail-btn {
+      position: relative;
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      background-color: var(--toss-blue);
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      transition: var(--spring-physics);
+      box-shadow: 0 4px 14px var(--toss-blue-glow);
+    }
+
+    .rail-btn:hover {
+      transform: scale(1.06);
+      background-color: var(--toss-blue-hover);
+    }
+
+    .rail-btn:active {
+      transform: scale(0.94);
+    }
+
+    .rail-btn:focus-visible {
+      outline: 2px solid #ffffff;
+      outline-offset: 2px;
+    }
+
+    .rail-btn.active::before {
+      content: "";
+      position: absolute;
+      left: -8px;
+      width: 4px;
+      height: 28px;
+      border-radius: 0 4px 4px 0;
+      background-color: #ffffff;
+    }
+
+    /* ==========================================================================
+       Level 2: Context Sidebar (Search + Channels Navigation)
+       ========================================================================== */
+    .context-sidebar {
+      width: var(--sidebar-width);
+      min-width: var(--sidebar-width);
+      height: 100%;
+      background-color: var(--bg-sidebar);
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid var(--border-subtle);
+      z-index: 25;
+      flex-shrink: 0;
+      transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .server-header {
+      height: 52px;
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-subtle);
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: var(--text-header);
+    }
+
+    .server-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Sidebar Search Input */
+    .sidebar-search-box {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .search-input-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 10px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .toss-search-input {
+      width: 100%;
+      height: 34px;
+      padding: 0 28px 0 28px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+      background-color: var(--surface-inset);
+      color: var(--text-header);
+      font-size: 0.82rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--spring-physics);
+    }
+
+    .toss-search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 2px var(--toss-blue-subtle);
+    }
+
+    .search-clear-btn {
+      position: absolute;
+      right: 6px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: none;
+      background-color: var(--surface-hover);
+      color: var(--text-muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      transition: var(--spring-physics);
+    }
+
+    .search-clear-btn:hover {
+      color: var(--text-header);
+      background-color: var(--surface-active);
+    }
+
+    .channels-scroll {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .channel-category {
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      padding: 10px 8px 4px 8px;
+    }
+
+    .channel-item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 10px;
+      border-radius: 10px;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      transition: var(--spring-physics);
+      text-align: left;
+      font-family: inherit;
+    }
+
+    .channel-item:hover {
+      background-color: var(--surface-hover);
+      color: var(--text-header);
+    }
+
+    .channel-item.active {
+      background-color: var(--surface-active);
+      color: var(--text-header);
+      font-weight: 700;
+    }
+
+    .channel-item:focus-visible {
+      outline: 2px solid var(--toss-blue);
+      outline-offset: 1px;
+    }
+
+    .channel-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .channel-mark-badge {
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.68rem;
+      font-weight: 800;
+      color: #ffffff;
+      background-color: var(--toss-blue);
+    }
+    .channel-mark-badge.all { background-color: var(--toss-blue); }
+    .channel-mark-badge.verge { background-color: #e0005a; }
+    .channel-mark-badge.techcrunch { background-color: #029924; }
+    .channel-mark-badge.arstechnica { background-color: #ff4e00; }
+    .channel-mark-badge.mit { background-color: #333333; }
+    .channel-mark-badge.theinformation { background-color: #0d253f; }
+
+    .channel-name {
+      font-size: 0.86rem;
+      letter-spacing: -0.01em;
+    }
+
+    .channel-count {
+      font-size: 0.72rem;
+      background-color: var(--surface-inset);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    .channel-item.active .channel-count {
+      color: var(--text-header);
+      background-color: var(--surface-card);
+    }
+
+    .sidebar-user-tray {
+      height: 52px;
+      background-color: var(--bg-rail);
+      padding: 0 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .user-info-box {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .status-dot {
+      width: 9px;
+      height: 9px;
+      background-color: #23a55a;
+      border-radius: 50%;
+      box-shadow: 0 0 6px #23a55a;
+    }
+
+    .user-name-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-header);
+      line-height: 1.2;
+    }
+
+    .user-sub-label {
+      font-size: 0.68rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       Level 3: Primary Workspace (Briefing Header + Article Cards)
+       ========================================================================== */
+    .chat-workspace {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bg-workspace);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .workspace-header {
+      height: 52px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-subtle);
+      background-color: var(--bg-workspace);
+      z-index: 15;
+      flex-shrink: 0;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      border: 1px solid var(--border-subtle);
+      background-color: var(--surface-card);
+      color: var(--text-header);
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    .topic-pill {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: var(--text-header);
+    }
+
+    .topic-divider {
+      width: 1px;
+      height: 14px;
+      background-color: var(--border-strong);
+    }
+
+    .topic-desc {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .theme-toggle-btn {
+      padding: 6px 12px;
+      border-radius: 10px;
+      background-color: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-normal);
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--spring-physics);
+      font-family: inherit;
+    }
+
+    .theme-toggle-btn:hover {
+      background-color: var(--surface-hover);
+      transform: translateY(-1px);
+    }
+
+    .theme-toggle-btn:focus-visible {
+      outline: 2px solid var(--toss-blue);
+      outline-offset: 1px;
+    }
+
+    /* Scrollable Feed Container */
+    .messages-feed {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px 24px 60px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+    }
+
+    /* Streamlined Editorial Briefing Header */
+    .feed-hero {
+      width: 100%;
+      max-width: var(--content-max-width);
+      background: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-card);
+      padding: 20px 22px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .hero-badge-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .toss-tag {
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: var(--radius-pill);
+      background-color: var(--toss-blue-subtle);
+      color: var(--toss-blue);
+      letter-spacing: 0.02em;
+    }
+
+    .hero-date-badge {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+
+    .hero-count-badge {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-left: auto;
+    }
+
+    .hero-title {
+      font-size: 1.55rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      color: var(--text-header);
+      margin-bottom: 6px;
+      line-height: 1.25;
+    }
+
+    .hero-subtitle {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       Toss Article Cards (Clean Hierarchy & Typography)
+       ========================================================================== */
+    .toss-card {
+      width: 100%;
+      max-width: var(--content-max-width);
+      background-color: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-card);
+      padding: 22px 24px;
+      box-shadow: var(--shadow-card);
+      transition: var(--spring-physics);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .toss-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--border-strong);
+    }
+
+    .card-top-rail {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .media-identity {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .media-avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      color: #ffffff;
+      font-size: 0.76rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      flex-shrink: 0;
+    }
+    .media-avatar.verge { background: linear-gradient(135deg, #e0005a, #fa2d60); }
+    .media-avatar.techcrunch { background: linear-gradient(135deg, #029924, #00d235); }
+    .media-avatar.arstechnica { background: linear-gradient(135deg, #ff4e00, #ff8100); }
+    .media-avatar.mit { background: linear-gradient(135deg, #222222, #444444); }
+    .media-avatar.theinformation { background: linear-gradient(135deg, #0d253f, #1b497a); }
+
+    .media-name {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--text-header);
+    }
+
+    .channel-slug {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .toss-pill-link {
+      font-size: 0.8rem;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      background-color: var(--toss-blue-subtle);
+      color: var(--toss-blue);
+      text-decoration: none;
+      transition: var(--spring-physics);
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .toss-pill-link:hover {
+      background-color: var(--toss-blue);
+      color: #ffffff;
+      transform: scale(1.03);
+    }
+
+    .toss-pill-link:focus-visible {
+      outline: 2px solid var(--toss-blue);
+      outline-offset: 2px;
+    }
+
+    .card-headline {
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      color: var(--text-header);
+      line-height: 1.4;
+    }
+
+    /* Inset Summary Box */
+    .toss-surface-box {
+      background-color: var(--surface-inset);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .section-badge {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .summary-bullet-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .summary-bullet {
+      position: relative;
+      padding-left: 16px;
+      font-size: 0.92rem;
+      color: var(--text-normal);
+      line-height: 1.58;
+    }
+
+    .summary-bullet::before {
+      content: "•";
+      position: absolute;
+      left: 2px;
+      color: var(--toss-blue);
+      font-weight: 900;
+      font-size: 1.15rem;
+      line-height: 1;
+    }
+
+    /* AI Business Insight Callout */
+    .toss-insight-card {
+      background-color: var(--toss-blue-subtle);
+      border-left: 3px solid var(--toss-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 12px 16px;
+    }
+
+    .insight-pill {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--toss-blue);
+      margin-bottom: 6px;
+    }
+
+    .insight-description {
+      font-size: 0.91rem;
+      font-weight: 600;
+      color: var(--text-header);
+      line-height: 1.58;
+    }
+
+    .card-footer-action {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 2px;
+    }
+
+    .toss-secondary-btn {
+      border: 1px solid var(--border-subtle);
+      background-color: var(--surface-inset);
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: var(--spring-physics);
+      font-family: inherit;
+    }
+
+    .toss-secondary-btn:hover {
+      background-color: var(--surface-hover);
+      color: var(--text-header);
+    }
+
+    .toss-secondary-btn.copied {
+      background-color: var(--toss-blue);
+      color: #ffffff;
+      border-color: var(--toss-blue);
+    }
+
+    .reading-time {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* No-Results State */
+    .toss-empty-state {
+      width: 100%;
+      max-width: var(--content-max-width);
+      background-color: var(--surface-card);
+      border: 1px dashed var(--border-strong);
+      border-radius: var(--radius-card);
+      padding: 48px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 12px;
+    }
+
+    .empty-icon {
+      font-size: 2.2rem;
+      opacity: 0.8;
+    }
+
+    .empty-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text-header);
+    }
+
+    .empty-desc {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    /* ==========================================================================
+       Level 4: Metadata Panel (System Indicators & Publisher Status)
+       ========================================================================== */
+    .metadata-panel {
+      width: var(--metadata-width);
+      min-width: var(--metadata-width);
+      height: 100%;
+      background-color: var(--bg-sidebar);
+      border-left: 1px solid var(--border-subtle);
+      padding: 16px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      overflow-y: auto;
+      flex-shrink: 0;
+    }
+
+    .meta-group-title {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .metric-card {
+      background-color: var(--surface-card);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .metric-label {
+      font-size: 0.73rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .metric-value {
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: var(--toss-blue);
+      letter-spacing: -0.02em;
+    }
+
+    .metric-subtext {
+      font-size: 0.68rem;
+      color: var(--text-muted);
+    }
+
+    .feed-status-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 10px;
+      border-radius: 8px;
+      background-color: var(--surface-card);
+      font-size: 0.78rem;
+      font-weight: 700;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .status-source-name {
+      color: var(--text-header);
+    }
+
+    .status-badge-active {
+      color: #23a55a;
+      font-size: 0.73rem;
+      font-weight: 700;
+    }
+
+    .status-badge-warning {
+      color: #f59f00;
+      font-size: 0.73rem;
+      font-weight: 700;
+    }
+
+    .status-badge-error {
+      color: #fa5252;
+      font-size: 0.73rem;
+      font-weight: 700;
+    }
+
+    /* Toast Notification */
+    .toss-toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background-color: #191f28;
+      color: #ffffff;
+      padding: 10px 18px;
+      border-radius: var(--radius-pill);
+      font-size: 0.85rem;
+      font-weight: 700;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+      z-index: 100;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    [data-theme="light"] .toss-toast {
+      background-color: #333d4b;
+    }
+
+    .toss-toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* Drawer Backdrop for Mobile */
+    .drawer-backdrop {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.45);
+      z-index: 24;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    /* ==========================================================================
+       Responsive Breakpoints
+       ========================================================================== */
+    @media (max-width: 1180px) {
+      .metadata-panel {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .global-rail {
+        display: none;
+      }
+      .mobile-menu-btn {
+        display: flex;
+      }
+      .context-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        transform: translateX(-100%);
+        box-shadow: 4px 0 24px rgba(0, 0, 0, 0.4);
+      }
+      .context-sidebar.open {
+        transform: translateX(0);
+      }
+      .drawer-backdrop.open {
+        display: block;
+        opacity: 1;
+      }
+      .messages-feed {
+        padding: 14px 14px 40px 14px;
+        gap: 14px;
+      }
+      .feed-hero {
+        padding: 16px 16px;
+      }
+      .hero-title {
+        font-size: 1.35rem;
+      }
+      .toss-card {
+        padding: 18px 16px;
+        border-radius: 16px;
+      }
+      .card-headline {
+        font-size: 1.12rem;
+      }
+      .topic-desc {
+        display: none;
+      }
+    }
+
+    /* Accessibility: Reduced Motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="discord-app-shell">
+
+    <!-- Level 1: Global Rail (Deterministic Home / Reset Control) -->
+    <nav class="global-rail" aria-label="글로벌 홈 네비게이션">
+      <button type="button" class="rail-btn active" id="homeRailBtn" title="전체 브리핑 피드 (초기화)" aria-label="전체 브리핑 피드로 이동" onclick="resetAllFilters(this)">
+        ⚡
+      </button>
+    </nav>
+
+    <!-- Mobile Drawer Backdrop -->
+    <div class="drawer-backdrop" id="drawerBackdrop" onclick="closeMobileMenu()" aria-hidden="true"></div>
+
+    <!-- Level 2: Context Sidebar (Search + Channels) -->
+    <aside class="context-sidebar" aria-label="채널 네비게이션">
+      <div class="server-header">
+        <span class="server-badge">⚡ Tech Intel HQ</span>
+        <span style="font-size: 0.8rem; color: var(--toss-blue);" aria-hidden="true">✔</span>
+      </div>
+
+      <!-- Search Input -->
+      <div class="sidebar-search-box">
+        <div class="search-input-wrapper">
+          <span class="search-icon" aria-hidden="true">🔍</span>
+          <input
+            type="search"
+            id="searchInput"
+            class="toss-search-input"
+            placeholder="기사 및 키워드 검색..."
+            aria-label="기사 실시간 검색"
+            autocomplete="off"
+            oninput="handleSearch(this.value)"
+          >
+          <button type="button" id="searchClearBtn" class="search-clear-btn" aria-label="검색어 초기화" onclick="clearSearch()" style="display: none;">✕</button>
+        </div>
+      </div>
+
+      <div class="channels-scroll">
+        <div class="channel-category">데일리 피드</div>
+        <button type="button" class="channel-item active" data-channel="all" onclick="filterFeed('all', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge all">⚡</span>
+            <span class="channel-name">오늘의 브리핑</span>
+          </div>
+          <span class="channel-count">20</span>
+        </button>
+
+        <div class="channel-category">타겟 매체 채널</div>
+        <button type="button" class="channel-item" data-channel="verge" onclick="filterFeed('verge', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge verge">V</span>
+            <span class="channel-name">The Verge</span>
+          </div>
+          <span class="channel-count" id="channel-count-verge">0</span>
+        </button>
+        <button type="button" class="channel-item" data-channel="techcrunch" onclick="filterFeed('techcrunch', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge techcrunch">TC</span>
+            <span class="channel-name">TechCrunch</span>
+          </div>
+          <span class="channel-count" id="channel-count-techcrunch">5</span>
+        </button>
+        <button type="button" class="channel-item" data-channel="arstechnica" onclick="filterFeed('arstechnica', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge arstechnica">AT</span>
+            <span class="channel-name">Ars Technica</span>
+          </div>
+          <span class="channel-count" id="channel-count-arstechnica">5</span>
+        </button>
+        <button type="button" class="channel-item" data-channel="mit" onclick="filterFeed('mit', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge mit">MIT</span>
+            <span class="channel-name">MIT Tech Review</span>
+          </div>
+          <span class="channel-count" id="channel-count-mit">5</span>
+        </button>
+        <button type="button" class="channel-item" data-channel="theinformation" onclick="filterFeed('theinformation', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge theinformation">TI</span>
+            <span class="channel-name">The Information</span>
+          </div>
+          <span class="channel-count" id="channel-count-theinformation">5</span>
+        </button>
+      </div>
+
+      <div class="sidebar-user-tray">
+        <div class="user-info-box">
+          <div class="status-dot" aria-hidden="true"></div>
+          <div>
+            <div class="user-name-label">Zero-Capital Agent</div>
+            <div class="user-sub-label">GitHub Actions 파이프라인</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Level 3: Primary Workspace -->
+    <main class="chat-workspace">
+      <header class="workspace-header">
+        <div class="header-left">
+          <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="채널 메뉴 열기" aria-expanded="false" onclick="toggleMobileMenu()">
+            ☰
+          </button>
+          <div class="topic-pill">
+            <span id="headerTopicTitle">오늘의 브리핑</span>
+            <div class="topic-divider" aria-hidden="true"></div>
+            <span class="topic-desc">주요 테크 소식과 비즈니스 시사점을 한눈에.</span>
+          </div>
+        </div>
+        <div class="header-controls">
+          <button type="button" class="theme-toggle-btn" onclick="toggleTheme()" id="themeBtn" aria-label="다크/라이트 테마 전환">🌓 테마 전환</button>
+        </div>
+      </header>
+
+      <section class="messages-feed" id="feedContainer">
+        <!-- Editorial Briefing Header -->
+        <div class="feed-hero">
+          <div class="hero-badge-row">
+            <span class="toss-tag">DAILY INTEL</span>
+            <span class="hero-date-badge">2026-10-20</span>
+            <span class="hero-count-badge" id="heroArticleCount">총 20개 기사 큐레이션</span>
+          </div>
+          <h1 class="hero-title">Daily Tech Insights</h1>
+          <p class="hero-subtitle">
+            글로벌 5대 테크 미디어의 핵심 보도와 비즈니스 시사점을 AI로 정밀 분석하여 전해드립니다.
+          </p>
+        </div>
+
+        <!-- No Results Card -->
+        <div id="noResultsCard" class="toss-empty-state" style="display: none;">
+          <div class="empty-icon" aria-hidden="true">🔍</div>
+          <h3 class="empty-title">일치하는 기사가 없습니다</h3>
+          <p class="empty-desc">검색어를 변경하거나 선택된 매체 필터를 확인해 주세요.</p>
+          <button type="button" class="toss-pill-link" onclick="resetAllFilters()">전체 브리핑 보기</button>
+        </div>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="techcrunch" data-search="텐스토렌트, 62억 달러 기업가치 인정받으며 15억 달러 투자 유치… 오픈웨이트 ai 칩 확장 본격화 techcrunch 엔비디아 대항마로 주목받는 ai 칩 스타트업 텐스토렌트가 15억 달러 규모의 대형 펀딩을 유치했습니다. 올해 초 인수 제안을 받았으나 이를 거절하고 독자 노선을 유지하며 기업가치 62억 달러를 달성했습니다. 확보된 자금을 바탕으로 오픈웨이트(open-weight) ai 가속 칩 양산 및 생태계 확장에 박차를 가할 계획입니다. 엔비디아 의존도와 비용 부담에 직면한 빅테크들이 오픈소스 및 대안 칩 생태계로 투자를 다각화하면서 하드웨어 다극화 추세가 가속화되고 있습니다." id="article-1">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar techcrunch" aria-hidden="true">TC</span>
+              <div class="media-meta">
+                <span class="media-name">TechCrunch</span>
+                <span class="channel-slug">#techcrunch-feed</span>
+              </div>
+            </div>
+            <a href="https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="텐스토렌트, 62억 달러 기업가치 인정받으며 15억 달러 투자 유치… 오픈웨이트 AI 칩 확장 본격화 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">텐스토렌트, 62억 달러 기업가치 인정받으며 15억 달러 투자 유치… 오픈웨이트 AI 칩 확장 본격화</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">엔비디아 대항마로 주목받는 AI 칩 스타트업 텐스토렌트가 15억 달러 규모의 대형 펀딩을 유치했습니다.</li>
+              <li class="summary-bullet">올해 초 인수 제안을 받았으나 이를 거절하고 독자 노선을 유지하며 기업가치 62억 달러를 달성했습니다.</li>
+              <li class="summary-bullet">확보된 자금을 바탕으로 오픈웨이트(open-weight) AI 가속 칩 양산 및 생태계 확장에 박차를 가할 계획입니다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">엔비디아 의존도와 비용 부담에 직면한 빅테크들이 오픈소스 및 대안 칩 생태계로 투자를 다각화하면서 하드웨어 다극화 추세가 가속화되고 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 53초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="techcrunch" data-search="엔비디아, 기업 및 pc용 온디바이스 에이전트를 위한 신규 오픈 ai 모델 출시 techcrunch 엔비디아가 기업 데이터센터와 pc 단말기에서 구동 가능한 신규 오픈 ai 모델을 공개했습니다. 기업들이 자체 인프라 내에서 독자 모델을 운영하려는 온프레미스·프라이빗 ai 수요를 직접 겨냥했습니다. 클라우드 종속을 벗어나 데이터 보안을 확보한 온디바이스 ai 에이전트 환경 구축을 전면에 내세웠습니다. 엔비디아는 하드웨어 판매에 그치지 않고 사내 인프라와 pc 엔드포인트를 아우르는 모델 및 소프트웨어 생태계를 선점해 락인(lock-in) 효과를 극대화하고 있습니다." id="article-2">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar techcrunch" aria-hidden="true">TC</span>
+              <div class="media-meta">
+                <span class="media-name">TechCrunch</span>
+                <span class="channel-slug">#techcrunch-feed</span>
+              </div>
+            </div>
+            <a href="https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="엔비디아, 기업 및 PC용 온디바이스 에이전트를 위한 신규 오픈 AI 모델 출시 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">엔비디아, 기업 및 PC용 온디바이스 에이전트를 위한 신규 오픈 AI 모델 출시</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">엔비디아가 기업 데이터센터와 PC 단말기에서 구동 가능한 신규 오픈 AI 모델을 공개했습니다.</li>
+              <li class="summary-bullet">기업들이 자체 인프라 내에서 독자 모델을 운영하려는 온프레미스·프라이빗 AI 수요를 직접 겨냥했습니다.</li>
+              <li class="summary-bullet">클라우드 종속을 벗어나 데이터 보안을 확보한 온디바이스 AI 에이전트 환경 구축을 전면에 내세웠습니다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">엔비디아는 하드웨어 판매에 그치지 않고 사내 인프라와 PC 엔드포인트를 아우르는 모델 및 소프트웨어 생태계를 선점해 락인(Lock-in) 효과를 극대화하고 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 51초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="techcrunch" data-search="ms의 경고: 프론티어 ai 모델 신뢰성 한계… 자율 에이전트는 &#x27;내부자 위협&#x27; 수준 techcrunch 마이크로소프트가 기업 내 자율 ai 에이전트 도입이 내부자 위협(insider threat)과 유사한 보안 리스크를 초래할 수 있다고 경고했습니다. 최첨단 프론티어 모델조차 완전한 신뢰가 불가능한 상황에서 통제권 밖의 시스템과 연동될 경우 심각한 보안 침해가 발생할 수 있음을 지적했습니다. 기업들에게 직원이 활용하는 ai 에이전트에 대한 정밀한 모니터링과 접근 권한 통제 체계 도입을 권고했습니다. ai 에이전트의 자율 실행 권한이 확대됨에 따라 엔터프라이즈 보안의 중심축이 전통적인 계정 관리에서 ai 행동 감사 및 거버넌스 영역으로 빠르게 이동하고 있습니다." id="article-3">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar techcrunch" aria-hidden="true">TC</span>
+              <div class="media-meta">
+                <span class="media-name">TechCrunch</span>
+                <span class="channel-slug">#techcrunch-feed</span>
+              </div>
+            </div>
+            <a href="https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="MS의 경고: 프론티어 AI 모델 신뢰성 한계… 자율 에이전트는 &#x27;내부자 위협&#x27; 수준 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">MS의 경고: 프론티어 AI 모델 신뢰성 한계… 자율 에이전트는 &#x27;내부자 위협&#x27; 수준</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">마이크로소프트가 기업 내 자율 AI 에이전트 도입이 내부자 위협(Insider Threat)과 유사한 보안 리스크를 초래할 수 있다고 경고했습니다.</li>
+              <li class="summary-bullet">최첨단 프론티어 모델조차 완전한 신뢰가 불가능한 상황에서 통제권 밖의 시스템과 연동될 경우 심각한 보안 침해가 발생할 수 있음을 지적했습니다.</li>
+              <li class="summary-bullet">기업들에게 직원이 활용하는 AI 에이전트에 대한 정밀한 모니터링과 접근 권한 통제 체계 도입을 권고했습니다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">AI 에이전트의 자율 실행 권한이 확대됨에 따라 엔터프라이즈 보안의 중심축이 전통적인 계정 관리에서 AI 행동 감사 및 거버넌스 영역으로 빠르게 이동하고 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 60초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="techcrunch" data-search="아마존, 신규 개발 도구 &#x27;토치뉴런&#x27;으로 엔비디아의 파이토치 아성에 정면 도전 techcrunch 아마존이 ai 개발 표준 도구인 파이토치(pytorch) 기반 앱을 자체 칩에서 구동할 수 있도록 지원하는 &#x27;토치뉴런(torchneuron)&#x27;을 공개했습니다. 엔비디아가 쿠다(cuda) 플랫폼을 통해 파이토치 생태계에 쥐고 있던 지배력을 약화시키려는 전략적 행보입니다. 개발자가 코드 수정 부담 없이 트레이니움(trainium) 등 aws 맞춤형 가속기로 손쉽게 전환하도록 유도하고 있습니다. 엔비디아 하드웨어 해자의 핵심인 쿠다 소프트웨어 장벽을 우회함으로써, 자체 실리콘의 가격 경쟁력을 aws 클라우드 고객 유치 및 마진 개선의 핵심 지렛대로 활용하고 있습니다." id="article-4">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar techcrunch" aria-hidden="true">TC</span>
+              <div class="media-meta">
+                <span class="media-name">TechCrunch</span>
+                <span class="channel-slug">#techcrunch-feed</span>
+              </div>
+            </div>
+            <a href="https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="아마존, 신규 개발 도구 &#x27;토치뉴런&#x27;으로 엔비디아의 파이토치 아성에 정면 도전 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">아마존, 신규 개발 도구 &#x27;토치뉴런&#x27;으로 엔비디아의 파이토치 아성에 정면 도전</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">아마존이 AI 개발 표준 도구인 파이토치(PyTorch) 기반 앱을 자체 칩에서 구동할 수 있도록 지원하는 &#x27;토치뉴런(TorchNeuron)&#x27;을 공개했습니다.</li>
+              <li class="summary-bullet">엔비디아가 쿠다(CUDA) 플랫폼을 통해 파이토치 생태계에 쥐고 있던 지배력을 약화시키려는 전략적 행보입니다.</li>
+              <li class="summary-bullet">개발자가 코드 수정 부담 없이 트레이니움(Trainium) 등 AWS 맞춤형 가속기로 손쉽게 전환하도록 유도하고 있습니다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">엔비디아 하드웨어 해자의 핵심인 쿠다 소프트웨어 장벽을 우회함으로써, 자체 실리콘의 가격 경쟁력을 AWS 클라우드 고객 유치 및 마진 개선의 핵심 지렛대로 활용하고 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 60초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="techcrunch" data-search="허깅페이스 정책 총괄, &#x27;임베디드 ai 평가 방식이 벤치마크 한계의 손쉬운 해법 될 수 없어&#x27; techcrunch 허깅페이스의 아이린 솔라이만 최고정책책임자는 현재 ai 벤치마킹 방법론이 여전히 복잡하고 미성숙한 단계라고 평가했습니다. ai 연구소들이 모델 우수성을 증명하기 위해 벤치마크에 사활을 걸고 있으나, 중립성과 정확성에 구조적 문제가 존재한다고 지적했습니다. ai를 평가자로 활용하는 내장형 평가(ai-as-a-judge 등) 역시 단기적인 만병통치약이 될 수 없으며 표준화된 검증 프레임워크가 필요하다고 강조했습니다. 벤치마크 오염과 마케팅성 성능 과시에 대한 기업 고객의 피로도가 커짐에 따라, 향후 독립적인 제3자 평가 및 실무 도메인 특화 성능 검증 솔루션 시장이 급부상할 것입니다." id="article-5">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar techcrunch" aria-hidden="true">TC</span>
+              <div class="media-meta">
+                <span class="media-name">TechCrunch</span>
+                <span class="channel-slug">#techcrunch-feed</span>
+              </div>
+            </div>
+            <a href="https://techcrunch.com/2026/10/19/embedded-ai-evaluators-wont-be-an-easy-solution-hugging-faces-policy-chief-says/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="허깅페이스 정책 총괄, &#x27;임베디드 AI 평가 방식이 벤치마크 한계의 손쉬운 해법 될 수 없어&#x27; 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">허깅페이스 정책 총괄, &#x27;임베디드 AI 평가 방식이 벤치마크 한계의 손쉬운 해법 될 수 없어&#x27;</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">허깅페이스의 아이린 솔라이만 최고정책책임자는 현재 AI 벤치마킹 방법론이 여전히 복잡하고 미성숙한 단계라고 평가했습니다.</li>
+              <li class="summary-bullet">AI 연구소들이 모델 우수성을 증명하기 위해 벤치마크에 사활을 걸고 있으나, 중립성과 정확성에 구조적 문제가 존재한다고 지적했습니다.</li>
+              <li class="summary-bullet">AI를 평가자로 활용하는 내장형 평가(AI-as-a-judge 등) 역시 단기적인 만병통치약이 될 수 없으며 표준화된 검증 프레임워크가 필요하다고 강조했습니다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">벤치마크 오염과 마케팅성 성능 과시에 대한 기업 고객의 피로도가 커짐에 따라, 향후 독립적인 제3자 평가 및 실무 도메인 특화 성능 검증 솔루션 시장이 급부상할 것입니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://techcrunch.com/2026/10/19/embedded-ai-evaluators-wont-be-an-easy-solution-hugging-faces-policy-chief-says/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 63초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="arstechnica" data-search="디즈니, 캐릭터닷ai 소송 리스크 배제한 맞춤형 자산 인수 추진 ars technica 디즈니가 미성년자 자해 및 부모 살해 교사 논란으로 다수의 소송에 직면한 생성형 ai 스타트업 캐릭터닷ai(character.ai)의 인수를 추진 중입니다. 기존 법적 책임을 승계하지 않고 핵심 기술과 자산만을 확보하기 위해 법적 리스크를 격리하는 정교한 거래 구조를 마련했습니다. 소아·청소년 안전 문제 등 ai 챗봇의 윤리적 부작용이 빅테크 m&amp;a에서 핵심적인 잠재 부채로 대두되고 있음을 보여줍니다. 향후 ai 기업 m&amp;a에서는 알고리즘 윤리 및 데이터 관리 부실로 인한 법적 리스크를 원천 분리하는 자산 양수도 형태의 계약(carve-out)이 표준화될 전망입니다." id="article-6">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar arstechnica" aria-hidden="true">AT</span>
+              <div class="media-meta">
+                <span class="media-name">Ars Technica</span>
+                <span class="channel-slug">#arstechnica-feed</span>
+              </div>
+            </div>
+            <a href="https://arstechnica.com/tech-policy/2026/10/disney-found-a-way-to-buy-character-ai-without-buying-its-lawsuits/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="디즈니, 캐릭터닷AI 소송 리스크 배제한 맞춤형 자산 인수 추진 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">디즈니, 캐릭터닷AI 소송 리스크 배제한 맞춤형 자산 인수 추진</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">디즈니가 미성년자 자해 및 부모 살해 교사 논란으로 다수의 소송에 직면한 생성형 AI 스타트업 캐릭터닷AI(Character.AI)의 인수를 추진 중입니다.</li>
+              <li class="summary-bullet">기존 법적 책임을 승계하지 않고 핵심 기술과 자산만을 확보하기 위해 법적 리스크를 격리하는 정교한 거래 구조를 마련했습니다.</li>
+              <li class="summary-bullet">소아·청소년 안전 문제 등 AI 챗봇의 윤리적 부작용이 빅테크 M&amp;A에서 핵심적인 잠재 부채로 대두되고 있음을 보여줍니다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">향후 AI 기업 M&amp;A에서는 알고리즘 윤리 및 데이터 관리 부실로 인한 법적 리스크를 원천 분리하는 자산 양수도 형태의 계약(Carve-out)이 표준화될 전망입니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://arstechnica.com/tech-policy/2026/10/disney-found-a-way-to-buy-character-ai-without-buying-its-lawsuits/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 59초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="arstechnica" data-search="경찰서 로그인 정보 관리 소홀로 플로리다주 dmv 전산망 해킹 피해 ars technica 플로리다주 한 경찰서의 부실한 로그인 자격 증명 관리로 인해 주 전역 차량국(dmv) 전산망이 해킹되는 사고가 발생했습니다. 악명 높은 사이버 범죄 조직 샤이니헌터스(shinyhunters)가 연루된 대규모 데이터 유출 사건으로 주정부가 비상 경보를 발령했습니다. 공공기관의 하위 접점 보안 취약점이 핵심 행정 데이터베이스 전체를 위협하는 공급망 보안의 취약성을 극명히 드러냈습니다. 엔드포인트 계정 유출이 핵심 인프라 마비로 직결되는 만큼, 공공 및 민간 엔터프라이즈 전반에서 제로 트러스트 기반 다중인증(mfa)과 접근 제어 감사가 시급합니다." id="article-7">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar arstechnica" aria-hidden="true">AT</span>
+              <div class="media-meta">
+                <span class="media-name">Ars Technica</span>
+                <span class="channel-slug">#arstechnica-feed</span>
+              </div>
+            </div>
+            <a href="https://arstechnica.com/tech-policy/2026/10/huge-dmv-data-breach-impacted-current-and-former-florida-residents/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="경찰서 로그인 정보 관리 소홀로 플로리다주 DMV 전산망 해킹 피해 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">경찰서 로그인 정보 관리 소홀로 플로리다주 DMV 전산망 해킹 피해</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">플로리다주 한 경찰서의 부실한 로그인 자격 증명 관리로 인해 주 전역 차량국(DMV) 전산망이 해킹되는 사고가 발생했습니다.</li>
+              <li class="summary-bullet">악명 높은 사이버 범죄 조직 샤이니헌터스(ShinyHunters)가 연루된 대규모 데이터 유출 사건으로 주정부가 비상 경보를 발령했습니다.</li>
+              <li class="summary-bullet">공공기관의 하위 접점 보안 취약점이 핵심 행정 데이터베이스 전체를 위협하는 공급망 보안의 취약성을 극명히 드러냈습니다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">엔드포인트 계정 유출이 핵심 인프라 마비로 직결되는 만큼, 공공 및 민간 엔터프라이즈 전반에서 제로 트러스트 기반 다중인증(MFA)과 접근 제어 감사가 시급합니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://arstechnica.com/tech-policy/2026/10/huge-dmv-data-breach-impacted-current-and-former-florida-residents/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 57초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="arstechnica" data-search="러시아 우주선, 우크라이나 정찰 지원 민간 위성에 &#x27;초근접&#x27; 기동 ars technica 러시아의 코스모스 2612(kosmos 2612) 우주선이 수백 킬로미터 밖에서 우크라이나군이 정찰에 활용 중인 iceye-x36 레이더 위성으로 초근접 기동했습니다. 상용 sar(합성개구레이더) 위성이 현대 전장의 핵심 자산으로 활용되면서 상대국의 직접적인 방해 및 감시 기동 표적이 되고 있습니다. 궤도 상에서 벌어지는 적대적 랑데부·근접작전(rpo)이 상용 우주 자산에 대한 실질적인 물리적·비물리적 위협으로 구체화되었습니다. 상용 위성의 군사적 전용이 일반화됨에 따라 위성 서비스 공급사들은 궤도 내 회피 기동 능력과 자율 방어 역량을 갖춘 위성 설계에 투자를 확대해야 합니다." id="article-8">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar arstechnica" aria-hidden="true">AT</span>
+              <div class="media-meta">
+                <span class="media-name">Ars Technica</span>
+                <span class="channel-slug">#arstechnica-feed</span>
+              </div>
+            </div>
+            <a href="https://arstechnica.com/space/2026/10/russian-spacecraft-maneuvers-in-extreme-proximity-to-satellite-used-by-ukraine/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="러시아 우주선, 우크라이나 정찰 지원 민간 위성에 &#x27;초근접&#x27; 기동 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">러시아 우주선, 우크라이나 정찰 지원 민간 위성에 &#x27;초근접&#x27; 기동</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">러시아의 코스모스 2612(Kosmos 2612) 우주선이 수백 킬로미터 밖에서 우크라이나군이 정찰에 활용 중인 ICEYE-X36 레이더 위성으로 초근접 기동했습니다.</li>
+              <li class="summary-bullet">상용 SAR(합성개구레이더) 위성이 현대 전장의 핵심 자산으로 활용되면서 상대국의 직접적인 방해 및 감시 기동 표적이 되고 있습니다.</li>
+              <li class="summary-bullet">궤도 상에서 벌어지는 적대적 랑데부·근접작전(RPO)이 상용 우주 자산에 대한 실질적인 물리적·비물리적 위협으로 구체화되었습니다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">상용 위성의 군사적 전용이 일반화됨에 따라 위성 서비스 공급사들은 궤도 내 회피 기동 능력과 자율 방어 역량을 갖춘 위성 설계에 투자를 확대해야 합니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://arstechnica.com/space/2026/10/russian-spacecraft-maneuvers-in-extreme-proximity-to-satellite-used-by-ukraine/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 60초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="arstechnica" data-search="美 펜실베이니아주, 수십 년 만에 치명적 &#x27;선천성 홍역&#x27; 경보 발령 ars technica 미국 펜실베이니아주 보건 당국이 국내에서 수십 년간 보고되지 않았던 희귀하고 치명적인 선천성 홍역 사례를 확인하고 경보를 발령했습니다. 선천성 홍역은 신생아 사망 위험이 매우 높으며 생존하더라도 수년간 신경계 등 장기 합병증에 대한 지속적인 모니터링이 필요합니다. 백신 접종률 저하로 집단면역이 흔들리면서 과거 통제되었던 감염병이 태아와 산모를 위협하는 공중보건 위기로 재부상했습니다. 백신 기피에 따른 감염병 재유행은 공중보건 및 사회적 비용을 가중시키며, 진단 바이오 기업들에게는 신속 감염 검사 및 특수 산과 진단 솔루션의 시장 수요 확대로 이어질 수 있습니다." id="article-9">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar arstechnica" aria-hidden="true">AT</span>
+              <div class="media-meta">
+                <span class="media-name">Ars Technica</span>
+                <span class="channel-slug">#arstechnica-feed</span>
+              </div>
+            </div>
+            <a href="https://arstechnica.com/health/2026/10/pennsylvania-issues-alert-on-congenital-measles-something-us-hasnt-seen-for-decades/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="美 펜실베이니아주, 수십 년 만에 치명적 &#x27;선천성 홍역&#x27; 경보 발령 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">美 펜실베이니아주, 수십 년 만에 치명적 &#x27;선천성 홍역&#x27; 경보 발령</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">미국 펜실베이니아주 보건 당국이 국내에서 수십 년간 보고되지 않았던 희귀하고 치명적인 선천성 홍역 사례를 확인하고 경보를 발령했습니다.</li>
+              <li class="summary-bullet">선천성 홍역은 신생아 사망 위험이 매우 높으며 생존하더라도 수년간 신경계 등 장기 합병증에 대한 지속적인 모니터링이 필요합니다.</li>
+              <li class="summary-bullet">백신 접종률 저하로 집단면역이 흔들리면서 과거 통제되었던 감염병이 태아와 산모를 위협하는 공중보건 위기로 재부상했습니다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">백신 기피에 따른 감염병 재유행은 공중보건 및 사회적 비용을 가중시키며, 진단 바이오 기업들에게는 신속 감염 검사 및 특수 산과 진단 솔루션의 시장 수요 확대로 이어질 수 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://arstechnica.com/health/2026/10/pennsylvania-issues-alert-on-congenital-measles-something-us-hasnt-seen-for-decades/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 59초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="arstechnica" data-search="전 오픈ai 엔지니어, &#x27;사우디 정부 문서&#x27; 폴더 보관 등 기술 유출 혐의 기소 ars technica 전 오픈ai 엔지니어가 &#x27;사우디 정부 문서&#x27;라는 명칭의 폴더를 소지하고 첨단 ai 기술을 유출하려 한 혐의로 fbi 조사를 거쳐 기소되었습니다. 미국 사법 당국은 사우디아라비아 정부가 피고인의 해외 도피를 조력할 위험이 크다고 판단해 신병 확보에 만전을 기하고 있습니다. 국가 간 최첨단 프론티어 ai 패권 경쟁이 핵심 인력을 매개로 한 물리적 첩보 및 지식재산권 탈취전으로 격화되는 양상입니다. ai 원천기술이 국가 안보 자산으로 규정됨에 따라, ai 연구 기업들은 내부자 위협 방지(insider threat) 체계와 국가 안보 수준의 내부 데이터 격리 인프라를 의무적으로 강화해야 합니다." id="article-10">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar arstechnica" aria-hidden="true">AT</span>
+              <div class="media-meta">
+                <span class="media-name">Ars Technica</span>
+                <span class="channel-slug">#arstechnica-feed</span>
+              </div>
+            </div>
+            <a href="https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="전 오픈AI 엔지니어, &#x27;사우디 정부 문서&#x27; 폴더 보관 등 기술 유출 혐의 기소 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">전 오픈AI 엔지니어, &#x27;사우디 정부 문서&#x27; 폴더 보관 등 기술 유출 혐의 기소</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">전 오픈AI 엔지니어가 &#x27;사우디 정부 문서&#x27;라는 명칭의 폴더를 소지하고 첨단 AI 기술을 유출하려 한 혐의로 FBI 조사를 거쳐 기소되었습니다.</li>
+              <li class="summary-bullet">미국 사법 당국은 사우디아라비아 정부가 피고인의 해외 도피를 조력할 위험이 크다고 판단해 신병 확보에 만전을 기하고 있습니다.</li>
+              <li class="summary-bullet">국가 간 최첨단 프론티어 AI 패권 경쟁이 핵심 인력을 매개로 한 물리적 첩보 및 지식재산권 탈취전으로 격화되는 양상입니다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">AI 원천기술이 국가 안보 자산으로 규정됨에 따라, AI 연구 기업들은 내부자 위협 방지(Insider Threat) 체계와 국가 안보 수준의 내부 데이터 격리 인프라를 의무적으로 강화해야 합니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 62초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="mit" data-search="“신경망을 잘못 이해하고 있었다”: ai 학계를 뒤흔든 내부 메커니즘의 새로운 발견 mit tech review ai 스타트업 굿파이어(goodfire)의 닉 카마라타 연구원이 신경망의 본질과 내부 표현에 대한 26,000단어 규모의 파격적인 분석 글을 공개함. 기존 딥러닝의 블랙박스적 통념을 깨고 모델의 일반화 및 표현 원리를 설명할 수 있다는 낙관적 증거를 제시해 업계의 뜨거운 논쟁을 촉발함. 모델 내부 구조의 해석 가능성(interpretability) 향상이 ai 정렬 및 통제 기술의 중요한 돌파구가 될 수 있다는 기대가 확산됨. ai 내부 동작에 대한 가시성이 입증되면 기업의 컴플라이언스 준수 비용과 안전성 검증 기간이 단축되어 엔터프라이즈 환경에서의 llm 도입 속도가 가속화될 것이다." id="article-11">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar mit" aria-hidden="true">MIT</span>
+              <div class="media-meta">
+                <span class="media-name">MIT Tech Review</span>
+                <span class="channel-slug">#mit-feed</span>
+              </div>
+            </div>
+            <a href="https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="“신경망을 잘못 이해하고 있었다”: AI 학계를 뒤흔든 내부 메커니즘의 새로운 발견 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">“신경망을 잘못 이해하고 있었다”: AI 학계를 뒤흔든 내부 메커니즘의 새로운 발견</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">AI 스타트업 굿파이어(Goodfire)의 닉 카마라타 연구원이 신경망의 본질과 내부 표현에 대한 26,000단어 규모의 파격적인 분석 글을 공개함.</li>
+              <li class="summary-bullet">기존 딥러닝의 블랙박스적 통념을 깨고 모델의 일반화 및 표현 원리를 설명할 수 있다는 낙관적 증거를 제시해 업계의 뜨거운 논쟁을 촉발함.</li>
+              <li class="summary-bullet">모델 내부 구조의 해석 가능성(Interpretability) 향상이 AI 정렬 및 통제 기술의 중요한 돌파구가 될 수 있다는 기대가 확산됨.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">AI 내부 동작에 대한 가시성이 입증되면 기업의 컴플라이언스 준수 비용과 안전성 검증 기간이 단축되어 엔터프라이즈 환경에서의 LLM 도입 속도가 가속화될 것이다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 63초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="mit" data-search="북극 산불과의 전쟁: 영구동토층의 고대 탄소 방출을 막아라 mit tech review 기후 변화로 인해 알래스카 등 북극권 한대림에서 이끼와 가문비나무를 태우는 대형 산불이 급격히 증가하고 있음. 지표면 화재는 영구동토층 깊숙이 보존되어 있던 방대한 양의 고대 탄소를 대기로 방출시켜 온난화를 가속하는 치명적인 피드백 루프를 형성함. 과학자들과 현장 진압팀은 지구 기후의 티핑포인트를 사수하기 위해 고위도 산불 조기 탐지 및 전용 진화 전략을 시급히 모색 중임. 탄소 배출 억제 정책이 강화됨에 따라 고위도 산불 모니터링을 위한 위성 데이터 분석, 원격 드론 방제 등 기후 테크(climate tech) 솔루션에 대한 정부 및 기관의 투자가 크게 늘어날 것이다." id="article-12">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar mit" aria-hidden="true">MIT</span>
+              <div class="media-meta">
+                <span class="media-name">MIT Tech Review</span>
+                <span class="channel-slug">#mit-feed</span>
+              </div>
+            </div>
+            <a href="https://www.technologyreview.com/2026/10/19/1146832/inside-the-quest-to-combat-arctic-fires-and-save-the-planets-frozen-carbon/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="북극 산불과의 전쟁: 영구동토층의 고대 탄소 방출을 막아라 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">북극 산불과의 전쟁: 영구동토층의 고대 탄소 방출을 막아라</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">기후 변화로 인해 알래스카 등 북극권 한대림에서 이끼와 가문비나무를 태우는 대형 산불이 급격히 증가하고 있음.</li>
+              <li class="summary-bullet">지표면 화재는 영구동토층 깊숙이 보존되어 있던 방대한 양의 고대 탄소를 대기로 방출시켜 온난화를 가속하는 치명적인 피드백 루프를 형성함.</li>
+              <li class="summary-bullet">과학자들과 현장 진압팀은 지구 기후의 티핑포인트를 사수하기 위해 고위도 산불 조기 탐지 및 전용 진화 전략을 시급히 모색 중임.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">탄소 배출 억제 정책이 강화됨에 따라 고위도 산불 모니터링을 위한 위성 데이터 분석, 원격 드론 방제 등 기후 테크(Climate Tech) 솔루션에 대한 정부 및 기관의 투자가 크게 늘어날 것이다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.technologyreview.com/2026/10/19/1146832/inside-the-quest-to-combat-arctic-fires-and-save-the-planets-frozen-carbon/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 59초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="mit" data-search="ai 에이전트 중심의 웹 생태계 개편, 인간 사용자의 웹 경험을 위협한다 mit tech review 인터넷 환경이 기존의 단순 봇 트래픽 관리를 넘어 복율을 자율 수행하는 고도화된 ai 에이전트에 최적화되는 방향으로 재편되고 있음. 웹사이트들이 에이전트 친화적인 아키텍처와 api를 우선시하면서 일반 인간 사용자를 위한 ux, 브라우징 편의성, 콘텐츠 소비 환경이 후순위로 밀려남. 에이전트가 콘텐츠를 직접 요약·소비함에 따라 웹 퍼블리셔의 기존 트래픽 기반 광고 수익 모델이 근본적인 위기에 직면함. 플랫폼 기업들은 디스플레이 광고 중심의 비즈니스 모델에서 탈피하여 에이전트 트래픽 과금 및 머신-투-머신(m2m) api 유료화 체계로 수익 구조를 재설계해야 한다." id="article-13">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar mit" aria-hidden="true">MIT</span>
+              <div class="media-meta">
+                <span class="media-name">MIT Tech Review</span>
+                <span class="channel-slug">#mit-feed</span>
+              </div>
+            </div>
+            <a href="https://www.technologyreview.com/2026/10/19/1147186/making-the-internet-better-for-ai-agents-might-make-it-worse-for-everyone-else/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="AI 에이전트 중심의 웹 생태계 개편, 인간 사용자의 웹 경험을 위협한다 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">AI 에이전트 중심의 웹 생태계 개편, 인간 사용자의 웹 경험을 위협한다</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">인터넷 환경이 기존의 단순 봇 트래픽 관리를 넘어 복율을 자율 수행하는 고도화된 AI 에이전트에 최적화되는 방향으로 재편되고 있음.</li>
+              <li class="summary-bullet">웹사이트들이 에이전트 친화적인 아키텍처와 API를 우선시하면서 일반 인간 사용자를 위한 UX, 브라우징 편의성, 콘텐츠 소비 환경이 후순위로 밀려남.</li>
+              <li class="summary-bullet">에이전트가 콘텐츠를 직접 요약·소비함에 따라 웹 퍼블리셔의 기존 트래픽 기반 광고 수익 모델이 근본적인 위기에 직면함.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">플랫폼 기업들은 디스플레이 광고 중심의 비즈니스 모델에서 탈피하여 에이전트 트래픽 과금 및 머신-투-머신(M2M) API 유료화 체계로 수익 구조를 재설계해야 한다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.technologyreview.com/2026/10/19/1147186/making-the-internet-better-for-ai-agents-might-make-it-worse-for-everyone-else/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 59초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="mit" data-search="[더 다운로드] 위기의 북극 영구동토층 보존과 가상 환경에서 ‘놀이’를 시작한 ai mit tech review mit 테크 리뷰 일간 브리핑을 통해 북극 영구동토층의 막대한 탄소 유출을 방지하기 위한 산불 대응 프로젝트 현황을 종합 조명함. 가상 무인도에 고립된 ai 에이전트가 인간의 지시 없이도 스스로 탐색과 &#x27;놀이&#x27; 형태의 행동을 보인 최신 연구 결과를 함께 소개함. 기후 재앙 방지라는 즉각적인 글로벌 과제와 차세대 ai 자율성 탐구라는 첨단 컴퓨터 과학의 최신 흐름을 교차 전달함. 글로벌 테크 시장에서는 거시적 기후 위기 극복을 위한 인프라 방어 기술과 차세대 자율형 ai 에이전트 상용화가 동시에 양대 핵심 아젠다로 부상하고 있다." id="article-14">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar mit" aria-hidden="true">MIT</span>
+              <div class="media-meta">
+                <span class="media-name">MIT Tech Review</span>
+                <span class="channel-slug">#mit-feed</span>
+              </div>
+            </div>
+            <a href="https://www.technologyreview.com/2026/10/19/1147103/the-download-preserving-the-arctic-permafrost-and-playful-ai-agents/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="[더 다운로드] 위기의 북극 영구동토층 보존과 가상 환경에서 ‘놀이’를 시작한 AI 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">[더 다운로드] 위기의 북극 영구동토층 보존과 가상 환경에서 ‘놀이’를 시작한 AI</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">MIT 테크 리뷰 일간 브리핑을 통해 북극 영구동토층의 막대한 탄소 유출을 방지하기 위한 산불 대응 프로젝트 현황을 종합 조명함.</li>
+              <li class="summary-bullet">가상 무인도에 고립된 AI 에이전트가 인간의 지시 없이도 스스로 탐색과 &#x27;놀이&#x27; 형태의 행동을 보인 최신 연구 결과를 함께 소개함.</li>
+              <li class="summary-bullet">기후 재앙 방지라는 즉각적인 글로벌 과제와 차세대 AI 자율성 탐구라는 첨단 컴퓨터 과학의 최신 흐름을 교차 전달함.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">글로벌 테크 시장에서는 거시적 기후 위기 극복을 위한 인프라 방어 기술과 차세대 자율형 AI 에이전트 상용화가 동시에 양대 핵심 아젠다로 부상하고 있다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.technologyreview.com/2026/10/19/1147103/the-download-preserving-the-arctic-permafrost-and-playful-ai-agents/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 57초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="mit" data-search="가상 무인도에 방치된 클로드(claude) 에이전트, 스스로 ‘놀이’를 학습하다 mit tech review 연구진이 앤트로픽의 클로드 기반 에이전트들을 가상 무인도 환경에 30시간 동안 아무런 과제나 목표 없이 고립시키는 실험을 진행함. 목적 부여가 전무한 상태에서도 ai 에이전트는 주변 환경을 탐색하고 상호작용하며 인간이나 동물의 &#x27;놀이&#x27;와 유사한 자발적 행동 패턴을 발현함. 대규모 언어 모델이 정형화된 프롬프트 지시를 넘어서 내재적 호기심과 유사한 동기 유발 및 자율 탐색 잠재력을 보유했음을 시사함. 자발적 탐색이 가능한 에이전트 아키텍처는 오픈월드 게임 시뮬레이션, 미지의 데이터 패턴 탐색, 신약 후보물질 탐색 등 고난도 자율 과업 시장의 패러다임을 바꿀 수 있다." id="article-15">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar mit" aria-hidden="true">MIT</span>
+              <div class="media-meta">
+                <span class="media-name">MIT Tech Review</span>
+                <span class="channel-slug">#mit-feed</span>
+              </div>
+            </div>
+            <a href="https://www.technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="가상 무인도에 방치된 클로드(Claude) 에이전트, 스스로 ‘놀이’를 학습하다 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">가상 무인도에 방치된 클로드(Claude) 에이전트, 스스로 ‘놀이’를 학습하다</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">연구진이 앤트로픽의 클로드 기반 에이전트들을 가상 무인도 환경에 30시간 동안 아무런 과제나 목표 없이 고립시키는 실험을 진행함.</li>
+              <li class="summary-bullet">목적 부여가 전무한 상태에서도 AI 에이전트는 주변 환경을 탐색하고 상호작용하며 인간이나 동물의 &#x27;놀이&#x27;와 유사한 자발적 행동 패턴을 발현함.</li>
+              <li class="summary-bullet">대규모 언어 모델이 정형화된 프롬프트 지시를 넘어서 내재적 호기심과 유사한 동기 유발 및 자율 탐색 잠재력을 보유했음을 시사함.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">자발적 탐색이 가능한 에이전트 아키텍처는 오픈월드 게임 시뮬레이션, 미지의 데이터 패턴 탐색, 신약 후보물질 탐색 등 고난도 자율 과업 시장의 패러다임을 바꿀 수 있다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 60초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="theinformation" data-search="디 인포메이션, openai·구글·아시아 등 핵심 테크 취재 기자 대거 영입 the information 디 인포메이션(the information)이 openai, 구글, 아시아 ai 인프라, 테크 자본시장을 담당할 신규 전문 기자들을 영입 및 재배치했다. openai 전담에는 제미마 맥어보이, 구글 전담에는 악시오스 출신 라이언 바윅이 합류해 빅테크와 광고 테크를 깊이 있게 취재할 예정이다. 싱가포르 기반 아시아 ai·데이터센터 취재 및 테크 기업들의 자금 조달 생태계를 분석할 자본시장 전문 인력도 함께 보강했다. ai와 빅테크 생태계의 복잡성이 심화됨에 따라 테크 전문 미디어들이 주요 기업별 전담 체제와 아시아 공급망 취재 역량을 강화해 독점 정보 경쟁력을 높이고 있습니다." id="article-16">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar theinformation" aria-hidden="true">TI</span>
+              <div class="media-meta">
+                <span class="media-name">The Information</span>
+                <span class="channel-slug">#theinformation-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theinformation.com/articles/information-announces-new-openai-google-finance-asia-reporters" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="디 인포메이션, OpenAI·구글·아시아 등 핵심 테크 취재 기자 대거 영입 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">디 인포메이션, OpenAI·구글·아시아 등 핵심 테크 취재 기자 대거 영입</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">디 인포메이션(The Information)이 OpenAI, 구글, 아시아 AI 인프라, 테크 자본시장을 담당할 신규 전문 기자들을 영입 및 재배치했다.</li>
+              <li class="summary-bullet">OpenAI 전담에는 제미마 맥어보이, 구글 전담에는 악시오스 출신 라이언 바윅이 합류해 빅테크와 광고 테크를 깊이 있게 취재할 예정이다.</li>
+              <li class="summary-bullet">싱가포르 기반 아시아 AI·데이터센터 취재 및 테크 기업들의 자금 조달 생태계를 분석할 자본시장 전문 인력도 함께 보강했다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">AI와 빅테크 생태계의 복잡성이 심화됨에 따라 테크 전문 미디어들이 주요 기업별 전담 체제와 아시아 공급망 취재 역량을 강화해 독점 정보 경쟁력을 높이고 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theinformation.com/articles/information-announces-new-openai-google-finance-asia-reporters', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 61초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="theinformation" data-search="애플, 터치스크린 맥북 프로 공개 임박… 폼팩터 전략의 중대한 전환 the information 애플이 다음 주 제품 발표 행사를 예고한 가운데, 사상 첫 터치스크린 탑재 맥북 프로를 공개할 것이라는 관측이 제기됐다. 과거 팀 쿡은 터치스크린 노트북을 토스터와 냉장고의 결합에 비유하며 회의적인 입장을 고수해왔으나, 시장 내 터치 노트북 비중은 20%까지 성장했다. 하드웨어 엔지니어링 출신 존 터너스 체제로의 전환과 맞물려 폴더블 아이폰, 스마트 디스플레이 등 애플이 기존에 외면했던 폼팩터를 적극 수용하는 기조가 나타나고 있다. 맥(mac)과 아이패드(ipad) 간의 경계를 유지하던 애플의 오랜 하드웨어 철학이 하락세를 겪는 pc 시장의 수요 진작과 사용자 경험 통합을 위해 실용주의로 선회하고 있음을 보여줍니다." id="article-17">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar theinformation" aria-hidden="true">TI</span>
+              <div class="media-meta">
+                <span class="media-name">The Information</span>
+                <span class="channel-slug">#theinformation-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theinformation.com/articles/apple-pigs-fly" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="애플, 터치스크린 맥북 프로 공개 임박… 폼팩터 전략의 중대한 전환 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">애플, 터치스크린 맥북 프로 공개 임박… 폼팩터 전략의 중대한 전환</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">애플이 다음 주 제품 발표 행사를 예고한 가운데, 사상 첫 터치스크린 탑재 맥북 프로를 공개할 것이라는 관측이 제기됐다.</li>
+              <li class="summary-bullet">과거 팀 쿡은 터치스크린 노트북을 토스터와 냉장고의 결합에 비유하며 회의적인 입장을 고수해왔으나, 시장 내 터치 노트북 비중은 20%까지 성장했다.</li>
+              <li class="summary-bullet">하드웨어 엔지니어링 출신 존 터너스 체제로의 전환과 맞물려 폴더블 아이폰, 스마트 디스플레이 등 애플이 기존에 외면했던 폼팩터를 적극 수용하는 기조가 나타나고 있다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">맥(Mac)과 아이패드(iPad) 간의 경계를 유지하던 애플의 오랜 하드웨어 철학이 하락세를 겪는 PC 시장의 수요 진작과 사용자 경험 통합을 위해 실용주의로 선회하고 있음을 보여줍니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theinformation.com/articles/apple-pigs-fly', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 64초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="theinformation" data-search="앤스로픽, 사용자의 숨은 의도까지 파악하는 차세대 ai 모델 출시 준비 the information 앤스로픽이 기존 상용 모델 대비 추론과 직관 능력이 대폭 향상된 차세대 ai 모델 출시를 준비 중이다. 새 모델은 사용자가 목표를 명시적으로 밝히지 않아도 근본적인 의도와 맥락을 파악하는 능력이 탁월한 것으로 전해졌다. 단순 버그 수정 요청 시 문제의 근본 원인을 찾아내 전체 수정을 제안하거나, 판에 박힌 답변 대신 독창적인 알고리즘을 제안하는 등 창의적 사고에 강점을 보인다. 단순 프롬프트 명령 수행을 넘어 사용자 의도를 선제적으로 추론하는 역량은 향후 자율형 ai 에이전트 시장에서 핵심적인 차별화 요소로 작용할 전망입니다." id="article-18">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar theinformation" aria-hidden="true">TI</span>
+              <div class="media-meta">
+                <span class="media-name">The Information</span>
+                <span class="channel-slug">#theinformation-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theinformation.com/articles/anthropic-readies-model-reads-users-intentions-better" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="앤스로픽, 사용자의 숨은 의도까지 파악하는 차세대 AI 모델 출시 준비 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">앤스로픽, 사용자의 숨은 의도까지 파악하는 차세대 AI 모델 출시 준비</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">앤스로픽이 기존 상용 모델 대비 추론과 직관 능력이 대폭 향상된 차세대 AI 모델 출시를 준비 중이다.</li>
+              <li class="summary-bullet">새 모델은 사용자가 목표를 명시적으로 밝히지 않아도 근본적인 의도와 맥락을 파악하는 능력이 탁월한 것으로 전해졌다.</li>
+              <li class="summary-bullet">단순 버그 수정 요청 시 문제의 근본 원인을 찾아내 전체 수정을 제안하거나, 판에 박힌 답변 대신 독창적인 알고리즘을 제안하는 등 창의적 사고에 강점을 보인다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">단순 프롬프트 명령 수행을 넘어 사용자 의도를 선제적으로 추론하는 역량은 향후 자율형 AI 에이전트 시장에서 핵심적인 차별화 요소로 작용할 전망입니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theinformation.com/articles/anthropic-readies-model-reads-users-intentions-better', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 56초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="theinformation" data-search="미 국방부 고위직 에밀 마이클, &quot;정부 협조 거부 ai 랩스에 수출 통제 검토&quot; the information 트럼프 행정부의 &#x27;초지능 태스크포스&#x27; 위원이자 미 국방부 고위 관계자인 에밀 마이클이 정부와 협력하지 않는 ai 기업에 수출 통제 등 강력한 행정 수단을 쓸 수 있다고 경고했다. 마이클은 안전 가이드라인 완화를 거부한 앤스로픽을 국방 공급망 리스크로 지정해야 한다고 주장하며 갈등을 빚어온 인물이다. 그는 추가 규제를 요구하는 최첨단 ai 연구소들을 비판하며, 사이버 침해 및 보안 대응 프로토콜 구축을 위한 정부와의 협력을 강하게 압박하고 있다. 국가 안보와 ai 주도권을 둘러싼 미 정부의 개입 강도가 높아짐에 따라, 프런티어 ai 기업들은 자율적 안전 거버넌스와 정부의 안보 요구 사이에서 심각한 규제 리스크에 직면하고 있습니다." id="article-19">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar theinformation" aria-hidden="true">TI</span>
+              <div class="media-meta">
+                <span class="media-name">The Information</span>
+                <span class="channel-slug">#theinformation-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theinformation.com/articles/pentagons-emil-michael-vows-export-controls-ai-labs-cooperate-government" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="미 국방부 고위직 에밀 마이클, &quot;정부 협조 거부 AI 랩스에 수출 통제 검토&quot; 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">미 국방부 고위직 에밀 마이클, &quot;정부 협조 거부 AI 랩스에 수출 통제 검토&quot;</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">트럼프 행정부의 &#x27;초지능 태스크포스&#x27; 위원이자 미 국방부 고위 관계자인 에밀 마이클이 정부와 협력하지 않는 AI 기업에 수출 통제 등 강력한 행정 수단을 쓸 수 있다고 경고했다.</li>
+              <li class="summary-bullet">마이클은 안전 가이드라인 완화를 거부한 앤스로픽을 국방 공급망 리스크로 지정해야 한다고 주장하며 갈등을 빚어온 인물이다.</li>
+              <li class="summary-bullet">그는 추가 규제를 요구하는 최첨단 AI 연구소들을 비판하며, 사이버 침해 및 보안 대응 프로토콜 구축을 위한 정부와의 협력을 강하게 압박하고 있다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">국가 안보와 AI 주도권을 둘러싼 미 정부의 개입 강도가 높아짐에 따라, 프런티어 AI 기업들은 자율적 안전 거버넌스와 정부의 안보 요구 사이에서 심각한 규제 리스크에 직면하고 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theinformation.com/articles/pentagons-emil-michael-vows-export-controls-ai-labs-cooperate-government', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 66초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="theinformation" data-search="팔로알토 네트웍스 ceo 니케시 아로라, 딸의 ai 전문 vc 펀드 고문으로 지원 the information 팔로알토 네트웍스 ceo 니케시 아로라의 딸 아이샤 아로라-휴즈가 신규 벤처캐피털 펀드 &#x27;퍼머넌트 파트너스 컬렉티브 펀드 1&#x27;을 조성 중이다. 신규 vc 매니저들의 펀드레이징 난이도가 극심한 상황에서 니케시 아로라가 해당 펀드의 공식 고문으로 참여하고 있다. 해당 펀드는 ai 분야 투자를 핵심으로 삼고 있으며, 실리콘밸리 거물급 경영자의 네트워크와 조언을 강력한 차별화 무기로 내세우고 있다. 신규 펀드의 자금 조달 경색 속에서도 빅테크 최고경영진의 네트워크와 검증된 트랙레코드가 초기 ai 스타트업 딜 소싱과 lp 자금 유치의 핵심 레버리지로 활용되고 있습니다." id="article-20">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar theinformation" aria-hidden="true">TI</span>
+              <div class="media-meta">
+                <span class="media-name">The Information</span>
+                <span class="channel-slug">#theinformation-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theinformation.com/articles/palo-alto-networks-ceo-advises-daughter-new-ai-focused-venture-capital-fund" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="팔로알토 네트웍스 CEO 니케시 아로라, 딸의 AI 전문 VC 펀드 고문으로 지원 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">팔로알토 네트웍스 CEO 니케시 아로라, 딸의 AI 전문 VC 펀드 고문으로 지원</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">팔로알토 네트웍스 CEO 니케시 아로라의 딸 아이샤 아로라-휴즈가 신규 벤처캐피털 펀드 &#x27;퍼머넌트 파트너스 컬렉티브 펀드 1&#x27;을 조성 중이다.</li>
+              <li class="summary-bullet">신규 VC 매니저들의 펀드레이징 난이도가 극심한 상황에서 니케시 아로라가 해당 펀드의 공식 고문으로 참여하고 있다.</li>
+              <li class="summary-bullet">해당 펀드는 AI 분야 투자를 핵심으로 삼고 있으며, 실리콘밸리 거물급 경영자의 네트워크와 조언을 강력한 차별화 무기로 내세우고 있다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">신규 펀드의 자금 조달 경색 속에서도 빅테크 최고경영진의 네트워크와 검증된 트랙레코드가 초기 AI 스타트업 딜 소싱과 LP 자금 유치의 핵심 레버리지로 활용되고 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theinformation.com/articles/palo-alto-networks-ceo-advises-daughter-new-ai-focused-venture-capital-fund', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 60초 (예상)</span>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- Level 4: Metadata Panel (Desktop Right Rail) -->
+    <aside class="metadata-panel" aria-label="시스템 지표 패널">
+      <div class="meta-group-title">시스템 지표</div>
+      <div class="metric-card">
+        <span class="metric-label">총 큐레이션 기사</span>
+        <span class="metric-value" id="metaVisibleCount">20개</span>
+        <span class="metric-subtext">기준 일자: 2026-10-20</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">인프라 운영 비용</span>
+        <span class="metric-value">$0.00</span>
+        <span class="metric-subtext">Zero-Capital 무인 아키텍처</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">예상 리딩 소요시간</span>
+        <span class="metric-value">약 20분</span>
+        <span class="metric-subtext">20개 기사 정독 기준</span>
+      </div>
+
+      <div class="meta-group-title">매체별 기사 현황</div>
+      <div class="feed-status-item">
+        <span class="status-source-name">The Verge</span>
+        <span class="status-badge-error" title="0/5건 (기사 없음)">0/5건 · 기사 없음 🔴</span>
+      </div>
+      <div class="feed-status-item">
+        <span class="status-source-name">TechCrunch</span>
+        <span class="status-badge-active" title="5/5건 큐레이션 완료">5/5건 완료 🟢</span>
+      </div>
+      <div class="feed-status-item">
+        <span class="status-source-name">Ars Technica</span>
+        <span class="status-badge-active" title="5/5건 큐레이션 완료">5/5건 완료 🟢</span>
+      </div>
+      <div class="feed-status-item">
+        <span class="status-source-name">MIT Tech Review</span>
+        <span class="status-badge-active" title="5/5건 큐레이션 완료">5/5건 완료 🟢</span>
+      </div>
+      <div class="feed-status-item">
+        <span class="status-source-name">The Information</span>
+        <span class="status-badge-active" title="5/5건 큐레이션 완료">5/5건 완료 🟢</span>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="tossToast" class="toss-toast" role="status" aria-live="polite">
+    원문 기사 링크가 복사되었습니다.
+  </div>
+
+  <script>
+    // State management
+    let activeChannel = 'all';
+    let searchQuery = '';
+
+    // Filter & Search composability
+    function applyFilters() {
+      const cards = document.querySelectorAll('.toss-card');
+      let visibleCount = 0;
+      const q = searchQuery.trim().toLowerCase();
+
+      cards.forEach(card => {
+        const mediaSlug = card.getAttribute('data-media');
+        const matchesChannel = (activeChannel === 'all' || mediaSlug === activeChannel);
+
+        let matchesQuery = true;
+        if (q.length > 0) {
+          const searchData = card.getAttribute('data-search') || '';
+          matchesQuery = searchData.includes(q);
+        }
+
+        if (matchesChannel && matchesQuery) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Update visible counter
+      const visibleCounter = document.getElementById('metaVisibleCount');
+      if (visibleCounter) {
+        if (activeChannel === 'all' && q.length === 0) {
+          visibleCounter.textContent = `${cards.length}개`;
+        } else {
+          visibleCounter.textContent = `${visibleCount}개 / ${cards.length}개`;
+        }
+      }
+
+      // Toggle empty state
+      const emptyState = document.getElementById('noResultsCard');
+      if (emptyState) {
+        emptyState.style.display = visibleCount === 0 ? 'flex' : 'none';
+      }
+    }
+
+    function filterFeed(slug, element) {
+      activeChannel = slug;
+
+      // Update channel active styling
+      document.querySelectorAll('.channel-item').forEach(item => item.classList.remove('active'));
+      if (element) {
+        element.classList.add('active');
+      } else {
+        const target = document.querySelector(`.channel-item[data-channel="${slug}"]`);
+        if (target) target.classList.add('active');
+      }
+
+      // Update header topic title
+      const topicEl = document.getElementById('headerTopicTitle');
+      if (topicEl) {
+        if (slug === 'all') {
+          topicEl.textContent = '오늘의 브리핑';
+        } else {
+          const nameEl = element ? element.querySelector('.channel-name') : null;
+          topicEl.textContent = nameEl ? nameEl.textContent : slug;
+        }
+      }
+
+      applyFilters();
+      closeMobileMenu();
+
+      // Scroll to top
+      const feed = document.getElementById('feedContainer');
+      if (feed) feed.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function handleSearch(val) {
+      searchQuery = val;
+      const clearBtn = document.getElementById('searchClearBtn');
+      if (clearBtn) {
+        clearBtn.style.display = val.length > 0 ? 'flex' : 'none';
+      }
+      applyFilters();
+    }
+
+    function clearSearch() {
+      const input = document.getElementById('searchInput');
+      if (input) {
+        input.value = '';
+        input.focus();
+      }
+      handleSearch('');
+    }
+
+    function resetAllFilters(element) {
+      activeChannel = 'all';
+      searchQuery = '';
+      const input = document.getElementById('searchInput');
+      if (input) input.value = '';
+      const clearBtn = document.getElementById('searchClearBtn');
+      if (clearBtn) clearBtn.style.display = 'none';
+
+      document.querySelectorAll('.channel-item').forEach(item => {
+        if (item.getAttribute('data-channel') === 'all') {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+
+      const topicEl = document.getElementById('headerTopicTitle');
+      if (topicEl) topicEl.textContent = '오늘의 브리핑';
+
+      const homeBtn = document.getElementById('homeRailBtn');
+      if (homeBtn) homeBtn.classList.add('active');
+
+      applyFilters();
+      closeMobileMenu();
+
+      const feed = document.getElementById('feedContainer');
+      if (feed) feed.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Clipboard & Toast Feedback
+    function copyArticleLink(url, btn) {
+      const originalText = btn.innerHTML;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(() => {
+          showToast('원문 기사 링크가 복사되었습니다.');
+          btn.innerHTML = '✓ 복사 완료';
+          btn.classList.add('copied');
+          setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.classList.remove('copied');
+          }, 2000);
+        }).catch(() => {
+          fallbackCopy(url, btn, originalText);
+        });
+      } else {
+        fallbackCopy(url, btn, originalText);
+      }
+    }
+
+    function fallbackCopy(url, btn, originalText) {
+      const ta = document.createElement('textarea');
+      ta.value = url;
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        showToast('원문 기사 링크가 복사되었습니다.');
+        btn.innerHTML = '✓ 복사 완료';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.classList.remove('copied');
+        }, 2000);
+      } catch (e) {
+        alert('링크 복사에 실패했습니다.');
+      }
+      document.body.removeChild(ta);
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('tossToast');
+      if (!toast) return;
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2400);
+    }
+
+    // Mobile Drawer Controls
+    function toggleMobileMenu() {
+      const sidebar = document.querySelector('.context-sidebar');
+      const backdrop = document.getElementById('drawerBackdrop');
+      const menuBtn = document.getElementById('mobileMenuBtn');
+      if (!sidebar) return;
+      const isOpen = sidebar.classList.toggle('open');
+      if (backdrop) backdrop.classList.toggle('open', isOpen);
+      if (menuBtn) menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    }
+
+    function closeMobileMenu() {
+      const sidebar = document.querySelector('.context-sidebar');
+      const backdrop = document.getElementById('drawerBackdrop');
+      const menuBtn = document.getElementById('mobileMenuBtn');
+      if (sidebar) sidebar.classList.remove('open');
+      if (backdrop) backdrop.classList.remove('open');
+      if (menuBtn) menuBtn.setAttribute('aria-expanded', 'false');
+    }
+
+    // Keyboard accessibility
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeMobileMenu();
+        if (searchQuery.length > 0) clearSearch();
+      }
+    });
+
+    // Theme Management with Persistence
+    function initTheme() {
+      const saved = localStorage.getItem('daily_intel_theme');
+      if (saved === 'dark' || saved === 'light') {
+        setTheme(saved);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+        setTheme('light');
+      } else {
+        setTheme('dark');
+      }
+    }
+
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      try { localStorage.setItem('daily_intel_theme', theme); } catch(e) {}
+      const themeBtn = document.getElementById('themeBtn');
+      if (themeBtn) {
+        themeBtn.textContent = theme === 'dark' ? '☀️ 라이트 모드' : '🌙 다크 모드';
+      }
+    }
+
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    }
+
+    // Run on load
+    initTheme();
+  </script>
+</body>
+</html>

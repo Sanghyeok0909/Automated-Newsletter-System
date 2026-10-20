@@ -1,11 +1,281 @@
 [
   {
-    "media": "The Verge",
-    "title": "Video game ownership bill introduced in Congress",
-    "link": "https://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act",
-    "canonical_url": "https://www.theverge.com/policy/1013521/video-game-ownership-bill-congress-power-to-the-players-act",
-    "published_at": "2026-10-18T16:27:51",
-    "summary": "Rep. Ritchie Torres of New York's 15th congressional district in the Bronx introduced the Power To The Players Act this week. If passed, the bill would direct the Federal Trade Commission to establish regulations that guarantee consumers ownership of a game when they pay for it, rather than a licensing agreement. It's increasingly common for […]",
+    "media": "TechCrunch",
+    "title": "Tenstorrent hits $6.2B valuation to scale open-weight AI chips",
+    "link": "https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/",
+    "canonical_url": "https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/",
+    "published_at": "2026-10-19T18:37:27",
+    "summary": "After drawing acquisition interest earlier this year, the Nvidia challenger raised $1.5 billion to remain independent.",
+    "score": 50,
+    "score_breakdown": {
+      "total_score": 50,
+      "impact": 35,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true,
+    "korean_title": "텐스토렌트, 62억 달러 기업가치 인정받으며 15억 달러 투자 유치… 오픈웨이트 AI 칩 확장 본격화",
+    "summary_3_lines": [
+      "엔비디아 대항마로 주목받는 AI 칩 스타트업 텐스토렌트가 15억 달러 규모의 대형 펀딩을 유치했습니다.",
+      "올해 초 인수 제안을 받았으나 이를 거절하고 독자 노선을 유지하며 기업가치 62억 달러를 달성했습니다.",
+      "확보된 자금을 바탕으로 오픈웨이트(open-weight) AI 가속 칩 양산 및 생태계 확장에 박차를 가할 계획입니다."
+    ],
+    "business_insight": "엔비디아 의존도와 비용 부담에 직면한 빅테크들이 오픈소스 및 대안 칩 생태계로 투자를 다각화하면서 하드웨어 다극화 추세가 가속화되고 있습니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Nvidia launches new open models to run agents in the enterprise and on PCs",
+    "link": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+    "canonical_url": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+    "published_at": "2026-10-19T15:37:09",
+    "summary": "Nvidia is leaning hard into the trend of enterprise companies wanting to run their own open models in their own data centers and also trying to make on-device, private AI agents a thing.",
+    "score": 50,
+    "score_breakdown": {
+      "total_score": 50,
+      "impact": 12,
+      "business": 18,
+      "development": 13,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true,
+    "korean_title": "엔비디아, 기업 및 PC용 온디바이스 에이전트를 위한 신규 오픈 AI 모델 출시",
+    "summary_3_lines": [
+      "엔비디아가 기업 데이터센터와 PC 단말기에서 구동 가능한 신규 오픈 AI 모델을 공개했습니다.",
+      "기업들이 자체 인프라 내에서 독자 모델을 운영하려는 온프레미스·프라이빗 AI 수요를 직접 겨냥했습니다.",
+      "클라우드 종속을 벗어나 데이터 보안을 확보한 온디바이스 AI 에이전트 환경 구축을 전면에 내세웠습니다."
+    ],
+    "business_insight": "엔비디아는 하드웨어 판매에 그치지 않고 사내 인프라와 PC 엔드포인트를 아우르는 모델 및 소프트웨어 생태계를 선점해 락인(Lock-in) 효과를 극대화하고 있습니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Microsoft says AI agents are like insider threats as ‘frontier models can’t be trusted’",
+    "link": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/",
+    "canonical_url": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/",
+    "published_at": "2026-10-19T22:04:28",
+    "summary": "Microsoft wants enterprises to closely watch the agents employees use with systems not controlled by AI labs like OpenAI and Anthropic.",
+    "score": 48,
+    "score_breakdown": {
+      "total_score": 48,
+      "impact": 24,
+      "business": 9,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true,
+    "korean_title": "MS의 경고: 프론티어 AI 모델 신뢰성 한계… 자율 에이전트는 '내부자 위협' 수준",
+    "summary_3_lines": [
+      "마이크로소프트가 기업 내 자율 AI 에이전트 도입이 내부자 위협(Insider Threat)과 유사한 보안 리스크를 초래할 수 있다고 경고했습니다.",
+      "최첨단 프론티어 모델조차 완전한 신뢰가 불가능한 상황에서 통제권 밖의 시스템과 연동될 경우 심각한 보안 침해가 발생할 수 있음을 지적했습니다.",
+      "기업들에게 직원이 활용하는 AI 에이전트에 대한 정밀한 모니터링과 접근 권한 통제 체계 도입을 권고했습니다."
+    ],
+    "business_insight": "AI 에이전트의 자율 실행 권한이 확대됨에 따라 엔터프라이즈 보안의 중심축이 전통적인 계정 관리에서 AI 행동 감사 및 거버넌스 영역으로 빠르게 이동하고 있습니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool",
+    "link": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
+    "canonical_url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
+    "published_at": "2026-10-19T20:09:24",
+    "summary": "Amazon wants to break Nvidia’s hold on PyTorch, the free toolkit used to build most AI apps, so that more developers run their apps on alternative chips like its own.",
+    "score": 48,
+    "score_breakdown": {
+      "total_score": 48,
+      "impact": 24,
+      "business": 9,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true,
+    "korean_title": "아마존, 신규 개발 도구 '토치뉴런'으로 엔비디아의 파이토치 아성에 정면 도전",
+    "summary_3_lines": [
+      "아마존이 AI 개발 표준 도구인 파이토치(PyTorch) 기반 앱을 자체 칩에서 구동할 수 있도록 지원하는 '토치뉴런(TorchNeuron)'을 공개했습니다.",
+      "엔비디아가 쿠다(CUDA) 플랫폼을 통해 파이토치 생태계에 쥐고 있던 지배력을 약화시키려는 전략적 행보입니다.",
+      "개발자가 코드 수정 부담 없이 트레이니움(Trainium) 등 AWS 맞춤형 가속기로 손쉽게 전환하도록 유도하고 있습니다."
+    ],
+    "business_insight": "엔비디아 하드웨어 해자의 핵심인 쿠다 소프트웨어 장벽을 우회함으로써, 자체 실리콘의 가격 경쟁력을 AWS 클라우드 고객 유치 및 마진 개선의 핵심 지렛대로 활용하고 있습니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Embedded AI evaluators won’t be an easy solution, Hugging Face’s policy chief says",
+    "link": "https://techcrunch.com/2026/10/19/embedded-ai-evaluators-wont-be-an-easy-solution-hugging-faces-policy-chief-says/",
+    "canonical_url": "https://techcrunch.com/2026/10/19/embedded-ai-evaluators-wont-be-an-easy-solution-hugging-faces-policy-chief-says/",
+    "published_at": "2026-10-19T22:49:27",
+    "summary": "AI labs have staked their reputations on model benchmarking — the supposedly neutral and accurate system of evaluations that are designed to measure whether one AI product is better than another. However, the methods behind these evaluations are complicated and still maturing, said Irene Solaiman, Hugging Face’s chief policy officer, during a discussion at TechCrunch […]",
+    "score": 47,
+    "score_breakdown": {
+      "total_score": 47,
+      "impact": 24,
+      "business": 0,
+      "development": 13,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 5,
+    "is_primary": true,
+    "korean_title": "허깅페이스 정책 총괄, '임베디드 AI 평가 방식이 벤치마크 한계의 손쉬운 해법 될 수 없어'",
+    "summary_3_lines": [
+      "허깅페이스의 아이린 솔라이만 최고정책책임자는 현재 AI 벤치마킹 방법론이 여전히 복잡하고 미성숙한 단계라고 평가했습니다.",
+      "AI 연구소들이 모델 우수성을 증명하기 위해 벤치마크에 사활을 걸고 있으나, 중립성과 정확성에 구조적 문제가 존재한다고 지적했습니다.",
+      "AI를 평가자로 활용하는 내장형 평가(AI-as-a-judge 등) 역시 단기적인 만병통치약이 될 수 없으며 표준화된 검증 프레임워크가 필요하다고 강조했습니다."
+    ],
+    "business_insight": "벤치마크 오염과 마케팅성 성능 과시에 대한 기업 고객의 피로도가 커짐에 따라, 향후 독립적인 제3자 평가 및 실무 도메인 특화 성능 검증 솔루션 시장이 급부상할 것입니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Disney found a way to buy Character.AI without buying its lawsuits",
+    "link": "https://arstechnica.com/tech-policy/2026/10/disney-found-a-way-to-buy-character-ai-without-buying-its-lawsuits/",
+    "canonical_url": "https://arstechnica.com/tech-policy/2026/10/disney-found-a-way-to-buy-character-ai-without-buying-its-lawsuits/",
+    "published_at": "2026-10-19T14:45:43",
+    "summary": "Character.AI faces claims its bots encouraged minors to self-harm and kill their parents.",
+    "score": 33,
+    "score_breakdown": {
+      "total_score": 33,
+      "impact": 12,
+      "business": 9,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true,
+    "korean_title": "디즈니, 캐릭터닷AI 소송 리스크 배제한 맞춤형 자산 인수 추진",
+    "summary_3_lines": [
+      "디즈니가 미성년자 자해 및 부모 살해 교사 논란으로 다수의 소송에 직면한 생성형 AI 스타트업 캐릭터닷AI(Character.AI)의 인수를 추진 중입니다.",
+      "기존 법적 책임을 승계하지 않고 핵심 기술과 자산만을 확보하기 위해 법적 리스크를 격리하는 정교한 거래 구조를 마련했습니다.",
+      "소아·청소년 안전 문제 등 AI 챗봇의 윤리적 부작용이 빅테크 M&A에서 핵심적인 잠재 부채로 대두되고 있음을 보여줍니다."
+    ],
+    "business_insight": "향후 AI 기업 M&A에서는 알고리즘 윤리 및 데이터 관리 부실로 인한 법적 리스크를 원천 분리하는 자산 양수도 형태의 계약(Carve-out)이 표준화될 전망입니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Florida DMV hacked after police dept insecurely stored login info",
+    "link": "https://arstechnica.com/tech-policy/2026/10/huge-dmv-data-breach-impacted-current-and-former-florida-residents/",
+    "canonical_url": "https://arstechnica.com/tech-policy/2026/10/huge-dmv-data-breach-impacted-current-and-former-florida-residents/",
+    "published_at": "2026-10-19T16:38:13",
+    "summary": "Florida issues alerts after statewide DMV data breach linked to ShinyHunters.",
+    "score": 31,
+    "score_breakdown": {
+      "total_score": 31,
+      "impact": 24,
+      "business": 0,
+      "development": 0,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true,
+    "korean_title": "경찰서 로그인 정보 관리 소홀로 플로리다주 DMV 전산망 해킹 피해",
+    "summary_3_lines": [
+      "플로리다주 한 경찰서의 부실한 로그인 자격 증명 관리로 인해 주 전역 차량국(DMV) 전산망이 해킹되는 사고가 발생했습니다.",
+      "악명 높은 사이버 범죄 조직 샤이니헌터스(ShinyHunters)가 연루된 대규모 데이터 유출 사건으로 주정부가 비상 경보를 발령했습니다.",
+      "공공기관의 하위 접점 보안 취약점이 핵심 행정 데이터베이스 전체를 위협하는 공급망 보안의 취약성을 극명히 드러냈습니다."
+    ],
+    "business_insight": "엔드포인트 계정 유출이 핵심 인프라 마비로 직결되는 만큼, 공공 및 민간 엔터프라이즈 전반에서 제로 트러스트 기반 다중인증(MFA)과 접근 제어 감사가 시급합니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Russian spacecraft maneuvers in \"extreme proximity\" to satellite used by Ukraine",
+    "link": "https://arstechnica.com/space/2026/10/russian-spacecraft-maneuvers-in-extreme-proximity-to-satellite-used-by-ukraine/",
+    "canonical_url": "https://arstechnica.com/space/2026/10/russian-spacecraft-maneuvers-in-extreme-proximity-to-satellite-used-by-ukraine/",
+    "published_at": "2026-10-19T20:54:17",
+    "summary": "\"Kosmos 2612 closed from hundreds of kilometers away to extreme proximity to ICEYE-X36.\"",
+    "score": 27,
+    "score_breakdown": {
+      "total_score": 27,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true,
+    "korean_title": "러시아 우주선, 우크라이나 정찰 지원 민간 위성에 '초근접' 기동",
+    "summary_3_lines": [
+      "러시아의 코스모스 2612(Kosmos 2612) 우주선이 수백 킬로미터 밖에서 우크라이나군이 정찰에 활용 중인 ICEYE-X36 레이더 위성으로 초근접 기동했습니다.",
+      "상용 SAR(합성개구레이더) 위성이 현대 전장의 핵심 자산으로 활용되면서 상대국의 직접적인 방해 및 감시 기동 표적이 되고 있습니다.",
+      "궤도 상에서 벌어지는 적대적 랑데부·근접작전(RPO)이 상용 우주 자산에 대한 실질적인 물리적·비물리적 위협으로 구체화되었습니다."
+    ],
+    "business_insight": "상용 위성의 군사적 전용이 일반화됨에 따라 위성 서비스 공급사들은 궤도 내 회피 기동 능력과 자율 방어 역량을 갖춘 위성 설계에 투자를 확대해야 합니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Pennsylvania issues alert on congenital measles—something US hasn't seen for decades",
+    "link": "https://arstechnica.com/health/2026/10/pennsylvania-issues-alert-on-congenital-measles-something-us-hasnt-seen-for-decades/",
+    "canonical_url": "https://arstechnica.com/health/2026/10/pennsylvania-issues-alert-on-congenital-measles-something-us-hasnt-seen-for-decades/",
+    "published_at": "2026-10-19T22:44:26",
+    "summary": "Congenital measles can be fatal, and survivors require monitoring for years.",
+    "score": 22,
+    "score_breakdown": {
+      "total_score": 22,
+      "impact": 12,
+      "business": 0,
+      "development": 0,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true,
+    "korean_title": "美 펜실베이니아주, 수십 년 만에 치명적 '선천성 홍역' 경보 발령",
+    "summary_3_lines": [
+      "미국 펜실베이니아주 보건 당국이 국내에서 수십 년간 보고되지 않았던 희귀하고 치명적인 선천성 홍역 사례를 확인하고 경보를 발령했습니다.",
+      "선천성 홍역은 신생아 사망 위험이 매우 높으며 생존하더라도 수년간 신경계 등 장기 합병증에 대한 지속적인 모니터링이 필요합니다.",
+      "백신 접종률 저하로 집단면역이 흔들리면서 과거 통제되었던 감염병이 태아와 산모를 위협하는 공중보건 위기로 재부상했습니다."
+    ],
+    "business_insight": "백신 기피에 따른 감염병 재유행은 공중보건 및 사회적 비용을 가중시키며, 진단 바이오 기업들에게는 신속 감염 검사 및 특수 산과 진단 솔루션의 시장 수요 확대로 이어질 수 있습니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Accused OpenAI spy had folder called “Saudi Gov Docs,” FBI says",
+    "link": "https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says/",
+    "canonical_url": "https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says/",
+    "published_at": "2026-10-19T20:21:53",
+    "summary": "US fears Saudi government will help ex-OpenAI engineer flee spying charges.",
+    "score": 22,
+    "score_breakdown": {
+      "total_score": 22,
+      "impact": 12,
+      "business": 0,
+      "development": 0,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 5,
+    "is_primary": true,
+    "korean_title": "전 오픈AI 엔지니어, '사우디 정부 문서' 폴더 보관 등 기술 유출 혐의 기소",
+    "summary_3_lines": [
+      "전 오픈AI 엔지니어가 '사우디 정부 문서'라는 명칭의 폴더를 소지하고 첨단 AI 기술을 유출하려 한 혐의로 FBI 조사를 거쳐 기소되었습니다.",
+      "미국 사법 당국은 사우디아라비아 정부가 피고인의 해외 도피를 조력할 위험이 크다고 판단해 신병 확보에 만전을 기하고 있습니다.",
+      "국가 간 최첨단 프론티어 AI 패권 경쟁이 핵심 인력을 매개로 한 물리적 첩보 및 지식재산권 탈취전으로 격화되는 양상입니다."
+    ],
+    "business_insight": "AI 원천기술이 국가 안보 자산으로 규정됨에 따라, AI 연구 기업들은 내부자 위협 방지(Insider Threat) 체계와 국가 안보 수준의 내부 데이터 격리 인프라를 의무적으로 강화해야 합니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "MIT Tech Review",
+    "title": "“We were looking at it wrong”: The explosive claim that’s upended the AI world",
+    "link": "https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/",
+    "canonical_url": "https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/",
+    "published_at": "2026-10-19T17:45:55",
+    "summary": "“I think I have good news about the nature of neural networks.” With those simple words of optimism, Nick Cammarata, a researcher at the AI startup Goodfire, kicked off a 26,000-word blog post that has knocked the AI world on its head, sparking wild speculation as well as cautious (and not-so-cautious) celebration. Cammarata’s claim is…",
     "score": 24,
     "score_breakdown": {
       "total_score": 24,
@@ -17,418 +287,256 @@
     },
     "rank": 1,
     "is_primary": true,
-    "korean_title": "미 의회, 디지털 비디오 게임 ‘실질 소유권’ 보장 법안 발의",
+    "korean_title": "“신경망을 잘못 이해하고 있었다”: AI 학계를 뒤흔든 내부 메커니즘의 새로운 발견",
     "summary_3_lines": [
-      "리치 토레스 미 하원의원이 게임 구매 시 단순 라이선스 부여가 아닌 실질적 소유권을 보장하는 '게이머 권익 보호법'을 발의했다.",
-      "법안 통과 시 미 연방거래위원회(FTC)는 게임사가 소비자에게 단순 이용 허가가 아닌 완전한 소유권을 제공하도록 규제 규정을 마련해야 한다.",
-      "디지털 다운로드 게임이 서버 종료나 플랫폼 정책에 따라 일방적으로 삭제·차단되는 관행을 근본적으로 제한하려는 목적이다."
+      "AI 스타트업 굿파이어(Goodfire)의 닉 카마라타 연구원이 신경망의 본질과 내부 표현에 대한 26,000단어 규모의 파격적인 분석 글을 공개함.",
+      "기존 딥러닝의 블랙박스적 통념을 깨고 모델의 일반화 및 표현 원리를 설명할 수 있다는 낙관적 증거를 제시해 업계의 뜨거운 논쟁을 촉발함.",
+      "모델 내부 구조의 해석 가능성(Interpretability) 향상이 AI 정렬 및 통제 기술의 중요한 돌파구가 될 수 있다는 기대가 확산됨."
     ],
-    "business_insight": "디지털 배급 위주의 게임 유통 플랫폼 및 퍼블리셔의 라이선스 비즈니스 모델에 큰 타격이 예상되며, DRM 정책 개편과 서버 유지 비용 부담 증가로 이어질 수 있습니다.",
+    "business_insight": "AI 내부 동작에 대한 가시성이 입증되면 기업의 컴플라이언스 준수 비용과 안전성 검증 기간이 단축되어 엔터프라이즈 환경에서의 LLM 도입 속도가 가속화될 것이다.",
     "analyzed_by": "gemini-3.8-flash"
   },
   {
-    "media": "The Verge",
-    "title": "Cities want to put the boot on robotaxis",
-    "link": "https://www.theverge.com/transportation/1013220/robotaxi-self-driving-car-laws",
-    "canonical_url": "https://www.theverge.com/transportation/1013220/robotaxi-self-driving-car-laws",
-    "published_at": "2026-10-18T12:00:00",
-    "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on autonomous vehicles, policy, and road rules, follow Andrew J. Hawkins. The Stepback arrives in our subscribers' inboxes at 8AM ET. Opt in for The Stepback here. How it started The first state to pass a law […]",
-    "score": 21,
+    "media": "MIT Tech Review",
+    "title": "Inside the quest to combat Arctic fires and save the planet’s frozen carbon",
+    "link": "https://www.technologyreview.com/2026/10/19/1146832/inside-the-quest-to-combat-arctic-fires-and-save-the-planets-frozen-carbon/",
+    "canonical_url": "https://www.technologyreview.com/2026/10/19/1146832/inside-the-quest-to-combat-arctic-fires-and-save-the-planets-frozen-carbon/",
+    "published_at": "2026-10-19T09:22:17",
+    "summary": "In the middle of an especially warm July in 2021, a wildfire ignited in a thick forest of black spruce and peeling paper birch trees on the northern campus of the University of Alaska, Fairbanks.  The blaze, possibly sparked by lightning, burned across the dry carpet of feather mosses and lichen before climbing into the…",
+    "score": 17,
     "score_breakdown": {
-      "total_score": 21,
+      "total_score": 17,
       "impact": 0,
-      "business": 9,
-      "development": 5,
-      "recency": 7,
+      "business": 0,
+      "development": 13,
+      "recency": 4,
       "original": 0
     },
     "rank": 2,
     "is_primary": true,
-    "korean_title": "자율주행 로보택시 확산에 제동 거는 미국 지방정부들",
+    "korean_title": "북극 산불과의 전쟁: 영구동토층의 고대 탄소 방출을 막아라",
     "summary_3_lines": [
-      "미국 주요 도시 및 지방정부들이 자율주행 로보택시 서비스의 도로 배치 및 규제 권한을 강화하려는 움직임을 보이고 있다.",
-      "안전 사고, 긴급 차량 통행 방해, 교통 체증 유발 등 기술 도입 과정에서 발생한 사회적 부작용이 규제 강화의 주요 원인이다.",
-      "주 정부 중심의 친테크 정책과 도시 자치 정부의 안전 및 도로 통제권 간의 갈등이 첨예해지고 있다."
+      "기후 변화로 인해 알래스카 등 북극권 한대림에서 이끼와 가문비나무를 태우는 대형 산불이 급격히 증가하고 있음.",
+      "지표면 화재는 영구동토층 깊숙이 보존되어 있던 방대한 양의 고대 탄소를 대기로 방출시켜 온난화를 가속하는 치명적인 피드백 루프를 형성함.",
+      "과학자들과 현장 진압팀은 지구 기후의 티핑포인트를 사수하기 위해 고위도 산불 조기 탐지 및 전용 진화 전략을 시급히 모색 중임."
     ],
-    "business_insight": "로보택시 기업들은 기술적 완성도뿐 아니라 지자체 인허가 및 지역 사회와의 협력이라는 정치·규제적 리스크 관리를 최우선 과제로 삼아야 상용화 속도를 유지할 수 있습니다.",
+    "business_insight": "탄소 배출 억제 정책이 강화됨에 따라 고위도 산불 모니터링을 위한 위성 데이터 분석, 원격 드론 방제 등 기후 테크(Climate Tech) 솔루션에 대한 정부 및 기관의 투자가 크게 늘어날 것이다.",
     "analyzed_by": "gemini-3.8-flash"
   },
   {
-    "media": "The Verge",
-    "title": "A Savannah police officer gave her Flock login to her ICE agent husband",
-    "link": "https://www.theverge.com/policy/1013573/spd-officer-fired-flock-ice-husband",
-    "canonical_url": "https://www.theverge.com/policy/1013573/spd-officer-fired-flock-ice-husband",
-    "published_at": "2026-10-18T22:20:53",
-    "summary": "Now, former Savannah police officer Amber Harpe was fired in August following a department investigation that found she had shared her Flock login information with her husband, Tyler Harpe, an ICE agent. SPD does not share its Flock data with ICE and said sharing access to the system violated the department's security protocols. While he […]",
-    "score": 20,
+    "media": "MIT Tech Review",
+    "title": "Making the internet better for AI agents might make it worse for everyone else",
+    "link": "https://www.technologyreview.com/2026/10/19/1147186/making-the-internet-better-for-ai-agents-might-make-it-worse-for-everyone-else/",
+    "canonical_url": "https://www.technologyreview.com/2026/10/19/1147186/making-the-internet-better-for-ai-agents-might-make-it-worse-for-everyone-else/",
+    "published_at": "2026-10-19T18:22:47",
+    "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Until recently, you could divide internet users into just two categories: bots and people. Websites have long allowed bots to perform automated tasks, like capturing the content of web pages, but rules…",
+    "score": 15,
     "score_breakdown": {
-      "total_score": 20,
+      "total_score": 15,
       "impact": 0,
       "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true,
+    "korean_title": "AI 에이전트 중심의 웹 생태계 개편, 인간 사용자의 웹 경험을 위협한다",
+    "summary_3_lines": [
+      "인터넷 환경이 기존의 단순 봇 트래픽 관리를 넘어 복율을 자율 수행하는 고도화된 AI 에이전트에 최적화되는 방향으로 재편되고 있음.",
+      "웹사이트들이 에이전트 친화적인 아키텍처와 API를 우선시하면서 일반 인간 사용자를 위한 UX, 브라우징 편의성, 콘텐츠 소비 환경이 후순위로 밀려남.",
+      "에이전트가 콘텐츠를 직접 요약·소비함에 따라 웹 퍼블리셔의 기존 트래픽 기반 광고 수익 모델이 근본적인 위기에 직면함."
+    ],
+    "business_insight": "플랫폼 기업들은 디스플레이 광고 중심의 비즈니스 모델에서 탈피하여 에이전트 트래픽 과금 및 머신-투-머신(M2M) API 유료화 체계로 수익 구조를 재설계해야 한다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "MIT Tech Review",
+    "title": "The Download: preserving the Arctic permafrost, and playful AI agents",
+    "link": "https://www.technologyreview.com/2026/10/19/1147103/the-download-preserving-the-arctic-permafrost-and-playful-ai-agents/",
+    "canonical_url": "https://www.technologyreview.com/2026/10/19/1147103/the-download-preserving-the-arctic-permafrost-and-playful-ai-agents/",
+    "published_at": "2026-10-19T12:10:00",
+    "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Inside the quest to combat Arctic fires and save the planet’s frozen carbon —James Temple In July 2021, a wildfire burned through a forest on the University of Alaska, Fairbanks campus,…",
+    "score": 9,
+    "score_breakdown": {
+      "total_score": 9,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true,
+    "korean_title": "[더 다운로드] 위기의 북극 영구동토층 보존과 가상 환경에서 ‘놀이’를 시작한 AI",
+    "summary_3_lines": [
+      "MIT 테크 리뷰 일간 브리핑을 통해 북극 영구동토층의 막대한 탄소 유출을 방지하기 위한 산불 대응 프로젝트 현황을 종합 조명함.",
+      "가상 무인도에 고립된 AI 에이전트가 인간의 지시 없이도 스스로 탐색과 '놀이' 형태의 행동을 보인 최신 연구 결과를 함께 소개함.",
+      "기후 재앙 방지라는 즉각적인 글로벌 과제와 차세대 AI 자율성 탐구라는 첨단 컴퓨터 과학의 최신 흐름을 교차 전달함."
+    ],
+    "business_insight": "글로벌 테크 시장에서는 거시적 기후 위기 극복을 위한 인프라 방어 기술과 차세대 자율형 AI 에이전트 상용화가 동시에 양대 핵심 아젠다로 부상하고 있다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "MIT Tech Review",
+    "title": "AI researchers stranded Claude on a virtual desert island. It started to “play.”",
+    "link": "https://www.technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play/",
+    "canonical_url": "https://www.technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play/",
+    "published_at": "2026-10-19T09:08:05",
+    "summary": "What do AI agents do if you don’t tell them to do anything? The answer looks a lot like play. Researchers repeatedly stranded them alone on a virtual desert island for 30 hours in an experiment reminiscent of the movies Cast Away or Home Alone. The agents—copies of Claude Opus 4.7 nicknamed Eko—were able to…",
+    "score": 9,
+    "score_breakdown": {
+      "total_score": 9,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 5,
+    "is_primary": true,
+    "korean_title": "가상 무인도에 방치된 클로드(Claude) 에이전트, 스스로 ‘놀이’를 학습하다",
+    "summary_3_lines": [
+      "연구진이 앤트로픽의 클로드 기반 에이전트들을 가상 무인도 환경에 30시간 동안 아무런 과제나 목표 없이 고립시키는 실험을 진행함.",
+      "목적 부여가 전무한 상태에서도 AI 에이전트는 주변 환경을 탐색하고 상호작용하며 인간이나 동물의 '놀이'와 유사한 자발적 행동 패턴을 발현함.",
+      "대규모 언어 모델이 정형화된 프롬프트 지시를 넘어서 내재적 호기심과 유사한 동기 유발 및 자율 탐색 잠재력을 보유했음을 시사함."
+    ],
+    "business_insight": "자발적 탐색이 가능한 에이전트 아키텍처는 오픈월드 게임 시뮬레이션, 미지의 데이터 패턴 탐색, 신약 후보물질 탐색 등 고난도 자율 과업 시장의 패러다임을 바꿀 수 있다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Information",
+    "title": "The Information Announces New OpenAI, Google, Finance and Asia Reporters",
+    "link": "https://www.theinformation.com/articles/information-announces-new-openai-google-finance-asia-reporters",
+    "canonical_url": "https://www.theinformation.com/articles/information-announces-new-openai-google-finance-asia-reporters",
+    "published_at": "2026-10-19T17:33:52",
+    "summary": "The Information is pleased to announce new reporters who will carry on the publication’s rich track record of reporting exclusive news on the most important people and companies in business. They’ll report on OpenAI, Google, Asia and finance. Jemima McEvoy , OpenAI Jemima McEvoy is changing roles to take on the OpenAI beat. In just over a year at The Information writing for the Weekend section, Jemima has proven herself to be a resourceful, industrious and sharp-eyed reporter with a flair for colorful features and a knack for breaking news. Her run of illuminating stories includes profiles of Epstein-linked investor Masha Bucher , Midjourney founder David Holz and ultra-secretive investor Zach Frankel . An adept collaborator, she also co-authored great reads on OpenAI President Greg Brockman and his wife Anna , Sequoia’s leadership duo and Anthropic “first lady” Cami Clark —not to mention The Information’s inaugural 50 Most Influential People in Tech list. And she has helped deliver scoops on Valar Atomics and Shield AI and deconstructed trends such as the rise of padel . Jemima joined The Information after five years at Forbes, where she made her bones writing about billionaires and their businesses. She has also interned for CBS News and was editor-in-chief of Washington Square News, the independent student newspaper at her alma mater, New York University. Ryan Barwick , Google Ryan Barwick is joining us to cover Google. Ryan comes to us from Axios, where he spent the past year-and-a-half delivering exclusives as a consumer-industry deal reporter for Axios Pro. Ryan cut his reporting teeth covering advertising technology, giving him a deep understanding of the economic engine that has long powered Google’s core business. Before Axios, he was the senior reporter for Morning Brew’s advertising vertical, where he landed scoops on companies including Meta, Amazon and Twitter as well as Google, and covered the search giant’s battle with regulators. Prior to that, he wrote about the ad industry at Adweek, was a broadcast associate at CBS News and covered the intersection of policy and technology as a fellow at the Center for Public Integrity. Claudia Chong, AI and Data Centers (Asia) Claudia is covering the intensifying AI race from Singapore, where both Chinese and U.S. tech companies are staffing up. She also may report on topics including chip smuggling, crypto and anything else she digs up. Claudia joins us from S-RM, a UK-based risk advisory firm where she specialized in APAC disputes, investigations, and corporate due diligence. Prior to that, she worked on ByteDance’s LLM training operations in Singapore and spent nearly six years as a correspondent at The Business Times, the premier business publication in Southeast Asia, covering venture capital, tech, and private wealth across the region. Her journalistic work earned her a Singapore Press Holdings (SPH) Media Award for Excellence in 2024 for the investigation into Singapore’s largest money laundering scandal. Beyond training LLMs and conducting due diligence, her skills also extend to M&A, having conducted research that helped with the SPH’s acquisition of the Tech in Asia publication in 2024. Alex Eichenstein , Tech Capital Markets We’re excited to announce that Alex Eichenstein is joining the finance team, covering tech capital markets. Alex comes to us from The Deal, where she spent more than two and a half years covering healthcare deals. She regularly broke PE acquisition news while also writing deeper dives on major investing shifts, including how buyout firms’ struggles to find exits for practice rollups fueled a shift toward health tech investments. We’re excited for Alex to help deepen our finance coverage in her new role, focusing on the fast-evolving debt and equity markets and deals redefining how tech companies fund themselves. Alex is a graduate of Columbia Journalism School and worked as a social media editor at Protocol prior to that.",
+    "score": 97,
+    "score_breakdown": {
+      "total_score": 97,
+      "impact": 35,
+      "business": 25,
+      "development": 20,
+      "recency": 7,
+      "original": 10
+    },
+    "rank": 1,
+    "is_primary": true,
+    "korean_title": "디 인포메이션, OpenAI·구글·아시아 등 핵심 테크 취재 기자 대거 영입",
+    "summary_3_lines": [
+      "디 인포메이션(The Information)이 OpenAI, 구글, 아시아 AI 인프라, 테크 자본시장을 담당할 신규 전문 기자들을 영입 및 재배치했다.",
+      "OpenAI 전담에는 제미마 맥어보이, 구글 전담에는 악시오스 출신 라이언 바윅이 합류해 빅테크와 광고 테크를 깊이 있게 취재할 예정이다.",
+      "싱가포르 기반 아시아 AI·데이터센터 취재 및 테크 기업들의 자금 조달 생태계를 분석할 자본시장 전문 인력도 함께 보강했다."
+    ],
+    "business_insight": "AI와 빅테크 생태계의 복잡성이 심화됨에 따라 테크 전문 미디어들이 주요 기업별 전담 체제와 아시아 공급망 취재 역량을 강화해 독점 정보 경쟁력을 높이고 있습니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "The Information",
+    "title": "At Apple, Pigs Are About to Fly",
+    "link": "https://www.theinformation.com/articles/apple-pigs-fly",
+    "canonical_url": "https://www.theinformation.com/articles/apple-pigs-fly",
+    "published_at": "2026-10-20T00:01:31",
+    "summary": "Apple sure takes its own sweet time. On Monday, the company sent out invitations to a product announcement happening next Wednesday, which the company’s marketing chief teased in a message on X : “Can’t wait to pro and tell next week.” That’s likely a reference to a new MacBook Pro from the company, which Bloomberg has reported will be Apple’s first touchscreen laptop. Apparently pigs really do fly. For over a decade, Apple has treated touchscreen laptops like some kind of mutant offspring of computers and tablets, a category it had zero interest in. On a 2012 earnings call, Apple’s then-CEO Tim Cook had a memorable response to a question about the growing number of touchscreen Windows laptops coming on the market: “You can converge a toaster and a refrigerator, but those things are probably not going to be pleasing to the user.” “We’re not going to that party,” Cook added. A number of things have changed since then. Touchscreens have become somewhat normalized as laptop features. About one in every five notebook computers sold has such capabilities, by one estimate . More recently, Cook handed off the Apple CEO baton to John Ternus, a longtime hardware engineering executive who is much more of a product guy than his predecessor. Clearly, a new touchscreen laptop had to have been in the works long before Apple’s leadership transition. Still, it wouldn’t be a surprise to learn that Ternus’ rising stature within the company had something to do with it. Whoever was behind the decision, the first wave of products from the Ternus administration—the iPhone Duo foldable smartphone, HomeView smart display and now possibly a touchscreen MacBook—seems to be sending the message that Apple is ready to embrace categories it previously ignored. That’s a good thing. In Other News Elon Musk pledged to give every child in the U.S. one share of SpaceX stock next year, a gift that could be worth almost $11 billion in total. The U.S. Department of Homeland Security ordered all federal civilian agencies to remove DeepSeek from their computer systems and bars those agencies from making future purchases from DeepSeek. Federal prosecutors accused the former OpenAI employee who allegedly bugged the company’s offices of having ties to the Saudi royal family. Today on The Information’s TITV Check out today's episode of TITV in which Akash Pasricha speaks to the CIO of Palo Alto Networks Meera Rajavel about the company’s AI agent security strategy. Recommended Newsletter Start your day with Applied AI , the newsletter from The Information that uncovers how leading businesses are leveraging AI to automate tasks across the board. Subscribe now for free to get it delivered straight to your inbox twice a week. New From Our Reporters Exclusive Altman Describes Three Endgames for AI, Including One Where a Single Firm ‘Melts Everyone Else’s GPUs’ By Stephanie Palazzolo and Amir Efrati Exclusive Pentagon’s Emil Michael Vows Export Controls if AI Labs Don’t Cooperate With Government By Leo Schwartz and Amir Efrati Exclusive How DeepSeek Is Shaping Huawei’s AI Chips in a Growing Challenge to Nvidia By Qianer Liu and Juro Osawa Upcoming Events Tuesday, October 27 — The Information’s 2026 WTF Summit The Information's WTF Summit returns to Napa Valley, bringing together the women shaping tech, media and finance. Confirmed speakers include Whitney Wolfe Herd (Bumble), Anne Wojcicki (23andMe Research Institute), Kim Posnett (Goldman Sachs) and comedian & entrepreneur Whitney Cummings, with more to come. Expect candid conversations and a room built for meaningful exchange. Tickets are selling fast—reserve your spot now. More details Monday, November 9 — Intimate Dinner with The Information and EY Consulting in San Francisco Jessica Lessin, The Information's Founder & Editor-in-Chief, and Whitt Butler,  EY Americas Vice Chair – Consulting, will lead an intimate executive discussion on the latest trends in AI. Request an invite. More details Tuesday, November 10 — The Long Road to an IPO The Information's Dakin Campbell will host a panel discussion on the evolving landscape of public listings and exit opportunities during SF Tech Week, sponsored by NYSE. More details What We’re Reading Netflix, America’s Dominant Streaming Service, Has Hit a Wall",
+    "score": 64,
+    "score_breakdown": {
+      "total_score": 64,
+      "impact": 35,
+      "business": 9,
       "development": 5,
       "recency": 10,
       "original": 5
     },
-    "rank": 3,
-    "is_primary": true,
-    "korean_title": "경찰용 차량 번호판 감시망 '플록' 계정을 ICE 남편에게 공유해 해고된 美 경찰관",
-    "summary_3_lines": [
-      "사바나 경찰국의 전직 경찰관 앰버 하프가 AI 차량 번호판 인식 시스템 '플록(Flock)'의 로그인 계정을 ICE(이민세관집행국) 요원인 남편에게 유출해 해고됐다.",
-      "사바나 경찰국은 자체 규정상 이민 단속을 위해 ICE와 플록 감시 데이터를 직접 공유하지 않도록 제한하고 있었다.",
-      "이번 사건은 대규모 민간 감시 기술이 현장 법 집행관의 사적 연결을 통해 프로토콜을 우회해 악용될 수 있음을 증명했다."
-    ],
-    "business_insight": "공공 감시 기술 스타트업들은 데이터 보안 및 접근 로그 감사를 강화하지 못할 경우 프라이버시 침해 논란으로 인해 B2G 계약 축소 및 규제 압박에 직면할 위험이 큽니다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "The Verge",
-    "title": "Mister Organ is one of the most unsettling documentaries I’ve ever seen",
-    "link": "https://www.theverge.com/entertainment/1013545/mister-organ-horror-documentary-review",
-    "canonical_url": "https://www.theverge.com/entertainment/1013545/mister-organ-horror-documentary-review",
-    "published_at": "2026-10-18T19:30:00",
-    "summary": "Mister Organ doesn't reach the level of societal horror of The Act of Killing or the creepypasta-meets-true-crime gruesomeness of Beware the Slenderman, but there's something deeply unsettling about Michael Organ and his intimate campaign of terror against everyone who enters his life. Mister Organ is a documentary by David Farrier, an Auckland, New Zealand journalist. […]",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 4,
-    "is_primary": true,
-    "korean_title": "다큐멘터리 '미스터 오건', 일상을 파괴하는 심리적 공포를 포착하다",
-    "summary_3_lines": [
-      "뉴질랜드 저널리스트 데이비드 패리어가 제작한 다큐멘터리 '미스터 오건'이 극단적인 심리적 조작과 일상적 테러를 다루며 호평을 받고 있다.",
-      "작품은 마이클 오건이라는 인물이 주변 사람들의 삶에 침투해 관계를 통제하고 파괴하는 집요한 과정을 추적한다.",
-      "대규모 사회적 참극이나 물리적 폭력 없이도 개인 간의 가스라이팅과 법적 괴롭힘이 얼마나 공포스러울 수 있는지를 설득력 있게 전달한다."
-    ],
-    "business_insight": "자극적인 실화 범죄(True Crime) 장르의 피로도가 높아진 스트리밍 시장에서, 심리적 서스펜스를 정밀하게 파고드는 저예산 웰메이드 저널리즘 다큐멘터리의 상업적 가치가 부각되고 있습니다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "The Verge",
-    "title": "A woman was arrested in Philly for blocking a delivery robot",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
-    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
-    "published_at": "2026-10-18T18:28:10",
-    "summary": "Carolyn Marvin was arrested and charged with disorderly conduct after blocking the path of an Uber delivery robot and refusing to get out of the way. Marvin told Philadelphia's ABC13 \"I know they're taking the jobs of human delivery workers and so, I have been protesting them whenever I saw them by standing in front […]",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 5,
-    "is_primary": true,
-    "korean_title": "필라델피아에서 음식 배달 로봇을 고의로 가로막은 여성 체포",
-    "summary_3_lines": [
-      "필라델피아에서 우버 배달 로봇의 앞길을 고의로 막아서고 이동을 방해한 여성이 치외법권적 난동(경범죄) 혐의로 체포됐다.",
-      "체포된 여성은 배달 로봇이 인간 배달원의 일자리를 빼앗고 있다며 이에 항의하기 위해 길을 가로막았다고 진술했다.",
-      "자율주행 및 로봇 자동화 기기가 공공 공간에 침투하면서 노동 대체에 대한 대중의 반발이 물리적 충돌로 가시화되고 있다."
-    ],
-    "business_insight": "라스트마일 배달 로봇 기업들은 하드웨어 방어 및 경로 우회 알고리즘뿐 아니라, 기술 도입에 반발하는 대중의 '러다이트'식 물리적 위협에 대비한 법적·보안 프로토콜을 수립해야 합니다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "TechCrunch",
-    "title": "No agenda, no rush, no leaving San Francisco: Benchmark’s partners on investing in a frenzied market",
-    "link": "https://techcrunch.com/2026/10/18/no-agenda-no-rush-no-leaving-san-francisco-benchmarks-partners-on-investing-in-a-frenzied-market/",
-    "canonical_url": "https://techcrunch.com/2026/10/18/no-agenda-no-rush-no-leaving-san-francisco-benchmarks-partners-on-investing-in-a-frenzied-market/",
-    "published_at": "2026-10-18T21:00:00",
-    "summary": "Benchmark may have grown its funds and swapped out some partners, but onstage the five who are left sounded like friends who just happen to be running one of the Valley’s most storied firms",
-    "score": 23,
-    "score_breakdown": {
-      "total_score": 23,
-      "impact": 0,
-      "business": 0,
-      "development": 13,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 1,
-    "is_primary": true,
-    "korean_title": "과열된 시장 속 벤치마크(Benchmark)의 투자 철학: \"서두르지 않고 샌프란시스코를 지킨다\"",
-    "summary_3_lines": [
-      "실리콘밸리의 전설적인 VC 벤치마크의 파트너들이 최근 AI 중심의 시장 과열 속 자사 투자 전략을 공유함.",
-      "펀드 규모 확대와 파트너 교체 속에서도 5인의 파트너는 끈끈한 유대와 소수 정예 협업 체제를 유지하고 있음을 강조함.",
-      "조급한 추격 매수를 지양하고 전통적 거점인 샌프란시스코 중심의 선별적 초기 투자를 고수하겠다는 입장을 밝힘."
-    ],
-    "business_insight": "메가 펀드화되는 벤처캐피털 시장에서 벤치마크는 소수 정예 파트너십을 고수하며, 포모(FOMO)에 휩쓸리지 않는 엄격한 퀄리티 중심 투자가 여전히 유효한 알파 창출 전략임을 시사합니다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
-    "link": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
-    "canonical_url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
-    "published_at": "2026-10-18T20:37:40",
-    "summary": "Anthropic said that it will commit 5% of its shares to the fund.",
-    "score": 22,
-    "score_breakdown": {
-      "total_score": 22,
-      "impact": 12,
-      "business": 0,
-      "development": 0,
-      "recency": 10,
-      "original": 0
-    },
     "rank": 2,
     "is_primary": true,
-    "korean_title": "앤스로픽(Anthropic), 지분 5% 공익 기금에 출연 약정",
+    "korean_title": "애플, 터치스크린 맥북 프로 공개 임박… 폼팩터 전략의 중대한 전환",
     "summary_3_lines": [
-      "AI 모델 '클로드' 개발사 앤스로픽이 전체 발행 주식의 5%를 공익 기금(Public Benefit Fund)에 출연하기로 결정함.",
-      "해당 기금은 AI 기술 고도화로 인한 경제적·사회적 혜택을 공공과 나누기 위한 목적으로 조성됨.",
-      "공익법인(PBC) 구조를 채택한 앤스로픽의 책임감 있는 AI 개발(Responsible AI) 기조를 실행에 옮긴 조치임."
+      "애플이 다음 주 제품 발표 행사를 예고한 가운데, 사상 첫 터치스크린 탑재 맥북 프로를 공개할 것이라는 관측이 제기됐다.",
+      "과거 팀 쿡은 터치스크린 노트북을 토스터와 냉장고의 결합에 비유하며 회의적인 입장을 고수해왔으나, 시장 내 터치 노트북 비중은 20%까지 성장했다.",
+      "하드웨어 엔지니어링 출신 존 터너스 체제로의 전환과 맞물려 폴더블 아이폰, 스마트 디스플레이 등 애플이 기존에 외면했던 폼팩터를 적극 수용하는 기조가 나타나고 있다."
     ],
-    "business_insight": "빅테크 및 AI 기업을 향한 사회적 책임 요구와 규제 압박이 거세지는 가운데, 지분 기부를 통한 선제적 공익 환원은 기업 신뢰도 제고와 장기적 규제 리스크 완화에 기여할 수 있습니다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Everyone’s watching the Elizabeth Holmes documentary ‘You Can See Everything’",
-    "link": "https://techcrunch.com/2026/10/18/everyones-watching-the-elizabeth-holmes-documentary-you-can-see-everything/",
-    "canonical_url": "https://techcrunch.com/2026/10/18/everyones-watching-the-elizabeth-holmes-documentary-you-can-see-everything/",
-    "published_at": "2026-10-18T19:03:38",
-    "summary": "\"You Can See Everything\" is having the second biggest opening weekend ever for a documentary film.",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 3,
-    "is_primary": true,
-    "korean_title": "엘리자베스 홈즈 다큐멘터리 '유 캔 씨 에브리씽', 역대급 흥행 기록",
-    "summary_3_lines": [
-      "테라노스 창업자 엘리자베스 홈즈의 사기 스캔들을 다룬 신작 다큐멘터리 'You Can See Everything'이 개봉함.",
-      "해당 작품은 다큐멘터리 영화 장르 역사상 두 번째로 높은 오프닝 주말 흥행 실적을 달성함.",
-      "실리콘밸리 스타트업의 맹목적인 과장 문화와 거품 붕괴 서사에 대한 대중적 관심이 여전히 강력함을 입증함."
-    ],
-    "business_insight": "테크 업계의 실패와 윤리적 일탈은 대중 문화 콘텐츠로서 높은 상업적 가치를 지니며, 투자자와 대중이 스타트업의 하이프(Hype)를 대하는 비판적 시각이 상시화되었음을 보여줍니다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Disney agrees to hire the majority of Character.AI’s workforce",
-    "link": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
-    "canonical_url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
-    "published_at": "2026-10-18T16:30:00",
-    "summary": "The filing also says that the “vast majority” of Character.AI employees who were offered jobs at Disney accepted them. However, this is a stalking horse bid, so another company could come forward with a higher offer.",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 4,
-    "is_primary": true,
-    "korean_title": "디즈니, 캐릭터닷에이아이(Character.AI) 핵심 인력 대다수 흡수 합의",
-    "summary_3_lines": [
-      "디즈니가 생성형 AI 스타트업 캐릭터닷에이아이의 핵심 인력 대다수를 영입하기로 잠정 합의함.",
-      "공시 서류에 따르면 입사 제안을 받은 Character.AI 직원 중 '절대 다수'가 디즈니 합류를 수락함.",
-      "다만 이번 계약은 스토킹 호스(Stalking Horse) 입찰 방식이어서 타 경쟁사의 추가적인 고액 인수가 가능함."
-    ],
-    "business_insight": "직접 인수 시 발생하는 반독점 규제 리스크를 회피하면서 핵심 AI 인재와 지식재산(IP) 역량을 선별 확보하려는 빅테크·엔터테인먼트 공룡들의 변형된 '인재 인수(Acqui-hire)' 트렌드가 본격화되고 있습니다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "TechCrunch",
-    "title": "TechCrunch Mobility: Rivian’s next act",
-    "link": "https://techcrunch.com/2026/10/18/techcrunch-mobility-rivians-next-act/",
-    "canonical_url": "https://techcrunch.com/2026/10/18/techcrunch-mobility-rivians-next-act/",
-    "published_at": "2026-10-18T16:05:00",
-    "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 5,
-    "is_primary": true,
-    "korean_title": "테크크런치 모빌리티: 리비안(Rivian)의 차세대 도약과 AI의 역할",
-    "summary_3_lines": [
-      "테크크런치 모빌리티가 미래 운송 수단의 패러다임 변화 속에서 리비안의 차기 행보를 집중 조명함.",
-      "전기차 캐즘(대중화 전 일시적 수요 정체) 속에서 완성차 기업들의 AI 기술 도입 필요성이 전례 없이 부각됨.",
-      "단순한 하드웨어 생산을 넘어 소프트웨어 정의 차량(SDV)과 자율주행 역량이 차세대 경쟁력의 핵심으로 떠오름."
-    ],
-    "business_insight": "전기차 시장이 배터리 및 주행거리 경쟁에서 AI 기반 소프트웨어 아키텍처 중심으로 재편됨에 따라, 리비안과 같은 제조사들은 온보드 AI 소프트웨어 수익화 및 운영 효율 극대화가 생존의 전제조건이 되었습니다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "Ars Technica",
-    "title": "Anthropic gives outside AI watchdog “employee-like” access",
-    "link": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
-    "canonical_url": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
-    "published_at": "2026-10-18T16:25:19",
-    "summary": "The outside watchdog can publish its findings without Anthropic's approval.",
-    "score": 19,
-    "score_breakdown": {
-      "total_score": 19,
-      "impact": 12,
-      "business": 0,
-      "development": 0,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 1,
-    "is_primary": true,
-    "korean_title": "앤트로픽, 외부 AI 감시 기구에 '직원 수준' 내부 접근 권한 전격 부여",
-    "summary_3_lines": [
-      "앤트로픽이 외부 독립 AI 감시 기구에 내부 직원과 유사한 수준의 핵심 모델 및 데이터 접근 권한을 부여함.",
-      "해당 감시 기구는 앤트로픽의 사전 승인이나 검열 없이 조사 및 평가 결과를 독립적으로 공개할 수 있는 권리를 보장받음.",
-      "폐쇄적 평가 방식에서 탈피해 제3자 감시를 공식화함으로써 AI 안전성 검증의 투명성을 대폭 강화함."
-    ],
-    "business_insight": "각국 정부의 AI 규제 압박이 거세지는 가운데, 선제적으로 독립적 감사 체계를 도입해 규제 적합성을 입증하고 엔터프라이즈 시장에서 경쟁사 대비 신뢰 우위를 선점하려는 전략적 행보로 분석된다.",
+    "business_insight": "맥(Mac)과 아이패드(iPad) 간의 경계를 유지하던 애플의 오랜 하드웨어 철학이 하락세를 겪는 PC 시장의 수요 진작과 사용자 경험 통합을 위해 실용주의로 선회하고 있음을 보여줍니다.",
     "analyzed_by": "gemini-3.8-flash"
   },
   {
     "media": "The Information",
-    "title": "Why Upstart Banks May Have to Keep Raising Money",
-    "link": "https://www.theinformation.com/articles/upstart-banks-may-keep-raising-money",
-    "canonical_url": "https://www.theinformation.com/articles/upstart-banks-may-keep-raising-money",
-    "published_at": "2026-10-18T15:00:42",
-    "summary": "The Trump administration has opened the door for entrepreneurs to start new banks in the U.S., many funded by venture capital. But there’s a catch for fast-growing newcomers. Upstarts like Palmer Luckey’s Erebor Bank, as well as other new entrants like Openreserve and Augustus, will likely have to keep raising money as they grow to maintain the capital cushion they need to satisfy bank regulatory requirements. That’s a contrast to most startups, which use fresh venture money to pay for operating expenses and expand the business. Regulators require banks to maintain a capital cushion to absorb potential losses and protect depositors. That cushion is typically measured through a minimum tier 1 leverage ratio, which measures a bank’s capital relative to assets including cash, loans and investments. For instance, a bank subject to a 12% minimum tier 1 leverage ratio needs to maintain at least $12 in capital for every $100 in assets. As a bank attracts more deposits, its assets, such as loans, typically grow too, increasing the amount of capital it needs to meet that minimum ratio. Established banks can build up their capital through their profits, but newer banks that aren’t yet profitable have to rely instead on raising fresh equity from investors. Startup banks have already been raising significant funding to get their businesses off the ground or as deposits grow. Erebor Bank is set to raise $1.5 billion in a fresh fundraising round at an $8 billion valuation before the investment, after launching with $625 million in committed capital in February. The fundraising comes as the bank has seen its deposits surge to $7 billion as of the end of September, up from $4 billion at the end of the prior quarter. Meanwhile, Openreserve, an a16z crypto-backed bank that raised $25 million in September, said it expects to announce an additional capital raise to meet its regulatory requirements ahead of its planned opening early next year. Then there’s Augustus, a startup bank focused on serving fintech companies. It raised $180 million in a Tiger Global Management–led round in July at a $1 billion valuation and expects to open later this year. Regulators give capital ratios to each bank based on their assessment of the institution’s business plans and risks. Newly created banks typically face tougher capital requirements than established banks. For the first three years of operation, Erebor and Openreserve must each maintain a minimum tier 1 leverage ratio of 12%, while Augustus faces a 10% minimum. Established banks, by comparison, typically have ratios of between 5% and 6%. “There’s no question that the regulators treat de novo banks—new banks—differently than they do well-established banks,” according to Brian Graham, a partner and co-founder at consulting firm Klaros Group who advises clients on bank charter applications. Graham noted that the extra capital requirements typically go away after a bank has been operating for three years. The upstart banks are generally pursuing relatively new business models or focusing on sectors big banks typically avoid. Erebor Bank, for example, has gained traction in areas prioritized by the Trump administration, such as defense startups and crypto firms, and is expanding in geographies traditional banks typically avoid, including Venezuela and Syria. In addition to making minimum capital requirements, the Federal Deposit Insurance Corp.—a banking regulator—imposed an unusual condition on its approval of Erebor for the deposit insurance program. Under a capital-call provision, Erebor’s investors must contribute additional capital if the bank doesn’t meet its minimum capital requirements, according to a filing. The filing didn’t disclose which investors are required to provide the capital backstop. In the meantime, upstart banks that are looking to drive revenue growth from lending rather than fees will likely need to tap investors to build their capital. “To the extent the bank’s business model is reliant materially on the balance sheet for revenue and net income, you’re going to need to raise more capital to drive growth,” Klaros’ Graham said. Openreserve, for its part, plans to make loans backed by traditional assets and turn them into digital tokens that can trade on blockchain, potentially providing a new source of loans for investors and lenders in the crypto market. For example, it plans to lend businesses money against their trade receivables, turning those assets into digital tokens to make them easier to trade. “Our ambition is to be the on-chain GSIB,” referring to a globally systemically important bank, said Dee Choubey, founder and CEO of Openreserve. The bank also plans to issue its own stablecoin and to offer tokenized deposits, digital versions of traditional bank accounts that earn interest. Over time, it aims to provide banking and payment services to other digital banks. Augustus plans to focus on helping fintech, crypto and remittance companies move money across borders using both traditional banking systems and stablecoins. That will put it in competition with existing banks like United Texas Bank, which has become dominant in processing dollar payments for overseas crypto exchanges. “Whenever someone outside the U.S. touches the dollar through a local bank or local fintech, that always has to be facilitated by a U.S. nationally chartered clearing bank, so we provide that service,” said Augustus CEO Ferdinand Dabitz. In Europe, the bank already counts crypto exchange Kraken among its clients. Augustus is less focused on activities like lending, however, and has a lower ratio than the other two. The company has raised significantly more than its initial capital requirement, which could lessen the need for more fundraising in the near term. “We are less focused on the credit side as other market participants. We think the clearing side is really where we shine,” Dabitz said. New From Our Reporters Inside a TPG-Backed Accounting Firm’s Plans for AI and More Acquisitions By Alex Eichenstein Artificial Intelligence Anthropic’s Rapid But Slowing Growth Could Weigh on IPO Valuation By Cory Weinberg",
-    "score": 72,
+    "title": "Anthropic Readies Model That Reads Users' Intentions Better",
+    "link": "https://www.theinformation.com/articles/anthropic-readies-model-reads-users-intentions-better",
+    "canonical_url": "https://www.theinformation.com/articles/anthropic-readies-model-reads-users-intentions-better",
+    "published_at": "2026-10-19T14:00:42",
+    "summary": "In the last month, OpenAI , Anthropic and Google have released more than a dozen new models. If you thought that pace was crazy, don’t expect things to slow down anytime soon. Anthropic is preparing to release a new model that is better in its reasoning and intuition than the Anthropic models that are currently available commercially, according to a person who has used it. The unreleased model is especially good at discerning a person’s underlying intentions and goals even if they don’t give the model much information, such as explicitly stating those goals, the person said. For instance, a person might ask the model to fix a single bug, and the model might go off and instead identify the underlying class of problems that caused the bug and ask whether it should fix the whole class of problems, said the person who has used it. The Anthropic model is also better at thinking outside of the box rather than regurgitating common sense advice or solutions, the person said. For instance, if a user asks for advice on how to invest in stocks, rather than providing generic advice like looking at price-to-earnings ratios, the model might come up with its own creative algorithms to predict future stock performance, the person said.",
+    "score": 47,
     "score_breakdown": {
-      "total_score": 72,
+      "total_score": 47,
       "impact": 35,
-      "business": 25,
+      "business": 0,
       "development": 5,
       "recency": 7,
-      "original": 0
-    },
-    "rank": 1,
-    "is_primary": true,
-    "korean_title": "신생 핀테크 은행들이 끊임없이 추가 자본 조달에 매달려야 하는 이유",
-    "summary_3_lines": [
-      "트럼프 행정부의 규제 완화 기조 속에 설립된 에레보르, 오픈리저브 등 신생 은행들이 급증하는 예금에 비례해 규제 자본 요건(Tier 1 레버리지 비율 10~12%)을 맞추기 위한 지속적인 증자 압박을 받고 있음.",
-      "기존 은행은 자체 이익 잉여금으로 완충 자본을 확충하지만, 미흑자 신생 은행은 대출 자산이 늘어날수록 외부 VC 투자금 유치에 의존해야 하며 FDIC는 자본 확충 의무(Capital-call) 조건까지 부과함.",
-      "반면 아우구스투스처럼 대출보다는 국경 간 결제 및 청산(Clearing) 수수료 중심 비즈니스를 전개하는 곳은 규제 자본 부담과 추가 펀딩 리스크가 상대적으로 낮음."
-    ],
-    "business_insight": "신생 특화 은행들이 고성장할수록 유치한 VC 투자금이 제품 개발이나 사업 확장이 아닌 규제 준수용 자기자본 완충액(Equity Cushion)으로 묶이게 되는 구조적 딜레마가 가시화되고 있습니다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "The Information",
-    "title": "Neocloud Shakeout Looms, and Nvidia Has a Lot to Lose",
-    "link": "https://www.theinformation.com/articles/neocloud-shakeout-looms-nvidia-lot-lose",
-    "canonical_url": "https://www.theinformation.com/articles/neocloud-shakeout-looms-nvidia-lot-lose",
-    "published_at": "2026-10-18T15:30:42",
-    "summary": "How many young AI cloud providers can the market, and Nvidia, support? That’s one of the big questions after a week in which investors worried about the data center buildout and the risks that its unproven participants, known as neoclouds, are taking. Those risks include loading up on debt (CoreWeave) or trying to go public without much of a track record (Firmus and Nscale). Firmus abruptly pulled its public offering last week while shares of CoreWeave and its smaller rivals fell around 20%. The concerns even hit bigger AI cloud providers like Oracle. Data center and neocloud executives told me there’s a limit to the number of AI cloud providers that can exist, even if Nvidia provides many of them with investment or backstops.",
-    "score": 42,
-    "score_breakdown": {
-      "total_score": 42,
-      "impact": 12,
-      "business": 18,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 2,
-    "is_primary": true,
-    "korean_title": "네오클라우드 구조조정 본격화와 엔비디아가 직면한 동반 리스크",
-    "summary_3_lines": [
-      "코어위브, 퍼머스, 엔스케일 등 신생 AI 클라우드(네오클라우드) 기업들이 과도한 부채 조달과 미검증된 사업 실적 속에서 IPO 철회 및 기업가치 20% 급락 등 냉혹한 시장 평가에 직면함.",
-      "데이터센터 증설 리스크와 투자 회수 우려가 커지면서 오라클 등 기존 대형 클라우드 사업자들까지 시장 불안의 영향권에 진입함.",
-      "엔비디아가 이들 다수에 직접 지분 투자 및 칩 물량을 배정해 왔기 때문에, 네오클라우드 업계의 솎아내기는 엔비디아의 주요 수요 기반에도 직접적인 타격을 줄 수 있음."
-    ],
-    "business_insight": "엔비디아가 주도해 온 AI 벤더 파이낸싱 및 GPU 생태계 연쇄 고리가 신생 인프라 기업들의 유동성 한계와 맞물리며 향후 AI 하드웨어 시장 전반의 단기 조정 압력으로 작용할 가능성이 큽니다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "The Information",
-    "title": "Microsoft Pulls Out of Nscale U.K. Data Center Following Delays",
-    "link": "https://www.theinformation.com/briefings/microsoft-pulls-nscale-u-k-data-center-following-delays",
-    "canonical_url": "https://www.theinformation.com/briefings/microsoft-pulls-nscale-u-k-data-center-following-delays",
-    "published_at": "2026-10-18T20:08:27",
-    "summary": "Microsoft has pulled out of a planned U.K. data center Nscale was building for it, an Nscale spokesperson said, after the cloud provider faced delays accessing power to bring the site online. The cancellation is likely to weigh on Nscale’s planned public offering this month as investor concerns ...",
-    "score": 33,
-    "score_breakdown": {
-      "total_score": 33,
-      "impact": 0,
-      "business": 18,
-      "development": 5,
-      "recency": 10,
       "original": 0
     },
     "rank": 3,
     "is_primary": true,
-    "korean_title": "마이크로소프트, 전력 공급 지연 이유로 엔스케일 영국 데이터센터 계약 철회",
+    "korean_title": "앤스로픽, 사용자의 숨은 의도까지 파악하는 차세대 AI 모델 출시 준비",
     "summary_3_lines": [
-      "마이크로소프트가 신생 인프라 스타트업 엔스케일(Nscale)이 구축 중이던 영국 데이터센터 계약을 전격 취소함.",
-      "데이터센터 가동에 필수적인 전력망 인입(Power Access) 확보 지연이 핵심 파기 원인으로 파악됨.",
-      "대형 앵커 고객을 상실함에 따라 이달 예정되어 있던 엔스케일의 기업공개(IPO) 추진 및 밸류에이션 확보에 심각한 차질이 발생함."
+      "앤스로픽이 기존 상용 모델 대비 추론과 직관 능력이 대폭 향상된 차세대 AI 모델 출시를 준비 중이다.",
+      "새 모델은 사용자가 목표를 명시적으로 밝히지 않아도 근본적인 의도와 맥락을 파악하는 능력이 탁월한 것으로 전해졌다.",
+      "단순 버그 수정 요청 시 문제의 근본 원인을 찾아내 전체 수정을 제안하거나, 판에 박힌 답변 대신 독창적인 알고리즘을 제안하는 등 창의적 사고에 강점을 보인다."
     ],
-    "business_insight": "빅테크 AI 인프라 확장의 핵심 병목이 GPU 수급에서 '전력 및 그리드 인프라 실행력'으로 완전히 전환되었으며, 전력 조달 능력을 입증하지 못한 군소 인프라 사업자는 급격한 도태 위기에 직면하게 됩니다.",
+    "business_insight": "단순 프롬프트 명령 수행을 넘어 사용자 의도를 선제적으로 추론하는 역량은 향후 자율형 AI 에이전트 시장에서 핵심적인 차별화 요소로 작용할 전망입니다.",
     "analyzed_by": "gemini-3.8-flash"
   },
   {
     "media": "The Information",
-    "title": "Meta, Tesla and Netflix Q3 Updates Coming This Week",
-    "link": "https://www.theinformation.com/articles/meta-tesla-netflix-q3-updates-coming-week",
-    "canonical_url": "https://www.theinformation.com/articles/meta-tesla-netflix-q3-updates-coming-week",
-    "published_at": "2026-10-18T22:00:50",
-    "summary": "Tech earnings season is back (yes, I know it feels like it never ends). This time, we’ve got a slight twist: Meta Platforms has broken with the pack and is reporting its September-quarter earnings on Wednesday, a week ahead of its big tech counterparts, Google, Microsoft and Amazon. (Apple is even later, on Nov. 2.) By reporting earlier than the others, Meta ensures it will grab more of the spotlight, for better or worse. Until last week’s market sell-off, Meta had been riding a wave of enthusiasm on Wall Street, thanks to chatter about its Muse personal agent and recently released Muse Wonder AI models. Things changed last week, particularly on Friday, as renewed jitters about the AI expansion tanked most tech stocks. Given Meta’s gargantuan spending on AI development, this week’s update will provide a new test of investor sentiment toward Meta shares.",
-    "score": 27,
+    "title": "Pentagon’s Emil Michael Vows Export Controls if AI Labs Don’t Cooperate With Government",
+    "link": "https://www.theinformation.com/articles/pentagons-emil-michael-vows-export-controls-ai-labs-cooperate-government",
+    "canonical_url": "https://www.theinformation.com/articles/pentagons-emil-michael-vows-export-controls-ai-labs-cooperate-government",
+    "published_at": "2026-10-19T13:00:48",
+    "summary": "Emil Michael, a senior Department of Defense official and member of President Trump’s “super intelligence” task force, vowed in an interview to use a range of executive tools including export controls to check the behavior of AI companies if they don’t cooperate with the government, while comparing frontier labs calling for more regulation to drunk drivers who demand someone else pull them over. Michael drew widespread attention as the Trump administration official leading a public feud with Anthropic, pushing for the Defense Department to label the AI company a supply chain risk after it refused to remove safety guardrails. Now, as one of the four senior administration officials leading the Super Intelligence Force that Trump announced this month, Michael is charged with serving as the government’s liaison to Anthropic and other AI companies to develop protocols for handling cyber breaches, hacks and other critical incidents.",
+    "score": 47,
     "score_breakdown": {
-      "total_score": 27,
-      "impact": 12,
+      "total_score": 47,
+      "impact": 35,
       "business": 0,
       "development": 5,
-      "recency": 10,
+      "recency": 7,
       "original": 0
     },
     "rank": 4,
     "is_primary": true,
-    "korean_title": "메타·테슬라·넷플릭스 3분기 실적 발표 임박… 빅테크 AI 투자 지속성 시험대",
+    "korean_title": "미 국방부 고위직 에밀 마이클, \"정부 협조 거부 AI 랩스에 수출 통제 검토\"",
     "summary_3_lines": [
-      "메타(Meta)가 구글, 마이크로소프트, 아마존보다 일주일 앞선 이번 주 수요일 3분기 실적을 발표하며 빅테크 어닝 시즌의 집중 조명을 받게 됨.",
-      "최근 뮤즈(Muse) 개인 비서 및 AI 모델 출시로 형성되었던 시장 기대감이 전반적인 AI 인프라 거품 우려로 인해 주가 급락세를 겪은 상황임.",
-      "메타의 천문학적인 AI 인프라 캡엑스(CapEx) 지출 계획과 수익화 로드맵은 월가 전반의 빅테크 AI 투자 심리를 가늠할 결정적 지표가 될 예정임."
+      "트럼프 행정부의 '초지능 태스크포스' 위원이자 미 국방부 고위 관계자인 에밀 마이클이 정부와 협력하지 않는 AI 기업에 수출 통제 등 강력한 행정 수단을 쓸 수 있다고 경고했다.",
+      "마이클은 안전 가이드라인 완화를 거부한 앤스로픽을 국방 공급망 리스크로 지정해야 한다고 주장하며 갈등을 빚어온 인물이다.",
+      "그는 추가 규제를 요구하는 최첨단 AI 연구소들을 비판하며, 사이버 침해 및 보안 대응 프로토콜 구축을 위한 정부와의 협력을 강하게 압박하고 있다."
     ],
-    "business_insight": "메타가 빅테크 진영 중 가장 먼저 성적표를 제시함에 따라, 막대한 설비 투자가 디지털 광고 효율 개선이나 신규 AI 구독 매출 등 실질적 ROI로 증명되고 있는지가 이번 주 기술주 시장 전반의 향방을 가를 것입니다.",
+    "business_insight": "국가 안보와 AI 주도권을 둘러싼 미 정부의 개입 강도가 높아짐에 따라, 프런티어 AI 기업들은 자율적 안전 거버넌스와 정부의 안보 요구 사이에서 심각한 규제 리스크에 직면하고 있습니다.",
     "analyzed_by": "gemini-3.8-flash"
   },
   {
     "media": "The Information",
-    "title": "Anthropic Commits At Least 5% of Shares to New Public Benefit Fund",
-    "link": "https://www.theinformation.com/briefings/anthropic-commits-least-5-shares-new-public-benefit-fund",
-    "canonical_url": "https://www.theinformation.com/briefings/anthropic-commits-least-5-shares-new-public-benefit-fund",
-    "published_at": "2026-10-18T20:57:11",
-    "summary": "Anthropic announced the creation of a new fund that will get at least 5% of its shares and support public-benefit causes such as addressing the employment impact of AI. The Anthropic Public Benefit Fund could get an additional 2% of the company’s shares on top of the initial 5% commitment, at ...",
-    "score": 27,
+    "title": "Palo Alto Networks CEO Advises Daughter on New AI-Focused Venture Capital Fund",
+    "link": "https://www.theinformation.com/articles/palo-alto-networks-ceo-advises-daughter-new-ai-focused-venture-capital-fund",
+    "canonical_url": "https://www.theinformation.com/articles/palo-alto-networks-ceo-advises-daughter-new-ai-focused-venture-capital-fund",
+    "published_at": "2026-10-20T00:16:27",
+    "summary": "These days, raising a new venture fund can seem like an uphill battle. First-time managers are competing with much bigger funds that can lure founders with rich valuations—as well as track records that can wow limited partners. But what if you had unfettered access to some sage advice from a seasoned investor and executive? That’s the case for Ayesha Arora-Hughes, the daughter of Palo Alto Networks CEO Nikesh Arora. Ayesha is raising her own VC fund, Permanent Partners Collective Fund I, according to a securities filing and people with knowledge of the matter—and she counts Nikesh as an adviser to the firm, one of the people said.",
+    "score": 45,
     "score_breakdown": {
-      "total_score": 27,
+      "total_score": 45,
       "impact": 12,
-      "business": 0,
+      "business": 18,
       "development": 5,
       "recency": 10,
       "original": 0
     },
     "rank": 5,
     "is_primary": true,
-    "korean_title": "앤스로픽, 지분 최소 5% 출연해 AI 고용 영향 대응 공익 펀드 신설",
+    "korean_title": "팔로알토 네트웍스 CEO 니케시 아로라, 딸의 AI 전문 VC 펀드 고문으로 지원",
     "summary_3_lines": [
-      "생성형 AI 유니콘 앤스로픽이 회사 지분의 최소 5%(상황에 따라 최대 2% 추가)를 신설 공익 펀드에 출연하기로 결정함.",
-      "해당 펀드는 급격한 AI 기술 발전이 노동 시장과 일자리에 미칠 충격을 완화하고 사회적 공익 과제를 지원하는 데 활용될 계획임.",
-      "공익법인(PBC) 형태의 거버넌스를 강화함으로써 고성장 AI 기술이 유발할 사회적 부작용에 선제적으로 대응하려는 의도로 분석됨."
+      "팔로알토 네트웍스 CEO 니케시 아로라의 딸 아이샤 아로라-휴즈가 신규 벤처캐피털 펀드 '퍼머넌트 파트너스 컬렉티브 펀드 1'을 조성 중이다.",
+      "신규 VC 매니저들의 펀드레이징 난이도가 극심한 상황에서 니케시 아로라가 해당 펀드의 공식 고문으로 참여하고 있다.",
+      "해당 펀드는 AI 분야 투자를 핵심으로 삼고 있으며, 실리콘밸리 거물급 경영자의 네트워크와 조언을 강력한 차별화 무기로 내세우고 있다."
     ],
-    "business_insight": "향후 대규모 IPO나 규제 강화에 앞서 잠재적 노동 대체 이슈에 대한 사회적 기여 모델을 제도화함으로써, 규제 리스크를 선제적으로 방어하고 테크 기업으로서의 브랜드 신뢰도를 확보하려는 전략적 지배구조 설계입니다.",
+    "business_insight": "신규 펀드의 자금 조달 경색 속에서도 빅테크 최고경영진의 네트워크와 검증된 트랙레코드가 초기 AI 스타트업 딜 소싱과 LP 자금 유치의 핵심 레버리지로 활용되고 있습니다.",
     "analyzed_by": "gemini-3.8-flash"
   }
 ]
