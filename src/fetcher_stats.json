@@ -14,19 +14,19 @@
   "Ars Technica": {
     "status": "success",
     "raw_count": 20,
-    "eligible_count": 17,
+    "eligible_count": 14,
     "selected_count": 5
   },
   "MIT Tech Review": {
     "status": "success",
     "raw_count": 10,
-    "eligible_count": 10,
+    "eligible_count": 8,
     "selected_count": 5
   },
   "The Information": {
     "status": "success",
     "raw_count": 20,
-    "eligible_count": 17,
+    "eligible_count": 15,
     "selected_count": 5
   }
 }
