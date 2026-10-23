@@ -1,0 +1,1822 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Daily Tech Insights: 2026-10-23 - 글로벌 5대 테크 미디어 핵심 큐레이션 및 AI 비즈니스 인사이트">
+  <title>Daily Tech Insights | 2026-10-23</title>
+  <style>
+    /* ==========================================================================
+       Design System Tokens (Discord Macro-Structure + Toss Tactile Clarity)
+       Pure Vanilla CSS3 / Zero Dependencies / High Accessibility
+       ========================================================================== */
+    :root {
+      --toss-blue: #3182f6;
+      --toss-blue-hover: #1b64da;
+      --toss-blue-subtle: rgba(49, 130, 246, 0.12);
+      --toss-blue-glow: rgba(49, 130, 246, 0.28);
+
+      --rail-width: 58px;
+      --sidebar-width: 232px;
+      --metadata-width: 260px;
+      --content-max-width: 860px;
+
+      /* Dark Theme (Default) */
+      --bg-app: #141518;
+      --bg-rail: #191a1d;
+      --bg-sidebar: #1e2024;
+      --bg-workspace: #25272c;
+      --surface-card: #2c2e35;
+      --surface-inset: #1a1b1f;
+      --surface-hover: #34373f;
+      --surface-active: #3c4049;
+
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-strong: rgba(255, 255, 255, 0.14);
+      --border-focus: rgba(49, 130, 246, 0.6);
+
+      --text-header: #f3f5f8;
+      --text-normal: #d1d5dd;
+      --text-muted: #8c93a0;
+      --text-link: #4593fc;
+
+      --shadow-card: 0 4px 18px rgba(0, 0, 0, 0.22);
+      --shadow-hover: 0 10px 32px rgba(0, 0, 0, 0.36);
+
+      --radius-card: 20px;
+      --radius-md: 14px;
+      --radius-sm: 10px;
+      --radius-pill: 9999px;
+
+      --font-stack: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      --spring-physics: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      --spring-tap: transform 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-app: #f2f4f7;
+      --bg-rail: #e4e7ed;
+      --bg-sidebar: #edf0f5;
+      --bg-workspace: #f8f9fb;
+      --surface-card: #ffffff;
+      --surface-inset: #f2f4f7;
+      --surface-hover: #e6ebf2;
+      --surface-active: #dbe1eb;
+
+      --border-subtle: rgba(0, 0, 0, 0.07);
+      --border-strong: rgba(0, 0, 0, 0.13);
+      --border-focus: rgba(49, 130, 246, 0.7);
+
+      --text-header: #191f28;
+      --text-normal: #333d4b;
+      --text-muted: #6b7684;
+      --text-link: #3182f6;
+
+      --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.06);
+      --shadow-hover: 0 8px 26px rgba(0, 0, 0, 0.12);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html, body {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      font-family: var(--font-stack);
+      background-color: var(--bg-app);
+      color: var(--text-normal);
+      line-height: 1.6;
+      word-break: keep-all;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Global App Shell Layout */
+    .discord-app-shell {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    /* ==========================================================================
+       Level 1: Global Rail (Streamlined Brand Home Control)
+       ========================================================================== */
+    .global-rail {
+      width: var(--rail-width);
+      min-width: var(--rail-width);
+      height: 100%;
+      background-color: var(--bg-rail);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 14px 0;
+      border-right: 1px solid var(--border-subtle);
+      z-index: 30;
+      flex-shrink: 0;
+    }
+
+    .rail-btn {
+      position: relative;
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      background-color: var(--toss-blue);
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      transition: var(--spring-physics);
+      box-shadow: 0 4px 14px var(--toss-blue-glow);
+    }
+
+    .rail-btn:hover {
+      transform: scale(1.06);
+      background-color: var(--toss-blue-hover);
+    }
+
+    .rail-btn:active {
+      transform: scale(0.94);
+    }
+
+    .rail-btn:focus-visible {
+      outline: 2px solid #ffffff;
+      outline-offset: 2px;
+    }
+
+    .rail-btn.active::before {
+      content: "";
+      position: absolute;
+      left: -8px;
+      width: 4px;
+      height: 28px;
+      border-radius: 0 4px 4px 0;
+      background-color: #ffffff;
+    }
+
+    /* ==========================================================================
+       Level 2: Context Sidebar (Search + Channels Navigation)
+       ========================================================================== */
+    .context-sidebar {
+      width: var(--sidebar-width);
+      min-width: var(--sidebar-width);
+      height: 100%;
+      background-color: var(--bg-sidebar);
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid var(--border-subtle);
+      z-index: 25;
+      flex-shrink: 0;
+      transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .server-header {
+      height: 52px;
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-subtle);
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: var(--text-header);
+    }
+
+    .server-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Sidebar Search Input */
+    .sidebar-search-box {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .search-input-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 10px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .toss-search-input {
+      width: 100%;
+      height: 34px;
+      padding: 0 28px 0 28px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+      background-color: var(--surface-inset);
+      color: var(--text-header);
+      font-size: 0.82rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--spring-physics);
+    }
+
+    .toss-search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 2px var(--toss-blue-subtle);
+    }
+
+    .search-clear-btn {
+      position: absolute;
+      right: 6px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: none;
+      background-color: var(--surface-hover);
+      color: var(--text-muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      transition: var(--spring-physics);
+    }
+
+    .search-clear-btn:hover {
+      color: var(--text-header);
+      background-color: var(--surface-active);
+    }
+
+    .channels-scroll {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .channel-category {
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      padding: 10px 8px 4px 8px;
+    }
+
+    .channel-item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 10px;
+      border-radius: 10px;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      transition: var(--spring-physics);
+      text-align: left;
+      font-family: inherit;
+    }
+
+    .channel-item:hover {
+      background-color: var(--surface-hover);
+      color: var(--text-header);
+    }
+
+    .channel-item.active {
+      background-color: var(--surface-active);
+      color: var(--text-header);
+      font-weight: 700;
+    }
+
+    .channel-item:focus-visible {
+      outline: 2px solid var(--toss-blue);
+      outline-offset: 1px;
+    }
+
+    .channel-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .channel-mark-badge {
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.68rem;
+      font-weight: 800;
+      color: #ffffff;
+      background-color: var(--toss-blue);
+    }
+    .channel-mark-badge.all { background-color: var(--toss-blue); }
+    .channel-mark-badge.verge { background-color: #e0005a; }
+    .channel-mark-badge.techcrunch { background-color: #029924; }
+    .channel-mark-badge.arstechnica { background-color: #ff4e00; }
+    .channel-mark-badge.mit { background-color: #333333; }
+    .channel-mark-badge.theinformation { background-color: #0d253f; }
+
+    .channel-name {
+      font-size: 0.86rem;
+      letter-spacing: -0.01em;
+    }
+
+    .channel-count {
+      font-size: 0.72rem;
+      background-color: var(--surface-inset);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    .channel-item.active .channel-count {
+      color: var(--text-header);
+      background-color: var(--surface-card);
+    }
+
+    .sidebar-user-tray {
+      height: 52px;
+      background-color: var(--bg-rail);
+      padding: 0 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .user-info-box {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .status-dot {
+      width: 9px;
+      height: 9px;
+      background-color: #23a55a;
+      border-radius: 50%;
+      box-shadow: 0 0 6px #23a55a;
+    }
+
+    .user-name-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-header);
+      line-height: 1.2;
+    }
+
+    .user-sub-label {
+      font-size: 0.68rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       Level 3: Primary Workspace (Briefing Header + Article Cards)
+       ========================================================================== */
+    .chat-workspace {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bg-workspace);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .workspace-header {
+      height: 52px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-subtle);
+      background-color: var(--bg-workspace);
+      z-index: 15;
+      flex-shrink: 0;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      border: 1px solid var(--border-subtle);
+      background-color: var(--surface-card);
+      color: var(--text-header);
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    .topic-pill {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: var(--text-header);
+    }
+
+    .topic-divider {
+      width: 1px;
+      height: 14px;
+      background-color: var(--border-strong);
+    }
+
+    .topic-desc {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .theme-toggle-btn {
+      padding: 6px 12px;
+      border-radius: 10px;
+      background-color: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-normal);
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--spring-physics);
+      font-family: inherit;
+    }
+
+    .theme-toggle-btn:hover {
+      background-color: var(--surface-hover);
+      transform: translateY(-1px);
+    }
+
+    .theme-toggle-btn:focus-visible {
+      outline: 2px solid var(--toss-blue);
+      outline-offset: 1px;
+    }
+
+    /* Scrollable Feed Container */
+    .messages-feed {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px 24px 60px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+    }
+
+    /* Streamlined Editorial Briefing Header */
+    .feed-hero {
+      width: 100%;
+      max-width: var(--content-max-width);
+      background: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-card);
+      padding: 20px 22px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .hero-badge-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .toss-tag {
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: var(--radius-pill);
+      background-color: var(--toss-blue-subtle);
+      color: var(--toss-blue);
+      letter-spacing: 0.02em;
+    }
+
+    .hero-date-badge {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+
+    .hero-count-badge {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-left: auto;
+    }
+
+    .hero-title {
+      font-size: 1.55rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      color: var(--text-header);
+      margin-bottom: 6px;
+      line-height: 1.25;
+    }
+
+    .hero-subtitle {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       Toss Article Cards (Clean Hierarchy & Typography)
+       ========================================================================== */
+    .toss-card {
+      width: 100%;
+      max-width: var(--content-max-width);
+      background-color: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-card);
+      padding: 22px 24px;
+      box-shadow: var(--shadow-card);
+      transition: var(--spring-physics);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .toss-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--border-strong);
+    }
+
+    .card-top-rail {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .media-identity {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .media-avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      color: #ffffff;
+      font-size: 0.76rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      flex-shrink: 0;
+    }
+    .media-avatar.verge { background: linear-gradient(135deg, #e0005a, #fa2d60); }
+    .media-avatar.techcrunch { background: linear-gradient(135deg, #029924, #00d235); }
+    .media-avatar.arstechnica { background: linear-gradient(135deg, #ff4e00, #ff8100); }
+    .media-avatar.mit { background: linear-gradient(135deg, #222222, #444444); }
+    .media-avatar.theinformation { background: linear-gradient(135deg, #0d253f, #1b497a); }
+
+    .media-name {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--text-header);
+    }
+
+    .channel-slug {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .toss-pill-link {
+      font-size: 0.8rem;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      background-color: var(--toss-blue-subtle);
+      color: var(--toss-blue);
+      text-decoration: none;
+      transition: var(--spring-physics);
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .toss-pill-link:hover {
+      background-color: var(--toss-blue);
+      color: #ffffff;
+      transform: scale(1.03);
+    }
+
+    .toss-pill-link:focus-visible {
+      outline: 2px solid var(--toss-blue);
+      outline-offset: 2px;
+    }
+
+    .card-headline {
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      color: var(--text-header);
+      line-height: 1.4;
+    }
+
+    /* Inset Summary Box */
+    .toss-surface-box {
+      background-color: var(--surface-inset);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .section-badge {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .summary-bullet-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .summary-bullet {
+      position: relative;
+      padding-left: 16px;
+      font-size: 0.92rem;
+      color: var(--text-normal);
+      line-height: 1.58;
+    }
+
+    .summary-bullet::before {
+      content: "•";
+      position: absolute;
+      left: 2px;
+      color: var(--toss-blue);
+      font-weight: 900;
+      font-size: 1.15rem;
+      line-height: 1;
+    }
+
+    /* AI Business Insight Callout */
+    .toss-insight-card {
+      background-color: var(--toss-blue-subtle);
+      border-left: 3px solid var(--toss-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 12px 16px;
+    }
+
+    .insight-pill {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--toss-blue);
+      margin-bottom: 6px;
+    }
+
+    .insight-description {
+      font-size: 0.91rem;
+      font-weight: 600;
+      color: var(--text-header);
+      line-height: 1.58;
+    }
+
+    .card-footer-action {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 2px;
+    }
+
+    .toss-secondary-btn {
+      border: 1px solid var(--border-subtle);
+      background-color: var(--surface-inset);
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: var(--spring-physics);
+      font-family: inherit;
+    }
+
+    .toss-secondary-btn:hover {
+      background-color: var(--surface-hover);
+      color: var(--text-header);
+    }
+
+    .toss-secondary-btn.copied {
+      background-color: var(--toss-blue);
+      color: #ffffff;
+      border-color: var(--toss-blue);
+    }
+
+    .reading-time {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* No-Results State */
+    .toss-empty-state {
+      width: 100%;
+      max-width: var(--content-max-width);
+      background-color: var(--surface-card);
+      border: 1px dashed var(--border-strong);
+      border-radius: var(--radius-card);
+      padding: 48px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 12px;
+    }
+
+    .empty-icon {
+      font-size: 2.2rem;
+      opacity: 0.8;
+    }
+
+    .empty-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text-header);
+    }
+
+    .empty-desc {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    /* ==========================================================================
+       Level 4: Metadata Panel (System Indicators & Publisher Status)
+       ========================================================================== */
+    .metadata-panel {
+      width: var(--metadata-width);
+      min-width: var(--metadata-width);
+      height: 100%;
+      background-color: var(--bg-sidebar);
+      border-left: 1px solid var(--border-subtle);
+      padding: 16px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      overflow-y: auto;
+      flex-shrink: 0;
+    }
+
+    .meta-group-title {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .metric-card {
+      background-color: var(--surface-card);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .metric-label {
+      font-size: 0.73rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .metric-value {
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: var(--toss-blue);
+      letter-spacing: -0.02em;
+    }
+
+    .metric-subtext {
+      font-size: 0.68rem;
+      color: var(--text-muted);
+    }
+
+    .feed-status-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 10px;
+      border-radius: 8px;
+      background-color: var(--surface-card);
+      font-size: 0.78rem;
+      font-weight: 700;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .status-source-name {
+      color: var(--text-header);
+    }
+
+    .status-badge-active {
+      color: #23a55a;
+      font-size: 0.73rem;
+      font-weight: 700;
+    }
+
+    .status-badge-warning {
+      color: #f59f00;
+      font-size: 0.73rem;
+      font-weight: 700;
+    }
+
+    .status-badge-error {
+      color: #fa5252;
+      font-size: 0.73rem;
+      font-weight: 700;
+    }
+
+    /* Toast Notification */
+    .toss-toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background-color: #191f28;
+      color: #ffffff;
+      padding: 10px 18px;
+      border-radius: var(--radius-pill);
+      font-size: 0.85rem;
+      font-weight: 700;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+      z-index: 100;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    [data-theme="light"] .toss-toast {
+      background-color: #333d4b;
+    }
+
+    .toss-toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* Drawer Backdrop for Mobile */
+    .drawer-backdrop {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.45);
+      z-index: 24;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    /* ==========================================================================
+       Responsive Breakpoints
+       ========================================================================== */
+    @media (max-width: 1180px) {
+      .metadata-panel {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .global-rail {
+        display: none;
+      }
+      .mobile-menu-btn {
+        display: flex;
+      }
+      .context-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        transform: translateX(-100%);
+        box-shadow: 4px 0 24px rgba(0, 0, 0, 0.4);
+      }
+      .context-sidebar.open {
+        transform: translateX(0);
+      }
+      .drawer-backdrop.open {
+        display: block;
+        opacity: 1;
+      }
+      .messages-feed {
+        padding: 14px 14px 40px 14px;
+        gap: 14px;
+      }
+      .feed-hero {
+        padding: 16px 16px;
+      }
+      .hero-title {
+        font-size: 1.35rem;
+      }
+      .toss-card {
+        padding: 18px 16px;
+        border-radius: 16px;
+      }
+      .card-headline {
+        font-size: 1.12rem;
+      }
+      .topic-desc {
+        display: none;
+      }
+    }
+
+    /* Accessibility: Reduced Motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="discord-app-shell">
+
+    <!-- Level 1: Global Rail (Deterministic Home / Reset Control) -->
+    <nav class="global-rail" aria-label="글로벌 홈 네비게이션">
+      <button type="button" class="rail-btn active" id="homeRailBtn" title="전체 브리핑 피드 (초기화)" aria-label="전체 브리핑 피드로 이동" onclick="resetAllFilters(this)">
+        ⚡
+      </button>
+    </nav>
+
+    <!-- Mobile Drawer Backdrop -->
+    <div class="drawer-backdrop" id="drawerBackdrop" onclick="closeMobileMenu()" aria-hidden="true"></div>
+
+    <!-- Level 2: Context Sidebar (Search + Channels) -->
+    <aside class="context-sidebar" aria-label="채널 네비게이션">
+      <div class="server-header">
+        <span class="server-badge">⚡ Tech Intel HQ</span>
+        <span style="font-size: 0.8rem; color: var(--toss-blue);" aria-hidden="true">✔</span>
+      </div>
+
+      <!-- Search Input -->
+      <div class="sidebar-search-box">
+        <div class="search-input-wrapper">
+          <span class="search-icon" aria-hidden="true">🔍</span>
+          <input
+            type="search"
+            id="searchInput"
+            class="toss-search-input"
+            placeholder="기사 및 키워드 검색..."
+            aria-label="기사 실시간 검색"
+            autocomplete="off"
+            oninput="handleSearch(this.value)"
+          >
+          <button type="button" id="searchClearBtn" class="search-clear-btn" aria-label="검색어 초기화" onclick="clearSearch()" style="display: none;">✕</button>
+        </div>
+      </div>
+
+      <div class="channels-scroll">
+        <div class="channel-category">데일리 피드</div>
+        <button type="button" class="channel-item active" data-channel="all" onclick="filterFeed('all', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge all">⚡</span>
+            <span class="channel-name">오늘의 브리핑</span>
+          </div>
+          <span class="channel-count">10</span>
+        </button>
+
+        <div class="channel-category">타겟 매체 채널</div>
+        <button type="button" class="channel-item" data-channel="verge" onclick="filterFeed('verge', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge verge">V</span>
+            <span class="channel-name">The Verge</span>
+          </div>
+          <span class="channel-count" id="channel-count-verge">0</span>
+        </button>
+        <button type="button" class="channel-item" data-channel="techcrunch" onclick="filterFeed('techcrunch', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge techcrunch">TC</span>
+            <span class="channel-name">TechCrunch</span>
+          </div>
+          <span class="channel-count" id="channel-count-techcrunch">0</span>
+        </button>
+        <button type="button" class="channel-item" data-channel="arstechnica" onclick="filterFeed('arstechnica', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge arstechnica">AT</span>
+            <span class="channel-name">Ars Technica</span>
+          </div>
+          <span class="channel-count" id="channel-count-arstechnica">5</span>
+        </button>
+        <button type="button" class="channel-item" data-channel="mit" onclick="filterFeed('mit', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge mit">MIT</span>
+            <span class="channel-name">MIT Tech Review</span>
+          </div>
+          <span class="channel-count" id="channel-count-mit">0</span>
+        </button>
+        <button type="button" class="channel-item" data-channel="theinformation" onclick="filterFeed('theinformation', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge theinformation">TI</span>
+            <span class="channel-name">The Information</span>
+          </div>
+          <span class="channel-count" id="channel-count-theinformation">5</span>
+        </button>
+      </div>
+
+      <div class="sidebar-user-tray">
+        <div class="user-info-box">
+          <div class="status-dot" aria-hidden="true"></div>
+          <div>
+            <div class="user-name-label">Zero-Capital Agent</div>
+            <div class="user-sub-label">GitHub Actions 파이프라인</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Level 3: Primary Workspace -->
+    <main class="chat-workspace">
+      <header class="workspace-header">
+        <div class="header-left">
+          <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="채널 메뉴 열기" aria-expanded="false" onclick="toggleMobileMenu()">
+            ☰
+          </button>
+          <div class="topic-pill">
+            <span id="headerTopicTitle">오늘의 브리핑</span>
+            <div class="topic-divider" aria-hidden="true"></div>
+            <span class="topic-desc">주요 테크 소식과 비즈니스 시사점을 한눈에.</span>
+          </div>
+        </div>
+        <div class="header-controls">
+          <button type="button" class="theme-toggle-btn" onclick="toggleTheme()" id="themeBtn" aria-label="다크/라이트 테마 전환">🌓 테마 전환</button>
+        </div>
+      </header>
+
+      <section class="messages-feed" id="feedContainer">
+        <!-- Editorial Briefing Header -->
+        <div class="feed-hero">
+          <div class="hero-badge-row">
+            <span class="toss-tag">DAILY INTEL</span>
+            <span class="hero-date-badge">2026-10-23</span>
+            <span class="hero-count-badge" id="heroArticleCount">총 10개 기사 큐레이션</span>
+          </div>
+          <h1 class="hero-title">Daily Tech Insights</h1>
+          <p class="hero-subtitle">
+            글로벌 5대 테크 미디어의 핵심 보도와 비즈니스 시사점을 AI로 정밀 분석하여 전해드립니다.
+          </p>
+        </div>
+
+        <!-- No Results Card -->
+        <div id="noResultsCard" class="toss-empty-state" style="display: none;">
+          <div class="empty-icon" aria-hidden="true">🔍</div>
+          <h3 class="empty-title">일치하는 기사가 없습니다</h3>
+          <p class="empty-desc">검색어를 변경하거나 선택된 매체 필터를 확인해 주세요.</p>
+          <button type="button" class="toss-pill-link" onclick="resetAllFilters()">전체 브리핑 보기</button>
+        </div>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="arstechnica" data-search="종이에 안착하는 잉크 방울 포착… 니콘 스몰월드 사진전 대상 선정 ars technica 독일의 올레 빌펠트(ole bielfeldt)가 잉크젯 프린터 노즐에서 종이로 분사되는 미세 잉크 방울의 순간을 고해상도 현미경으로 촬영해 대상을 수상함. 일상적인 인쇄 공정 이면에서 벌어지는 초미세 유체역학 현상을 광학 기술과 시각 예술의 결합으로 구현함. 니콘 스몰월드 공모전은 전 세계 연구자와 사진가들이 참여해 미세 세계의 과학적 가치와 미학을 공유하는 장으로 자리잡음. 초정밀 광학 이미징 기술은 산업용 잉크젯 프린팅 및 마이크로플루이딕스(미세유체역학) 반도체 공정에서 정밀한 품질 관리와 수율 개선을 이끄는 핵심 기반 기술로 평가받고 있습니다." id="article-1">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar arstechnica" aria-hidden="true">AT</span>
+              <div class="media-meta">
+                <span class="media-name">Ars Technica</span>
+                <span class="channel-slug">#arstechnica-feed</span>
+              </div>
+            </div>
+            <a href="https://arstechnica.com/science/2026/10/meet-the-2026-winner-of-nikons-small-world-photomicrography-contest/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="종이에 안착하는 잉크 방울 포착… 니콘 스몰월드 사진전 대상 선정 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">종이에 안착하는 잉크 방울 포착… 니콘 스몰월드 사진전 대상 선정</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">독일의 올레 빌펠트(Ole Bielfeldt)가 잉크젯 프린터 노즐에서 종이로 분사되는 미세 잉크 방울의 순간을 고해상도 현미경으로 촬영해 대상을 수상함.</li>
+              <li class="summary-bullet">일상적인 인쇄 공정 이면에서 벌어지는 초미세 유체역학 현상을 광학 기술과 시각 예술의 결합으로 구현함.</li>
+              <li class="summary-bullet">니콘 스몰월드 공모전은 전 세계 연구자와 사진가들이 참여해 미세 세계의 과학적 가치와 미학을 공유하는 장으로 자리잡음.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">초정밀 광학 이미징 기술은 산업용 잉크젯 프린팅 및 마이크로플루이딕스(미세유체역학) 반도체 공정에서 정밀한 품질 관리와 수율 개선을 이끄는 핵심 기반 기술로 평가받고 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://arstechnica.com/science/2026/10/meet-the-2026-winner-of-nikons-small-world-photomicrography-contest/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 58초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="arstechnica" data-search="보안 조직보다 4일 빨랐다… &#x27;php2shell&#x27; 제로데이 취약점 선제 악용 비상 ars technica 보안 담당자들에게 공식 경보와 패치가 전달되기 최소 4일 전부터 해커들이 &#x27;php2shell&#x27; 취약점을 악용해 서버 탐색 공격을 진행함. 방어 체계가 위협의 실체를 인지하기도 전에 실제 공격 벡터가 먼저 가동된 전형적인 선행 공격 사례임. 광범위하게 사용되는 php 웹 환경의 특성상 취약점 노출 즉시 대규모 웹 서버 침해 및 원격 코드 실행(rce) 위험이 가중됨. 제로데이 취약점 발견과 악용 간의 시간차가 사실상 역전되고 있어, 사후 패치 중심 대응을 넘어 런타임 애플리케이션 자가 보호(rasp) 및 엄격한 최소 권한 정책 등 선제적 보안 체계 구축이 시급합니다." id="article-2">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar arstechnica" aria-hidden="true">AT</span>
+              <div class="media-meta">
+                <span class="media-name">Ars Technica</span>
+                <span class="channel-slug">#arstechnica-feed</span>
+              </div>
+            </div>
+            <a href="https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="보안 조직보다 4일 빨랐다… &#x27;PHP2Shell&#x27; 제로데이 취약점 선제 악용 비상 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">보안 조직보다 4일 빨랐다… &#x27;PHP2Shell&#x27; 제로데이 취약점 선제 악용 비상</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">보안 담당자들에게 공식 경보와 패치가 전달되기 최소 4일 전부터 해커들이 &#x27;PHP2Shell&#x27; 취약점을 악용해 서버 탐색 공격을 진행함.</li>
+              <li class="summary-bullet">방어 체계가 위협의 실체를 인지하기도 전에 실제 공격 벡터가 먼저 가동된 전형적인 선행 공격 사례임.</li>
+              <li class="summary-bullet">광범위하게 사용되는 PHP 웹 환경의 특성상 취약점 노출 즉시 대규모 웹 서버 침해 및 원격 코드 실행(RCE) 위험이 가중됨.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">제로데이 취약점 발견과 악용 간의 시간차가 사실상 역전되고 있어, 사후 패치 중심 대응을 넘어 런타임 애플리케이션 자가 보호(RASP) 및 엄격한 최소 권한 정책 등 선제적 보안 체계 구축이 시급합니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 60초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="arstechnica" data-search="트럼프 2기 식품 규제 개혁 삐걱… maha 핵심 리더 &#x27;환멸&#x27; 속 전격 사임 ars technica 로버트 f. 케네디 주니어가 주도하는 &#x27;미국을 다시 건강하게(maha)&#x27; 캠페인의 주요 핵심 인사가 정책 방향에 실망해 사임을 선언함. 트럼프 행정부의 초기 식품 및 보건 규제 개혁 아젠다가 내부 권력 암투와 우선순위 혼선으로 표류하고 있다는 지적이 제기됨. 초당적 지지를 노렸던 급진적 식품 첨가물 규제 및 가공식품 정책 드라이브가 출범 초기부터 동력을 상실할 위기에 직면함. 미국 규제 당국(fda·usda)의 식품 안전 가이드라인 개편이 정치적 불확실성에 직면함에 따라, 글로벌 식음료 및 농축산 기업들은 단기적 정책 리스크와 장기적 규제 컴플라이언스 비용을 재점검해야 합니다." id="article-3">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar arstechnica" aria-hidden="true">AT</span>
+              <div class="media-meta">
+                <span class="media-name">Ars Technica</span>
+                <span class="channel-slug">#arstechnica-feed</span>
+              </div>
+            </div>
+            <a href="https://arstechnica.com/health/2026/10/disillusioned-maha-leader-quits-as-trump-admins-food-agenda-spoils-report/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="트럼프 2기 식품 규제 개혁 삐걱… MAHA 핵심 리더 &#x27;환멸&#x27; 속 전격 사임 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">트럼프 2기 식품 규제 개혁 삐걱… MAHA 핵심 리더 &#x27;환멸&#x27; 속 전격 사임</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">로버트 F. 케네디 주니어가 주도하는 &#x27;미국을 다시 건강하게(MAHA)&#x27; 캠페인의 주요 핵심 인사가 정책 방향에 실망해 사임을 선언함.</li>
+              <li class="summary-bullet">트럼프 행정부의 초기 식품 및 보건 규제 개혁 아젠다가 내부 권력 암투와 우선순위 혼선으로 표류하고 있다는 지적이 제기됨.</li>
+              <li class="summary-bullet">초당적 지지를 노렸던 급진적 식품 첨가물 규제 및 가공식품 정책 드라이브가 출범 초기부터 동력을 상실할 위기에 직면함.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">미국 규제 당국(FDA·USDA)의 식품 안전 가이드라인 개편이 정치적 불확실성에 직면함에 따라, 글로벌 식음료 및 농축산 기업들은 단기적 정책 리스크와 장기적 규제 컴플라이언스 비용을 재점검해야 합니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://arstechnica.com/health/2026/10/disillusioned-maha-leader-quits-as-trump-admins-food-agenda-spoils-report/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 61초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="arstechnica" data-search="내연기관과 ev 동시 공략… bmw, 2027년형 차세대 x5 및 ix5 공개 ars technica bmw가 2027년형 라인업으로 내연기관 모델 x5와 순수 전기 모델 ix5를 병행 출시하는 투트랙 전략을 유지함. 전기차 버전인 ix5는 최대 460kw 초고속 충전 성능과 450마일(약 724km)의 긴 주행거리를 갖춰 상품성을 대폭 강화함. 전동화 전환 둔화 국면에서 유연한 플랫폼 전략을 통해 내연기관 선호층과 프리미엄 ev 수요를 모두 흡수하겠다는 구상임. 글로벌 완성차 시장의 ev 캐즘(일시적 수요 둔화) 속에서 단일 파워트레인 올인보다 유연한 혼류 생산 전략과 획기적인 충전 스펙을 결합한 프리미엄 라인업이 가장 현실적인 수익성 방어 카드로 부상하고 있습니다." id="article-4">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar arstechnica" aria-hidden="true">AT</span>
+              <div class="media-meta">
+                <span class="media-name">Ars Technica</span>
+                <span class="channel-slug">#arstechnica-feed</span>
+              </div>
+            </div>
+            <a href="https://arstechnica.com/cars/2026/10/electric-or-gas-bmw-goes-both-ways-with-new-2027-x5-and-ix5/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="내연기관과 EV 동시 공략… BMW, 2027년형 차세대 X5 및 iX5 공개 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">내연기관과 EV 동시 공략… BMW, 2027년형 차세대 X5 및 iX5 공개</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">BMW가 2027년형 라인업으로 내연기관 모델 X5와 순수 전기 모델 iX5를 병행 출시하는 투트랙 전략을 유지함.</li>
+              <li class="summary-bullet">전기차 버전인 iX5는 최대 460kW 초고속 충전 성능과 450마일(약 724km)의 긴 주행거리를 갖춰 상품성을 대폭 강화함.</li>
+              <li class="summary-bullet">전동화 전환 둔화 국면에서 유연한 플랫폼 전략을 통해 내연기관 선호층과 프리미엄 EV 수요를 모두 흡수하겠다는 구상임.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">글로벌 완성차 시장의 EV 캐즘(일시적 수요 둔화) 속에서 단일 파워트레인 올인보다 유연한 혼류 생산 전략과 획기적인 충전 스펙을 결합한 프리미엄 라인업이 가장 현실적인 수익성 방어 카드로 부상하고 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://arstechnica.com/cars/2026/10/electric-or-gas-bmw-goes-both-ways-with-new-2027-x5-and-ix5/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 60초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="arstechnica" data-search="애플 &#x27;아이폰 듀오&#x27; 공개에 반사이익… 삼성, 갤럭시 z8 검색량 폭증 시사 ars technica 애플의 신규 듀얼스크린/폴더블 기기 &#x27;아이폰 듀오&#x27; 공개 직후 삼성전자 폴더블폰 관련 검색 트래픽이 급증함. 경쟁사의 시장 진입이 폴더블·듀얼 폼팩터 카테고리 전반에 대한 대중적 관심과 수요를 자극하는 기폭제 역할을 함. 삼성전자는 이러한 시장의 관심 폭증이 차기 전략 모델인 &#x27;갤럭시 z8&#x27;의 초기 판매 견인으로 이어지고 있음을 간접 확인사살함. 애플의 폼팩터 시장 참전은 기존 시장 점유율을 잠식하기보다 니치 마켓에 머물던 폴더블 생태계의 파이를 단숨에 메인스트림으로 키워, 기술적 선점 우위를 지닌 삼성전자에 강력한 낙수효과를 안겨주고 있습니다." id="article-5">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar arstechnica" aria-hidden="true">AT</span>
+              <div class="media-meta">
+                <span class="media-name">Ars Technica</span>
+                <span class="channel-slug">#arstechnica-feed</span>
+              </div>
+            </div>
+            <a href="https://arstechnica.com/gadgets/2026/10/samsung-all-but-confirms-iphone-duo-is-goosing-galaxy-z8-sales/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="애플 &#x27;아이폰 듀오&#x27; 공개에 반사이익… 삼성, 갤럭시 Z8 검색량 폭증 시사 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">애플 &#x27;아이폰 듀오&#x27; 공개에 반사이익… 삼성, 갤럭시 Z8 검색량 폭증 시사</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">애플의 신규 듀얼스크린/폴더블 기기 &#x27;아이폰 듀오&#x27; 공개 직후 삼성전자 폴더블폰 관련 검색 트래픽이 급증함.</li>
+              <li class="summary-bullet">경쟁사의 시장 진입이 폴더블·듀얼 폼팩터 카테고리 전반에 대한 대중적 관심과 수요를 자극하는 기폭제 역할을 함.</li>
+              <li class="summary-bullet">삼성전자는 이러한 시장의 관심 폭증이 차기 전략 모델인 &#x27;갤럭시 Z8&#x27;의 초기 판매 견인으로 이어지고 있음을 간접 확인사살함.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">애플의 폼팩터 시장 참전은 기존 시장 점유율을 잠식하기보다 니치 마켓에 머물던 폴더블 생태계의 파이를 단숨에 메인스트림으로 키워, 기술적 선점 우위를 지닌 삼성전자에 강력한 낙수효과를 안겨주고 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://arstechnica.com/gadgets/2026/10/samsung-all-but-confirms-iphone-duo-is-goosing-galaxy-z8-sales/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 58초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="theinformation" data-search="세일즈포스, 외부 ai 에이전트 연동에 과금 추진…saas 요금제 판도 변화 예고 the information 세일즈포스는 11월부터 클로드 등 외부 ai 에이전트를 등록하도록 의무화하고 데이터 업데이트 및 분석 작업당 요금을 부과하는 &#x27;톨게이트&#x27; 과금 체계를 도입할 계획입니다. 기업 고객들이 자사 내장 ai 대신 외부 ai를 연동해 무료로 작업을 자동화하자, 사용량 기반의 &#x27;상호작용&#x27; 과금 및 무제한 사용을 위한 &#x27;헤드리스 라이선스&#x27; 등을 준비 중입니다. ai 에이전트의 효율성이 사람을 능가하면서 기존 사용자 계정(seat) 기반 saas 수익 모델이 위협받자, 아틀라시안, 서비스나우 등 주요 기업들도 유사한 요금제 개편을 모색하고 있습니다. ai 에이전트 확산으로 전통적인 사용자당 과금(per-seat) 모델이 붕괴 위기에 직면하면서, b2b saas 기업들은 데이터 접근 및 행동 기반의 새로운 통행료 모델로 수익성을 방어하려 하고 있습니다." id="article-6">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar theinformation" aria-hidden="true">TI</span>
+              <div class="media-meta">
+                <span class="media-name">The Information</span>
+                <span class="channel-slug">#theinformation-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theinformation.com/articles/salesforce-customers-brace-new-fees-use-claude-apps" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="세일즈포스, 외부 AI 에이전트 연동에 과금 추진…SaaS 요금제 판도 변화 예고 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">세일즈포스, 외부 AI 에이전트 연동에 과금 추진…SaaS 요금제 판도 변화 예고</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">세일즈포스는 11월부터 클로드 등 외부 AI 에이전트를 등록하도록 의무화하고 데이터 업데이트 및 분석 작업당 요금을 부과하는 &#x27;톨게이트&#x27; 과금 체계를 도입할 계획입니다.</li>
+              <li class="summary-bullet">기업 고객들이 자사 내장 AI 대신 외부 AI를 연동해 무료로 작업을 자동화하자, 사용량 기반의 &#x27;상호작용&#x27; 과금 및 무제한 사용을 위한 &#x27;헤드리스 라이선스&#x27; 등을 준비 중입니다.</li>
+              <li class="summary-bullet">AI 에이전트의 효율성이 사람을 능가하면서 기존 사용자 계정(Seat) 기반 SaaS 수익 모델이 위협받자, 아틀라시안, 서비스나우 등 주요 기업들도 유사한 요금제 개편을 모색하고 있습니다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">AI 에이전트 확산으로 전통적인 사용자당 과금(Per-Seat) 모델이 붕괴 위기에 직면하면서, B2B SaaS 기업들은 데이터 접근 및 행동 기반의 새로운 통행료 모델로 수익성을 방어하려 하고 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theinformation.com/articles/salesforce-customers-brace-new-fees-use-claude-apps', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 77초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="theinformation" data-search="ai 사이버 보안 &#x27;방어자의 창&#x27; 축소와 메타의 신규 무의결권 주식 발행 the information 오픈ai와 정부는 php 취약점에 대응했으나, 미국과 중국의 오픈소스 모델 간 격차가 4개월 수준으로 좁혀지며 취약점을 먼저 패치할 수 있는 &#x27;방어자의 창&#x27;이 급격히 줄고 있습니다. 트럼프 행정부는 국가정보국장 등이 참여하는 &#x27;슈퍼 인텔리전스 포스(si force)&#x27;를 신설해 국가 차원의 ai 보안 조율과 신속한 패치 배포 대응에 착수했습니다. 메타는 3분기 매출 26% 성장을 기록했으나 법적 합의금으로 영업이익이 감소했으며, 저커버그의 지배력을 유지하면서 ai 자금을 조달하기 위해 무의결권 c주를 신설했습니다. 중국발 오픈소스 ai의 급격한 역량 향상으로 사이버 방어 골든타임이 급감함에 따라 민관 협력이 필수가 되었으며, 빅테크는 막대한 ai 투자금을 확보하기 위해 지배구조를 방어하는 신규 주식 발행 방식을 적극 채택하고 있습니다." id="article-7">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar theinformation" aria-hidden="true">TI</span>
+              <div class="media-meta">
+                <span class="media-name">The Information</span>
+                <span class="channel-slug">#theinformation-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theinformation.com/articles/closing-defenders-window-nigh" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="AI 사이버 보안 &#x27;방어자의 창&#x27; 축소와 메타의 신규 무의결권 주식 발행 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">AI 사이버 보안 &#x27;방어자의 창&#x27; 축소와 메타의 신규 무의결권 주식 발행</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">오픈AI와 정부는 PHP 취약점에 대응했으나, 미국과 중국의 오픈소스 모델 간 격차가 4개월 수준으로 좁혀지며 취약점을 먼저 패치할 수 있는 &#x27;방어자의 창&#x27;이 급격히 줄고 있습니다.</li>
+              <li class="summary-bullet">트럼프 행정부는 국가정보국장 등이 참여하는 &#x27;슈퍼 인텔리전스 포스(SI Force)&#x27;를 신설해 국가 차원의 AI 보안 조율과 신속한 패치 배포 대응에 착수했습니다.</li>
+              <li class="summary-bullet">메타는 3분기 매출 26% 성장을 기록했으나 법적 합의금으로 영업이익이 감소했으며, 저커버그의 지배력을 유지하면서 AI 자금을 조달하기 위해 무의결권 C주를 신설했습니다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">중국발 오픈소스 AI의 급격한 역량 향상으로 사이버 방어 골든타임이 급감함에 따라 민관 협력이 필수가 되었으며, 빅테크는 막대한 AI 투자금을 확보하기 위해 지배구조를 방어하는 신규 주식 발행 방식을 적극 채택하고 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theinformation.com/articles/closing-defenders-window-nigh', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 76초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="theinformation" data-search="데이터독, 클라우드 보안 스타트업 &#x27;업윈드&#x27;에 40억 달러 인수 제안 the information 엔터프라이즈 소프트웨어 기업 데이터독이 이스라엘 클라우드 보안 스타트업 업윈드 시큐리티(upwind security)에 약 40억 달러(약 5조 5천억 원) 규모의 인수를 제안했습니다. 업윈드는 클라우드에서 실행되는 ai 에이전트 및 애플리케이션을 모니터링하고 침해 위협을 자동 감지·대응하는 소프트웨어를 제공하며 여러 곳의 인수 러브콜을 받고 있습니다. 현재 업윈드는 38억 달러 기업가치로 3억 달러 규모의 투자 유치를 마무리 중이어서 데이터독의 제안에 큰 프리미엄이 붙지 않아 공식 수락하지 않은 상태입니다. 클라우드 환경 내 ai 에이전트 모니터링과 보안이 핵심 인프라로 급부상하면서, 옵저버빌리티 플랫폼 기업들의 대규모 보안 스타트업 인수 경쟁이 더욱 치열해지고 있습니다." id="article-8">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar theinformation" aria-hidden="true">TI</span>
+              <div class="media-meta">
+                <span class="media-name">The Information</span>
+                <span class="channel-slug">#theinformation-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theinformation.com/articles/datadog-offered-buy-security-startup-upwind-nearly-4-billion" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="데이터독, 클라우드 보안 스타트업 &#x27;업윈드&#x27;에 40억 달러 인수 제안 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">데이터독, 클라우드 보안 스타트업 &#x27;업윈드&#x27;에 40억 달러 인수 제안</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">엔터프라이즈 소프트웨어 기업 데이터독이 이스라엘 클라우드 보안 스타트업 업윈드 시큐리티(Upwind Security)에 약 40억 달러(약 5조 5천억 원) 규모의 인수를 제안했습니다.</li>
+              <li class="summary-bullet">업윈드는 클라우드에서 실행되는 AI 에이전트 및 애플리케이션을 모니터링하고 침해 위협을 자동 감지·대응하는 소프트웨어를 제공하며 여러 곳의 인수 러브콜을 받고 있습니다.</li>
+              <li class="summary-bullet">현재 업윈드는 38억 달러 기업가치로 3억 달러 규모의 투자 유치를 마무리 중이어서 데이터독의 제안에 큰 프리미엄이 붙지 않아 공식 수락하지 않은 상태입니다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">클라우드 환경 내 AI 에이전트 모니터링과 보안이 핵심 인프라로 급부상하면서, 옵저버빌리티 플랫폼 기업들의 대규모 보안 스타트업 인수 경쟁이 더욱 치열해지고 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theinformation.com/articles/datadog-offered-buy-security-startup-upwind-nearly-4-billion', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 70초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="theinformation" data-search="소프트뱅크 산하 sb에너지, 시장 침체로 ipo 일정 12월 이후로 연기 검토 the information 소프트뱅크 그룹 산하이자 오하이오주에서 대규모 오픈ai 데이터센터 프로젝트를 개발 중인 sb에너지가 ipo 시점을 12월 또는 내년으로 연기하는 방안을 검토 중입니다. 당초 올해 9월 조기 상장을 목표로 했으나, 최근 데이터센터 및 ai 클라우드 섹터 전반에 대한 공모주 시장의 투자 심리가 냉각되면서 일정 조정이 불가피해졌습니다. 호주 클라우드 기업 퍼머스(firmus)가 이달 초 ipo 계획을 철회하는 등 관련 인프라 기업들의 상장 지연 움직임이 확산되고 있습니다. ai 인프라 및 데이터센터 관련 기업들의 자금 조달 수요는 여전히 높으나, 수익성 입증에 대한 공모 시장의 눈높이가 엄격해지면서 무리한 조기 상장 대신 시장 회복을 기다리는 전략적 지연이 늘고 있습니다." id="article-9">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar theinformation" aria-hidden="true">TI</span>
+              <div class="media-meta">
+                <span class="media-name">The Information</span>
+                <span class="channel-slug">#theinformation-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theinformation.com/articles/sb-energy-considers-waiting-december-later-ipo" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="소프트뱅크 산하 SB에너지, 시장 침체로 IPO 일정 12월 이후로 연기 검토 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">소프트뱅크 산하 SB에너지, 시장 침체로 IPO 일정 12월 이후로 연기 검토</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">소프트뱅크 그룹 산하이자 오하이오주에서 대규모 오픈AI 데이터센터 프로젝트를 개발 중인 SB에너지가 IPO 시점을 12월 또는 내년으로 연기하는 방안을 검토 중입니다.</li>
+              <li class="summary-bullet">당초 올해 9월 조기 상장을 목표로 했으나, 최근 데이터센터 및 AI 클라우드 섹터 전반에 대한 공모주 시장의 투자 심리가 냉각되면서 일정 조정이 불가피해졌습니다.</li>
+              <li class="summary-bullet">호주 클라우드 기업 퍼머스(Firmus)가 이달 초 IPO 계획을 철회하는 등 관련 인프라 기업들의 상장 지연 움직임이 확산되고 있습니다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">AI 인프라 및 데이터센터 관련 기업들의 자금 조달 수요는 여전히 높으나, 수익성 입증에 대한 공모 시장의 눈높이가 엄격해지면서 무리한 조기 상장 대신 시장 회복을 기다리는 전략적 지연이 늘고 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theinformation.com/articles/sb-energy-considers-waiting-december-later-ipo', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 70초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="theinformation" data-search="비디오 ai 스타트업 유토파이, 10억 달러 가치 인정받으며 유니콘 등극 the information 퍼스널 ai 비서 경쟁 속에서 생성 품질과 영상 길이가 대폭 개선된 비디오 ai 분야가 조용한 르네상스를 맞이하고 있습니다. 미국 캘리포니아 마운틴뷰 기반의 영화 제작 스타트업 유토파이(utopai studios)가 6,000만 달러 규모의 투자를 유치하며 기업가치 10억 달러의 유니콘 반열에 올랐습니다. 힉스필드(higgsfield)의 연환산 매출 10억 달러 돌파와 중국 콰이쇼우의 클링 ai(kling ai) 대규모 펀딩 등 비디오 ai의 상업적 수익화 잠재력이 시장에서 강력히 입증되고 있습니다. 텍스트·음성 기반 보조 모델에 이어 엔터테인먼트 및 미디어 제작 현장에 직접 투입 가능한 영상 생성 ai가 확실한 수익 지표를 증명하며 차세대 고가치 투자처로 급부상하고 있습니다." id="article-10">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar theinformation" aria-hidden="true">TI</span>
+              <div class="media-meta">
+                <span class="media-name">The Information</span>
+                <span class="channel-slug">#theinformation-feed</span>
+              </div>
+            </div>
+            <a href="https://www.theinformation.com/articles/utopai-becomes-unicorn-video-ai-takes" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="비디오 AI 스타트업 유토파이, 10억 달러 가치 인정받으며 유니콘 등극 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">비디오 AI 스타트업 유토파이, 10억 달러 가치 인정받으며 유니콘 등극</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">퍼스널 AI 비서 경쟁 속에서 생성 품질과 영상 길이가 대폭 개선된 비디오 AI 분야가 조용한 르네상스를 맞이하고 있습니다.</li>
+              <li class="summary-bullet">미국 캘리포니아 마운틴뷰 기반의 영화 제작 스타트업 유토파이(Utopai Studios)가 6,000만 달러 규모의 투자를 유치하며 기업가치 10억 달러의 유니콘 반열에 올랐습니다.</li>
+              <li class="summary-bullet">힉스필드(Higgsfield)의 연환산 매출 10억 달러 돌파와 중국 콰이쇼우의 클링 AI(Kling AI) 대규모 펀딩 등 비디오 AI의 상업적 수익화 잠재력이 시장에서 강력히 입증되고 있습니다.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">텍스트·음성 기반 보조 모델에 이어 엔터테인먼트 및 미디어 제작 현장에 직접 투입 가능한 영상 생성 AI가 확실한 수익 지표를 증명하며 차세대 고가치 투자처로 급부상하고 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://www.theinformation.com/articles/utopai-becomes-unicorn-video-ai-takes', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 70초 (예상)</span>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- Level 4: Metadata Panel (Desktop Right Rail) -->
+    <aside class="metadata-panel" aria-label="시스템 지표 패널">
+      <div class="meta-group-title">시스템 지표</div>
+      <div class="metric-card">
+        <span class="metric-label">총 큐레이션 기사</span>
+        <span class="metric-value" id="metaVisibleCount">10개</span>
+        <span class="metric-subtext">기준 일자: 2026-10-23</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">인프라 운영 비용</span>
+        <span class="metric-value">$0.00</span>
+        <span class="metric-subtext">Zero-Capital 무인 아키텍처</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">예상 리딩 소요시간</span>
+        <span class="metric-value">약 11분</span>
+        <span class="metric-subtext">10개 기사 정독 기준</span>
+      </div>
+
+      <div class="meta-group-title">매체별 기사 현황</div>
+      <div class="feed-status-item">
+        <span class="status-source-name">The Verge</span>
+        <span class="status-badge-error" title="0/5건 (기사 없음)">0/5건 · 기사 없음 🔴</span>
+      </div>
+      <div class="feed-status-item">
+        <span class="status-source-name">TechCrunch</span>
+        <span class="status-badge-error" title="0/5건 (기사 없음)">0/5건 · 기사 없음 🔴</span>
+      </div>
+      <div class="feed-status-item">
+        <span class="status-source-name">Ars Technica</span>
+        <span class="status-badge-active" title="5/5건 큐레이션 완료">5/5건 완료 🟢</span>
+      </div>
+      <div class="feed-status-item">
+        <span class="status-source-name">MIT Tech Review</span>
+        <span class="status-badge-error" title="0/5건 (기사 없음)">0/5건 · 기사 없음 🔴</span>
+      </div>
+      <div class="feed-status-item">
+        <span class="status-source-name">The Information</span>
+        <span class="status-badge-active" title="5/5건 큐레이션 완료">5/5건 완료 🟢</span>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="tossToast" class="toss-toast" role="status" aria-live="polite">
+    원문 기사 링크가 복사되었습니다.
+  </div>
+
+  <script>
+    // State management
+    let activeChannel = 'all';
+    let searchQuery = '';
+
+    // Filter & Search composability
+    function applyFilters() {
+      const cards = document.querySelectorAll('.toss-card');
+      let visibleCount = 0;
+      const q = searchQuery.trim().toLowerCase();
+
+      cards.forEach(card => {
+        const mediaSlug = card.getAttribute('data-media');
+        const matchesChannel = (activeChannel === 'all' || mediaSlug === activeChannel);
+
+        let matchesQuery = true;
+        if (q.length > 0) {
+          const searchData = card.getAttribute('data-search') || '';
+          matchesQuery = searchData.includes(q);
+        }
+
+        if (matchesChannel && matchesQuery) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Update visible counter
+      const visibleCounter = document.getElementById('metaVisibleCount');
+      if (visibleCounter) {
+        if (activeChannel === 'all' && q.length === 0) {
+          visibleCounter.textContent = `${cards.length}개`;
+        } else {
+          visibleCounter.textContent = `${visibleCount}개 / ${cards.length}개`;
+        }
+      }
+
+      // Toggle empty state
+      const emptyState = document.getElementById('noResultsCard');
+      if (emptyState) {
+        emptyState.style.display = visibleCount === 0 ? 'flex' : 'none';
+      }
+    }
+
+    function filterFeed(slug, element) {
+      activeChannel = slug;
+
+      // Update channel active styling
+      document.querySelectorAll('.channel-item').forEach(item => item.classList.remove('active'));
+      if (element) {
+        element.classList.add('active');
+      } else {
+        const target = document.querySelector(`.channel-item[data-channel="${slug}"]`);
+        if (target) target.classList.add('active');
+      }
+
+      // Update header topic title
+      const topicEl = document.getElementById('headerTopicTitle');
+      if (topicEl) {
+        if (slug === 'all') {
+          topicEl.textContent = '오늘의 브리핑';
+        } else {
+          const nameEl = element ? element.querySelector('.channel-name') : null;
+          topicEl.textContent = nameEl ? nameEl.textContent : slug;
+        }
+      }
+
+      applyFilters();
+      closeMobileMenu();
+
+      // Scroll to top
+      const feed = document.getElementById('feedContainer');
+      if (feed) feed.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function handleSearch(val) {
+      searchQuery = val;
+      const clearBtn = document.getElementById('searchClearBtn');
+      if (clearBtn) {
+        clearBtn.style.display = val.length > 0 ? 'flex' : 'none';
+      }
+      applyFilters();
+    }
+
+    function clearSearch() {
+      const input = document.getElementById('searchInput');
+      if (input) {
+        input.value = '';
+        input.focus();
+      }
+      handleSearch('');
+    }
+
+    function resetAllFilters(element) {
+      activeChannel = 'all';
+      searchQuery = '';
+      const input = document.getElementById('searchInput');
+      if (input) input.value = '';
+      const clearBtn = document.getElementById('searchClearBtn');
+      if (clearBtn) clearBtn.style.display = 'none';
+
+      document.querySelectorAll('.channel-item').forEach(item => {
+        if (item.getAttribute('data-channel') === 'all') {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+
+      const topicEl = document.getElementById('headerTopicTitle');
+      if (topicEl) topicEl.textContent = '오늘의 브리핑';
+
+      const homeBtn = document.getElementById('homeRailBtn');
+      if (homeBtn) homeBtn.classList.add('active');
+
+      applyFilters();
+      closeMobileMenu();
+
+      const feed = document.getElementById('feedContainer');
+      if (feed) feed.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Clipboard & Toast Feedback
+    function copyArticleLink(url, btn) {
+      const originalText = btn.innerHTML;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(() => {
+          showToast('원문 기사 링크가 복사되었습니다.');
+          btn.innerHTML = '✓ 복사 완료';
+          btn.classList.add('copied');
+          setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.classList.remove('copied');
+          }, 2000);
+        }).catch(() => {
+          fallbackCopy(url, btn, originalText);
+        });
+      } else {
+        fallbackCopy(url, btn, originalText);
+      }
+    }
+
+    function fallbackCopy(url, btn, originalText) {
+      const ta = document.createElement('textarea');
+      ta.value = url;
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        showToast('원문 기사 링크가 복사되었습니다.');
+        btn.innerHTML = '✓ 복사 완료';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.classList.remove('copied');
+        }, 2000);
+      } catch (e) {
+        alert('링크 복사에 실패했습니다.');
+      }
+      document.body.removeChild(ta);
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('tossToast');
+      if (!toast) return;
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2400);
+    }
+
+    // Mobile Drawer Controls
+    function toggleMobileMenu() {
+      const sidebar = document.querySelector('.context-sidebar');
+      const backdrop = document.getElementById('drawerBackdrop');
+      const menuBtn = document.getElementById('mobileMenuBtn');
+      if (!sidebar) return;
+      const isOpen = sidebar.classList.toggle('open');
+      if (backdrop) backdrop.classList.toggle('open', isOpen);
+      if (menuBtn) menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    }
+
+    function closeMobileMenu() {
+      const sidebar = document.querySelector('.context-sidebar');
+      const backdrop = document.getElementById('drawerBackdrop');
+      const menuBtn = document.getElementById('mobileMenuBtn');
+      if (sidebar) sidebar.classList.remove('open');
+      if (backdrop) backdrop.classList.remove('open');
+      if (menuBtn) menuBtn.setAttribute('aria-expanded', 'false');
+    }
+
+    // Keyboard accessibility
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeMobileMenu();
+        if (searchQuery.length > 0) clearSearch();
+      }
+    });
+
+    // Theme Management with Persistence
+    function initTheme() {
+      const saved = localStorage.getItem('daily_intel_theme');
+      if (saved === 'dark' || saved === 'light') {
+        setTheme(saved);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+        setTheme('light');
+      } else {
+        setTheme('dark');
+      }
+    }
+
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      try { localStorage.setItem('daily_intel_theme', theme); } catch(e) {}
+      const themeBtn = document.getElementById('themeBtn');
+      if (themeBtn) {
+        themeBtn.textContent = theme === 'dark' ? '☀️ 라이트 모드' : '🌙 다크 모드';
+      }
+    }
+
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    }
+
+    // Run on load
+    initTheme();
+  </script>
+</body>
+</html>
