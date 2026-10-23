@@ -1,272 +1,272 @@
 [
   {
-    "media": "Ars Technica",
-    "title": "Ink droplets in motion snag top prize in Nikon Small World contest",
-    "link": "https://arstechnica.com/science/2026/10/meet-the-2026-winner-of-nikons-small-world-photomicrography-contest/",
-    "canonical_url": "https://arstechnica.com/science/2026/10/meet-the-2026-winner-of-nikons-small-world-photomicrography-contest/",
-    "published_at": "2026-10-22T19:34:40",
-    "summary": "Ole Bielfeldt of Germany captured a microscopic view of an inkjet printer depositing ink onto paper.",
-    "score": 23,
+    "media": "TechCrunch",
+    "title": "Oura sues rival Ultrahuman again, threatening its US smart ring comeback",
+    "link": "https://techcrunch.com/2026/10/22/oura-sues-rival-ultrahuman-again-threatening-its-u-s-smart-ring-comeback/",
+    "canonical_url": "https://techcrunch.com/2026/10/22/oura-sues-rival-ultrahuman-again-threatening-its-u-s-smart-ring-comeback/",
+    "published_at": "2026-10-23T04:22:57",
+    "summary": "Oura alleges in its newest lawsuit that Ultrahuman's Ring Pro infringes two of its patents.",
+    "score": 47,
     "score_breakdown": {
-      "total_score": 23,
-      "impact": 0,
-      "business": 0,
-      "development": 13,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 1,
-    "is_primary": true,
-    "korean_title": "종이에 안착하는 잉크 방울 포착… 니콘 스몰월드 사진전 대상 선정",
-    "summary_3_lines": [
-      "독일의 올레 빌펠트(Ole Bielfeldt)가 잉크젯 프린터 노즐에서 종이로 분사되는 미세 잉크 방울의 순간을 고해상도 현미경으로 촬영해 대상을 수상함.",
-      "일상적인 인쇄 공정 이면에서 벌어지는 초미세 유체역학 현상을 광학 기술과 시각 예술의 결합으로 구현함.",
-      "니콘 스몰월드 공모전은 전 세계 연구자와 사진가들이 참여해 미세 세계의 과학적 가치와 미학을 공유하는 장으로 자리잡음."
-    ],
-    "business_insight": "초정밀 광학 이미징 기술은 산업용 잉크젯 프린팅 및 마이크로플루이딕스(미세유체역학) 반도체 공정에서 정밀한 품질 관리와 수율 개선을 이끄는 핵심 기반 기술로 평가받고 있습니다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "Ars Technica",
-    "title": "Hackers got a four-day head start on epic PHP2Shell vulnerability",
-    "link": "https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/",
-    "canonical_url": "https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/",
-    "published_at": "2026-10-22T15:25:02",
-    "summary": "Hackers were already probing the bug before defenders were told it existed.",
-    "score": 19,
-    "score_breakdown": {
-      "total_score": 19,
-      "impact": 12,
-      "business": 0,
-      "development": 0,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 2,
-    "is_primary": true,
-    "korean_title": "보안 조직보다 4일 빨랐다… 'PHP2Shell' 제로데이 취약점 선제 악용 비상",
-    "summary_3_lines": [
-      "보안 담당자들에게 공식 경보와 패치가 전달되기 최소 4일 전부터 해커들이 'PHP2Shell' 취약점을 악용해 서버 탐색 공격을 진행함.",
-      "방어 체계가 위협의 실체를 인지하기도 전에 실제 공격 벡터가 먼저 가동된 전형적인 선행 공격 사례임.",
-      "광범위하게 사용되는 PHP 웹 환경의 특성상 취약점 노출 즉시 대규모 웹 서버 침해 및 원격 코드 실행(RCE) 위험이 가중됨."
-    ],
-    "business_insight": "제로데이 취약점 발견과 악용 간의 시간차가 사실상 역전되고 있어, 사후 패치 중심 대응을 넘어 런타임 애플리케이션 자가 보호(RASP) 및 엄격한 최소 권한 정책 등 선제적 보안 체계 구축이 시급합니다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "Ars Technica",
-    "title": "\"Disillusioned\" MAHA leader quits as Trump admin's food agenda spoils: Report",
-    "link": "https://arstechnica.com/health/2026/10/disillusioned-maha-leader-quits-as-trump-admins-food-agenda-spoils-report/",
-    "canonical_url": "https://arstechnica.com/health/2026/10/disillusioned-maha-leader-quits-as-trump-admins-food-agenda-spoils-report/",
-    "published_at": "2026-10-22T19:04:06",
-    "summary": "The departure comes amid turmoil in Kennedy's Make America Healthy Again movement.",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 3,
-    "is_primary": true,
-    "korean_title": "트럼프 2기 식품 규제 개혁 삐걱… MAHA 핵심 리더 '환멸' 속 전격 사임",
-    "summary_3_lines": [
-      "로버트 F. 케네디 주니어가 주도하는 '미국을 다시 건강하게(MAHA)' 캠페인의 주요 핵심 인사가 정책 방향에 실망해 사임을 선언함.",
-      "트럼프 행정부의 초기 식품 및 보건 규제 개혁 아젠다가 내부 권력 암투와 우선순위 혼선으로 표류하고 있다는 지적이 제기됨.",
-      "초당적 지지를 노렸던 급진적 식품 첨가물 규제 및 가공식품 정책 드라이브가 출범 초기부터 동력을 상실할 위기에 직면함."
-    ],
-    "business_insight": "미국 규제 당국(FDA·USDA)의 식품 안전 가이드라인 개편이 정치적 불확실성에 직면함에 따라, 글로벌 식음료 및 농축산 기업들은 단기적 정책 리스크와 장기적 규제 컴플라이언스 비용을 재점검해야 합니다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "Ars Technica",
-    "title": "Electric or gas? BMW goes both ways with new 2027 X5 and iX5.",
-    "link": "https://arstechnica.com/cars/2026/10/electric-or-gas-bmw-goes-both-ways-with-new-2027-x5-and-ix5/",
-    "canonical_url": "https://arstechnica.com/cars/2026/10/electric-or-gas-bmw-goes-both-ways-with-new-2027-x5-and-ix5/",
-    "published_at": "2026-10-22T19:01:23",
-    "summary": "460 kW charging and 450 miles of range are among the reasons the EV is the one to get.",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 4,
-    "is_primary": true,
-    "korean_title": "내연기관과 EV 동시 공략… BMW, 2027년형 차세대 X5 및 iX5 공개",
-    "summary_3_lines": [
-      "BMW가 2027년형 라인업으로 내연기관 모델 X5와 순수 전기 모델 iX5를 병행 출시하는 투트랙 전략을 유지함.",
-      "전기차 버전인 iX5는 최대 460kW 초고속 충전 성능과 450마일(약 724km)의 긴 주행거리를 갖춰 상품성을 대폭 강화함.",
-      "전동화 전환 둔화 국면에서 유연한 플랫폼 전략을 통해 내연기관 선호층과 프리미엄 EV 수요를 모두 흡수하겠다는 구상임."
-    ],
-    "business_insight": "글로벌 완성차 시장의 EV 캐즘(일시적 수요 둔화) 속에서 단일 파워트레인 올인보다 유연한 혼류 생산 전략과 획기적인 충전 스펙을 결합한 프리미엄 라인업이 가장 현실적인 수익성 방어 카드로 부상하고 있습니다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "Ars Technica",
-    "title": "Samsung all but confirms iPhone Duo is goosing Galaxy Z8 sales",
-    "link": "https://arstechnica.com/gadgets/2026/10/samsung-all-but-confirms-iphone-duo-is-goosing-galaxy-z8-sales/",
-    "canonical_url": "https://arstechnica.com/gadgets/2026/10/samsung-all-but-confirms-iphone-duo-is-goosing-galaxy-z8-sales/",
-    "published_at": "2026-10-22T18:49:14",
-    "summary": "Searches for Samsung foldables just happened to skyrocket following iPhone Duo unveiling.",
-    "score": 15,
-    "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 5,
-    "is_primary": true,
-    "korean_title": "애플 '아이폰 듀오' 공개에 반사이익… 삼성, 갤럭시 Z8 검색량 폭증 시사",
-    "summary_3_lines": [
-      "애플의 신규 듀얼스크린/폴더블 기기 '아이폰 듀오' 공개 직후 삼성전자 폴더블폰 관련 검색 트래픽이 급증함.",
-      "경쟁사의 시장 진입이 폴더블·듀얼 폼팩터 카테고리 전반에 대한 대중적 관심과 수요를 자극하는 기폭제 역할을 함.",
-      "삼성전자는 이러한 시장의 관심 폭증이 차기 전략 모델인 '갤럭시 Z8'의 초기 판매 견인으로 이어지고 있음을 간접 확인사살함."
-    ],
-    "business_insight": "애플의 폼팩터 시장 참전은 기존 시장 점유율을 잠식하기보다 니치 마켓에 머물던 폴더블 생태계의 파이를 단숨에 메인스트림으로 키워, 기술적 선점 우위를 지닌 삼성전자에 강력한 낙수효과를 안겨주고 있습니다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "The Information",
-    "title": "Salesforce Customers Brace For New Fees to Use Claude in Its Apps",
-    "link": "https://www.theinformation.com/articles/salesforce-customers-brace-new-fees-use-claude-apps",
-    "canonical_url": "https://www.theinformation.com/articles/salesforce-customers-brace-new-fees-use-claude-apps",
-    "published_at": "2026-10-22T18:04:17",
-    "summary": "Salesforce is leading the software industry’s attempt to collect fees from businesses that use Claude and other external AI tools to automate work in enterprise apps. As soon as next month, Salesforce plans to require companies to register outside AI agents, a step toward charging them each time those agents update or analyze data stored in Salesforce. The fees let Salesforce earn money from customers who use such AI instead of paying for Salesforce’s built-in AI products. The Salesforce tollgate has implications for the rest of the industry, which is coming to terms with the idea that so-called AI agents may be able to use software firms’ apps more efficiently than humans do, meaning their seat-based or per-user pricing model might not have staying power. The question is whether the new AI tollgates—which Atlassian, Workday, ServiceNow and Datadog are also erecting to various extents—and other pricing shifts will more than make up for an eventual decline in per-seat subscription revenues. The vast majority of workers haven’t yet outsourced such work to AI, of course, and companies like Salesforce are trying to get more revenue from them as well. They charge fees based on how much they use the apps’ built-in AI tools and are also experimenting with outcome-based pricing, meaning customers only pay when such tools actually complete a task successfully or help the customers make more money. For now, Salesforce and some other software firms developing tollgates for customers’ AI agents haven’t started charging the tolls. They’re letting customers experiment for free with the technology a little while longer. (The customers still have to pay providers such as Anthropic to use the AI agents in the first place.) Starting around November, according to the company’s website , Salesforce will require customers to register any externally-made AI agents if they plan to use them to take actions on their behalf in Salesforce apps. Each action an agent takes in Salesforce counts as a billable “interaction,” according to the company. The move has lifted investor confidence in Salesforce recently. Salesforce describes the registration requirement as a security measure because the company gives each agent its own identity and narrower data-access permissions, compared to humans. It isn’t clear how Salesforce will clamp down on customers using their own AI agents, such as OpenClaw-powered ones that run on a person’s computer and can access any app that runs on it. (Salesforce did not respond to requests for comment.) Salesforce hasn’t announced prices tied to such agent usage, but customers could eventually end up paying a lot more money than they do now, given how many of them are already using their own AI on top of Salesforce apps and bypassing Salesforce’s own built-in AI tools, according to software consultants and chief information officers. Nick Hamm, a software consultant, said that most of the 150 enterprises he works with are currently using AI from Anthropic and OpenAI to automate work inside Salesforce apps, for free. But they’re reconsidering that usage in anticipation of the upcoming fees. If the fees are too high, the customers may move their business data outside of Salesforce’s apps so they can use AI to analyze the data without paying an extra cost, he said. New customers will have a three month grace period after the new pricing is announced to register their AI agents, and the pricing won’t affect existing customers until their contracts are renewed. In addition to the billable “interactions,” customers have the option to buy unlimited agent usage by purchasing a “headless license,” a Salesforce account executive told Hamm in a LinkedIn message viewed by The Information. Some customers such as Lumen, a fiber-optic network provider to enterprises and data centers, say they are waiting to test Salesforce’s new connectors until pricing is disclosed. So far, Lumen has leaned on Salesforce’s built-in AI. A longtime customer of Salesforce’s customer relationship management software, Lumen made a “major” investment in using Salesforce’s AI sales agents in the last 12 months, according to CIO Jim Fowler. The sales agents help with tasks such as collecting customer information and generating sales quotes for the customers to buy fiber connections between data centers, saving Lumen’s human salespeople considerable time, he said. So far, Fowler said, Salesforce has been “super flexible” about letting Lumen use existing subscription fees to also cover its use of built-in AI features such as the sales agents. Early customer reactions to the pricing announcement will likely determine how flexible Salesforce is with customers that start renewing their contracts after November. If its past AI pricing efforts are any guide, Salesforce could easily switch things up depending on the feedback, or any blowback, it receives. New From Our Reporters Exclusive Datadog Offered $4 Billion to Buy Cloud Security Startup ‘Upwind’ By Aaron Holmes and Valida Pau Exclusive Andreessen Horowitz to Drop ‘Crypto’ From Name of Flagship Blockchain Fund By Leo Schwartz Exclusive Hackers Used Claude and Grok to Automate Attacks on Banks By Aaron Holmes and Cory Weinberg Upcoming Events Tuesday, October 27 — The Information’s 2026 WTF Summit The Information's WTF Summit returns to Napa Valley, bringing together the women shaping tech, media and finance. Confirmed speakers include Bari Weiss,  Whitney Wolfe Herd (Bumble), Kim Posnett (Goldman Sachs) and Whitney Cummings. Expect candid conversations and a room built for meaningful exchange. Limited tickets remain—reserve your spot now. More details Monday, November 9 — Intimate Dinner with The Information and EY Consulting in San Francisco Trust is quickly becoming the defining question of the AI era. Over dinner, Jessica Lessin, Founder & Editor-in-Chief of The Information, and Whitt Butler, EY Americas Vice Chair – Consulting, will talk candidly about how leaders can build that trust and keep it. Request an invite. More details Tuesday, November 10 — The Long Road to an IPO Join The Information and NYSE for a cocktail reception and conversation on what it really takes to go public, hosted by The Information’s Dakin Campbell. The panel will explore the trust, relationships and preparation companies need to build with advisers, investors and exchange executives, along with the many complexities founders and executives must navigate along the way. Sponsored by NYSE. Apply to attend. More details",
-    "score": 80,
-    "score_breakdown": {
-      "total_score": 80,
-      "impact": 35,
-      "business": 25,
-      "development": 5,
-      "recency": 10,
-      "original": 5
-    },
-    "rank": 1,
-    "is_primary": true,
-    "korean_title": "세일즈포스, 외부 AI 에이전트 연동에 과금 추진…SaaS 요금제 판도 변화 예고",
-    "summary_3_lines": [
-      "세일즈포스는 11월부터 클로드 등 외부 AI 에이전트를 등록하도록 의무화하고 데이터 업데이트 및 분석 작업당 요금을 부과하는 '톨게이트' 과금 체계를 도입할 계획입니다.",
-      "기업 고객들이 자사 내장 AI 대신 외부 AI를 연동해 무료로 작업을 자동화하자, 사용량 기반의 '상호작용' 과금 및 무제한 사용을 위한 '헤드리스 라이선스' 등을 준비 중입니다.",
-      "AI 에이전트의 효율성이 사람을 능가하면서 기존 사용자 계정(Seat) 기반 SaaS 수익 모델이 위협받자, 아틀라시안, 서비스나우 등 주요 기업들도 유사한 요금제 개편을 모색하고 있습니다."
-    ],
-    "business_insight": "AI 에이전트 확산으로 전통적인 사용자당 과금(Per-Seat) 모델이 붕괴 위기에 직면하면서, B2B SaaS 기업들은 데이터 접근 및 행동 기반의 새로운 통행료 모델로 수익성을 방어하려 하고 있습니다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "The Information",
-    "title": "The Closing of the ‘Defenders Window’ Is Nigh",
-    "link": "https://www.theinformation.com/articles/closing-defenders-window-nigh",
-    "canonical_url": "https://www.theinformation.com/articles/closing-defenders-window-nigh",
-    "published_at": "2026-10-22T00:01:30",
-    "summary": "At first, the X headlines this morning about the latest AI-powered cybersecurity incident seemed dire. But by the time I had a cup of coffee and began parsing all the cyber jargon, I was reassured that an apparent solution was on its way to plug a major new security hole that could make websites vulnerable to cyberintrusions. Since August, a coalition led by OpenAI has been working to address critical vulnerabilities in PHP, an open-source programming language that undergirds the web. But there was bad news, too: This type of long-simmering response to the latest AI-discovered vulnerabilities may not be viable for much longer. For months, OpenAI has been harping on what it calls the “ defender’s window ”—the critical period of time when cybersecurity experts, armed with advanced AI models, can identify and patch vulnerabilities before attackers exploit them first. The issue is that the gap is rapidly narrowing between cybercapable models from leading U.S. frontier labs and Chinese open-source models, which lack the restrictions U.S. labs impose on their models’ capabilities. Anthropic said as much in a blog post from late September warning that Chinese lab Z.ai ’s GLM-5.3 model only lags the U.S. frontier models by about four months. The good news: The Trump administration has a shiny new organization created for moments just like these. It’s called the Super Intelligence Force, a name that may elicit eyerolls from some of our more jaded readers. Still, I have heard over and over that all the AI industry wants is coordination and clarity from the White House. That, presumably, is what the SI Force will offer, led by heavy hitters including National Intelligence Director Jay Clayton and senior Defense Department official Emil Michael . An OpenAI spokesperson told me today that they had briefed several agencies, including the Cybersecurity and Infrastructure Security Agency, about the PHP vulnerability, as well as briefing Clayton and Michael late last week, representing the first “major engagement” between OpenAI and the SI Force. The spokesperson added that the SI Force provided a central point to coordinate their communication across the broader government. According to a White House official, the SI Force’s work involved helping to put pressure on the “relevant parties” to deploy a vulnerability patch. While the SI Force’s coordination function may not seem terribly ambitious, at least it’s a start. It’s worth remembering that the White House essentially had to reorient its entire AI policy in April with the announcement of Mythos. The arrival of Chinese cybercapable open models could represent a Mythos 2.0 moment. I spoke with one former White House official who told me solutions from even a few months ago, like the July Gold Eagle clearinghouse that allows organizations and government agencies to share and fix software vulnerabilities, might already be outdated. It’s up to the SI Force to create a path forward. The next major internet bug likely won’t have the luxury of a two-month-long defender’s window. Meta’s Performance On Sunday, in a preview of this week’s Meta Platforms earnings report, your regular Briefing columnist, Martin Peers, declared: “If Meta can stay on investors’ good sides, an equity offering seems in the cards.” Martin nailed it on both accounts. On Wednesday afternoon, Meta CEO Mark Zuckerberg delivered a bunch of (mostly) good news that had investors in the company purring like kittens. Meta also announced the creation of a new category of common stock that will allow it to raise capital to fund its hefty AI investments without sacrificing Zuckerberg’s control. The highlights: For the third quarter, its revenue grew 26% to $64.6 billion, slightly above what the company had forecast. It’s trimming the losses from its Reality Labs unit. While it showed negative free cash flow of $2.12 billion rather than the positive free cash flow of $10.63 billion in the year-earlier period, that was due to its AI investments, and the number wasn’t as bad as some analysts had expected. The company’s anticipated capital expenditures of $135 billion to $145 billion for the full year, while eye-popping, were still within the range it had previously forecast. That was reassuring for investors who’ve gotten spooked in the past by sudden leaps in tech company spending on AI. Perhaps equally comforting were Zuckerberg’s reassurances that investors will see a payoff from some of its most expensive AI initiatives. He described Muse, Meta’s new agent app, as a bona fide hit for the company, one that has gained 10 million users in the U.S. and Canada in its first six weeks on the market—a faster pace of growth than for its Threads app. While Zuckerberg said the product will remain free for most people, he described a number of ways Meta plans to eventually get paid for it, including commerce transaction fees paid by businesses and money power users will pay for access to advanced models and extra tokens. Meta shares rose 2% in after-hours trading. Meta also warned of some potentially expensive new legal costs on the horizon, including from lawsuits related to child safety legal cases. During the third quarter, Meta said, its operating income declined 37% from a year earlier to just under $13 billion, due in large part to a nearly $10 billion charge related to legal proceedings. In August, the company settled a child online safety case with 52 attorneys general for $18.59 billion. And on Wednesday, a New Mexico judge ordered Meta to pay $25 billion in a case related to the Cambridge Analytica scandal. Meta did not say when it plans to raise capital through a new equity offering, or how much it might raise. Presumably, that will happen after Jan. 19, the effective date for issuance of the new nonvoting Class C common stock the company announced today. The company’s existing shareholders will receive a dividend of one Class C share for each share of Class A or B common stock they hold. And crucially, when the company raises money in the future with its Class C stock, that won’t dilute Zuckerberg’s voting power. “The creation of the Class C common stock will continue the founder-led model that has driven the company’s success since its inception,” Meta said. —Nick Wingfield Tongue-Tied at Tesla On Tesla’s earnings call, Elon Musk had much less to say on the topic of a potential merger of the EV maker with his other company, SpaceX, than he did Tuesday afternoon on SpaceX’s earnings call. He told investors he had said everything he wanted to on the topic for now. Tesla’s automotive revenues fell 3% to $20.56 billion while its total revenues remained flat at $28 billion compared to a year earlier. Tesla shares fell 3% in after-hours trading. —Nick Wingfield In Other News Electronic Arts plans to shed around 400 jobs, or about 3% of its staff, and shut down its BioWare studio, Bloomberg reported . Microsoft asked shareholders to approve a plan to lower CEO Satya Nadella’s pay by 6% due to falling revenue in its Xbox unit. The company also nominated Stripe co-founder John Collison to its board. Google will stop requiring local government officials to sign nondisclosure agreements when it plans to build data centers in their areas. Today on The Information’s TITV Check out today’s episode of TITV in which Akash Pasricha speaks with analyst Tim Farrar about SpaceX’s quarterly results. Recommended Newsletter Start your day with Applied AI , the newsletter from The Information that uncovers how leading businesses are leveraging AI to automate tasks across the board. Subscribe now for free to get it delivered straight to your inbox twice a week. New From Our Reporters Exclusive Hackers Used Claude and Grok to Automate Attacks on Banks By Aaron Holmes and Cory Weinberg Upcoming Events Tuesday, October 27 — The Information’s 2026 WTF Summit The Information's WTF Summit returns to Napa Valley, bringing together the women shaping tech, media and finance. Confirmed speakers include Bari Weiss,  Whitney Wolfe Herd (Bumble), Kim Posnett (Goldman Sachs) and Whitney Cummings. Expect candid conversations and a room built for meaningful exchange. Limited tickets remain—reserve your spot now. More details Monday, November 9 — Intimate Dinner with The Information and EY Consulting in San Francisco Trust is quickly becoming the defining question of the AI era. Over dinner, Jessica Lessin, Founder & Editor-in-Chief of The Information, and Whitt Butler, EY Americas Vice Chair – Consulting, will talk candidly about how leaders can build that trust and keep it. Request an invite. More details Tuesday, November 10 — The Long Road to an IPO Join The Information and NYSE for a cocktail reception and conversation on what it really takes to go public, hosted by The Information’s Dakin Campbell. The panel will explore the trust, relationships and preparation companies need to build with advisers, investors and exchange executives, along with the many complexities founders and executives must navigate along the way. Sponsored by NYSE. Apply to attend. More details What We’re Reading G.M. Hopes to Design New Cars in as Little as 2 Years Using A.I.",
-    "score": 79,
-    "score_breakdown": {
-      "total_score": 79,
-      "impact": 35,
-      "business": 25,
+      "total_score": 47,
+      "impact": 24,
+      "business": 9,
       "development": 13,
       "recency": 1,
-      "original": 5
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true,
+    "korean_title": "오우라, 경쟁사 울트라휴먼에 특허 침해 소송… 美 스마트링 독점 지위 수성 총력전",
+    "summary_3_lines": [
+      "스마트링 선도 기업 오우라(Oura)가 경쟁사 울트라휴먼(Ultrahuman)을 상대로 신규 특허 침해 소송을 제기함.",
+      "오우라는 울트라휴먼의 최신 플래그십 '링 프로(Ring Pro)'가 자사의 핵심 기술 특허 2건을 침해했다고 주장함.",
+      "이번 제소는 울트라휴먼의 미국 스마트링 시장 본격 진입 및 점유율 확대를 강력히 억제하려는 조치로 풀이됨."
+    ],
+    "business_insight": "스마트링 시장 경쟁이 본격화됨에 따라 선점 기업인 오우라가 방대한 특허 포트폴리오를 무기화해 후발 주자들의 미국 시장 진입 장벽을 지속적으로 높이고 있다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "TechCrunch",
+    "title": "What some of Anthropic’s backers are worth before its IPO",
+    "link": "https://techcrunch.com/2026/10/23/what-some-of-anthropics-backers-are-reportedly-worth-before-its-ipo/",
+    "canonical_url": "https://techcrunch.com/2026/10/23/what-some-of-anthropics-backers-are-reportedly-worth-before-its-ipo/",
+    "published_at": "2026-10-23T16:02:43",
+    "summary": "Early-stage and follow-on investors in the AI lab are already sitting on major paper returns.",
+    "score": 44,
+    "score_breakdown": {
+      "total_score": 44,
+      "impact": 24,
+      "business": 0,
+      "development": 13,
+      "recency": 7,
+      "original": 0
     },
     "rank": 2,
     "is_primary": true,
-    "korean_title": "AI 사이버 보안 '방어자의 창' 축소와 메타의 신규 무의결권 주식 발행",
+    "korean_title": "IPO 가시화된 앤스로픽, 초기 투자자들의 평가 가치와 미실현 수익 급등",
     "summary_3_lines": [
-      "오픈AI와 정부는 PHP 취약점에 대응했으나, 미국과 중국의 오픈소스 모델 간 격차가 4개월 수준으로 좁혀지며 취약점을 먼저 패치할 수 있는 '방어자의 창'이 급격히 줄고 있습니다.",
-      "트럼프 행정부는 국가정보국장 등이 참여하는 '슈퍼 인텔리전스 포스(SI Force)'를 신설해 국가 차원의 AI 보안 조율과 신속한 패치 배포 대응에 착수했습니다.",
-      "메타는 3분기 매출 26% 성장을 기록했으나 법적 합의금으로 영업이익이 감소했으며, 저커버그의 지배력을 유지하면서 AI 자금을 조달하기 위해 무의결권 C주를 신설했습니다."
+      "AI 연구소 앤스로픽(Anthropic)의 IPO 가능성이 구체화되면서 초기 및 후속 투자자들의 지분 가치가 주목받고 있음.",
+      "앤스로픽의 기업가치가 연속 급등함에 따라 참여 VC 및 전략적 투자자들은 이미 막대한 장부상 수익을 확보한 상태임.",
+      "막대한 컴퓨팅 인프라 비용 지출에도 불구하고 글로벌 자본 시장에서 앤스로픽의 지분 프리미엄이 지속 유지되고 있음."
     ],
-    "business_insight": "중국발 오픈소스 AI의 급격한 역량 향상으로 사이버 방어 골든타임이 급감함에 따라 민관 협력이 필수가 되었으며, 빅테크는 막대한 AI 투자금을 확보하기 위해 지배구조를 방어하는 신규 주식 발행 방식을 적극 채택하고 있습니다.",
+    "business_insight": "생성형 AI 모델 개발에 막대한 현금이 소모되고 있음에도 프론티어 모델 랩에 대한 선제적 투자가 기록적인 장부 수익으로 입증되었으며, 향후 대규모 테크 IPO의 벤치마크가 될 전망이다.",
     "analyzed_by": "gemini-3.8-flash"
   },
   {
-    "media": "The Information",
-    "title": "Datadog Offered $4 Billion to Buy Cloud Security Startup ‘Upwind’",
-    "link": "https://www.theinformation.com/articles/datadog-offered-buy-security-startup-upwind-nearly-4-billion",
-    "canonical_url": "https://www.theinformation.com/articles/datadog-offered-buy-security-startup-upwind-nearly-4-billion",
-    "published_at": "2026-10-22T17:27:13",
-    "summary": "Enterprise software firm Datadog recently offered to buy Israeli cloud cybersecurity startup Upwind Security for nearly $4 billion, according to someone with direct knowledge of the talks, the latest sign of white-hot interest in such firms. Upwind has fielded other takeover attempts from multiple bidders in recent months but hasn’t accepted any offers. It is finalizing a $300 million funding round at a roughly $3.8 billion valuation, meaning the Datadog offer doesn’t carry much of a premium over the private valuation, said two people with knowledge of the situation. The startup sells software to keep tabs on applications, including so-called AI agents, that run in the cloud and to detect and automatically respond to potential evidence of hacks or breaches.",
-    "score": 72,
+    "media": "TechCrunch",
+    "title": "Agent cloud startup Daytona hits $1B valuation backed by FirstMark and a who’s who of angels",
+    "link": "https://techcrunch.com/2026/10/23/agent-cloud-startup-daytona-hits-1b-valuation-backed-by-firstmark-and-a-whos-who-of-angels/",
+    "canonical_url": "https://techcrunch.com/2026/10/23/agent-cloud-startup-daytona-hits-1b-valuation-backed-by-firstmark-and-a-whos-who-of-angels/",
+    "published_at": "2026-10-23T16:26:29",
+    "summary": "Daytona is building a cloud for agents that's like giving every agent its own computer. It has attracted founders of Stripe, Perplextity, Datadog, Mercor, and others as angels, it says.",
+    "score": 33,
     "score_breakdown": {
-      "total_score": 72,
-      "impact": 35,
-      "business": 25,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 3,
-    "is_primary": true,
-    "korean_title": "데이터독, 클라우드 보안 스타트업 '업윈드'에 40억 달러 인수 제안",
-    "summary_3_lines": [
-      "엔터프라이즈 소프트웨어 기업 데이터독이 이스라엘 클라우드 보안 스타트업 업윈드 시큐리티(Upwind Security)에 약 40억 달러(약 5조 5천억 원) 규모의 인수를 제안했습니다.",
-      "업윈드는 클라우드에서 실행되는 AI 에이전트 및 애플리케이션을 모니터링하고 침해 위협을 자동 감지·대응하는 소프트웨어를 제공하며 여러 곳의 인수 러브콜을 받고 있습니다.",
-      "현재 업윈드는 38억 달러 기업가치로 3억 달러 규모의 투자 유치를 마무리 중이어서 데이터독의 제안에 큰 프리미엄이 붙지 않아 공식 수락하지 않은 상태입니다."
-    ],
-    "business_insight": "클라우드 환경 내 AI 에이전트 모니터링과 보안이 핵심 인프라로 급부상하면서, 옵저버빌리티 플랫폼 기업들의 대규모 보안 스타트업 인수 경쟁이 더욱 치열해지고 있습니다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "The Information",
-    "title": "SB Energy Considers Waiting Until December or Later for an IPO",
-    "link": "https://www.theinformation.com/articles/sb-energy-considers-waiting-december-later-ipo",
-    "canonical_url": "https://www.theinformation.com/articles/sb-energy-considers-waiting-december-later-ipo",
-    "published_at": "2026-10-22T17:51:31",
-    "summary": "SB Energy, the SoftBank Group–controlled developer of a massive planned Ohio data center project for OpenAI, is considering going public in December or possibly waiting until next year, according to people familiar with the discussions. That is a later timeline than previously expected. The data center developer was aiming to go public as soon as September, The Information reported in August . But since then, the public market has soured on initial public offerings from data center and AI cloud companies. Australian cloud firm Firmus yanked its IPO plans earlier this month, and others are considering delaying their offerings.",
-    "score": 61,
-    "score_breakdown": {
-      "total_score": 61,
-      "impact": 24,
-      "business": 25,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 4,
-    "is_primary": true,
-    "korean_title": "소프트뱅크 산하 SB에너지, 시장 침체로 IPO 일정 12월 이후로 연기 검토",
-    "summary_3_lines": [
-      "소프트뱅크 그룹 산하이자 오하이오주에서 대규모 오픈AI 데이터센터 프로젝트를 개발 중인 SB에너지가 IPO 시점을 12월 또는 내년으로 연기하는 방안을 검토 중입니다.",
-      "당초 올해 9월 조기 상장을 목표로 했으나, 최근 데이터센터 및 AI 클라우드 섹터 전반에 대한 공모주 시장의 투자 심리가 냉각되면서 일정 조정이 불가피해졌습니다.",
-      "호주 클라우드 기업 퍼머스(Firmus)가 이달 초 IPO 계획을 철회하는 등 관련 인프라 기업들의 상장 지연 움직임이 확산되고 있습니다."
-    ],
-    "business_insight": "AI 인프라 및 데이터센터 관련 기업들의 자금 조달 수요는 여전히 높으나, 수익성 입증에 대한 공모 시장의 눈높이가 엄격해지면서 무리한 조기 상장 대신 시장 회복을 기다리는 전략적 지연이 늘고 있습니다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "The Information",
-    "title": "Utopai Becomes a Unicorn as Video AI Takes Off",
-    "link": "https://www.theinformation.com/articles/utopai-becomes-unicorn-video-ai-takes",
-    "canonical_url": "https://www.theinformation.com/articles/utopai-becomes-unicorn-video-ai-takes",
-    "published_at": "2026-10-22T14:01:22",
-    "summary": "While much of the AI industry has fixated on new personal AI assistants from Meta and OpenAI , video AI is enjoying a quiet renaissance. Hollywood mogul Jeffrey Katzenberg is teaming up with the former head of OpenAI’s Sora app to launch a new AI film company . Startup Higgsfield quadrupled its valuation to $5.4 billion in August. And Kling AI , the video unit of Chinese social media giant Kuaishou Technology , raised nearly $3 billion at a $15 billion valuation over the summer. The latest video AI company to seize this moment is Utopai Studios , a 4-year-old film startup based in Mountain View, Calif. Utopai closed a funding round for $60 million that valued it at $1 billion and has already received term sheets for a subsequent round that would value the company at $2 billion to $3 billion, according to someone close to the company. The enthusiasm for video AI startups follows improvements in the quality and length of the clips that video AI models can generate. In September, Higgsfield announced that it had crossed $1 billion in annualized revenue, showing that the technology has serious commercial potential.",
-    "score": 56,
-    "score_breakdown": {
-      "total_score": 56,
-      "impact": 35,
+      "total_score": 33,
+      "impact": 12,
       "business": 9,
       "development": 5,
       "recency": 7,
       "original": 0
     },
+    "rank": 3,
+    "is_primary": true,
+    "korean_title": "AI 에이전트 인프라 스타트업 데이토나, 유수 창업자들 투자 속 10억 달러 유니콘 등극",
+    "summary_3_lines": [
+      "AI 에이전트 전용 클라우드 인프라를 구축하는 데이토나(Daytona)가 10억 달러(약 1조 4천억 원) 기업가치로 투자 유치에 성공함.",
+      "퍼스트마크가 투자를 주도했으며 스트라이프, 퍼플렉시티, 데이터독 등 주요 빅테크 창업자들이 엔젤 투자자로 대거 참여함.",
+      "각 AI 에이전트에게 독립된 가상 컴퓨터 환경을 제공하여 자율적 연산 및 작업 격리를 지원하는 아키텍처를 핵심 경쟁력으로 내세움."
+    ],
+    "business_insight": "단순 LLM 활용을 넘어 자율 실행형 AI 에이전트가 본격 확산되면서, 에이전트 전용 런타임 및 가상화 인프라가 B2B 클라우드 시장의 차세대 핵심 격전지로 부상하고 있다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "TechCrunch",
+    "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
+    "link": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+    "canonical_url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+    "published_at": "2026-10-23T23:05:49",
+    "summary": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work.",
+    "score": 27,
+    "score_breakdown": {
+      "total_score": 27,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true,
+    "korean_title": "오픈AI, 심각한 안전 리스크 이유로 '실시간 웹 데이터 기반 AI 학습' 전면 중단 선언",
+    "summary_3_lines": [
+      "오픈AI가 '심각한 위험(significant risks)'을 근거로 향후 프론티어 AI 모델의 실시간 웹 크롤링 및 인터넷 데이터 학습을 중단한다고 밝힘.",
+      "불과 몇 주 전 내부 엔지니어가 인터넷 차단 접근 방식의 실효성에 의문을 제기했으나 이를 뒤집고 전격 결정을 내림.",
+      "웹 기반 데이터 오염, 프롬프트 주입 및 보안 취약점을 차단하고 모델 정렬(alignment) 통제력을 높이기 위한 조치로 해석됨."
+    ],
+    "business_insight": "비정형 개방형 웹 데이터의 보안 및 저작권 리스크가 임계점에 도달함에 따라, 빅테크의 AI 학습 패러다임이 고품질 합성 데이터 및 폐쇄형 검증 데이터 중심으로 급속히 전환될 것이다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
+    "link": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
+    "canonical_url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
+    "published_at": "2026-10-23T21:59:19",
+    "summary": "The robots, stomping their little feet and making tiny R2-D2 noises, sat, fell down dead for a \"nap,\" and summersaulted on voice command.",
+    "score": 27,
+    "score_breakdown": {
+      "total_score": 27,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
     "rank": 5,
     "is_primary": true,
-    "korean_title": "비디오 AI 스타트업 유토파이, 10억 달러 가치 인정받으며 유니콘 등극",
+    "korean_title": "젠슨 황 엔비디아 CEO 시연 효과… 음성 제어 '마이크로덕' 로봇 2만 대 완판",
     "summary_3_lines": [
-      "퍼스널 AI 비서 경쟁 속에서 생성 품질과 영상 길이가 대폭 개선된 비디오 AI 분야가 조용한 르네상스를 맞이하고 있습니다.",
-      "미국 캘리포니아 마운틴뷰 기반의 영화 제작 스타트업 유토파이(Utopai Studios)가 6,000만 달러 규모의 투자를 유치하며 기업가치 10억 달러의 유니콘 반열에 올랐습니다.",
-      "힉스필드(Higgsfield)의 연환산 매출 10억 달러 돌파와 중국 콰이쇼우의 클링 AI(Kling AI) 대규모 펀딩 등 비디오 AI의 상업적 수익화 잠재력이 시장에서 강력히 입증되고 있습니다."
+      "젠슨 황 엔비디아 CEO가 공식 석상에서 소형 '마이크로덕(Microduck)' 로봇을 시연한 후 해당 제품이 2만 대 완판을 기록함.",
+      "해당 로봇은 발을 구르고 음향을 내며 음성 명령에 따라 착석, 낮잠 흉내, 공중제비 등의 동작을 부드럽게 구현함.",
+      "엔비디아가 주도하는 피지컬 AI(Physical AI) 담론과 결합되어 연말 소비자 로보틱스 시장에서 바이럴 흥행을 견인함."
     ],
-    "business_insight": "텍스트·음성 기반 보조 모델에 이어 엔터테인먼트 및 미디어 제작 현장에 직접 투입 가능한 영상 생성 AI가 확실한 수익 지표를 증명하며 차세대 고가치 투자처로 급부상하고 있습니다.",
+    "business_insight": "고도화된 임베디드 AI와 소형 액추에이터 제어 기술이 완구형 폼팩터와 결합하면서, 피지컬 AI의 대중적 수요 검증과 저비용 소비자 로보틱스 시장의 상업화 잠재력을 입증했다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "Ars Technica",
+    "title": "The reactor meant to showcase nuclear’s comeback keeps hitting problems",
+    "link": "https://arstechnica.com/tech-policy/2026/10/safety-concerns-cloud-americas-flagship-nuclear-restart/",
+    "canonical_url": "https://arstechnica.com/tech-policy/2026/10/safety-concerns-cloud-americas-flagship-nuclear-restart/",
+    "published_at": "2026-10-23T13:43:21",
+    "summary": "A contractor fell into a reactor cavity and a bundle of fuel rods almost fell over.",
+    "score": 21,
+    "score_breakdown": {
+      "total_score": 21,
+      "impact": 0,
+      "business": 9,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true,
+    "korean_title": "원전 르네상스의 상징이었던 신규 원자로, 안전 사고 잇따르며 난항",
+    "summary_3_lines": [
+      "차세대 원전 부흥의 핵심 시험대로 주목받던 원자로 프로젝트에서 심각한 안전 관리 문제가 연속 발생함.",
+      "작업자가 원자로 내부 공동에 추락하고 핵연료봉 다발이 전도될 뻔하는 등 위험 수위가 높은 사고가 보고됨.",
+      "시공 및 운영 단계에서의 결함 노출과 규제 당국의 현장 감독 강화로 인해 상용 가동 일정 지연이 불가피해짐."
+    ],
+    "business_insight": "글로벌 원전 재도입 흐름 속에서 발생한 안전 관리 결함은 인허가 지연과 자본 비용 증가로 직결되므로, 차세대 원전 사업자들의 엄격한 시공 및 품질 관리 체계 재정비가 요구됩니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Review: Crystal Lake suffers a bit from its obsession with Pam Voorhees",
+    "link": "https://arstechnica.com/culture/2026/10/review-crystal-lake-suffers-a-bit-from-its-obsession-with-pam-voorhees/",
+    "canonical_url": "https://arstechnica.com/culture/2026/10/review-crystal-lake-suffers-a-bit-from-its-obsession-with-pam-voorhees/",
+    "published_at": "2026-10-23T11:15:03",
+    "summary": "Friday the 13th prequel series based on Jason’s mom drags at first, then hits a vein.",
+    "score": 18,
+    "score_breakdown": {
+      "total_score": 18,
+      "impact": 0,
+      "business": 9,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true,
+    "korean_title": "[리뷰] '13일의 금요일' 프리퀄 '크리스탈 레이크', 초반 부진 딛고 장르적 쾌감 확보",
+    "summary_3_lines": [
+      "고전 공포 IP '13일의 금요일'의 프리퀄 시리즈 '크리스탈 레이크'의 첫 평가가 공개됨.",
+      "제이슨의 모친인 패멀라 부히스의 서사에 지나치게 집중한 탓에 도입부 전개가 다소 늘어진다는 지적을 받음.",
+      "중반부 이후 슬래셔 장르 본연의 긴장감과 몰입도를 끌어올리며 원작 팬덤을 만족시킬 동력을 확보함."
+    ],
+    "business_insight": "검증된 레거시 IP 기반 프리퀄 제작은 초기 모객에 유리하나, 캐릭터 배경 설명에 과도하게 치중할 경우 장르적 재미가 반감될 수 있어 전개 속도의 완급 조절이 핵심 경쟁력으로 작용합니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Rocket Report: SpaceX says no thanks to military launches; Spanish rocket nearly ready",
+    "link": "https://arstechnica.com/space/2026/10/rocket-report-spacex-says-no-thanks-to-military-launches-spanish-rocket-nearly-ready/",
+    "canonical_url": "https://arstechnica.com/space/2026/10/rocket-report-spacex-says-no-thanks-to-military-launches-spanish-rocket-nearly-ready/",
+    "published_at": "2026-10-23T11:00:57",
+    "summary": "\"We believe Canada should be able to reach orbit on its own terms.\"",
+    "score": 17,
+    "score_breakdown": {
+      "total_score": 17,
+      "impact": 0,
+      "business": 0,
+      "development": 8,
+      "recency": 4,
+      "original": 5
+    },
+    "rank": 3,
+    "is_primary": true,
+    "korean_title": "[로켓 리포트] 스페이스X의 군사 발사 선긋기와 스페인 소형 발사체 데뷔 임박",
+    "summary_3_lines": [
+      "스페이스X가 특정 군사 위성 발사 수요에 대해 신중한 입장을 유지하는 가운데 상업 및 자체 인프라 중심 기조를 재확인함.",
+      "스페인의 민간 우주 기업이 개발 중인 신형 로켓이 최종 준비 단계에 돌입하며 유럽 발사체 경쟁에 합류함.",
+      "캐나다를 비롯한 글로벌 주요국들이 독자적 궤도 진입 역량 확보를 표명하며 우주 주권 강화 움직임이 뚜렷해짐."
+    ],
+    "business_insight": "발사체 시장이 스페이스X의 과점 구조에서 유럽 민간 스타트업 및 각국 자체 발사 인프라 구축으로 다변화됨에 따라 위성 발사 비용과 접근성 측면에서 새로운 공급망 옵션이 창출되고 있습니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Everybody panic: A Valve developer said \"HLX\" in public",
+    "link": "https://arstechnica.com/gaming/2026/10/everybody-panic-a-valve-developer-said-hlx-in-public/",
+    "canonical_url": "https://arstechnica.com/gaming/2026/10/everybody-panic-a-valve-developer-said-hlx-in-public/",
+    "published_at": "2026-10-23T16:35:00",
+    "summary": "Sound designer lets Half Life-related codename slip at a conference.",
+    "score": 16,
+    "score_breakdown": {
+      "total_score": 16,
+      "impact": 0,
+      "business": 9,
+      "development": 0,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true,
+    "korean_title": "밸브 개발자의 'HLX' 말실수, 차세대 '하프라이프' 신작 기대감 증폭",
+    "summary_3_lines": [
+      "밸브(Valve)의 사운드 디자이너가 공식 콘퍼런스 도중 비공개 프로젝트 코드명 'HLX'를 실수로 발언함.",
+      "'HLX'는 내부 유출 데이터 및 업계 분석을 통해 차세대 하프라이프 관련 프로젝트로 알려진 명칭임.",
+      "단 한 차례의 언급만으로도 전 세계 게임 커뮤니티와 주요 미디어에서 후속작 개발의 결정적 증거로 받아들여짐."
+    ],
+    "business_insight": "밸브의 대형 플래그십 타이틀은 자체 플랫폼 스팀의 생태계 확장뿐 아니라 차세대 하드웨어 보급의 견인차 역할을 하므로, 신작 파이프라인의 실체화는 PC 및 VR 게이밍 시장에 중대한 모멘텀이 될 수 있습니다.",
+    "analyzed_by": "gemini-3.8-flash"
+  },
+  {
+    "media": "Ars Technica",
+    "title": "NASA updates lander plans for Moon landings, finally solves long-festering Orion issue",
+    "link": "https://arstechnica.com/space/2026/10/nasa-updates-lander-plans-for-moon-landings-finally-solves-long-festering-orion-issue/",
+    "canonical_url": "https://arstechnica.com/space/2026/10/nasa-updates-lander-plans-for-moon-landings-finally-solves-long-festering-orion-issue/",
+    "published_at": "2026-10-23T22:48:25",
+    "summary": "\"We have the mandate, we have the resources, and the support from our stakeholders.\"",
+    "score": 15,
+    "score_breakdown": {
+      "total_score": 15,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 5,
+    "is_primary": true,
+    "korean_title": "NASA, 달 착륙선 전략 재정비 및 오리온 캡슐 열차폐막 결함 최종 해결",
+    "summary_3_lines": [
+      "NASA가 유인 달 착륙 프로그램 '아르테미스'의 착륙선 개발 일정을 최신화하고 임무 수행 로드맵을 확정함.",
+      "아르테미스 1호 비행 당시 드러났던 오리온(Orion) 우주선의 고질적인 열차폐막 마모 문제를 공학적으로 해결함.",
+      "확고한 예산 배정과 이해관계자들의 지지를 바탕으로 향후 계획된 유인 비행 일정의 기술적 신뢰도를 확보함."
+    ],
+    "business_insight": "유인 우주선의 핵심 안전 이슈가 해결되고 착륙선 전략이 구체화됨에 따라, 스페이스X·블루오리진 등 민간 상업 파트너들의 달 탐사 수주 사업 안정성과 공급망 예측 가능성이 크게 개선되었습니다.",
     "analyzed_by": "gemini-3.8-flash"
   }
 ]

@@ -1,0 +1,1822 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Daily Tech Insights: 2026-10-24 - 글로벌 5대 테크 미디어 핵심 큐레이션 및 AI 비즈니스 인사이트">
+  <title>Daily Tech Insights | 2026-10-24</title>
+  <style>
+    /* ==========================================================================
+       Design System Tokens (Discord Macro-Structure + Toss Tactile Clarity)
+       Pure Vanilla CSS3 / Zero Dependencies / High Accessibility
+       ========================================================================== */
+    :root {
+      --toss-blue: #3182f6;
+      --toss-blue-hover: #1b64da;
+      --toss-blue-subtle: rgba(49, 130, 246, 0.12);
+      --toss-blue-glow: rgba(49, 130, 246, 0.28);
+
+      --rail-width: 58px;
+      --sidebar-width: 232px;
+      --metadata-width: 260px;
+      --content-max-width: 860px;
+
+      /* Dark Theme (Default) */
+      --bg-app: #141518;
+      --bg-rail: #191a1d;
+      --bg-sidebar: #1e2024;
+      --bg-workspace: #25272c;
+      --surface-card: #2c2e35;
+      --surface-inset: #1a1b1f;
+      --surface-hover: #34373f;
+      --surface-active: #3c4049;
+
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-strong: rgba(255, 255, 255, 0.14);
+      --border-focus: rgba(49, 130, 246, 0.6);
+
+      --text-header: #f3f5f8;
+      --text-normal: #d1d5dd;
+      --text-muted: #8c93a0;
+      --text-link: #4593fc;
+
+      --shadow-card: 0 4px 18px rgba(0, 0, 0, 0.22);
+      --shadow-hover: 0 10px 32px rgba(0, 0, 0, 0.36);
+
+      --radius-card: 20px;
+      --radius-md: 14px;
+      --radius-sm: 10px;
+      --radius-pill: 9999px;
+
+      --font-stack: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      --spring-physics: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      --spring-tap: transform 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-app: #f2f4f7;
+      --bg-rail: #e4e7ed;
+      --bg-sidebar: #edf0f5;
+      --bg-workspace: #f8f9fb;
+      --surface-card: #ffffff;
+      --surface-inset: #f2f4f7;
+      --surface-hover: #e6ebf2;
+      --surface-active: #dbe1eb;
+
+      --border-subtle: rgba(0, 0, 0, 0.07);
+      --border-strong: rgba(0, 0, 0, 0.13);
+      --border-focus: rgba(49, 130, 246, 0.7);
+
+      --text-header: #191f28;
+      --text-normal: #333d4b;
+      --text-muted: #6b7684;
+      --text-link: #3182f6;
+
+      --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.06);
+      --shadow-hover: 0 8px 26px rgba(0, 0, 0, 0.12);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html, body {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      font-family: var(--font-stack);
+      background-color: var(--bg-app);
+      color: var(--text-normal);
+      line-height: 1.6;
+      word-break: keep-all;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Global App Shell Layout */
+    .discord-app-shell {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    /* ==========================================================================
+       Level 1: Global Rail (Streamlined Brand Home Control)
+       ========================================================================== */
+    .global-rail {
+      width: var(--rail-width);
+      min-width: var(--rail-width);
+      height: 100%;
+      background-color: var(--bg-rail);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 14px 0;
+      border-right: 1px solid var(--border-subtle);
+      z-index: 30;
+      flex-shrink: 0;
+    }
+
+    .rail-btn {
+      position: relative;
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      background-color: var(--toss-blue);
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      transition: var(--spring-physics);
+      box-shadow: 0 4px 14px var(--toss-blue-glow);
+    }
+
+    .rail-btn:hover {
+      transform: scale(1.06);
+      background-color: var(--toss-blue-hover);
+    }
+
+    .rail-btn:active {
+      transform: scale(0.94);
+    }
+
+    .rail-btn:focus-visible {
+      outline: 2px solid #ffffff;
+      outline-offset: 2px;
+    }
+
+    .rail-btn.active::before {
+      content: "";
+      position: absolute;
+      left: -8px;
+      width: 4px;
+      height: 28px;
+      border-radius: 0 4px 4px 0;
+      background-color: #ffffff;
+    }
+
+    /* ==========================================================================
+       Level 2: Context Sidebar (Search + Channels Navigation)
+       ========================================================================== */
+    .context-sidebar {
+      width: var(--sidebar-width);
+      min-width: var(--sidebar-width);
+      height: 100%;
+      background-color: var(--bg-sidebar);
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid var(--border-subtle);
+      z-index: 25;
+      flex-shrink: 0;
+      transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .server-header {
+      height: 52px;
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-subtle);
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: var(--text-header);
+    }
+
+    .server-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Sidebar Search Input */
+    .sidebar-search-box {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .search-input-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 10px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    .toss-search-input {
+      width: 100%;
+      height: 34px;
+      padding: 0 28px 0 28px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+      background-color: var(--surface-inset);
+      color: var(--text-header);
+      font-size: 0.82rem;
+      font-family: inherit;
+      outline: none;
+      transition: var(--spring-physics);
+    }
+
+    .toss-search-input:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 2px var(--toss-blue-subtle);
+    }
+
+    .search-clear-btn {
+      position: absolute;
+      right: 6px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: none;
+      background-color: var(--surface-hover);
+      color: var(--text-muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      transition: var(--spring-physics);
+    }
+
+    .search-clear-btn:hover {
+      color: var(--text-header);
+      background-color: var(--surface-active);
+    }
+
+    .channels-scroll {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .channel-category {
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      padding: 10px 8px 4px 8px;
+    }
+
+    .channel-item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 10px;
+      border-radius: 10px;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      transition: var(--spring-physics);
+      text-align: left;
+      font-family: inherit;
+    }
+
+    .channel-item:hover {
+      background-color: var(--surface-hover);
+      color: var(--text-header);
+    }
+
+    .channel-item.active {
+      background-color: var(--surface-active);
+      color: var(--text-header);
+      font-weight: 700;
+    }
+
+    .channel-item:focus-visible {
+      outline: 2px solid var(--toss-blue);
+      outline-offset: 1px;
+    }
+
+    .channel-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .channel-mark-badge {
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.68rem;
+      font-weight: 800;
+      color: #ffffff;
+      background-color: var(--toss-blue);
+    }
+    .channel-mark-badge.all { background-color: var(--toss-blue); }
+    .channel-mark-badge.verge { background-color: #e0005a; }
+    .channel-mark-badge.techcrunch { background-color: #029924; }
+    .channel-mark-badge.arstechnica { background-color: #ff4e00; }
+    .channel-mark-badge.mit { background-color: #333333; }
+    .channel-mark-badge.theinformation { background-color: #0d253f; }
+
+    .channel-name {
+      font-size: 0.86rem;
+      letter-spacing: -0.01em;
+    }
+
+    .channel-count {
+      font-size: 0.72rem;
+      background-color: var(--surface-inset);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    .channel-item.active .channel-count {
+      color: var(--text-header);
+      background-color: var(--surface-card);
+    }
+
+    .sidebar-user-tray {
+      height: 52px;
+      background-color: var(--bg-rail);
+      padding: 0 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .user-info-box {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .status-dot {
+      width: 9px;
+      height: 9px;
+      background-color: #23a55a;
+      border-radius: 50%;
+      box-shadow: 0 0 6px #23a55a;
+    }
+
+    .user-name-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-header);
+      line-height: 1.2;
+    }
+
+    .user-sub-label {
+      font-size: 0.68rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       Level 3: Primary Workspace (Briefing Header + Article Cards)
+       ========================================================================== */
+    .chat-workspace {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bg-workspace);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .workspace-header {
+      height: 52px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-subtle);
+      background-color: var(--bg-workspace);
+      z-index: 15;
+      flex-shrink: 0;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      border: 1px solid var(--border-subtle);
+      background-color: var(--surface-card);
+      color: var(--text-header);
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    .topic-pill {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: var(--text-header);
+    }
+
+    .topic-divider {
+      width: 1px;
+      height: 14px;
+      background-color: var(--border-strong);
+    }
+
+    .topic-desc {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .theme-toggle-btn {
+      padding: 6px 12px;
+      border-radius: 10px;
+      background-color: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-normal);
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--spring-physics);
+      font-family: inherit;
+    }
+
+    .theme-toggle-btn:hover {
+      background-color: var(--surface-hover);
+      transform: translateY(-1px);
+    }
+
+    .theme-toggle-btn:focus-visible {
+      outline: 2px solid var(--toss-blue);
+      outline-offset: 1px;
+    }
+
+    /* Scrollable Feed Container */
+    .messages-feed {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px 24px 60px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+    }
+
+    /* Streamlined Editorial Briefing Header */
+    .feed-hero {
+      width: 100%;
+      max-width: var(--content-max-width);
+      background: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-card);
+      padding: 20px 22px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .hero-badge-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .toss-tag {
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: var(--radius-pill);
+      background-color: var(--toss-blue-subtle);
+      color: var(--toss-blue);
+      letter-spacing: 0.02em;
+    }
+
+    .hero-date-badge {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+
+    .hero-count-badge {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-left: auto;
+    }
+
+    .hero-title {
+      font-size: 1.55rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      color: var(--text-header);
+      margin-bottom: 6px;
+      line-height: 1.25;
+    }
+
+    .hero-subtitle {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       Toss Article Cards (Clean Hierarchy & Typography)
+       ========================================================================== */
+    .toss-card {
+      width: 100%;
+      max-width: var(--content-max-width);
+      background-color: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-card);
+      padding: 22px 24px;
+      box-shadow: var(--shadow-card);
+      transition: var(--spring-physics);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .toss-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--border-strong);
+    }
+
+    .card-top-rail {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .media-identity {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .media-avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      color: #ffffff;
+      font-size: 0.76rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      flex-shrink: 0;
+    }
+    .media-avatar.verge { background: linear-gradient(135deg, #e0005a, #fa2d60); }
+    .media-avatar.techcrunch { background: linear-gradient(135deg, #029924, #00d235); }
+    .media-avatar.arstechnica { background: linear-gradient(135deg, #ff4e00, #ff8100); }
+    .media-avatar.mit { background: linear-gradient(135deg, #222222, #444444); }
+    .media-avatar.theinformation { background: linear-gradient(135deg, #0d253f, #1b497a); }
+
+    .media-name {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--text-header);
+    }
+
+    .channel-slug {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .toss-pill-link {
+      font-size: 0.8rem;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      background-color: var(--toss-blue-subtle);
+      color: var(--toss-blue);
+      text-decoration: none;
+      transition: var(--spring-physics);
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .toss-pill-link:hover {
+      background-color: var(--toss-blue);
+      color: #ffffff;
+      transform: scale(1.03);
+    }
+
+    .toss-pill-link:focus-visible {
+      outline: 2px solid var(--toss-blue);
+      outline-offset: 2px;
+    }
+
+    .card-headline {
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      color: var(--text-header);
+      line-height: 1.4;
+    }
+
+    /* Inset Summary Box */
+    .toss-surface-box {
+      background-color: var(--surface-inset);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .section-badge {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .summary-bullet-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .summary-bullet {
+      position: relative;
+      padding-left: 16px;
+      font-size: 0.92rem;
+      color: var(--text-normal);
+      line-height: 1.58;
+    }
+
+    .summary-bullet::before {
+      content: "•";
+      position: absolute;
+      left: 2px;
+      color: var(--toss-blue);
+      font-weight: 900;
+      font-size: 1.15rem;
+      line-height: 1;
+    }
+
+    /* AI Business Insight Callout */
+    .toss-insight-card {
+      background-color: var(--toss-blue-subtle);
+      border-left: 3px solid var(--toss-blue);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 12px 16px;
+    }
+
+    .insight-pill {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--toss-blue);
+      margin-bottom: 6px;
+    }
+
+    .insight-description {
+      font-size: 0.91rem;
+      font-weight: 600;
+      color: var(--text-header);
+      line-height: 1.58;
+    }
+
+    .card-footer-action {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 2px;
+    }
+
+    .toss-secondary-btn {
+      border: 1px solid var(--border-subtle);
+      background-color: var(--surface-inset);
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: var(--spring-physics);
+      font-family: inherit;
+    }
+
+    .toss-secondary-btn:hover {
+      background-color: var(--surface-hover);
+      color: var(--text-header);
+    }
+
+    .toss-secondary-btn.copied {
+      background-color: var(--toss-blue);
+      color: #ffffff;
+      border-color: var(--toss-blue);
+    }
+
+    .reading-time {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* No-Results State */
+    .toss-empty-state {
+      width: 100%;
+      max-width: var(--content-max-width);
+      background-color: var(--surface-card);
+      border: 1px dashed var(--border-strong);
+      border-radius: var(--radius-card);
+      padding: 48px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 12px;
+    }
+
+    .empty-icon {
+      font-size: 2.2rem;
+      opacity: 0.8;
+    }
+
+    .empty-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text-header);
+    }
+
+    .empty-desc {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    /* ==========================================================================
+       Level 4: Metadata Panel (System Indicators & Publisher Status)
+       ========================================================================== */
+    .metadata-panel {
+      width: var(--metadata-width);
+      min-width: var(--metadata-width);
+      height: 100%;
+      background-color: var(--bg-sidebar);
+      border-left: 1px solid var(--border-subtle);
+      padding: 16px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      overflow-y: auto;
+      flex-shrink: 0;
+    }
+
+    .meta-group-title {
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .metric-card {
+      background-color: var(--surface-card);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .metric-label {
+      font-size: 0.73rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .metric-value {
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: var(--toss-blue);
+      letter-spacing: -0.02em;
+    }
+
+    .metric-subtext {
+      font-size: 0.68rem;
+      color: var(--text-muted);
+    }
+
+    .feed-status-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 10px;
+      border-radius: 8px;
+      background-color: var(--surface-card);
+      font-size: 0.78rem;
+      font-weight: 700;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .status-source-name {
+      color: var(--text-header);
+    }
+
+    .status-badge-active {
+      color: #23a55a;
+      font-size: 0.73rem;
+      font-weight: 700;
+    }
+
+    .status-badge-warning {
+      color: #f59f00;
+      font-size: 0.73rem;
+      font-weight: 700;
+    }
+
+    .status-badge-error {
+      color: #fa5252;
+      font-size: 0.73rem;
+      font-weight: 700;
+    }
+
+    /* Toast Notification */
+    .toss-toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background-color: #191f28;
+      color: #ffffff;
+      padding: 10px 18px;
+      border-radius: var(--radius-pill);
+      font-size: 0.85rem;
+      font-weight: 700;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+      z-index: 100;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    [data-theme="light"] .toss-toast {
+      background-color: #333d4b;
+    }
+
+    .toss-toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* Drawer Backdrop for Mobile */
+    .drawer-backdrop {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.45);
+      z-index: 24;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    /* ==========================================================================
+       Responsive Breakpoints
+       ========================================================================== */
+    @media (max-width: 1180px) {
+      .metadata-panel {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .global-rail {
+        display: none;
+      }
+      .mobile-menu-btn {
+        display: flex;
+      }
+      .context-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        transform: translateX(-100%);
+        box-shadow: 4px 0 24px rgba(0, 0, 0, 0.4);
+      }
+      .context-sidebar.open {
+        transform: translateX(0);
+      }
+      .drawer-backdrop.open {
+        display: block;
+        opacity: 1;
+      }
+      .messages-feed {
+        padding: 14px 14px 40px 14px;
+        gap: 14px;
+      }
+      .feed-hero {
+        padding: 16px 16px;
+      }
+      .hero-title {
+        font-size: 1.35rem;
+      }
+      .toss-card {
+        padding: 18px 16px;
+        border-radius: 16px;
+      }
+      .card-headline {
+        font-size: 1.12rem;
+      }
+      .topic-desc {
+        display: none;
+      }
+    }
+
+    /* Accessibility: Reduced Motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="discord-app-shell">
+
+    <!-- Level 1: Global Rail (Deterministic Home / Reset Control) -->
+    <nav class="global-rail" aria-label="글로벌 홈 네비게이션">
+      <button type="button" class="rail-btn active" id="homeRailBtn" title="전체 브리핑 피드 (초기화)" aria-label="전체 브리핑 피드로 이동" onclick="resetAllFilters(this)">
+        ⚡
+      </button>
+    </nav>
+
+    <!-- Mobile Drawer Backdrop -->
+    <div class="drawer-backdrop" id="drawerBackdrop" onclick="closeMobileMenu()" aria-hidden="true"></div>
+
+    <!-- Level 2: Context Sidebar (Search + Channels) -->
+    <aside class="context-sidebar" aria-label="채널 네비게이션">
+      <div class="server-header">
+        <span class="server-badge">⚡ Tech Intel HQ</span>
+        <span style="font-size: 0.8rem; color: var(--toss-blue);" aria-hidden="true">✔</span>
+      </div>
+
+      <!-- Search Input -->
+      <div class="sidebar-search-box">
+        <div class="search-input-wrapper">
+          <span class="search-icon" aria-hidden="true">🔍</span>
+          <input
+            type="search"
+            id="searchInput"
+            class="toss-search-input"
+            placeholder="기사 및 키워드 검색..."
+            aria-label="기사 실시간 검색"
+            autocomplete="off"
+            oninput="handleSearch(this.value)"
+          >
+          <button type="button" id="searchClearBtn" class="search-clear-btn" aria-label="검색어 초기화" onclick="clearSearch()" style="display: none;">✕</button>
+        </div>
+      </div>
+
+      <div class="channels-scroll">
+        <div class="channel-category">데일리 피드</div>
+        <button type="button" class="channel-item active" data-channel="all" onclick="filterFeed('all', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge all">⚡</span>
+            <span class="channel-name">오늘의 브리핑</span>
+          </div>
+          <span class="channel-count">10</span>
+        </button>
+
+        <div class="channel-category">타겟 매체 채널</div>
+        <button type="button" class="channel-item" data-channel="verge" onclick="filterFeed('verge', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge verge">V</span>
+            <span class="channel-name">The Verge</span>
+          </div>
+          <span class="channel-count" id="channel-count-verge">0</span>
+        </button>
+        <button type="button" class="channel-item" data-channel="techcrunch" onclick="filterFeed('techcrunch', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge techcrunch">TC</span>
+            <span class="channel-name">TechCrunch</span>
+          </div>
+          <span class="channel-count" id="channel-count-techcrunch">5</span>
+        </button>
+        <button type="button" class="channel-item" data-channel="arstechnica" onclick="filterFeed('arstechnica', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge arstechnica">AT</span>
+            <span class="channel-name">Ars Technica</span>
+          </div>
+          <span class="channel-count" id="channel-count-arstechnica">5</span>
+        </button>
+        <button type="button" class="channel-item" data-channel="mit" onclick="filterFeed('mit', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge mit">MIT</span>
+            <span class="channel-name">MIT Tech Review</span>
+          </div>
+          <span class="channel-count" id="channel-count-mit">0</span>
+        </button>
+        <button type="button" class="channel-item" data-channel="theinformation" onclick="filterFeed('theinformation', this)">
+          <div class="channel-left">
+            <span class="channel-mark-badge theinformation">TI</span>
+            <span class="channel-name">The Information</span>
+          </div>
+          <span class="channel-count" id="channel-count-theinformation">0</span>
+        </button>
+      </div>
+
+      <div class="sidebar-user-tray">
+        <div class="user-info-box">
+          <div class="status-dot" aria-hidden="true"></div>
+          <div>
+            <div class="user-name-label">Zero-Capital Agent</div>
+            <div class="user-sub-label">GitHub Actions 파이프라인</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Level 3: Primary Workspace -->
+    <main class="chat-workspace">
+      <header class="workspace-header">
+        <div class="header-left">
+          <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="채널 메뉴 열기" aria-expanded="false" onclick="toggleMobileMenu()">
+            ☰
+          </button>
+          <div class="topic-pill">
+            <span id="headerTopicTitle">오늘의 브리핑</span>
+            <div class="topic-divider" aria-hidden="true"></div>
+            <span class="topic-desc">주요 테크 소식과 비즈니스 시사점을 한눈에.</span>
+          </div>
+        </div>
+        <div class="header-controls">
+          <button type="button" class="theme-toggle-btn" onclick="toggleTheme()" id="themeBtn" aria-label="다크/라이트 테마 전환">🌓 테마 전환</button>
+        </div>
+      </header>
+
+      <section class="messages-feed" id="feedContainer">
+        <!-- Editorial Briefing Header -->
+        <div class="feed-hero">
+          <div class="hero-badge-row">
+            <span class="toss-tag">DAILY INTEL</span>
+            <span class="hero-date-badge">2026-10-24</span>
+            <span class="hero-count-badge" id="heroArticleCount">총 10개 기사 큐레이션</span>
+          </div>
+          <h1 class="hero-title">Daily Tech Insights</h1>
+          <p class="hero-subtitle">
+            글로벌 5대 테크 미디어의 핵심 보도와 비즈니스 시사점을 AI로 정밀 분석하여 전해드립니다.
+          </p>
+        </div>
+
+        <!-- No Results Card -->
+        <div id="noResultsCard" class="toss-empty-state" style="display: none;">
+          <div class="empty-icon" aria-hidden="true">🔍</div>
+          <h3 class="empty-title">일치하는 기사가 없습니다</h3>
+          <p class="empty-desc">검색어를 변경하거나 선택된 매체 필터를 확인해 주세요.</p>
+          <button type="button" class="toss-pill-link" onclick="resetAllFilters()">전체 브리핑 보기</button>
+        </div>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="techcrunch" data-search="오우라, 경쟁사 울트라휴먼에 특허 침해 소송… 美 스마트링 독점 지위 수성 총력전 techcrunch 스마트링 선도 기업 오우라(oura)가 경쟁사 울트라휴먼(ultrahuman)을 상대로 신규 특허 침해 소송을 제기함. 오우라는 울트라휴먼의 최신 플래그십 &#x27;링 프로(ring pro)&#x27;가 자사의 핵심 기술 특허 2건을 침해했다고 주장함. 이번 제소는 울트라휴먼의 미국 스마트링 시장 본격 진입 및 점유율 확대를 강력히 억제하려는 조치로 풀이됨. 스마트링 시장 경쟁이 본격화됨에 따라 선점 기업인 오우라가 방대한 특허 포트폴리오를 무기화해 후발 주자들의 미국 시장 진입 장벽을 지속적으로 높이고 있다." id="article-1">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar techcrunch" aria-hidden="true">TC</span>
+              <div class="media-meta">
+                <span class="media-name">TechCrunch</span>
+                <span class="channel-slug">#techcrunch-feed</span>
+              </div>
+            </div>
+            <a href="https://techcrunch.com/2026/10/22/oura-sues-rival-ultrahuman-again-threatening-its-u-s-smart-ring-comeback/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="오우라, 경쟁사 울트라휴먼에 특허 침해 소송… 美 스마트링 독점 지위 수성 총력전 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">오우라, 경쟁사 울트라휴먼에 특허 침해 소송… 美 스마트링 독점 지위 수성 총력전</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">스마트링 선도 기업 오우라(Oura)가 경쟁사 울트라휴먼(Ultrahuman)을 상대로 신규 특허 침해 소송을 제기함.</li>
+              <li class="summary-bullet">오우라는 울트라휴먼의 최신 플래그십 &#x27;링 프로(Ring Pro)&#x27;가 자사의 핵심 기술 특허 2건을 침해했다고 주장함.</li>
+              <li class="summary-bullet">이번 제소는 울트라휴먼의 미국 스마트링 시장 본격 진입 및 점유율 확대를 강력히 억제하려는 조치로 풀이됨.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">스마트링 시장 경쟁이 본격화됨에 따라 선점 기업인 오우라가 방대한 특허 포트폴리오를 무기화해 후발 주자들의 미국 시장 진입 장벽을 지속적으로 높이고 있다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://techcrunch.com/2026/10/22/oura-sues-rival-ultrahuman-again-threatening-its-u-s-smart-ring-comeback/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 54초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="techcrunch" data-search="ipo 가시화된 앤스로픽, 초기 투자자들의 평가 가치와 미실현 수익 급등 techcrunch ai 연구소 앤스로픽(anthropic)의 ipo 가능성이 구체화되면서 초기 및 후속 투자자들의 지분 가치가 주목받고 있음. 앤스로픽의 기업가치가 연속 급등함에 따라 참여 vc 및 전략적 투자자들은 이미 막대한 장부상 수익을 확보한 상태임. 막대한 컴퓨팅 인프라 비용 지출에도 불구하고 글로벌 자본 시장에서 앤스로픽의 지분 프리미엄이 지속 유지되고 있음. 생성형 ai 모델 개발에 막대한 현금이 소모되고 있음에도 프론티어 모델 랩에 대한 선제적 투자가 기록적인 장부 수익으로 입증되었으며, 향후 대규모 테크 ipo의 벤치마크가 될 전망이다." id="article-2">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar techcrunch" aria-hidden="true">TC</span>
+              <div class="media-meta">
+                <span class="media-name">TechCrunch</span>
+                <span class="channel-slug">#techcrunch-feed</span>
+              </div>
+            </div>
+            <a href="https://techcrunch.com/2026/10/23/what-some-of-anthropics-backers-are-reportedly-worth-before-its-ipo/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="IPO 가시화된 앤스로픽, 초기 투자자들의 평가 가치와 미실현 수익 급등 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">IPO 가시화된 앤스로픽, 초기 투자자들의 평가 가치와 미실현 수익 급등</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">AI 연구소 앤스로픽(Anthropic)의 IPO 가능성이 구체화되면서 초기 및 후속 투자자들의 지분 가치가 주목받고 있음.</li>
+              <li class="summary-bullet">앤스로픽의 기업가치가 연속 급등함에 따라 참여 VC 및 전략적 투자자들은 이미 막대한 장부상 수익을 확보한 상태임.</li>
+              <li class="summary-bullet">막대한 컴퓨팅 인프라 비용 지출에도 불구하고 글로벌 자본 시장에서 앤스로픽의 지분 프리미엄이 지속 유지되고 있음.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">생성형 AI 모델 개발에 막대한 현금이 소모되고 있음에도 프론티어 모델 랩에 대한 선제적 투자가 기록적인 장부 수익으로 입증되었으며, 향후 대규모 테크 IPO의 벤치마크가 될 전망이다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://techcrunch.com/2026/10/23/what-some-of-anthropics-backers-are-reportedly-worth-before-its-ipo/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 57초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="techcrunch" data-search="ai 에이전트 인프라 스타트업 데이토나, 유수 창업자들 투자 속 10억 달러 유니콘 등극 techcrunch ai 에이전트 전용 클라우드 인프라를 구축하는 데이토나(daytona)가 10억 달러(약 1조 4천억 원) 기업가치로 투자 유치에 성공함. 퍼스트마크가 투자를 주도했으며 스트라이프, 퍼플렉시티, 데이터독 등 주요 빅테크 창업자들이 엔젤 투자자로 대거 참여함. 각 ai 에이전트에게 독립된 가상 컴퓨터 환경을 제공하여 자율적 연산 및 작업 격리를 지원하는 아키텍처를 핵심 경쟁력으로 내세움. 단순 llm 활용을 넘어 자율 실행형 ai 에이전트가 본격 확산되면서, 에이전트 전용 런타임 및 가상화 인프라가 b2b 클라우드 시장의 차세대 핵심 격전지로 부상하고 있다." id="article-3">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar techcrunch" aria-hidden="true">TC</span>
+              <div class="media-meta">
+                <span class="media-name">TechCrunch</span>
+                <span class="channel-slug">#techcrunch-feed</span>
+              </div>
+            </div>
+            <a href="https://techcrunch.com/2026/10/23/agent-cloud-startup-daytona-hits-1b-valuation-backed-by-firstmark-and-a-whos-who-of-angels/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="AI 에이전트 인프라 스타트업 데이토나, 유수 창업자들 투자 속 10억 달러 유니콘 등극 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">AI 에이전트 인프라 스타트업 데이토나, 유수 창업자들 투자 속 10억 달러 유니콘 등극</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">AI 에이전트 전용 클라우드 인프라를 구축하는 데이토나(Daytona)가 10억 달러(약 1조 4천억 원) 기업가치로 투자 유치에 성공함.</li>
+              <li class="summary-bullet">퍼스트마크가 투자를 주도했으며 스트라이프, 퍼플렉시티, 데이터독 등 주요 빅테크 창업자들이 엔젤 투자자로 대거 참여함.</li>
+              <li class="summary-bullet">각 AI 에이전트에게 독립된 가상 컴퓨터 환경을 제공하여 자율적 연산 및 작업 격리를 지원하는 아키텍처를 핵심 경쟁력으로 내세움.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">단순 LLM 활용을 넘어 자율 실행형 AI 에이전트가 본격 확산되면서, 에이전트 전용 런타임 및 가상화 인프라가 B2B 클라우드 시장의 차세대 핵심 격전지로 부상하고 있다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://techcrunch.com/2026/10/23/agent-cloud-startup-daytona-hits-1b-valuation-backed-by-firstmark-and-a-whos-who-of-angels/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 60초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="techcrunch" data-search="오픈ai, 심각한 안전 리스크 이유로 &#x27;실시간 웹 데이터 기반 ai 학습&#x27; 전면 중단 선언 techcrunch 오픈ai가 &#x27;심각한 위험(significant risks)&#x27;을 근거로 향후 프론티어 ai 모델의 실시간 웹 크롤링 및 인터넷 데이터 학습을 중단한다고 밝힘. 불과 몇 주 전 내부 엔지니어가 인터넷 차단 접근 방식의 실효성에 의문을 제기했으나 이를 뒤집고 전격 결정을 내림. 웹 기반 데이터 오염, 프롬프트 주입 및 보안 취약점을 차단하고 모델 정렬(alignment) 통제력을 높이기 위한 조치로 해석됨. 비정형 개방형 웹 데이터의 보안 및 저작권 리스크가 임계점에 도달함에 따라, 빅테크의 ai 학습 패러다임이 고품질 합성 데이터 및 폐쇄형 검증 데이터 중심으로 급속히 전환될 것이다." id="article-4">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar techcrunch" aria-hidden="true">TC</span>
+              <div class="media-meta">
+                <span class="media-name">TechCrunch</span>
+                <span class="channel-slug">#techcrunch-feed</span>
+              </div>
+            </div>
+            <a href="https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="오픈AI, 심각한 안전 리스크 이유로 &#x27;실시간 웹 데이터 기반 AI 학습&#x27; 전면 중단 선언 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">오픈AI, 심각한 안전 리스크 이유로 &#x27;실시간 웹 데이터 기반 AI 학습&#x27; 전면 중단 선언</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">오픈AI가 &#x27;심각한 위험(significant risks)&#x27;을 근거로 향후 프론티어 AI 모델의 실시간 웹 크롤링 및 인터넷 데이터 학습을 중단한다고 밝힘.</li>
+              <li class="summary-bullet">불과 몇 주 전 내부 엔지니어가 인터넷 차단 접근 방식의 실효성에 의문을 제기했으나 이를 뒤집고 전격 결정을 내림.</li>
+              <li class="summary-bullet">웹 기반 데이터 오염, 프롬프트 주입 및 보안 취약점을 차단하고 모델 정렬(alignment) 통제력을 높이기 위한 조치로 해석됨.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">비정형 개방형 웹 데이터의 보안 및 저작권 리스크가 임계점에 도달함에 따라, 빅테크의 AI 학습 패러다임이 고품질 합성 데이터 및 폐쇄형 검증 데이터 중심으로 급속히 전환될 것이다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 63초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="techcrunch" data-search="젠슨 황 엔비디아 ceo 시연 효과… 음성 제어 &#x27;마이크로덕&#x27; 로봇 2만 대 완판 techcrunch 젠슨 황 엔비디아 ceo가 공식 석상에서 소형 &#x27;마이크로덕(microduck)&#x27; 로봇을 시연한 후 해당 제품이 2만 대 완판을 기록함. 해당 로봇은 발을 구르고 음향을 내며 음성 명령에 따라 착석, 낮잠 흉내, 공중제비 등의 동작을 부드럽게 구현함. 엔비디아가 주도하는 피지컬 ai(physical ai) 담론과 결합되어 연말 소비자 로보틱스 시장에서 바이럴 흥행을 견인함. 고도화된 임베디드 ai와 소형 액추에이터 제어 기술이 완구형 폼팩터와 결합하면서, 피지컬 ai의 대중적 수요 검증과 저비용 소비자 로보틱스 시장의 상업화 잠재력을 입증했다." id="article-5">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar techcrunch" aria-hidden="true">TC</span>
+              <div class="media-meta">
+                <span class="media-name">TechCrunch</span>
+                <span class="channel-slug">#techcrunch-feed</span>
+              </div>
+            </div>
+            <a href="https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="젠슨 황 엔비디아 CEO 시연 효과… 음성 제어 &#x27;마이크로덕&#x27; 로봇 2만 대 완판 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">젠슨 황 엔비디아 CEO 시연 효과… 음성 제어 &#x27;마이크로덕&#x27; 로봇 2만 대 완판</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">젠슨 황 엔비디아 CEO가 공식 석상에서 소형 &#x27;마이크로덕(Microduck)&#x27; 로봇을 시연한 후 해당 제품이 2만 대 완판을 기록함.</li>
+              <li class="summary-bullet">해당 로봇은 발을 구르고 음향을 내며 음성 명령에 따라 착석, 낮잠 흉내, 공중제비 등의 동작을 부드럽게 구현함.</li>
+              <li class="summary-bullet">엔비디아가 주도하는 피지컬 AI(Physical AI) 담론과 결합되어 연말 소비자 로보틱스 시장에서 바이럴 흥행을 견인함.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">고도화된 임베디드 AI와 소형 액추에이터 제어 기술이 완구형 폼팩터와 결합하면서, 피지컬 AI의 대중적 수요 검증과 저비용 소비자 로보틱스 시장의 상업화 잠재력을 입증했다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 58초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="arstechnica" data-search="원전 르네상스의 상징이었던 신규 원자로, 안전 사고 잇따르며 난항 ars technica 차세대 원전 부흥의 핵심 시험대로 주목받던 원자로 프로젝트에서 심각한 안전 관리 문제가 연속 발생함. 작업자가 원자로 내부 공동에 추락하고 핵연료봉 다발이 전도될 뻔하는 등 위험 수위가 높은 사고가 보고됨. 시공 및 운영 단계에서의 결함 노출과 규제 당국의 현장 감독 강화로 인해 상용 가동 일정 지연이 불가피해짐. 글로벌 원전 재도입 흐름 속에서 발생한 안전 관리 결함은 인허가 지연과 자본 비용 증가로 직결되므로, 차세대 원전 사업자들의 엄격한 시공 및 품질 관리 체계 재정비가 요구됩니다." id="article-6">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar arstechnica" aria-hidden="true">AT</span>
+              <div class="media-meta">
+                <span class="media-name">Ars Technica</span>
+                <span class="channel-slug">#arstechnica-feed</span>
+              </div>
+            </div>
+            <a href="https://arstechnica.com/tech-policy/2026/10/safety-concerns-cloud-americas-flagship-nuclear-restart/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="원전 르네상스의 상징이었던 신규 원자로, 안전 사고 잇따르며 난항 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">원전 르네상스의 상징이었던 신규 원자로, 안전 사고 잇따르며 난항</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">차세대 원전 부흥의 핵심 시험대로 주목받던 원자로 프로젝트에서 심각한 안전 관리 문제가 연속 발생함.</li>
+              <li class="summary-bullet">작업자가 원자로 내부 공동에 추락하고 핵연료봉 다발이 전도될 뻔하는 등 위험 수위가 높은 사고가 보고됨.</li>
+              <li class="summary-bullet">시공 및 운영 단계에서의 결함 노출과 규제 당국의 현장 감독 강화로 인해 상용 가동 일정 지연이 불가피해짐.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">글로벌 원전 재도입 흐름 속에서 발생한 안전 관리 결함은 인허가 지연과 자본 비용 증가로 직결되므로, 차세대 원전 사업자들의 엄격한 시공 및 품질 관리 체계 재정비가 요구됩니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://arstechnica.com/tech-policy/2026/10/safety-concerns-cloud-americas-flagship-nuclear-restart/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 52초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="arstechnica" data-search="[리뷰] &#x27;13일의 금요일&#x27; 프리퀄 &#x27;크리스탈 레이크&#x27;, 초반 부진 딛고 장르적 쾌감 확보 ars technica 고전 공포 ip &#x27;13일의 금요일&#x27;의 프리퀄 시리즈 &#x27;크리스탈 레이크&#x27;의 첫 평가가 공개됨. 제이슨의 모친인 패멀라 부히스의 서사에 지나치게 집중한 탓에 도입부 전개가 다소 늘어진다는 지적을 받음. 중반부 이후 슬래셔 장르 본연의 긴장감과 몰입도를 끌어올리며 원작 팬덤을 만족시킬 동력을 확보함. 검증된 레거시 ip 기반 프리퀄 제작은 초기 모객에 유리하나, 캐릭터 배경 설명에 과도하게 치중할 경우 장르적 재미가 반감될 수 있어 전개 속도의 완급 조절이 핵심 경쟁력으로 작용합니다." id="article-7">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar arstechnica" aria-hidden="true">AT</span>
+              <div class="media-meta">
+                <span class="media-name">Ars Technica</span>
+                <span class="channel-slug">#arstechnica-feed</span>
+              </div>
+            </div>
+            <a href="https://arstechnica.com/culture/2026/10/review-crystal-lake-suffers-a-bit-from-its-obsession-with-pam-voorhees/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="[리뷰] &#x27;13일의 금요일&#x27; 프리퀄 &#x27;크리스탈 레이크&#x27;, 초반 부진 딛고 장르적 쾌감 확보 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">[리뷰] &#x27;13일의 금요일&#x27; 프리퀄 &#x27;크리스탈 레이크&#x27;, 초반 부진 딛고 장르적 쾌감 확보</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">고전 공포 IP &#x27;13일의 금요일&#x27;의 프리퀄 시리즈 &#x27;크리스탈 레이크&#x27;의 첫 평가가 공개됨.</li>
+              <li class="summary-bullet">제이슨의 모친인 패멀라 부히스의 서사에 지나치게 집중한 탓에 도입부 전개가 다소 늘어진다는 지적을 받음.</li>
+              <li class="summary-bullet">중반부 이후 슬래셔 장르 본연의 긴장감과 몰입도를 끌어올리며 원작 팬덤을 만족시킬 동력을 확보함.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">검증된 레거시 IP 기반 프리퀄 제작은 초기 모객에 유리하나, 캐릭터 배경 설명에 과도하게 치중할 경우 장르적 재미가 반감될 수 있어 전개 속도의 완급 조절이 핵심 경쟁력으로 작용합니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://arstechnica.com/culture/2026/10/review-crystal-lake-suffers-a-bit-from-its-obsession-with-pam-voorhees/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 53초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="arstechnica" data-search="[로켓 리포트] 스페이스x의 군사 발사 선긋기와 스페인 소형 발사체 데뷔 임박 ars technica 스페이스x가 특정 군사 위성 발사 수요에 대해 신중한 입장을 유지하는 가운데 상업 및 자체 인프라 중심 기조를 재확인함. 스페인의 민간 우주 기업이 개발 중인 신형 로켓이 최종 준비 단계에 돌입하며 유럽 발사체 경쟁에 합류함. 캐나다를 비롯한 글로벌 주요국들이 독자적 궤도 진입 역량 확보를 표명하며 우주 주권 강화 움직임이 뚜렷해짐. 발사체 시장이 스페이스x의 과점 구조에서 유럽 민간 스타트업 및 각국 자체 발사 인프라 구축으로 다변화됨에 따라 위성 발사 비용과 접근성 측면에서 새로운 공급망 옵션이 창출되고 있습니다." id="article-8">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar arstechnica" aria-hidden="true">AT</span>
+              <div class="media-meta">
+                <span class="media-name">Ars Technica</span>
+                <span class="channel-slug">#arstechnica-feed</span>
+              </div>
+            </div>
+            <a href="https://arstechnica.com/space/2026/10/rocket-report-spacex-says-no-thanks-to-military-launches-spanish-rocket-nearly-ready/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="[로켓 리포트] 스페이스X의 군사 발사 선긋기와 스페인 소형 발사체 데뷔 임박 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">[로켓 리포트] 스페이스X의 군사 발사 선긋기와 스페인 소형 발사체 데뷔 임박</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">스페이스X가 특정 군사 위성 발사 수요에 대해 신중한 입장을 유지하는 가운데 상업 및 자체 인프라 중심 기조를 재확인함.</li>
+              <li class="summary-bullet">스페인의 민간 우주 기업이 개발 중인 신형 로켓이 최종 준비 단계에 돌입하며 유럽 발사체 경쟁에 합류함.</li>
+              <li class="summary-bullet">캐나다를 비롯한 글로벌 주요국들이 독자적 궤도 진입 역량 확보를 표명하며 우주 주권 강화 움직임이 뚜렷해짐.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">발사체 시장이 스페이스X의 과점 구조에서 유럽 민간 스타트업 및 각국 자체 발사 인프라 구축으로 다변화됨에 따라 위성 발사 비용과 접근성 측면에서 새로운 공급망 옵션이 창출되고 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://arstechnica.com/space/2026/10/rocket-report-spacex-says-no-thanks-to-military-launches-spanish-rocket-nearly-ready/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 56초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="arstechnica" data-search="밸브 개발자의 &#x27;hlx&#x27; 말실수, 차세대 &#x27;하프라이프&#x27; 신작 기대감 증폭 ars technica 밸브(valve)의 사운드 디자이너가 공식 콘퍼런스 도중 비공개 프로젝트 코드명 &#x27;hlx&#x27;를 실수로 발언함. &#x27;hlx&#x27;는 내부 유출 데이터 및 업계 분석을 통해 차세대 하프라이프 관련 프로젝트로 알려진 명칭임. 단 한 차례의 언급만으로도 전 세계 게임 커뮤니티와 주요 미디어에서 후속작 개발의 결정적 증거로 받아들여짐. 밸브의 대형 플래그십 타이틀은 자체 플랫폼 스팀의 생태계 확장뿐 아니라 차세대 하드웨어 보급의 견인차 역할을 하므로, 신작 파이프라인의 실체화는 pc 및 vr 게이밍 시장에 중대한 모멘텀이 될 수 있습니다." id="article-9">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar arstechnica" aria-hidden="true">AT</span>
+              <div class="media-meta">
+                <span class="media-name">Ars Technica</span>
+                <span class="channel-slug">#arstechnica-feed</span>
+              </div>
+            </div>
+            <a href="https://arstechnica.com/gaming/2026/10/everybody-panic-a-valve-developer-said-hlx-in-public/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="밸브 개발자의 &#x27;HLX&#x27; 말실수, 차세대 &#x27;하프라이프&#x27; 신작 기대감 증폭 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">밸브 개발자의 &#x27;HLX&#x27; 말실수, 차세대 &#x27;하프라이프&#x27; 신작 기대감 증폭</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">밸브(Valve)의 사운드 디자이너가 공식 콘퍼런스 도중 비공개 프로젝트 코드명 &#x27;HLX&#x27;를 실수로 발언함.</li>
+              <li class="summary-bullet">&#x27;HLX&#x27;는 내부 유출 데이터 및 업계 분석을 통해 차세대 하프라이프 관련 프로젝트로 알려진 명칭임.</li>
+              <li class="summary-bullet">단 한 차례의 언급만으로도 전 세계 게임 커뮤니티와 주요 미디어에서 후속작 개발의 결정적 증거로 받아들여짐.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">밸브의 대형 플래그십 타이틀은 자체 플랫폼 스팀의 생태계 확장뿐 아니라 차세대 하드웨어 보급의 견인차 역할을 하므로, 신작 파이프라인의 실체화는 PC 및 VR 게이밍 시장에 중대한 모멘텀이 될 수 있습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://arstechnica.com/gaming/2026/10/everybody-panic-a-valve-developer-said-hlx-in-public/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 56초 (예상)</span>
+          </div>
+        </article>
+
+        <!-- Toss-Style Tactile Article Card -->
+        <article class="toss-card" data-media="arstechnica" data-search="nasa, 달 착륙선 전략 재정비 및 오리온 캡슐 열차폐막 결함 최종 해결 ars technica nasa가 유인 달 착륙 프로그램 &#x27;아르테미스&#x27;의 착륙선 개발 일정을 최신화하고 임무 수행 로드맵을 확정함. 아르테미스 1호 비행 당시 드러났던 오리온(orion) 우주선의 고질적인 열차폐막 마모 문제를 공학적으로 해결함. 확고한 예산 배정과 이해관계자들의 지지를 바탕으로 향후 계획된 유인 비행 일정의 기술적 신뢰도를 확보함. 유인 우주선의 핵심 안전 이슈가 해결되고 착륙선 전략이 구체화됨에 따라, 스페이스x·블루오리진 등 민간 상업 파트너들의 달 탐사 수주 사업 안정성과 공급망 예측 가능성이 크게 개선되었습니다." id="article-10">
+          <div class="card-top-rail">
+            <div class="media-identity">
+              <span class="media-avatar arstechnica" aria-hidden="true">AT</span>
+              <div class="media-meta">
+                <span class="media-name">Ars Technica</span>
+                <span class="channel-slug">#arstechnica-feed</span>
+              </div>
+            </div>
+            <a href="https://arstechnica.com/space/2026/10/nasa-updates-lander-plans-for-moon-landings-finally-solves-long-festering-orion-issue/" target="_blank" rel="noopener noreferrer" class="toss-pill-link" aria-label="NASA, 달 착륙선 전략 재정비 및 오리온 캡슐 열차폐막 결함 최종 해결 원문 기사 열기">
+              원문 읽기 ↗
+            </a>
+          </div>
+
+          <h2 class="card-headline">NASA, 달 착륙선 전략 재정비 및 오리온 캡슐 열차폐막 결함 최종 해결</h2>
+
+          <div class="toss-surface-box">
+            <div class="section-badge">핵심 요약</div>
+            <ul class="summary-bullet-list">
+              <li class="summary-bullet">NASA가 유인 달 착륙 프로그램 &#x27;아르테미스&#x27;의 착륙선 개발 일정을 최신화하고 임무 수행 로드맵을 확정함.</li>
+              <li class="summary-bullet">아르테미스 1호 비행 당시 드러났던 오리온(Orion) 우주선의 고질적인 열차폐막 마모 문제를 공학적으로 해결함.</li>
+              <li class="summary-bullet">확고한 예산 배정과 이해관계자들의 지지를 바탕으로 향후 계획된 유인 비행 일정의 기술적 신뢰도를 확보함.</li>
+            </ul>
+          </div>
+
+          <div class="toss-insight-card">
+            <div class="insight-pill">
+              <span class="insight-icon" aria-hidden="true">💡</span>
+              <span class="insight-tag">AI 비즈니스 인사이트</span>
+            </div>
+            <p class="insight-description">유인 우주선의 핵심 안전 이슈가 해결되고 착륙선 전략이 구체화됨에 따라, 스페이스X·블루오리진 등 민간 상업 파트너들의 달 탐사 수주 사업 안정성과 공급망 예측 가능성이 크게 개선되었습니다.</p>
+          </div>
+
+          <div class="card-footer-action">
+            <button type="button" class="toss-secondary-btn copy-btn" onclick="copyArticleLink('https://arstechnica.com/space/2026/10/nasa-updates-lander-plans-for-moon-landings-finally-solves-long-festering-orion-issue/', this)" aria-label="원문 기사 링크 복사">
+              🔗 링크 복사
+            </button>
+            <span class="reading-time">소요시간 약 55초 (예상)</span>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- Level 4: Metadata Panel (Desktop Right Rail) -->
+    <aside class="metadata-panel" aria-label="시스템 지표 패널">
+      <div class="meta-group-title">시스템 지표</div>
+      <div class="metric-card">
+        <span class="metric-label">총 큐레이션 기사</span>
+        <span class="metric-value" id="metaVisibleCount">10개</span>
+        <span class="metric-subtext">기준 일자: 2026-10-24</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">인프라 운영 비용</span>
+        <span class="metric-value">$0.00</span>
+        <span class="metric-subtext">Zero-Capital 무인 아키텍처</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">예상 리딩 소요시간</span>
+        <span class="metric-value">약 10분</span>
+        <span class="metric-subtext">10개 기사 정독 기준</span>
+      </div>
+
+      <div class="meta-group-title">매체별 기사 현황</div>
+      <div class="feed-status-item">
+        <span class="status-source-name">The Verge</span>
+        <span class="status-badge-error" title="0/5건 (기사 없음)">0/5건 · 기사 없음 🔴</span>
+      </div>
+      <div class="feed-status-item">
+        <span class="status-source-name">TechCrunch</span>
+        <span class="status-badge-active" title="5/5건 큐레이션 완료">5/5건 완료 🟢</span>
+      </div>
+      <div class="feed-status-item">
+        <span class="status-source-name">Ars Technica</span>
+        <span class="status-badge-active" title="5/5건 큐레이션 완료">5/5건 완료 🟢</span>
+      </div>
+      <div class="feed-status-item">
+        <span class="status-source-name">MIT Tech Review</span>
+        <span class="status-badge-error" title="0/5건 (기사 없음)">0/5건 · 기사 없음 🔴</span>
+      </div>
+      <div class="feed-status-item">
+        <span class="status-source-name">The Information</span>
+        <span class="status-badge-error" title="0/5건 (기사 없음)">0/5건 · 기사 없음 🔴</span>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="tossToast" class="toss-toast" role="status" aria-live="polite">
+    원문 기사 링크가 복사되었습니다.
+  </div>
+
+  <script>
+    // State management
+    let activeChannel = 'all';
+    let searchQuery = '';
+
+    // Filter & Search composability
+    function applyFilters() {
+      const cards = document.querySelectorAll('.toss-card');
+      let visibleCount = 0;
+      const q = searchQuery.trim().toLowerCase();
+
+      cards.forEach(card => {
+        const mediaSlug = card.getAttribute('data-media');
+        const matchesChannel = (activeChannel === 'all' || mediaSlug === activeChannel);
+
+        let matchesQuery = true;
+        if (q.length > 0) {
+          const searchData = card.getAttribute('data-search') || '';
+          matchesQuery = searchData.includes(q);
+        }
+
+        if (matchesChannel && matchesQuery) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Update visible counter
+      const visibleCounter = document.getElementById('metaVisibleCount');
+      if (visibleCounter) {
+        if (activeChannel === 'all' && q.length === 0) {
+          visibleCounter.textContent = `${cards.length}개`;
+        } else {
+          visibleCounter.textContent = `${visibleCount}개 / ${cards.length}개`;
+        }
+      }
+
+      // Toggle empty state
+      const emptyState = document.getElementById('noResultsCard');
+      if (emptyState) {
+        emptyState.style.display = visibleCount === 0 ? 'flex' : 'none';
+      }
+    }
+
+    function filterFeed(slug, element) {
+      activeChannel = slug;
+
+      // Update channel active styling
+      document.querySelectorAll('.channel-item').forEach(item => item.classList.remove('active'));
+      if (element) {
+        element.classList.add('active');
+      } else {
+        const target = document.querySelector(`.channel-item[data-channel="${slug}"]`);
+        if (target) target.classList.add('active');
+      }
+
+      // Update header topic title
+      const topicEl = document.getElementById('headerTopicTitle');
+      if (topicEl) {
+        if (slug === 'all') {
+          topicEl.textContent = '오늘의 브리핑';
+        } else {
+          const nameEl = element ? element.querySelector('.channel-name') : null;
+          topicEl.textContent = nameEl ? nameEl.textContent : slug;
+        }
+      }
+
+      applyFilters();
+      closeMobileMenu();
+
+      // Scroll to top
+      const feed = document.getElementById('feedContainer');
+      if (feed) feed.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function handleSearch(val) {
+      searchQuery = val;
+      const clearBtn = document.getElementById('searchClearBtn');
+      if (clearBtn) {
+        clearBtn.style.display = val.length > 0 ? 'flex' : 'none';
+      }
+      applyFilters();
+    }
+
+    function clearSearch() {
+      const input = document.getElementById('searchInput');
+      if (input) {
+        input.value = '';
+        input.focus();
+      }
+      handleSearch('');
+    }
+
+    function resetAllFilters(element) {
+      activeChannel = 'all';
+      searchQuery = '';
+      const input = document.getElementById('searchInput');
+      if (input) input.value = '';
+      const clearBtn = document.getElementById('searchClearBtn');
+      if (clearBtn) clearBtn.style.display = 'none';
+
+      document.querySelectorAll('.channel-item').forEach(item => {
+        if (item.getAttribute('data-channel') === 'all') {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+
+      const topicEl = document.getElementById('headerTopicTitle');
+      if (topicEl) topicEl.textContent = '오늘의 브리핑';
+
+      const homeBtn = document.getElementById('homeRailBtn');
+      if (homeBtn) homeBtn.classList.add('active');
+
+      applyFilters();
+      closeMobileMenu();
+
+      const feed = document.getElementById('feedContainer');
+      if (feed) feed.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Clipboard & Toast Feedback
+    function copyArticleLink(url, btn) {
+      const originalText = btn.innerHTML;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(() => {
+          showToast('원문 기사 링크가 복사되었습니다.');
+          btn.innerHTML = '✓ 복사 완료';
+          btn.classList.add('copied');
+          setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.classList.remove('copied');
+          }, 2000);
+        }).catch(() => {
+          fallbackCopy(url, btn, originalText);
+        });
+      } else {
+        fallbackCopy(url, btn, originalText);
+      }
+    }
+
+    function fallbackCopy(url, btn, originalText) {
+      const ta = document.createElement('textarea');
+      ta.value = url;
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        showToast('원문 기사 링크가 복사되었습니다.');
+        btn.innerHTML = '✓ 복사 완료';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.classList.remove('copied');
+        }, 2000);
+      } catch (e) {
+        alert('링크 복사에 실패했습니다.');
+      }
+      document.body.removeChild(ta);
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('tossToast');
+      if (!toast) return;
+      toast.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2400);
+    }
+
+    // Mobile Drawer Controls
+    function toggleMobileMenu() {
+      const sidebar = document.querySelector('.context-sidebar');
+      const backdrop = document.getElementById('drawerBackdrop');
+      const menuBtn = document.getElementById('mobileMenuBtn');
+      if (!sidebar) return;
+      const isOpen = sidebar.classList.toggle('open');
+      if (backdrop) backdrop.classList.toggle('open', isOpen);
+      if (menuBtn) menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    }
+
+    function closeMobileMenu() {
+      const sidebar = document.querySelector('.context-sidebar');
+      const backdrop = document.getElementById('drawerBackdrop');
+      const menuBtn = document.getElementById('mobileMenuBtn');
+      if (sidebar) sidebar.classList.remove('open');
+      if (backdrop) backdrop.classList.remove('open');
+      if (menuBtn) menuBtn.setAttribute('aria-expanded', 'false');
+    }
+
+    // Keyboard accessibility
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeMobileMenu();
+        if (searchQuery.length > 0) clearSearch();
+      }
+    });
+
+    // Theme Management with Persistence
+    function initTheme() {
+      const saved = localStorage.getItem('daily_intel_theme');
+      if (saved === 'dark' || saved === 'light') {
+        setTheme(saved);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+        setTheme('light');
+      } else {
+        setTheme('dark');
+      }
+    }
+
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      try { localStorage.setItem('daily_intel_theme', theme); } catch(e) {}
+      const themeBtn = document.getElementById('themeBtn');
+      if (themeBtn) {
+        themeBtn.textContent = theme === 'dark' ? '☀️ 라이트 모드' : '🌙 다크 모드';
+      }
+    }
+
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    }
+
+    // Run on load
+    initTheme();
+  </script>
+</body>
+</html>
