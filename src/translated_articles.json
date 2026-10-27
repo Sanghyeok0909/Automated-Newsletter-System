@@ -1,227 +1,92 @@
 [
   {
-    "media": "TechCrunch",
-    "title": "Oura sues rival Ultrahuman again, threatening its US smart ring comeback",
-    "link": "https://techcrunch.com/2026/10/22/oura-sues-rival-ultrahuman-again-threatening-its-u-s-smart-ring-comeback/",
-    "canonical_url": "https://techcrunch.com/2026/10/22/oura-sues-rival-ultrahuman-again-threatening-its-u-s-smart-ring-comeback/",
-    "published_at": "2026-10-23T04:22:57",
-    "summary": "Oura alleges in its newest lawsuit that Ultrahuman's Ring Pro infringes two of its patents.",
-    "score": 47,
+    "media": "Ars Technica",
+    "title": "Meet the real-life Scottish surgeon who inspired Sherlock Holmes",
+    "link": "https://arstechnica.com/science/2026/10/meet-the-real-life-scottish-surgeon-who-inspired-sherlock-holmes/",
+    "canonical_url": "https://arstechnica.com/science/2026/10/meet-the-real-life-scottish-surgeon-who-inspired-sherlock-holmes/",
+    "published_at": "2026-10-26T20:15:07",
+    "summary": "Lindsey Fitzharris chats with Ars about her new book, Sleuth-Hound: The Case of the Real Sherlock Holmes .",
+    "score": 27,
     "score_breakdown": {
-      "total_score": 47,
-      "impact": 24,
-      "business": 9,
-      "development": 13,
-      "recency": 1,
+      "total_score": 27,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
       "original": 0
     },
     "rank": 1,
     "is_primary": true,
-    "korean_title": "오우라, 경쟁사 울트라휴먼에 특허 침해 소송… 美 스마트링 독점 지위 수성 총력전",
+    "korean_title": "셜록 홈즈의 실제 모델, 19세기 스코틀랜드 외과의사의 추론 과학",
     "summary_3_lines": [
-      "스마트링 선도 기업 오우라(Oura)가 경쟁사 울트라휴먼(Ultrahuman)을 상대로 신규 특허 침해 소송을 제기함.",
-      "오우라는 울트라휴먼의 최신 플래그십 '링 프로(Ring Pro)'가 자사의 핵심 기술 특허 2건을 침해했다고 주장함.",
-      "이번 제소는 울트라휴먼의 미국 스마트링 시장 본격 진입 및 점유율 확대를 강력히 억제하려는 조치로 풀이됨."
+      "작가 린지 피츠해리스가 신간을 통해 셜록 홈즈 캐릭터의 실제 모티브가 된 스코틀랜드 의사 조셉 벨의 생애를 조명했다.",
+      "조셉 벨은 뛰어난 관찰력과 연역적 진단법을 강의와 임상에 도입해 제자였던 아서 코난 도일에게 직접적인 영감을 주었다.",
+      "근대 법의학과 현대 범죄 수사 기법의 기틀을 마련한 역사적 의학적 추론 사례들이 상세히 다뤄졌다."
     ],
-    "business_insight": "스마트링 시장 경쟁이 본격화됨에 따라 선점 기업인 오우라가 방대한 특허 포트폴리오를 무기화해 후발 주자들의 미국 시장 진입 장벽을 지속적으로 높이고 있다.",
+    "business_insight": "역사적 실존 인물의 과학적 방법론과 지식재산권(IP)의 결합은 현대 출판 및 콘텐츠 미디어 시장에서 검증된 프리미엄 스토리텔링 자산으로 기능합니다.",
     "analyzed_by": "gemini-3.8-flash"
   },
   {
-    "media": "TechCrunch",
-    "title": "What some of Anthropic’s backers are worth before its IPO",
-    "link": "https://techcrunch.com/2026/10/23/what-some-of-anthropics-backers-are-reportedly-worth-before-its-ipo/",
-    "canonical_url": "https://techcrunch.com/2026/10/23/what-some-of-anthropics-backers-are-reportedly-worth-before-its-ipo/",
-    "published_at": "2026-10-23T16:02:43",
-    "summary": "Early-stage and follow-on investors in the AI lab are already sitting on major paper returns.",
-    "score": 44,
+    "media": "Ars Technica",
+    "title": "ICE plan to buy robot dogs spurs protest from hundreds of Boston Dynamics employees",
+    "link": "https://arstechnica.com/ai/2026/10/boston-dynamics-employees-want-to-block-sale-of-robot-dogs-to-ice/",
+    "canonical_url": "https://arstechnica.com/ai/2026/10/boston-dynamics-employees-want-to-block-sale-of-robot-dogs-to-ice/",
+    "published_at": "2026-10-26T18:50:41",
+    "summary": "US robotics company stands by ICE deal as more than 300 employees warn of risk.",
+    "score": 19,
     "score_breakdown": {
-      "total_score": 44,
-      "impact": 24,
-      "business": 0,
-      "development": 13,
-      "recency": 7,
+      "total_score": 19,
+      "impact": 0,
+      "business": 9,
+      "development": 0,
+      "recency": 10,
       "original": 0
     },
     "rank": 2,
     "is_primary": true,
-    "korean_title": "IPO 가시화된 앤스로픽, 초기 투자자들의 평가 가치와 미실현 수익 급등",
+    "korean_title": "보스턴 다이내믹스 직원 300여 명, 미 이민세관단속국(ICE) 로봇개 납품에 반대 시위",
     "summary_3_lines": [
-      "AI 연구소 앤스로픽(Anthropic)의 IPO 가능성이 구체화되면서 초기 및 후속 투자자들의 지분 가치가 주목받고 있음.",
-      "앤스로픽의 기업가치가 연속 급등함에 따라 참여 VC 및 전략적 투자자들은 이미 막대한 장부상 수익을 확보한 상태임.",
-      "막대한 컴퓨팅 인프라 비용 지출에도 불구하고 글로벌 자본 시장에서 앤스로픽의 지분 프리미엄이 지속 유지되고 있음."
+      "미국 이민세관단속국(ICE)의 로봇개 도입 추진에 반발해 보스턴 다이내믹스 직원 300여 명이 집단 항의에 나섰다.",
+      "임직원들은 로봇 기술이 국경 및 이민 단속 과정에서 인권 침해와 폭력적 통제 수단으로 변질될 위험성을 경고했다.",
+      "사측은 계약을 유지하겠다는 입장을 고수하면서 로보틱스 기술의 공공·사법 기관 납품을 둘러싼 윤리적 갈등이 심화되고 있다."
     ],
-    "business_insight": "생성형 AI 모델 개발에 막대한 현금이 소모되고 있음에도 프론티어 모델 랩에 대한 선제적 투자가 기록적인 장부 수익으로 입증되었으며, 향후 대규모 테크 IPO의 벤치마크가 될 전망이다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Agent cloud startup Daytona hits $1B valuation backed by FirstMark and a who’s who of angels",
-    "link": "https://techcrunch.com/2026/10/23/agent-cloud-startup-daytona-hits-1b-valuation-backed-by-firstmark-and-a-whos-who-of-angels/",
-    "canonical_url": "https://techcrunch.com/2026/10/23/agent-cloud-startup-daytona-hits-1b-valuation-backed-by-firstmark-and-a-whos-who-of-angels/",
-    "published_at": "2026-10-23T16:26:29",
-    "summary": "Daytona is building a cloud for agents that's like giving every agent its own computer. It has attracted founders of Stripe, Perplextity, Datadog, Mercor, and others as angels, it says.",
-    "score": 33,
-    "score_breakdown": {
-      "total_score": 33,
-      "impact": 12,
-      "business": 9,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 3,
-    "is_primary": true,
-    "korean_title": "AI 에이전트 인프라 스타트업 데이토나, 유수 창업자들 투자 속 10억 달러 유니콘 등극",
-    "summary_3_lines": [
-      "AI 에이전트 전용 클라우드 인프라를 구축하는 데이토나(Daytona)가 10억 달러(약 1조 4천억 원) 기업가치로 투자 유치에 성공함.",
-      "퍼스트마크가 투자를 주도했으며 스트라이프, 퍼플렉시티, 데이터독 등 주요 빅테크 창업자들이 엔젤 투자자로 대거 참여함.",
-      "각 AI 에이전트에게 독립된 가상 컴퓨터 환경을 제공하여 자율적 연산 및 작업 격리를 지원하는 아키텍처를 핵심 경쟁력으로 내세움."
-    ],
-    "business_insight": "단순 LLM 활용을 넘어 자율 실행형 AI 에이전트가 본격 확산되면서, 에이전트 전용 런타임 및 가상화 인프라가 B2B 클라우드 시장의 차세대 핵심 격전지로 부상하고 있다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "TechCrunch",
-    "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
-    "link": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
-    "canonical_url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
-    "published_at": "2026-10-23T23:05:49",
-    "summary": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work.",
-    "score": 27,
-    "score_breakdown": {
-      "total_score": 27,
-      "impact": 12,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 4,
-    "is_primary": true,
-    "korean_title": "오픈AI, 심각한 안전 리스크 이유로 '실시간 웹 데이터 기반 AI 학습' 전면 중단 선언",
-    "summary_3_lines": [
-      "오픈AI가 '심각한 위험(significant risks)'을 근거로 향후 프론티어 AI 모델의 실시간 웹 크롤링 및 인터넷 데이터 학습을 중단한다고 밝힘.",
-      "불과 몇 주 전 내부 엔지니어가 인터넷 차단 접근 방식의 실효성에 의문을 제기했으나 이를 뒤집고 전격 결정을 내림.",
-      "웹 기반 데이터 오염, 프롬프트 주입 및 보안 취약점을 차단하고 모델 정렬(alignment) 통제력을 높이기 위한 조치로 해석됨."
-    ],
-    "business_insight": "비정형 개방형 웹 데이터의 보안 및 저작권 리스크가 임계점에 도달함에 따라, 빅테크의 AI 학습 패러다임이 고품질 합성 데이터 및 폐쇄형 검증 데이터 중심으로 급속히 전환될 것이다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "TechCrunch",
-    "title": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
-    "link": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
-    "canonical_url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
-    "published_at": "2026-10-23T21:59:19",
-    "summary": "The robots, stomping their little feet and making tiny R2-D2 noises, sat, fell down dead for a \"nap,\" and summersaulted on voice command.",
-    "score": 27,
-    "score_breakdown": {
-      "total_score": 27,
-      "impact": 12,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 5,
-    "is_primary": true,
-    "korean_title": "젠슨 황 엔비디아 CEO 시연 효과… 음성 제어 '마이크로덕' 로봇 2만 대 완판",
-    "summary_3_lines": [
-      "젠슨 황 엔비디아 CEO가 공식 석상에서 소형 '마이크로덕(Microduck)' 로봇을 시연한 후 해당 제품이 2만 대 완판을 기록함.",
-      "해당 로봇은 발을 구르고 음향을 내며 음성 명령에 따라 착석, 낮잠 흉내, 공중제비 등의 동작을 부드럽게 구현함.",
-      "엔비디아가 주도하는 피지컬 AI(Physical AI) 담론과 결합되어 연말 소비자 로보틱스 시장에서 바이럴 흥행을 견인함."
-    ],
-    "business_insight": "고도화된 임베디드 AI와 소형 액추에이터 제어 기술이 완구형 폼팩터와 결합하면서, 피지컬 AI의 대중적 수요 검증과 저비용 소비자 로보틱스 시장의 상업화 잠재력을 입증했다.",
+    "business_insight": "로보틱스 기업의 정부·방산 계약은 단기 매출을 보장하지만, 핵심 기술 인력 이탈 및 ESG 리스크로 인한 장기적 기업 가치 훼손 위험을 동반합니다.",
     "analyzed_by": "gemini-3.8-flash"
   },
   {
     "media": "Ars Technica",
-    "title": "The reactor meant to showcase nuclear’s comeback keeps hitting problems",
-    "link": "https://arstechnica.com/tech-policy/2026/10/safety-concerns-cloud-americas-flagship-nuclear-restart/",
-    "canonical_url": "https://arstechnica.com/tech-policy/2026/10/safety-concerns-cloud-americas-flagship-nuclear-restart/",
-    "published_at": "2026-10-23T13:43:21",
-    "summary": "A contractor fell into a reactor cavity and a bundle of fuel rods almost fell over.",
-    "score": 21,
-    "score_breakdown": {
-      "total_score": 21,
-      "impact": 0,
-      "business": 9,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 1,
-    "is_primary": true,
-    "korean_title": "원전 르네상스의 상징이었던 신규 원자로, 안전 사고 잇따르며 난항",
-    "summary_3_lines": [
-      "차세대 원전 부흥의 핵심 시험대로 주목받던 원자로 프로젝트에서 심각한 안전 관리 문제가 연속 발생함.",
-      "작업자가 원자로 내부 공동에 추락하고 핵연료봉 다발이 전도될 뻔하는 등 위험 수위가 높은 사고가 보고됨.",
-      "시공 및 운영 단계에서의 결함 노출과 규제 당국의 현장 감독 강화로 인해 상용 가동 일정 지연이 불가피해짐."
-    ],
-    "business_insight": "글로벌 원전 재도입 흐름 속에서 발생한 안전 관리 결함은 인허가 지연과 자본 비용 증가로 직결되므로, 차세대 원전 사업자들의 엄격한 시공 및 품질 관리 체계 재정비가 요구됩니다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "Ars Technica",
-    "title": "Review: Crystal Lake suffers a bit from its obsession with Pam Voorhees",
-    "link": "https://arstechnica.com/culture/2026/10/review-crystal-lake-suffers-a-bit-from-its-obsession-with-pam-voorhees/",
-    "canonical_url": "https://arstechnica.com/culture/2026/10/review-crystal-lake-suffers-a-bit-from-its-obsession-with-pam-voorhees/",
-    "published_at": "2026-10-23T11:15:03",
-    "summary": "Friday the 13th prequel series based on Jason’s mom drags at first, then hits a vein.",
+    "title": "Apple releases iOS and macOS 27.2 with new Siri AI features, new Music logo",
+    "link": "https://arstechnica.com/apple/2026/10/apple-releases-ios-and-macos-27-2-with-new-siri-ai-features-new-music-logo/",
+    "canonical_url": "https://arstechnica.com/apple/2026/10/apple-releases-ios-and-macos-27-2-with-new-siri-ai-features-new-music-logo/",
+    "published_at": "2026-10-26T20:04:16",
+    "summary": "Included is the ability to limit which applications Siri can directly access.",
     "score": 18,
     "score_breakdown": {
       "total_score": 18,
       "impact": 0,
-      "business": 9,
-      "development": 5,
-      "recency": 4,
-      "original": 0
-    },
-    "rank": 2,
-    "is_primary": true,
-    "korean_title": "[리뷰] '13일의 금요일' 프리퀄 '크리스탈 레이크', 초반 부진 딛고 장르적 쾌감 확보",
-    "summary_3_lines": [
-      "고전 공포 IP '13일의 금요일'의 프리퀄 시리즈 '크리스탈 레이크'의 첫 평가가 공개됨.",
-      "제이슨의 모친인 패멀라 부히스의 서사에 지나치게 집중한 탓에 도입부 전개가 다소 늘어진다는 지적을 받음.",
-      "중반부 이후 슬래셔 장르 본연의 긴장감과 몰입도를 끌어올리며 원작 팬덤을 만족시킬 동력을 확보함."
-    ],
-    "business_insight": "검증된 레거시 IP 기반 프리퀄 제작은 초기 모객에 유리하나, 캐릭터 배경 설명에 과도하게 치중할 경우 장르적 재미가 반감될 수 있어 전개 속도의 완급 조절이 핵심 경쟁력으로 작용합니다.",
-    "analyzed_by": "gemini-3.8-flash"
-  },
-  {
-    "media": "Ars Technica",
-    "title": "Rocket Report: SpaceX says no thanks to military launches; Spanish rocket nearly ready",
-    "link": "https://arstechnica.com/space/2026/10/rocket-report-spacex-says-no-thanks-to-military-launches-spanish-rocket-nearly-ready/",
-    "canonical_url": "https://arstechnica.com/space/2026/10/rocket-report-spacex-says-no-thanks-to-military-launches-spanish-rocket-nearly-ready/",
-    "published_at": "2026-10-23T11:00:57",
-    "summary": "\"We believe Canada should be able to reach orbit on its own terms.\"",
-    "score": 17,
-    "score_breakdown": {
-      "total_score": 17,
-      "impact": 0,
       "business": 0,
       "development": 8,
-      "recency": 4,
-      "original": 5
+      "recency": 10,
+      "original": 0
     },
     "rank": 3,
     "is_primary": true,
-    "korean_title": "[로켓 리포트] 스페이스X의 군사 발사 선긋기와 스페인 소형 발사체 데뷔 임박",
+    "korean_title": "애플, 시리 AI 기능 강화 및 앱 접근 제어 탑재한 최신 OS 업데이트 배포",
     "summary_3_lines": [
-      "스페이스X가 특정 군사 위성 발사 수요에 대해 신중한 입장을 유지하는 가운데 상업 및 자체 인프라 중심 기조를 재확인함.",
-      "스페인의 민간 우주 기업이 개발 중인 신형 로켓이 최종 준비 단계에 돌입하며 유럽 발사체 경쟁에 합류함.",
-      "캐나다를 비롯한 글로벌 주요국들이 독자적 궤도 진입 역량 확보를 표명하며 우주 주권 강화 움직임이 뚜렷해짐."
+      "애플이 새로운 시리(Siri) AI 편의 기능과 업데이트된 뮤직 로고를 포함한 최신 OS 버전을 정식 출시했다.",
+      "이번 릴리스의 핵심으로 시리가 직접 접근할 수 있는 개별 애플리케이션의 범위를 사용자가 제한할 수 있는 권한 관리 기능이 추가되었다.",
+      "애플은 AI 어시스턴트의 고도화와 더불어 사용자 데이터 프라이버시 보호에 대한 세부 제어권을 함께 강화하고 있다."
     ],
-    "business_insight": "발사체 시장이 스페이스X의 과점 구조에서 유럽 민간 스타트업 및 각국 자체 발사 인프라 구축으로 다변화됨에 따라 위성 발사 비용과 접근성 측면에서 새로운 공급망 옵션이 창출되고 있습니다.",
+    "business_insight": "생성형 AI 어시스턴트가 운영체제 전반으로 확장되는 국면에서, 세밀한 데이터 접근 통제권 제공은 플랫폼의 보안 신뢰도를 확보하는 핵심 차별점이 됩니다.",
     "analyzed_by": "gemini-3.8-flash"
   },
   {
     "media": "Ars Technica",
-    "title": "Everybody panic: A Valve developer said \"HLX\" in public",
-    "link": "https://arstechnica.com/gaming/2026/10/everybody-panic-a-valve-developer-said-hlx-in-public/",
-    "canonical_url": "https://arstechnica.com/gaming/2026/10/everybody-panic-a-valve-developer-said-hlx-in-public/",
-    "published_at": "2026-10-23T16:35:00",
-    "summary": "Sound designer lets Half Life-related codename slip at a conference.",
+    "title": "Highway thieves are spoofing GPS to steal millions in data center-bound cargo",
+    "link": "https://arstechnica.com/tech-policy/2026/10/highway-thieves-are-spoofing-gps-to-steal-millions-in-data-center-bound-cargo/",
+    "canonical_url": "https://arstechnica.com/tech-policy/2026/10/highway-thieves-are-spoofing-gps-to-steal-millions-in-data-center-bound-cargo/",
+    "published_at": "2026-10-26T17:26:36",
+    "summary": "Investigators explain how highway thieves stole $100M in data center equipment.",
     "score": 16,
     "score_breakdown": {
       "total_score": 16,
@@ -233,40 +98,40 @@
     },
     "rank": 4,
     "is_primary": true,
-    "korean_title": "밸브 개발자의 'HLX' 말실수, 차세대 '하프라이프' 신작 기대감 증폭",
+    "korean_title": "GPS 스푸핑 악용한 고속도로 절도 조직, 1억 달러 규모 데이터센터 장비 탈취",
     "summary_3_lines": [
-      "밸브(Valve)의 사운드 디자이너가 공식 콘퍼런스 도중 비공개 프로젝트 코드명 'HLX'를 실수로 발언함.",
-      "'HLX'는 내부 유출 데이터 및 업계 분석을 통해 차세대 하프라이프 관련 프로젝트로 알려진 명칭임.",
-      "단 한 차례의 언급만으로도 전 세계 게임 커뮤니티와 주요 미디어에서 후속작 개발의 결정적 증거로 받아들여짐."
+      "범죄 조직이 GPS 신호 조작(스푸핑) 기술을 사용해 데이터센터로 운송 중이던 1억 달러 상당의 하드웨어를 가로챘다.",
+      "수사 당국에 따르면 절도범들은 화물 차량의 실제 위치 추적을 무력화하여 물류 감시망을 완전히 교란했다.",
+      "고부가가치 AI 및 데이터센터 인프라 장비가 물리적 보안과 디지털 해킹이 결합된 복합적 공급망 위협에 노출되었다."
     ],
-    "business_insight": "밸브의 대형 플래그십 타이틀은 자체 플랫폼 스팀의 생태계 확장뿐 아니라 차세대 하드웨어 보급의 견인차 역할을 하므로, 신작 파이프라인의 실체화는 PC 및 VR 게이밍 시장에 중대한 모멘텀이 될 수 있습니다.",
+    "business_insight": "AI 서버 등 초고가 인프라 화물의 급증에 따라, 단순 위치 추적을 넘어 암호화된 통신과 다중 센서 기반의 차세대 물류 보안 체계 구축이 필수가 되었습니다.",
     "analyzed_by": "gemini-3.8-flash"
   },
   {
     "media": "Ars Technica",
-    "title": "NASA updates lander plans for Moon landings, finally solves long-festering Orion issue",
-    "link": "https://arstechnica.com/space/2026/10/nasa-updates-lander-plans-for-moon-landings-finally-solves-long-festering-orion-issue/",
-    "canonical_url": "https://arstechnica.com/space/2026/10/nasa-updates-lander-plans-for-moon-landings-finally-solves-long-festering-orion-issue/",
-    "published_at": "2026-10-23T22:48:25",
-    "summary": "\"We have the mandate, we have the resources, and the support from our stakeholders.\"",
-    "score": 15,
+    "title": "Tesla gave up the EV crown. Now it wants to win the autonomy race.",
+    "link": "https://arstechnica.com/cars/2026/10/tesla-wants-ai-and-software-to-be-its-next-profit-engine/",
+    "canonical_url": "https://arstechnica.com/cars/2026/10/tesla-wants-ai-and-software-to-be-its-next-profit-engine/",
+    "published_at": "2026-10-26T14:30:27",
+    "summary": "Tesla hopes autonomy subscriptions can deliver the margins car sales cannot.",
+    "score": 16,
     "score_breakdown": {
-      "total_score": 15,
+      "total_score": 16,
       "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 10,
+      "business": 9,
+      "development": 0,
+      "recency": 7,
       "original": 0
     },
     "rank": 5,
     "is_primary": true,
-    "korean_title": "NASA, 달 착륙선 전략 재정비 및 오리온 캡슐 열차폐막 결함 최종 해결",
+    "korean_title": "전기차 판매 1위 내준 테슬라, 자율주행 구독 모델로 마진 반등 승부수",
     "summary_3_lines": [
-      "NASA가 유인 달 착륙 프로그램 '아르테미스'의 착륙선 개발 일정을 최신화하고 임무 수행 로드맵을 확정함.",
-      "아르테미스 1호 비행 당시 드러났던 오리온(Orion) 우주선의 고질적인 열차폐막 마모 문제를 공학적으로 해결함.",
-      "확고한 예산 배정과 이해관계자들의 지지를 바탕으로 향후 계획된 유인 비행 일정의 기술적 신뢰도를 확보함."
+      "글로벌 완성차 경쟁 심화로 EV 판매량 선두를 내준 테슬라가 자율주행 소프트웨어 경쟁으로 전략적 무게중심을 이동했다.",
+      "하드웨어 단품 판매의 마진 하락세를 상쇄하기 위해 FSD 등 자율주행 구독 서비스를 핵심 수익원으로 내세우고 있다.",
+      "테슬라는 완성차 제조사에서 고마진 소프트웨어 플랫폼 기업으로의 체질 전환을 본격적으로 꾀하고 있다."
     ],
-    "business_insight": "유인 우주선의 핵심 안전 이슈가 해결되고 착륙선 전략이 구체화됨에 따라, 스페이스X·블루오리진 등 민간 상업 파트너들의 달 탐사 수주 사업 안정성과 공급망 예측 가능성이 크게 개선되었습니다.",
+    "business_insight": "전기차 하드웨어의 범용화(Commoditization)가 가속화되는 가운데, 자율주행 구독 서비스의 실질적 소프트웨어 전환율이 미래 모빌리티 밸류에이션을 결정할 것입니다.",
     "analyzed_by": "gemini-3.8-flash"
   }
 ]
