@@ -1,18 +1,18 @@
 [
   {
     "media": "The Verge",
-    "title": "Prop 45 in California could be hiding a loophole for data centers",
-    "link": "https://www.theverge.com/policy/1023877/prop-45-california-data-centers-energy",
-    "canonical_url": "https://www.theverge.com/policy/1023877/prop-45-california-data-centers-energy",
-    "published_at": "2026-11-01T13:00:00",
-    "summary": "A high-stakes California ballot measure pitched as a fast track for \"essential\" infrastructure could wind up giving data center developers a loophole to evade public scrutiny, environmental advocates warn. Proposition 45 would shorten timelines for state-mandated environmental assessments for eligible projects and make it more difficult for residents to challenge those projects in court. Proponents […]",
-    "score": 37,
+    "title": "Apple set an iPhone sales record even without a new standard iPhone",
+    "link": "https://www.theverge.com/tech/1024748/apple-q4-2026-iphone-sales-earnings",
+    "canonical_url": "https://www.theverge.com/tech/1024748/apple-q4-2026-iphone-sales-earnings",
+    "published_at": "2026-11-02T22:02:36",
+    "summary": "Apple had a record-breaking quarter for iPhone sales - despite not releasing a standard model during its latest refresh. In its fourth-quarter earnings report released on Monday, Apple says it earned $57.58 billion in iPhone revenue, a 17 percent jump from the same time last year. The increase in revenue follows the launch of Apple's […]",
+    "score": 39,
     "score_breakdown": {
-      "total_score": 37,
-      "impact": 0,
-      "business": 25,
+      "total_score": 39,
+      "impact": 24,
+      "business": 0,
       "development": 5,
-      "recency": 7,
+      "recency": 10,
       "original": 0
     },
     "rank": 1,
@@ -20,16 +20,16 @@
   },
   {
     "media": "The Verge",
-    "title": "North Korea linked to massive Binance crypto heist",
-    "link": "https://www.theverge.com/tech/1024176/north-korea-binance-crypto-heist",
-    "canonical_url": "https://www.theverge.com/tech/1024176/north-korea-binance-crypto-heist",
-    "published_at": "2026-11-01T14:33:11",
-    "summary": "The FBI says North Korea was behind the massive $6.3 billion crypto heist that hit Binance on October 29th. The FBI labeled the activity \"TraderTraitor\" and said that it had observed actors it has connected to hack converting the tokens to Ethereum and preparing for further laundering of the funds. The agency offered few other […]",
-    "score": 36,
+    "title": "OpenAI pitches data center power plants as a way to protect nearby areas",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
+    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
+    "published_at": "2026-11-02T18:01:30",
+    "summary": "In an announcement on Monday, OpenAI says it will pilot its \"Grid Protectors Program\" at an upcoming data center in Effingham County, Georgia, where the company promises to free up to 1,000 megawatts of power during extreme weather or emergencies, enough to power air conditioners in around 700,000 homes. The announcement comes as opposition to […]",
+    "score": 33,
     "score_breakdown": {
-      "total_score": 36,
-      "impact": 24,
-      "business": 0,
+      "total_score": 33,
+      "impact": 12,
+      "business": 9,
       "development": 5,
       "recency": 7,
       "original": 0
@@ -39,18 +39,18 @@
   },
   {
     "media": "The Verge",
-    "title": "New Zelda and GTA represent a games industry that no longer exists",
-    "link": "https://www.theverge.com/column/1022402/new-zelda-and-gta-represent-a-games-industry-that-no-longer-exists",
-    "canonical_url": "https://www.theverge.com/column/1022402/new-zelda-and-gta-represent-a-games-industry-that-no-longer-exists",
-    "published_at": "2026-11-01T13:00:00",
-    "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the biggest game releases of the year, follow Andrew Webster. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started The two biggest games of […]",
-    "score": 20,
+    "title": "Apple is ‘not able to predict’ when it&#8217;ll have enough iPhone Duos to go around",
+    "link": "https://www.theverge.com/tech/1024915/apple-iphone-duo-supply-chain-constraints",
+    "canonical_url": "https://www.theverge.com/tech/1024915/apple-iphone-duo-supply-chain-constraints",
+    "published_at": "2026-11-02T22:56:11",
+    "summary": "Apple CEO John Ternus doesn't have a timeline for when iPhone Duo supply constraints could lift. During an interview with Reuters, Ternus said the company is \"working hard to get it to as many customers as quickly as possible, but at this ​point, we're not able to predict when supply and demand will be in […]",
+    "score": 27,
     "score_breakdown": {
-      "total_score": 20,
-      "impact": 0,
+      "total_score": 27,
+      "impact": 12,
       "business": 0,
-      "development": 13,
-      "recency": 7,
+      "development": 5,
+      "recency": 10,
       "original": 0
     },
     "rank": 3,
@@ -58,18 +58,18 @@
   },
   {
     "media": "The Verge",
-    "title": "NASA hopes the commercial space industry can help save Hubble",
-    "link": "https://www.theverge.com/science/1024239/nasa-commercial-space-save-hubble",
-    "canonical_url": "https://www.theverge.com/science/1024239/nasa-commercial-space-save-hubble",
-    "published_at": "2026-11-01T21:09:21",
-    "summary": "Gravity is a cruel mistress, slowly dragging the famed telescope ever closer to its ultimate demise with every day. Hubble is in no immediate danger of burning up in the Earth's atmosphere, but its time will run out in the early to mid 2030s unless its orbit is boosted. So NASA is taking proposals from […]",
-    "score": 15,
+    "title": "Anthropic clamps down on Claude’s AI video game clones",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+    "published_at": "2026-11-02T18:56:02",
+    "summary": "Anthropic has updated Claude Code's system prompt to prevent the AI tool from being used to re-create existing video games, as reported by Tom's Hardware. Retro gaming is currently being overrun with AI-made decompilations, recompilations, and ports, but while Anthropic will still let people use Claude Code to make games, it doesn't want people to […]",
+    "score": 24,
     "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
+      "total_score": 24,
+      "impact": 12,
       "business": 0,
       "development": 5,
-      "recency": 10,
+      "recency": 7,
       "original": 0
     },
     "rank": 4,
@@ -77,11 +77,11 @@
   },
   {
     "media": "The Verge",
-    "title": "Flock keeps ignoring requests to cancel its contracts",
-    "link": "https://www.theverge.com/tech/1024232/flock-ignoring-cancel-contracts",
-    "canonical_url": "https://www.theverge.com/tech/1024232/flock-ignoring-cancel-contracts",
-    "published_at": "2026-11-01T19:58:02",
-    "summary": "While more cities are canceling their contracts with Flock Safety, just as many are discovering how difficult that can be in some instances. Plymouth, Minnesota's city council voted to terminate its contract with Flock in September, but failed to respond to the city's request. For over a month, the cameras remained up, and the city […]",
+    "title": "Meta will end Quest 2 OS updates in 2027",
+    "link": "https://www.theverge.com/tech/1024835/meta-vr-quest-2-pro-os-end-updates",
+    "canonical_url": "https://www.theverge.com/tech/1024835/meta-vr-quest-2-pro-os-end-updates",
+    "published_at": "2026-11-02T21:04:20",
+    "summary": "Meta is planning to release the last OS update for its Quest 2 and Quest Pro VR headsets by March 2027, the company announced today. The last OS update for those devices is planned to be v213, and after that, Meta will continue to ship security patches and critical bug fixes through the end of […]",
     "score": 15,
     "score_breakdown": {
       "total_score": 15,
@@ -96,11 +96,11 @@
   },
   {
     "media": "The Verge",
-    "title": "Apple’s HomeView could add security camera features",
-    "link": "https://www.theverge.com/tech/1024219/apples-homeview-could-add-security-camera-features",
-    "canonical_url": "https://www.theverge.com/tech/1024219/apples-homeview-could-add-security-camera-features",
-    "published_at": "2026-11-01T17:16:07",
-    "summary": "Reddit user pdfu found hints hidden in the HomeView 27.2 code that Apple could be adding security camera features to its smart home hub. The strings describe a security camera mode with motion detection, live streaming, and recording options, as well as privacy functions. According to pdfu, there is a setup page that even explicitly […]",
+    "title": "One of Google’s Android partners turned 1.3 million set-top boxes into a botnet",
+    "link": "https://www.theverge.com/1024807/google-botnet-android-tv-shut-down",
+    "canonical_url": "https://www.theverge.com/1024807/google-botnet-android-tv-shut-down",
+    "published_at": "2026-11-02T20:37:49",
+    "summary": "Google says one of its Android manufacturing partners secretly built a backdoor in 1.3 million devices and turned them into a botnet. The company says it has now dismantled the backdoor and \"cut ties\" with the manufacturer, the Shenzhen, China-based Videostrong Technology Co., which has been banned from building or selling certified Android devices or […]",
     "score": 12,
     "score_breakdown": {
       "total_score": 12,
@@ -115,11 +115,11 @@
   },
   {
     "media": "The Verge",
-    "title": "A fully playable version of Portal prequel F-Stop leaked",
-    "link": "https://www.theverge.com/games/1024206/playable-portal-prequel-f-stop-leak",
-    "canonical_url": "https://www.theverge.com/games/1024206/playable-portal-prequel-f-stop-leak",
-    "published_at": "2026-11-01T16:19:21",
-    "summary": "Leakers have pieced together a playable version of the canceled Portal prequel F-Stop. Most of the assets came from the massive 12-terabyte leak that dropped this August. That didn't include the game's source code or map data, but those final pieces apparently hit the Valve Cut Content Discord this week, allowing a nearly complete version […]",
+    "title": "BMW is taking on Tesla’s FSD with urban driver assist starting in 2027",
+    "link": "https://www.theverge.com/transportation/1024616/bmw-level-2-city-driver-assist-2027",
+    "canonical_url": "https://www.theverge.com/transportation/1024616/bmw-level-2-city-driver-assist-2027",
+    "published_at": "2026-11-02T20:03:52",
+    "summary": "BMW says that it will expand its navigation-guided, partially automated driving capabilities into urban environments starting in 2027, launching first in Germany with other markets to follow. The new system can help steer, speed up, and slow down the vehicle on both highways and city streets using its built-in GPS navigation. While driving in town, […]",
     "score": 12,
     "score_breakdown": {
       "total_score": 12,
@@ -134,11 +134,11 @@
   },
   {
     "media": "The Verge",
-    "title": "HomePod Mini 2 first look: Three things I love and one disappointment",
-    "link": "https://www.theverge.com/tech/1024108/homepod-mini-2-hands-on-siri-smart-home-mac-speaker",
-    "canonical_url": "https://www.theverge.com/tech/1024108/homepod-mini-2-hands-on-siri-smart-home-mac-speaker",
-    "published_at": "2026-11-01T14:00:00",
-    "summary": "When I first heard about the new $149 HomePod Mini 2 at Apple's Welcome Home event last month, I was disappointed. It's been six years since Apple launched its entry-level smart speaker, and all it got in the second gen was a chip bump, some color glowy stuff, and better AirPlay? For $50 more than […]",
+    "title": "The Apple Watch Ultra 4 is $100 off, matching its best price to date",
+    "link": "https://www.theverge.com/gadgets/1024416/apple-watch-ultra-4-ugreen-finetrack-2-bluetooth-tracker-deal-sale",
+    "canonical_url": "https://www.theverge.com/gadgets/1024416/apple-watch-ultra-4-ugreen-finetrack-2-bluetooth-tracker-deal-sale",
+    "published_at": "2026-11-02T19:24:09",
+    "summary": "The Apple Watch Ultra 4 is the company’s most capable smartwatch. Whether you intend to put its many tracking features to the test, or you simply want the longest battery life of any Apple Watch, it’s currently on sale for $699.99 ($100 off) in multiple colors at Amazon, matching its all-time low price. Powered by […]",
     "score": 12,
     "score_breakdown": {
       "total_score": 12,
@@ -152,19 +152,57 @@
     "is_primary": false
   },
   {
-    "media": "TechCrunch",
-    "title": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
-    "link": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
-    "canonical_url": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
-    "published_at": "2026-11-01T21:55:23",
-    "summary": "Data centers are deeply unpopular. But what if we called them something else?",
-    "score": 31,
+    "media": "The Verge",
+    "title": "Ford promises not to sell your driving habits to data brokers",
+    "link": "https://www.theverge.com/transportation/1024386/ford-customer-driving-data-privacy-promise-data-brokers",
+    "canonical_url": "https://www.theverge.com/transportation/1024386/ford-customer-driving-data-privacy-promise-data-brokers",
+    "published_at": "2026-11-02T19:05:46",
+    "summary": "Ford vowed to never sell customer driving data to third-party data brokers as part of a new privacy promise aimed at setting the automaker apart from competitors that have faced legal and regulatory blowback for sharing telematics with data brokers without authorization. As part of its new promise, Ford says it will strive to protect […]",
+    "score": 12,
     "score_breakdown": {
-      "total_score": 31,
-      "impact": 12,
-      "business": 9,
-      "development": 0,
-      "recency": 10,
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 9,
+    "is_primary": false
+  },
+  {
+    "media": "The Verge",
+    "title": "Xbox&#8217;s former COO has ‘serious concerns’ about her abrupt departure",
+    "link": "https://www.theverge.com/news/1024649/xbox-chief-operating-officer-helen-chiang-depature-comments",
+    "canonical_url": "https://www.theverge.com/news/1024649/xbox-chief-operating-officer-helen-chiang-depature-comments",
+    "published_at": "2026-11-02T18:43:24",
+    "summary": "Xbox's former chief operating officer, Helen Chiang, suddenly left Microsoft less than two weeks ago after being promoted into the role in July. I wrote in my Notepad newsletter last week that it seemed very weird for Chiang to suddenly depart Microsoft after 21 years with a surprisingly short memo from Xbox CEO Asha Sharma. […]",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 10,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Northwood Space raises $375M Series C at a $2B valuation from a16z and DFJ Growth",
+    "link": "https://techcrunch.com/2026/11/02/northwood-space-raises-375m-series-c-at-a-2b-valuation-from-a16z-and-dfj-growth/",
+    "canonical_url": "https://techcrunch.com/2026/11/02/northwood-space-raises-375m-series-c-at-a-2b-valuation-from-a16z-and-dfj-growth/",
+    "published_at": "2026-11-02T14:22:35",
+    "summary": "Space infrastructure company Northwood Space on Monday said it had raised $375 million in a Series C round co-led by Andreessen Horowitz and DFJ Growth, valuing the company at $2 billion.",
+    "score": 51,
+    "score_breakdown": {
+      "total_score": 51,
+      "impact": 24,
+      "business": 18,
+      "development": 5,
+      "recency": 4,
       "original": 0
     },
     "rank": 1,
@@ -172,17 +210,17 @@
   },
   {
     "media": "TechCrunch",
-    "title": "Binance resumes withdrawals following $6.3 billion breach",
-    "link": "https://techcrunch.com/2026/11/01/binance-resumes-withdrawals-following-6-3-billion-breach/",
-    "canonical_url": "https://techcrunch.com/2026/11/01/binance-resumes-withdrawals-following-6-3-billion-breach/",
-    "published_at": "2026-11-01T16:20:10",
-    "summary": "The cryptocurrency exchange said it's now covered 95% of the stolen assets.",
-    "score": 31,
+    "title": "In one of the largest deals in tech history, Marvell buys Lumentum for $115B",
+    "link": "https://techcrunch.com/2026/11/02/in-one-of-the-largest-deals-in-tech-history-marvell-buys-lumentum-for-115b/",
+    "canonical_url": "https://techcrunch.com/2026/11/02/in-one-of-the-largest-deals-in-tech-history-marvell-buys-lumentum-for-115b/",
+    "published_at": "2026-11-02T17:54:11",
+    "summary": "Marvell's planned purchase of Lumentum is one of the biggest acquisitions in tech history. And they both have the same strategic investor: Nvidia.",
+    "score": 36,
     "score_breakdown": {
-      "total_score": 31,
+      "total_score": 36,
       "impact": 24,
       "business": 0,
-      "development": 0,
+      "development": 5,
       "recency": 7,
       "original": 0
     },
@@ -191,18 +229,18 @@
   },
   {
     "media": "TechCrunch",
-    "title": "Data centers are now a midterm issue, even in Brooklyn",
-    "link": "https://techcrunch.com/2026/10/31/data-centers-are-now-a-midterm-issue-even-in-brooklyn/",
-    "canonical_url": "https://techcrunch.com/2026/10/31/data-centers-are-now-a-midterm-issue-even-in-brooklyn/",
-    "published_at": "2026-11-01T02:22:10",
-    "summary": "At a Brooklyn midterm party five days before Election Day, every conversation, from a council member’s fireside chat to a debate about the Democratic Party, kept circling back to AI and data centers.",
-    "score": 15,
+    "title": "New York Times and other outlets sue web browser Brave over alleged content scraping",
+    "link": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
+    "canonical_url": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
+    "published_at": "2026-11-02T19:19:17",
+    "summary": "The New York Times is suing privacy-focused web browser company Brave for allegedly scraping the outlet’s copyrighted content and unlawfully distributing it to its own customers, like Anthropic and Perplexity.",
+    "score": 33,
     "score_breakdown": {
-      "total_score": 15,
-      "impact": 0,
+      "total_score": 33,
+      "impact": 12,
       "business": 9,
       "development": 5,
-      "recency": 1,
+      "recency": 7,
       "original": 0
     },
     "rank": 3,
@@ -210,16 +248,16 @@
   },
   {
     "media": "TechCrunch",
-    "title": "TechCrunch Mobility: A new, bigger AV boom is here",
-    "link": "https://techcrunch.com/2026/11/01/techcrunch-mobility-a-new-bigger-av-boom-is-here/",
-    "canonical_url": "https://techcrunch.com/2026/11/01/techcrunch-mobility-a-new-bigger-av-boom-is-here/",
-    "published_at": "2026-11-01T17:04:00",
-    "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
-    "score": 12,
+    "title": "Snap settles lawsuit accusing platform of fueling teen depression and eating disorders",
+    "link": "https://techcrunch.com/2026/11/02/snap-settles-lawsuit-accusing-platform-of-fueling-teen-depression-and-eating-disorders/",
+    "canonical_url": "https://techcrunch.com/2026/11/02/snap-settles-lawsuit-accusing-platform-of-fueling-teen-depression-and-eating-disorders/",
+    "published_at": "2026-11-02T19:11:49",
+    "summary": "The plaintiffs said they started using YouTube as young as age 3 and other social media platforms at around age 9 and developed compulsive usage habits that they attributed to features such as autoplay and infinite scrolling.",
+    "score": 33,
     "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
+      "total_score": 33,
+      "impact": 12,
+      "business": 9,
       "development": 5,
       "recency": 7,
       "original": 0
@@ -229,16 +267,16 @@
   },
   {
     "media": "TechCrunch",
-    "title": "Pixel 11 Pro Fold: Sturdy rectangle in a wide wide world",
-    "link": "https://techcrunch.com/2026/11/01/pixel-11-pro-fold-sturdy-rectengale-in-a-wide-wide-world/",
-    "canonical_url": "https://techcrunch.com/2026/11/01/pixel-11-pro-fold-sturdy-rectengale-in-a-wide-wide-world/",
-    "published_at": "2026-11-01T15:00:00",
-    "summary": "Google made a sturdy phone, but there is increasing competition in the foldable world.",
-    "score": 12,
+    "title": "Omen AI adds liquid know-how in $16 million Aquatic Labs acquisition",
+    "link": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/",
+    "canonical_url": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/",
+    "published_at": "2026-11-02T15:00:00",
+    "summary": "Two startups tackling the data center water problem are joining forces in a $16 million deal.",
+    "score": 33,
     "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
+      "total_score": 33,
+      "impact": 12,
+      "business": 9,
       "development": 5,
       "recency": 7,
       "original": 0
@@ -248,125 +286,11 @@
   },
   {
     "media": "TechCrunch",
-    "title": "Here’s what ‘renoa’ — the first new fiber in 25 years — feels like",
-    "link": "https://techcrunch.com/2026/11/01/heres-what-renoa-the-first-new-fiber-in-25-years-feels-like/",
-    "canonical_url": "https://techcrunch.com/2026/11/01/heres-what-renoa-the-first-new-fiber-in-25-years-feels-like/",
-    "published_at": "2026-11-01T14:00:00",
-    "summary": "Startup Everbloom's new material, renoa, is the first new fiber in 25 years, and it feels very familiar.",
-    "score": 12,
-    "score_breakdown": {
-      "total_score": 12,
-      "impact": 0,
-      "business": 0,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 6,
-    "is_primary": false
-  },
-  {
-    "media": "TechCrunch",
-    "title": "AI can make tech CEOs’ lives easier. What about everyone else?",
-    "link": "https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/",
-    "canonical_url": "https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/",
-    "published_at": "2026-11-01T20:57:58",
-    "summary": "On Equity, we discuss why tech CEO statements can seem so tone deaf.",
-    "score": 10,
-    "score_breakdown": {
-      "total_score": 10,
-      "impact": 0,
-      "business": 0,
-      "development": 0,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 7,
-    "is_primary": false
-  },
-  {
-    "media": "The Information",
-    "title": "The Information’s WTF Summit in Pictures",
-    "link": "https://www.theinformation.com/articles/informations-wtf-summit-pictures-2",
-    "canonical_url": "https://www.theinformation.com/articles/informations-wtf-summit-pictures-2",
-    "published_at": "2026-11-01T21:52:32",
-    "summary": "At The Information’s annual WTF Summit a few days ago, women leaders from Anthropic, Google, Goldman Sachs and dozens of other companies across technology and media gathered to discuss the forces remaking those industries. Conversation topics ranged from on the state of tech M&A to chip financing to the geopolitics between America and China. Across all of those talks, the VIPs had their eyes fixed on what lies ahead—perhaps no one more so than Amanda Peterson Corio, Google’s global head of data center energy. “I live in 2031,” she told attendees. Below, some scenes from one of our favorite events of the year.",
-    "score": 48,
-    "score_breakdown": {
-      "total_score": 48,
-      "impact": 24,
-      "business": 9,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 1,
-    "is_primary": true
-  },
-  {
-    "media": "The Information",
-    "title": "Google Energy Chief: Space Data Centers Cost Up to 100 Times More Than Those on Earth",
-    "link": "https://www.theinformation.com/articles/google-energy-chief-space-data-centers-cost-100-times-earth",
-    "canonical_url": "https://www.theinformation.com/articles/google-energy-chief-space-data-centers-cost-100-times-earth",
-    "published_at": "2026-11-01T16:30:45",
-    "summary": "Data centers in space could cost up to 100 times as much as those on Earth, Google's head of data center energy said this week, a reality check from a company that itself is testing AI server chips in orbit. “Let’s explore all the terrestrial options before we go extraterrestrial,” Amanda Peterson Corio said at The Information’s WTF summit, a gathering of senior women in the technology and finance industries. The comments came as SpaceX’s orbital data center plans underpin part of its roughly $1.8 trillion market capitalization.",
-    "score": 42,
-    "score_breakdown": {
-      "total_score": 42,
-      "impact": 12,
-      "business": 18,
-      "development": 5,
-      "recency": 7,
-      "original": 0
-    },
-    "rank": 2,
-    "is_primary": true
-  },
-  {
-    "media": "The Information",
-    "title": "Trump Administration Refuses to Release Information on AI Testing Framework",
-    "link": "https://www.theinformation.com/briefings/trump-administration-refuses-release-information-ai-testing-framework",
-    "canonical_url": "https://www.theinformation.com/briefings/trump-administration-refuses-release-information-ai-testing-framework",
-    "published_at": "2026-11-01T23:09:23",
-    "summary": "The Trump administration declined to produce key documents related to its voluntary AI testing framework, despite an agreement struck in September with the nonprofit Protect Democracy Project after a Freedom of Information Act lawsuit. In a letter sent to the nonprofit on Friday by the White ...",
-    "score": 36,
-    "score_breakdown": {
-      "total_score": 36,
-      "impact": 12,
-      "business": 9,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 3,
-    "is_primary": true
-  },
-  {
-    "media": "The Information",
-    "title": "Apple, Uber and Elections Headline Week",
-    "link": "https://www.theinformation.com/articles/apple-uber-elections-headline-week",
-    "canonical_url": "https://www.theinformation.com/articles/apple-uber-elections-headline-week",
-    "published_at": "2026-11-01T23:00:47",
-    "summary": "Can Apple, Uber and Palantir turn this stock market around? It sure needs it. Worries about excessive AI spending tanked Google’s stock last week and sent the Nasdaq Composite to its worst month since March 2025. While the major indexes are still in the green for the year, a few more days like Friday’s could change that. Fortunately, we have a handful of earnings that might temper the gloom. Palantir Technologies, which reports Monday, has told investors to expect an 83% jump in the third quarter from the year-ago period. That’s a slowdown from the second quarter’s blistering 93% growth . But at least investors will get a reprieve from enormous capital expenditures. Palantir only spent $22 million in capex in the first half. As for Apple, it’s already warned investors that supply constraints for advanced chip manufacturing would contribute to slower revenue growth, to a range of  9% to 11% in the September quarter from a year ago, slower than its 16% growth in the June quarter. Apple has also forecast iPhone revenue growth in the mid-teens versus 22% in the June quarter. An improvement on that outlook could buoy the mood. On the other hand, a sharper slowdown in growth from either companies could give investors another reason to sell tech stocks.",
-    "score": 36,
-    "score_breakdown": {
-      "total_score": 36,
-      "impact": 12,
-      "business": 9,
-      "development": 5,
-      "recency": 10,
-      "original": 0
-    },
-    "rank": 4,
-    "is_primary": true
-  },
-  {
-    "media": "The Information",
-    "title": "Binance Allows Customers to Resume Withdrawals, Sees $5.8 Billion Net Outflow",
-    "link": "https://www.theinformation.com/briefings/binance-allows-customers-resume-withdrawals-sees-5-8-billion-net-outflow",
-    "canonical_url": "https://www.theinformation.com/briefings/binance-allows-customers-resume-withdrawals-sees-5-8-billion-net-outflow",
-    "published_at": "2026-11-01T23:18:56",
-    "summary": "Binance, the world’s largest crypto exchange, saw $5.8 billion in net outflow of assets after it resumed processing withdrawals for users on Sunday morning following a historic $6.3 billion hack. The net outflow figure, tracked by crypto analytics platform DefiLlama , represents about 3% of ...",
+    "title": "Apple may try to increase revenue by doing…something with third-party AI apps",
+    "link": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
+    "canonical_url": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
+    "published_at": "2026-11-03T01:49:52",
+    "summary": "Apple hinted at ways that it could spur revenue through third-party \"opportunities\" during its Monday night earnings call.",
     "score": 27,
     "score_breakdown": {
       "total_score": 27,
@@ -376,16 +300,491 @@
       "recency": 10,
       "original": 0
     },
+    "rank": 6,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Apple’s inventory surges 154% as memory chip costs climb",
+    "link": "https://techcrunch.com/2026/11/02/apples-inventory-surges-154-as-memory-chip-costs-climb/",
+    "canonical_url": "https://techcrunch.com/2026/11/02/apples-inventory-surges-154-as-memory-chip-costs-climb/",
+    "published_at": "2026-11-02T23:04:57",
+    "summary": "Apple says unprecedented memory chip costs will continue to rise, raising questions about future device prices as its inventory climbs to $14.5 billion.",
+    "score": 27,
+    "score_breakdown": {
+      "total_score": 27,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 7,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
+    "link": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+    "canonical_url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+    "published_at": "2026-11-02T22:14:50",
+    "summary": "RSI is the point at which AI grows so good at training itself that it spawns a dramatic acceleration of AI capabilities. To the AI doomers, RSI represents the cataclysm from which there is no return.",
+    "score": 27,
+    "score_breakdown": {
+      "total_score": 27,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 8,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Hinge tests a cheaper plan as users become more fed up paying for dating apps",
+    "link": "https://techcrunch.com/2026/11/02/hinge-tests-a-cheaper-plan-as-users-become-more-fed-up-paying-for-dating-apps/",
+    "canonical_url": "https://techcrunch.com/2026/11/02/hinge-tests-a-cheaper-plan-as-users-become-more-fed-up-paying-for-dating-apps/",
+    "published_at": "2026-11-03T00:14:51",
+    "summary": "At a time when people are increasingly tired of dating apps, Hinge is testing a cheaper subscription plan.",
+    "score": 24,
+    "score_breakdown": {
+      "total_score": 24,
+      "impact": 0,
+      "business": 9,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 9,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Web host Squarespace lays off 19% of its employees",
+    "link": "https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees/",
+    "canonical_url": "https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees/",
+    "published_at": "2026-11-02T19:25:59",
+    "summary": "The website builder said that the job losses are part of a broader restructuring of its organization.",
+    "score": 24,
+    "score_breakdown": {
+      "total_score": 24,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 10,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Ukraine’s new pocket-sized gadget turns Russian drones’ cameras against them",
+    "link": "https://techcrunch.com/2026/11/02/ukraines-new-pocket-sized-gadget-turns-russian-drones-cameras-against-them/",
+    "canonical_url": "https://techcrunch.com/2026/11/02/ukraines-new-pocket-sized-gadget-turns-russian-drones-cameras-against-them/",
+    "published_at": "2026-11-03T01:12:55",
+    "summary": "A Kyiv startup’s pocket-sized, 10-ounce receiver lets Ukrainian troops watch the video feeds of Russian drones, though Russian moves toward digital video and AI-guided drones that emit no signals could make the victory short-lived.",
+    "score": 15,
+    "score_breakdown": {
+      "total_score": 15,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 11,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Y Combinator’s Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
+    "link": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
+    "canonical_url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
+    "published_at": "2026-11-03T00:35:52",
+    "summary": "Y Combinator Garry Tan has jokingly admitted that he's suffered from \"cyber psychosis” and barely sleeps sometimes because he’s so excited to be working with his AI agents. On a new episode of Walter Isaacson’s podcast, The Builders, Tan put a price tag on his passion.",
+    "score": 15,
+    "score_breakdown": {
+      "total_score": 15,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 12,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Apple says it’s ‘hard to predict’ when iPhone Duo constraints will improve",
+    "link": "https://techcrunch.com/2026/11/02/apple-says-its-hard-to-predict-when-iphone-duo-constraints-will-improve/",
+    "canonical_url": "https://techcrunch.com/2026/11/02/apple-says-its-hard-to-predict-when-iphone-duo-constraints-will-improve/",
+    "published_at": "2026-11-02T23:25:32",
+    "summary": "Apple says iPhone Duo production is ramping up, but it still can't say when supply will catch up with demand as shipping delays stretch into next year.",
+    "score": 15,
+    "score_breakdown": {
+      "total_score": 15,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 13,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Germany says lawmakers’ iPhones may have been hacked with spyware",
+    "link": "https://techcrunch.com/2026/11/02/germany-says-lawmakers-iphones-may-have-been-hacked-with-spyware/",
+    "canonical_url": "https://techcrunch.com/2026/11/02/germany-says-lawmakers-iphones-may-have-been-hacked-with-spyware/",
+    "published_at": "2026-11-02T19:45:54",
+    "summary": "German lawmakers and a filmmaker are among the people who received notifications from Apple warning that their phones may have been hacked.",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 14,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Readwise takes on Amazon’s Kindle and Goodreads with its new app for book lovers",
+    "link": "https://techcrunch.com/2026/11/02/readwise-takes-on-amazons-kindle-and-goodreads-with-its-new-app-for-book-lovers/",
+    "canonical_url": "https://techcrunch.com/2026/11/02/readwise-takes-on-amazons-kindle-and-goodreads-with-its-new-app-for-book-lovers/",
+    "published_at": "2026-11-02T17:49:41",
+    "summary": "Readwise Books combines an e-book store, reading tracker, detailed reading stats, and AI features in a bid to challenge Amazon's ecosystem.",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 15,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "SpaceX reportedly wants to buy Boost Mobile to compete with AT&T, T-Mobile, and Verizon",
+    "link": "https://techcrunch.com/2026/11/02/spacex-reportedly-wants-to-buy-boost-mobile-to-compete-with-att-t-mobile-and-verizon/",
+    "canonical_url": "https://techcrunch.com/2026/11/02/spacex-reportedly-wants-to-buy-boost-mobile-to-compete-with-att-t-mobile-and-verizon/",
+    "published_at": "2026-11-02T16:44:48",
+    "summary": "SpaceX has been looking for new ways to use its Starlink network, and a tie-up with cellular operator Boost Mobile could give it the terrestrial access it needs.",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 16,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "42AI comes out of stealth with $62.5M and a world model that can ‘predict human behavior’",
+    "link": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
+    "canonical_url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
+    "published_at": "2026-11-02T16:30:00",
+    "summary": "Here's a question straight out of sci-fi: What if AI could predict what you were going to do before you decided to, even in a completely new situation?",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 17,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Elon Musk throttles Grok Bot limits due to ‘unsustainably high’ costs",
+    "link": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
+    "canonical_url": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
+    "published_at": "2026-11-02T16:23:21",
+    "summary": "Musk recently referred to Grok Bot as having \"the fastest growth of a product that I've ever seen in my life.\"",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 18,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Trajectory raises $45M to make AI model training accessible to nontechnical experts",
+    "link": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+    "canonical_url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+    "published_at": "2026-11-02T23:13:53",
+    "summary": "The one-year-old startup is now valued at $300 million.",
+    "score": 10,
+    "score_breakdown": {
+      "total_score": 10,
+      "impact": 0,
+      "business": 0,
+      "development": 0,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 19,
+    "is_primary": false
+  },
+  {
+    "media": "TechCrunch",
+    "title": "Ninja’s first-ever microwave just replaced two of my kitchen appliances at once",
+    "link": "https://techcrunch.com/2026/11/02/ninjas-first-ever-microwave-just-replaced-two-of-my-kitchen-appliances-at-once/",
+    "canonical_url": "https://techcrunch.com/2026/11/02/ninjas-first-ever-microwave-just-replaced-two-of-my-kitchen-appliances-at-once/",
+    "published_at": "2026-11-02T14:42:38",
+    "summary": "The Ninja Crispi Microwave stands out for its FusionCrisp technology, which combines the speed of a microwave with the crispy results you'd expect from an air fryer.",
+    "score": 9,
+    "score_breakdown": {
+      "total_score": 9,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 20,
+    "is_primary": false
+  },
+  {
+    "media": "Ars Technica",
+    "title": "\"At Home in Space\" opens, caps Air and Space Museum renovation",
+    "link": "https://arstechnica.com/space/2026/11/at-home-in-space-opens-caps-air-and-space-museum-renovation/",
+    "canonical_url": "https://arstechnica.com/space/2026/11/at-home-in-space-opens-caps-air-and-space-museum-renovation/",
+    "published_at": "2026-11-02T23:30:16",
+    "summary": "The Smithsonian's National Air and Space Museum has all of its \"space\" back open.",
+    "score": 27,
+    "score_breakdown": {
+      "total_score": 27,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true
+  },
+  {
+    "media": "Ars Technica",
+    "title": "This $48 e-paper display can be whatever you want it to be",
+    "link": "https://arstechnica.com/gadgets/2026/11/this-48-e-paper-display-can-be-whatever-you-want-it-to-be/",
+    "canonical_url": "https://arstechnica.com/gadgets/2026/11/this-48-e-paper-display-can-be-whatever-you-want-it-to-be/",
+    "published_at": "2026-11-02T12:00:07",
+    "summary": "This DIY e-paper display works in two official ecosystems or on your own server.",
+    "score": 17,
+    "score_breakdown": {
+      "total_score": 17,
+      "impact": 0,
+      "business": 0,
+      "development": 13,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Why large dogs age faster than small ones, and other October research highlights",
+    "link": "https://arstechnica.com/science/2026/11/research-roundup-6-cool-science-stories-we-almost-missed-7/",
+    "canonical_url": "https://arstechnica.com/science/2026/11/research-roundup-6-cool-science-stories-we-almost-missed-7/",
+    "published_at": "2026-11-02T22:54:35",
+    "summary": "Plus invisible tattoos, medieval skeleton gets an ID, trapping a single antimatter particle, and more.",
+    "score": 15,
+    "score_breakdown": {
+      "total_score": 15,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Coming in 2027: Apple’s $1,000 home robot for FaceTime and switching on lights",
+    "link": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/",
+    "canonical_url": "https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/",
+    "published_at": "2026-11-02T18:32:21",
+    "summary": "Apple robot backed by CEO John Ternus may have hefty price tag and limited uses.",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true
+  },
+  {
+    "media": "Ars Technica",
+    "title": "The world has a new plan to save nature, but it still needs the money",
+    "link": "https://arstechnica.com/science/2026/11/the-world-has-a-new-plan-to-save-nature-but-it-still-needs-the-money/",
+    "canonical_url": "https://arstechnica.com/science/2026/11/the-world-has-a-new-plan-to-save-nature-but-it-still-needs-the-money/",
+    "published_at": "2026-11-02T14:56:52",
+    "summary": "A new action plan aims to rescue 2030 nature targets as financing remains inadequate.",
+    "score": 12,
+    "score_breakdown": {
+      "total_score": 12,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
     "rank": 5,
     "is_primary": true
   },
   {
-    "media": "The Information",
-    "title": "Candidates Backing Data Center Pauses Could Win in Up to 15 Governor’s Races",
-    "link": "https://www.theinformation.com/articles/candidates-backing-data-center-pauses-win-15-governors-races",
-    "canonical_url": "https://www.theinformation.com/articles/candidates-backing-data-center-pauses-win-15-governors-races",
-    "published_at": "2026-11-01T16:00:41",
-    "summary": "As data centers have gone from obscurity to the top of voters’ minds, midterm candidates are taking a stance on the issue. The fight is most heated in races for governor, the office that has shown the most power to limit data centers on a broad scale. Whichever candidates win, more doors are likely to close on the industry, leaving it with fewer places to build and higher costs where it still can. In 21 of the 36 states electing a governor on Tuesday, at least one major-party nominee backs a data center moratorium, according to The Information’s analysis of candidate platforms and public statements. Both nominees back pauses in five states (Michigan, New Hampshire, Ohio, Oregon and Texas), and a candidate promising a pause is likely to win in three (Maine, New Mexico and New York), based on recent polls. In seven more, it could be a close race between a candidate who backs a pause and one who doesn’t (Alaska, Florida, Georgia, Iowa, Kansas, Wisconsin and Vermont). Those 15 states are home to more than a third of the U.S. population.",
+    "media": "Ars Technica",
+    "title": "Third person dies of bird flu since virus started jumping to livestock",
+    "link": "https://arstechnica.com/health/2026/11/third-person-dies-of-bird-flu-since-virus-started-jumping-to-livestock/",
+    "canonical_url": "https://arstechnica.com/health/2026/11/third-person-dies-of-bird-flu-since-virus-started-jumping-to-livestock/",
+    "published_at": "2026-11-02T21:21:43",
+    "summary": "The threat is still considered to be low, but the virus continues to spread.",
+    "score": 10,
+    "score_breakdown": {
+      "total_score": 10,
+      "impact": 0,
+      "business": 0,
+      "development": 0,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 6,
+    "is_primary": false
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Googling \"Zelda\" today offers a glimpse of how search worked in 1998",
+    "link": "https://arstechnica.com/gaming/2026/11/googles-legend-of-zelda-easter-egg-transports-you-back-to-1998/",
+    "canonical_url": "https://arstechnica.com/gaming/2026/11/googles-legend-of-zelda-easter-egg-transports-you-back-to-1998/",
+    "published_at": "2026-11-02T19:52:23",
+    "summary": "\"The flow of time is always cruel.\"",
+    "score": 7,
+    "score_breakdown": {
+      "total_score": 7,
+      "impact": 0,
+      "business": 0,
+      "development": 0,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 7,
+    "is_primary": false
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Most of our measures of a key cognitive process don't agree",
+    "link": "https://arstechnica.com/science/2026/11/most-of-our-measures-of-a-key-cognitive-process-dont-agree/",
+    "canonical_url": "https://arstechnica.com/science/2026/11/most-of-our-measures-of-a-key-cognitive-process-dont-agree/",
+    "published_at": "2026-11-02T19:13:26",
+    "summary": "A big study with very little beyond negative results still gets published.",
+    "score": 7,
+    "score_breakdown": {
+      "total_score": 7,
+      "impact": 0,
+      "business": 0,
+      "development": 0,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 8,
+    "is_primary": false
+  },
+  {
+    "media": "Ars Technica",
+    "title": "Claude’s new rules against game cloning won’t stop the AI copying boom",
+    "link": "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/",
+    "canonical_url": "https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/",
+    "published_at": "2026-11-02T18:05:31",
+    "summary": "The tsunami of imitators is way bigger than any one model maker can stem.",
+    "score": 7,
+    "score_breakdown": {
+      "total_score": 7,
+      "impact": 0,
+      "business": 0,
+      "development": 0,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 9,
+    "is_primary": false
+  },
+  {
+    "media": "Ars Technica",
+    "title": "China publicly discloses plan for a lunar landing within three years",
+    "link": "https://arstechnica.com/space/2026/11/china-releases-timeline-for-lunar-landing-on-the-moon-targeting-before-2030/",
+    "canonical_url": "https://arstechnica.com/space/2026/11/china-releases-timeline-for-lunar-landing-on-the-moon-targeting-before-2030/",
+    "published_at": "2026-11-02T17:09:13",
+    "summary": "The plan does not include a mission similar to Apollo 8 or Artemis II.",
+    "score": 7,
+    "score_breakdown": {
+      "total_score": 7,
+      "impact": 0,
+      "business": 0,
+      "development": 0,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 10,
+    "is_primary": false
+  },
+  {
+    "media": "Ars Technica",
+    "title": "F1 in Mexico City: Yet another Ferrari fiasco, but that’s not all",
+    "link": "https://arstechnica.com/cars/2026/11/f1-in-mexico-city-we-have-a-new-world-champion/",
+    "canonical_url": "https://arstechnica.com/cars/2026/11/f1-in-mexico-city-we-have-a-new-world-champion/",
+    "published_at": "2026-11-02T15:57:24",
+    "summary": "There was plenty of drama on and off the track for Formula 1 this weekend.",
+    "score": 7,
+    "score_breakdown": {
+      "total_score": 7,
+      "impact": 0,
+      "business": 0,
+      "development": 0,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 11,
+    "is_primary": false
+  },
+  {
+    "media": "MIT Tech Review",
+    "title": "Raising the quality of insights in agentic analytics",
+    "link": "https://www.technologyreview.com/2026/11/02/1147660/raising-the-quality-of-insights-in-agentic-analytics/",
+    "canonical_url": "https://www.technologyreview.com/2026/11/02/1147660/raising-the-quality-of-insights-in-agentic-analytics/",
+    "published_at": "2026-11-02T17:00:00",
+    "summary": "In just a few years, generative AI has changed the face of enterprise analytics, notably by making analytics accessible to users across the organization. Agentic AI promises to do even more, by automating entire workflows and taking actions based on agent insights. But there is a problem: The quality of insights that agents currently generate…",
     "score": 21,
     "score_breakdown": {
       "total_score": 21,
@@ -395,7 +794,349 @@
       "recency": 7,
       "original": 0
     },
+    "rank": 1,
+    "is_primary": true
+  },
+  {
+    "media": "MIT Tech Review",
+    "title": "Stop counting tokens, start counting what ships",
+    "link": "https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/",
+    "canonical_url": "https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/",
+    "published_at": "2026-11-02T13:10:32",
+    "summary": "When a developer gives an AI agent a coding task, the agent does more than answer once. It plans, generates code, runs tests, and repeats the process to correct errors. A single task can use 10 to 50 times more tokens than a basic chat prompt. The more useful the agent becomes, the more calls…",
+    "score": 18,
+    "score_breakdown": {
+      "total_score": 18,
+      "impact": 0,
+      "business": 9,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true
+  },
+  {
+    "media": "MIT Tech Review",
+    "title": "The Download: the agentic web arrives and the drive for safer roads",
+    "link": "https://www.technologyreview.com/2026/11/02/1147889/the-download-agentic-web-arrives-eliminating-traffic-deaths/",
+    "canonical_url": "https://www.technologyreview.com/2026/11/02/1147889/the-download-agentic-web-arrives-eliminating-traffic-deaths/",
+    "published_at": "2026-11-02T13:10:00",
+    "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. The agentic web is here In 2001, a decade after inventing the World Wide Web, Tim Berners-Lee articulated a new vision: an internet navigated by autonomous software agents that address our…",
+    "score": 18,
+    "score_breakdown": {
+      "total_score": 18,
+      "impact": 0,
+      "business": 9,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true
+  },
+  {
+    "media": "MIT Tech Review",
+    "title": "The agentic web is here",
+    "link": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/",
+    "canonical_url": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/",
+    "published_at": "2026-11-02T09:35:19",
+    "summary": "In 2001, a decade after he invented the World Wide Web, Tim Berners-Lee articulated a new vision. Together with two colleagues, he published an article in the magazine Scientific American in which he outlined what he called the “Semantic Web”: an internet designed to be navigated by autonomous software agents that could address our every…",
+    "score": 18,
+    "score_breakdown": {
+      "total_score": 18,
+      "impact": 0,
+      "business": 9,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "It’s Contract Renewal Season, But Some Customers Aren’t Biting",
+    "link": "https://www.theinformation.com/articles/contract-renewal-season-customers-biting",
+    "canonical_url": "https://www.theinformation.com/articles/contract-renewal-season-customers-biting",
+    "published_at": "2026-11-02T15:01:23",
+    "summary": "My colleagues and I have been hearing a lot of stories about big enterprise customers renegotiating their annual contracts with model developers. Traditionally, software sellers use this time as an opportunity to convince customers to increase their annual commit by, for instance, reminding them how they exceeded their usage limits this year or highlighting new features they’ve released. In the past, model developers have had success using that playbook. This year has been a different story, though, some customers tell me. For instance, one executive at a major financial services firm said their company was hesitant to increase their spending commitment with Anthropic , OpenAI or any other model provider for a couple reasons. First, this executive said, the rapid pace of model releases means enterprises want flexibility to quickly switch to whatever the best new model is, something that can change week to week.",
+    "score": 69,
+    "score_breakdown": {
+      "total_score": 69,
+      "impact": 24,
+      "business": 25,
+      "development": 13,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 1,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "Oracle Launches $20 Billion in Stock and Bond Sales",
+    "link": "https://www.theinformation.com/briefings/oracle-launches-20-billion-stock-bond-sales",
+    "canonical_url": "https://www.theinformation.com/briefings/oracle-launches-20-billion-stock-bond-sales",
+    "published_at": "2026-11-02T20:55:30",
+    "summary": "Oracle filed to raise $20 billion through fresh debt and equity offerings on Monday its latest funding move as it spends heavily on AI infrastructure. The cloud and software firm is selling $10 billion worth of investment-grade bonds and $10 billion in common stock. Oracle shares ...",
+    "score": 60,
+    "score_breakdown": {
+      "total_score": 60,
+      "impact": 12,
+      "business": 25,
+      "development": 13,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 2,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "DeepSeek Unveils Autonomous Coding Agent Prototype",
+    "link": "https://www.theinformation.com/briefings/deepseek-unveils-autonomous-coding-agent-prototype",
+    "canonical_url": "https://www.theinformation.com/briefings/deepseek-unveils-autonomous-coding-agent-prototype",
+    "published_at": "2026-11-02T05:55:08",
+    "summary": "DeepSeek has unveiled a prototype of a new autonomous coding agent, as the Chinese AI lab steps up its efforts to compete with Anthropic’s Claude Code, OpenAI’s Codex and other popular coding tools. The DeepSeek Harness team open-sourced what it described as a “super agent” over the weekend. The ...",
+    "score": 54,
+    "score_breakdown": {
+      "total_score": 54,
+      "impact": 24,
+      "business": 9,
+      "development": 20,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 3,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "Anthropic’s Revenue Surged to $17 Billion in Q3, Swung Back to Operating Loss",
+    "link": "https://www.theinformation.com/briefings/anthropics-revenue-surged-17-billion-q3-swung-back-operating-loss",
+    "canonical_url": "https://www.theinformation.com/briefings/anthropics-revenue-surged-17-billion-q3-swung-back-operating-loss",
+    "published_at": "2026-11-02T15:12:33",
+    "summary": "Anthropic reported nearly $17 billion in revenue in the third quarter ending September, up 47% from the second quarter, the latest sign that its once red-hot revenue growth rate is slowing ahead of a blockbuster IPO this month. The AI company reported a $23.3 billion net loss for the quarter, ...",
+    "score": 47,
+    "score_breakdown": {
+      "total_score": 47,
+      "impact": 35,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 0
+    },
+    "rank": 4,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "Exclusive: Salesforce Acquires Startup Cresta for $2.7 Billion",
+    "link": "https://www.theinformation.com/briefings/exclusive-salesforce-acquires-startup-cresta-2-7-billion",
+    "canonical_url": "https://www.theinformation.com/briefings/exclusive-salesforce-acquires-startup-cresta-2-7-billion",
+    "published_at": "2026-11-03T00:12:26",
+    "summary": "Salesforce extended its recent shopping spree, announcing on Monday plans to acquire Cresta, a nine-year-old provider of AI-powered contact center automation software. Salesforce didn’t disclose a price but it agreed to pay $2.7 billion for Cresta, according to a person familiar with the deal. ...",
+    "score": 44,
+    "score_breakdown": {
+      "total_score": 44,
+      "impact": 24,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 5
+    },
+    "rank": 5,
+    "is_primary": true
+  },
+  {
+    "media": "The Information",
+    "title": "Apple Sales Cool",
+    "link": "https://www.theinformation.com/briefings/apple-sales-cool",
+    "canonical_url": "https://www.theinformation.com/briefings/apple-sales-cool",
+    "published_at": "2026-11-02T23:39:01",
+    "summary": "In Apple’s first earnings under new chief executive John Ternus, the company reported sales growth slowed in its fiscal fourth quarter. Total revenue for the September quarter was $114.5 billion, up from 12% from the previous year, its slowest sales growth for the year. The iPhone business ...",
+    "score": 39,
+    "score_breakdown": {
+      "total_score": 39,
+      "impact": 24,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
     "rank": 6,
+    "is_primary": false
+  },
+  {
+    "media": "The Information",
+    "title": "Marvell to Buy Lumentum in $80 Billion All-Stock Deal",
+    "link": "https://www.theinformation.com/briefings/marvell-buy-lumentum-115-billion-all-stock-deal",
+    "canonical_url": "https://www.theinformation.com/briefings/marvell-buy-lumentum-115-billion-all-stock-deal",
+    "published_at": "2026-11-02T13:08:44",
+    "summary": "Chipmaker Marvell Technologies agreed Monday to buy laser maker Lumentum in an all-stock deal worth around $80 billion, a sign of how the AI investment boom has boosted Lumentum’s value. Marvell, which designs chips for data centers, networking and storage systems, is buying one of the market ...",
+    "score": 30,
+    "score_breakdown": {
+      "total_score": 30,
+      "impact": 12,
+      "business": 9,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 7,
+    "is_primary": false
+  },
+  {
+    "media": "The Information",
+    "title": "Exclusive: OpenAI Sign Deals With Magnite, PubMatic to Fill Unused ChatGPT Ad Space",
+    "link": "https://www.theinformation.com/briefings/exclusive-openai-sign-deals-magnite-pubmatic-fill-unused-chatgpt-ad-space",
+    "canonical_url": "https://www.theinformation.com/briefings/exclusive-openai-sign-deals-magnite-pubmatic-fill-unused-chatgpt-ad-space",
+    "published_at": "2026-11-02T15:00:48",
+    "summary": "OpenAI has signed deals with Magnite and PubMatic, whose software enables advertisers to place their ads on websites and other digital platforms, to fill unused ad space on ChatGPT, according to three people familiar with the deals. Advertisers are using Magnite and PubMatic’s software to set ...",
+    "score": 29,
+    "score_breakdown": {
+      "total_score": 29,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 7,
+      "original": 5
+    },
+    "rank": 8,
+    "is_primary": false
+  },
+  {
+    "media": "The Information",
+    "title": "How Smugglers Get Expensive Memory Chips to China from South Korea",
+    "link": "https://www.theinformation.com/articles/smugglers-get-expensive-memory-chips-china-south-korea",
+    "canonical_url": "https://www.theinformation.com/articles/smugglers-get-expensive-memory-chips-china-south-korea",
+    "published_at": "2026-11-03T01:07:37",
+    "summary": "For an illustration of how porous U.S. restrictions on the shipment of AI chips to China can be, consider a technique that has begun to catch on among smugglers involving a key type of memory chip. While U.S. export regulations ban the shipment of high-bandwidth memory chips on their own to China, including from countries like South Korea, those rules have a loophole that allows the sales of those memory chips if they’re packaged together on plates with cheap server processors whose performance falls below the export restriction threshold. That’s because the computing power of the package gets determined by the server processor, not the memory chips, according to the rules.",
+    "score": 27,
+    "score_breakdown": {
+      "total_score": 27,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 9,
+    "is_primary": false
+  },
+  {
+    "media": "The Information",
+    "title": "Apple’s Slowdown",
+    "link": "https://www.theinformation.com/articles/apples-slowdown",
+    "canonical_url": "https://www.theinformation.com/articles/apples-slowdown",
+    "published_at": "2026-11-03T01:01:27",
+    "summary": "Apple’s new CEO, John Ternus, has learned from the best. The script for his first earnings call on Monday was so full of marketing palaver about Apple products, and so lacking in information, that Ternus’ predecessor, Tim Cook, must have been glowing with pride. Perhaps after seeing investors freak out last week when other big tech firms reported earnings squeezed by AI investments, Ternus was determined to bore Wall Street into submission. Alas! Finance chief Kevan Parekh woke listeners from their Ternus-induced slumber by projecting 7% to 10% growth in revenue for the December quarter, a marked slowdown from the 12% growth in the September period. Meanwhile, he projected a drop in Apple’s gross margin, thanks to rising costs of memory. Apple shares promptly traded down, falling as much as 4% in after-hours trading. Parekh blamed limited component supplies for the expected revenue slowdown: Apple can’t make as many of its devices as it could sell. But that may not be the only explanation.",
+    "score": 27,
+    "score_breakdown": {
+      "total_score": 27,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 10,
+    "is_primary": false
+  },
+  {
+    "media": "The Information",
+    "title": "OpenAI Hires Ex-Army Secretary As Senior Advisor",
+    "link": "https://www.theinformation.com/briefings/openai-hires-ex-army-secretary-senior-advisor",
+    "canonical_url": "https://www.theinformation.com/briefings/openai-hires-ex-army-secretary-senior-advisor",
+    "published_at": "2026-11-03T00:34:05",
+    "summary": "Former U.S. Army Secretary Dan Driscoll is joining OpenAI to help expand the use of the AI company’s technology in national defense and other military applications. The former government official, who stepped away from his Army post in September after reportedly clashing with Defense Secretary ...",
+    "score": 27,
+    "score_breakdown": {
+      "total_score": 27,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 11,
+    "is_primary": false
+  },
+  {
+    "media": "The Information",
+    "title": "AI Models Are Getting Harder to Monitor, Says U.K. Government’s Joseph Bloom",
+    "link": "https://www.theinformation.com/articles/ai-models-getting-harder-monitor-says-u-k-governments-joseph-bloom",
+    "canonical_url": "https://www.theinformation.com/articles/ai-models-getting-harder-monitor-says-u-k-governments-joseph-bloom",
+    "published_at": "2026-11-03T02:03:15",
+    "summary": "The ability to monitor AI models to detect what they’re trying to do and why is widely considered a crucial part of the effort to keep the technology operating safely. It’s also increasingly hard to do, said Joseph Bloom, the head of model transparency at the U.K. AI Security Institute. “In general, we’re seeing monitorability—in various respects or from various angles—decrease,” Bloom said on the latest episode of The Information’s AI Deep Dive, in one of the first on-the-record interviews that a member of technical staff at AISI has given. ( The full episode is available here .) The institute is one of the world’s largest government bodies focused on AI, and its work includes evaluating models from leading AI companies.",
+    "score": 20,
+    "score_breakdown": {
+      "total_score": 20,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 5
+    },
+    "rank": 12,
+    "is_primary": false
+  },
+  {
+    "media": "The Information",
+    "title": "Inside Apple’s Slog to Create Its First Robot",
+    "link": "https://www.theinformation.com/articles/inside-apples-slog-create-first-robot",
+    "canonical_url": "https://www.theinformation.com/articles/inside-apples-slog-create-first-robot",
+    "published_at": "2026-11-02T14:16:57",
+    "summary": "Apple’s new CEO John Ternus wants the company to get serious about robots, but judging by Apple’s plodding progress on the first one it hopes to sell—a device with a nine-inch screen that swivels around on an arm and resembles the Pixar lamp—he could face an uphill battle. Apple initially began working on the robot in 2019—code-naming it J595—and had modest ambitions for it, envisioning it mostly as a device for video calls. Its robotic arm was intended to allow it to follow someone wherever they were in a room. But hopes for the robot ballooned once Apple executives began wanting to add AI capabilities to it. The current design for the robot envisions it using a camera and sensors to be fully aware of its environment and act autonomously, allowing it to turn on the lights when someone walks into a room—or perhaps even try to tell a cat to get off a table. It is meant to be smart enough to avoid accidentally hitting objects around it. Much of the hardware needed for the robot has been finished for around two years, but the software team has found it difficult to keep pace, people who have worked on the project said. The hardware team responsible for J595 has pushed to hurry up and release the product. Meanwhile, the software team has advocated for delaying its release, and for the past year, it has attempted to strip back some proposed features and focus the product on a few capabilities related to FaceTime and automating home tasks, like switching on a light.",
+    "score": 18,
+    "score_breakdown": {
+      "total_score": 18,
+      "impact": 0,
+      "business": 9,
+      "development": 5,
+      "recency": 4,
+      "original": 0
+    },
+    "rank": 13,
+    "is_primary": false
+  },
+  {
+    "media": "The Information",
+    "title": "Salesforce to Buy Defense Tech Startup, Extending Acquisition Streak",
+    "link": "https://www.theinformation.com/briefings/salesforce-buy-defense-tech-startup-extending-acquisition-streak",
+    "canonical_url": "https://www.theinformation.com/briefings/salesforce-buy-defense-tech-startup-extending-acquisition-streak",
+    "published_at": "2026-11-02T03:07:35",
+    "summary": "Salesforce on Friday said it was buying a defense tech startup called Rune Technologies to build out its suite of software tools, called Missionforce, designed for the military. The company is paying $375 million in cash and stock, according to online publication Resilience Media. The ...",
+    "score": 18,
+    "score_breakdown": {
+      "total_score": 18,
+      "impact": 12,
+      "business": 0,
+      "development": 5,
+      "recency": 1,
+      "original": 0
+    },
+    "rank": 14,
+    "is_primary": false
+  },
+  {
+    "media": "The Information",
+    "title": "SpaceX Is in Talks With Boost Mobile to Expand Wireless Coverage",
+    "link": "https://www.theinformation.com/briefings/spacex-talks-boost-mobile-expand-wireless-coverage",
+    "canonical_url": "https://www.theinformation.com/briefings/spacex-talks-boost-mobile-expand-wireless-coverage",
+    "published_at": "2026-11-02T21:40:28",
+    "summary": "SpaceX is in talks with discount carrier Boost Mobile to expand the company’s existing wireless coverage beyond its satellite network, according to The Washington Post. The news outlet reported that the talks could result in either acquiring the mobile network, which is owned by EchoStar, or ...",
+    "score": 15,
+    "score_breakdown": {
+      "total_score": 15,
+      "impact": 0,
+      "business": 0,
+      "development": 5,
+      "recency": 10,
+      "original": 0
+    },
+    "rank": 15,
     "is_primary": false
   }
 ]
