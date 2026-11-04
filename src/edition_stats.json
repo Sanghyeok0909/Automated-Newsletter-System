@@ -2,7 +2,7 @@
   "The Verge": {
     "analyzed": 0,
     "target": 5,
-    "candidates_found": 10,
+    "candidates_found": 9,
     "status": "analysis_failure"
   },
   "TechCrunch": {
@@ -14,19 +14,19 @@
   "Ars Technica": {
     "analyzed": 0,
     "target": 5,
-    "candidates_found": 11,
+    "candidates_found": 12,
     "status": "analysis_failure"
   },
   "MIT Tech Review": {
     "analyzed": 0,
     "target": 5,
-    "candidates_found": 4,
+    "candidates_found": 3,
     "status": "analysis_failure"
   },
   "The Information": {
     "analyzed": 0,
     "target": 5,
-    "candidates_found": 15,
+    "candidates_found": 16,
     "status": "daily_quota_exhausted"
   }
 }
