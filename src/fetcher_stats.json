@@ -2,7 +2,7 @@
   "The Verge": {
     "status": "success",
     "raw_count": 10,
-    "eligible_count": 9,
+    "eligible_count": 10,
     "selected_count": 5
   },
   "TechCrunch": {
@@ -18,15 +18,15 @@
     "selected_count": 5
   },
   "MIT Tech Review": {
-    "status": "shortage",
+    "status": "success",
     "raw_count": 10,
-    "eligible_count": 3,
-    "selected_count": 3
+    "eligible_count": 5,
+    "selected_count": 5
   },
   "The Information": {
     "status": "success",
     "raw_count": 20,
-    "eligible_count": 16,
+    "eligible_count": 20,
     "selected_count": 5
   }
 }
